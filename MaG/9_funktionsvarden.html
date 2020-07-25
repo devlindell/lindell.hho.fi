@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>9. Funktionsvärden</title>
+
+ </head>
+ <body>
+  <header class="MaG">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+       <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+       <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+       <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+       <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+       <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+       <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+       <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+       <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+       <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+       <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+       <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+       <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+       <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+       <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+       <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+       <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+       <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+       <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+       <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+       <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+     </div>
+    </div>
+   </nav>
+   <a href="8_grafen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaG Tal och talföljder</h3>
+   <a href="10_relationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>9. Funktionsvärden</h1>
+   <section>
+    <div class="theory">
+     <div class="intro box">
+      <p>Bestäm funktionsvärdena för funktionen \(f(x)=x^2-2\) då \(x=2\) och då \(x=2,5\).</p>
+      <div class="video">
+       <iframe src="https://player.vimeo.com/video/367831791" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+     </div>
+     <p>Värdet av en funktion får vi genom att placera in värdet på variablens plats.</p>
+     <div class="exercise box">
+      <p><strong>Exempel 1</strong> Bestäm funktionsvädet för \(f(x)=3x-5\) då \(x\) får värdena \(-3\), \(1\) och \(5\).</p>
+      <h4>Lösning</h4>
+      <p>Vi får att</p>
+      <p> \(\begin{array}{rl}
+       -3: & f(-3)=3(-3)-5=-9-5=-14 \\
+       1: & f(1)=3\cdot 1-5=3-5=-2 \\
+       5: & f(5)=3\cdot 5 -5 = 15-5=10\\
+       \end{array}\)</p>
+      </div>
+      <div class="exercise box">
+       <p><strong>Exempel 2</strong> Låt \(g(x)=2x-6\).</p>
+       <ol>
+        <li>Bestäm funktionsvärdet för \(x=4\).</li>
+        <li>Den punkt som ger funktionsvärdet 4.</li>
+       </ol>
+       <h4>Lösning</h4>
+       <ol>
+       <li>Vi får att \(g(4)=2\cdot 4 -6 = 8-6=2\).</li>
+       <li><p>Här söker vi den \(x\)-koordinat som ger att funktionsvärdet är 4, alltså \(g(x)=4\).</p>
+        <p>Vi får att</p>
+        <p> \(\begin{array}{rcll}
+         4 & = & 2x-6 & \mid +6\\
+         4+6 & = & 2x \\
+         2x & = & 10 & \mid /2\\
+         x & = & \dfrac{10}{2}=5 \\
+         \end{array}\)</p>
+         <p>\(x\)-koordinaten 5 ger funktionsvärdet 4.</p></li>
+        </div>
+        <h3>Nollställen för en funktion</h3>
+        <p>Funktionens nollställen är de punkter där grafen skär \(x\)-axeln. Det sker då \(f(x)=0\), som betyder att \(y\)-koordinaten har värdet 0. När vi söker nollställen svarar vi antingen som en punkt eller som en \(x\)-koordinat.</p>
+        <div class="exercise box">
+         <p><strong>Exempel 3</strong> Bestäm nollstället för funktionen \(h(x)=4x-8\).</p>
+         <h4>Lösning</h4>
+         <p>Vi löser ekvationen</p>
+         <p>\(\begin{array}{rcll}
+          4x -8 & = & 0 & \mid +8\\
+          4x & = & 8 & \mid /4 \\
+          x & = & \dfrac{8}{4}=2
+          \end{array}\)</p>
+          <p>Nollstället är \((2,0)\).</p>
+         </div>
+         <div class="exercise box">
+          <p><strong>Exempel 4</strong> Bestäm nollställena för \(f(x)=2x^2-6x\).</p>
+          <h4>Lösning</h4>
+          <p>Vi löser ekvationen</p>
+          <p>\(\begin{array}{rcll}
+           2x^2-6x & = & 0 & \mid \text{ Utbrytning}\\
+           2x(x-3) & = & 0 & \mid\text{ Nollregel} \\
+           \end{array}\)</p>
+          <p>\(2x=0 \Leftrightarrow x=0\) eller \(x-3=0 \Leftrightarrow x=3\).</p>
+          <p>Vi har två nollställen, \(x=0\) och \(x=3\).</p>
+         </div>
+         <p>Funktioner klassificerar vi som antingen jämna eller udda genom att se på den högsta exponenten för funktionen. Jämna funktioner är funktioner vars högsta exponent är ett jämt tal: \(2, 4, 6, 8 \ldots\) och udda funktioner har ett udda tal: \(1, 3, 5, 7, \ldots\).</p>
+         <div class="summary box">
+          <h3>Funktionsvärden och nollställen på GeoGebra</h3>
+          <div class="video">
+           <iframe src="https://player.vimeo.com/video/367833169" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+         </div>
+
+
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <li><p>Bestäm följande värde genom att avläsa från grafen.</p>
+      <p><img src="pics/funktion_9uppg1.png" class="responsivepic400" /></p>
+      <ol>
+       <li>\(f(1)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1a">
+       <div class="card card-body answer">-3 </div></div> </li>
+       <li>\(f(-2)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1b">
+       <div class="card card-body answer">-2 </div></div> </li>
+       <li>\(f(x)=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1c">
+       <div class="card card-body answer"><p id="w2lbpfvy416">\(f(x)=0\) då \( x = 2\). </div></div> </li>
+       <li>\(f(x)=-4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1d">
+       <div class="card card-body answer"><p>\(f(x)=-4\) då \(x = -4\) eller \( x =0\).</p> </div></div> </li>
+      </ol></li>
+
+      <li>Rita grafen av funktionen \(f(x)=x^3+1\) på GeoGebra och svara på följande frågor.
+       <ol>
+        <li>Bestäm nollstället för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="2a">
+        <div class="card card-body answer"><p>Nollstället är i punkten \(x=-1\) och \( x=0 \).</p> </div></div> </li>
+        <li>\(f(1)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="2b">
+        <div class="card card-body answer">2 </div></div> </li>
+        <li>\(f(x)=1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="2c">
+        <div class="card card-body answer"><p id="frdvp37y">\(f(x)=1\) då \( x = 0 \).</p> </div></div> </li>
+       </ol></li>
+
+       <li>Låt \(h(x)=-2x+3\). Bestäm grafiskt genom att rita funktionen på GeoGebra.
+        <ol>
+         <li>vädet för funktionen \(h\) då \(x=2\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+         <div class="collapse" id="3a">
+         <div class="card card-body answer">-1 </div></div> </li>
+         <li>vädet för funktionen \(h\) då \(x=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+         <div class="collapse" id="3b">
+         <div class="card card-body answer">3 </div></div> </li>
+         <li>nollställena för funktionen \(h\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+         <div class="collapse" id="3c">
+         <div class="card card-body answer"><p>Då \(x=\dfrac{3}{2}\).</p> </div></div> </li>
+        </ol></li>
+
+        <li>Bestäm funktionsvärden för \(f(x)=3x-5\).
+         <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+         <div class="collapse" id="4t">
+         <div class="card card-body hint"><p>Räkna, ersätt \(x\) med siffrorna i uttrycket.</p>
+           <p>Se exempel 1 och 2. Se dessutom Funktionsvärden och nollställen med GeoGebra.</p> </div></div>
+         <ol>
+          <li>\(f(0)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="4a">
+          <div class="card card-body answer">\(f(0)=3\cdot 0 - 5 = -5\) </div></div> </li>
+          <li>\(f(2)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="4b">
+          <div class="card card-body answer">1 </div></div> </li>
+          <li>\(f(10)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="4c">
+          <div class="card card-body answer">25 </div></div> </li>
+          <li>\(f(2000)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="4d">
+          <div class="card card-body answer">5995 </div></div> </li>
+         </ol></li>
+
+     <li>Låt \(g(x)=2x^2-4x+7\). Bestäm
+       <ol>
+        <li>\(g(-4)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="5a">
+        <div class="card card-body answer">55 </div></div> </li>
+        <li>\(g(-1)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="5b">
+        <div class="card card-body answer">13 </div></div> </li>
+        <li>\(g(0)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="5c">
+        <div class="card card-body answer">7 </div></div> </li>
+        <li>\(g(25)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="5d">
+        <div class="card card-body answer">1157 </div></div> </li>
+       </ol></li>
+
+     <li>För vilket värde på \(x\) får funktionen \(h(x)=6x-5\) värdet 3?
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="6t">
+      <div class="card card-body hint"> Se exempel 2 och Funktionsvärden och nollställen med GeoGebra. </div></div>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>\(\begin{array}{rcll} 6x-5 & = & 3 & \mid +5 \\ 6x & = & 8 & \mid /6 \\ x & = & \dfrac{8}{6} = \dfrac{4}{3} \\ \end{array}\)</p> </div></div> </li>
+
+     <li>För vilket värde på \(x\) får funktionen \(g(x)=2x^2-8\) värdet \(-6\)?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer"> <p>Vi löser ekvationen</p>
+         <p>\(\begin{array}{rcll} 2x^2-8 & = & -6 & \mid +8 \\ 2x^2 & = & 2 & \mid /2 \\ x^2 & = & \dfrac{2}{2}=1 & \mid \sqrt{\;} \\ x & = & \pm 1\\ \end{array}\)</p>
+         <p>Då \(x = \pm 1\).</p> </div></div> </li>
+
+     <li>Bestäm nollställena för \(f(x)=4x-2\).
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="8t">
+      <div class="card card-body hint"> Se exempel 3 och Funktionsvärden och nollställen med GeoGebra. </div></div>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8">
+       <div class="card card-body answer"> <p>\(\begin{array}{rcll} 4x-2 & = & 0 & \mid +2 \\ 4x & = & 2 & \mid /4 \\ x & = & \dfrac{2}{4} = \dfrac{1}{2} \\ \end{array}\)</p> </div></div> </li>
+
+     <li>Bestäm nollställena för \(f(x)=\dfrac{3}{4}x+\dfrac{2}{3}\).
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="9t">
+      <div class="card card-body hint"> <p>Vi söker de punkter där funktionsvärdet får värdet 0.</p>  <p>Se exempel 3, 4 och Funktionsvärden och nollställen med GeoGebra.</p> </div></div>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
+       <div class="card card-body answer"> <p>\(\begin{array}{rcll} \dfrac{3}{4}x+\dfrac{2}{3} & = & 0 & \mid -\dfrac{2}{3} \\ \\ \dfrac{3}{4}x & = & -\dfrac{2}{3} & \mid \cdot \dfrac{4}{3} \\ \\ \dfrac{3}{4}x\cdot \dfrac{4}{3} & = & -\dfrac{2}{3} \cdot \dfrac{4}{3} \\ \\ x & = & -\dfrac{8}{9} \\  \end{array}\)</p> </div></div> </li>
+
+     <li>Bestäm nollställena för \(f(x)=5x^2-5\).
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="10t">
+      <div class="card card-body hint"> Se exempel 4 och Funktionsvärden och nollställen med GeoGebra. </div></div>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer"> <p>\(\begin{array}{rcll} 5x^2-5 & = & 0 \\ 5x^2 & = & 5 & \mid /5 \\ x^2 & = & 1 & \mid \sqrt{\quad} \\ x & = & \sqrt{1} = \pm 1 \\ \end{array}\)</p>
+         <p>Funktionens nollställen är \(x=-1\) och \(x=1\).</p> </div></div> </li>
+
+     <li>Bestäm nollställena för \(f(x)=\dfrac{2}{5}x^2-\dfrac{2}{3}x\).
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="11t">
+      <div class="card card-body answer"> <p>Bryt ut det gemensamma och fortsätt med nollregeln.</p>  <p>Se exempel 4 och Funktionsvärden och nollställen med GeoGebra.</p> </div></div>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="11">
+       <div class="card card-body answer"> <p>\(\begin{array}{rcll} \dfrac{2}{5}x^2-\dfrac{2}{3}x & = & 0 \\ \\ x(\dfrac{2}{5}x -\dfrac{2}{3}) & = & 0 & \mid \text{Vi bryter ut det gemensamma och tillämpar nollregeln.}\\ \\ \end{array}\)</p>
+         <p>Nu gäller att</p>
+         <p>\(x= 0\) eller \(\dfrac{2}{5}x-\dfrac{2}{3}=0\).</p>
+         <p>\(\begin{array}{rcll} \dfrac{2}{5}x-\dfrac{2}{3} & = & 0 \\ \\ \dfrac{2}{5}x & = & \dfrac{2}{3} & \mid \cdot \dfrac{5}{2} \\ \\ \dfrac{2}{5}x\cdot \dfrac{5}{2} & = & \dfrac{2}{3}\cdot \dfrac{5}{2} \\ \\ x & = & \dfrac{5}{3} \end{array}\)</p>
+         <p>Nollställena är \(x=0\) och \(x=\dfrac{5}{3}\).</p> </div></div> </li>
+
+     <li>Låt \(M(a)=a^3+3a^2-2a+5\). Bestäm funktionsvärdet då
+      <ol>
+       <li>\(a=2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="12a">
+       <div class="card card-body answer"><p>\(M(2) = 2^3 + 3\cdot 2^2 - 2\cdot 2 + 5 = 8+3\cdot 4-4+5 =21\)</p> </div></div> </li>
+       <li>\(a=-3\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="12b">
+       <div class="card card-body answer"><p>\(M(-3)=(-3)^3 + 3 \cdot (-3)^2-2\cdot (-3) + 5 = -27+3\cdot 9+4+5 = 11\)</p> </div></div> </li>
+      </ol></li>
+
+     <li><p>Bestäm om funktionen är jämn eller udda.</p>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="10t">
+      <div class="card card-body hint"> Se slutet av teorin. </div></div>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer">
+         <table>
+           <tr><th>Påstående</th><th>Jämn funktion</th><th>Udda funktion</th></tr>
+           <tr><td>\(f(x)=3x^3-x\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+           <tr><td>\(g(x)=-x^2+4\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+           <tr><td>\(h(x)=x^2+3x-1\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+           <tr><td>\(i(x)=x^5-6x^4-x\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+           <tr><td>\(j(x)=x^7-4x^6-3x+7\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+           <tr><td>\(k(x)=(x-2)^2\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+         </table> </div></div> </li>
+
+     <li><p>Hur skiljer sig en jämn funktion från en udda funktion? Använd dig av GeoGebra appletten som finns nedan och ändra på gradtalet för funktionen genom att dra i glidaren för \(n\).</p>
+       <div class="geogebra">
+         <iframe height="487px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/FdzdsqR3/width/510/height/487/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="510px"></iframe>
+       </div>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="11t">
+      <div class="card card-body hint"> Se slutet av teorin och det som du lärde dig i uppgiften ovan. </div></div>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="11">
+       <div class="card card-body answer"> <p>Jämna funktioner, med exponenten \(2, 4, 6, \ldots\) ser nästan alla likadana ut. De påminner om parabeln, betyder att de avtar, sedan händer det något och sedan är funktionen växande.</p>
+         <p>Udda funktioner, med exponenten \(1, 3, 5, \ldots\). De igen påminner om \(f(x)=x\) och \(g(x)^3\). De växer hela tiden men kan avta vid något intervall.</p> </div></div> </li>
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaG">
+    <a href="8_grafen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+    <a href="10_relationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

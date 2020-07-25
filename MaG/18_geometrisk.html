@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>18. Geometrisk talföljd</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="17_aritmetisk.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="19_aritmetisk_summa.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>18. Geometrisk talföljd</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>På bilden ser du klossar som följder ett visst mönster. Vilket är mönstret? Hur kan vi beskriva talföljden på ett matematiskt sätt?</p>
+            <p><img src="pics/18-1.jpg" class="responsivepic600"/></p>
+            <h4>Lösning</h4>
+            <p>Första stapeln består av 16 klossar, sedan har vi 8, 4, 2 och 1.</p>
+            <p>Vi märker att antalet halveras för varje steg, \(\dfrac{16}{2}=8, \dfrac{8}{2}=4, \dfrac{4}{2}=2\) och \(\dfrac{2}{2}=1\).</p>
+            <p>För att beskriva detta matematiskt så gör vi följande tabell</p>
+            <table>
+              <tbody>
+                <tr><td></td><td>OBS!</td></tr>
+                <tr><td>\(16 \cdot \dfrac{1}{1} = 16\)</td><td>\((\dfrac{1}{2})^0 = 1\)</td></tr>
+                <tr><td>\(16 \cdot \dfrac{1}{2} = 8\)</td><td>\((\dfrac{1}{2})^1 = \dfrac{1}{2}\)</td></tr>
+                <tr><td>\(16 \cdot \dfrac{1}{4} = 4\)</td><td>\((\dfrac{1}{2})^2 = \dfrac{1}{4}\)</td></tr>
+                <tr><td>\(16 \cdot \dfrac{1}{8} = 2\)</td><td>\((\dfrac{1}{2})^3 = \dfrac{1}{8}\)</td></tr>
+                <tr><td>\(16 \cdot \dfrac{1}{16} = 1\)</td><td>\((\dfrac{1}{2})^4 = \dfrac{1}{16}\)</td></tr>
+              </tbody>
+            </table>
+            <p>Vi kan beskriva den som \(a_n = 16 \cdot (\dfrac{1}{2})^n\) där \(n=0, 1, 2, 3,\ldots\).</p>
+          </div>
+          <p>För en geometrisk talföljd gäller det att kvoten mellan två element är konstant.</p>
+          <div class="discussion box">
+            <p>Är talföljdena</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>\(2, 4, 8, 16, 32, \ldots\)</li>
+              <li>\(13, 9, 5, 1, -3, \ldots\)</li>
+              <li>\(6, 3, \dfrac{6}{4}, \dfrac{6}{8}, \dfrac{6}{16}\)</li>
+            </ol>
+            <p>geometriska?</p>
+            <h4>Lösning</h4>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>Ja, eftersom \(\dfrac{4}{2}= 2\), \(\dfrac{8}{4}= 2\), \(\dfrac{16}{8}= 2\), osv.</li>  	<li>Nej, \(\dfrac{13}{9}\not= \dfrac{9}{5} \not=\dfrac{5}{1}\). Den är aritmetisk, minskar varje steg med \(-4\).</li>
+              <li>Ja, eftersom \(\dfrac{3}{6} = \dfrac{1}{2}\), \(\dfrac{\frac{6}{4}}{3} = \dfrac{1}{2}\), osv.</li>
+            </ol>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Visa att talföljden som bestäms av \(a_n = (\dfrac{1}{2})^{n-1}, n=1,2,3,\ldots\) är geometrisk.</p>
+            <h4>Lösning</h4>
+            <p>Vi får följande talföljd</p>
+            <p>\(a_1 = (\dfrac{1}{2})^{1-1}=1\)</p>
+            <p>\(a_2 =(\dfrac{1}{2})^{2-1}=\dfrac{1}{2}\)</p>
+            <p>\(a_3 =(\dfrac{1}{2})^{3-1}=\dfrac{1}{4}\)</p>
+            <p>\(a_4 =(\dfrac{1}{2})^{4-1}=\dfrac{1}{8}\).</p>
+            <p>Vi märker att förhållandet mellan värdeminskningen är konstant,</p>
+            <p>\(\dfrac{1}{2}/1 = \dfrac{1}{2}\),</p>
+            <p>\(\dfrac{1}{4}/\dfrac{1}{2} = \dfrac{1}{2}\)</p>
+            <p>\(\dfrac{1}{8}/\dfrac{1}{4} = \dfrac{1}{2}\).</p>
+            <p>Allmänt får vi att \((\dfrac{1}{2})^{(n+1)-1} / (\dfrac{1}{2})^{n-1} = \dfrac{1}{2^n} \cdot \dfrac{2^{n-1}}{1}=\dfrac{2^{n-1}}{2^n} = 2^{(n-1)-n} = 2^{-1} = \dfrac{1}{2}\). Kvoten mellan två element är \(\dfrac{1}{2}\).</p>
+            <p>Eftersom kvoten mellan två element är konstant talar vi om en geometrisk talföljd.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Visa att talföljden \(a_n= 300, 60, 12, \ldots\) är geometrisk genom att allmänt bestämma kvoten. Bestäm även det 20:e elementet.</p>
+            <h4>Lösning</h4>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/370902332" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> En geometrisk talföljd bestäms som \(10, \dfrac{1}{2}\cdot 10, \dfrac{1}{4}\cdot 10,\ldots\). Hur många element har ett värde som är större än 1?</p>       <h4>Lösning</h4>
+            <p>Vi har \(a_1=10\) och \(q=\dfrac{1}{2}\). Vi får olikheten</p>
+            <p>\(\begin{array}{rcl}
+              a_n=10 \cdot (\frac{1}{2})^{n-1}  & > &  1 \\
+              (\frac{1}{2})^{n-1}  & > &  \frac{1}{10} \\
+              n-1  & > &  \log_{\frac{1}{2}} \frac{1}{10} \\
+              n  & > &  \log_{\frac{1}{2}} \frac{1}{10} +1 \approx 4,321\ldots\\
+              \end{array}\)</p>
+              <p>Alltså 4 element.</p>
+            </div>
+            <div class="summary box">
+              <p>En geometrisk talföljd ser ut som</p>
+              <p>\(a_1 = a_1\)</p>
+              <p>\(a_2 = a_1\cdot q\)</p>
+              <p>\(a_3 = a_1\cdot q^2\)</p>
+              <p>\(a_4 = a_1\cdot q^3\)</p>
+              <p>\(a_n = a_1\cdot q^{n-1}\) där \(q\) är kvoten mellan två element.</p>
+              <p>För att en geometrisk talföljd gäller att kvoten mellan två element är konstant, \(\dfrac{a^{n+1}}{a_n}=q\).</p>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Vad gör en talföljd till geometrisk?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> Kvoten mellan två element är konstant. Det betyder att förhållandet mellan två element som är efter varandra har samma värde. </div></div>
+          </li>
+
+          <li>Bestäm de 4 första elementen för den geometriska talföljden \(a_n=2^n\) då \(n=1,2,3,\ldots\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"><p>\( a_1 = 2, a_2 = 4, a_3 = 8 \) och \( a_4=16 \).</p> </div></div>
+              <ol>
+                <li>Visa att talföljden är geometrisk genom att bilda kvoten \(\dfrac{a^{n+1}}{a^n}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2a">
+                <div class="card card-body answer"><p>\(\dfrac{a^{n+1}}{a^n} = \dfrac{2^{n+1}}{2^n}=2^{n+1-n}=2^1=2\).</p> </div></div> </li>
+              </ol>
+          </li>
+
+          <li>Bestäm de 4 första elementen för den geometriska talföljden \(a_n=(\dfrac{1}{3})^n\) då \(n=0,1,2,3,\ldots\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\( a_0 = 1, a_1 = \dfrac{1}{3}, a_2 = \dfrac{1}{9} \) och \( a_3= \dfrac{1}{27} \).</p> </div></div>
+              <ol>
+                <li>Visa att talföljden är geometrisk genom att bilda kvoten \(\dfrac{a^{n+1}}{a^n}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="3a">
+                <div class="card card-body answer"><p id="u15edhajyns">\(\dfrac{a^{n+1}}{a^n} = \dfrac{\frac{1}{3}^{n+1}}{\frac{1}{3}^n}=\frac{1}{3}^{n+1-n}=\frac{1}{3}^1=\frac{1}{3}\).</p> </div></div> </li>
+              </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ge exempel på en geometrisk talföljd som</p>    <ol start="1" style="list-style-type:lower-alpha">  	<li>är växande och</li>  	<li>är avtagande.</li>  </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Rita den på GeoGebra och se hur den beter sig. En kvot över 1 ger en växande, en kvot mellan 0 och 1 ger en avtagande.</div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Är talföljden som bestäms på följande sätt geometrisk? Motivera!
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="5t">
+            <div class="card card-body hint"><p>Bilda \(\dfrac{a_{n+1}}{a_n}\).</p> </div></div>
+            <ol>
+              <li>\(a_n = \dfrac{1}{2}\cdot 2^n\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Vi bildar \(\dfrac{a_{n+1}}{a_n} = \dfrac{\frac{1}{2}\cdot 2^{n+1}}{\frac{1}{2}\cdot 2^n} = 2^{n+1-n}=2\).</p>    <p>Den är geometrisk.</p> </div></div> </li>
+              <li>\(a_n = n^2 \cdot n\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>OBS! \(n^2\cdot n = n^3\).</p>    <p>Vi bildar \(\dfrac{a_{n+1}}{a_n} = \dfrac{(n+1)^3}{n^3} = \dfrac{n^3+3n^2 +3n+1}{n^3}\) som vi inte kan förenkla.</p>    <p>Ingen kvot, talföljden är inte geometrisk.</p> </div></div> </li>
+              <li>\(a_n=3\cdot (\dfrac{1}{2})^{n-1}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Vi får \(\dfrac{a_{n+1}}{a_n} = \dfrac{3\cdot \frac{1}{2}^{n+1-1}}{3\cdot \frac{1}{2}^{n+1}} = \dfrac{\frac{1}{2}^{n}}{\frac{1}{2}^{n+1}} = \dfrac{1}{2}^{n-(n+1)}=\dfrac{1}{2}^{-1}=2\).</p>    <p>Vi har en geometrisk talföljd.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Hur många element av den geometriska talföljden \(1,2,4,8,\ldots\) har ett värde mindre än 10 000?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\(a_1 = 1 = 2^0\)</p>    <p>\(a_2 = 2 = 2^1\)</p>    <p>\(a_3 = 4 = 2^2\)</p>    <p>\(a_4 = 8 = 2^3\)</p>    <p>\(a_n = 2^{n-1}\).</p>    <p>Olikheten är \(2^{n-1} < 10000\) som ger \(n  <  14,29\).</p> </div></div>
+          </li>
+
+          <li><p><i class="fas fa-cogs fa-2x level"></i>En person har en årslön på 38 000. Bestäm årslönen om 4 år då den höjs med a) 100 € och b) 4,0 % årligen. Hurdana talföljder har vi?</p>
+            <table>
+              <tr><th>Påstående</th><th>Aritmetisk talföljd</th><th>Geometrisk talföljd</th></tr>
+              <tr><td>100 € per år</td><td></td><td></td></tr>
+              <tr><td>4 % varje år</td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7c">
+            <div class="card card-body answer">
+              <table>
+                <tr><th>Påstående</th><th>Aritmetisk talföljd</th><th>Geometrisk talföljd</th></tr>
+                <tr><td>100 € per år</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>4 % varje år</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              </table>
+            </div></div>
+            <ol>
+              <li>Lönen efter 4 år då påöket är 100 € per år. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>\(a_n = 38000 + n\cdot 100\).</p>    <p>\(a_4 = 38000 + 4 \cdot 100 = 38400\).</p><p>Alltså 38 400 €.</p> </div></div> </li>
+              <li>Lönen efter 4 år då påöket är 4 % per år. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>\(a_n = 38000(1,04)^n\)</p>    <p>\(a_4 = 38000(1,04)^4 = 44454,625\)</p><p>Alltså 44 455 €.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><p><i class="fas fa-jedi fa-2x level"></i>Genom att halvera sidan på en kvadrat och rita linjer mellan halveringspunkterna får vi en ny kvadrat i en större kvadrat. För kvadraternas areor får vi en geometrisk talföljd.</p>    <p>Hur mångte kvadraten har en area som är mindre än en miljontedel av den ursprungliga?</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="8t">
+            <div class="card card-body hint"> <p><img src="pics/18-2.png" class="responsivepic300" /></p>    <p id="h2lnio192c5">Hur långa blir sidorna i de mindre kvadraterna?</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi får följande tabell:</p>    <p>\(\begin{array}{cll}  \text{Kvadrat nummer}  &  \text{Sida}  &  \text{Area} \\  1  &  a  &  a^2 \\  2  &  a\cdot\dfrac{1}{2}\cdot\sqrt{2}  &  \vdots \\  3  &  (a\cdot\dfrac{1}{2}\cdot\sqrt{2})\cdot \dfrac{1}{2}\cdot\sqrt{2} = a(\dfrac{1}{2}\cdot\sqrt{2})^2 \\  4  &  (a\cdot\dfrac{1}{2}\cdot\sqrt{2}\cdot \dfrac{1}{2}\cdot\sqrt{2})\cdot \dfrac{1}{2}\cdot\sqrt{2} = a(\dfrac{1}{2}\cdot\sqrt{2})^3 \\  n  &  a(\dfrac{1}{2}\cdot\sqrt{2})^{n-1}  &  (a(\dfrac{1}{2}\cdot\sqrt{2})^{n-1})^2 \\  \end{array}\)</p>
+                <p>Vi får olikheten \((a(\dfrac{1}{2}\cdot\sqrt{2})^{n-1})^2  <  \dfrac{1}{1000000}\cdot a^2\) som har lösningen \(n>20,93\).</p>
+                <p>Den 21:a kvadraten uppfyller villkoret.</p> </div></div>
+          </li>
+
+          </ol>
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="17_aritmetisk.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="19_aritmetisk_summa.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

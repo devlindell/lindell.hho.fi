@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. Grafen av en funktion</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_funktioner.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="9_funktionsvarden.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. Grafen av en funktion</h1>
+      <section>
+        <div class="theory">
+          <p>Då vi beräknar värden för funktioner för flera invärden, \(x\), ger de ut utvärden, \(y\). Dessa samband kan vi samla i en tabell. Tabellen ger oss talpar, \((x,y)\), som uppfyller funktionens ekvation. De talpar, punkter, som uppfyller funktionens ekvation bildar funktionens graf.</p>
+          <div class="intro box">
+            <p>Vi studerar funktionen \(y=2x-1\). För att rita grafen av den i ett koordinatsystem behöver vi räkna ut några punkter.</p>
+          </div>
+          <table>
+            <tbody>
+              <tr><td>\(x\)</td><td>\(y=2x-1\)</td></tr>
+              <tr><td>\(-1\)</td><td>\(2\cdot( -1) -1 = -3\)</td></tr>
+              <tr><td>\(0\)</td><td>\(2\cdot 0 -1 = -1\)</td></tr>
+              <tr><td>\(1\)</td><td>\(2\cdot 1 -1 = 1\)</td></tr>
+              <tr><td>\(2\)</td><td>\(2\cdot 2 -1 = 3\)</td></tr>
+              <tr><td>\(3\)</td><td>\(2\cdot 3 -1 = 5\)</td></tr>
+            </tbody>
+          </table>
+          <p>Grafen av funktionen ser ut som följande:</p>
+          <p><img src="pics/funktion_8_1.png" class="responsivepic400" /></p>
+          <p>Vi ser att \(y\) alltid är två gånger \(x\) minus ett, \(2x-1\). De tal som vi kan sätta in i funktionen bildar funktionens definitionsmängd. Dessa finner vi på \(x\)-axeln. De tal som kommer ut ur funktionen bildar funktionens värdemängd och dessa finner vi på \(y\)-axeln.</p>
+          <p>En funktion ger oss ett samband mellan definitionsmängd och värdemängd. Funktioner betecknas ofta med \(f\), och vill vi berätta om vad som händer i funktionen, skriver vi \(f(x)=2x-1\).</p>
+          <div class="exercise box">
+            <p>Bestäm defintionsmängd och värdemängd för följande funktioner:</p>
+            <p><img src="pics/funktion_8_2.png" class="responsivepic400" /></p>
+            <div class="video">
+              <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Xhi9kdDgV38" width="420"></iframe>
+            </div>
+          </div>
+          <p>För det skall vara frågan om en funktion får inte ett element från definitionsmängden tilldelas två olika värden i värdemängden. Man talar om att sambandet mellan definitionsmängd och värdemängd skall vara entydigt. Dock går det bra att ett element i värdemängden får sitt värde från två olika element i definitionsmängden, något som inträffar med t.ex. funktionen \(f(x)=x^2\).</p>
+          <div class="summary box">
+            <h3>Grafen för en funktion på papper</h3>
+            <ol>
+              <li>Gör en tabell av värdena för funktionen.</li>
+              <li>Bilda talpar: \((x,y)\).</li>
+              <li>Placera ut punkterna i ett koordinatsystem.</li>
+              <li>Sammanbind punkterna till en graf. Använd dig av din konstnärliga hand. Funktioner som byter riktning är inte vassa.</li>
+            </ol>
+          </div>
+          <div class="summary box">
+            <h3>Grafen av en funktion på GeoGebra</h3>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/367830780" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Vilka av följande grafer representerar funktioner?</p>
+            <table>
+              <tr><th></th><th>Grafen representerar en funktion.</th><th>Grafen representerar inte en funktion.</th></tr>
+                <tr><td><img src="pics/funktion_uppg1a.png" class="responsivepic250" /><td></td><td></td></tr>
+                <tr><td><img src="pics/funktion_uppg1b.png" class="responsivepic250" /><td></td><td></td></tr>
+                <tr><td><img src="pics/funktion_uppg1c.png" class="responsivepic250" /><td></td><td></td></tr>
+                <tr><td><img src="pics/funktion_uppg1d.png" class="responsivepic250" /><td></td><td></td></tr>
+                <tr><td><img src="pics/funktion_uppg1e.png" class="responsivepic250" /><td></td><td></td></tr>
+                <tr><td><img src="pics/funktion_uppg1f.png" class="responsivepic250" /><td></td><td></td></tr>
+              </table>
+
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th></th><th>Grafen representerar en funktion.</th><th>Grafen representerar inte en funktion.</th></tr>
+                    <tr><td><img src="pics/funktion_uppg1a.png" class="responsivepic250" /><td></td><td><i class="fas fa-check"></i></td></tr>
+                    <tr><td><img src="pics/funktion_uppg1b.png" class="responsivepic250" /><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td><img src="pics/funktion_uppg1c.png" class="responsivepic250" /><td></td><td><i class="fas fa-check"></i></td></tr>
+                    <tr><td><img src="pics/funktion_uppg1d.png" class="responsivepic250" /><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td><img src="pics/funktion_uppg1e.png" class="responsivepic250" /><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td><img src="pics/funktion_uppg1f.png" class="responsivepic250" /><td><i class="fas fa-check"></i></td><td></td></tr>
+                  </table>
+
+               </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=3x-3\) i ett koordinatsystem på papper genom att antingen gå via en tabell eller annan metod.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+                <p>Vi bestämmer ett par punkter på grafen:</p>
+                <table>
+                  <tbody>
+                    <tr><td>\(x\)</td><td>\(y=3x-3\)</td></tr>
+                    <tr><td>\(0\)</td><td>\(3\cdot 0 - 3 = -3\)</td></tr>
+                    <tr><td>\(1\)</td><td>\(3\cdot 1 - 3 = 3-3 = 0\)</td></tr>
+                    <tr><td>\(2\)</td><td>\(3\cdot 2 -3 = 6-3 = 3\)</td></tr>
+                  </tbody>
+                </table>
+                <p><img src="pics/funktion_uppg2.png" class="responsivepic250" /></p>
+               </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=-x+2\) i ett koordinatsystem på papper genom att antingen gå via en tabell eller annan metod.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> Lösningen </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=2x-1\) på GeoGebra.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p><img src="pics/funktion_4_1.png" class="responsivepic600" /></p> </div></div> </li>
+
+         <li>Rita grafen av funktionen \(f(x)=\dfrac{1}{2}x+2\) på GeoGebra.
+             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+             <div class="collapse" id="5">
+             <div class="card card-body answer"> <p><img src="pics/funktion_4_2.png" class="responsivepic600" /></p> </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=3x^2-x-1\) och \(g(x)=-x+2\) i samma koordinatsystem på GeoGebra.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"> <p><img src="pics/funktion_4_3.png" class="responsivepic600" /></p> </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=\mid x-1 \mid\) på GeoGebra. Absolutbelopp får du med hjälp av abs( ).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7">
+            <div class="card card-body answer"> <p><img src="pics/funktion_4_4.png" class="responsivepic600" /></p> </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=\sqrt{x+1}\) på GeoGebra. Kvadratroten får du med sqrt( ).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8">
+            <div class="card card-body answer"> <p><img src="pics/funktion_4_5.png" class="responsivepic600" /></p> </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=\dfrac{1}{2}x+2\) i intervallet \([-1,4]\) på GeoGebra.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="9t">
+            <div class="card card-body answer"> Då du i Inmatningsfältet skriver Funktion får du fram Funktion( < Funktion >  ,  < Från x-värde >  ,  < Till x-värde >  ). Använd dig av denna. </div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9">
+            <div class="card card-body answer"> <p><img src="pics/funktion_4_6.png" class="responsivepic600" /></p> </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=x^2-x\) i intervallet \([-2,1]\) på GeoGebra.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="10t">
+            <div class="card card-body answer"> Då du i Inmatningsfältet skriver Funktion får du fram Funktion( < Funktion >  ,  < Från x-värde >  ,  < Till x-värde >  ). Använd dig av denna. </div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10">
+            <div class="card card-body answer"> <p><img src="pics/funktion_4_7.png" class="responsivepic600" /></p> </div></div> </li>
+
+          <li><p>Rita graferna på GeoGebra av följande funktioner och kombinera rätt bild med rätt uttryck.</p>
+            <p>Välj bland följande uttryck: \(f(x) = x\), \(f(x) = \mid x \mid\), \(f(x) = x^2\), \(f(x)=\sqrt{x}\), \(f(x)=\dfrac{1}{x}\) och \(f(x) = x^3\).</p>
+            <table>
+              <tr><td></td><td>Uttryck</td></tr>
+              <tr><td><img src="pics/funktion_uppg11a.png" class="responsivepic100" /></td><td></td></tr>
+              <tr><td><img src="pics/funktion_uppg11b.png" class="responsivepic100" /></td><td></td></tr>
+              <tr><td><img src="pics/funktion_uppg11c.png" class="responsivepic100" /></td><td></td></tr>
+              <tr><td><img src="pics/funktion_uppg11d.png" class="responsivepic100" /></td><td></td></tr>
+              <tr><td><img src="pics/funktion_uppg11e.png" class="responsivepic100" /></td><td></td></tr>
+              <tr><td><img src="pics/funktion_uppg11f.png" class="responsivepic100" /></td><td></td></tr></table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="11">
+            <div class="card card-body answer">
+              <table><tr><th>Korrekt svar</th><th></th></tr>
+                <tr><td><img src="pics/funktion_uppg11a.png" class="responsivepic100" /></td><td>\(f(x) = x\)</td></tr>
+                <tr><td><img src="pics/funktion_uppg11b.png" class="responsivepic100" /></td><td>\(f(x) = x^2\)</td></tr>
+                <tr><td><img src="pics/funktion_uppg11c.png" class="responsivepic100" /></td><td>\(f(x) = \mid x \mid\)</td></tr>
+                <tr><td><img src="pics/funktion_uppg11d.png" class="responsivepic100" /></td><td>\(f(x)=\dfrac{1}{x}\)</td></tr>
+                <tr><td><img src="pics/funktion_uppg11e.png" class="responsivepic100" /></td><td>\(f(x) = x^3\)</td></tr>
+                <tr><td><img src="pics/funktion_uppg11f.png" class="responsivepic100" /></td><td>\(f(x)=\sqrt{x}\)</td></tr></table>
+             </div></div> </li>
+
+          <li>Rita grafen av funktionen \(f(x)=\dfrac{1}{2}x^2-2x-2\) i ett koordinatsystem.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="12">
+            <div class="card card-body answer"> <p><img src="pics/paraabeli%20funktion%20kuvaaja.png" class="responsivepic400" /></p> </div></div> </li>
+
+          <li><p>Bestäm om följande relationer är funktioner. Om de är funktioner, bestäm också definitionsmängd och värdemängd.</p>
+            <table>
+              <tr><th>Påstående</th><th><img src="pics/uppg3_1.png" class="responsivepic250" /></th><th><img src="pics/uppg3_2.png" class="responsivepic250" /></th><th><img src="pics/uppg3_3.png" class="responsivepic250" /></th><th><img src="pics/uppg3_4.png" class="responsivepic250" /></th><th><img src="pics/uppg3_5.png" class="responsivepic250" /></th><th><img src="pics/uppg3_6.png" class="responsivepic250" /></th></tr>
+              <tr><td>Funktion</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>Inte funktion</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="13">
+            <div class="card card-body answer">
+              <table>
+                <tr><th>Påstående</th><th><img src="pics/uppg3_1.png" class="responsivepic250" /></th><th><img src="pics/uppg3_2.png" class="responsivepic250" /></th><th><img src="pics/uppg3_3.png" class="responsivepic250" /></th><th><img src="pics/uppg3_4.png" class="responsivepic250" /></th><th><img src="pics/uppg3_5.png" class="responsivepic250" /></th><th><img src="pics/uppg3_6.png" class="responsivepic250" /></th></tr>
+                <tr><td>Funktion</td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>Inte funktion</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td></tr>
+              </table>
+              <ol start="1" style="list-style-type:lower-alpha">
+                <li>Funktion. Definitionsmängd: \(\mathbb{R}\), värdemängd: \([-1,\infty[\).</li>
+                <li>Funktion. Definitionsmängd: \(\mathbb{R}\), värdemängd: \([-1,1]\).</li>
+                <li>Inte funktion, består av två funktioner.</li>
+                <li>Funktion. Definitionsmängd: \([-1,\infty[\), värdemängd: \([0,\infty[\).</li>
+                <li>Inte funktion, består av två funktioner.</li>
+                <li>Inte funktion, består av flera funktioner.</li>
+              </ol>
+             </div></div> </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="7_funktioner.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_funktionsvarden.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

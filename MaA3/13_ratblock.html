@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>13. Rätblock</title>
+
+  </head>
+  <body>
+    <header class="MaA3">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_intro.html">1. Introduktion</a>
+            <a class="dropdown-item" href="2_likformighet.html">2. Likformighet</a>
+            <a class="dropdown-item" href="3_likformighet_areor.html">3. Likformighet och areor</a>
+            <a class="dropdown-item" href="4_triangeln.html">4. Triangeln</a>
+            <a class="dropdown-item" href="5_pythagoras.html">5. Pythagoras sats</a>
+            <a class="dropdown-item" href="6_trigonometri.html">6. Trigonometri i en rätvinklig triangel</a>
+            <a class="dropdown-item" href="7_sinussatsen.html">7. Sinussatsen</a>
+            <a class="dropdown-item" href="8_cosinussatsen.html">8. Cosinussatsen</a>
+            <a class="dropdown-item" href="9_fyrhorningen.html">9. Fyrhörningen</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_tangenten_cirkeln.html">11. Tangenter för cirkeln</a>
+            <a class="dropdown-item" href="12_bagvinkeln.html">12. Bågvinkeln</a>
+            <a class="dropdown-item" href="13_ratblock.html">13. Rätblock</a>
+            <a class="dropdown-item" href="14_kuben.html">14. Kuben</a>
+            <a class="dropdown-item" href="15_prismat.html">15. Prismat</a>
+            <a class="dropdown-item" href="16_pyramid.html">16. Pyramid</a>
+            <a class="dropdown-item" href="17_kon.html">17. Konen</a>
+            <a class="dropdown-item" href="18_sfar.html">18. Sfären</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="12_bagvinkeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 3 Geometri</h3>
+      <a href="14_kuben.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>13. Rätblock</h1>
+      <section>
+        <div class="theory">
+          <p>Som det sista för kursen tar vi ännu och ser på 3 dimensionella kroppar. Kroppar som har längd, bredd och höjd.</p>
+          <p>Volymen för ett rätblock är längden gånger bredden gånger höjden för rätblocket. Ytan för rätblocket får vi om vi adderar ihop arean för alla sidor.</p>
+          <p>\( V=abc \)</p>
+          <p>\( A=2(ab+bc+ac) \)</p>
+          <p><img src="pics/13_1.png" alt="" class="responsivepic400" /></p>
+          <p>Rymddiagonalen för ett rätblock får vi som \( d=\sqrt{a^2+b^2+c^2}. \)</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Ett klassrum är 10,0 m långt, 5,0 meter brett och 4,0 meter högt.</p>
+            <ol style="list-style-type:lower-alpha">
+              <li>Bestäm volymen för rummet.</li>
+              <li>Bestäm rymddiagonalen för rummet.</li>
+              <li>Hur stor area utgör väggarna?</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol style="list-style-type:lower-alpha">
+              <li>Volymen för rummet är \( V = abc=10 \cdot 5 \cdot 4 = 200 \textrm{ m}^3 \).</li>
+              <li>Rymddiagonalen för rummet är \( d  =  \sqrt{a^2+b^2+c^2} = \sqrt{10^2+5^2+4^2} = \sqrt{141} \approx 11,9 \textrm{ m} \).</li>
+              <li>Väggarnas totala area är \( A = 2 \cdot 10 \cdot 4 + 2 \cdot 5 \cdot 4 = 120 \textrm{ m}^2 \).</li>
+            </ol>
+          </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Ett rätblock förstoras så att längden av sidorna blir 3 gånger längre. Hur mycket större blir volymen? Hur mycket ökar volymen om vi förstorar rätblocket 9 gånger?</p>
+              <h4>Lösning</h4>
+              <p>Den nya kroppen består av \( 27 =3^3 \) st rätblock. Ökar vi sidorna för rätblocket 9 gånger ökar volymen \( 9^3 = 729 \).</p>
+              <p><img src="pics/13_2.png" alt="" class="responsivepic400" /></p>
+            </div>
+            </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Ordna längderna, areorna och volymerna i rätt ordning så att den största prefixet kommer överst.
+            <ol>
+              <li>Välj bland följande:
+                <div class="grid-container">
+                  <div class="grid-item">cm</div>
+                  <div class="grid-item">dam</div>
+                  <div class="grid-item">dm</div>
+                  <div class="grid-item">hm</div>
+                  <div class="grid-item">km</div>
+                  <div class="grid-item">m</div>
+                  <div class="grid-item">mm</div>
+                </div>
+                <table>
+                  <tr><td></td><td>1. </td></tr>
+                  <tr><td></td><td>2. </td></tr>
+                  <tr><td></td><td>3. </td></tr>
+                  <tr><td></td><td>4. </td></tr>
+                  <tr><td></td><td>5. </td></tr>
+                  <tr><td></td><td>6. </td></tr>
+                  <tr><td></td><td>7. </td></tr>
+                </table>
+
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th>Korrekt svar</th><th></th></tr>
+                  <tr><td>km </td><td>1. </td></tr>
+                  <tr><td>hm </td><td>2. </td></tr>
+                  <tr><td>dam </td><td>3. </td></tr>
+                  <tr><td>m </td><td>4. </td></tr>
+                  <tr><td>dm </td><td>5. </td></tr>
+                  <tr><td>cm </td><td>6. </td></tr>
+                  <tr><td>mm </td><td>7. </td></tr>
+                </table>
+               </div></div> </li>
+              <li>Välj bland följande:
+                <div class="grid-container">
+                  <div class="grid-item">ar</div>
+                  <div class="grid-item">cm<sup>2</sup></div>
+                  <div class="grid-item">dm<sup>2</sup></div>
+                  <div class="grid-item">hektar</div>
+                  <div class="grid-item">km<sup>2</sup></div>
+                  <div class="grid-item">m<sup>2</sup></div>
+                  <div class="grid-item">mm<sup>2</sup></div>
+                </div>
+                <table>
+                  <tr><td></td><td>1. </td></tr>
+                  <tr><td></td><td>2. </td></tr>
+                  <tr><td></td><td>3. </td></tr>
+                  <tr><td></td><td>4. </td></tr>
+                  <tr><td></td><td>5. </td></tr>
+                  <tr><td></td><td>6. </td></tr>
+                  <tr><td></td><td>7. </td></tr>
+                </table> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><table>
+                <tr><th>Korrekt svar</th><th></th></tr>
+                <tr><td> km<sup>2</sup> </td><td>1. </td></tr>
+                <tr><td>hektar </td><td>2. </td></tr>
+                <tr><td>ar </td><td>3. </td></tr>
+                <tr><td> m<sup>2</sup> </td><td>4. </td></tr>
+                <tr><td> dm<sup>2</sup> </td><td>5. </td></tr>
+                <tr><td> cm<sup>2</sup> </td><td>6. </td></tr>
+                <tr><td> mm<sup>2</sup> </td><td>7. </td></tr>
+              </table> </div></div> </li>
+              <li>Välj bland följande:
+                <div class="grid-container">
+                  <div class="grid-item">cm<sup>3</sup></div>
+                  <div class="grid-item">dam<sup>3</sup></div>
+                  <div class="grid-item">dm<sup>3</sup></div>
+                  <div class="grid-item">hm<sup>3</sup></div>
+                  <div class="grid-item">km<sup>3</sup></div>
+                  <div class="grid-item">m<sup>3</sup></div>
+                  <div class="grid-item">mm<sup>3</sup></div>
+                </div>
+                <table>
+                  <tr><td></td><td>1. </td></tr>
+                  <tr><td></td><td>2. </td></tr>
+                  <tr><td></td><td>3. </td></tr>
+                  <tr><td></td><td>4. </td></tr>
+                  <tr><td></td><td>5. </td></tr>
+                  <tr><td></td><td>6. </td></tr>
+                  <tr><td></td><td>7. </td></tr>
+                </table> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th>Korrekt svar</th><th></th></tr>
+                  <tr><td> km<sup>3</sup> </td><td>1. </td></tr>
+                  <tr><td> hm<sup>3</sup> </td><td>2. </td></tr>
+                  <tr><td> dam<sup>3</sup> </td><td>3. </td></tr>
+                  <tr><td> m<sup>3</sup> </td><td>4. </td></tr>
+                  <tr><td> dm<sup>3</sup> </td><td>5. </td></tr>
+                  <tr><td> cm<sup>3</sup> </td><td>6. </td></tr>
+                  <tr><td> mm<sup>3</sup> </td><td>7. </td></tr>
+                </table>
+               </div></div> </li>
+            </ol>
+          </li>
+
+          <li><p>Välj rätt samband mellan rymdmåtten. </p>
+            <table><tr><th>Påstående</th><th><p>1000 liter </th><th><p>10 liter </th><th><p>1 liter </th><th>1 dl </th><th>10 ml </th><th>1 ml </th></tr>
+              <tr><td>1 m<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>1 dm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>1 cm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>10 dm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>0,1 dm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>10 cm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>0,01 m<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>0,001 m<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>1000 cm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer">
+              <table><tr><th>Påstående</th><th><p>1000 liter </th><th><p>10 liter </th><th><p>1 liter </th><th>1 dl </th><th>10 ml </th><th>1 ml </th></tr>
+                <tr><td>1 m<sup>3</sup> </td><i class="fas fa-check"></i><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>1 dm<sup>3</sup> </td><td></td><td></td><i class="fas fa-check"></i><td></td><td></td><td></td></tr>
+                <tr><td>1 cm<sup>3</sup> </td><td></td><td></td><td></td><td></td><td></td><i class="fas fa-check"></i></tr>
+                <tr><td>10 dm<sup>3</sup> </td><td></td><i class="fas fa-check"></i><td></td><td></td><td></td><td></td></tr>
+                <tr><td>0,1 dm<sup>3</sup> </td><td></td><td></td><td></td><i class="fas fa-check"></i><td></td><td></td></tr>
+                <tr><td>10 cm<sup>3</sup> </td><td></td><td></td><td></td><td></td><i class="fas fa-check"></i><td></td></tr>
+                <tr><td>0,01 m<sup>3</sup> </td><td></td><i class="fas fa-check"></i><td></td><td></td><td></td><td></td></tr>
+                <tr><td>0,001 m<sup>3</sup> </td><td></td><td></td><i class="fas fa-check"></i><td></td><td></td><td></td></tr>
+                <tr><td>1000 cm<sup>3</sup> </td><td></td><td></td><i class="fas fa-check"></i><td></td><td></td><td></td></tr>
+              </table>
+             </div></div>
+          </li>
+
+
+
+          <li><p>Bestäm volymen och den totala arean för ytan av figuren nedan.</p>
+            <p><img src="pics/13_3.png" alt="" class="responsivepic400" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer">
+                <p>Volymen är \( 3,0 \cdot 4,0 \cdot 7,0 = 84,0 \) cm<sup>3</sup>.</p>
+                <p>Totala arean är \( A = 2(3,0 \cdot 4,0 + 3,0\cdot 7,0 + 4,0\cdot 7,0) = 122 \) cm<sup>2</sup>.</p>
+               </div></div>
+          </li>
+
+          <li>En låda är 30 cm bred och höjden är 20 cm. Bestäm längden för lådan då volymen är 30 liter.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi får ekvationen \( 3 \cdot 2 \cdot l = 30 \) som har lösningen \( l=5 \) dm.</p> </div></div>
+          </li>
+
+          <li>När man arbetar med geometri i 3 dimensioner kan det hjälpa att man skapar en bra bild som hjälper på vägen. I GeoGebra finns en funktion för att rita i 3 dimensioner.</p>
+            <p>Öppna GeoGebra och plocka fram Ritområde 3D.</p>
+            <p>Bekanta dig med verktygen och med hur du roterar arbetsytan.</p>
+            <ol>
+              <li>Skapa en kub med sidan 3.</li>
+              <li>Skapa ett prisa som inte är vinkelrätt mot bottenytan.</li>
+              <li>Skapa en kon som placeras på kuben.</li>
+              <li>Pricka in rymddiagonalen för kuben.</li>
+              <li>Ändra vyn så att man lätt förstår vad du gjort.</li>
+            </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer">
+                <p>Någonting i stil med</p>
+                <p><img src="pics/13_4.png" alt="" class="responsivepic600" /></p>
+               </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Ett rum är 2,5 m högt, 4,5 m långt och 4,0 m brett. Till rummet kommer man genom en dörr som är 2,1 m hög och 0,6 m bred och på ena väggen är ett fönster som är 1,5 m brett och 1,8 m högt. Hur många liter målfärg går det åt då en målare skall måla väggarna 2 gånger och åtgången för målfärg är 10-12 m<sup>2</sup>/l?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer">
+                <p>Den totala arean är \( 2(4,5 \text{ m} \cdot 2,5 \text{ m}) + 2(4,0\text{ m} \cdot 2,5 \text{ m}) - (2,1 \text{ m} \cdot 0,6 \text{ m} + 1,5 \text{ m} \cdot 1,8 \text{ m}) = 38,54 \text{ m}^2 \).</p>
+                <p>Eftesom den totala arean är 38,54 m<sup>2</sup> behöver vi målfärg för 77,08 m<sup>2</sup>.</p>
+                <p>10 m<sup>2</sup>/liter ger 7,7 l och 12 m<sup>2</sup>/liter ger 6,4 liter. Det är bättre att ha för mycket målfärg än för litet, därför svar kring 8 liter.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Volymen för en låda är 9 liter. Bestäm längderna för sidorna då förhållandet mellan sidorna är 1:2:3.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi betecknar den kortaste sidan med \( a \). Då är de andra \( 2a \) och \( 3a \).</p>
+              <p>Vi får uttrycket \( 9 = a \cdot 2a \cdot 3a \).</p>
+              <p>Kortaste är 11,4 cm, mellersta 22,9 cm och den längsta är 34,3 cm.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Hur hög bör en låda vara om man vill få en pinne som är 80,0 cm lång att rymmas i lådan då bottnet är 60,0 cm x 50,0 cm?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Rymddiagonalen bestäms via \( d = \sqrt{a^2+b^2+c^2} \). Ekvationen blir \( 8 = \sqrt{6^2 +5^2+ c^2} \) som har lösningen \( c= \sqrt{3} \text{ dm} = 17,3205\ldots \text{ cm} \).</p>
+                <p>Alltså 17,3 cm.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>I en miniatyrmodell av ett hus är huset 40,0 cm långt. I verkligheten blir huset 15,0 m långt.
+            <ol>
+              <li>Hur många m<sup>2</sup> är vardagsrummet i verkligheten då det i miniatyren är 320 cm<sup>2</sup>.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Vi får förhållandet \( (\dfrac{150 \text{ dm}}{4 \text{ dm}})^2 = \dfrac{x}{3,2 \text{ dm}^2} \) som har lösningen \( x=4500 \text{ dm}^2 = 45 \text{ m}^2 \).</p> </div></div> </li>
+              <li>Bestäm volymen för bastun i modellen då bastun i verkligheten är 18,8 m<sup>3</sup> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Vi bildar förhållandet \( (\dfrac{4 \text{ dm}}{150 \text{ dm}})^3 = \dfrac{x}{18800 \text{dm}^3} \) som har lösningen \( x=0,3565\ldots \text{ dm}^3 = 360 \text{ cm}^3 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm volymen och rymddiagonalen för ett valfritt utrymme. Hur stor blir volymen om du gör en miniatyrmodell av rummet där längden av sidorna är 1/13-del?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA3">
+      <a href="12_bagvinkeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="14_kuben.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+Färgskala
+Header och footer per kurs
+
+En ljus för bakgrund #F0F0F0
+En grön för facit och sammandrag #83A38C
+En beige för bakrund för teori #F8E7DF eller #BDBDBD eller #F2F2DA
+En blå för mellansvåra uppgifter #7DCDFF
+Svart för text. #000000
+Hur markerar du svårare uppgifter? #CC3B3B
+Rubriker? #939DA3
+
+En gul som passar som länkar in #FFFD63
+
+Algebra
+Geometri
+Analys
+Sannolikhet
+Fördjupning
+Repetition
+
+
+Facit för uppgifter
+
+https://getbootstrap.com/docs/4.0/components/collapse/

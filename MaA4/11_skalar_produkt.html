@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Skalär produkt</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="6_geometri.html">6. Geometri med vektorer</a>
+            <a class="dropdown-item" href="7_xy-planet.html">7. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">8. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">9. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">10. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">11. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">12. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">13. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">14. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_plan_i_rymden.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="12_skalart_geometriskt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Skalär produkt</h1>
+      <section>
+        <div class="theory">
+          <p>Vi börjar med att studera när vektorerna \(\overline{a}=x_1\overline{i}+y_1\overline{j}+z_1\overline{k}\) och \(\overline{b}=x_2\overline{i}+y_2\overline{j}+z_2\overline{k}\) är vinkelräta. Vi gör det via Pythagoras sats.</p>
+          <p>Vi placerar \(\overline{a}\) och \(\overline{b}\) så att de börjar i samma punkt.</p>
+          <p><img src="pics/11-1.png" class="responsivepic600" /></p>
+          <p>Om triangeln är rätvinklig så gäller att \(\mid \overline{a}-\overline{b} \mid ^2 = \mid \overline{a}\mid ^2 +\mid \overline{b} \mid ^2\).</p>
+          <p>Vi tar och bildar dessa. \(\mid \overline{a} \mid ^2 = x_1^2 + y_1^2 + z_1^2\) och \(\mid \overline{b} \mid ^2 = x_2^2 + y_2^2 + z_2^2\).</p>
+          <p>Kvadraten av den tredje längden får vi som</p>
+          <p>\(\begin{array}{rcl}
+            \mid \overline{a}-\overline{b} \mid ^2\ & = & (x_1-x_2)^2 + (y_1-y_2)^2 + (z_1-z_2)^2 \\
+            & = & x_1^2-2x_1x_2+x_2^2 + y_1^2-2y_1y_2 + y_2^2 + z_1^2 -2z_1z_2+z_2^2 \\
+            & = & x_1^2+y_1^2+z_1^2 +x_2^2+y_2^2+z_2^2 -2x_1x_2 -2y_1y_2-2z_1z_2 \\
+            & = & \mid \overline{a} \mid ^2 + \mid \overline{b} \mid ^2 -2(x_1x_2 + y_1y_2+z_1z_2) \\
+            \end{array} \)
+          </p>
+          <p>För att \(\overline{a}\) och \(\overline{b}\) skall vara vinkelräta mot varandra så skall termen \(2(x_1x_2 + y_1y_2+z_1z_2)\) ha värdet noll.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Är vektorerna \(-\overline{i}+2\overline{j} -2\overline{k}\) och \(4\overline{i}+\overline{j} -\overline{k}\) vinkelräta mot varandra?</p>
+            <h4>Lösning</h4>
+            <p>Jo, eftersom \(-1\cdot 4 + 2\cdot 1 -2(-1)=0\).</p>
+          </div>
+          <p>Den skalära produkten mellan vektorerna \(\overline{a}=x_1\overline{i}+y_1\overline{j}+z_1\overline{k}\) och \(\overline{b}=x_2\overline{i}+y_2\overline{j}+z_2\overline{k}\) är \(x_1x_2+y_1y_2+z_1z_2\).</p>
+          <p>Den skalära produkten betecknas \(\overline{a} \cdot \overline{b}\) och utläses "a skalärt b".</p>
+          <p>Om två vektorer är vinkelräta har den skalära produkten värdet noll.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm den skalära produkten för \(\overline{a}=2\overline{i}-\overline{j}\) och \(\overline{b}= -\overline{i}+2\overline{j} -2\overline{k}\).</p>
+            <h4>Lösning</h4>
+            <p>\(\overline{a} \cdot \overline{b}=2(-1) -1\cdot 2 + 0(-2)=-4\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Bestäm \(k\) så att \(\overline{a}=3\overline{i}-2\overline{j}\) och \(\overline{b}= k\overline{i}+\overline{j}\) är vinkeräta.</p>
+            <h4>Lösning</h4>
+            <p>Vi får att \(\overline{a}\cdot \overline{b}=0\). Alltså</p>
+            <p>\(\begin{array}{rcl}
+              3k-2\cdot1  & = & 0 \\
+              3k  & = &  2 \\
+              k  &  =  &  \frac{2}{3} \\
+              \end{array}\)</p>
+            </div>
+            <p>För den skalära produkten gäller följande egenskaper:</p>
+            <table>
+              <tbody>
+                <tr><td>Kommutativ</td><td>\(\overline{a} \cdot \overline{b} = \overline{b} \cdot \overline{a}\)</td><td></td></tr>
+                <tr><td>Distributiv</td><td>\(\overline{a} \cdot (\overline{b} +\overline{c}) = \overline{a} \cdot \overline{b} +\overline{a} \cdot \overline{c}\)</td>  			<td>Om \(\overline{a}\cdot \overline{b}=2\) och \(\overline{a}\cdot \overline{c}=-4\) så är \(\overline{a}(\overline{b}+\overline{c}) = \overline{a}\cdot \overline{b} + \overline{a}\cdot \overline{c} = 2+(-4)=-2\).</td></tr>
+                <tr><td>Utflyttning av koefficienter</td><td>\((s\overline{a}) \cdot \overline{b} = \overline{a} \cdot (s\overline{b}) = s(\overline{a} \cdot \overline{b})\)</td><td>Om \(\overline{a} \cdot \overline{b} = 5\) så är \((-4\overline{a}) \cdot \overline{b} = -4(\overline{a} \cdot \overline{b}) = -4 \cdot 5 = -20\) och \(2\overline{a} \cdot (-3\overline{b}) = 2\cdot(-3)(\overline{a} \cdot \overline{b})=-6 \cdot (-5)=30\).</td></tr>
+                <tr><td>Punktprodukten</td><td>\(\overline{a}\cdot \overline{a} = \mid \overline{a} \mid^2\)</td><td>Punktprodukten av \(\overline{a}\cdot \overline{a}\) ger längden av \(\overline{a}\) i kvadrat.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm den skalära produkten för
+            <ol>
+              <li>\(3\overline{i}+\overline{j}\) och \(\overline{i}+2\overline{j}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( 3 \cdot 1 + 1 \cdot 2 = 5 \)</p> </div></div> </li>
+              <li>\(3\overline{i}-\overline{j}\) och \(-3\overline{i}+\overline{j}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( 3(-3) + -1\cdot 1 = -10\)</p> </div></div> </li>
+              <li>\(2\overline{i}\) och \(\overline{i}+2\overline{j}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1c">
+                  <div class="card card-body answer"><p>\( 2 \cdot 1 + 0 \cdot 2 = 2\)</p> </div></div> </li>
+            </ol></li>
+
+
+          <li>Är triangeln som består av vektorerna \(\overline{a}=\overline{i}-\overline{j}\), \(\overline{b}=-3\overline{i}-5\overline{j}\) och skillnaden av dessa rätvinklig?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>Ja. Vi bestämmer de skalära produkterna. Vi behöver \( \overline{c} = \overline{a}-\overline{b}= 4\overline{i} +4\overline{j}\).</p>
+                <p>\( \overline{a} \cdot \overline{b} = 1\cdot(-3)+(-1)(-5) = 2\). Dessa är inte vinkelräta.</p>
+                <p>\( \overline{a} \cdot \overline{c} = 1\cdot 4 +(-1)\cdot 4 = 0\). Dessa är vinkelräta.</p>
+                <p>\( \overline{b} \cdot \overline{c} = -3\cdot 4 +(-5)\cdot 4 = -32\). Dessa är inte vinkelräta.</p>
+                <p> Eftersom vi har en triangel så räcker det med att hitta en rät vinkel.</p>
+                </div></div> </li>
+
+          <li>Är triangeln ABC som bestäms av punkterna \((-2,2)\), \((-1,5)\) och \((4,0)\) rätvinklig?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> Ja, rät vinkel vid punkten \((-2,2)\). </div></div> </li>
+
+          <li>Bestäm \(k\) så att triangeln som bestäms av punkterna \((-4,1)\), \((k,4)\) och \((-3,6)\) är rätvinklig.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> \(k = -1 \) eller\(k = -6 \). </div></div> </li>
+
+          <li>Bestäm för linjen \(2x-6y-6=0\)
+            <ol>
+              <li>en riktningsvektor <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">\(3\overline{i}+\overline{j}\) eller \(-3\overline{i}-\overline{j}\) och multiplar av dessa. </div></div> </li>
+              <li>en normalvektor (en vektor som bildar en normal) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">\(-\overline{i}+3\overline{j}\) eller \(\overline{i}-3\overline{j}\) och multiplar av dessa. </div></div> </li>
+              <li>en normalvektor vars längd är 1 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5c">
+                  <div class="card card-body answer">\(\dfrac{1}{\sqrt{10}}(-\overline{i}+3\overline{j})\) eller \(\dfrac{1}{\sqrt{10}}(\overline{i}-3\overline{j})\). </div></div> </li>
+              <li>en normalvektor vars längd är 10. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5d">
+                 <div class="card card-body answer"><p>\(\sqrt{10}(-\overline{i}+3\overline{j})\) eller \(\sqrt{10}(\overline{i}-3\overline{j})\). </p></div></div> </li>
+            </ol></li>
+
+          <li>Hitta i alla fall fyra vektorer som alla har olika längd som är vinkelräta mot \(\overline{a}=\overline{i}+2\overline{j}+\overline{k}\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Tex: \(-\overline{j}+2\overline{k}\), \(\overline{i}-\overline{k}\), \(-4\overline{i}+2\overline{j}\) och \(-4\overline{i}+\overline{j}+2\overline{k}\).</p> </div></div> </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="10_plan_i_rymden.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_skalart_geometriskt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Testkapitel med derivatateori</title>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </nav>
+      <i class="fa fa-arrow-alt-circle-left fa-2x"></i>
+      <h3>MaA 2 Polynomekvationer och -funktioner</h3>
+      <i class="fa fa-arrow-alt-circle-right fa-2x"></i>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Derivatan av potensen för en funktion</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi undersöker hur kvadraten och kubiken för funktionen \( f \):s derivata ser ut.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292996533" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="summary box">
+            <p>När vi har potensfunktioner som är upphöjt till något kan vi derivera dem som \( D f(x)^n = nf(x)^{n-1}\cdot f'(x) \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
+            <div class="video"><iframe src="https://player.vimeo.com/video/292989938" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Låt \( f(x)= x^2(2x-1)^4 \). Bestäm \( f'(1) \) och de punkter där funktionen byter riktning.</p>
+              <div class="video"><iframe src="https://player.vimeo.com/video/292989785" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm \( D(x^2-1 )^{10} \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body answer">\( 10(x^2-1)^9 \cdot 2x = 20x(x^2-1)^9 \)</div></div> </li>
+          <li>Bestäm \( D(2x+4 )^{13} \).  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body answer">\( 13(2x+4)^{12} \cdot 2 = 26(2x+4)^{12} \)</div></div> </li>
+          <li>Bestäm \( D(x-1 )^{2015} \).  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body answer">\( 2015(x-1)^{2014} \cdot 1= 2015(x-1)^{2014} \)</div></div> </li>
+          <li>Bestäm \( D( x^2-1)^{2015} \).  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body answer">\( 2015(x^2-1)^{2014} \cdot 2x = 4030x(x^2-1)^{2014} \)</div></div> </li>
+          <li>Bestäm \( D( -x^2+1)^{2015} \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="collapseExample5">
+  <div class="card card-body answer">\( 2015(-x^2+1)^{2014} \cdot -2x = -4030x(-x^2+1)^{2014} \)</div></div> </li>
+          <li>Vi undersöker funktionen \( f(x)=x^3(2x-1)^5 \).
+            <ol>
+              <li>Bestäm \( f'(1) \).  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="collapseExample6a">
+  <div class="card card-body answer">Derivatafunktionen är \( f'(x)=3x^3(2x-1)^5+10x^2(2x-1)^4 \). Då är \( f'(1)=13 \).</div></div> </li>
+              <li>Bestäm de punkter där funktionen \( f \) byter riktning.  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="collapseExample6b">
+  <div class="card card-body answer">Lös ekvationen \( f'(x)=0 \). Använd dig av utbrytning. \( x=0, x=\frac{1}{2} \) och \( x=\frac{3}{16} \).</div></div> </li>
+              <li>Bestäm den punkt där funktionen får sitt minsta värde. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="collapseExample6c">
+  <div class="card card-body answer">Bilda ett teckenschema och undersök det. Minsta värdet i punkten \( x=\frac{3}{16} \).</div></div> </li>
+            </ol></li>
+          </ol>
+
+      </section>
+
+
+
+    <footer>
+      <i class="fa fa-arrow-alt-circle-left fa-2x"></i>
+      <i class="fa fa-arrow-alt-circle-right fa-2x"></i>
+
+    </footer>
+
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

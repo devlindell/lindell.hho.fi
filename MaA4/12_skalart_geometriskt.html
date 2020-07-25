@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>12. Geometrisk tolkning av skalär produkt</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="6_geometri.html">6. Geometri med vektorer</a>
+            <a class="dropdown-item" href="7_xy-planet.html">7. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">8. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">9. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">10. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">11. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">12. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">13. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">14. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="11_skalar_produkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="13_avstand.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>12. Geometrisk tolkning av skalär produkt</h1>
+      <section>
+        <div class="theory">
+            <p>Nu tar vi och utgår från vektorer men vi kombinerar dem med cosinussatsen, \(a^2=b^2+c^2-2bc\cos\alpha\), för att komma åt skalära produkten.</p>
+            <div class="intro box">
+              <h4>Härledning</h4>
+              <p>Vi har \(\overline{a}=x_1\overline{i}+y_1\overline{j}+z_1\overline{k}\) och \(\overline{b}=x_2\overline{i}+y_2\overline{j}+z_2\overline{k}\).</p>
+              <p>Eftersom vi placerar \(\overline{a}\) och \(\overline{b}\) så att de börjar i samma punkt så är den längre sidan \(\mid \overline{a}-\overline{b}\mid\).</p>
+              <p><img src="pics/11-1.png" class="responsivepic400" /></p>
+              <p>Då vi skriver om cosiunssatsen så att den passar vår triangel får vi att \(\mid \overline{a}-\overline{b}\mid^2=\mid\overline{a}\mid^2+\mid\overline{b}\mid^2-2\mid\overline{a}\mid\mid\overline{b}\mid\cos\alpha\).</p>
+              <p>Längderna av de kortare sidorna är \(\mid \overline{a} \mid ^2 = x_1^2 + y_1^2 + z_1^2\) och \(\mid \overline{b} \mid ^2 = x_2^2 + y_2^2 + z_2^2\).</p>
+              <p>Kvadraten av den tredje längden är</p>
+              <p>\(\begin{array}{rcl}  \mid \overline{a}-\overline{b} \mid ^2  & = &  (x_1-x_2)^2 + (y_1-y_2)^2 + (z_1-z_2)^2 \\
+                   & = &  x_1^2-2x_1x_2+x_2^2 + y_1^2-2y_1y_2 + y_2^2 + z_1^2 -2z_1z_2+z_2^2 \\
+                   & = &  x_1^2+y_1^2+z_1^2 +x_2^2+y_2^2+z_2^2 -2x_1x_2 -2y_1y_2-2z_1z_2 \\
+                   & = &  \mid \overline{a} \mid ^2 + \mid \overline{b} \mid ^2 -2(x_1x_2 + y_1y_2+z_1z_2).\\  \end{array}\)</p>
+              <p>När vi jämför hur vi uttryckte cosinussasten med sidorna i vår triangel och hur vi kan uttrycka \(\mid\overline{a}-\overline{b}\mid^2\) så märker vi att vi har nästan samma termer. Det som skiljer är \(x_1x_2+y_1y_2+z_1z_2\) och \(\mid\overline{a}\mid\mid\overline{b}\mid\cos\alpha\). För att vi skall ha identitet så får vi att</p>
+              <p>\(x_1x_2+y_1y_2+z_1z_2=\overline{a}\cdot \overline{b}=\mid\overline{a}\mid\mid\overline{b}\mid\cos\alpha.\)</p>
+              <p>Det vi får är skalära produkten för två vektorer.</p>
+            </div>
+            <p>Skalära produkten mellan \(\overline{a}\) och \(\overline{b}\) får vi som \(\overline{a}\cdot\overline{b} = \mid\overline{a}\mid\mid\overline{b}\mid \cos(\overline{a},\overline{b})\).</p>
+            <p>Skalära produkten är en operation mellan två vektorer som ger ett värde. Med hjälp av skalära produkten kan vi säga om hur två vektorer förhåller sig till varandra.</p>
+            <div class="geogebra">
+              <iframe height="318px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/154930/width/614/height/318/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="614px"></iframe>
+            </div>
+            <p>Vinkeln mellan två vektorer bestämmer vi som \(\cos(\overline{a}, \overline{b}) = \dfrac{\overline{a}\cdot\overline{b}}{\mid\overline{a}\mid\mid\overline{b}\mid}\).</p>
+            <p>Vinkeln mellan vektorerna \(\overline{a}\) och \(\overline{b}\) kan vi uppskatta genom att bilda \(\overline{a}\cdot\overline{b}\). Är</p>
+            <ul>
+              <li>\(\overline{a}\cdot\overline{b}<0\) är vinkeln trubbig</li>
+              <li>\(\overline{a}\cdot\overline{b}=0\) är vinkeln rät</li>
+              <li>\(\overline{a}\cdot\overline{b}>0\) är vinkeln spetsig.</li>
+            </ul>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Bestäm vinkeln mellan vektorerna \(\overline{a}=\overline{i}-2\overline{j}+\overline{k}\) och \(\overline{b}=2\overline{i}+\overline{j}-2\overline{k}\).</p>
+              <div class="video">
+                <iframe src="https://player.vimeo.com/video/359029470" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Bestäm typ av vinkel som följande vektorer bildar. Du behöver inte veta storleken, utan bestäm värdet av den skalära produkten och svara utgående från det.</p>
+            <table>
+              <tr><th>Påstående</th><th>Spetsig</th><th>Rät</th><th>Trubbig</th></tr>
+              <tr><td>\(3\overline{i}-2\overline{j}\) och \(3\overline{i}+\overline{j}\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(4\overline{i}-2\overline{j}\) och \(\overline{i}+2\overline{j}\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(\overline{i}-\overline{j}\) och \(\overline{j}\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(3\overline{i}-\overline{j}\) och \(\overline{i}+2\overline{j}\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(\overline{i}+2\overline{j}\) och \(3\overline{i}+\overline{j}\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(-\overline{i}+2\overline{j}\) och \(5\overline{i}+\overline{j}\)</td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer"><p>
+                <table>
+                  <tr><th>Påstående</th><th>Spetsig</th><th>Rät</th><th>Trubbig</th></tr>
+                  <tr><td>\(3\overline{i}-2\overline{j}\) och \(3\overline{i}+\overline{j}\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(4\overline{i}-2\overline{j}\) och \(\overline{i}+2\overline{j}\)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\(\overline{i}-\overline{j}\) och \(\overline{j}\)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\(3\overline{i}-\overline{j}\) och \(\overline{i}+2\overline{j}\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(\overline{i}+2\overline{j}\) och \(3\overline{i}+\overline{j}\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(-\overline{i}+2\overline{j}\) och \(5\overline{i}+\overline{j}\)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                </table>
+               </p></div></div> </li>
+
+          <li>Bestäm vinkeln mellan följande vektorer med en tiondels grad noggrannhet.
+            <ol>
+            <li>\(\overline{i}+2\overline{j}\) och \(3\overline{i}+2\overline{j}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2a">
+            <div class="card card-body answer"><p> 29,7\(^{\circ}\) </p> </div></div> </li>
+            <li>\(\overline{i}+\overline{j}\) och \(3\overline{i}-\overline{j}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2b">
+            <div class="card card-body answer"><p> 63,4\(^{\circ}\) </p> </div></div> </li>
+            <li>\(-\overline{i}+2\overline{j}\) och \(2\overline{i}-\overline{j}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2c">
+            <div class="card card-body answer"><p> \(143,1^{\circ}\) </p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>För vilket värde på \(k\) är vinkeln mellan \(\overline{a}=2\overline{i}-2\overline{j}\) och \(\overline{b}=k\overline{i}-2\overline{j}\) \(45^{\circ}\)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p> Då \( k= 0 \). </p> </div></div> </li>
+
+          <li>För parallellogrammen ABCD gäller att diagonalvektorerna \(\overrightarrow{AC}=6\overline{i}+2\overline{j}\) och \(\overrightarrow{DB}=2\overline{i}-2\overline{j}\). Bestäm storleken av vinklarna i parallellogrammen med noggrannheten en tiondels grad.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p> Storleken av den mindre vinkeln är \( 45^{\circ} \) och den större är \( 135^{\circ} \). </p> </div></div> </li>
+
+          <li>För vilka värden på \(k\) är triangeln som bestäms av punkterna \((0,3)\), \((3,4)\) och \((1,k)\) spetsig i vinkeln som bildas i \((1,k)\)?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="5t">
+            <div class="card card-body hint"> <p>Vilka värden har skalära produkten av en spetsig vinkel? Bilda modigt en olikhet.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p> Då \( 2 < k < 5 \). </p> </div></div> </li>
+
+          <li>Ett flygplan startar från punkten \((2,4,0)\) och lyfter i riktningen \(2\overline{i}+3\overline{j}+\overline{k}\). Hur stor vinkel bildar flygplanets rutt mot marken? Svara med noggrannheten 0,1 grader.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="6t">
+            <div class="card card-body answer"> <p>Rita bild och fundera. Hur kan du uttrycka den vektor som går längs med marken och beskriver planets rutt?</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vinkeln är \( 15,5^{\circ}\).</p> </div></div> </li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="11_skalar_produkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="13_avstand.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

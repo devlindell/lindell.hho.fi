@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>10. Arean mellan två funktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="9_arean_fkt_axel.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="11_rotationskroppar.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>10. Arean mellan två funktioner</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Bestäm arean som bildas mellan \( f(x)=x^2-3x+3 \) och \( g(x)=-x+6 \).</p>
+            <h4>Lösning</h4>
+            <p>Området som bildas är skillnaden mellan \( \displaystyle\int -x+6 \mathrm{ d}x \) och \( \displaystyle\int x^2-3x+3\mathrm{ d}x \).</p>
+            <p> <img src="pics/areafunktfunkt_1.png" alt="" class="responsivepic600" /></p>
+            <p>Vi behöver skärningspunkterna,<p>
+            </p>\( \begin{array}{rcl} f(x)  & = &  g(x) \\ x^2-3x+3  & = &  -x+6 \\ x^2 -2x-3  & = &  0 \\ x  & = &  \dfrac{2\pm \sqrt{(-2)^2-4\cdot 1 (-3)}}{2\cdot 1} \\ x  & = &  \dfrac{2\pm 4}{2}\\ \end{array} \)</p>
+            <p>Skärningspunkterna är \( x=-1 \) och \( x=3 \).</p>
+            <p>Arean är<p>
+            </p>\( \begin{array}{rcl} \displaystyle\int_{-1}^3 -x+6 \mathrm{ d}x -\displaystyle\int_{-1}^3 x^2-3x+3 \mathrm{ d}x  & = &  \displaystyle\int_{-1}^3 -x+6 -(x^2-3x+3) \mathrm{ d}x\\  & = &  \displaystyle\int_{-1}^3 -x^2+2x+3 \mathrm{ d}x \\  & = &  \bigg/_{-1}^3 -\dfrac{1}{3}x^3+x^2+3x \\  & = &  (-\dfrac{1}{3}\cdot 3^3+3^2+3\cdot 3)- (-\dfrac{1}{3}\cdot (-1)^3+(-1)^2+3\cdot (-1))\\  & = &  9-(-1\dfrac{2}{3}) = 10\dfrac{2}{3}\\ \end{array} \)</p>
+          </div>
+          <p>Då vi bestämmer arean mellan två funktioner, \( f(x) \) och \( g(x) \) i intervallet \( [a,b] \) där \( f(x) > g(x) \) räknar vi som \( A=\displaystyle\int_a^b f(x)-g(x) \mathrm{ d}x \).</p>
+          <p>Om det är så att en del av den gemensamma arean blir under \( x \)-axeln kan vi flytta funktionerna uppåt genom att addera till ett \( n \).</p>
+          <p>Storleken av arean ändras inte genom att vi flyttar funktionerna uppåt. Vi får då att \( \displaystyle\int_a^b (f(x)+n)-(g(x)+n) \mathrm{ d}x = \displaystyle\int_a^b f(x)+n -g(x)-n \mathrm{ d} x = \displaystyle\int_a^b f(x)-g(x) \mathrm{ d} x \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Mellan \( f(x)=\sin 2x \) och \( g(x)=\cos 2x \) uppstår oändligt många areor. Bestäm storleken av en area.</p>
+            <h4>Lösning</h4>
+            <p>Funktionerna beter sig som följande:</p>
+            <p><img src="pics/areafunktfunkt_4.png" alt="" class="responsivepic600" /></p>
+            <p>Först söker vi skärningspunkterna,<p> </p>\( \begin{array}{rcll} \sin 2x  & = &  \cos 2x  & | /\cos2x\not=0 \\ \dfrac{\sin 2x}{\cos 2x}  & = &  1 \\ \tan 2x  & = &  1\\ 2x  & = &  \dfrac{\pi}{4} + n\cdot \pi\\ x  & = &  \dfrac{\pi}{8} + n\cdot \dfrac{\pi}{2}, n\in \mathbf{Z}\\ \end{array} \)
+            <p>En area bildas mellan skärningspunkterna \( \dfrac{\pi}{8} \) och \( \dfrac{\pi}{8} + 1 \cdot \dfrac{\pi}{2} = \dfrac{5\pi}{8} \).</p>
+            <p>Arean är<p>
+            </p>\( \begin{array}{rcl} \displaystyle\int_{\dfrac{\pi}{8}}^{\frac{5\pi}{8}} \sin 2x - \cos 2x \mathrm{ d} x  & = &  \displaystyle\int_{\dfrac{\pi}{8}}^{\frac{5\pi}{8}} \dfrac{1}{2}\cdot 2\sin 2x - \dfrac{1}{2}\cdot 2\cos 2x \mathrm{ d} x \\  & = &  \dfrac{1}{2}\displaystyle\int_{\dfrac{\pi}{8}}^{\frac{5\pi}{8}} 2\sin 2x - 2\cos 2x \mathrm{ d} x \\  & = &  \dfrac{1}{2}\bigg/_{\dfrac{\pi}{8}}^{\frac{5\pi}{8}} -\cos2x -\sin 2x \\  & = &  -\dfrac{1}{2}\bigg/_{\dfrac{\pi}{8}}^{\frac{5\pi}{8}} \cos2x +\sin 2x \\  & = &  -\dfrac{1}{2}[ (\cos 2\cdot \dfrac{5\pi}{8} + \sin 2\cdot\dfrac{5\pi}{8})-(\cos 2\cdot \dfrac{\pi}{8} + \sin 2\cdot\dfrac{\pi}{8})] \\  & = &  -\dfrac{1}{2}[(-\dfrac{1}{\sqrt{2}}-\dfrac{1}{\sqrt{2}})-(\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{2}})] \\  & = &  -\dfrac{1}{2}(-\dfrac{2}{\sqrt{2}}-\dfrac{2}{\sqrt{2}})\\  & = &  -\dfrac{1}{2}\cdot (-\dfrac{4}{\sqrt{2}}) \\  & = &  \dfrac{2}{\sqrt{2}} = \sqrt{2} \approx 1,41 \\ \end{array} \)</p>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bestäm storleken av arean som uppstår mellan \( f(x)=-x^2+5x+1 \) och \( g(x)=2x+1 \) i intervallet \( [1,3] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \( \displaystyle\int_1^3 -x^2+5x+1-(2x+1) \mathrm{ d} x = \displaystyle\int_1^3 -x^2+3x+2 \mathrm{ d}x = \bigg/_1^3 -\dfrac{1}{3}x^3+\dfrac{3}{2}x^2+2x = 3\dfrac{1}{3} \) a.e.</p></div></div>
+          </li>
+
+          <li>Bestäm storleken av arean som uppstår mellan \( f(x)=-x^2+5x \) och \( g(x)=-x+5 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Skärningspunkterna är 1 och 5. Arean är \( \displaystyle\int_1^5 -x^2+5x-(-x+5) \mathrm{ d} x= \displaystyle\int_1^5 -x^2 +6x -5 \mathrm{ d} x = \bigg/_1^5 -\dfrac{1}{3}x^3+3x^2-5x = 10\dfrac{2}{3} \) a.e.</p></div></div>
+          </li>
+
+          <li>Bestäm storleken av arean som uppstår mellan \( f(x)=-x^2+2x+4 \) och \( g(x)=x^2-4x+4 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Skärningspunkterna är 0 och 3 (bestäm dem!). Arean är \( \displaystyle\int_0^3 -x+2x+4 -(x^2-4x+4) \mathrm{ d}x = \displaystyle\int_0^3 -2x^2+6x \mathrm{ d}x = \bigg/_0^3 -\dfrac{2}{3}x^3+3x^2 = 9 \) a.e.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm storleken av arean som uppstår mellan \( y=e^{-x} \), \( y=e^{\frac{x}{2}} \) och \( x=3 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Börja med att rita upp situationen!</p>
+                <p>Skärningspunkten för \( e^{-x} \) och \( e^{\frac{x}{2}} \) är \( x=0 \).</p>
+                <p>Storleken av arean är \( \displaystyle\int_0^3 e^{\frac{x}{2}}-e^{-x} \mathrm{ d}x = \bigg/_0^3 2e^{\frac{x}{2}} -(-e^{-x}) =2e^\dfrac{3}{e}+\dfrac{1}{e^3}-3\approx 3,1 \) a.e.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm storleken av arean som uppstår mellan \( f(x)=-x+3 \) och \( g(x)=\dfrac{1}{x} \).
+            <p>Denna uppgift löser du lättast på räknare. Du märker snart varför.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Skärningspunkterna är \( f(x)=g(x) \Leftrightarrow x=\dfrac{3\pm\sqrt{5}}{2} \).</p>
+                <p>Arean är \( \displaystyle\int_{\dfrac{3-\sqrt{5}}{2}}^{\frac{3+\sqrt{5}}{2}} -x+3-\dfrac{1}{x} \mathrm{ d}x =\bigg/_{\dfrac{3-\sqrt{5}}{2}}^{\frac{3+\sqrt{5}}{2}} -\dfrac{1}{2}x^2+3x-\ln x \approx 1,43  \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på konstanten \( a \) gäller att det området som bestäms av \( f(x)=ax \) och \( g(x)=x^2 \) har värdet 36?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Skärningspunkten mellan \( f \) och \( g \) är</p>
+                <p>\( \begin{array}{rcl}  ax & = & x^2 \\  x^2-ax & = & 0 \\  x(x-a) & = & 0\\  \end{array} \)</p><p>Alltså \( x=0 \) och \( x=a \).</p>
+                <p>Vi får att för arean gäller</p>
+                <p>\( \begin{array}{rcl}  \displaystyle\int_0^a ax-x^2 \mathrm{ d}x & = &  36 \\ \bigg/_0^a \dfrac{a}{2}x^2-\dfrac{1}{3}x^3  & = &  36 \\ (\dfrac{a^3}{a}-\dfrac{a^3}{3})-(\dfrac{a}{2}\cdot 0^2-\dfrac{1}{3}\cdot 0^3)  & = &  36 \\  \dfrac{a^3}{6}-0  & = &  36 \\  a  & = &  \sqrt[3]{3\cdot 36} = 6\\  \end{array} \)</p>
+                <p>Eftersom funktionerna är symmetriska kring \( x \)-axeln gäller att \( a=\pm 6 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm storleken av området som bildas mellan \( y=x^2 \), tangenten för \( y=x^2 \) i punkten \( (1,1) \) och \( y \)-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Tangenten för \( f(x)=x^2 \) i punkten \( 1 \) har riktningskoefficienten \( f'(1) = 2\cdot 1 = 2 \). Tangentens ekvation är \( y-y_0 = k(x-x_0) \Leftrightarrow y=2x-1 \).</p>
+              <p>Skärningspunkten för \( f(x)=x^2 \) och \( y=2x-1 \) är \( x^2=2x-1 \Leftrightarrow x=1 \).</p>
+              <p>För att bestämma arean integrerar vi från \( x=0 \) till \( x=1 \). Arean är \( \displaystyle\int_0^1 x^2-(2x-1) \mathrm{ d}x = \displaystyle\int_0^1 x^2-2x+1 \mathrm{ d} x = \bigg/_0^1 \dfrac{1}{3}x^3-x^2+x =(\dfrac{1}{3}\cdot 1^3-1^2+1)-(\dfrac{1}{3}\cdot 0^3-0^2+0) = \dfrac{1}{3} \) a.e.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Ett område bestäms av \( f(x)=\dfrac{1}{x^2} \), \( g(x)=\dfrac{1}{x^3} \) och linjerna \( x=a \) och \( x=2a \) där \( a > 0 \). För vilket värde på \( a \) har området ett så stort värde som möjligt?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Linjerna utgör gränserna. Så arean är \( \displaystyle\int_a^{2a} \dfrac{1}{x^2} -\dfrac{1}{x^3} \mathrm{ d}x =\bigg/_a^{2a} \dfrac{1}{-1}x^{-1} -\dfrac{1}{-2}x^{-2}= \bigg/_a^{2a} -\dfrac{1}{x}+\dfrac{1}{2x^2} = -\dfrac{1}{2a}+\dfrac{1}{2(2a)^2}-(-\dfrac{1}{a}+\dfrac{1}{2\cdot a^2}) = \dfrac{1}{2a}-\dfrac{3}{8a^2} \).</p>
+                <p>Det vad vi har är en funktion som ger arean. Vi betecknar den \( A(a)=\dfrac{1}{2a}-\dfrac{3}{8a^2} \). För att bestämma största värde undersöker vi funktionen. \( A'(a)=-\dfrac{1}{2a^2}+\dfrac{3}{4a^3} \). \( A'(a)=0 \) då \( a=\dfrac{3}{2} \).</p>
+                <p>Då \( A'(1)= \dfrac{1}{4} > 0 \) och \( A'(2)=-\dfrac{1}{32} < 0 \) är \( a=\dfrac{3}{2} \) ett maximum.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="9_arean_fkt_axel.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="11_rotationskroppar.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

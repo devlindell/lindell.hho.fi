@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>2. för polynomfunktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="1_primitivfkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="3_prim_1x.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>2. för polynomfunktioner</h1>
+      <section>
+        <div class="theory">
+          <p>Då vi skapar primitiva funktioner integrerar vi. Till nästa tar vi och går igenom hur vi integrerar olika typer av funktioner.</p>
+          <p>Integrering av en polynomfunktion sker på följande sätt: \( \displaystyle\int x^n \textrm{ d}x = \dfrac{1}{n+1}x^{n+1}+C \)  där \( n\not=-1 \) .</p>
+          <p>Formeln kontrollerar vi genom att derivera: \( D(\dfrac{1}{n+1}x^{n+1})=\dfrac{1}{n+1}Dx^{n+1}=\dfrac{1}{n+1}\cdot (n+1)x^{n+1-1} = x^n \) .</p>
+          <p>Rötter och bråk uttrycker vi med hjälp av allmän exponent och integrerar dem sedan.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm den primitiva funktionen för</p>
+            <ol style="list-style-type: lower-alpha;">
+              <li>\( x^{15} \) </li>
+              <li>\( \dfrac{1}{x^3} \) </li>
+              <li>\( \sqrt{x} \) </li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol style="list-style-type: lower-alpha;">
+              <li>\( \displaystyle\int x^{15} \textrm{d}x = \dfrac{1}{15+1}x^{15+1}+C = \dfrac{1}{16}x^{16} + C \) .</li>
+              <li>\( \displaystyle\int \dfrac{1}{x^3} \textrm{d}x = \displaystyle\int x^{-3} \textrm{d}x = \dfrac{1}{-3+1}x^{-3+1} + C = -\dfrac{1}{2x^2} + C \) .</li>
+ 	            <li>\( \displaystyle\int \sqrt{x} \textrm{d}x = \displaystyle\int x^{\frac{1}{2}} \textrm{d}x = \dfrac{1}{\dfrac{1}{2}+1} x^{\frac{1}{2}+1} + C = \dfrac{2}{3}x^{\frac{3}{2}}+C = \dfrac{2}{3}x\sqrt{x}+C \) .</li>
+            </ol>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292175867" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Eftersom integrering och derivering hör ihop har vi motsvarande räkneregler.</p>
+          <p>Vi kan flytta ut konstanter från en integral. Låt \( k \)  vara en konstant och \( f(x) \)  en kontinuerlig funktion. Då gäller att \( \displaystyle\int k f(x) \textrm{d}x = k\int f(x)\textrm{d}x, \)  eftersom \( DkF = kDF=kf \) .</p>
+          <p>Vidare tar vi och integrerar termer skilt för sig. Låt \( f(x) \)  och \( g(x) \)  vara två kontinuerliga funktioner. Då gäller att \( \displaystyle\int (f(x)+g(x))\textrm{d}x = \displaystyle\int f(x)\textrm{d}x + \displaystyle\int g(x)\textrm{d}x, \)  eftersom \( D(F+G)=DF+DG = f +g \) .</p>
+          <div class="summary box">
+            <p>För integrering av polynomfunktioner gäller</p>
+            <ul>
+              <li>\( \displaystyle\int x^n \textrm{d}x = \dfrac{1}{n+1} x^{n+1} + C \)  där \( n\not= -1 \) </li>
+            </ul>
+            <p>Allmänt gäller för integrering att</p>
+            <ul>
+              <li>\( \displaystyle\int k f(x) \textrm{d}x = k\int f(x) \textrm{d}x \) </li>
+              <li>\( \displaystyle\int (f(x)+g(x))\textrm{d}x = \displaystyle\int f(x)\textrm{d}x + \displaystyle\int g(x)\textrm{d}x \) </li>
+            </ul>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm de primitiva funktionerna för</p>
+            <ol>
+              <li>\( \dfrac{3}{5\sqrt{x}} \) </li>
+              <li>\( 2x^3+4x-\dfrac{6}{x^2} \) </li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol>
+              <li>\(  \displaystyle\int \dfrac{3}{5\sqrt{x}} \textrm{d}x =\int \dfrac{3}{5} x^{-\dfrac{1}{2}} \textrm{d}x = \dfrac{3}{5} \cdot \dfrac{1}{-\dfrac{1}{2}+1}x^{-\dfrac{1}{2}+1} + C = \dfrac{3}{5}\cdot 2 x^{\frac{1}{2}} +C = \dfrac{6}{5} \sqrt{x} +C \) .</li>
+              <li>Vi får <p>\( \begin{array}{rcl}  \displaystyle\int 2x^3+4x-\dfrac{6}{x^2} \textrm{d}x &  = &  \displaystyle\int 2x^3+4x-6x^{-2} \textrm{d}x \\ \\   & =  & 2\dfrac{1}{3+1}x^{3+1}+4\dfrac{1}{1+1}x^{1+1}-6\dfrac{1}{-2+1}x^{-2+1} + C \\ \\   & = &  \dfrac{1}{2}x^4 + 2x^2+\dfrac{6}{x} + C\\  \end{array} \)</p> </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm
+            <ol>
+              <li>\( \displaystyle\int 6x^{11} \textrm{ d}x \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( \displaystyle\int 6x^{11} \textrm{ d}x = 6\cdot \dfrac{1}{11+1} x^{11+1} +C = \dfrac{1}{2}x^{12}+C \) .</p></div></div> </li>
+              <li>\( \displaystyle\int (2x^3+6x-3)\textrm{ d}x \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( \displaystyle\int (2x^3+6x-3)\textrm{ d}x = 2\cdot\dfrac{1}{4}x^4+6\cdot\dfrac{1}{2}x^2-3x+C=\dfrac{1}{2}x^4+3x^2-3x+C \) </p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\( \displaystyle\int x\sqrt{x}\textrm{ d}x \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( \displaystyle\int x\sqrt{x}\textrm{ d}x = \displaystyle\int x^{\frac{3}{2}} \textrm{ d}x = \dfrac{1}{\dfrac{5}{2}} x^{\frac{5}{2}}+C =  \dfrac{2}{5} x^2\sqrt{x} + C \) .</p></div></div> </li>
+              <li>\( \displaystyle\int \sqrt[3]{x} \textrm{ d}x \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( \displaystyle\int \sqrt[3]{x} \textrm{ d}x = \displaystyle\int x^{\frac{1}{3}} \textrm{ d}x = \dfrac{1}{\dfrac{1}{3}+1}x^{\frac{1}{3}+1} + C = \dfrac{3}{4}x^{\frac{4}{3}} + C = \dfrac{3}{4}x\sqrt[3]{x}+C \) .</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Bestäm alla primitiva funktioner för \( \dfrac{2}{\sqrt{x}} \) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\( \displaystyle\int \dfrac{2}{\sqrt{x}} \textrm{ d}x = \displaystyle\int 2x^{-\dfrac{1}{2}} \textrm{ d}x = 2\cdot\dfrac{1}{-\dfrac{1}{2}+1} x^{-\dfrac{1}{2}+1} + C = 2\cdot\dfrac{1}{\dfrac{1}{2}} x^{\frac{1}{2}}+ C = 2 \cdot 2 \cdot 2 x^{\frac{1}{2}} + C = 4x^{\frac{1}{2}}+C = 4\sqrt{x}+C \) .</p></div></div>
+          </li>
+
+          <li>Bestäm alla primitiva funktioner för \( (x-\dfrac{1}{x})^2 \) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Först förenklar vi \( (x-\dfrac{1}{x})^2 = x^2-2\cdot x \cdot \dfrac{1}{x} + \dfrac{1}{x^2} = x^2-2+\dfrac{1}{x^2} = x^2-2+x^{-2} \) .</p> <p>Sedan integrerar vi\( \displaystyle\int x^2-2+x^{-2} \textrm{ d}x = \dfrac{1}{3}x^3-2x+\dfrac{1}{-1}x^{-1} + C = \dfrac{1}{3}x^3-2x - \dfrac{1}{x} + C \) .</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den primitiva funktion för \( f(x)= 8x+\dfrac{2}{x^3} \)  som får värdet 5 då x = 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( F(x)=4x^2-\dfrac{1}{x^2} + C \) . Eftersom \( F(1)=5 \)  får vi att C=2. Alltså \( F(x)=4x^2-\dfrac{1}{x^2} + 2 \) .</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x)=4x \)  och \( g(x)=2x^3 \) .
+            <ol>
+              <li>Bestäm \( F(x) \)  och \( G(x) \) . <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>\( F(x)=2x^2 +C \)  och \( G(x)=\dfrac{1}{2}x^4+ C \) .</p></div></div> </li>
+              <li>Undersök om produkten av \( F(x) \)  och \( G(x) \) , \( F(x)G(x) \) , är den primitiva funktionen av produkten av \( f(x) \)  och \( g(x) \) , \( 8x^4 \) . <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>\( F(x)G(x)=2x^2\cdot \dfrac{1}{2}x^4 = x^6 \)  och \( \displaystyle\int 8x^4 \textrm{ d}x = 8\dfrac{1}{5}x^5 = \dfrac{8}{5}x^4 \) </p> <p>Uttrycken är inte identiska!</p></div></div> </li>
+              <li>Undersök om kvoten av \( F(x) \)  och \( G(x) \) , \( \dfrac{F(x)}{G(x)} \) , är den primitiva funktionen av kvoten av \( f(x) \)  och \( g(x) \) , \( \dfrac{2}{x^2} \) . <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>\( \dfrac{F(x)}{G(x)} = \dfrac{2x^2}{\dfrac{1}{2}x^4} = \dfrac{4}{x^2} \)  och \( \displaystyle\int \dfrac{2}{x^2} \textrm{ d}x = \displaystyle\int 2x^{-2} \textrm{ d}x = 2\dfrac{1}{-1}x^{-1} = -\dfrac{2}{x} \) </p>
+              <p>Uttrycken är inte identiska!</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm den primitiva funktionen för \( \dfrac{8x^6-3x+4}{2x^3} \) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Först förenklar vi \( \dfrac{8x^6-3x+4}{2x^3} = \dfrac{8x^6}{2x^3} -\dfrac{3x}{2x^3} + \dfrac{4}{2x^3} = 4x^3-\dfrac{3}{2}x^{-2} +2x^{-3} \) </p>
+              <p>Primitiva funktionen är \( \displaystyle\int (4x^3-\dfrac{3}{2}x^{-2} +2x^{-3})\textrm{ d}x = 4\cdot\dfrac{1}{4}x^4-\dfrac{3}{2}\cdot \dfrac{1}{-1}x^{-1}+2\cdot\dfrac{1}{-2}x^{-2} + C = x^4 +\dfrac{3}{2x} -\dfrac{1}{x^2} + C \) .</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>-->
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm den funktion vars största värde är 11 och vars derivatafunktion är \( f'(x)=-2x+6 \) .
+          <p>Vilket är sambandet mellan primitiv funktion och derivatafunktion?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Primitiva funktionen är \( f(x)=-x^2+6x+C \) . Då f är en parabel som öppnar sig neråt hittar vi största värdet i där \( f'(x)=0 \) . Toppen finns i \( -2x+6=0 \Leftrightarrow x=3 \) .</p>
+              <p>f skall gå genom punkten (3,11) som ger oss att \( f(3)=11 \Leftrightarrow -3^2+6\cdot 3+C = 11 \Leftrightarrow C = 2 \) .</p>
+              <p>Den sökta funktionen är \( f(x)=-x^2+6x+2 \) .</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm den funktion som har följande egenskaper, \( f''(x)=48x^2-6 \) ,\( f'(1)=10 \)  och \( f(1)=-1 \) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Vi får att \( f'(x)= \displaystyle\int 48x^2-6 \textrm{ d}x = 16x^3-6x + C \)  och att \( f(x) = \displaystyle\int 16x^3-6x + C \textrm{ d}x = 4x^4 -3x^2 + Cx + D \) .</p>
+              <p>Eftersom \( f'(1)=10 \)  och \( f(1)=-1 \)  sätter vi in dessa värden i diverse funktioner och bildar ett ekvationssystem.</p>
+              <p>\( \left\{ \begin{array}{rcl} 16\cdot 1^3 - 6\cdot 1 + C  & = &  10 \\ 4\cdot 1^4-3\cdot 1^2+C\cdot 1 + D  & = &  -1\\ \end{array} \right. \) </p>
+              <p>Vi får \( C = 0 \)  och \( D =-2 \) .</p>
+              <p>Den sökta funktionen är \( f(x)=4x^4-3x^2-2 \) .</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="1_primitivfkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="3_prim_1x.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

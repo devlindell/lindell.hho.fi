@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Inför studentexamen</title>
+  </head>
+  <header class="MaA15">
+    <h3>Inför studentexamen</h3>
+    <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+  <body>
+    <p>Här hittar du sådant som är till nytta med tanke på dina skrivningar, kommandon för <a href="#geogebra">GeoGebra</a> och TI-nSpire CAS och kommandon för <a href="#latex">Latex.</a></p>
+    <h2 id="geogebra">Kommandon för GeoGebra</h2>
+    <p>Dessa är formulerade med GeoGebra Classic 5 som botten.</p>
+    <p>I GeoGebra ser vi på följande vyer, </p>
+    <h3>Inmatningsfältet, Algebrafönstret och Ritområdet</h3>
+    <p>Detta är vyn som du vill ha då du snabbt skall rita en funktion och se hur den beter sig. I Inmatningsfältet skriver du funktionen och så ritas den upp i Ritområdet.</p>
+    <p><img src="pics/geogebra_1.png" alt="" class="responsivepic600"></p>
+    <p>Efter att du har ritat ut den kan du ändra på uttrycket genom att dubbelklicka på funktionens uttryck i Algebrafönstret.</p>
+    <h3>CAS</h3>
+    <p>Då du arbetar med CAS kan du utföra uträkningar, så som lösa ekvationer, bestämma funktionsvärden mm.</p>
+    <p>CAS får du fram genom att välja Visa och CAS.</p>
+    <p>En funktion definierar du med kommando, :=, tex f(x):=x^2-4x-1.</p>
+    <p>Funktionsvärdet i en punkt beräknar du med att skriva in, f(2), det ger funktionsvärdet i punkten 2.</p>
+    <p>Vill vi lösa en ekvation, tex nollställena, använder vi oss av lös(), tex, lös(f(x)=0,x). ,x i slutet berättar att vi vill att ekvationen löses med avsende på x.</p>
+    <p>Vill vi undersöka en olikhet är det samma lös kommando, då ändrar vi = till < eller >.</p>
+    <p>Derivering sker med kommandot f', tex f'(x). Vill vi spara derivatafunktionen så måste vi definiera en funktion för den, tex g(x):=f'(x).</p>
+    <p>Integraler sker med kommandot Integral, tex Integral(f(x), 5, 6).</p>
+    <p><img src="pics/geogebra_2.png" alt="" class="responsivepic600"></p>
+    <h3>Sannolikhet</h3>
+
+    <h2 id="latex">Latex i studentexamen</h2>
+    <p>Motsvarande formel editor som används i Abittimiljön hittar du på <a href="https://math-demo.abitti.fi/sv" target="_blank">https://math-demo.abitti.fi/sv</a>.</p>
+    <p>Med den kan du plocka fram färdiga mallar eller skriva matematiken som <a href="https://sv.wikipedia.org/wiki/Latex_(typsättningssystem)" target="_blank">LaTex</a>.</p>
+    <p>Nedan hittar du några användbara kommandon i LaTex som, eventuellt, försnabbar processen att skriva matematik på dator.</p>
+
+<table>
+<tbody>
+<tr>
+<th>Vad?</th>
+<th>Kommando</th>
+<th>Hur det ser ut</th>
+</tr>
+<tr>
+<td>Division</td>
+<td>\dfrac{1}{2} eller \frac{1}{2}</td>
+<td>\( \dfrac{1}{2} \) eller \(\frac{1}{2}\) </td>
+</tr>
+<tr>
+<td>Upphöjt</td>
+<td>x^2, eller x^{-2}</td>
+<td>\( x^2 \)  eller \( x^{-2} \) </td>
+</tr>
+<tr>
+<td>Upphöjt med bråk</td>
+<td>x^{\frac{1}{2}}</td>
+<td>\( x^{\frac{1}{2}} \) </td>
+</tr>
+<tr>
+<td>Kvadratrot</td>
+<td>\sqrt{4}</td>
+<td>\( \sqrt{4} \) </td>
+</tr>
+<tr>
+<td>n:te rot</td>
+<td>\sqrt[n]{4}</td>
+<td>\( \sqrt[n]{4} \) </td>
+</tr>
+<tr>
+<td>Logaritm, bas a</td>
+<td>\log_a</td>
+<td>\( \log_a \) </td>
+</tr>
+<tr>
+<td>Logaritm, bas e</td>
+<td>\ln</td>
+<td>\( \ln \) </td>
+</tr>
+<tr>
+<td>Summa</td>
+<td>\sum_{i=1}^{10}</td>
+<td>\( \sum_{i=1}^{10} \) </td>
+</tr>
+<tr>
+<td>Vektorbeteckning med pil</td>
+<td>\overrightarrow{a}</td>
+<td>\( \overrightarrow{a} \) </td>
+</tr>
+<tr>
+<td>Vektorbeteckning med linje</td>
+<td>\overline{a}</td>
+<td>\( \overline{a} \) </td>
+</tr>
+<tr>
+<td>Sinus, cosinuns och tangens</td>
+<td>\sin, \cos och \tan</td>
+<td>\( \sin, \cos \)  och \( \tan \) </td>
+</tr>
+<tr>
+<td>Derivata</td>
+<td>D</td>
+<td>\( D \) </td>
+</tr>
+<tr>
+<td>Integralbeteckning</td>
+<td>\int_a^b</td>
+<td>\( \int_a^b \) </td>
+</tr>
+<tr>
+<td>Integralbeteckning, slutet</td>
+<td>\text{ d}x</td>
+<td>\( \text{ d}x \) </td>
+</tr>
+<tr>
+<td>Integralbeteckning, raka sträcket</td>
+<td>\big/_a^b</td>
+<td>\( \big/_a^b \) </td>
+</tr>
+</tbody>
+</table>
+
+  </body>
+</html>

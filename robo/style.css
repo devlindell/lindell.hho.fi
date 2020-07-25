@@ -1,0 +1,17 @@
+.anto {
+  /*background-image: linear-gradient(to bottom, #7293bf, #698cb9, #5f84b3, #567dae, #4c76a8);*/
+  background-image: linear-gradient(to bottom, #82a8d9, #77a0d3, #6d97cd, #628fc8, #5787c2);
+}
+
+
+.aloittelija {
+  background-color: rgba(114,147,191,74);
+}
+
+.osaajotain {
+  background-color: rgba(76,118,168,65);
+}
+
+.pro {
+  background-color: rgba(54,91,140,54);
+}

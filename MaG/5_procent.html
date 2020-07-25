@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Procent</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_repfunktioner.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="6_procentforandring.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Procent</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>En undervisningsgrupp består av 26 studerande. 14 st studerande cyklar till skolan på morgonen. Hur många procent av undervisningsgruppens studerande cyklar till skolan på morgonen?</p>
+            <p>I en annan undervisningsgrupp som består av 22 studerande kommer 12 st med cykel till skolan. Vilken grupp har den större procentuella andelen som kommer med cykel till skolan?</p>
+            <h4>Lösning</h4>
+            <p>För grupp 1 gäller att 14 kommer med cykel av hela gruppen på 26 studerande. Andelen är \(\dfrac{14}{26}\).</p>
+            <p>För grupp 2 gäller att 12 kommer med cykel av hela gruppen på 22 studerande. Andelen är \(\dfrac{12}{22}\).</p>
+            <p>För att jämföra dessa så kan vi antingen göra dem liknämniga, 286, eller så kan vi utföra divisionen.</p>
+            <p>Då vi gör dem liknämniga får vi \(\dfrac{154}{286}\) och \(\dfrac{156}{286}\).</p>
+            <p>Utför vi divisionen får vi talen \(0,5384\ldots\) och \(0,5454\ldots\).</p>
+            <p>Hur vi än räknar märker vi att i den andra undervisningsgruppen är det en större andel som kommer med cykel till skolan.</p>
+          </div>
+          <p>För att jämföra sammansättningar av olika mängder kan man använda sig av bråk. Problemet med att använda sig av bråk är att det inte är så lätt att få en klar och snabb uppfattning över hur stor del som det handlar om. För att lösa detta problem använder man sig av procent. Med procent låter man nämnaren ha värdet 100. Genom att alltid bilda kvoter med samma nämnare är det lättare att göra jämförelserna.</p>
+          <p>Ursprunget för ordet procent är latinets per cent, per hundra. Det betyder att för 5 % så har vi följande samband: \(5\;\% = \dfrac{5}{100} = 0,05\).</p>
+          <p>För att bilda den procentuella andelen av något jämför vi alltid med grundmängden, allt som vi har. Så som vi gjorde i introduktionen.</p>
+          <p>När vi kommer längre och räknar med procent så är grundidén vid procenträkning \(p \cdot a = b\) där
+            <ul>
+ 	            <li>\(p\) är procenten som decimaltal. 1 + procenten vid ökning, 1 - procenten vid minskning.</li>
+ 	            <li>\(a\) är kapitalet/priset i början</li>
+ 	            <li>\(b\) är kapitalet/priset i slutet.</li>
+            </ul></p>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Peters nettolön efter 24 % skatt var 851,20 €. Hur stor var hans bruttolön?</p>
+              <h4>Lösning</h4>
+              <p>Vi söker \(a\) som är hans bruttolön. För \(a\) gäller att</p>
+              <p>\(\begin{array}{rcl}
+                a(1-0,24) & = & 851,20 \\
+                a  &  =  &  \dfrac{851,20}{0,76} = 1120 \text{ €}\\
+                \end{array}\)
+              </p>
+            </div>
+            <p>Ett alternativt sätt att räkna är \((1 \pm \dfrac{p}{100})a=b\). Nackdelen med denna formel är att du får en ekvation med nämnaren 100. Fördelen är att den fungerar i vått som torrt. Här är beteckningen samma som ovan, \(p\) procenten som heltal, \(a\) kapitalet/priset i början och \(b\) kapitalet/priset i slutet.</p>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>I riksdagsvalet 2015 röstade 2 968 459 personer på olika partier. Bestäm den den procentuella andelen och antal röster för partierna i tabellen. Avrunda den procentuella andelen till en hundradel (två decimaler) och andel röster till heltal.</p>
+            <table>
+              <tbody>
+                <tr><td>Parti</td><td>Antal röster</td><td>Procentuell andel</td></tr>
+                <tr><td>Centern</td><td>626 218</td><td></td></tr>
+                <tr><td>Sannfinländarna</td><td>524 054</td><td></td></tr>
+                <tr><td>Samlingspartiet</td><td></td><td>18,20</td></tr>
+                <tr><td>SDP</td><td>490 102</td><td></td></tr>
+                <tr><td>De gröna</td><td></td><td>8,53</td></tr>
+                <tr><td>Vänstern</td><td></td><td>7,13</td></tr>
+                <tr><td>SFP</td><td>144 802</td><td></td></tr>
+                <tr><td>Kristdemokraterna</td><td></td><td>3,54</td></tr>
+              </tbody>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table>
+                <tbody>
+                  <tr><td>Parti</td><td>Antal röster</td><td>Procentuell andel</td></tr>
+                  <tr><td>Centern</td><td>626 218</td><td>21,10</td></tr>
+                  <tr><td>Sannfinländarna</td><td>524 054</td><td>17,65</td></tr>
+                  <tr><td>Samlingspartiet</td><td>540260</td><td>18,20</td></tr>
+                  <tr><td>SDP</td><td>490 102</td><td>16,51</td></tr>
+                  <tr><td>De gröna</td><td>253210</td><td>8,53</td></tr>
+                  <tr><td>Vänstern</td><td>211651</td><td>7,13</td></tr>
+                  <tr><td>SFP</td><td>144 802</td><td>4,88</td></tr>
+                  <tr><td>Kristdemokraterna</td><td>105083</td><td>3,54</td></tr>
+                </tbody>
+              </table>
+             </div></div>
+          </li>
+
+          <li>Ett parti malm, vars massa är 540 kg, innehåller 470 g koppar. Bestäm den procentuella andelen koppar i malmpartiet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>Den procentuella andlenen är \(\dfrac{0,47 \text{ kg}}{540 \text{ kg}} = 0,000870\ldots\) som är 0,09 %.</p> </div></div>
+          </li>
+
+          <li>Hur många procent större är \(\dfrac{3}{2}\) än \(\dfrac{3}{4}\)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \(\dfrac{\dfrac{3}{2}}{\dfrac{3}{4}} = 2\).</p><p>Betyder att \(\dfrac{3}{2}\) är 100 % större än \(\dfrac{3}{4}\).</p> </div></div>
+          </li>
+
+          <li><p>Då man räknade ut hur många procent något är av något annat fick man följande svar, kvoter. Kombinera rätt kvot med rätt tolkning av procenten.Välj mellan värdena 1; 2; 3; 4; 1,25; 1,50; 1,75; 0; 0,25; 0;50 och 0;75.</p>
+            <table>
+              <tbody>
+                <tr><td>Tal</td><td>Procentuell förändring</td></tr>
+                <tr><td></td><td>En minskning om 100 %.</td></tr>
+                <tr><td></td><td>En minskning om 75 %.</td></tr>
+                <tr><td></td><td>En minskning om 50 %.</td></tr>
+                <tr><td></td><td>En minskning om 25 %.</td></tr>
+                <tr><td></td><td>Ingen föränding.</td></tr>
+                <tr><td></td><td>En ökning om 25 %.</td></tr>
+                <tr><td></td><td>En ökning om 50 %.</td></tr>
+                <tr><td></td><td>En ökning om 75 %.</td></tr>
+                <tr><td></td><td>En ökning om 100 %.</td></tr>
+                <tr><td></td><td>En ökning om 200 %.</td></tr>
+                <tr><td></td><td>En ökning om 300 %.</td></tr>
+              </tbody>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <div class="answer">
+                <table>
+                  <tbody>
+                    <tr><td>Tal</td><td>Procentuell förändring</td></tr>
+                    <tr><td>0</td><td>En minskning om 100 %.</td></tr>
+                    <tr><td>0,25</td><td>En minskning om 75 %.</td></tr>
+                    <tr><td>0,50</td><td>En minskning om 50 %.</td></tr>
+                    <tr><td>0,75</td><td>En minskning om 25 %.</td></tr>
+                    <tr><td>1</td><td>Ingen föränding.</td></tr>
+                    <tr><td>1,25</td><td>En ökning om 25 %.</td></tr>
+                    <tr><td>1,50</td><td>En ökning om 50 %.</td></tr>
+                    <tr><td>1,75</td><td>En ökning om 75 %.</td></tr>
+                    <tr><td>2</td><td>En ökning om 100 %.</td></tr>
+                    <tr><td>3</td><td>En ökning om 200 %.</td></tr>
+                    <tr><td>4</td><td>En ökning om 300 %.</td></tr>
+                  </tbody>
+                </table>
+              </div></div>
+          </li>
+
+          <li>Ett prov på 110,0 g innehöll kol, syre och kväve. Andelen kol var 11,5 % och massan för syret var 78,2 g. Bestäm både andelen (i procent) och massan för kvävet med en tiondels noggrannhet.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5">
+            <div class="card card-body answer"> <p>Den procentuella andelen syre är \(\dfrac{78,2 \text{ g}}{110 \text{ g}} = 0,71090\ldots\).</p>
+              <p>Kvävets procentuella andel är \(100 - 11,5 - 71,1 = 17,4\) %.</p>
+              <p>Massan är \(110 \cdot 0,174 = 19,14\) g. </p></div></div>
+          </li>
+
+          <li>Ett par jeans såldes med 35 % rabatt och kostade då 65 €. Vad var priset före rabatten?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi har följande ekvation</p><p>\(\begin{array}{rcll} a\cdot (1-0,35 )  & = &  65 \\ 0,65 a  & = &  65  &  \| /0,65\\ a  & = &  \dfrac{65}{0,65} = 100 \end{array}\)</p> <p>Alltså 100 €.</p> </div></div>
+          </li>
+
+          <li><p>Gör på LibreOffice en fil som räknar ut procenterna för olika summor. Du kan använda dig av egna summor och procenter eller ta exempel från tablellen nedan.</p>
+            <table>
+              <thead>
+                <tr><th></th><th>5 %</th><th>10 %</th><th>20 %</th><th>30 %</th><th>40 %</th><th>...</th><th>90 %</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>10 €</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>20 €</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>30 €</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>...</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>100 €</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Kom ihåg att använda dig av formler! Börja med = och skriv sedan in formeln. Vill du klona formeln drar du från den lilla kvadraten nere till höger.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får något i stil med</p><p><img  src="pics/5-7.png" class="responsivepic600" /></p> </div></div>
+          </li>
+
+          <li>Enligt statistikcentralen var antalet arbetslösa 264 000 och andelen arbetslösa 9,3 % i Finland i juni 2016. Bestäm storleken på den totala arbetskraften i Finland.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi får att</p><p>\(\begin{array}{rcll}  a\cdot 0,093  & = &  264 000  & \| /0,093\\  a  & = &  \dfrac{264000}{0,093} = 2838709,7  \end{array}\)</p><p>Alltså 2 840 000 eller 2 800 000 stycken.</p> </div></div>
+          </li>
+
+          <li><p>I tabellen nedan ser du antal röster, avrundat till tusental, för de fyra största partierna i kommunalvalet 2017. 2017 gavs 2 570 000 röster och 2012 gavs 2 500 000 röster.</p>
+            <table>
+              <tbody>
+                <thead>
+                <tr><td></td><td colspan="2" rowspan="1"><strong>Antal röster</strong></td><td colspan="2" rowspan="1"><strong>Procent av rösterna</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>Parti</td><td><strong>2017</strong></td><td><strong>2012</strong></td><td><strong>2017</strong></td><td><strong>2012</strong></td> <td><strong>Kolumn A</strong></td><td><strong>Kolumn B</strong></td><td><strong>Kolumn C</strong></td></tr></thead>
+                <tr><td>Samlingspartiet</td><td>532 000</td><td>546 000</td><td>20,7 %</td><td>21,8 %</td><td></td><td></td><td></td></tr>
+                <tr><td>SDP</td><td>498 000</td><td>488 000</td><td>19,4 %</td><td>19,5 %</td><td></td><td></td><td></td></tr>
+                <tr><td>Centern</td><td>451 000</td><td>465 000</td><td>17,5 %</td><td>18,6 %</td><td></td><td></td><td></td></tr>
+                <tr><td>De Gröna</td><td>320 000</td><td>213 000</td><td>12, 5 %</td><td>8,5 %</td><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+            <ol>
+              <li>Fyll i hur många procentenheter som understödet ändrades i Kolumn A.</li>
+              <li>Fyll i den procentuell föränding i antal röster som partierna fick i Kolumn B.</li>
+              <li>Fyll i den procentuell föränding i understöd som partierna fick i Kolumn C.</li>
+            </ol>
+            <p>Använd dig av en tiondels decimals noggrannhet och beteckna minskning med negativa värden och ökning med positiva värden.</p>
+
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9">
+            <div class="card card-body answer"><table>
+              <tbody>
+                <thead><tr><td>&nbsp;</td><td colspan="2" rowspan="1"><strong>Antal röster</strong></td><td colspan="2" rowspan="1"><strong>Procent av rösterna</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr><td>Parti</td><td><strong>2017</strong></td><td><strong>2012</strong></td><td><strong>2017</strong></td><td><strong>2012</strong></td> <td><strong>Kolumn A</strong></td><td><strong>Kolumn B</strong></td><td><strong>Kolumn C</strong></td></tr></thead>
+                <tr><td>Samlingspartiet</td><td>532 000</td><td>546 000</td><td>20,7 %</td><td>21,8 %</td><td> -1,1 %</td><td> -2,6 %</td><td> -5,2 %</td></tr>
+                <tr><td>SDP</td><td>498 000</td><td>488 000</td><td>19,4 %</td><td>19,5 %</td><td> -0,1 %</td><td> 2,0 %</td><td> -0,7 %</td></tr>
+                <tr><td>Centern</td><td>451 000</td><td>465 000</td><td>17,5 %</td><td>18,6 %</td><td> -1,1 %</td><td> -3,0 %</td><td> -5,7 %</td></tr>
+                <tr><td>De Gröna</td><td>320 000</td><td>213 000</td><td>12, 5 %</td><td>8,5 %</td><td> 4,0 %</td><td> 50,2 %</td><td> 46,1 %</td></tr>
+              </tbody>
+            </table> </div></div>
+            <ol start="4">
+              <li>Vad beror skillnaderna på i Kolumn A, Kolumn B och Kolumn C? Varför ger inte Kolumn B och Kolumn C samma värde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9a">
+              <div class="card card-body answer"><p>Kolumn B och C ger inte samma värde eftersom antaler som röstat är olika från år till år.</p> </div></div> </li>
+              <li>Utgående från datan i tabellen. Vem kan kalla sig för att ha segrat i kommunalvalet 2017 ? Kom ihåg att motivera din åsikt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+
+        </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="4_repfunktioner.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_procentforandring.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

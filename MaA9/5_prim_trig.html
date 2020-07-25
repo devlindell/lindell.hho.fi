@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. för trigonometriska funktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_prim_exp.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="6_integral.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. för trigonometriska funktioner</h1>
+      <section>
+        <div class="theory">
+          <p>För de trigonometriska funktionerna gäller</p>
+          <p>\( \displaystyle\int \sin x \mathrm{ d}x = -\cos x + C \) och </p>
+          <p> \( \displaystyle\int \cos x \mathrm{ d}x = \sin x + C \).</p>
+          <p>Detta eftersom \( D(-\cos x) = -D\cos x = -(-\sin x)=\sin x \) och \( D\sin x = \cos x \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm den primitiva funktionen för \( f(x)=2\cos x -\sin x \).</p>
+            <h4>Lösning</h4>
+            <p>\( \begin{array}{rcl} F(x) & = & \displaystyle\int 2\cos x -\sin x \mathrm{ d}x \\  & = &  2\sin x -(-\cos x) + C \\  & = &  2\sin x +\cos x +C\\ \end{array} \)</p>
+          </div>
+          <p>En sammansatt funktion deriverar vi som \( Df(g)=f'(g)g' \). Då vi tillämpar detta på sinus och cosinus får vi följande:</p>
+          <p>\( \begin{array}{rcl} D \sin (f(x))  & = &  \cos(f(x))\cdot f'(x) \\  & = &  f'(x)\cos(f(x))\\ \text{ och } \\ D \cos (f(x))  & = &  -\sin(f(x))\cdot f'(x) \\  & = &  -f'(x)\sin(f(x))\\ \end{array} \)</p>
+          <p>Då vi opererar med integralen på bägge led får vi att \( \displaystyle\int f'(x)\cos f(x) \mathrm{ d}x = \sin f(x) +C \) och \( \displaystyle\int f'(x)\sin f(x) \mathrm{ d}x = -\cos f(x) +C. \).</p>
+          <p>Allmänt kan vi integrera sammansatta funktioner som \( \displaystyle\int f'(x)g(f(x))\mathrm{ d}x = G(f(x)) + C \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm \( \displaystyle\int \cos 5x \mathrm{ d}x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har den inre funktionen \( 5x \) och dess derivata, \( 5 \), måste vi hitta framför eller så måste vi skapa den.</p>
+            <p>\( \displaystyle\int \cos 5x \mathrm{ d}x =\dfrac{1}{5}\displaystyle\int 5\cos 5x \mathrm{ d}x = \dfrac{1}{5}\sin 5x + C \).</p>
+          </div>
+          <div class="summary box">
+            <p>Trigonometriska funktioner integrerar vi som</p>
+            <ul>
+              <li>\( \displaystyle\int \sin x \mathrm{ d}x = -\cos x + C \)</li>
+              <li>\( \displaystyle\int \cos x \mathrm{ d}x = \sin x + C \)</li>
+            </ul>
+            <p>Sammansatta funktioner integrerar vi som</p>
+            <ul>
+              <li>\( \displaystyle\int f'(x)g(f(x))\mathrm{ d}x = G(f(x)) + C \)</li>
+            </ul>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm
+            <ol>
+              <li>\( \displaystyle\int 4\cos x \mathrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( \displaystyle\int 4\cos x \mathrm{ d}x = 4\sin x + C \).</p></div></div> </li>
+              <li>\( \displaystyle\int \cos 4x \mathrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( \displaystyle\int \cos 4x \mathrm{ d}x = \dfrac{1}{4}\displaystyle\int 4\cos 4x \mathrm{ d}x =\dfrac{1}{4}\sin 4x + C = \dfrac{1}{4}\sin 4x +C \)</p></div></div> </li>
+              <li>\( \displaystyle\int 5 \sin x \mathrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( \displaystyle\int 5 \sin x \mathrm{ d}x = -5\cos x+C \)</p></div></div> </li>
+              <li>\( \displaystyle\int \sin 5x \mathrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>\( \displaystyle\int \sin 5x \mathrm{ d}x = \dfrac{1}{5}\displaystyle\int 5\sin 5x \mathrm{ d}x = \dfrac{1}{5} (-\cos 5x) + C = -\dfrac{1}{5}\cos 5x +C \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm den primitiva funktionen för
+            <ol>
+              <li>\( x^2 \sin x^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( \displaystyle\int x^2 \sin x^3 \mathrm{ d}x = \dfrac{1}{3}\displaystyle\int 3x^2 \sin x^3 \mathrm{ d}x =\dfrac{1}{3}(-\cos x^3) + C = -\dfrac{1}{3}\cos x^3 + C \)</p></div></div> </li>
+              <li>\( 2\cos \dfrac{x}{3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( \displaystyle\int 2\cos \dfrac{x}{3} \mathrm{ d} x = 2\cdot 3\displaystyle\int \dfrac{1}{3}\cos \dfrac{x}{3} \mathrm{ d} x = 2\cdot 3\sin \dfrac{x}{3} + C = 6\sin\dfrac{x}{3}+ C \)</p></div></div> </li>
+              <li>\( x^2\sin 3x^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( \displaystyle\int x^2\sin 3x^3 \mathrm{ d} x = \dfrac{1}{9}\displaystyle\int 9x^2\sin 3x^3 \mathrm{ d} x=\dfrac{1}{9}(-\cos 3x^3) +C = -\dfrac{1}{9}\cos 3x^3 + C \)</p></div></div> </li>
+              <li>\( x\cos (-2x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>\( \displaystyle\int x\cos (-2x^2) \mathrm{ d} x = -\dfrac{1}{4}\displaystyle\int -4x\cos (-2x^2) \mathrm{ d} x = -\dfrac{1}{4}\sin (-2x^2) + C = \dfrac{1}{4}\sin 2x^2 +C \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( \displaystyle\int \sin x \cos^2 x \mathrm{ d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi ser \( \cos^2 x \) som \( (\cos x)^2 \). Då är inre funktionens derivata \( -\sin x \) som vi fixar till. </p>
+              <p>\( -\displaystyle\int -\sin x\cos^2 x \mathrm{ d}x = -\dfrac{1}{3}\cos^3 x + C \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm den primitiva funktion för \( f(x)=\sin x + 2\cos 2x \) som i punkten \( \pi \) har värdet 3.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>\( F(x)= -\cos x +\sin(2x) + C \). Eftersom \( F(\pi)=3 \) får vi att \( -\cos \pi +\sin(2\pi) + C = 3 \Leftrightarrow C= 2 \).</p>
+              <p>Alltså \( F(x)=-\cos x +\sin(2x) + 2 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \( \displaystyle\int \sin(2x -\dfrac{\pi }{4}) \mathrm{ d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>\( \displaystyle\int \sin(2x -\dfrac{\pi }{4}) \mathrm{ d}x = \dfrac{1}{2}\displaystyle\int 2\sin(2x -\dfrac{\pi }{4}) \mathrm{ d}x = \dfrac{1}{2}(-\cos(2x-\dfrac{\pi}{4})) + C = -\dfrac{1}{2}\cos(2x -\dfrac{\pi}{4})+C \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \( \displaystyle\int \cos(\pi -\dfrac{x}{2}) \mathrm{ d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>\( \displaystyle\int \cos(\pi -\dfrac{x}{2}) \mathrm{ d}x = -2\displaystyle\int -\dfrac{1}{2}\cos(\pi -\dfrac{x}{2}) \mathrm{ d}x = -2\sin(\pi - \dfrac{x}{2})+C \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För funktionen \( f \) vet vi att \( f''(x)=\sin x -4\cos 2x \) och att \( f'(0)=2 \) och att \( f(\dfrac{\pi}{2})=3 \). Bestäm \( f(x) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Vi får att \( f'(x)=-\cos x -2\sin(2x) + C \) och att \( f(x)=-\sin x + \cos (2x) + Cx + D \).</p>
+              <p>Villkoren \( f'(0)=2 \) och \( f(\dfrac{\pi}{2})=3 \) ger oss ekvationssystemet</p>
+              <p>\( \left\{ \begin{array}{rcl} -\cos 0 -2\sin(2\cdot 0) + C  & = &  2 \\ -\sin \dfrac{\pi}{2} + \cos (2\cdot \dfrac{\pi}{2}) + C\cdot \dfrac{\pi}{2} + D  & = &  3 \\ \end{array}\right. \)</p>
+              <p>att \( C = 3 \) och \( D = \dfrac{1}{4} \).</p>
+              <p>Alltså \( f(x)=\sin x - \cos (2x) + 3x + \dfrac{1}{4} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att \( \displaystyle\int f'(x)g(f(x))\mathrm{ d}x = G(f(x)) + C \) gäller.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>\( D G(f(x))= G'(f(x))f'(x)=f'(x)g(f(x)) \)</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="4_prim_exp.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_integral.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

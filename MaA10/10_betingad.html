@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>10. Betingad sannolikhet</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="9_blandat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 10 Sannolikhet och statistik</h3>
+      <a href="11_mangdlara.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>10. Betingad sannolikhet</h1>
+      <section>
+        <div class="theory">
+          Om du inte är bekant med mängdlära från tex kurs 11 så rekommenderas att du börjar med kapitel 6.1.
+          <div class="intro box">
+            <p>Anna, Bertil, Cecilia och Daniel grubblar igen. De skall resa på solsemester och funderar på sannolikheten att det kommer att regna väl framme under en slumpmässigt vald dag.</p>
+            <p>För semesterorten gäller att sannolikheten för lågtryck är 0,1, ostadigt 0,2 och sannolikheten för högtryck är 0,7.</p>
+            <p>Vi skiver sannolikheterna som</p>
+            <table>
+              <tbody>
+                <tr><td>P(lågryck) = 0,1</td></tr>
+                <tr><td>P(ostadigt) = 0,2</td></tr>
+                <tr><td>P(högtryck) = 0,7</td></tr>
+              </tbody>
+            </table>
+            <p>Vidare inför vi en sannolikhet för regn. Om det regnar är beroende av vädertypen, vi talar om betingad sannolikhet.</p>
+            <table><tbody>
+              <tr><td>P(regn | lågtryck)= 0,6</td></tr>
+              <tr><td>P(regn | ostadigt)= 0,3</td></tr>
+              <tr><td>P(regn | högtryck)= 0,1</td></tr>
+            </tbody>
+            </table>
+            <p>Vi tolkar raderna så att sannolikheten för regn då det är lågtryck är 0,6, regn då det är ostadigt är 0,3 och regn då det är högtryck 0,1.</p>
+            <p>För att bestämma sannolikheten för att det regnar på en slumpmässig dag gör vi en tabell.</p>
+            <table>
+              <tbody><tr><td>Vädertyp</td><td colspan="2" rowspan="1">Lågtryck (0,1)</td><td colspan="2" rowspan="1">Ostadigt (0,2)</td><td colspan="2" rowspan="1">Högtryck (0,7)</td></tr>
+                <tr><td></td><td>Ej regn (0,4)</td><td>Regn (0,6)</td><td>Ej regn (0,7)</td><td>Regn (0,3)</td><td>Ej regn (0,9)</td><td>Regn (0,1)</td></tr>
+                <tr><td>Sannolikheter:</td><td></td><td>\( 0,1 \cdot 0,6 \)</td><td></td><td>\( 0,2\cdot 0,3 \)</td><td></td><td>\( 0,7 \cdot 0,1 \)</td></tr>
+              </tbody>
+            </table>
+            <p>Vår sökta sannolikhet blir den totala sannolikheten för regn: \( 0,1 \cdot 0,6+0,2\cdot 0,3 +0,7 \cdot 0,1= 0,19 \).</p>
+            <p>Matematiskt betecknar vi betingade sannolikheter som P(A|B) = \( \dfrac{P(A \cap B)}{P(B)} \). Vi är intresserade av att veta hur stor andel A utgör av B.</p>
+          </div>
+          <p>I exemplet ovan kan vi gå uppifrån ner och lösa problemet. Oftast är livet inte så lätt och inom sannolikhetsläran utnyttjar vi <a href="http://sv.wikipedia.org/wiki/Bayes_sats" target="_blank">Bayes sats</a> för att lösa sannolikhets problem där vi vill gå baklänges.</p>
+          <div class="exercise box">
+            <p>Antag att Anna, Bertil, Cecilia och Daniel är på sin semesterort. En morgon vaknar de till att det regnar. Vilken är sannolikheten att det är högtryck ute?</p>
+            <h4>Lösning</h4>
+            <p>Vi använder oss av samma beteckningar som ovan. Nu är vi intresserade av P(högtryck|regn).</p>
+            <p>Vi kan skriva P(högtryck|regn) = \( \dfrac{\textrm{P(högtryck och regn)}}{\textrm{P(regn)}} \\ = \dfrac{\textrm{P(regn och högtryck)}}{\textrm{P(regn och lågtryck)}+\textrm{P(regn och ostadigt)}+\textrm{P(regn och högtryck)}} \).</p>
+            <p>Den sökta sannolikheten är \( \dfrac{0,7\cdot0,1}{0,1\cdot0,6 + 0,2\cdot 0,3 + 0,7\cdot 0,1} = 0,3684 \).</p>
+            <p>Sannolikheten att det är högtryck ute är 0,37.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>12,6 % av alla män och 9,9 % av alla kvinnor är vänsterhänta. Vi studerar en population som består av 45 % män och 55 % kvinnor. Från populationen väljs slumpmässigt en person. Bestäm sannolikheten för att personen är
+            <ol>
+              <li>en vänsterhänt kvinna <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( P(\text{Vänsterhänt kvinna}) = P(\text{Kvinna och vänsterhänt}) \\ = 0,55\cdot 0,099 = 0,05445 \).</p></div></div> </li>
+              <li>vänsterhänt <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( P(\text{Vänsterhänt}) = P(\text{Vänsterhänt man}) \text{ eller }P(\text{Vänsterhänt kvinna}) \\ = 0,45\cdot 0,126 + 0,55 \cdot 0,099 = 0,11115 \).</p></div></div> </li>
+              <li>en kvinna om vi vet att personen är vänsterhänt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi får att \( P(\text{Kvinna} \mid \text{Vänsterhänt}) = \dfrac{P(\text{Kvinna och vänsterhänt})}{P(\text{Man och vänsterhänt})+P(\text{Kvinna och vänsterhänt})} \\ = \dfrac{0,55 \cdot 0,099}{0,45\cdot 0,126 + 0,55 \cdot 0,099} = 0,48987 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>I en fabrik där man tillverkar lampor finns det tre produktionslinjer. Linje 1 producerar 35 %, linje 2 producerar 40 % och linje 3 producerar 25 % av alla lampor. Av lamporna som produceras vid linje 1 är 3 % defekta. För linje 2 gäller 4 % och linje 3 är 6 % defekta. Bestäm sannolikheten för att
+            <ol>
+              <li>en slumpmässigt vald lampa är defekt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( P(\text{Defekt}) = 0,35\cdot 0,03 + 0,40\cdot 0,04 + \cdot 0,25\cdot 0,06 = 0,0415 \).</p></div></div> </li>
+              <li>en lampa som är defekt kommer från linje 1. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( P(\text{Linje 1} \mid \text{Defekt}) \\ =  \dfrac{0,03\cdot 0,35}{0,03\cdot 0,35 + 0,04\cdot 0,4 + 0,06\cdot 0,25} \\ =0,25301  \)</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>På ett cigarettpaket läser vi följande: "Nio av tio strupcancerpatienter är rökare". Anta att detta påstående är korrekt samt att i befolkningen är 10 % rökare och att 0,1 % av hela befolkningen drabbas av strupcancer. Vad är sannolikheten att en rökare drabbas av strupcancer?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Sannolikheten är \( P(\text{Strupcancer} \mid \text{ Rökare}) \\=   \dfrac{P(\text{Strupcancer och rökare})}{P(\text{Rökare})}   \\= \dfrac{0,001 \cdot 0,90}{0,10} = 0,009 \).</p>
+              <p>Detta betyder att strupcancer är 9 gånger vanligare hos rökare än ickerökare.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Låt oss anta att 0,40 % av befolkningen drabbas av en form av cancer. Ett diagnostiskt test ger positivt resultat i 99,5 % av fallen om en individ har cancer och ger positivt resultat i 1 % av fallen om en individ inte har cancer. Då vi plockar på måfå en vuxen individ ur en stor population ger testet ett positivt resultat, vad är sannolikheten för att individen har den aktuella formen av cancer?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Sannolikheten är \( P(\text{Cancer} \mid \text{Positivt resultat})  = \dfrac{P(\text{Positivt resultat} \mid \text{Cancer})}{P(\text{Positivt resultat} \mid \text{Cancer}) + P(\text{Positivt resultat} \mid \text{Inte cancer})}  \).<p>\( = \dfrac{0,995 \cdot 0,004}{0,995 \cdot 0,004 + 0,01 \cdot 0,996} = 0,2855 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="9_blandat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="11_mangdlara.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

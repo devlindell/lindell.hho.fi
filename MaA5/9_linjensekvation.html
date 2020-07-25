@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>9. Ekvationen Ax + By + C =0</title>
+
+  </head>
+  <body>
+    <header class="MaA5">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+            <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+            <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+            <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+            <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+            <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+            <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+            <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+            <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="8_linjen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+      <a href="10_cirkeln.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>9. Ekvationen \( Ax + By + C = 0 \)</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vad föreställer \( 4x-2y +6=0  \)?</p>
+            <div class="video">
+              <iframe allowfullscreen="" frameborder="0" height="360" src="https://www.youtube.com/embed/-hwh98DtTSo" width="640">
+              </iframe>
+            </div>
+          </div>
+          <p>Ekvationen för en linje kan vi antingen uttrycka som \( Ax+By+C=0  \), \( y-y_0=k(x-x_0)  \) eller som \( y=kx+b  \).</p>
+          <ul>
+            <li>\( Ax+By+C=0  \) kallas för linjens ekvation i allmän form.</li>
+            <li>\( y-y_0=k(x-x_0)  \) kallas för linjens ekvation i enpunktsform.</li>
+            <li>\( y=kx+b  \) kallas för linjens ekvation i standardform.</li>
+          </ul>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> En linje skär x-axeln i punkten 5 och har riktningskoefficienten -1. Bestäm linjens ekvation i allmän form.</p>
+            <h4>Lösning</h4>
+            <p>Vi börjar med att använda oss av enpunktsformen, \( y-y_0=k(x-x_0)  \). Om linjen skär x-axeln i punkten 5 går den igenom punkten (5,0).</p>
+            <p>\( \begin{array}{rcll} y-y_0 &  = &  k(x-x_0) \\ y-0  &  =  &  -1(x-5) \\ y  &  =  & -x+5  & \textrm{Här har vi ekvationen i enpunktsform.}\\ x+y-5  & = &  0  &  \textrm{Här har vi ekvationen i allmän form.} \\ \end{array}  \) </p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm de punkter som uppfyller villkoret \( 2x+y-4 < 0  \)?</p>
+            <div class="video">
+              <iframe allowfullscreen="" frameborder="0" height="360" src="https://www.youtube.com/embed/NG-LdNvXQTE" width="640"></iframe>
+            </div>
+          </div>
+          </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>
+
+          <li>Uppgift
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li>Vad föreställer följande ekvationer?
+            <ol>
+              <li>\( 3x+y-9=0  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Linjen \( y=-3x+9  \)</p> </div></div> </li>
+              <li>\( -3x+2y = 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Linjen \( \dfrac{3}{2}x+2 \). </p></div></div> </li>
+              <li>\( 2x-y=2(x-1)  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Linjen \( y=2  \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm ekvationen för den linje som är parallell med \( y=-2x-5  \) och skär \( y  \)-axeln i punkten \( 4  \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vår linje skall ha riktningskoefficienten \( -2  \) (varför?) och gå genom punkten \( (0,4)  \) (varför?).<p>Linjens ekvation är \( y-y_0 =k(x-x_0)  \). Vi får \( y-4=-2(x-0)  \). Linjens ekvation är \( y=-2x+4  \).</p> </div></div>
+          </li>
+
+          <li>Visa att \( x-1=y  \), \( 3x=3(y+1)  \) och \( 2(y-x)=-2  \) representerar samma linje.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi skriver alla ekvationer på samma sätt och jämför om vi får samma uttryck.</p>
+                <p>\( x-1=y \Leftrightarrow y=x-1  \),</p>    <p>\( 3x=3(y+1) \Leftrightarrow y=x-1   \) och</p><p>\( 2(y-x)=-2 \Leftrightarrow y=x-1  \). Alla uttryck representerar samma linje \( y=x-1  \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de punkter som uppfyller villkoret \( x-y>1  \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi skriver först uttrycket som \(  y < x-1  \). Vi ritar utnyttjar linjen \( y=x-1  \) för att svara på frågan. </p>
+                <p>Vi får</p> <p><img src="pics/9-8.png" alt="" class="responsivepic400" /></p> <p>Området är där y är mindre än x-1.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de punkter som uppfyller villkoret \( 2x <  y-1  \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi skriver uttrycket som \(  y > 2x+1   \) och ritar linjen \( y=2x+1  \). Vi får </p>
+                <p><img src="pics/9-9.png" alt="" class="responsivepic400" /></p>
+                <p>y skall var större än \( 2x+1  \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm de punkter som uppfyller villkoret \( \mid x +y \mid  <  2  \). Dela upp absolutbeloppet för att komma vidare.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Genom att dela upp absolutbeloppet får vi olikheterna \( x+y < -2  \) och \( x+y < 2  \) (varför?). De skall gälla samtidigt. Alltså</p>
+                <p><img src="pics/9-10.png" alt="" class="responsivepic400" /></p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA5">
+      <a href="8_linjen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="10_cirkeln.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

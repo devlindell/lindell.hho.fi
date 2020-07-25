@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>7. Tillämpningar av rotfunktionen</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="6_deri_rotfunkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="8_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>7. Tillämpningar av rotfunktionen</h1>
+      <section>
+        <div class="theory">
+          <p>Till nästa tar vi och ser på tillämpningar där vi undersöker funktioner där vi har kvadratrötter.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Från en ö som befinner sig 2,5 km från kusten skall man dra en elkabel till närmaste transformator i elnätet. Närmaste transformator befinner sig 7,0 km från ön då man följer strandlinjen. Att dra kabel genom havet kostar 35 €/m och att dra på land kostar 10 €/m. Bestäm hur man borde dra kabeln så att det kostar så litet som möjligt?</p>
+            <div class="video">
+              <iframe width="640" height="564" src="https://player.vimeo.com/video/327777772" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+            </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm största värdet för funktionen \( f(x)=x\sqrt{6-x^2} \).</p>
+            <div class="video">
+            <iframe width="640" height="564" src="https://player.vimeo.com/video/327779729" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+          </div>
+        </div>
+
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><p>Annas morfar som bor i en stuga mitt i skogen. Till stugan kommer man längs en 4,5 km lång rak skogsstig. Från korsningen av skogsstigen och landsvägen finns en transformator på avståndet 12,5 km. Annas morfar vill ha el till stugan och behöver din hjälp så att det är så billigt för honom som möjligt. Det lokala elbolaget erbjuder att dra el genom skogen och längs med landsvägen. Att dra elkabel genom skogen kostar 20 €/m och att dra längs med landsvägen kostar 8 €/m. Vad kostar det som billigast?</p>
+            <p><img src="pics/7-1.png" alt="" class="responsivepic600" /></p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>Funktionen som ger priset är \( f(x)=20\sqrt{x^2+4,5^2}+8(12,5-x) \).</p>
+              <p>Derivatans nollställe är \( \dfrac{3\sqrt{21}}{7} \approx 1,96 \).</p>
+              <p>Det minsta priset är \( f(\dfrac{3\sqrt{21}}{7}) \approx 182,49 \) €.</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li><p>Anna, Bertil och Cecilia befinner sig i punkterna A, B och C på en sandplan. De tänker träffas i punkten P. Bestäm punkten P så att den totala sträckan som alla behöver flytta på sig är så kort som möjligt. Hur långt från B skall de träffas?</p>
+            <p><img src="pics/7-2.png" alt="" class="responsivepic600" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Funktionen som ger den totala sträckan är \( f(x)=\sqrt{800^2+x^2}+\sqrt{450^2+x^2}+650-x \). Här är \( x \) avståndet från sträckornas gemensamma punkt.</p>
+                <p>Derivatans nollställe är i punkten då x=342,88 m.</p>
+                <p>Avståndet från B är 307,12 m, alltså 310 m.</p> </div></div>
+          </li>
+
+          <!--<li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Annas farmor bor på en ö som är 1,5 km väst från fastlandet. Rakt norrut längs med fastlandet finns ett postkontor på avståndet 6,0 km. Annas farmor ror med hastigheten 1,0 km/h och går med hastigheten 2,0 km/h. Bestäm den kortaste tid det tar för henne att föra post till postkontoret.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Funktionen är \( f(x) = \dfrac{s_1}{v_1}+\dfrac{s_2}{v_2}=\dfrac{\sqrt{1,5^2+x^2} \textrm{ km}}{1,0 \textrm{ km/h}}+\dfrac{6,0-x \textrm{ km}}{2,0 \textrm{ km/h}} \).</p>
+                <p>Derivatafunktionen har ett nollställe i \( \dfrac{\sqrt{3}}{2} \). Eftersom vi har en parabel som öppnar sig uppåt får vi ett minsta värde i \( f(\dfrac{\sqrt{3}}{2}) \approx 4,3 \) h.</p>
+                <p>Svar, 4,3 h eller 4 h 18 minuter.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm största värdet för funktionen \( f(x)=\sqrt{8-2x^2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Funktionen är definierad då \( -2\leq x \leq 2 \). Derivatafunktionen är \( f'(x)=\dfrac{-\sqrt{2}x}{\sqrt{4-x^2}} \) som har ett nollställe i \( x=0 \).</p>
+                <p>Då \( x < 0 \) är \( f'(-1)=\dfrac{-\sqrt{2}(-1)}{\sqrt{4-(-1)^2}} > 0 \) och då \( x > 0 \) är \( f'(1)=\dfrac{-\sqrt{2}\cdot 1}{\sqrt{4-1^2}} < 0 \).</p>
+                <p>Vi har ett största värde i \( x=0 \). Största värdet för funktionen är \( 2\sqrt{2} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm största och minsta värdet för funktionen \( f(x)=x\sqrt{8-x^2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Funktionen är definierad då \( -2\leq x \leq 2 \). Derivatafunktionen är \( f'(x)= \dfrac{\sqrt{2}((4-x^2)-x^2)}{\sqrt{4-x^2}} \).</p>
+                <p>Nämnaren är i positiv i definitionsmängden, så vi undersöker täljaren. \( \sqrt{2}((4-x^2)-x^2)=0 \) ger nollställena för derivatan som är \( \pm \sqrt{2} \).</p>
+                <p>När vi undersöker tecknen för derivatan får vi att \( f'(-2) < 0 \), \( f'(0) > 0 \) och \( f'(2) < 0 \).</p>
+                <p>Vi hittar ett minsta värde i \( f(-\sqrt{2})= -2\sqrt{2} \).</p>
+                <p>och ett största värde i \( f(\sqrt{2})= 2\sqrt{2} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>I en halvcirkel som representeras av funktionen \( f(x)=\sqrt{4-x^2} \) ritas in en maximalt stor rektangel. Bestäm storleken av denna rektangel.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Rektangeln har hörnpunkterna \( (x,f(x)) \). Radien för cirkeln är 2 så vi tar och arbetar med intervallet [0,2].</p>
+                <p>Funktionen som ger arean är \( A(x)=x\cdot \sqrt{4-x^2} \) som vi antingen kan derivera och undersöka eller så flyttar vi in \( x \):et och undersöker \( \sqrt{x^2(4-x)^2} \).</p>
+                <p>Derivatafunktionen har ett nollställe då \( x=\sqrt{2} \).</p>
+                <p>Eftersom vi har ett intervall får funktionen sina största och minsta värden i intervallers ändpunkter eller i derivatans nollställen.</p>
+                <p>\( A(0)=0 \), \( A(2)=0 \) och \( A(\sqrt{2})=4 \). Storleken är 4 a.e.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Man har reserverat 16 kvadratmeter tyg för ett tält som har formen av en rak cirkulär kon. Tyg används inte för tältets botten. Bestäm diametern för den cirkulära basytan då tältets volym är så stor som möjligt. [V15, 9]
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="11t">
+            <div class="card card-body hint"> <p>Vi namnger radien med \( r \) och sidan med \( s \). Höjden är då \( h=\sqrt{s^2-r^2} \). Arean för lätets mantelyta är \( A=\pi rs=16 \) som ger oss att \( s=\dfrac{16}{\pi r} \).</p>
+              <p>Hur kommer du sedan åt en funktion som beskriver tältet volym?</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Tältets volym är \( V=\dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi r^2\sqrt{s^2-r^2} \).</p>
+                <p>Vi ersätter \( s \) och får \( V(r)=\dfrac{1}{3}\pi r^2\sqrt{(\dfrac{16}{\pi r})^2-r^2} = \dfrac{1}{3}\sqrt{256r^2-\pi^2 r^6} \).</p>
+                <p>\( V(r) \) är störst då \( 256r^2-\pi^2 r^6 \) är som störst. Vi deriverar \( f'(r)=512r-6\pi^2r^5 \), som har nollställena \( r=0 \) eller \( r=\pm \dfrac{4}{\sqrt[4]{3\pi^2}} \).</p>
+                <p>Av dessa duger endast \( r= \dfrac{4}{\sqrt[4]{3\pi^2}}\approx 1,715 \).</p>
+                <p>Diametern är 3,43 m.</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="6_deri_rotfunkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

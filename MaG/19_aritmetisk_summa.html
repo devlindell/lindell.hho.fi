@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>19. Aritmetisk summa</title>
+
+ </head>
+ <body>
+  <header class="MaG">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+      <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+      <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+      <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+      <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+      <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+      <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+      <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+      <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+      <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+      <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+      <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+      <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+      <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+      <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+      <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+      <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+      <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+      <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+      <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+      <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+     </div>
+    </div>
+   </nav>
+   <a href="18_geometrisk.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaG Tal och talföljder</h3>
+   <a href="20_geometrisk_summa.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>19. Aritmetisk summa</h1>
+   <section>
+    <div class="theory">
+     <div class="intro box">
+      <p>Bestäm summan av de första 100 heltalen.</p>
+      <h4>Lösning</h4>
+      <p>Vi skall addera \(1+2+3+4+5+6+ \ldots + 98+99+100\).</p>
+      <p>Vi märker att då vi kombinerar det sista och första talet får vi summan 101. Samma får vi då vi adderar 2+99, 3+98, ... , 50+51.</p>
+      <p>Hur många sådana par har vi som bildar summan 101?</p>
+      <p>Jo, 50 st. Summan får vi som \(50 \cdot 101 = 5050\).</p>
+     </div>
+     <p>I introduktionen arbetade vi med en aritmetisk talfölj, varje tal var ett större än de föregående. Genom att gruppera dem får grupperna samma summa. Sedan är det bara att multiplicera med antal grupper.</p>
+     <p>Mera matematiskt ser det ut som följande:</p>
+     <p>En aritmetisk talföljd består av elementen \(a_1, a_1+d, a_1+2d, a_1+3d, \ldots ,a_1+(n-2)d, a_1+(n_1)d\). Vi har \(n\) stycken element. Vi bestämmer summan av dessa \(n\) st element \(S_n= a_1+ a_2 + a_3 + \ldots + a_{n-1} + a_n\).</p>
+     <p>Vi märker att summan av \(a_1 + a_n = a_2 + a_{n-1} = a_3 + a_{n-2} = \ldots\). Sådana par av terner har vi \(\dfrac{n}{2}\) st.</p>
+     <div class="summary box">
+      <p>Summan är \(S_n=\dfrac{n}{2}(a_1 + a_n) = n\dfrac{a_1+a_n}{2}\), där</p>
+      <p>\(n\) är antal element</p>
+      <p>\(a_1\) är första elementet</p> <p>\(a_n\) sista elementet.</p>
+     </div>
+     <p>För summa använder man inom matematiken även symbolen \(\sum\). Med summa notationen betyder \(\sum_{i=2}^6 a_i = a_2+a_3+a_4+a_5+a_6\).</p>
+     <p>Skriver vi \(\sum_{k=1}^5 \dfrac{1}{k} = \dfrac{1}{1}+\dfrac{1}{2}+\dfrac{1}{3}+\dfrac{1}{4}+\dfrac{1}{5}\).</p>
+     <p>Summan av en aritmetisk talföljd kan vi skriva som \(\sum_{i=1}^n = n\dfrac{a_1+a_n}{2}\).</p>
+     <div class="exercise box">
+      <p><strong>Exempel 1</strong> Bänkarna i en biosalong är placerade så att på första raden finns det 25 st, sedan finns det 2 st flera per rad. Totalt finns det 14 rader i biosalongen. Hur många platser finns det totalt i biosalongen?</p>
+      <h4>Lösning</h4>
+      <p>Vi har en aritmetisk summa där \(a_1 = 25\), \(a_{14}=25+2\cdot 14\) och \(n=14\). Antal platser är \(\dfrac{14}{2}(25+25+2\cdot 14 ) = 546\).</p>
+     </div>
+     <div class="exercise box">
+      <p><strong>Exempel 2</strong> Bestäm summan av de naturliga tal som är delbara med 11 och består av mindre än 4 siffror.</p>
+      <h4>Lösning</h4>
+      <p>Talen ser ut som \(11, 22, 33, \ldots 990\). Första elementet är \(a_1=11\) och skillnaden är \(d=11\).</p>
+      <p>Antalet element är</p>
+      <p>\(\begin{array}{rcl}
+       a_n = 11+(n-1)11 & = & 990\\
+       n-1 & = & \dfrac{990-11}{11}\\
+       n & = & \dfrac{979}{11}+1\\
+       n & = & 90\\
+       \end{array}\)</p>
+       <p>Summan är \(\sum_{n=1}^{90} 11+11(n-1) = \dfrac{90}{2}(11+990)=45045\).</p>
+      </div>
+      <div class="exercise box">
+       <p><strong>Exempel 3</strong> Ett bostadslån på 150 000 € lånas för 10 år med den årliga räntan 2,4 %. Varje månad betalas en lika stor amortering. Bestäm den totala summa som betalas i ränta.</p>
+       <h4>Lösning</h4>
+       <p>Under 10 år betalas 12 amorteringar så totala antalet amorteringar är 120 st. Betyder att varje amortering är \(\dfrac{150000}{120} = 1250\) €.</p>
+       <p>Per år betalar man 2,4 % i ränta. Det betyder att den månatliga räntan är \(\dfrac{2,4}{12} =0,2\) %.</p>
+       <p>Vi gör följande tabell</p>
+       <p>\(\begin{array}{cll}
+        \text{Månad} & \text{Summa på lånet kvar} & \text{Ränta som betalas} \\
+        1 & 150 000 & 0,002 \cdot 150 000 \\
+        2 & 148 750 & 0,002 \cdot 148 750 \\
+        3 & 147 500 & 0,002 \cdot 147 500 \\
+        \vdots\\
+        120 & 1250 & 0,002 \cdot 1250 \\
+        \end{array}\)</p>
+        <p>Vi har en aritmetisk summa där elementen minskar med värdet \(0,002 \cdot 1250\).</p>
+        <p>Den totala summan för räntan är \(\dfrac{120}{2}(0,002\cdot 150 000 + 0,002 \cdot 1250)= 18 150\) €</p>
+       </div>
+       <div class="video box">
+        <h3>Ekvationer på GeoGebra</h3>
+       </div>
+       <div class="video box">
+        <h3>Ekvationer på WolframAlpha</h3>
+       </div>
+
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <li>Bestäm summan av de 100 första jämna talen.
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="1">
+       <div class="card card-body answer"> <p>Vi har \(2+4+6+8 + \ldots +198 +200\). Vi kan gruppera dem som \(2+200 = 4+198\) osv.</p> <p>Grupper har vi 50 st. Summan är \(50 \cdot 202 = 10100\).</p>  <p>Eller med formel: \(n=100\), \(a_1=2\) och \(a_{100} = 200\). Alltså \(\dfrac{100}{2}(2+200) = 10100\).</p> </div></div>
+      </li>
+
+     <li>Bestäm summan av \(2 + 5 + 8 + 11 + \ldots + 83\).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2">
+       <div class="card card-body answer"> <p>Vi märker att skillnaden/steget, \(d\), är 3. En aritmetisk talföljd består av \(a_n=a_1 +(n-1)d\).</p>  <p>\(a_1 = 2\), \(d=3\) och det sista talet är 83. Vi får antal element ur ekvationen \(83=2+(n-1)3\) som har lösningen \(n=28\).</p>  <p>Summan är \(\dfrac{28}{2}(2+83) = 1190\).</p> </div></div>
+      </li>
+
+     <li>Bestäm \(\sum_{n=1}^{10} 9-2n\).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer"> <p>\(\sum_{n=1}^{10} 9-2n = \dfrac{10}{2}[(9-2\cdot 1)+(9-2\cdot 10)] = -20\).</p> </div></div>
+      </li>
+
+     <li>Bestäm \(\sum_{n=1}^{100} 2n-1\).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>\(\sum_{n=1}^{100} 2n-1 = \dfrac{100}{2}[(2\cdot 1-1)+(2\cdot 100-1)] = 50(1+199)=10000\).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \(\sum_{k=1}^{n} 2k-1\).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5">
+       <div class="card card-body answer"> <p>\(\sum_{k=1}^{n} 2k-1 = \dfrac{n}{2}[(2\cdot 1-1)+(2n-1)] = \dfrac{n}{2}(1+2n-1) = \dfrac{n\cdot 2n}{2} =n^2\).</p> </div></div>
+     </li>
+
+     <li><p>Av 750 konservburkar skall byggas ett så högt torn som möjligt så att överst är 1 burk, där under sedan 2 burkar, sedan 3 burkar osv.</p>  <p>Hur många konservburkar bildar bottnet?</p>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="6">
+      <div class="card card-body answer"><p>Vi har en aritmetisk summa där första elementet är \(a_1=1\) och \(d = 1\). Vår summa är \(\dfrac{n}{2}(1+n) = 750\) som har lösningarna \(n=\pm 38,29\). Eftersom \(n > 0\) så består bottnet av 38 burkar.</p> </div></div>
+      <ol>
+       <li>Hur många konservburkar är över? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6a">
+       <div class="card card-body answer"><p>Mängden burkar som är över är \(750 - \sum_{i=1}^{38} i = 750 - \dfrac{38}{2}(1+38)= 9\) st.</p> </div></div> </li>
+      </ol>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>I skolans gymnastiksal arrangeras stolarna i sådana rader att i första finns 14 stolar och så att i nästa rad finns 4 st flera stolar än i föregående rad. Hur många rader behövs då det skall finnas plats för 320 elever?
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="7">
+      <div class="card card-body answer"><p>Vår talföljd ser ut som \(a_n = 14 + 4(n-1)\) där \(n=1,2,3,\ldots\).</p>  <p>Summan är \(\sum_{i=1}^n 14+4(i-1) = 320\), alltså \(\dfrac{n}{2}(14+14+4(n-1))=320\) som har lösningarna \(n=-16\) och \(n=10\).</p>  <p>Det behövs 10 rader.</p> </div></div></li>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den totala summan som betalas i ränta för ett snabblån på 2000 € som avkortas varje månad under två år med den årliga räntan 24,0 %.
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="8">
+      <div class="card card-body answer"><p>Månatligen avkortar vi \(\dfrac{2000}{24} = 83,33\) €.</p>  <p>Den månatliga räntan är \(\dfrac{24}{12} = 2,0\) %.</p>  <p>Varje månad minskar räntan som vi betalar av kapitalet med \(0,02 \cdot 83,33\).</p>  <p>Den totala räntesumman är \(0,02 \cdot 2000 + 0,02 \cdot (2000 - 83,33) + \ldots 0,02 \cdot 83,33\). Summan har värdet \(\dfrac{24}{2}(0,02\cdot 2000 + 0,02\cdot 83,33) = 499,99 = 500\) €.</p> </div></div></li>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>För en aritmetiskt talföljd, \(a_1, a_2, a_3, \ldots\) gäller att summan av de tre första elementen är 3 och summan av de tre elementen efter det är 20. Bestäm det första elementet \(a_1\) och skillnaden \(d\) för talföljden.
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="9t">
+      <div class="card card-body hint">Bilda två summor och lös ekvationssystemet. Ekvationssystem per se kommer i MaA 5 men du kan bra lösa det med hjälp av tekniska hjälpmedel. </div></div>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="9">
+      <div class="card card-body answer"><p>Vi utgår från summorna och får följande ekvationssystem</p>  <p>\(\left\{ \begin{array}{l} \dfrac{3}{2}(a_1+a_1+d(3-1)) =3\\ \dfrac{3}{2}(a_1+(4-1)d+a_1+(6-1)d =20\\ \end{array} \right.\)</p>  <p>som har lösningarna \(a_1=-2\) och \(d=3\).</p> </div></div></li>
+     </li>
+
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaG">
+   <a href="18_geometrisk.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="20_geometrisk_summa.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

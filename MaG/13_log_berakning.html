@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>13. Beräkning med logaritmer</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="12_logaritmer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="14_log_tillampning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>13. Beräkning med logaritmer</h1>
+      <section>
+        <div class="theory">
+          <p>När vi räknar med logaritmer använder vi oss av följande formler:</p>
+          <div class="summary box">
+            <ul>
+              <li>\(\log_a x^r = r\cdot \log_a x\)</li>
+              <li>\(\log_a xy = \log_a x + \log_a y\)</li>
+              <li>\(\log_a \dfrac{x}{y} = \log_a x - \log_a y\)</li>
+            </ul>
+            <p>där det gäller att \(x, y >0\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong></p>
+            <p>Vi kan skriva</p>
+            <ul>
+              <li>\(\log_4 5^2 = 2\log_4 5\),</li>
+              <li>\(\log_3 14 = \log_3 (7\cdot 2) = \log_3 7 +\log_3 2\) och</li>
+              <li>\(\log_5 12 - \log_5 4 =\log_5 \dfrac{12}{4} =\log_5 3\).</li>
+            </ul>
+          </div>
+          <h4>Motivering</h4>
+          <p>Vi antar att \(s=\log_a x\). Enligt definitionen på logarimer gäller då att \(x=a^s\).</p>
+          <p>Då gäller att \(x^r= (a^s)^r=a^{rs}\).</p>
+          <p>Alltså logaritmen med basen \(a\) av talet \(x^r\) är \(rs\).</p>
+          <p>Med andra ord \(\log_a x^r = r\log_a x\).</p>
+          <p>På motsvarande sätt kan vi genom att utnyttja potensregler som \(a^r\cdot a^s=a^{r+s}\) och att \(\dfrac{a^r}{a^s}=a^{r-s}\) bestämma produkten och kvoter för logaritmer.</p>
+          <p>Vidare har vi att \(\log_a x =r\) och att \(\log_a y =s\). Per definition betyder det att \(x=a^r\) och att \(y=a^s\).</p>
+          <p>Med andra ord, \(xy=a^r\cdot a^s = a^{r+s}\).</p>
+          <p>Alltså logaritmen med basen \(a\) för talet \(xy\) är \(r+s\).</p>
+          <p>Med andra ord, \(\log_a xy = \log_a x + \log_a y\).</p>
+          <p>Och för kvoten gäller att \(\dfrac{x}{y}=\dfrac{a^r}{a^s}=a^{r-s}\).</p>
+          <p>Logaritmen med basen \(a\) för talet \(\dfrac{x}{y}\) är \(r-s\).</p>
+          <p>Med andra ord, \(\log_a \dfrac{x}{y}=\log_a x - \log_a y\).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm \(\log_3 12 - \log_3 8 + \log_3 6\).</p>
+            <h4>Lösning</h4>
+            <p>\(\log_3 12 - \log_3 8 + \log_3 6 = \log_3 (\dfrac{12}{8}) + \log_3 6 = \log_3 (\dfrac{12\cdot6}{8}) =\log_3 9= \log_3 3^2 = 2\log_3 3 = 2\cdot 1=2\)</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/369364030" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Lös ekvationen \(\lg 2x - \lg(x-5)=1\).</p>
+            <h4>Lösning</h4>
+            <p>Logaritmerna är definierade då \(2x>0 \Leftrightarrow x>0\) och då \(x-5>0 \Leftrightarrow x>5\).</p>
+            <p>\(\lg 2x - \lg(x-5)=1  \Leftrightarrow \lg\dfrac{2x}{x-5} = 1 \Leftrightarrow \lg\dfrac{2x}{x-5} = \lg 10^1\) som ger oss att</p>
+            <p>\(\begin{array}{rcll}
+              \dfrac{2x}{x-5}  & = &  10  & \mid \cdot (x-5)\\
+              2x  & = &  10(x-5) \\
+              2x  & = &  10x -50 \\
+              -8x  & = &  -50 \\
+              x  & = &  \dfrac{-50}{8} = 6\dfrac{1}{4}
+              \end{array}\)
+            </p>
+            <p>Eftersom \(6\dfrac{1}{4}\) är större än 5 duger roten.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Förenkla \(\log \dfrac{a}{\sqrt{b}}+\dfrac{1}{2}\log b\).</p>
+            <h4>Lösning</h4>
+            <p>Beteckningen \(\log\) betyder att basen kan ha vilket värde som helst bara den är positiv och olika ett.</p>
+            <p>\(\log \dfrac{a}{\sqrt{b}}+\dfrac{1}{2}\log b = \log a -\log \sqrt{2} + \log b^{\frac{1}{2}} = \log a - \log b^{\frac{1}{2}} + \log b^{\frac{1}{2}} = \log a\).</p>
+          </div>
+
+       </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm
+            <ol>
+              <li>\(\log_4 12- \log_4 2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\(\log_4 12- \log_4 2= \log_4 \dfrac{12}{2} = \log_4 6\).</p> </div></div> </li>
+              <li>\(\log_3 8+ \log_3 2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\(\log_3 8+ \log_3 2= \log_3 16\)</p> </div></div> </li>
+              <li>\(\log_2 64 - \log_2 4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\(\log_2 64 - \log_2 4= \log_2 \dfrac{64}{4} =\log_2 16 =\log_2 2^4 =4 \log_2 2 = 4\cdot 1 = 4\).</p> </div></div> </li>
+              <li>\(\log_2 4+ \log_2 8\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>\(\log_2 4+ \log_2 8= \log_2(4\cdot 8) =\log_2 2^5 = 5\log_2 2 =5\cdot 1 = 5\).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><p>Välj rätt värde för uttrycket.</p>
+            <table>
+              <tr><th>Påstående</th><th>1</th><th>2</th></tr>
+              <tr><td>\(\log_3 3\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_3 3^2\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_3 9\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_4 4\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_4 4^2\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_4 16\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_5 5\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_5 5^2\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_5 25\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_6 6\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_6 6^2\)</td><td></td><td></td></tr>
+              <tr><td>\(\log_6 36\)</td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer">
+            <table>
+              <tr><th>Påstående</th><th>1</th><th>2</th></tr>
+              <tr><td>\(\log_3 3\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\(\log_3 3^2\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_3 9\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_4 4\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\(\log_4 4^2\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_4 16\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_5 5\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\(\log_5 5^2\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_5 25\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_6 6\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\(\log_6 6^2\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\(\log_6 36\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+            </table>
+          </div></div>
+          </li>
+
+          <li>Förenkla
+            <ol>
+              <li>\(\log_4 2+ \log_4 3+\log_4 5\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\(\log_4 2+ \log_4 3+\log_4 5 =\log_4 (2\cdot 3 \cdot 5)= \log_4 30\).</p> </div></div> </li>
+              <li>\(\log_2 3+ \log_2 8 -\log_2 4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\(\log_2 3+ \log_2 8 -\log_2 4= \log_2 \dfrac{3 \cdot 8}{4} = \log_2 6\).</p> </div></div> </li>
+              <li>\(\log_2 6 -\log_2 3 + \log_2 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\(\log_2 6 -\log_2 3 +\log_2 2 =\log_2 \dfrac{6}{3} + \log_2 2 = \log_2 (\dfrac{6\cdot 2}{3}) =\log_2 4 =\log_2 2^2 = 2\log_2 2 = 2\cdot 1 =2\).</p> </div></div> </li>
+              <li>\(\log_4 10 -\log_4 5 +\log_4 8\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3d">
+              <div class="card card-body answer"><p>\(\log_4 10 -\log_4 5 +\log_4 8 = \log_4 \dfrac{10}{5} \cdot \log_4 8 = \log_4 \dfrac{10\cdot 8}{5} = \log_4 16 =\log_4 4^2 = 2\log_4 4 = 2\cdot 1 = 2\) </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\(\log_3 2 - \dfrac{1}{2} \log_3 36\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>\(\log_3 2 - \dfrac{1}{2} \log_3 36 = \log_3 2 - \log_3 36^{\frac{1}{2}} = \log_3 2 - \log_3 6 = \log_3 \dfrac{2}{6} =\log_3 \dfrac{1}{3} = \log_3 3^{-1} = -1 \log_3 3 = -1\).</p> </div></div> </li>
+              <li><p>\(\log\dfrac{a^2}{b}-2\log a\) </p><p>Beteckningen \(\log\) betyder att basen kan vara vad som helst, så länge basen är positiv och olika ett.</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\(\log\dfrac{a^2}{b}-2\log a = \log a^2 -\log b -2\log a = 2\log a -\log b -2\log a = -\log b\).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös följande ekvationer.
+            <ol>
+              <li>\(\log_2 (x+1) = \log_2 (x+5) +1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Logaritmerna är definierade då \(x+1 > 0 \Leftrightarrow x>-1\) och då \(x+5>0 \Leftrightarrow x>-5\).</p>    <p>\(\log_2 (x+1) = \log_2 (x+5) +1 \Leftrightarrow \log_2 (x+1)-\log_2(x+5) =1 \Leftrightarrow \log_2 \dfrac{x+1}{x+5} = 1 \Leftrightarrow \log_2 \dfrac{x+1}{x+5} = \log_2 2^1\) som ger oss att \(\dfrac{x+1}{x+5}=2\) som har roten \(x=-9\).</p>    <p>Eftersom roten är utanför definitionsområdet saknar ekvationen rötter.</p> </div></div> </li>
+              <li>\(\log_3 (8-x)=\log_3 (x+2)+1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Logaritmerna är definierade då \(8-x>0 \Leftrightarrow -x>-8 \Leftrightarrow x<8\) och \(x+2>0 \Leftrightarrow x>-2\). Logaritmerna är alltså definierade då \(-2<x<8\).</p>    <p>\(\log_3 (8-x)=\log_3 (x+2)+1  \Leftrightarrow \log_3 \dfrac{8-x}{x+2} =1 \Leftrightarrow \log_3 \dfrac{8-x}{x+2} = \log_3 3^1\) som ger oss att</p>    <p>\(\begin{array}{rcll}  \dfrac{8-x}{x+2} & = & 3   & \mid \cdot (x+2)\\  8-x  & = &  3(x+2) \\  8-x  & = &  3x+6 \\  -4x  & = & -2\\  x & = &  \dfrac{1}{2} \\  \end{array}\)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Lös följande ekvationer. Du får andragradsekvationer som du kan lösa på räknare.
+            <ol>
+              <li>\(\log_3(x-1)+\log_3 (x-3) =1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Logaritmerna är definierade då \(x-1 > 0 \Leftrightarrow x>1\) och då \(x-3>0 \Leftrightarrow x>3\). Det strängare kriteriet är att \(x>3\).</p>    <p>\(\log_3(x-1)+\log_3 (x-3) =1 \Leftrightarrow \log_3 [(x-1)(x-3)] = 1 \Leftrightarrow \log_3 [(x-1)(x-3)] = \log_3 3^1\) som betyder att \((x-1)(x-3)=3\) som har rötterna \(x=0\) och \(x=4\).</p>    <p>Den rot som duger är \(x=4\).</p> </div></div> </li>
+              <li>\(\log_2 x + \log_2 x = 2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Logaritmerna är definierade då \(x>0\).</p>    <p>\(\log_2 x + \log_2 x = 2 \Leftrightarrow \log_2 x^2 = 2 \Leftrightarrow \log_2 x^2 = \log_2 2^2\) som betyder att \(x^2 =4\) som har rötterna \(x=\pm2\).</p>    <p>Den rot som duger är \(x=2\).</p> </div></div> </li>
+              <li>\(\log_2(4+x)+\log_2(2x)=3\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Vi har att \(2x>0 \Leftrightarrow x>0\).</p>    <p>\(\log_2(4+x)+\log_2(2x)=3 \Leftrightarrow \log_2[(4+x)2x]=3 \Leftrightarrow \log_2 [2x(4+x)]=\log_2 2^3\).</p>    <p>Vi har alltså att \(8x+2x^2=8\) som har rötterna \(x=-2\pm2\sqrt{2}\). Eftersom \(x>0\) så gäller att \(x=-2+2\sqrt{2}\).</p> </div></div> </li>
+            </ol>
+          </li>-->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="12_logaritmer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="14_log_tillampning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

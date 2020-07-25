@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>12. Logaritmer</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="11_potensekvationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="13_log_berakning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>12. Logaritmer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Tag och beskriv talen \(2\), \(4\), \(5\), \(\sqrt{2}\) och \(\dfrac{1}{8}\) som potenser med basen 2.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/369361829" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Logaritmen för talet \(a\) är den exponent \(x\) som basen \(b\) måste upphöjas i för att ha samma värde som \(a\). \[a=b^x.\]</p>
+          <p>För talet 1000 gäller att logaritmen är 3 i basen 10 eftersom \(1000=10^3\).</p>
+          <p>Vi kan skriva det som \(y=b^x \Leftrightarrow x=\log_b(y)\). Där \(b\) och \(x\) är positiva och \(b\not=1\).</p>
+          <p>Till exempel är \(4^3 = 64\), det betyder att för talet 64 är logaritmen 3 i basen 4. Det kan vi skriva som \(3=\log_4 (64)\).</p>
+          <p>Logaritmer introducerades av John Napier för att göra uträkningar simplare. I dagens läge med datorer så är nyttan inte lika stor som på tidigt 1600-tal men ännu används logaritmer då vi bestämmer pH hos ämnen eller då vi bestämmer ljudstyrkan.</p>
+          <div class="exercise box">
+            <p>Bestäm logaritmen med basen 6 då</p>
+            <ul>
+              <li>\(6^9\). Eftersom vi höjer talet 6 i 9 är basen 6 och exponenten 9. Logaritmen med basen 6 är 9.</li>
+              <li>\(216\). Talet \(216 = 6^3\). Logaritmen med basen 6 av talet 216 är 3.</li>
+              <li>\(1\). 1 kan vi skriva som \(1=6^0\). Logaritmen med basen 6 av talet 1 är 0.</li>
+              <li>\(\dfrac{1}{\sqrt{6}}\). \(\dfrac{1}{\sqrt{6}}=6^{-\frac{1}{2}}\). Logaritmen med basen 6 av talet \(\dfrac{1}{\sqrt{6}}\) är \(-\dfrac{1}{2}\).</li>
+            </ul>
+          </div>
+          <p>När vi har logaritmer har vi vissa baser som används mera än andra. De baserna är \(2\), \(e\) och \(10\).</p>
+          <table>
+            <tbody>
+              <tr><td>Basen</td><td>Kallas för</td><td>Logaritmen betecknas</td><td>Används i</td></tr>
+              <tr><td>2</td><td>Binär logaritm</td><td>\(\textrm{lb}\)</td><td>Dataveteskaper, informationsteknologi, fotografering, musikteori</td></tr>
+              <tr><td>e</td><td>Naturlig logaritm</td><td>\(\ln\)</td><td>Naturvetenskaper (matematik, fysik, kemi), statistik, ekonomi, informationsteknologi</td></tr>
+              <tr><td>10</td><td>Allmän logaritm</td><td>\(\lg\)</td><td>Logaritmiska tabeller, decibelskalan, Richterskalan, spektroskopi</td></tr>
+            </tbody>
+          </table>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm \(\lg 2x-1=0\).</p>
+            <h4>Lösning</h4>
+            <p>Logaritmen är definierad då \(2x>0 \Leftrightarrow x>0\).</p>
+            <p>\(\lg 2x - 1=0 \Leftrightarrow \lg 2x = 1 \Leftrightarrow \lg 2x = \lg 10^1\) som ger oss att \(2x=10 \Leftrightarrow x=5\).</p>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/369362862" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Välj rätt alternativ för logaritmen av talen i basen 3 då</p>
+            <table>
+              <tr><th>Påstående</th><th>\(-7\)</th><th>\(-3\)</th><th>\(-1\)</th><th>\(0\)</th><th>\(5\)</th><th>\(6\)</th></tr>
+              <tr><td>\(3^5\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(729\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(1\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(\dfrac{1}{3} \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(\dfrac{1}{27} \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(\dfrac{1}{3^7} \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th>Påstående</th><th>\(-7\)</th><th>\(-3\)</th><th>\(-1\)</th><th>\(0\)</th><th>\(5\)</th><th>\(6\)</th></tr>
+                  <tr><td>\(3^5\)</td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\(729\)</td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\(1\)</td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(\dfrac{1}{3} \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                  <tr><td>\(\dfrac{1}{27} \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>\(\dfrac{1}{3^7} \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>
+              <ul>
+                <li>\(3^5\), 5</li>
+                <li>\(729=3^6\), 6</li>
+                <li>\(1=3^0\), 0</li>
+                <li>\(\dfrac{1}{3} =3^{-1}\), \(-1\)</li>
+                <li>\(\dfrac{1}{27} =3^{-3}\), \(-3\)</li>
+                <li>\(\dfrac{1}{3^7} =3^{-7}\), \(-7\)</li>
+              </ul>
+               </div></div> </li>
+
+          <li><p>Kombinera så att logaritmen med basen 5 blir rätt då</p>
+            <table>
+              <tr><th>Påstående</th><th>\(-2\)</th><th>\(-1\)</th><th>\(0\)</th><th>\(\dfrac{1}{2}\)</th><th>\(3\)</th><th>\(4\)</th></tr>
+              <tr><td>\(625\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(\sqrt{5}\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(\dfrac{1}{25}\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(\dfrac{1}{5}\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(125\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(1\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+              <table>
+                <tr><th>Påstående</th><th>\(-2\)</th><th>\(-1\)</th><th>\(0\)</th><th>\(\dfrac{1}{2}\)</th><th>\(3\)</th><th>\(4\)</th></tr>
+                <tr><td>\(625\)</td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\(\sqrt{5}\)</td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>\(\dfrac{1}{25}\)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\(\dfrac{1}{5}\)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\(125\)</td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(1\)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+              </table>
+              <ul>
+                <li>\(625=5^4\), 4</li>
+                <li>\(125=5^3\), 3</li>
+                <li>\(1=5^0\), 0</li>
+                <li>\(\dfrac{1}{5}=5^{-1}\), \(-1\)</li>
+                <li>\(\dfrac{1}{25}=5^{-2}\), \(-2\)</li>
+                <li>\(\sqrt{5}=5^{\frac{1}{2}}\), \(\dfrac{1}{2}\)</li>
+              </ul>
+              </div></div> </li>
+
+
+          <li>Fyll i det som saknas
+            <ol>
+              <li>Då \(3^2 = 9\) gäller att logaritmen i basen  [ Lucka ]  av talet  [ Lucka ]  är  [ Lucka ].<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Då \(3^2 = 9\) gäller att logaritmen i basen  [ 3  ]  av talet  [ 9  ]  är  [ 2  ].</p> </div></div> </li>
+              <li>Då \(5^4 = 625\) är logaritmen av talet  [ Lucka  ]  i basen  [ Lucka  ]  talet  [ Lucka  ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Då \(5^4 = 625\) är logaritmen av talet  [ 625  ]  i basen  [ 5  ]  talet  [ 4  ].</p> </div></div> </li>
+              <li>Då \(4^5 = 1024\) är logaritmen av talet  [ Lucka  ]  i basen  [ Lucka  ]  talet  [ Lucka  ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Då \(4^5 = 1024\) är logaritmen av talet  [ 1024  ]  i basen  [ 4  ]  talet  [ 5  ].</p> </div></div> </li>
+              <li>Då \(3^7 =2187\) är logaritmen av talet  [ Lucka  ]  i basen  [ Lucka ]  talet  [ Lucka ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3d">
+              <div class="card card-body answer"><p>Då \(3^7 =2187\) är logaritmen av talet  [ 2187  ]  i basen  [ 3  ]  talet  [ 7  ].</p> </div></div> </li>
+            </ol></li>
+
+            <li>Fyll i det som saknas
+              <ol>
+                <li>Då logaritmen i basen 5 av talet 125 är 3 gäller att  [ Lucka ] \(^3 = \) [ Lucka ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="4a">
+                <div class="card card-body answer"><p>Då logaritmen i basen 5 av talet 125 är 3 gäller att  [ 5  ] \(^3 = \) [ 125  ].</p> </div></div> </li>
+                <li>Då logaritmen av talet 343 i basen 7 är 3 gäller att  [ Lucka ] \(^3 = \) [ Lucka ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="4b">
+                <div class="card card-body answer"><p>Då logaritmen av talet 343 i basen 7 är 3 gäller att  [ 7  ] \(^3 = \) [ 343  ].</p> </div></div> </li>
+                <li>Då logaritmen i basen 2 av talet 256 är 8 gäller att  [ Lucka ] \(^8 = \) [ Lucka ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="4c">
+                <div class="card card-body answer"><p>Då logaritmen i basen 2 av talet 256 är 8 gäller att  [ 2  ] \(^8 = \) [ 256  ].</p> </div></div> </li>
+                <li>Då logaritmen i basen 3 av talet 243 är 5 gäller att  [ Lucka ] \(^5 = \) [ Lucka ]. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="4d">
+                <div class="card card-body answer"><p>Då logaritmen i basen 3 av talet 243 är 5 gäller att  [ 3  ] \(^5 = \) [ 243 ].</p> </div></div> </li>
+              </ol></li>
+
+          <li>Bestäm \(x\) då
+            <ol>
+              <li>\(\log_6 x=1\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\(\log_6 x=1 \Leftrightarrow x=6^1 = 6\)</p> </div></div> </li>
+              <li>\(\log_4 x -2 =0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\(\begin{array}{rcl}
+                \log_4 x -2  & = & 0 \\
+                \log_4 x  & = &  2 \\
+                x & = &  4^2 = 16
+                \end{array}\)</p> </div></div> </li>
+              <li>\(\log_3 x+4=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\(\log_3 x+4=0 \Leftrightarrow \log_3 x = -4 \Leftrightarrow x=3^{-4} = \dfrac{1}{81}\)</p> </div></div> </li>
+              <li>\(\log_5 x -4 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5d">
+              <div class="card card-body answer"><p>\(\begin{array}{rcl}  \log_5 x -4  & = & 0 \\  \log_5 x  & = &  4 \\  x  & = &  5^4 = 625  \end{array}\)</p> </div></div> </li>
+            </ol></li>
+
+          <li>Bestäm \(x\) då
+           <ol>
+                <li>\(2\lg x = 4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"><p>
+                  \(\begin{array}{rcll}
+                  2\lg x  & = &  4  & \mid /2\\
+                  \lg x  & = &  2 \\
+                  x  & = &  10^2 = 100 \\
+                  \end{array}\)</p> </div></div> </li>
+                <li>\(5\lg x =15\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6b">
+                <div class="card card-body answer"><p>\(\begin{array}{rcll}
+                  5\lg x  & = & 15  & \mid /5\\
+                  \lg x  & = &  3 \\
+                  x  & = &  10^3 = 1000
+                  \end{array}\)</p> </div></div> </li>
+                <li>\(2\log_2 x-1=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6c">
+                <div class="card card-body answer"><p>\(2\log_2 x-1=0 \Leftrightarrow 2\log_2 x = 1 \Leftrightarrow \log_2 x=\dfrac{1}{2} \Leftrightarrow x=2^{\frac{1}{2}}=\sqrt{2}\)</p> </div></div> </li>
+                <li>\(3\log_3 x=-2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6d">
+                <div class="card card-body answer"><p>\(3\log_3 x=-2 \Leftrightarrow \log_3 x = -\dfrac{2}{3} \Leftrightarrow x= 3^{-\frac{2}{3}}=\dfrac{1}{\sqrt[3]{3^2}}\)</p> </div></div> </li>
+            </ol></li>
+
+          <li>Bestäm basen då
+           <ol>
+                <li>\(\log_a 9 = 2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7a">
+                <div class="card card-body answer"><p>\(a=3\) eftersom \(9=3^2\).</p> </div></div> </li>
+                <li>\(\log_a 81 = 4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7b">
+                <div class="card card-body answer"><p>\(a=3\) eftersom \(81 = 3^4\).</p> </div></div> </li>
+                <li>\(\log_a 625 = 4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7c">
+                <div class="card card-body answer"><p>\(a=5\) eftersom \(625 = 5^4\)</p> </div></div> </li>
+                <li>\(\log_a 1024 = 5\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7d">
+                <div class="card card-body answer"><p>\(a=4\) eftersom \(1024 = 4^5\).</p> </div></div> </li>
+                <li>\(\log_a 343 =3\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7e">
+                <div class="card card-body answer"><p>\(a=7\) eftersom \(343 = 7^3\).</p> </div></div> </li>
+          </ol></li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="11_potensekvationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="13_log_berakning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

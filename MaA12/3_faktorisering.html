@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>3. Faktorisering av polynom</title>
+
+  </head>
+  <body>
+    <header class="MaA12">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </nav>
+      <a href="2_polynomdiv.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 12 Algoritmer i matematiken</h3>
+      <a href="4_komplexatal.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>3. Faktorisering av polynom</h1>
+      <section>
+        <div class="theory">
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Faktorisera \( x^3+x^2-2x \)</p>
+          </div>
+
+          <p>När vi faktoriserar med hjälp av nollställen utnyttjar vi faktorsatsen. </p>
+          <div class="summary box">
+            <p>Talet \( a \) är ett nollställe till polynomet \( P(x) \) om och endast om \( x-a \) är en faktor i polynomet \( P(x) \).</p>
+          </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Ett polynom av trejde grad har nollställena \( 1 \) och dubbelnollstället \( -5 \). Bestäm polynomet.</p>
+            <h4>Lösning</h4>
+            <p>Eftersom vi har nollställena \( 1 \) och dubbelnollstället \( -5 \) polynomet ut som \( (x-1)(x+5)^2 = x^3+9x^2+15x+25 \).</p>
+          </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Bestäm när \( x^3+3x^2-4 < 0 \)</p>
+          </div>
+
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+
+          <li>Faktorisera följande uttryck. Använd dig antingen av gruppering och/eller division.
+            <ol>
+              <li>\( x^3 -x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( x^3 -x = x(x^2-1) = x(x+1)(x-1) \)</p> </div></div> </li>
+              <li>\( 2x^3+2x^2-2x-2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Vi får \( 2x^3+2x^2-2x-2 = 2(x^3+x^2-x-1) = \\ 2[x^2(x+1)-(x+1)] = 2(x^2-1)(x+1) = \\ 2(x-1)(x+1)(x+1) \).</p> <p>Alternativt kan vi faktorisera med hjälp av trappan. Då skall vi gissa fram en lösning till \( 2x^3+2x^2-2x-2  = 0 \). För att komma vidare måste vi gissa \( x=1 \) eller \( x=-1\) och dividera med \( x-1 \) eller \( x+1 \) för att komma vidare. </p> </div></div> </li>
+              <li>\( x^3 -x^2-10x-8 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>För att komma vidare måste vi gissa fram en lösning när \( x^3 -x^2-10x-8 =0 \). Vi kommer fram till någon av lösningarna \( x = -1 \), \( x = -2 \) eller \( x = 4 \) och dividerar oss därifrån vidare. Vi kommer fram till \( (x+1)(x+2)(x-4) \).</p>  </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bilda följande polynom
+            <ol>
+              <li>med nollställena \( x = 2 \) och \( x = -3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( (x-2)(x+3) = x^2+x-6 \) </p></div></div> </li>
+              <li>med nollställena \( x = -4 \) och dubbelnollstället \( x = -1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( (x+4)(x+1)^2 = x^3+6x^2+9x+4 \) </p> </div></div> </li>
+              <li>med nollställena \( x = 0 \), \( x = -2 \) och \( x = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( x(x+2)(x-2)=x^3-4x \)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>På räknarprogram med CAS funktion kan man faktorisera polynom. Formulera en algorimt som faktoriserar polynom.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Lös följande olikheter utan att använda dig av räknare.
+            <ol>
+              <li>\( x^3+x^2-2x > 0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Vi faktoriserar och får \( x(x-1)(x+2) \). </p> <p>Vi bildar ett teckenshema med 3 rader och då vi kombinerar dem får vi lösningen \( -2 < x < 0 \) eller \( x > 1 \).</p> </div></div> </li>
+              <li>\( x^3-2x^2+x-2 < 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Vi faktoriserar och får \( (x-2)(x^2+1) \). </p> <p>Vi bildar ett teckenshema med 2 rader och då vi kombinerar dem får vi lösningen \( x < 2 \).</p><p>Alternativt kan vi märkar att \( (x^2+1) \) alltid är positivt. Då räcker det att endast undersöka tecknet för \( x-2 \).</p> </div></div> </li>
+              <li>\( x^4-x^3-5x^2+3x < 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Då vi faktoriserar får vi \( x(x+3)(x-1)^2 \) </p><p>Vi måste undersöka tecknet hos alla faktorer. Vårt teckenschema har 3 rader och då vi kombinerar får vi \( -3 < x < 0 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm värden för \( a \), \( b \) och \( c \).
+            <ol>
+              <li>För vilket värde på \( a \) går divisionen \( \dfrac{2x^3+ax+4}{1-x} \) jämnt ut? Bestäm även kvoten.
+                  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                  <div class="collapse" id="5a">
+                  <div class="card card-body answer"> <p>\(a = -6 \). Kvoten är \(-2x^2-2x+4\).</p> </div></div>
+              </li>
+              <li>För vilket värde på \( b \) går divisionen \( \dfrac{-x^3+2x^2+bx-3}{x-3} \) jämnt ut? Bestäm även kvoten. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\(b = 4 \). Kvoten är \(-x^2-x-1\).</p> </div></div>
+              </li>
+              <li>För vilket värde på \( c \) går divisionen \( \dfrac{x^3-4x^2-x+c}{4-x} \) jämnt ut? Bestäm även kvoten. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\(c = 4 \). Kvoten är \(x^2-1\).</p> </div></div>
+              </li>
+            </ol>
+          </li>
+
+
+          <li>Bestäm gränsvärdet genom att dela upp i faktorer. Försök att klara dig utan räknare.
+            <ol>
+              <li>\( \lim_{x \to 1} \dfrac{x^3-1}{1-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Vi ser att \(x =1\) är en rot i täljaren. Vi dividerar med \( (x-1) \) och får att \(x^3-1 = (x-1)(x^2+x+1)\). \((x^2+x+1)\) försöker vi faktorisera med hjälp av nollställen, de saknas.</p><p>Alltså \( \lim_{x \to 1} \dfrac{x^3-1}{1-x} = \\ \lim_{x \to 1} \dfrac{(x-1)(x^2+x+1)}{1-x} = \lim_{x \to 1} \dfrac{-(-x+1)(x^2+x+1)}{1-x} = \\ \lim_{x \to 1} -(x^2+x+1) = -(1^1+1+1) = -3 \) </p>
+              </div></div> </li>
+              <li>\( \lim_{x \to 2} \dfrac{x^2-4}{x^4-16} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi faktoriserar med hjälp av konjugatregeln.</p>
+                <p>\( \lim_{x \to 2} \dfrac{x^2-4}{x^4-16} = \lim_{x \to 2} \dfrac{x^2-4}{(x^2-4)(x^2+4)} = \lim_{x \to 2} \dfrac{1}{(x^2+4)} = \dfrac{1}{8}\)</p> </div></div> </li>
+              <li>\( \lim_{x \to -1} \dfrac{2x^2+3x+1}{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Täljaren faktoriserar vi via nollställen och nämnaren via konjugatregeln.</p>
+                <p>\( 2x^2+3x+1 \) har nollställena \(x=-1 \) och \(x=-\dfrac{1}{2}\). Koefficienten framför \( x^2 \) är \( 2 \), alltså \( 2x^2+3x+1 =2(x+1)(x+\dfrac{1}{2}) = (x+1)(2x+1) \).</p>
+                <p> \( x^2-1 =(x+1)(x-1) \).</p>
+                <p>Vi får \( \lim_{x \to -1} \dfrac{2x^2+3x+1}{x^2-1} = \lim_{x \to -1} \dfrac{(x+1)(2x+1)}{(x-1)(x+1)} = \lim_{x \to -1} \dfrac{(2x+1)}{(x-1)} = \dfrac{-2+1}{-1-1} = \dfrac{1}{2} \)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>På räknarprogram med CAS funktion kan man bestämma gränsvärden. Då faktoriserar och förkortar räknaren före den bestämmer gränsvärdet. Formulera en algorimt som gör det.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA12">
+      <a href="2_polynomdiv.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="4_komplexatal.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,432 @@
+html {
+  font-size: 16px;
+  margin: 1rem 1rem;
+  line-height: 2rem;
+  color: black;
+  max-width: 1050px;
+}
+
+body {
+  background-color: #FCFCFC; /*rgb(240, 240, 240);*/
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.25rem;
+  width: 95%;
+  overflow: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+ol li li {
+  list-style: lower-alpha;
+}
+
+
+a {
+  color: #3C3C3C; /*Kolla en bra färg */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover,
+a:active {
+  color: #332E30; /*Kolla färgen*/
+  text-decoration: underline;
+}
+
+header, footer {
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+
+footer {
+  margin-bottom: 2rem;
+}
+
+table {
+  /*display: block;*/
+  table-layout: auto;
+  min-width: 500px;
+  /*width: 90%;*/
+  border-spacing: 5px;
+  overflow-x: auto;
+}
+
+thead {
+  font-weight: 900;
+  background-color: lightblue; /*kolla färgen */
+  text-align: center;
+  border: 1px solid gray;
+}
+
+td {
+  border: 1px solid gray;
+}
+
+button {
+  margin: 0.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  margin: 1rem;
+  background-color: #F2AAAA; /*Kolla färgen*/
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: black;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main_footer {
+  color: black; /*Kolla färg*/
+  justify-content: space-between;
+  font-size: 0.9rem;
+  }
+
+.main_footer a {
+  color: black; /*Kolla färg*/
+}
+
+.video {
+  overflow: hidden;
+  margin: 1rem;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.video iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.responsivepic600 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.responsivepic400 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.responsivepic250 {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.responsivepic100 {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.geogebra {
+  overflow: visible;
+  margin: 1rem;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.geogebra iframe{
+  border-radius: 10px;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.theory {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 2rem;
+  margin: 2rem 0rem;
+  border-radius: 15px;
+  background-color: #BDBDBD;
+}
+
+.box {
+  margin: 2rem 0;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.intro {
+  background-color: #F2F2DA;
+  border-left: solid 25px #F2AAAA;
+}
+
+.exercise {
+  background-color: #F2F2DA;
+}
+
+.summary {
+  background-color: #F2AAAA; /* ÄNDRA */
+}
+
+.discussion {
+  background-color: #F2F2DA; /*Ändra */
+  border-left: solid 25px #BBC18B;
+}
+
+.answer, .hint {
+  margin: 0.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #F2F2DA; /*Kolla en bra färg*/
+  max-width: 90%;
+}
+
+.level { /*För symbolerna som beskriver nivån*/
+  position: absolute;
+  left: 2rem;
+  z-index: -1;
+  color: #FFE4E3;
+}
+
+.hard {
+  background-color: lightred; /* Kolla en bra färg */
+}
+
+.btn-sm {
+  background-color: #BBC18B;
+  border-color: #97B17A;
+  color: black;
+}
+
+.btn-sm:hover, .btn-sm:active {
+  background-color: #97B17A;
+  border: #BBC18B;
+  color: black;
+}
+
+.kurs_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.kurs {
+  font-size: 1rem;
+  background-image: none;
+  border-radius: 20px;
+  height: 200px;
+  width: 250px;
+  margin: 20px;
+  display: inline-block;
+  padding: 5px;
+  transition: background-color 0.5s linear,
+  border-radius 1s linear;
+}
+
+.kurs h4 {
+  font-size: 1.25rem;
+  color: black;
+  margin-top: 25%;
+}
+
+.kurs:hover {
+  border-radius: 50px;
+  background-position: center top;
+  background-size: cover;
+}
+
+.kurs h4:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.kurs.Robo:hover {
+  background-image: url(pics/Robo_400.jpg);
+}
+
+.kurs.Fysik:hover {
+  background-image: url(pics/Fysik_400.jpg);
+}
+
+.kurs.MaG:hover {
+  background-image: url(pics/MaG_400.jpg);
+}
+
+.kurs.MaA2:hover {
+  background-image: url(pics/MaA2_400.jpg);
+}
+
+.kurs.MaA3:hover {
+  background-image: url(pics/MaA3_400.jpg);
+}
+
+.kurs.MaA4:hover {
+  background-image: url(pics/MaA4_400.jpg);
+}
+
+.kurs.MaA5:hover {
+  background-image: url(pics/MaA5_400.jpg);
+}
+
+.kurs.MaA6:hover {
+  background-image: url(pics/MaA6_400.jpg);
+}
+
+.kurs.MaA7:hover {
+  background-image: url(pics/MaA7_400.jpg);
+}
+
+.kurs.MaA8:hover {
+  background-image: url(pics/MaA8_400.jpg);
+}
+
+.kurs.MaA9:hover {
+  background-image: url(pics/MaA9_400.png);
+}
+
+.kurs.MaA10:hover {
+  background-image: url(pics/MaA10_400.jpg);
+}
+
+.kurs.MaA11:hover {
+  background-image: url(pics/MaA11_400.jpg);
+}
+
+.kurs.MaA12:hover {
+  background-image: url(pics/MaA12_400.jpg);
+}
+
+.kurs.MaA13:hover {
+  background-image: url(pics/MaA13_400.jpg);
+}
+
+.kurs.MaA15:hover {
+  background-image: url(pics/MaA15_400.jpg);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.grid-container_2col {
+display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  border: dotted #BDBDBD 1px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto auto;
+}
+
+.Fysik {
+  /*background-color: #FF9671;*/
+  background-color: #99DEFF;
+}
+
+.MaG, .MaA2 {
+  /*background-color: #CCBB2D;*/
+  background-color: #CAF7FF;
+}
+
+.MaA3, .MaA4, .MaA5 {
+  /*background-color: #52E5FF;*/
+  background-color: #559CC2;
+}
+
+.MaA6, .MaA7, .MaA8, .MaA9 {
+  /*background-color: #279EB3;*/
+  background-color: #0D698C;
+}
+
+.MaA10 {
+  /*background-color: #B8B06A;*/
+  background-color: #0D698C;
+}
+
+.MaA11, .MaA12, .MaA13 {
+  /*background-color: #FF6BAD;*/
+  background-color: #ED982A;
+}
+
+.MaA15 {
+  /*background-image: linear-gradient(to right top, #52e5ff, #4ad7f1, #42cae2, #3abcd4, #32afc6, #23aacd, #21a4d2, #2e9dd6, #6897e6, #a48be6, #d97bd2, #ff6bad);*/
+  background-image: linear-gradient(to left bottom, #caf7ff, #b3e6f3, #9cd5e7, #85c4dc, #70b3d1, #62a7c7, #549bbe, #468fb4, #3a85aa, #2e7ca0, #207296, #0d698c);
+}
+
+.Robo {
+  background-color: #FFCC33;
+}
+
+/* Media stuff */
+@media only screen and (max-width: 768px) {
+
+html {
+  font-size : 14px;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.mobile {
+  display: none;
+}
+
+.kurs {
+  font-size: 1rem;
+  height: 80px;
+  width: 250px;
+  margin: 10px;
+}
+
+.kurs h4 {
+  font-size: 1rem;
+  color: black;
+  margin-top: 5%;
+}
+
+}
+
+@media only screen and (max-width: 520px) {
+
+html {
+  font-size : 12px;
+}
+}

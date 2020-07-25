@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Talet e</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_till_logaritmer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="12_derivatan_e.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Talet e</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi studerar derivatan för funktionerna \( 2^x \) och \( 3^x \).</p>
+          <p>I MaA 6 kursen arbetade vi med definitionen för derivatan, \( \lim_{h \to 0} \dfrac{f(x+h)-f(x)}{h} \). Vi använder oss av differentialkvoten för att bestämma derivatan för \( 2^x \) och \( 3^x \). Eftersom vi inte, ännu, kan räkna gränsvärden med exponentialfunktioner låter vi \( h=0,001 \).</p>
+          <p>Vi får följande värden:</p>
+          <table>
+            <tbody>
+              <tr><td>\( x \)</td><td>\( f(x)=2^x \)</td><td>\( f'(x) \)</td></tr>
+              <tr><td>0</td><td>1</td><td>0,693</td></tr>
+              <tr><td>1</td><td>2</td><td>1,387</td></tr>
+              <tr><td>2</td><td>4</td><td>2,773</td></tr>
+              <tr><td>3</td><td>8</td><td>5,547</td></tr>
+            </tbody>
+          </table>
+          <p>och</p>
+          <table>
+            <tbody>
+              <tr><td>\( x \)</td><td>\( g(x)=3^x \)</td><td>\( f'(x) \)</td></tr>
+              <tr><td>0</td><td>1</td><td>1,099</td></tr>
+              <tr><td>1</td><td>3</td><td>3,298</td></tr>
+              <tr><td>2</td><td>9</td><td>9,893</td></tr>
+              <tr><td>3</td><td>27</td><td>29,679</td></tr>
+            </tbody>
+          </table>
+          <p>Med lite trixande med siffror märker vi att då \( f(x)=a^x \) så är \( f'(x)=f'(0)f(x) \).</p>
+          <p>Då \( x=0 \) märker vi att derivatans värde för \( 2^x = 0,693 < 1 \) och \( 3^x=1,099 > 1 \).</p>
+          <p>Vi söker den bas som vars tangent får värdet \( 1 \) i \( x=0 \).</p>
+          <table>
+            <tbody>
+                  <tr><td>Bas</td><td>\( f'(0) \)</td></tr>
+                  <tr><td>1</td><td>0,963</td></tr>
+                  <tr><td>2</td><td>1,099</td></tr>
+                  <tr><td>2,5</td><td>0,917</td></tr>
+                  <tr><td>2,71</td><td>0,998</td></tr>
+                  <tr><td>2,71</td><td>1,001</td></tr>
+                </tbody>
+              </table>
+            <div class="geogebra">
+              <iframe height="500px" scrolling="no" src="https://tube.geogebra.org/material/iframe/id/1201039/width/500/height/500/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="500px"></iframe>
+            </div>
+              <p>Det tal som vi söker är \( 2,718281828459045 \ldots \). Detta tal kalas för Napiers konstant eller Eulers tal, efter <a href="http://sv.wikipedia.org/wiki/John_Napier" target="_blank">John Napier </a>och <a href="http://sv.wikipedia.org/wiki/Leonhard_Euler" target="_blank">Leonhard Euler</a>. Vi klarar oss bra med att veta att värdet är ca 2,72.</p>
+            </div>
+              <h4>Exponentialfunktionen \( e^x \)</h4>
+              <p>\( De^x=e^x \). Vidare gäller att funktionen är strängt växande och att \( f: \mathbb{R} \to ]0,\infty[ \).</p>
+              <div class="exercise box">
+                <p><strong>Exempel 1</strong> Bestäm \( D3e^x \).</p>
+                <h4>Lösning</h4>
+                <p>\( D3e^x = 3De^x=3e^x \).</p>
+              </div>
+              <div class="exercise box">
+                <p><strong>Exempel 2</strong> Lös ekvationen \( 4e^x-1=0 \).</p>
+                <h4>Lösning</h4>
+                <p>\( \begin{array}{rcll} 4e^x-1  &  =  &  0 \\ 4e^x  & = & 1 \\ e^x  & = &  \dfrac{1}{4}  & \text{Vi manipulear med }\log_e \text{ som vi betecknar} \ln\\ \ln e^x  & = &  \ln \dfrac{1}{4} \\ x  & = &  \ln 1 -\ln 4 \\  & = &  0-\ln4\\  & = &  -\ln 4 \end{array} \)</p>
+                <div class="video">
+                <iframe src="https://player.vimeo.com/video/335356462" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+            </div>
+            <p>Logaritmen med basen \( e \) betecknar vi som \( \ln \).</p>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Bestäm största och minsta värde för funktionen \( f(x)=e^x-2x \) i intervallet \( [-1,2] \).</p>
+              <h4>Lösning</h4>
+              <p>Vi börjar med att derivera, \( f'(x)=e^x-2 \).</p>
+              <p>Sedan söker vi derivatans nollställen, \( f'(x)=0 \).</p>
+              <p>\( \begin{array}{rcl} e^x-2 & = & 0 \\ e^x  & = & 2 \\ \ln e^x  & = &  \ln 2\\ x  & = &  \ln 2\\ \end{array} \)</p>
+              <p>Eftersom vi har en funktion som är definierad i ett intervall finner vi största och minsta värde i derivatans nollställen eller i intervallets ändpunkter.</p>
+              <p>\( f(-1)=e^{-1}-2(-1) = \dfrac{1}{e} +2 \approx 2,37 \)</p>
+              <p>\( f(\ln 2)=e^{\ln 2}-2(\ln 2) \approx 0,61 \)</p>
+              <p>\( f(2)=e^{2}-2(2) = e^2-4 \approx 3,39 \)</p>
+              <p>Minsta värdet är \( e^{\ln 2}-2\ln2 \) och största värdet är \( e^2-4 \).</p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Derivera följande funktioner.
+            <ol>
+              <li>\( 5e^x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( D5e^x = 5De^x=5e^x \)</p></div></div> </li>
+              <!--<li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Derivera funktionerna.
+            <ol>
+              <li>\( 7x-2e^x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( D(7x-2e^x) = 7-2e^x \)</p></div></div> </li>
+              <!--<li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>För vilket värdet på \( x \) gäller att \( e^x -5=0 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi löser ekvationen \( e^x -5=0 \Leftrightarrow \ln e^x = \ln5 \Leftrightarrow x=\ln 5 \).</p></div></div>
+          </li>
+
+          <li>Lös ekvationen \( \dfrac{1}{2}e^x -2=0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\( \dfrac{1}{2}e^x -2=0 \Leftrightarrow e^x = 4 \Leftrightarrow x=\ln4 \)</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter där funktionen \( f(x)=e^x -x \) byter riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( f'(x)=e^x-1 \). Funktionen byter riktning i de punkter där \( f'(x)=0 \), \( e^x-1=0 \Leftrightarrow x=\ln1=0 \).</p>
+                <p>\( y \)-koordinaten är \( f(0)=e^0-0=1 \).</p>
+                <p>Punkten är \( (0,1) \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm minsta värde för funktionen \( f(x)=3e^x -2x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( f'(x)=3e^x-2 \). Extremvärdena finner vi i de punkter där \( f'(x)=0 \), \( 3e^x-2=0 \Leftrightarrow e^x=\dfrac{2}{3} \Leftrightarrow x=\ln\dfrac{2}{3} \approx -0,41 \).</p>
+                <p>Eftersom derivatafunktionen endast har ett nollställe så bestämmer vi hur funktionen beter sig genom att sätta in i derivata två punkter som finns kring derivatas nollställe.</p>
+                <p>\( f'(-1) = 3e^{-1}-2=\dfrac{3}{e}-2 < 0 \)</p>
+                <p>\( f'(0) = 3e^0-2=3-2=1 > 0 \)</p>
+                <p>Vi finner ett minsta värde i \( x=\ln\dfrac{2}{3} \). Funktionsvärdet är \( f(\ln\dfrac{2}{3})=3e^{\ln\dfrac{2}{3}} -2(\ln\dfrac{2}{3})</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm största och minsta värde för funktionen \( f(x)=\dfrac{1}{3}e^x -x \) då \( x\in [0,2] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\( f'(x)=\dfrac{1}{3}e^x -1 \). Derivatans nollställe finner vi i \( f'(x)=0 \), \( \dfrac{1}{3}e^x-1=0 \Leftrightarrow x=\ln3 \).</p>
+                <p>Eftersom vi har en funktion som är definierad i ett intervall finner vi största och minsta värden i de punkter där derivatan får värdet noll eller i intervallets ändpunkter.</p>
+                <p>\( f(0)=\dfrac{1}{3}e^0 -0 = \dfrac{1}{3}\cdot 1 = \dfrac{1}{3} \)</p>
+                <p>\( f(\ln 3)=\dfrac{1}{3}e^{\ln 3} -\ln 3 =\dfrac{1}{3}\cdot 3-\ln 3 =1-\ln 3 \approx -0,10 \)</p>
+                <p>\( f(2)=\dfrac{1}{3}e^2 -2 \approx 0,46 \)</p>
+                <p>Minsta värdet är \( \dfrac{1}{3}e^{\ln 3} -\ln 3 =1-\ln 3 \).</p>
+                <p>och största värdet är \( \dfrac{1}{3}e^2 -2 \).</p>
+                <p>Beroende på räknare så förenklar de olika.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="10_till_logaritmer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_derivatan_e.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

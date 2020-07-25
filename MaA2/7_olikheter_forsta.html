@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>7. Olikheter av första grad</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="6_blandat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="8_rotformeln.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>7. Olikheter av första grad</h1>
+      <section>
+        <div class="theory">
+          <p>Vi börjar med att studera intervall. Sedan går vi över till att lösa olikheter av första grad. Du klarar galant av dessa om du vet hur du löser ekvationer av första grad.</p>
+          <div class="summary box">
+            <p>Vad betyder symbolerna \(&lt;, &gt;, \leq , \geq \) och \(=\)?</p>
+          </div>
+          <div class="intro box">
+            <p>Uttryck följande intervall grafiskt:</p>
+            <ol>
+              <li>\(x&gt;0\)</li>
+              <li>\(x&lt;0\)</li>
+              <li>\(x\geq -1\)</li>
+              <li>\(x\leq -1\)</li>
+              <li>\(-1 &lt; x \leq 0\)</li>
+            </ol>
+            <h4>Lösning</h4>
+            <div class="image"><img src="pics/intervall_1.png" class="responsivepic250"/></div>
+            <p>Beteckningen med en öppen boll betyder att ändpunkten inte är med i intervallet. Beteckningen med en sluten boll betyder att ändpunkten är med i intervallet.</p> </div>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Bestäm</p>
+              <ol style="list-style-type:lower-alpha">
+                <li>\(2(x+2) \geq x\)</li>
+                <li>\(3(x-1) &lt; x-1\)</li>
+                <li>\(x+1 &lt; 2x+3\)</li>
+                <li>\(-(x+1) &gt; 2x\)</li>
+              </ol>
+              <h4>Lösning</h4>
+              <p>Vi får</p>
+              <ol style="list-style-type:lower-alpha">
+                <li><p>Vi får </p><p>\(\begin{array}{rcll} 2(x+2) &amp; \geq &amp; x &amp; \textrm{Lös olikheten som vilken ekvation som hellst.} \\ 2x+4 &amp; \geq &amp; x &amp; \textrm{Flytta likformiga termer till samma sida.}\\ 2x-x &amp; \geq &amp; -4 &amp; \textrm{Förenkla} \\ x &amp; \geq &amp; -4 &amp; \textrm{och svara.} \\ \end{array}\)</p></li>
+                <li><p>Vi får </p><p>\(\begin{array}{rcll} 3(x-1)&amp; &lt; &amp;x-1 &amp; \textrm{Börja med att förenkla.} \\ 3x-3&amp; &lt;&amp; x-1&amp; \textrm{Flytta över och slå ihop.} \\ 2x&amp; &lt;&amp;2 &amp; \mid /2 \textrm{ (Tänk som om du löser en ekvation.)} \\ x &amp;&lt; &amp;1 &amp; \textrm{} \\ \end{array}\)</p></li>
+                <li><p>Vi får </p><p>\(\begin{array}{rcll} x+1&amp;&lt; &amp;2x+3 &amp; \textrm{Börja med att förenkla.} \\ -x&amp;&lt; &amp;2 &amp; \textrm{OBS! Vi dividerar eller multiplicerar med }-1&lt;0. \\ &amp;&amp;&amp;\textrm{Riktningen för olikheten ändras.} \\ x&amp;&gt; &amp;-2 &amp; \textrm{} \\ \end{array}\)</p></li>
+                <li><p>Vi får </p><p>\(\begin{array}{rcll} -(x+1)&amp;&gt; &amp;2x &amp; \textrm{Förenkla,} \\ -x-1&amp;&gt; &amp;2x &amp; \textrm{och flytta över.} \\ -3x&amp;&gt; &amp;1 &amp; \mid /(-3)&lt;0\textrm{ OBS! Division med -3 som är negativt.} \\ &amp;&amp;&amp; \text{Riktningen ändras.} \\ x&amp;&lt; &amp;-\dfrac{1}{3} &amp; \textrm{} \\ \end{array}\)</li>
+                </ol>
+              </div>
+              <div class="exercise box">
+                <p><strong>Exempel 2</strong> Lös olikheteten \(\sqrt{2}x-1 &lt; 2x\).</p>
+                <h4>Lösning</h4>
+                <p>\(\begin{array}{rcll} \sqrt{2}x-1 &amp;&lt;&amp; 2x &amp; \textrm{Förenkla genom att flytta över.} \\ \sqrt{2}x-2x&amp;&lt; &amp;1 &amp; \textrm{Bryt ut }x \\ x(\sqrt{2}-2)&amp;&lt; &amp;1 &amp; \mid /(\sqrt{2}-2)&lt;0\textrm{! Riktngen ändras.}\\ x &amp;&gt; &amp;\dfrac{1}{(\sqrt{2}-2)} &amp; \\ \end{array}\)</p>
+              </div>
+              <div class="exercise box">
+                <p><strong>Exempel 3</strong> Låt\(f(x)=x\) och \(g(x)=-2x+3\). Bestäm då</p>
+                <ol style="list-style-type:lower-alpha">
+                  <li>\(f(x)&lt;3\)</li>
+                  <li>\(f(x)&gt; g(x)\)</li>
+                </ol>
+                <h4>Lösning</h4>
+                <ol style="list-style-type:lower-alpha">
+                  <li><p>Vi ritar på Geogebra och får följande bild.</p>
+                    <p><img src="pics/olikhet_3_1.png" class="responsivepic600"/></p>
+                    <p>Bilden skall vi tolka som så att \(x&lt;3\).</p> </li>
+                    <li><p>Vi ritar på Geogebra och får följande bild.</p>
+                      <p> <img src="pics/olikhet_3_2.png" class="responsivepic600"/></p>
+                      <p>Bilden skall vi tolka som att \(x&gt;1\).</p> </li>
+                    </ol>
+                  </div>
+                  <div class="summary box">
+                    <p>Då vi arbetar med olikheter eller intervall har vi 4 tecken:</p>
+                    <ul>
+                      <li>\(&lt;\) Mindre än</li>
+                      <li>\(\leq \) Mindre än eller lika med</li>
+                      <li>\(&gt;\) Större än</li>
+                      <li>\(\geq \) Större än eller lika med</li>
+                    </ul>
+                  </div>
+              </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+
+        <ol>
+        <li>Uttryck följande intervall matematiskt.
+        <p><img src="pics/intervall_2.png" alt="" class="responsivepic250"/></p>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1">
+  <div class="card card-body answer">
+        <ol>
+        <li>\(x&gt;1\)</li>
+        <li>\(x\leq -2\)</li>
+        <li>\(x\geq 0\)</li>
+        <li>\(x&lt; 2\)</li>
+        <li>\(-1 &lt; x &lt; 3\)</li>
+        <li>\(0 \leq x \leq 1\)</li>
+        </ol>
+        </div></div></li>
+
+        <li>Lös följande olikheter (och rita intervallet).
+        <ol style="list-style-type:lower-alpha">
+        <li>\(4+x &lt; 2\)</li>
+        <li>\(4 + x \geq 2\)</li>
+        <li>\(2x -3 &gt; x\)</li>
+        <li>\(-3 + 2x &gt; -4x -5\)</li>
+        <li>\(7x - 4 \leq 4x +3\)</li>
+        <li>\(-8+x \geq 8 -x\)</li>
+        </ol>
+
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="2">
+  <div class="card card-body answer">
+        <ol style="list-style-type:lower-alpha">
+        <li>\(x&lt;-2\)</li>
+        <li>\(x\geq -2\)</li>
+        <li>\(x&gt;3\)</li>
+        <li>\(x&gt;-\dfrac{1}{3}\)</li>
+        <li>\(x\leq \dfrac{7}{3}\)</li>
+        <li>\(x\geq 8\)</li>
+        </ol>
+        </div></div></li>
+
+        <li>Lös följande olikheter
+        <ol>
+        <li>\(3(x-1) \leq 4 \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3a">
+  <div class="card card-body answer">\(\begin{array}{rcl}  3(x-1) &amp;\leq&amp; 4 \\  3x -3 &amp;\leq&amp; 4 \\  3x  &amp;\leq&amp; 7 \\  x&amp;\leq&amp; \dfrac{7}{3} \\  \end{array} \)</div></div></li>
+        <li>\(\dfrac{1}{2}(4-2x) &gt; -3(x-\dfrac{5}{3}) \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3b">
+  <div class="card card-body answer">\(\begin{array}{rcl}  \dfrac{1}{2}(4-2x) &amp;&gt;&amp; -3(x-\dfrac{5}{3}) \\  2-x &amp;&gt;&amp; -3x+5 \\  2x &amp;&gt;&amp;3 \\  x &amp;&gt;&amp;\dfrac{3}{2}\\  \end{array} \)</div></div></li>
+        <li>\(2(2-x) \geq 6 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3c">
+  <div class="card card-body answer"> \(\begin{array}{rcll}  2(2-x) &amp;\geq&amp; 6 \\  4-2x &amp;\geq&amp; 6 \\  -2x &amp;\geq&amp; 2 &amp;\mid /(-2) \text{ Negativt! Riktningen byts!}\\  x &amp;\leq &amp; -1\\  \end{array} \)</div></div></li>
+        <li>\(4 &gt; \dfrac{1}{2}(-x+2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3d">
+  <div class="card card-body answer"> \( \begin{array}{rcll}  4 &amp;&gt;&amp; \dfrac{1}{2}(-x+2) \\  4 &amp;&gt;&amp; -\dfrac{1}{2}x+1 \\  \dfrac{1}{2}x&amp;&gt;&amp; -3 &amp;\mid \cdot 2\\  x &amp;&gt;&amp;-6\\  \end{array} \)</div></div></li>
+        <li>\(x &lt; \dfrac{2}{3} (2-x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3e">
+  <div class="card card-body answer">\(\begin{array}{rcll}  x &amp;&lt;&amp; \dfrac{2}{3} (2-x)  \\  x &amp;&lt;&amp; \dfrac{4}{3} -\dfrac{2}{3}x \\   \dfrac{5}{3}x &amp;&lt;&amp; \dfrac{4}{3} &amp;\mid \cdot \dfrac{3}{5} \\  x &amp;&lt;&amp; \dfrac{4}{5}\\    \end{array} \)</div></div></li>
+        <li>\(x^2 &gt; (x-2)^2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3f">
+  <div class="card card-body answer">\(\begin{array}{rcl}  x^2 &amp;&gt;&amp; (x-2)^2 \\  x^2 &amp;&gt;&amp; x^2-4x+4 \\  4x &amp;&gt;&amp;4 \\  x &amp;&gt;&amp;1 \\  \end{array} \)</div></div></li>
+        </ol></li>
+
+        <li>Lös olikheterna
+        <ol>
+        <li>\(4 &lt; 2x +3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4a">
+  <div class="card card-body answer">\(\begin{array}{rcll}  4 &amp;&lt;&amp; 2x +3 \\  -2x &amp;&lt;&amp; -1 &amp;\mid /(-2) \text{ Negativt! Riktningen byts!}\\  x &amp;&gt;&amp; \dfrac{1}{2} \\  \end{array} \)</div></div></li>
+        <li>\(-8-x &gt; 8+x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4b">
+  <div class="card card-body answer">\(\begin{array}{rcll}  -8-x &amp;&gt;&amp; 8+x \\  -2x &amp;&gt;&amp; 16 &amp;\mid /(-2) \text{ Negativt! Riktningen byts!}\\  x &amp;&lt;&amp;-8 \\  \end{array} \)</div></div></li>
+        <li>\(-4x +5 \geq 3+x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4c">
+  <div class="card card-body answer">\(\begin{array}{rcll}  -4x +5 &amp;\geq &amp; 3+x \\  -5x  &amp;\geq&amp; -2 &amp;\mid /(-5) \text{ Negativt! Riktningen byts!}\\  x &amp;\leq&amp; \dfrac{2}{5}\\  \end{array} \)</div></div></li>
+        <li>\(2(-x+3) \leq -(x +1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4d">
+  <div class="card card-body answer">\(\begin{array}{rcll}  2(-x+3) &amp;\leq&amp; -(x +1) \\  -2x+6 &amp;\leq&amp; -x -1 \\  -x &amp;\leq&amp; -7 &amp;\mid \cdot (-1) \text{ Negativt! Riktningen ändras!}\\  x &amp;\geq &amp; 7\\  \end{array} \)</div></div></li>
+        <li>\(x -(1-x) &gt; 4x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4e">
+  <div class="card card-body answer">\(\begin{array}{rcll}  x -(1-x) &amp;&gt;&amp; 4x \\  x -1+x &amp;&gt;&amp; 4x \\  -2x &amp;&gt;&amp; 1 &amp;\mid /(-2) \text{ Negativt! Riktningen ändras!}\\  x &amp;&lt;&amp; -\dfrac{1}{2}  \end{array} \)</div></div></li>
+        <li>\(-2(3-x) \leq 4(x-5) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4f">
+  <div class="card card-body answer">\(\begin{array}{rcll}  -2(3-x) &amp;\leq&amp; 4(x-5) \\  -6+2x &amp;\leq&amp; 4x-20 \\  -2x &amp;\leq&amp; -14  &amp;\mid /(-2) \text{ Negativt! Riktningen ändras!}\\  x &amp;\geq &amp;7\\  \end{array} \)</div></div></li>
+        </ol></li>
+
+        <li>Lös olikheterna
+        <ol>
+        <li>\(-(7-x) &gt; -2(x-1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5a">
+  <div class="card card-body answer">\(\begin{array}{rcll}  -(7-x) &amp;&gt;&amp; -2(x-1) \\  -7+x &amp;&gt;&amp; -2x+2 \\  3x &amp;&gt;&amp; 9 \\  x &amp;&gt;&amp; 3\\  \end{array} \)</div></div></li>
+        <li>\(2x &gt; 4x-1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5b">
+  <div class="card card-body answer">\(\begin{array}{rcll}  2x &amp;&gt;&amp; 4x-1 \\  -2x &amp;&gt;&amp;-1 &amp;\mid /(-2) \text{ Negativt! Riktningen byts!}\\  x &amp;&lt;&amp; \dfrac{1}{2}\\  \end{array} \)</div></div></li>
+        <li>\(-(2-x) &lt; \dfrac{1}{3}(3-x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5c">
+  <div class="card card-body answer">\(\begin{array}{rcll}  -(2-x) &amp;&lt;&amp; \dfrac{1}{3}(3-x)\\    -2+x &amp;&lt;&amp; 1-\dfrac{1}{3}x\\    \dfrac{4}{3}x &amp;&lt;&amp; 3 &amp;\mid \cdot \dfrac{3}{4}\\    x &amp;&lt;&amp; \dfrac{9}{4}\\  \end{array} \)</div></div></li>
+        <li>\(2(x-1) \geq (2+x)3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5d">
+  <div class="card card-body answer">\(\begin{array}{rcll}  2(x-1) &amp;\geq&amp; (2+x)3 \\  2x-2 &amp;\geq&amp; 6+3x \\  -x &amp;\geq&amp; 8 &amp;\mid \cdot(-1) \text{ Negativt! Riktningen byts!} \\  x &amp;\leq&amp; -8\\  \end{array} \)</div></div></li>
+        <li>\((x-1)^2 &gt; (x-1)(x+1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5e">
+  <div class="card card-body answer">\(\begin{array}{rcll}  (x-1)^2 &amp;&gt;&amp; (x-1)(x+1)\\  x^2 -2x +1 &amp;&gt;&amp; x^2-1 \\  -2x &amp;&gt;&amp;-2 &amp;\mid /(-2) \text{ Negativt! Riktningen byts!}\\  x &amp;&lt;&amp; 1 \\  \end{array} \)</div></div></li>
+        <li>\(x(2-x) \geq -(x-3)^2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5f">
+  <div class="card card-body answer">\(\begin{array}{rcll}  x(2-x) &amp;\geq&amp; -(x-3)^2 \\  2x-x^2 &amp;\geq&amp; -(x^2-6x+9) \\  2x-x^2 &amp;\geq&amp; -x^2+6x-9 \\  -4x &amp;\geq&amp; -9 &amp;\mid /(-4) \text{ Negativt! Riktningen byts!}\\  x &amp; \leq &amp; \dfrac{9}{4}\\  \end{array} \)</div></div></li>
+        </ol></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Olikheter med rötter. För vilka värden på \(x\) gäller att
+        <ol>
+        <li>\(-\sqrt{5}(x\sqrt{5}-\sqrt{4}) &lt; 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="6a">
+  <div class="card card-body answer">\(\begin{array}{rcll}  -\sqrt{5}(x\sqrt{5}-\sqrt{4}) &amp;&lt;&amp; 0 \\  -5x+\sqrt{20} &amp;&lt;&amp; 0 \\  -5x &amp;&lt;&amp; -\sqrt{20} &amp;\mid /(-5) \text{ Negativt! Riktningen byts!}\\  x &amp;&gt;&amp; \dfrac{\sqrt{20}}{5} = \dfrac{2\sqrt{5}}{5} = \dfrac{2}{\sqrt{5}}\\  \end{array} \)</div></div></li>
+        <li>\(\sqrt{3}(2\sqrt{6}-3\sqrt{8}) &gt; x\sqrt{3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="6b">
+  <div class="card card-body answer">\(\begin{array}{rcll}  \sqrt{3}(2\sqrt{6}-3\sqrt{8}) &amp;&gt;&amp; x\sqrt{3} &amp;\mid /\sqrt{3}\\  2\sqrt{6}-3\sqrt{8} &amp;&gt;&amp; x &amp;\mid \text{ Byter ledens plats, riktningen ändras.}\\  x &amp;&lt;&amp; 2\sqrt{6}-3\sqrt{8} \\  &amp;=&amp;2\sqrt{6}-6\sqrt{2}\\  \end{array} \)</div></div></li>
+        <li>\(\dfrac{x}{\sqrt{2}+1}&gt; x \)
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6ct" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse" id="6ct"><div class="hint">Vad dividerar vi med?</div></div>
+  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="6c">
+  <div class="card card-body answer">\(\begin{array}{rcll}  \dfrac{x}{\sqrt{2}+1}&amp;&gt;&amp; x &amp;\mid \cdot \sqrt{2}+1\\  x&amp;&gt;&amp; x(\sqrt{2}+1) \\  x- x(\sqrt{2}+1) &amp;&gt;&amp;0 \\  x- x\sqrt{2}-x &amp;&gt;&amp; 0 \\  - x\sqrt{2} &amp;&gt;&amp; 0  &amp;\mid /(-\sqrt{2}) \text{ Negativt! Riktningen ändras!}\\  x &amp;&lt;&amp; 0 \\  \end{array} \)</div></div></li>
+        </ol></li>
+        <li>Låt \(f(x) = x\) och \(g(x) = -x+3\). Räkna ut skärningspunkten och rita i ett koordinatsystem de områden som avgränsas av följande linjer.
+        <ol style="list-style-type:lower-alpha">
+        <li>\(f(x) &gt; g(x)\)</li>
+        <li>\(g(x) \geq f(x)\)</li>
+      </ol><p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="7">
+  <div class="card card-body answer">
+        Vi får
+        <ol style="list-style-type:lower-alpha">
+        <li><p><img src="pics/olikhet_4.png" alt="" width="300" height="239"/></p></li>
+        <li><p><img src="pics/olikhet_5.png" alt="" width="300" height="239"/></p></li>
+        </ol>
+        </div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>För vilka värden på \(x\) gäller att \(\dfrac{3}{3-2x}&lt;0\)?
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse" id="8t">
+    <div class="hint">Tänk efter! När är en kvot negativ?</div></div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="8">
+  <div class="card card-body answer">Eftersom täljaren alltid är positiv räcker det med att undersöka nämnaren. Nämnaren negativ då \(3-2x&lt;0\), alltså då \(x&gt;\dfrac{3}{2}\).</div></div></li>
+        </ol>
+
+
+
+      </section>
+
+      </article>
+
+    <footer class="MaA2">
+      <a href="6_blandat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+
+      <a href="8_rotformeln.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

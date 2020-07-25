@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>17. Parabeln</title>
+
+ </head>
+ <body>
+  <header class="MaA5">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+      <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+      <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+      <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+      <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+      <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+      <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+      <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+      <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+      <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+      <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+      <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+      <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+      <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+      <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+      <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+      <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+      <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+     </div>
+    </div>
+   </nav>
+   <a href="16_avstandpunktlinje.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+   <a href="18_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>17. Parabeln</h1>
+   <section>
+    <div class="theory">
+     <div class="intro box">
+      <p>Bestäm de punkter \( (x,y) \) som ligger på samma avstånd från linjen \( y=-1 \) och \( (0,3) \).</p>
+      <h4>Lösning</h4>
+      <p>Idén är följande</p>
+      <p><img src="pics/17-1.png" alt="" class="responsivepic400" /></p>
+      <p>Vi arbetar utgående två stycken avstånd.</p>
+      <p>Avståndet mellan \( (0,3) \) och \( (x,y) \) är \( \sqrt{(x-0)^2+(y-3)^2} = \sqrt{x^2+(y-3)^2} \).</p>
+      <p>Avståndet mellan punkten \( (0,3) \) och linjen \( y=-1 \) är avståndet mellan deras y-koordinater, \( \mid y-(-1)\mid = \mid y+1\mid \).</p>
+      <p>Det som gäller är att dessa avstånd skall vara samma</p> <p> \( \begin{array}{rcll} \sqrt{x^2+(y-3)^2} & = & \mid y+1 \mid & \mid (\quad)^2 \\ x^2+(y-3)^2 & = & (y+1)^2 \\ x^2 + y^2 -6y+9 & = & y^2+2y+1 \\ -8y & = & -x^2-8 \\ y & = & \dfrac{1}{8}x^2+1 \\ \end{array} \)</p>
+      <p>Vi har en parabel, \( y=\dfrac{1}{8}x^2+1 \)</p>
+      <p>Styrlinjen för parabeln är \( y=-1 \) och brännpunkten är \( (0,3) \).</p> <p> Parabeln ser ut som</p>
+      <p><img src="pics/17-2.png" alt="" class="responsivepic400" /></p>
+     </div>
+     <p>För att ha en parabel behöver vi en brännpunkt och en styrlinje. Alla punkter som ligger på samma avstånd från dessa två är punkter på parabeln.</p>
+     <p> <img src="pics/17-3.png" alt="" class="responsivepic400" /></p>
+     <p>Parabeln är symmetrisk kring den linje som är vinkelrät mot styrlinjen och som går genom brännpunkten. Punkten med kortas avstånd från styrlinjen och brännpunkten är parabelns topp.</p>
+     <p> <img src="pics/17-4.png" alt="" class="responsivepic400" /></p>
+     <p>Om parabeln har samma riktning som \( y \)-axeln är parabelns ekvation \( y=ax^2+bx+c \). Är \( a > 0 \) öppnar sig parabeln uppåt och är \( a < 0 \) öppnar sig parabeln nedåt.​</p>
+     <p><img src="pics/17-5.png" alt="" class="responsivepic400" /></p>
+     <p>Om parabeln har samma riktning som \( x \)-axeln är parabelns ekvation \( x=ay^2+by+c \). Är \( a > 0 \) öppnar sig parabeln mot höger och är \( a < 0 \) öppnar sig parabeln mot väster.</p>
+     <p> <img src="pics/17-6.png" alt="" class="responsivepic400" /></p>
+     <p>Parablar kan även öppna sig på andra sätt så att de inte öppnar sig vackert längs med varken \( x- \) eller \( y \)-axeln. I uppgift 9 har du en sådan parabel.</p>
+     <div class="exercise box">
+      <p><strong>Exempel 1</strong> Rita kurvan \( x-y^2+2=0 \). Bestäm skärningspunkten mellan kurvan och linjen \( y=\dfrac{1}{2}x-3 \).</p>
+      <h4>Lösning</h4>
+      <p>För att rita kurvan skriver vi först den som \( x=y^2-2 \) och sedan utnyttjar vi ett par punkter på kurvan.</p>
+      <p>\( \begin{array}{rrc} y & x=y^2-2 & (x,y) \\ -2 & (-2)^2-2 = 2 & (2,-2) \\ -1 & (-1)^2-2 = -1 & (-1,-1) \\ 0 & 0^2-2=-2 & (0,-2) \\ 1 &1^2-2=-1 & (-1,1) \\ 2 & 2^2-2=2 & (2,2) \\ \end{array} \)</p>
+      <p>Vi märker att vi har en "normal" parabel som vi har vridit 90 grader medurs.</p>
+      <p><img src="pics/17-7.png" alt="" class="responsivepic400" /></p>
+      <p>Skärningspunkten bestämmer vi helt normalt:</p>
+      <p> \( \left\{ \begin{array}{l} x-y^2+2=0 \\ y=\dfrac{1}{2}x-3 \\ \end{array} \right. \) </p>
+      <p>Insättning ger</p>
+      <p> \( \begin{array}{rcl} x -(\dfrac{1}{2}x-3)^2+2 & = & 0\\ x-\dfrac{1}{4}x^2+3x-9+2 & = & 0 \\ -\dfrac{1}{4}x^2+4x-7 & = & 0 \\ x & = & \dfrac{-4\pm\sqrt{4^2-4 (-\dfrac{1}{4}) \cdot (-7)}}{2\cdot (-\dfrac{1}{4})} \\ & = & \dfrac{-4 \pm 3}{-\dfrac{1}{2}} \\ x_1 = \dfrac{-4-3}{-\dfrac{1}{2}} &  & x_2 = \dfrac{-4+3}{-\dfrac{1}{2}} \\ x_1 = 14 &  & x_2=2 \\ \end{array} \) </p>
+      <p>y-koordinaterna är: \( y=\dfrac{1}{2}\cdot 14 -3 = 4 \) och \( y=\dfrac{1}{2}\cdot 2 -3 = -2 \). </p>
+      <p>Skärningspunkterna är \( (2,-2) \) och \( (14,4) \) .</p>
+      <p><img src="pics/17-8.png" alt="" class="responsivepic600" /></p>
+     </div>
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <!--<li>Uppgift för Quizlet</li>-->
+
+     <li>Bestäm skärningspunkterna för parabeln \( y=\dfrac{1}{4}x^2-2 \) och linjen \( y=x+1 \).
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="1">
+      <div class="card card-body answer"> <p>Vi bildar ekvationssystemet</p>
+      <p>\( \left\{ \begin{array}{l} y=\dfrac{1}{4}x^2-2\\ y=x+1\\ \end{array} \right. \).</p><p>som har lösningarna \( (-2,-1) \) och \( (6,7) \).</p> </div></div>
+     </li>
+
+     <!--<li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2a">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2b">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2c">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+      </ol>
+     </li>-->
+
+     <li>Bestäm skärningspunkterna mellan \( x=-y^2-y+1 \) och \( y=x+2 \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer"> <p>Vi löser ekvationssystemet</p>
+        <p>\( \left\{ \begin{array}{l} x=-y^2-y+1\\ y=x+2\\ \end{array} \right. \)</p><p>som har lösningarna \( (-5,-3) \) och \( (-1,1) \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Bestäm ekvationen för parabeln som går genom punkterna \( (-4,12) \), \( (-2,4) \) och \( (0,0) \) och som följer \( y \)-axeln.
+      <p>Skriv parabelns ekvation som \( y=ax^2+bx+c \) och bilda ett ekvationssystem.</p>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>Vårt ekvationssystem är</p>
+       <p>\( \left\{ \begin{array}{l} 12=a(-4)^2+b(-4)+c\\ 4=a(-2)^2+b(-2)+c\\ 0=a\cdot 0 + b\cdot 0 +c\\ \end{array} \right. \)</p><p>ger att \( a=\dfrac{1}{2} \), \( b=-1 \) och \( c=0 \). Parabelns ekvation är \( y=\dfrac{1}{2}x^2-x \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Bestäm ekvationen för parabeln som går genom punkterna \( (-3,-1) \), \( (-1,1) \) och \( (3,2) \) och som följer \( x \)-axeln.
+      <p>Parabelns ekvation har formen \( x=ay^2+by+c \).</p>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5">
+       <div class="card card-body answer"> <p>Vi bilar ekvationssystemet </p>
+        <p>\( \left\{ \begin{array}{rl} -3= & a(-1)^2+b(-1)+c\\ -1= & a\cdot 1 +b\cdot 1+c\\ 3= & a\cdot 2+b\cdot 2+c\\ \end{array} \right. \)</p>
+        <p>som har lösningarna \( a=1 \), \( b=1 \) och \( c=-3 \). Parabelns ekvation är \( x=y^2+y-3 \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>En gammal stentunnels tvärsnitt har formen av en parabel. Tunneln är 3,0 m hög och 6,0 m bred. Ryms en specialfrakt som är 3,0 m bred och 2,5 m hög genom tunneln då man kör mitt igenom tunneln?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>Placera tunneln så att den är symmetrisk kring \( y \)-axeln. Untyttja avstånden för att bestämma ekvationen för parabeln.</p>
+       <p>Parabeln skall genom punkterna \( (-3,0) \), \( (0,3) \) och \( (3,0) \). Vi får parabelns ekvation till \( f(x)=-\dfrac{1}{3}x^2+3 \). </p>
+       <p>Om bilen är 3,0 m bred betyder det att den kör 1,5 m från mittpunkten. \( f(1,5)=2,25 \)</p>
+       <p>Eftersom bilen är 2,5 m hög tar det i tunneltaket som är 2,25 m högt.</p>
+       <p>Svar: Nej</p>
+       </div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Kombinera rätt ekvation för parabel med rätt bild. <p>Välj bland ekvationerna \( 4x-y^2=0 \), \( 4x^2-y^2=0 \), \( x^2+y^2-4=0 \) och \( 4x^2-y=0 \).</p>
+      <table>
+       <tr><td>Ekvation</td><td>Graf</td></tr>
+       <tr><td></td><td> <img src="pics/17-9-a.png" alt="" class="responsivepic250" /></td></tr>
+       <tr><td></td><td> <img src="pics/17-9-b.png" alt="" class="responsivepic250" /></td></tr>
+       <tr><td></td><td> <img src="pics/17-9-c.png" alt="" class="responsivepic250" /></td></tr>
+       <tr><td></td><td> <img src="pics/17-9-d.png" alt="" class="responsivepic250" /></td></tr>
+      </table>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer">
+        <table>
+         <tr><td>Ekvation</td><td>Graf</td></tr>
+         <tr><td>\( 4x^2-y=0 \)</td><td> <img src="pics/17-9-a.png" alt=""   class="responsivepic250" /></td></tr>
+         <tr><td>\( 4x-y^2=0 \)</td><td> <img src="pics/17-9-b.png" alt=""   class="responsivepic250" /></td></tr>
+         <tr><td>\( 4x^2-y^2=0 \)</td><td> <img src="pics/17-9-c.png" alt=""   class="responsivepic250" /></td></tr>
+         <tr><td>\( x^2+y^2-4=0 \)</td><td> <img src="pics/17-9-d.png" alt=""   class="responsivepic250" /></td></tr>
+        </table>
+        </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Bestäm ekvationen för parabeln vars brännpunkt är \( (0,1) \) och vars styrlinje är \( y=-3 \).
+      <p>Arbeta via avstånd mellan punkten \( (0,1) \) och \( (x,y) \) och avståndet mellan \( (x,y) \) och \( y=-3 \).</p>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8">
+       <div class="card card-body answer"> <p>Avståndet mellan \( (0,1) \) och \( (x,y) \) är \( \sqrt{x^2+(y-1)^2} \). </p>
+        <p>Avståndet mellan punkten \( (x,y) \) och linjen \( y=-3 \) är \( \mid y+3\mid \).</p>
+        <p>Dessa skall ha samma värde, \( \sqrt{x^2+(y-1)^2} = \mid y+3 \mid \).</p>
+        <p>Vi kvadrerar och förenklar, parabelns ekvation är \( y=\dfrac{1}{8}x^2-1 \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Bestäm ekvationen för parabeln vars brännpunkt är \( (-3,-2) \) och vars styrlinje är \( x=0 \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
+       <div class="card card-body answer"> <p>Avståndet mellan \( (-3,-2) \) och \( (x,y) \) är \( \sqrt{(x+3)^2+(y+2)^2} \).</p>
+        <p>Avståndet mellan \( (x,y) \) och styrlinjen \( x=0 \) är \( \mid x - 0 \mid \).</p>
+        <p>Dessa avstånd skall vara lika stort, \( \sqrt{(x+3)^2+(y+2)^2} = \mid x \mid \).</p>
+        <p>Vi kvadrerar och förenklar, ekvationen är \( y^2+6x+4y+13=0 \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-jedi fa-2x level"></i>Bestäm ekvationen för parabeln vars styrlinje är \( y=x-1 \) och vars brännpunkt är \( (-1,-1) \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer"> <p>Avståndet mellan \( (-1,-1) \) och punkten \( (x,y) \) är \( \sqrt{(x+1)^2+(y+1)^2} \).</p>
+        <p>Avståndet mellan punkten \( (x,y) \) och \( y=x-1 \) är \( \dfrac{\mid 1\cdot x -1\cdot y-1\mid}{\sqrt{1^2+(-1)^2}} \).</p>
+        <p>Dessa avstånd skall vara lika stora, \( \sqrt{(x+1)^2+(y+1)^2}=\dfrac{\mid 1\cdot x -1\cdot y-1\mid}{\sqrt{1^2+(-1)^2}} \).</p>
+        <p>Vi kvadrerar och förenklar. Ekvationen är \( x^2+2xy+y^2+6x+2y+3=0 \).</p> </div></div>
+     </li>
+
+     <!--<li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5a">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5b">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5c">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+      </ol>
+     </li>
+    -->
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaA5">
+   <a href="16_avstandpunktlinje.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="18_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

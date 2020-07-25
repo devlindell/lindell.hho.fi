@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Rotationskroppar</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_arean_fkter.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="12_allm_volymer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Rotationskroppar</h1>
+      <section>
+        <div class="theory">
+          <p>Vi tar först och bestämmer volymer som bildas när funktioner roterar kring axlar. Efter det tar vi och bestämmer volymer allmännare plan.</p>
+          <div class="intro box">
+            <p>Grafen för funktionen \( f(x)=\dfrac{1}{2}x^2 +1 \) i intervallet \( [1,3] \) roterar kring \( x \)-axeln. Bestäm volymen för den kropp som uppstår.</p>
+            <h4>Lösning</h4>
+            <p>Då \( f(x)=\dfrac{1}{2}x^2+1, x\in [1,3] \) roterar kring \( x \)-axeln får vi följande figur.</p>
+            <p><img src="pics/rotation_1.png" alt="" class="responsivepic400" /></p>
+            <p>Vi tänker oss att volymen består av många skivor med en viss radie. Det vi gör är att adderar ihop dessa skivor för att få volymen.</p>
+            <p>Radien för en skiva är avståndet från \( x \)-axeln till punktens \( y \)-koordinat, alltså \( \dfrac{1}{2}x^2+1 = f(x) \). Arean för en skiva är \( \pi r^2 \), alltså \( \pi (\dfrac{1}{2}x^2+1)^2 =\pi f(x)^2 \).</p>
+            <p>För att addera ihop alla oändliga skivor integrerar vi från 1 till 3. Volymen är</p>
+            <p>\( \begin{array}{rcl} \displaystyle\int_1^3 \pi f(x)^2 \mathrm{ d} x  & = &  \pi \displaystyle\int_1^3 (\dfrac{1}{2}x^2+1)^2 \mathrm{ d} x \\  & = &  \pi \displaystyle\int_1^3 \dfrac{1}{4}x^4+ x^2 + 1 \mathrm{ d} x \\  & = &  \pi \bigg/_1^3 \dfrac{1}{4}\cdot \dfrac{1}{5}x^5 +\dfrac{1}{3}x^3 + x \\  & = &  \pi [(\dfrac{1}{20}\cdot 3^5 +\dfrac{1}{3}\cdot 3^3 + 3)-(\dfrac{1}{20}\cdot 1^5 +\dfrac{1}{3}\cdot 1^3 + 1)] \\  & = &  \pi (\dfrac{283}{20} - \dfrac{83}{60})\\  & = &  \dfrac{683}{30} \pi \approx 71,5 \\ \end{array} \)</p>
+          </div>
+          <p>Då vi bestämmer volymen för en rotationskropp som uppstår då \( f(x) \) roterar i intervallet \( [a,b] \) kring \( x \)-axeln får vi \( V=\pi \displaystyle\int_a^b f(x)^2 \mathrm{ d} x \).</p>
+          <p><img src="pics/rotation_2.png" alt="" class="responsivepic400" /></p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Funktionen för \( f(x)=e^{\frac{x}{4}} \) roterar kring \( y=1 \). Bestäm volymen som uppstår i intervallet \( [0,2] \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har följande situation.</p>
+            <p><img src="pics/rotation_3.png" alt="" class="responsivepic400" /></p>
+            <p>Radien som uppstår för kroppen vi rotationen har radien \( e^{\frac{x}{4}}-1 \). Volymen är</p>
+            <p> \( \begin{array}{rcl} \displaystyle\int_0^2 \pi (e^{\frac{x}{4}}-1)^2 \mathrm{ d}x  & = &  \pi \displaystyle\int_0^2 e^{\frac{x}{2}}-2e^{\frac{x}{4}}+1 \mathrm{ d}x \\  & = &  \pi \displaystyle\int_0^2 2\cdot\dfrac{1}{2}e^{\frac{x}{2}}-2\cdot 4\cdot\dfrac{1}{4}e^{\frac{x}{4}}+1 \mathrm{ d}x \\  & = &  \pi \bigg/_0^2 2e^{\frac{x}{2}}-8e^{\frac{x}{4}}+x\\  & = &  \pi[(2e^{\frac{2}{2}}-8e^{\frac{2}{4}}+2)-(2e^{\frac{0}{2}}-8e^{\frac{0}{4}}+0)] \\  & = &  \pi [(2e-8\sqrt{e}+2)-(2-8-0)]\\  & = &  \pi(2e-8\sqrt{e}+8) \approx 0,76\\ \end{array} \)</p>
+          </div>
+          <p>Då funktionen \( f(x) \) roterar i intervallet \( [a,b] \) kring linjen \( y=c \) är arean av en skiva \( \pi (f(x)-c)^2 \). Volymen för rotationskroppen är \( \pi \displaystyle\int_a^b (f(x)-c)^2 \mathrm{ d}x \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Funktionen \( y=x^3 \) roterar kring \( y \)-axeln. Bestäm volymen som bildas i intervallet då \( x\in[-1,2] \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har följande situation:</p>
+            <p><img src="pics/rotation_4.png" alt="" class="responsivepic400" /></p>
+            <p>För att kunna integrera med avseende på \( y \) måste vi skriva funktionen som \( f(y)=\ldots \).</p>
+            <p>Eftersom</p>
+            <p>\( \begin{array}{rcl} f(x) & = & x^3 \\ y  & = &  x^3 \\ x  & = &  \sqrt[3]{y} \\ \end{array} \)</p> <p> Eftersom vi har en funktion där \( f(y) = \sqrt[3]{y} \) måste vi veta intervallet på \( y \)-axeln. Då \( f(-1)=-1 \) och \( f(2)=8 \) är intervallet \( [-1,8] \) som vi intergrerar i.</p>
+            <p>Volymen är</p>
+            <p>\( \begin{array}{rcl} \displaystyle\int_{-1}^8 \pi (\sqrt[3]{y})^2 \mathrm{ d} y  & = &  \pi \displaystyle\int_{-1}^8 y^{\frac{2}{3}} \mathrm{ d}y \\  & = &  \pi \bigg/_{-1}^8 \dfrac{1}{1+\dfrac{2}{3}} y^{\frac{2}{3}+1} \\  & = &  \pi \bigg/_{-1}^8 \dfrac{3}{5} y^{\frac{5}{3}} \\  & = &  \dfrac{3\pi}{5} \bigg/_{-1}^8 (\sqrt[3]{y})^5 \\  & = &  \dfrac{3\pi}{5} (\sqrt[3]{8}^5-\sqrt[3]{-1}^5) \\  & = &  \dfrac{3\pi}{5} (2^5 -(-1)^5) \\  & = &  \dfrac{3\pi}{5} \cdot 33 \\  & = &  \dfrac{99\pi}{5} \approx 62,2 \\ \end{array} \)</p>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bestäm volymen som bildas i intervallet \( [1,4] \) då \( f(x)=\dfrac{1}{2}x+1 \) roterar kring \( x \)-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi har \( \pi\displaystyle\int_1^4 (\dfrac{1}{2}x+1)^2 \mathrm{ d} x = \dfrac{63\pi}{4} \approx 49,48 \).</p></div></div>
+          </li>
+
+          <li>Bestäm volymen som bildas i intervallet \( [0,2] \) då \( f(x)=\dfrac{1}{4}x^2+1 \) roterar kring \( x \)-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi har \( \pi \displaystyle\int_0^2 (\dfrac{1}{4}x^2+1)^2 \mathrm{ d} x = \dfrac{56\pi}{15} \approx 11,73 \).</p></div></div>
+          </li>
+
+          <li>Bestäm volymen som bildas i intervallet \( [1,3] \) då \( f(x)=e^x+1 \) roterar kring \( x \)-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi har \( \pi \displaystyle\int_1^3 (e^x+1)^2 \mathrm{ d} x = \dfrac{\pi}{2}(e^6+4e^3-e^2-4e+4) \approx 737,50 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm volymen som bildas i intervallet \( [1,3] \) då \( f(x)=\dfrac{1}{x}+1 \) roterar kring \( y=2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi har \( \pi \displaystyle\int_1^3 (\dfrac{1}{x}+1-2)^2 \mathrm{ d} x = \pi(-2\ln3 + \dfrac{8}{3}) \approx 1,4748\ldots \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm volymen som bildas i intervallet \( [-1,2] \) då \( f(x)=\dfrac{1}{4}x^2+x \) roterar kring \( y=1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi har \( \pi \displaystyle\int_{-1}^2 (\dfrac{1}{4}x^2+x-1)^2 \mathrm{ d} x = \dfrac{303\pi}{80} \approx 11,90 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \( f(x)=\dfrac{1}{4}x^2 +\dfrac{1}{4} \) roterar kring \( x \)-axeln. För vilket värde på \( a \) gäller att volymen som bildas i intervallet \( [0,a] \) har ett värde som är större än 4,92?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi får uttrycket \( \pi \displaystyle\int_0^a (\dfrac{1}{4}x^2 +\dfrac{1}{4})^2 \mathrm{\, d} x = 4,92 \).<p>Vi kan bra lösa ekvationen på räknarprogram.</p>
+                <p>Ekvationen har lösningen \( a=2 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm volymen av den kropp som bildas då \( f(x)=x^2 \) roterar kring \( y \)-axeln då \( x\in [0,2] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Funktionen som vi arbetar med är \( y=x^2 \Leftrightarrow x=\sqrt{y} \). Alltså \( f(y) =\sqrt{y} \).</p>
+                <p>Då \( x=0 \) är \( y=0 \) och då \( x=2 \) är \( y=4 \). Intervallet som vi intergrerar i är 0 till 4.</p>
+                <p>Volymen är \( \pi \displaystyle\int_0^4 (\sqrt{y})^2 \mathrm{ d} y = 8\pi \approx 25,13 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm volymen av den kropp som bildas då \( f(x)= \ln x , x\in [1,e] \) roterar kring \( y \)-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Funktionen som vi arbetar med är \( y=\ln x \Leftrightarrow x = e^y \Leftrightarrow f(y)=e^y \).</p>
+                <p>Då \( x=1 \) är \( y=0 \) och då \( x=e \) är \( y=1 \).</p>
+                <p>Volymen är \( \pi \displaystyle\int_0^1 (e^y)^2 \mathrm{ d}y = \dfrac{\pi(e^2-1)}{2} \approx 10,0 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm volymen för ett klot med radien \( r \).
+            <p>Arbeta med ekvationen för en cirkel, \( x^2+y^2=r^2 \) och uttryck den som \( y=\ldots \).</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Vi får att \( y=\pm \sqrt{r^2-x^2} \). Vi arbetar med \( y=\sqrt{r^2-x^2} \), roten är definierad då \( r^2-x^2 \geq 0 \Leftrightarrow -r \leq x \leq r \).</p>
+              <p>Då vi bestämmer \( \pi \displaystyle\int_{-r}^r \sqrt{r^2-x^2}^2 \mathrm{ d} x \) får vi halva volymen.</p>
+              <p>Hela volymen är \( 2\pi \displaystyle\int_{-r}^r \sqrt{r^2-x^2}^2 \mathrm{ d} x = \dfrac{4\pi r^3}{3} \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="10_arean_fkter.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_allm_volymer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

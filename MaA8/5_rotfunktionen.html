@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>5. Rotfunktionen och ekvationer med rötter</title>
+
+ </head>
+ <body>
+  <header class="MaA8">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+      <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+      <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+      <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+      <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+      <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+      <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+      <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+      <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+      <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+      <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+      <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+      <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+      <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+      <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+     </div>
+    </div>
+   </nav>
+   <a href="4_potensekvationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+   <a href="6_deri_rotfunkt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>5. Rotfunktionen och ekvationer med rötter</h1>
+   <section>
+    <div class="theory">
+     <p>I grundskolan har du tidigare bekantat dig med kvadratrötter. Nu är det dags att bilda funktioner av dem och börja analysera hur de beter sig.</p>
+     <div class="intro box">
+      <p>Vi tar och ritar funktionen \( f(x)=\sqrt{x} \).</p>
+      <div class="video">
+      <iframe width="640" height="564" src="https://player.vimeo.com/video/327415521" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+     </div>
+    </div>
+    <div class="exercise box">
+     <p><strong>Exempel 1</strong> För vilka värden på \( x \) gäller att \( \sqrt{x-2}=4 \)?</p>
+     <h4>Lösning</h4>
+     <p>Radikanden, det som är under rotteckent, är definierad då \( x-2 \geq 0 \Leftrightarrow x \geq 2 \).</p>
+     <p>Vi tar och löser</p>
+     <p>\( \begin{array}{rcll} \sqrt{x-2} & = & 4 & \textrm{ genom att kvadrera.} \\ (\sqrt{x-2})^2 & = & 4^2 \\ x-2 & = & 16 \\ x & = & 18 \\ \end{array} \) </p>
+     <p>Eftersom \( 18 > 2 \) duger lösningen.</p>
+     <div class="video">
+      <iframe width="640" height="564" src="https://player.vimeo.com/video/327415765" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+     </div>
+     </div>
+     <div class="exercise box">
+      <p><strong>Exempel 2</strong> Bestäm skärningspunkten för funktionerna \( f(x)=\sqrt{x+2} \) och \( g(x)=\sqrt{-x+6} \).</p>
+      <h4>Lösning</h4>
+      <p>Vi börjar med att undersöka när funktionerna är definierade.</p>
+      <p>\( f \) är definierad då \( x+2 \geq 0 \Leftrightarrow x \geq -2 \) och \( g \) är definierad då \( -x+6 \geq 0 \Leftrightarrow x \leq 6 \).</p>
+      <p>Sedan löser vi ekvationen \( f(x)=g(x) \):</p>
+      <p>\( \begin{array}{rcll} \sqrt{x+2} & = & \sqrt{-x+6} & \textrm{ Vi kvadrerar} \\ (\sqrt{x+2})^2 & = & (\sqrt{-x+6})^2 \\ x+2 & = & -x+6 \\ 2x & = & 4 \\ x & = & 2 \\ \end{array} \) </p>
+      <p>\( x=2 \) duger som lösning eftersom \( -2 \leq 2 \leq 6 \).</p>
+      <p>Man kan även bestämma de gemensamma punkterna för \( f(x)=\sqrt{x+2} \) och \( g(x)=\sqrt{-x+6} \) genom att undersöka radikanderna. Då får vi att \( x+2=-x+6 \Leftrightarrow x=2 \).</p>
+     </div>
+     <div class="summary box">
+      <p>Fundera, gäller följande påståenden:
+       <ul>
+        <li>Om \( a^2=b^2 \) så gäller att \( a=b \).</li>
+        <li>Om \( a^3=b^3 \) så gäller att \( a=b \).</li></ul></p>
+        <h4>Motivering</h4>
+        <p>Kvadraten gäller inte. Ta till exempel \( 4 \) och \( -4 \). Bägge talen i kvadrat har värdet 16 men ändå är inte \( 4 = -4 \) .</p>
+        <p>För kubiken gäller det däremot.</p>
+        <p>Eftersom det inte gäller för kvadraten så måste vi vara på alerten att vi inte får falska rötter då vi löser ekvationer med kvadratrötter.</p>
+       </div>
+       <div class="exercise box">
+        <p><strong>Exmepel 3</strong> Bestäm de gemensamma punkterna för \( f(x)=\sqrt{x+3} \) och \( y=x+1 \).</p>
+        <h4>Lösning</h4>
+        <p>\( f \) är definierad då \( x+3 \geq 0 \Leftrightarrow x  \geq -3 \).</p>
+        <p>Vi är intresserade av \( \sqrt{x+3}=x+1 \) som vi löser genom att kvadrera.</p>
+        <p>\( \begin{array}{rcll} (\sqrt{x+3})^2 & = & (x+1)^2 \\ x+3 & = & x^2+2x+1 \\ x^2+x-2 & = & 0 & \textrm{ Rotformeln ger:}\\ \\ x & = & \dfrac{-1\pm\sqrt{1^2-4\cdot 1(-2)}}{2\cdot 1}\\ \\ & = & \dfrac{-1\pm 3}{2}\\ \end{array} \) </p>
+        <p>Rötterna är \( x=\dfrac{-1-3}{2}=-2 \) och \( x=\dfrac{-1+3}{2}=1 \).</p>
+        <p>Då vi jämför med funktionernas grafer märker vi att de endast skär en gång. Det som vi måste göra är att testa rötterna som vi fått.</p>
+        <p> <img src="pics/5-1.png" alt="" class="responsivepic600" /></p>
+        <p>Vi testar rötterna: \( \sqrt{-2+3}=\sqrt{1}\not=-2+1 \) och \( \sqrt{1+3}=\sqrt{4}=2=1+1 \). Vi har alltså endast en gemensam punkt. Då \( x=1 \) är \( y=1+1=2 \).</p>
+        <p>Den gemensamma punkten är \( (1,2) \).</p>
+       </div>
+       <div class="exercise box">
+        <p><strong>Exempel 4</strong> Bestäm nollställena för funktionen \( f(x)=\sqrt{2x-2}-x+1 \).</p>
+        <h4>Lösning</h4>
+        <p>Funktionen är definierad då \( 2x-2 \geq 0 \Leftrightarrow x \geq 1 \).</p>
+        <p>Vi löser ekvationen</p>
+        <p>\( \begin{array}{rcll} \sqrt{2x-2}-x+1 & = & 0 \\ \sqrt{2x-2} & = & x-1 & \mid (\quad)^2 \\ 2x-2 & = & (x-1)^2 \\ 2x-2 & = & x^2-2x+1 \\ x^2-4x+3 & = & 0 & \textrm{ Rotformeln}\\ x & = & \dfrac{4\pm \sqrt{(-4)^2-4\cdot1\cdot3}}{2\cdot 1} \\ & = & \dfrac{4\pm2}{2} \end{array} \) </p>
+        <p>Rötterna är \( x=\dfrac{4-2}{2}=1 \) och \( x=\dfrac{4+2}{2}=3 \).</p>
+       </div>
+       <div class="summary box">
+        <p>Då vi löser ekvationer med rötter så måste vi börja med att bestämma definitionsmängden. Sedan måste vi vara vara på alerten och fundera över att kan det komma in falska rötter bland de lösningar som vi får.</p>
+        <p>Ett bra sätt är att testa rötterna eller att jämföra dem med definitionsmängden.</p>
+       </div>
+
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <!--<li>Uppgift för Quizlet</li>-->
+
+     <li>Rita funktionen \( \sqrt{x+1} \) på papper utan att använda räknare. Rita den på räknarprogram och jämför din funktion med räknarens.
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="1">
+      <div class="card card-body answer"> <p>Vi får något som påminner om</p>
+       <p><img src="pics/5-2.png" alt="" class="responsivepic600" /></p></div></div>
+     </li>
+
+     <li><p>Bestäm definitionsmängden för följande rötter.</p>
+      <table>
+       <tr><th>Påstående</th><th>\( x > -1 \) </th><th>\( x > 0 \) </th><th>\( x > 1 \) </th></tr>
+       <tr><td>\( \sqrt{x+1} \) </td><td></td><td></td><td></td></tr>
+       <tr><td>\( \sqrt{2x+2} \) </td><td></td><td></td><td></td></tr>
+       <tr><td>\( \sqrt{x-1} \) </p> </td><td></td><td></td><td></td></tr>
+       <tr><td>\( \sqrt{x} \) </p> </td><td></td><td></td><td></td></tr>
+       <tr><td>\( \sqrt{3x-3} \) </p> </td><td></td><td></td><td></td></tr>
+       <tr><td>\( \sqrt{3x} \) </p> </td><td></td><td></td><td></td></tr>
+      </table>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="2">
+      <div class="card card-body answer"> <p>Det som är under roten skall vara positivt.</p>
+       <table>
+        <tr><th>Påstående</th><th>\( x > -1 \) </th><th>\( x > 0 \) </th><th>\( x > 1 \) </th></tr>
+        <tr><td>\( \sqrt{x+1} \) </td><td><i class="fas fa-check"></i></td> <td></td><td></td></tr>
+        <tr><td>\( \sqrt{2x+2} \) </td><td><i class="fas fa-check"></i></td> <td></td><td></td></tr>
+        <tr><td>\( \sqrt{x-1} \) </p> </td><td></td><td></td><td><i class="fas fa-check"></i></td> </tr>
+        <tr><td>\( \sqrt{x} \) </p> </td><td></td><td><i class="fas fa-check"></i></td> <td></td></tr>
+        <tr><td>\( \sqrt{3x-3} \) </p> </td><td></td><td></td><td><i class="fas fa-check"></i></td> </tr>
+        <tr><td>\( \sqrt{3x} \) </p> </td><td></td><td><i class="fas fa-check"></i></td> <td></td></tr>
+       </table>
+      </div></div>
+     </li>
+
+     <li>För vilka värden på \( x \) gäller att \( \sqrt{x-3}=5 \)?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer"> <p>Kvadratroten är definierad då \( x-3 \geq 0 \Leftrightarrow x \geq 3 \).</p>
+        <p>Vi löser ekvationen</p>
+        <p>\( \begin{array}{rcll} \sqrt{x-3} & = & 5 & \textrm{ Kvadrerar}\\ (\sqrt{x-3})^2 & = & 5^2\\ x-3 & = & 25 \\ x & = & 28\\ \end{array} \)</p></div></div>
+     </li>
+
+     <li>Bestäm definitionsmängen för \( f(x)=\sqrt{4-x^2} \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>\( f \) är definierad då \( 4-x^2 \geq 0 \). Alltså då \( -2 \leq x \leq 2 \).</p></div></div>
+     </li>
+
+     <li>Bestäm skärningspunkten för funktionerna \( f(x)=\sqrt{2x+2} \) och \( g(x)=\sqrt{-x+5} \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5">
+       <div class="card card-body answer"> <p>Lös ekvationen \( \sqrt{2x+2}=\sqrt{-x+5} \) genom att kvadrera eller genom att undersöka radikanderna.</p>
+        <p>\( 2x+2=-x+5 \Leftrightarrow 3x=3 \Leftrightarrow x=1 \). \( f(1)=\sqrt{-1+5}=2 \).</p>
+        <p>Punkten är \( (1,2) \).</p></div></div>
+     </li>
+
+     <li>För vilket värde på \( x \) är funktionsvärdena för \( f \) och \( g \) samma då \( f(x)=\sqrt{x+2} \) och \( g(x)=\sqrt{-2x} \)?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>Lös ekvationen \( \sqrt{x+2}=\sqrt{-2x} \) genom att kvadrera eller genom att undersöka radikanderna.</p>
+        <p>\( x+2=-2x \Leftrightarrow 3x=-2 \Leftrightarrow x=-\dfrac{2}{3} \).</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \( f(x)=\sqrt{x+2} \) och \( y=2x-2 \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer"> <p>Vi skall lösa ekvationen \( \sqrt{x+2}=2x-2 \) genom att kvadrera. Vi får \( x+2=(2x-2)^2 \) som har rötterna \( x=\dfrac{1}{4} \) och \( x=2 \).</p>
+        <p>Då vi testar rötterna märker vi att endast \( x=2 \) är en rot. Punkten är \( (2,2) \).</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \( f(x)=\sqrt{x+4} \) och \( y=\dfrac{1}{5}x+2 \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8">
+       <div class="card card-body answer"> <p>Vi skall lösa ekvationen \( \sqrt{x+4}=\dfrac{1}{5}x+2 \) genom att kvadrera. Vi får \( x+4=(\dfrac{1}{5}x+2)^2 \) som har rötterna \( x=0 \) och \( x=5 \). Vi testar bägge rötter och konstaterar att båda duger.</p>
+        <p>De gemensamma punkterna är \( (0,2) \) och \( (5,3) \).</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Bestäm nollställena för funktionen \( f(x)=\sqrt{2x-3}-x+1 \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
+       <div class="card card-body answer"> <p>\( f \) är definierad då \( 2x-3 \geq 0 \Leftrightarrow x \geq \dfrac{3}{2} \).</p>
+        <p>Vi löser ekvationen</p>
+        <p>\( \begin{array}{rcll} \sqrt{2x-3}-x+1 & = & 0 \\ \sqrt{2x-3} & = & x-1 & \mid (\quad)^2 \\ 2x-3 & = & x^2-2x+1 \\ x^2-4x+4 & = & 0 \\ \end{array} \)</p>
+        <p>som har roten \( x=2 \).</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Räkna igenom uppgiften och korrigera felen i följande uträkning då uppgiften är:</p>
+      <p>Bestäm skärningspunkterna för \( f(x)=\sqrt{x+1} \) och \( y=-x-1 \).</p>
+      <p>\( \begin{array}{rclll} \sqrt{x+1} & = & -x-1 & \mid (\quad)^2 & \text{(1.)}\\ (\sqrt{x+1})^2 & = & (-x-1)^2 &  & \text{(2.)}\\ x+1 & = & x^2+2x+1 &  & \text{(3.)}\\ x^2+x & = & 0 &  & \text{(4.)}\\ x(x+1) & = & 0 &  & \text{(5.)}\\ \end{array} \) </p>
+      <p>Alltså \( x =0 \) och \( x+1=0 \Leftrightarrow x=-1 \).</p>
+      <p>Skärningspunkterna är \( (-1,0) \) och \( (0,1) \).</p>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="12">
+       <div class="card card-body answer"> <p>Allt är helt korrekt löst ända fram till nollställena \( x=0 \) och \( x=-1 \).</p>
+        <p>Dessa rötter måste vi testa! Eller jämföra med definitionsmängden.</p>
+        <p>\( x=-1: \sqrt{-1+1} =0 \) och \( -(-1)-1 =0 \). Den stämmer.</p>
+        <p>\( x=0: \sqrt{0+1} =1 \) och \( -0-1 =-1 \). Den stämmer inte.</p>
+        <p>Skärningspunkten är \( (-1,0) \).</p></div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Bestäm nollställena för funktionen \( f(x)=\sqrt{2x-1}+x \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer"> <p>Då vi löser \( \sqrt{2x-1}+x=0 \) får vi att \( x=1 \). Då vi testar roten genom att sätta in värdet i funktionen får vi att \( f(1)=2 \). Vi har fått en falsk rot.</p>
+        <p>Funktionen saknar nollställen.</p></div></div>
+     </li>
+
+     <li><i class="fas fa-jedi fa-2x level"></i>För vilka värden på \( a \) skär linjen \( y=ax+1 \) funktionen \( f(x)=\sqrt{x+3} \) i alla fall två gånger?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="11">
+       <div class="card card-body answer"> <p>Vi är intresserade av när \( \sqrt{x+3}=ax+1 \). Kvadratroten är definierad då \( x+3 > 0 \Leftrightarrow x > -3 \).</p>
+        <p>Då \( a=0 \) får vi att \( \sqrt{x+3} = 1 \Leftrightarrow x=-2 \) som inte har två lösningar, endast en.</p>
+        <p>Då \( ax+1 > 0 \) och \( x > -3 \). Vi kvadrerar ekvationen i början och får att \( x+3=a^2x^2+2ax+1 \) som vi skriver som \( a^2x^2+(2a-1)x-2=0 \).</p>
+        <p>\( b^2-4ac = (2a-1)^2-4\cdot a^2(-2)  > 0 \) eftersom vi vill ha två skärningspunkter. Denna olikhet uppfylls för alla värden på \( a \).</p>
+        <p>Däremot gäller att \( ax+1 > 0 \) och \( x > -3 \), alltså \( a(-3)+1 > 0 \) som har lösningen \( a < \dfrac{1}{3} \).</p>
+        <p>När vi kombinerar allt får vi att \( 0 < a < \dfrac{1}{3} \).</p></div></div>
+     </li>
+
+     <!--<li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5a">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5b">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5c">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+      </ol>
+     </li>-->
+
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaA8">
+   <a href="4_potensekvationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="6_deri_rotfunkt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

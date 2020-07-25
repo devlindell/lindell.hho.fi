@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>9. Arean mellan koordiataxlar och en funktion</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="8_bestamd_int.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="10_arean_fkter.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>9. Arean mellan koordiataxlar och en funktion</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Bestäm storleken av arean som bildas mellan \( f(x)=x^2+4x \) och \( x \)-axeln.</p>
+            <h4>Lösning</h4>
+            <p>Vi har följande situation</p>
+            <p> <img src="pics/axelfunkt_1.png" alt="" class="responsivepic400" /></p>
+            <p>Skärningspunkterna för funktionen och \( x \)-axeln är</p>
+            <p>\( \begin{array}{rcl} x^2+4x  & = &  0 \\ x(x+4)  & = &  0 \\ \end{array} \)</p>
+            <p>som har lösningarna \( x=0 \) och \( x+4=0 \Leftrightarrow x=-4 \).</p>
+            <p>Arean får vi genom att räkna</p>
+            <p>\( \begin{array}{rcl} \displaystyle\int_{-4}^0 x^2+4x \mathrm{ d}x  & = &  \bigg/_{-4}^0 \dfrac{1}{3}x^3+4\dfrac{1}{2}x^2 \\  & = &  \bigg/_{-4}^0 \dfrac{1}{3}x^3+2x^2 \\  & = &  (\dfrac{1}{3}\cdot 0^3+2\cdot 0^2)-(\dfrac{1}{3}(-4)^3+2(-4)^2) \\  & = &  0-(10\dfrac{2}{3}) \\  & = &  -10\dfrac{2}{3} \\ \end{array} \)</p>
+          </div>
+          <p>Areor som bildas mellan funktioner och koordinataxlar bestämmer vi så att vi får ett positivt värde för arean.</p>
+          <p>Då \( f(x)\geq 0 \) får vi arean som \( A= \displaystyle\int_a^b f(x) \mathrm{ d}x \).</p>
+          <p> <img src="pics/axelfunkt_2.png" alt="" class="responsivepic400" /></p>
+          <p>Då \( f(x)\leq 0 \) får vi arean som \( A= -\displaystyle\int_a^b f(x) \mathrm{ d}x \).</p>
+          <p> <img src="pics/axelfunkt_3.png" alt="" class="responsivepic400" /></p>
+          <p>Generellt gäller att \( A= \mid\displaystyle\int_a^b f(x) \mathrm{ d}x \mid \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm arean som bildas mellan funktionen \( f(x)=x^3-3x^2-x+3 \) och \( x \)-axeln i intervallet \( [0,3] \).</p>
+            <h4>Lösning</h4>
+            <p>Då vi ritar en skiss märker vi att arean är ovan och nedanför \( x \)-axeln. För att få ett korrekt värde på arean behandlar vi den som två intervall. För att göra det behöver vi nollställena för funktionen, alltså \( x^3-3x^2-x+3 =0 \) då \( x=\pm1 \) eller \( x=3 \).</p>
+            <p><img src="pics/axelfunkt_4.png" alt="" class="responsivepic400" /></p>
+            <p>Vi får \( \displaystyle\int_0^3 x^3-3x^2-x+3 \mathrm{ d} x= \displaystyle\int_0^1 x^3-3x^2-x+3 \mathrm{ d} x -\displaystyle\int_1^3 x^3-3x^2-x+3 \mathrm{ d} x \).</p>
+            <p>Arean är:</p>
+            <p>\( \begin{array}{l} \displaystyle\int_0^1 x^3-3x^2-x+3 \mathrm{ d} x -\displaystyle\int_1^3 x^3-3x^2-x+3 \mathrm{ d} x = \\ = \bigg /_0^1 \dfrac{1}{4}x^4-x^3-\dfrac{1}{2}x+3x - \bigg/_1^3 \dfrac{1}{4}x^4-x^3-\dfrac{1}{2}x+3x \\ = [(\dfrac{1}{4}\cdot 1^4-1^3-\dfrac{1}{2}\cdot 1+3\cdot 1)-(\dfrac{1}{4}\cdot 0^4-0^3-\dfrac{1}{2}\cdot 0+3\cdot 0)]\\ -[(\dfrac{1}{4}\cdot 3^4-3^3-\dfrac{1}{2}\cdot 3+3\cdot 3)-(\dfrac{1}{4}\cdot 1^4-1^3-\dfrac{1}{2}\cdot 1+3\cdot 1)] \\ = 2\dfrac{1}{4}-(-1\dfrac{1}{2})\\ = 2\dfrac{1}{4}+1\dfrac{1}{2} =3\dfrac{3}{4}\\ \end{array} \)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm arean som bildas i intervallet \( [0,2] \) för funktionerna \( f(x)=\dfrac{1}{x} \) och \( g(x)=x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har följande situation</p>
+            <p><img src="pics/axelfunkt_5.png" alt="" class="responsivepic400" /></p>
+            <p>Skärningspunkterna för linjerna är</p>
+            <p>\( \begin{array}{rcl} \dfrac{1}{x}  & = &  x \\ x^2  & = &  1 \\ x  & = &  \pm 1\\ \end{array} \) </p>
+            <p>Arean får vi som</p>
+            <p>\( \begin{array}{rcl} A  & = &  \displaystyle\int_0^1 x \mathrm{ d}x + \displaystyle\int_1^2 \dfrac{1}{x} \mathrm{ d }x \\  & = &  \bigg/_0^1 \dfrac{1}{2}x^2 +\bigg/_1^2 \ln x \\  & = &  \dfrac{1}{2}\cdot 1^2 -\dfrac{1}{2}\cdot 0^2 +\ln 2-\ln 1 \\  & = &  \dfrac{1}{2}-0+\ln 2 -0 \\  & = &  \ln 2 +\dfrac{1}{2}\\ \end{array} \)</p> </div>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Bestäm arean som bildas mellan \( y \)-axeln och \( x=y^2+2y-3 \).</p>
+              <h4>Lösning</h4>
+              <p>Situationen är följande:</p>
+              <p><img src="pics/axelfunkt_6.png" alt="" class="responsivepic400" /></p>
+              <p>Skärningspunkterna för \( y \)-axeln och funktionen är</p>
+              <p>\( \begin{array}{rcl} y^2+2y-3=0 \\ y  & = &  \dfrac{-2\pm \sqrt{2^2-4\cdot 1(-3)}}{2\cdot 1} \\ y  & = &  \dfrac{-2\pm 4}{2}\\ \end{array} \)</p>
+              <p>Skärningspunkterna är \( y=1 \) och \( y=-3 \).</p>
+              <p>Arean blir</p>
+              <p>\( \begin{array}{rcl} A  & = & \displaystyle\int_{-3}^1 y^2+2y-3 \mathrm{ d}y \\  & = &  \bigg/_{-3}^1 \dfrac{1}{3}y^3 +y^2-3y \\  & = &  [\dfrac{1}{3}\cdot 1^3 +1^2-3\cdot 1]-[\dfrac{1}{3}(-3)^3 +(-3)^2-3(-3)]\\\\  & = &  -1\dfrac{2}{3} -9 \\  & = &  -10\dfrac{2}{3}\\ \end{array} \)</p>
+              <p>Arean är \( 10\dfrac{2}{3} \) a.e.</p>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm storleken av arean som bildas mellan \( f(x) = x+2 \) och \( x \)-axeln i intervallet \( [-1, 5] \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>Vi får \( A = \displaystyle\int_{-1}^{5} x+2 \mathrm{ d}x = \bigg/_{-1}^5 \dfrac{1}{2}x^2+2x = 24 \) a.e.</p></div></div>
+          </li>
+
+          <li>Bestäm storleken av arean som bildas mellan \( f(x)= -x^2+2x+3 \) och \( x\)-axeln i intervallet \( [0,3] \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"> <p>Vi får \( A = \displaystyle\int_0^3 -x^2+2x+3 \mathrm{ d}x= = \bigg/_0^3 -\dfrac{1}{3}x^3+x^2+3x = 9 \) a.e.</p></div></div>
+          </li>
+
+          <li>Bestäm storleken av arean som bildas mellan \( f(x)=-4x+3 \) och x-axeln i intervallet [1,2].
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Eftersom arean är under x-axeln har vi \( A= -\displaystyle\int_1^2 -4x+3 \mathrm{ d}x = -\bigg/_1^2 -2x^2+3x = 3 \) a.e.</p></div></div>
+          </li>
+
+          <li>Bestäm arean för det område som bildas mellan funktionen \( f(x)=2x^3-x-1 \) och x-axeln i intervallet \( [-1,1] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Arean är under \( x \)-axeln. Arean blir \( A=-\displaystyle\int_{-1}^1 2x^3-x-1 \mathrm{ d}x =- \bigg/_{-1}^1 \dfrac{1}{2}x^4-\dfrac{1}{2}x^2-x = 2 \) a.e.</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm storleken av arean som bildas mellan \( f(x)=x^2-4x+3 \) och x-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Nollställena för funktionen är 1 och 3.</p>
+              <p>Eftersom arean är under \( x \)-axeln får vi arean som \( -\displaystyle\int_1^3 x^2-4x+3\textrm{ d}x = -\bigg/_1^3 \dfrac{1}{3}x^3-2x^2+3x = \dfrac{4}{3} \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm storleken av arean som bildas mellan \( f(x)=2\sin x \) och x-axeln i intervallet \( [-\pi,\pi] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Eftersom arean är både över och under \( x \)-axeln delar vi upp den i två delar.<p>\( A= -\displaystyle\int_{-\pi}^0 2\sin x \mathrm{ d}x + \displaystyle\int_0^{\pi} 2\sin x \mathrm{ d}x = -\bigg/_{-\pi}^0 -2\cos x +\bigg/_0^{\pi} -2\cos x = 8 \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm arean för det område som bildas mellan funktionen \( f(x)=\cos \dfrac{x}{2} \) och x-axeln i intervallet \( [0,2\pi] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Eftersom arean är både över och under \( x \)-axeln delar vi in den i två delar.<p>\( A= \displaystyle\int_0^{\pi} \cos\dfrac{x}{2} \mathrm{ d}x -\displaystyle\int_{\pi}^{2\pi} \cos\dfrac{x}{2} \mathrm{ d}x = \bigg/_0^{\pi} 2\sin\dfrac{x}{2} - \bigg/_{\pi}^{2\pi} 2\sin\dfrac{x}{2} = 4 \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm arean för det område som bildas mellan funktionen \( f(x)=\sin x \cos^2x \) och x-axeln i intervallet \( [-\dfrac{\pi}{2},\dfrac{\pi}{2}] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Funktionen har nollställen varje \( \dfrac{\pi}{2} \). Lös ekvationen \( f(x)=0 \) och kontrollera.</p>
+              <p>Primitiva funktionen blir \( F(x)=-\dfrac{1}{3}\cos^3 x \).</p>
+              <p>Eftersom arean alltid emellanåt är negativ och positiv (rita upp och verifiera) blir arean \( A=-\displaystyle\int_{-\dfrac{\pi}{2}}^0 \sin x \cos^2x \mathrm{ d}x + \displaystyle\int_0^{\frac{\pi}{2}} \sin x \cos^2x \mathrm{ d}x = \bigg/_{-\dfrac{\pi}{2}}^0 -\dfrac{1}{3}\cos^3 x +\bigg/_0^{\frac{\pi}{2}} -\dfrac{1}{3}\cos^3 x = \dfrac{2}{3} \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm arean som bildas mellan \( f(x)=2x \), \( g(x)=\dfrac{1}{x}+1 \) och \( x \)-axeln i intervallet \( [0,4] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Skärningspunkterna för funktionerna är \( x=-\dfrac{1}{2} \) och \( x=1 \).</p>
+              <p>Arean blir \( A=\displaystyle\int_0^1 2x\mathrm{ d}x + \displaystyle\int_1^4 \dfrac{1}{x}+1 \mathrm{ d}x = \bigg/_0^1 x^2 + \bigg/_1^4 \ln x + x = \ln 4 +4 \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm storleken av arean som bildas mellan \( f(x)=-x^2+4x \), \( g(x)=-x+4 \) och x-axeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>\( f(x)=0 \) då \( x=0 \) eller \( x=4 \), \( g(x)=0 \) då \( x=4 \) och \( f(x)=g(x) \) då \( x=1 \) eller \( x=4 \). </p>
+              <p>Arean blir \( A=\displaystyle\int_0^1 -x^2-4x \mathrm{ d}x +\displaystyle\int_1^4 -x+4 \mathrm{d x}= \bigg/_0^1 -\dfrac{1}{3}x^3+2x^2 +\bigg/_1^4 -\dfrac{1}{2}x^2+4x = 6\dfrac{1}{6} \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Sidan av en takränna har formeln av en parabel. Öppningen är 10,0 cm och djupet är 7,5 cm. Takrännan är 5,0 m lång. Hur många liter vatten rymmer den?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Parabeln som beskriver sidan har formen \( ax^2+c=0 \). Eftersom höjden är 7,5 cm så är \( c=7,5 \). Det ger oss att \( a\cdot 5^2 +7,5 = 0 \) som ger \( a=-\dfrac{3}{10} \).</p>
+              <p>Funktionen som beskriver sidan är \( f(x)=-\dfrac{3}{10}x^2+7,5 \).</p>
+              <p>Volymen för ett prisma är bottenarea gånger höjden. Bottenarean är arean av parabeln, \( \displaystyle\int_{-5}^5 f(x)=50  \) cm\( ^2 = 0,5  \) dm<sup>2</sup>.</p>
+              <p>Volymen för rännan blir \( 50 \text{dm} \cdot 0,5 \text{dm}^2 = 25 \text{dm}^3 = 25  \) liter.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm arean av det område som bildas mellan \( y \)-axeln och \( x=y^2-4y-5 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Skärningspunkterna är \( f(y)=0 \Leftrightarrow y=-1 \) och \( y=5 \).</p>
+              <p>Arean är \( A=-\displaystyle\int_{-1}^5 y^2-4y-5 \mathrm{ d}y = \bigg/_{-1}^5 \dfrac{1}{3}y^3-2y^2-5y = 36 \) a.e.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm arean för det område som begränsas av \( f(y)=y^3-2y^2-8y \) och \( y \)-axeln i intervallet \( [-2,4] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Funktionen har tre nollställen, \( -2 \), \( 0 \) och \( 4 \). Eftersom en del av arean är negativ får vi arean som \( A= \displaystyle\int_{-2}^0 y^3-2y^2-8y \mathrm{ d}y - \displaystyle\int_0^4 y^3-2y^2-8y \mathrm{ d}y = \bigg/_{-2}^0 \dfrac{1}{4}y^4-\dfrac{2}{3}y^3-4y^2 -\bigg/_0^4 \dfrac{1}{4}y^4-\dfrac{2}{3}y^3-4y^2 = 49\dfrac{1}{3} \) a.e.</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="8_bestamd_int.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="10_arean_fkter.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

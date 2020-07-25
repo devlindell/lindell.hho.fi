@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>12. Derivatan av e</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="11_talet_e.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="13_derivatan_exp.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>12. Derivatan av \( e^x \)</h1>
+      <section>
+        <div class="theory">
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm \( De^{2x} \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har en sammansatt funktion. \( e^x \) är yttre och \( 2x \) är intre.</p>
+            <p>Vi får \( D e^{2x} = e^{2x} \cdot 2 = 2e^{2x} \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm \( De^{3x^2-1} \) .</p>
+            <h4>Lösning</h4>
+            <p>Vår yttre funktion är \( e^x \) och vår inre funktion är \( 3x^2-1 \). Eftersom \( f(g)=f'(g)g' \) får vi att \( De^{3x^2-1} = e^{3x^2-1}(6x) = 6xe^{3x^2-1} \).</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/335356881" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>För exponentialfunktionen \( e^x \) kan vi härleda följande formel, \( De^{f(x)}=e^{f(x)}\cdot f'(x) \).</p>
+          <p>Vi har kedjeregeln \( f(g)=f'(g)g' \), där den yttre funktionen är \( e^x \). \( De^x=e^x \) så vi får att \( De^{f(x)} = e^{f(x)}f'(x) \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Derivera funktionen \( \dfrac{1}{e^{2x}} \).</p>
+            <h4>Lösning</h4>
+            <p>Vi skriver \( \dfrac{1}{e^{2x}} \) som \( e^{-2x} \). Derivatan är \( e^{-2x}(-2) = -2e^{-2x} =\dfrac{-2}{e^{2x}} \).</p>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Derivera följande uttryck
+            <ol>
+              <li>\( e^{5x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( De^{5x}=e^{5x} \cdot 5 = 5e^{5x} \)</p></div></div> </li>
+              <li>\( \dfrac{1}{2}e^{x^2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( D\dfrac{1}{2}e^{x^2}=\dfrac{1}{2}e^{x^2}\cdot 2x=xe^{x^2} \)</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Derivera följande uttyck
+            <ol>
+              <li>\( f(x)=\dfrac{e^x-2}{e^x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( D\dfrac{e^x-2}{e^x} = D(\dfrac{e^x}{e^x} -\dfrac{2}{e^x}) = D(1-2e^{-x}) =D1+D(-2e^{-x}) =0 -2e^{-x}\cdot (-1) = 2e^{-x} = \dfrac{2}{e^x} \)</p></div></div> </li>
+              <li>\( e^{x^3-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( De^{x^3-x} = e^{x^3-x}\cdot(3x^2-1)=(3x^2-1)e^{x^3-x} \)</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Derivera \( f(x)=(1-\dfrac{1}{e^x})^2 \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\( D(1-\dfrac{1}{e^x})^2)= D((1-e^{-x})^2) = 2(1-e^{-x})^1(-e^{-x}\cdot(-1)) = 2e^{-x}(1-e^{-x}) = \dfrac{2}{e^x}(1-\dfrac{1}{e^x}) = \dfrac{2}{e^x}-\dfrac{2}{e^{2x}} \)</p></div></div>
+          </li>
+
+          <li>Bestäm de punkter där \( f(x)=e^{4x^2-1} \) byter riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>\( f(x)=e^{4x^2-1} \), \(  f'(x)=e^{4x^2-1} \cdot (8x) \).</p> <p>\( f'(x)=0 \) då \( (8x)e^{4x^2-1}=0 \). En exponentialfunktion får aldrig värdet noll. Alltså \(  8x = 0 \Leftrightarrow x = 0 \).</p> <p>\( f \) byter riktning då \(  x = 0 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för \( f(x)= e^{x^3}-1 \) i punkten \( x = -1  \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Först behöver vi derivatafunktionen, \(  f'(x)=e^{x^3}\cdot 3x^2 \).</p> <p>Riktningskoefficienten för tangenten är derivatans värde, \(  f'(-1)=e^{-1^3} \cdot 3(-1)^2 = e^{-1} \cdot 3 = \dfrac{3}{e}  \).</p> <p>Vi behöver en punkt för tangenten, \(  f(-1)=e^{(-1)^3}-1 = \dfrac{1}{e} - 1 \).</p>
+              <p>Tangentens ekvation är \(  y-y_0 = k(x-x_0) \Leftrightarrow y - (\dfrac{1}{e}-1) = \dfrac{3}{e}(x-(-1)) \Leftrightarrow y = \dfrac{3}{e}x +\dfrac{4}{e}-1  \) eller som \(  y = \dfrac{3x+4-e}{e}  \).</p></p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( De^{\frac{1}{2}(3x-1)^4} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( De^{\frac{1}{2}(3x-1)^4} = e^{\frac{1}{2}(3x-1)^4} (4\dfrac{1}{2}(3x-1)^3\cdot3) = 6(3x-1)^3e^{\frac{1}{2}(3x-1)^4} \)</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter där \( f(x)=e^{\sin(x)} \) byter riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( f(x)=e^{\sin (x)} \), \(  f'(x)=e^{\sin (x)} \cdot (\cos (x)) \).</p> <p>\( f'(x)=0 \) då \( \cos x \cdot e^{\sin x}=0 \). En exponentialfunktion får aldrig värdet noll. Alltså \(  \cos x = 0 \Leftrightarrow x = \dfrac{\pi}{2} + n\pi \).</p><p>I dessa punkter byter \( f \) riktning.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Bestäm ekvationen för tangenten vars riktningskoefficent är XX för funktionen \( f(x)= e^{} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att \( f(x)= e^{\frac{1}{x}} \) är strängt avtagande.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Börja med att rita upp den och märk att den är disskontinuerlig i \( x=0 \).</p>
+              <p>\( f'(x)=e^{\frac{1}{x}} \cdot D(x^{-1}) = e^{\frac{1}{x}} \cdot \dfrac{1}{x^2} \).</p> <p>Derivatans nollställen \(  f'(x)=0  \), \( e^{\frac{1}{x}} \cdot \dfrac{1}{x^2} = 0  \), alltså \(  \dfrac{e^{\frac{1}{x}}}{x^2} = 0  \). Uttrycket får värdet noll då täljaren får värdet noll, alltså \( e^{\frac{1}{x}} = 0 \). Exponentialfunktioner får inte värdet noll. Alltså saknar derivatan nollställen.</p> <p>För att visa att funktionen är avtagande så undersöker vi derivatans tecken, \( f'(1) = e^{\frac{1}{1}} \cdot \dfrac{1}{1^2} = e^1 = e  \).</p> <p>Eftersom derivatan alltid är positiv och derivatafunktionen saknar nollställen så är funktionen \( f \) strängt växande.</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="11_talet_e.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="13_derivatan_exp.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

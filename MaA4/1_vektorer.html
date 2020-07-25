@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Vektorer</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="6_geometri.html">6. Geometri med vektorer</a>
+            <a class="dropdown-item" href="7_xy-planet.html">7. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">8. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">9. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">10. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">11. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">12. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">13. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">14. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="2_summa.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Vektorer</h1>
+      <section>
+        <div class="theory">
+          <p>En vektor är en matematisk storhet som har både storlek och riktning. Vektorer utnyttjas främst inom fysiken för att beskriva tex kraft, hastighet, acceleration och elektriska- och magnetfält.</p>
+          <p>Vektorer introduceras för att det gör den matematiska behandlingen lättare av händelser inom fysiken.</p>
+          <p>Vektorer kan betecknas på flera olika sätt. Vi har</p>
+          <table>
+            <tbody>
+              <tr><td>fet stil</td><td><strong>a</strong></td></tr>
+              <tr><td>pilnotation</td><td>\( \overrightarrow{AB} \) </td></tr>
+              <tr><td>linjenotation</td><td>\( \overline{a} \).</td></tr>
+            </tbody>
+          </table>
+          <p>Det är en liten skillnad på dessa tre och för att inte ha problem i fortsättningen är det bra att genast lära sig skillnaden mellan dessa.</p>
+          <p>Fet stil används främst inom fysiken och i den angloamerikanska värden.</p>
+          <p>Pilnotation används för att berätta om en vektor som är mellan två punkter. Vektorn mellan A och B betecknas \( \overrightarrow{AB} \).</p>
+          <p><img   src="pics/1-1.png" class="responsivepic400"/></p>
+          <div class="exercise box">
+            <p>Representerar \( \overrightarrow{BA} \)  samma som \( \overrightarrow{AB} \)?</p>
+            <h4>Lösning</h4>
+            <p>Nej, eftersom en vektor har storlek och riktning. \( \overrightarrow{AB} \)  och \( \overrightarrow{BA} \)  har samma storlek, längd, men inte samma riktning. Vi talar om att \( \overrightarrow{AB} \)  och \( \overrightarrow{BA} \)  är varandras motsatta vektorer. Tänk dessa som motsatta tal. Om vektorn \( \overrightarrow{AB} \)  representeras av vektorn \( \overline{a} \), representeras \( \overrightarrow{BA} \)  av \( -\overline{a} \).</p>
+            <p>Mera om dessa kommer i <a href="3_reelttal.html" target="_blank">Ett reellt tal gånger en vektor</a>.</p>
+          </div>
+          <p><img   src="pics/1-2.png" class="responsivepic400" /></p>
+          <p>Dessa vektorer är olika riktade och det betecknas \( \overrightarrow{AB} \uparrow \downarrow \overrightarrow{CD} \). Du märker att de har samma "lutning".</p>    <p>Vektorerna \( \overrightarrow{AB} \)  och \( \overrightarrow{EF} \)  är olika långa men de har samma riktning. Vi talar om att de är lika riktade och vi betecknar det som \( \overrightarrow{AB} \uparrow \uparrow \overrightarrow{EF} \).</p>
+          <p><img   src="pics/1-3.png" class="responsivepic400" /></p>
+          <p>För att två vektorer skall vara identiska skall de ha samma längd och riktning. Vektorerna \( \overrightarrow{EF} \)  och \( \overrightarrow{GH} \)  har samma längd och riktning.</p>
+          <p><img   src="pics/1-4.png" class="responsivepic400"  /></p>
+          <p>När två vektorer kan representeras av en vektor brukar vi beteckna det med en linjenotation. Vi kan alltså skriva \( \overrightarrow{EF}=\overrightarrow{DH}=\overline{a} \)  (eller någon annan lämplig bokstav).</p>
+          <p>En vektor som saknar längd kallar vi för en nollvektor. En nollvektor betecknas \( \overline{0} \). En nollvektor kan vi även skriva som \( \overrightarrow{AA} \), som betyder att den representerar en punkt.</p>
+          <p>Längden av en vektor betecknas \( \mid \overline{a} \mid \). För nollvektorn betyder det att \( \mid \overline{0} \mid =0 \).</p>
+
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Kombinera rätt sätt att skriva vektorn med rätt bild.</p>
+            <p>Välj bland följande beteckningar: \( \overline{b} \), \( \overrightarrow{AA} \), \( \overrightarrow{DB} \), \( \overline{a} \), \( \overrightarrow{BC} \), \( \overrightarrow{BA} \), \( \overrightarrow{CD} \) och \( \overrightarrow{AB} \).</p>
+
+            <table>
+              <tr><td>    </td><td><img src="pics/1-5a.png" class="responsivepic250" /> </td></tr>
+              <tr><td>   </td><td><img src="pics/1-5b.png" class="responsivepic250" />   </td></tr>
+              <tr><td>    </td><td><img src="pics/1-5c.png" class="responsivepic250" />  </td></tr>
+              <tr><td>    </td><td><img src="pics/1-5d.png" class="responsivepic250" /></p>  </td></tr>
+              <tr><td>    </td><td><img src="pics/1-5e.png" class="responsivepic250" /></p>  </td></tr>
+              <tr><td>    </td><td><img src="pics/1-5f.png" class="responsivepic250" /></p>  </td></tr>
+              <tr><td>   </td><td><img src="pics/1-5g.png" class="responsivepic250" /></p>  </td></tr>
+              <tr><td>    </td><td><img src="pics/1-5h.png" class="responsivepic250" />  </td></tr>
+            </table>
+
+
+
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+                <table>
+                  <tr><td>  \( \overrightarrow{AB} \)  </td><td><img src="pics/1-5a.png" class="responsivepic250" /> </td></tr>
+                  <tr><td>  \( \overrightarrow{BA} \) </td><td><img src="pics/1-5b.png" class="responsivepic250" />   </td></tr>
+                  <tr><td>  \( \overline{a} \)  </td><td><img src="pics/1-5c.png" class="responsivepic250"  />  </td></tr>
+                  <tr><td>  \( \overrightarrow{CD} \)  </td><td><img src="pics/1-5d.png" class="responsivepic250"  /></p>  </td></tr>
+                  <tr><td>  \( \overrightarrow{DB} \)  </td><td><img src="pics/1-5e.png" class="responsivepic250"  /></p>  </td></tr>
+                  <tr><td>  \( \overline{b} \)  </td><td><img src="pics/1-5f.png" class="responsivepic250"  /></p>  </td></tr>
+                  <tr><td>  \( \overrightarrow{AA} \) </td><td><img src="pics/1-5g.png" class="responsivepic250"  /></p>  </td></tr>
+                  <tr><td>  \( \overrightarrow{BC} \)  </td><td><img src="pics/1-5h.png" sclass="responsivepic250" />  </td></tr>
+                </table>
+               </div></div> </li>
+
+          <li>Fyll i de ord som saknas.
+            <p>En vektor har både längd och [första ordet].</p>
+            <p>En vektor som saknar längd kallas för [andra ordet].</p>
+            <p>[Tredje ordet] av vektorn   \( \overline{a} \)  beteckans   \( \mid \overline{a} \mid \)  .</p>
+            <p>Två vektorer som är lika [fjärde ordet] och samma riktade är identiska.</p>
+
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+              <p>En vektor har både längd och [riktning].</p>
+              <p>En vektor som saknar längd kallas för [nollvektor eller punkt].</p>
+              <p>[Längden] av vektorn   \( \overline{a} \)  betecknas   \( \mid \overline{a} \mid \)  .</p>
+              <p>Två vektorer som är lika [långa] och samma riktade är identiska.</p>
+            </div></div> </li>
+
+          <li><p>Rita av vektorn   \( \overline{a} \)  på rutpapper.</p>
+            <p><img src="pics/1-5c.png" class="responsivepic250"  /></p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>Rita vektorn   \( \overline{b} \)  så att   \( \overline{a}=\overline{b} \)  .</li>
+              <li>Rita vektorn   \( -\overline{a} \)  .</li>
+              <li>Rita vektorn   \( \overline{c} \)  så att   \( \mid \overline{c} \mid = 2\mid \overline{a} \mid \)  .</li>
+              <li>Rita vektorn   \( \overline{d} \)  så att   \( \overline{a} \uparrow \downarrow \overline{d} \)  och   \( \mid \overline{a} \mid = 3\mid \overline{d} \mid \)  .</li>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Något i stil med </p><p><img src="pics/1-9.png" class="responsivepic400" /> </p> </div></div>
+            </ol>
+
+          <li>Låt   \( A =(-2,1) \)  ,   \( B=(1,3) \)  och   \( C=(2,-2) \) . Bestäm   \( D \) :s koordinater
+            <ol>
+              <li>\( \overrightarrow{AB}=\overrightarrow{CD} \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"> \( D = (5,0) \) </div></div> </li>
+              <li>\( \overrightarrow{DC}=\overrightarrow{AB} \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"> \( D = (-1,-4) \) </div></div> </li>
+              <li>\( \overrightarrow{BD}=-\overrightarrow{AC} \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"> \( D = (-3,6) \) </div></div> </li>
+              <li>\( \overrightarrow{DB} = -\overrightarrow{AC} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer"> \( D = (5,0) \) </div></div> </li>
+            </ol>
+        </li>
+
+          <li><p>Längden för vektorn   \( \overline{a} \)  är 6 l.e. Rita</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>vektorn   \( \overline{b} \)  som är olika riktad   \( \overline{a} \)  och   \( \mid\overline{b}\mid=4 \)  .</li>
+              <li>alla lika riktade vektorer till   \( \overline{a} \)  vars längd är 1.</li>
+              <li>alla vekorer som är vinkelräta mot   \( \overline{a} \)  och vars längd är 3.</li>  </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Om vi låter \( \overline{a} \) vara vinkelrät så får vi något i stil med </p><p><img src="pics/1-10.png" style="height:300px; width:400px" /> </p> </div></div>
+          </li>
+
+          <li><p>Om vektorerna   \( \overline{a} \) ,   \( \overline{b} \)  och   \( \overline{c} \)  vet vi att   \( \overline{a}=-\overline{b} \)  och att   \( \mid\overline{a}\mid=2\mid \overline{c} \mid \) . På bilden finns vektorn   \( \overline{a} \) . Rita vektorerna   \( \overline{b} \)  och   \( \overline{c} \) .</p>
+            <p><img src="pics/1-7.png" style="height:122px; width:200px" /></p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"> <p>Något i stil med </p><p><img src="pics/1-11.png" class="responsivepic400" /> </p> </div></div>
+          </li>
+
+          <li><p>Betsäm slutkoordinaten då vi startar från punkten   \( (2,3) \)  och förflyttar oss</p>
+            <p><img src="pics/1-8.png" style="height:289px; width:300px" /></p>
+            <ol>
+              <li>längs med   \( \overline{a} \)  . Slutpunkten är... <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer">Slutpunkten är \( (4,2) \) </div></div> </li>
+              <li>först längs med   \( \overline{a} \)  och sedan längs med   \( \overline{b} \)  .<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer">Vi kommer till \( (7,3) \). </div></div> </li>
+              <li>först längs med   \( \overline{b} \)  och sedan längs med   \( \overline{a} \)  .<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7c">
+              <div class="card card-body answer">Slutpunkten är \( (7,3) \). </div></div> </li>
+              <li>längs vektorn -  \( \overline{b} \)  . <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7d">
+              <div class="card card-body answer">Slutpunkten är \( (-1,2) \). </div></div> </li>
+              <li>först längs med   \( -\overline{a} \)  och sedan längs med   \( -\overline{b} \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7e">
+              <div class="card card-body answer">Slutpunkten är\( (-3,3) \). </div></div> </li>
+            </ol></li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_summa.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

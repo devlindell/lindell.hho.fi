@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>9. Sammansatt funktion</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="8_trig_funktioner.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="10_derivatan_sammansatt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>9. Sammansatt funktion</h1>
+      <section>
+        <div class="theory">
+          <p>Då vi arbetar med trigonometriska funktioner får vi lätt funktioner som \( f(x)=\sin (2x) \), eller \( g(x)=\cos ^2 x \). Bägge funktionerna består av två funktioner: f av \( \sin x \) och \( 2x \). Då vi skriver \( g \) som \( (\cos x)^2 \) ser vi bättre att \( g \) består av \( x^2 \) och \( \cos x \).</p>
+          <p>För att kunna undersöka denna typ av funktioner måste vi behandla och lära oss om sammansatta funktioner.</p>
+          <p>Vi arbetar med funktionerna \( f(x)=x^2 \) och med \( g(x)=2x-1 \). Vi kan kombinera dessa funktioner på två olika sätt, som \( f(g(x)) \) och som \( g(f(x)) \). I \( f(g(x)) \) sätter vi först in värdet i funktionen \( g \) och sedan in resultatet i \( f \).</p>
+          <p>För \( g(f(x)) \) så börjar vi med att först sätta värdet i \( f \) och sedan sätter vi resultatet i \( g \).</p>
+          <p><img class="responsivepic400" src="pics/sammansatt_1.png" alt="" />
+          <p>Vi betecknar det som \( f(g(x))= (2x-1)^2 \) och \( g(f(x))=2x^2-1 \). Då vi bildar \( f(g(1)) = (2\cdot1-1)^2 = 1 \) och \( g(f(x))=2\cdot 1^2-1 = 3 \) så märker vi att det spelar en roll hur vi bildar våra sammansatta funktioner.</p>
+          <p>För beteckningen \( f(g(x)) \) eller \( f(g) \) är \( f \) yttre funktion och \( g \) är inre funktion. Vi sätter först värdet in i den inre funktionen och sedan in i den yttre funktionen.</p>
+          <p>För beteckningen \( f(g(x)) = f(g) \) brukar man skriva \( f \circ g \), som utläses "f boll g".</p>
+          <div class="exercise box">
+          <strong>Exempel 1</strong> Låt \( f(x)=\sqrt{x-1} \), \( x > 1 \) och \( g(x)=x^2+1 \), \( x > 0 \). Bilda \( f \circ g \) och \( g \circ f \).
+          <div class="video">
+            <iframe width="640" height="564" src="https://player.vimeo.com/video/319971061" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+          </div>
+        </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Uppgift för Quizlet</li>
+
+          <li>Identifiera funktionerna. Vilken funktion är den inre- och vilken är den yttre funktionen?
+            <ol>
+              <li>\( (3x-1)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( x^3 \) är yttre, \( 3x-1 \) är inre funktion.</p> </div></div> </li>
+              <li>\( \sqrt{4x-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( \sqrt{} \) är yttre, \( 4x-1 \) är inre funktion.</p> </div></div> </li>
+              <li>\( \lg 2x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( \lg \) är yttre, \( 2x \) är inre funktion.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Identifiera funktionerna. Vilken funktion är den inre- och vilken är den yttre funktionen?
+            <ol>
+              <li>\( \cos 4x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( \cos x \) är yttre, \( 4x \) är inre funktion.</p> </div></div> </li>
+              <li>\( \tan^2 2x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( x^2 \) är yttre, \( \tan 2x \) är inre funktion.</p> </div></div> </li>
+              <li>\( \sin (\cos x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( \sin x \) är yttre, \( \cos x \) är inre funktion.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Låt \( f(x)=\sqrt{x} \) och \( g(x)=x-1 \). Välj de rätta alternativen.
+            <table>
+              <tr><th>Påstående</th><th>\( f(g) \)</th><th>\( g(f) \)</th><th>\( f \circ g \)</th><th>\( g \circ f \)</th></tr>
+              <tr><td>\( \sqrt{x-1} \)</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x}-1 \)</td><td></td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>
+                <table>
+                  <tr><th>Påstående</th><th>\( f(g) \)</th><th>\( g(f) \)</th><th>\( f \circ g \)</th><th>\( g \circ f \)</th></tr>
+                  <tr><td>\( \sqrt{x-1} \)</td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \sqrt{x}-1 \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                </table>
+              </p> </div></div>
+          </li>
+
+          <li> Låt \( f(x)=3x^2 \) och \( g(x)=\sin x \). Bilda
+            <ol>
+              <li>\( f \circ g \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>\( f \circ g = f(g)=3(\sin x)^2 = 3\sin^2x \)</p> </div></div> </li>
+              <li>\( g \circ f \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( g \circ f = g(f)=\sin 3x^2 \)</p> </div></div> </li>
+              <li>\( g \circ g \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>\( g \circ g = g(g)=\sin (\sin x) \)</p><p>Obs! Detta är inte samma som \( \sin^2 x \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Låt \( f(x)=\sqrt{x} \) och \( g(x)=(x+1)^2 \). Bilda
+            <ol>
+              <li>\( f \circ g \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\( f \circ g = f(g)=\sqrt{(x+1)^2} = x+1 \)</p> </div></div> </li>
+              <li>\( g \circ f \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\( g \circ f = g(f)=(\sqrt{x}+1)^2 \)</p> </div></div> </li>
+              <li>\( f \circ f \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\( f \circ f = f(f)=\sqrt{\sqrt{x}} = \sqrt[4]{x} \)</p></p> </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x)=x^2 \). Bestäm \( g(x) \) så att
+            <ol>
+              <li>\( f \circ g = (2x-1)^2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"><p>\( g(x)=2x-1 \)</p> </div></div> </li>
+              <li>\( g \circ f = x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"><p>\( g(x)=\sqrt{x} \)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="8_trig_funktioner.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="10_derivatan_sammansatt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Derivatan av trigonometriska funktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_derivatan_sammansatt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="12_harledning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Derivatan av trigonometriska funktioner</h1>
+      <section>
+        <div class="theory">
+          <p>I det föregående kapitlet märkte vi att det finns ett samband mellan sinus och cosiuns, det finns en symmetri mellan hur de ser ut och beter sig. Dessutom vet vi hur vi deriverar sammansatta funktioner. Nu är det bara att tillämpa den kunskapen.</p>
+          <p>På grund av symmetrin mellan sinus och cosinus är deras derivator följande</p>
+          <table>
+            <tr><td>\( D\sin x = \cos x \)</td> </tr>
+            <tr><td>\( D\cos x = -\sin x \)</td></tr>
+          </table>
+          <p>Exakta härledningar för sinus och cosinus hittar du i "Härledningen för derivatan av sinus och cosinus".</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm derivatan av \( 2\sin x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har \( D2\sin x = 2D\sin x = 2\cos x \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Derivera \( \cos^2x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har en sammansatt funktion. Yttre funktionen är \( x^2 \) och den inre är \( \cos x \). Sammansatta funktioner deriverar vi som \( Df(g)=f'(g)g' \).</p>
+            <p>Vi får \( 2\cos x \cdot (-\sin x)=-2\cos x \sin x = -\sin 2x \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Bestäm derivatan av \( 2\sin x \cos x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har en produkt av två funktioner, dessa deriverar vi som \( Dfg = f'g + g'f \).</p>
+            <p>\( D2\sin x \cos x = 2(\cos x (-\sin x) -\sin x \cdot \cos x = -2\sin x \cos x -\sin x \cos x = -3 \sin x \cos x \).</p>
+            <p>Alternativ märker vi att \( 2\sin x \cos x = \sin 2x \). Då har vi en sammansatt funktion och derivatan blir \( D\sin 2x = \cos 2x \cdot 2 = 2\cos 2x \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Bestäm \( D\tan x \).</p>
+            <h4>Lösning</h4><p>\( D\tan x = D\dfrac{\sin x}{\cos x} = \dfrac{\cos x D\sin x - \sin x D\cos x}{\cos^2 x} =\dfrac{\cos x \cdot \cos x -\sin x (-\sin x )}{\cos^x} = \dfrac{\cos^2x +\sin^2 x}{\cos^2x} \).</p>
+            <p>Härifrån kan vi fortsätta på två sätt.</p>
+            <p>\( \dfrac{\cos^2x +\sin^2 x}{\cos^2x} = \dfrac{\cos^2 x}{\cos^2x} + \dfrac{\sin^2 x}{\cos^2x} = 1+\tan^2 x \).</p>
+            <p>Eller som</p>
+            <p>\( \dfrac{\cos^2x +\sin^2 x}{\cos^2x} = \dfrac{1}{\cos^2x} \).</p>
+          </div>
+          <p>Derivatan för tangens kan vi skriva på två olika sätt</p>
+          <p>\( D\tan x = \dfrac{1}{\cos^2 x} = 1+\tan^2 x \)</p>
+          <div class="exercise box">
+            <p><strong>Exempel 5</strong> Bestäm derivatan av \( \tan 4x+\pi \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har en sammansatt funktion, \( \tan 4x \) och konstanten \( \pi \).</p>
+            <p>\( D(\tan 4x+\pi) = 4(1+\tan^2 (4x)) = 4 +4\tan^2 4x \).</p>
+            <p>Eller som \( D(\tan 4x +\pi)= 4\cdot \dfrac{1}{\cos^2 4x} = \dfrac{4}{\cos^2 4x} \).
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm
+            <ol>
+              <li>\( D4\sin x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( D4\sin x = 4\cos x \)</p> </div></div> </li>
+              <li>\( D\sin 4x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( D\sin 4x = 4\cos 4x \)</p> </div></div> </li>
+              <li>\( D4\sin (4x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( D4\sin (4x^2) = 4 \cdot \cos(4x^2) \cdot 8x = 32x\cos (4x^2) \)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\( D(\cos 3x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( D(\cos 3x) = 3(-\sin 3x)=-3\sin 3x \)</p> </div></div> </li>
+              <li>\( D(\cos 3x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( D(\cos 3x^2) = -\sin 3x^2) \cdot 6x=-6x\sin 3x^2 \)</p> </div></div> </li>
+              <li>\( D(\cos (4x-\pi)) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( D(\cos (4x-\pi)) = -\sin (4x-\pi) \cdot 4=-4\sin (4x-\pi) \)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\( D\tan (3x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\( D\tan (3x^2) = \dfrac{1}{\cos^2 3x^2} \cdot 6x = \dfrac{6x}{\cos^2 3x^2} \) eller som \( D\tan (3x^2) = (1 + \tan^2 3x^2)\cdot 6x = 6x + 6x\tan^2 3x^2 \).</p> </div></div> </li>
+              <li>\( D2\tan 3x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( D2\tan 3x = \dfrac{2}{\cos^2 3x} \cdot 6 = \dfrac{12}{\cos^2 3x} \) eller som \( D2\tan (3x) = (1 + 2\tan^2 3x)\cdot 3 = 3 + 6\tan^2 3x \).</p> </div></div> </li>
+              <li>\( D\tan (x^2-x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\( D\tan (x^2-x) = \dfrac{1}{\cos^2 (x^2-x)} \cdot (2x-1) = \dfrac{2x-1}{\cos^2 (x^2-x)} \) eller som \( D\tan (x^2-x) = (1 + \tan^2 (x^2-x))\cdot (2x-1) \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Derivera \( \dfrac{1}{\sin x} \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\( D\dfrac{1}{\sin x}=D(\sin x)^{-1} = -(\sin x)^{-2}\cdot \cos x = -\dfrac{\cos x}{\sin^2 x} \).</p> </div></div>
+          </li>
+
+          <li>Derivera \( \dfrac{1}{\cos^2 x} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>\( D\dfrac{1}{\cos^2 x} = D(\cos^2 x)^{-1}=-1(\cos^2 x)^{-2}\cdot D(\cos^2 x) = -\dfrac{1}{\cos^4 x} \cdot 2\cos x \cdot (-\sin x) = \dfrac{2\cos x \cdot \sin x}{\cos^4 x} = \dfrac{2\sin x}{\cos^3 x} \) eller som \( D\dfrac{1}{\cos^2 x} = D(\cos x)^{-2}=-2(\cos x)^{-3}\cdot D(-\sin x ) = \dfrac{2\sin x}{\cos^3 x} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm riktningskoefficeinten för tangenten för funktionen \( f(x)=\sqrt{2}\sin x + 5\sqrt{2}\cos x \) i punkten \( \dfrac{\pi}{4} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( f'(x)=\sqrt{2}\cos x + 5 \sqrt{2}(-\sin x)=\sqrt{2}\cos x -5\sqrt{2}\sin x \).</p><p>\( f'(\dfrac{\pi}{4}) = \sqrt{2}\cos \dfrac{\pi}{4} -5\sqrt{2}\sin \dfrac{\pi}{4} = \sqrt{2}\cdot \dfrac{1}{\sqrt{2}}-5\sqrt{2}\cdot \dfrac{1}{\sqrt{2}}= 1-5=-4 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för funktionen \( \sin (2x) \) i origo.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( f(x)=\sin (2x) \) och \( f'(x)= 2\cos(2x) \).</p>
+                <p>\( f'(0)=2\cos (2\cdot 0) = 2 \cdot 1 = 2 \).</p>
+                <p>Tangenten går genom punkten (0,0) och har riktningskoefficienten 2. Linjens ekvation ser ut som \( y-y_0=k(x-x_0) \). Tangentens ekvation blir \( y-0=2(x-0) \Leftrightarrow y=2x \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de punkter där funktionen \(  f(x)= 2\cos (\dfrac{x}{\pi}) \) byter riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\( f(x)=2\cos (\dfrac{x}{\pi}) \) och \( f'(x)= -\dfrac{2}{\pi}\sin(\dfrac{x}{\pi}) \).</p>
+                <p>\( f'(x) = 0  \) då \(  -\dfrac{2}{\pi}\sin(\dfrac{x}{\pi}) = 0  \). Alltså då \(  \sin \dfrac{\pi}{2} = 0 \), då \(  \dfrac{x}{\pi} = n \cdot \pi  \), då \(  x = n \pi^2 \).</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Rita upp funktionen, på GeoGebra eller motsvarande, och visa att funktionen \(  f(x)= \tan x^2  \) endast byter riktning i \(  x = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi deriverar, \( f'(x)= \dfrac{2x}{\cos^2 2x} \) eller \( 2x(1+\tan^2 x^2) \).</p>
+                <p>Vi söker \( f'(x)=0, \dfrac{2x}{\cos^2 2x}=0 \) då täljaren får värdet noll. \( 2x =0 \Leftrightarrow x =0  \).</p>
+                <p>Alltså byter funktionen \(  f  \) endast riktning i \( x=0 \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="10_derivatan_sammansatt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_harledning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Hastighet</title>
+
+  </head>
+  <body>
+    <header class="Fysik">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_hastighet.html">1. Hastighet</a>
+            <a class="dropdown-item" href="2_acceleration.html">2. Acceleration</a>
+            <a class="dropdown-item" href="3_kraft.html">3. Kraft</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3>Fy 1</h3>
+      <a href="2_acceleration.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Hastighet</h1>
+      <p>Hastighet delar vi in i medelhastighet och momentan hastighet. Medelhastighet är hastigheten under en längre tid. Momentan hastigheten är hastigheten vid en bestämd tipunkt.</p>
+      <p>Vi börjar med <a href="#medel">medelhastighet</a>, <a href="#momentan">momentan hastighet</a> hittar du längre ner.</p>
+      <section>
+        <div class="theory">
+          <h2 id="medel">Medelhastighet</h2>
+          <p>Hastighet är ett mått på hur snabbt ett föremål (i fysiken talar vi om kropp) rör på sig. Hastigheten bestämmer vi som sträcka delat med tid, \( \dfrac{\text{sträcka}}{\text{tid}} \). I fysiken betecknar vi sträckan med \( s \) och tiden med \( t \). <p>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> En bil rör sig 50 km under 45 minuter. Bestäm medelhastigheten för bilen.</p>
+              <h4>Lösning</h4>
+              <p>För att bestämma medelhastigheten så dividerar vi sträckan med tiden. Vill vi ha medelhastigheten i km/h så måste vi ändra 45 min till timmar, 0,75 timmar.</p>
+              <p>Vi får medelhastigheten till \( \dfrac{50 \text{ km}}{0.75 \text{ h}} = 66,66\ldots  \approx 67 \frac{\text{km}}{\text{h}} \).</p>
+              <p>45 minuter har 2 gällande siffror, 50 km har 1 eller 2 gällande siffor. Det betyder att vi svarar 67 km/h eller 70 km/h.</p>
+            </div>
+            <p>När vi utför uträkningar i fysiken så använder vi oss av grundstorheterna. De är enheter som är förutbestämda. Från dessa härleder (utarbetar) vi vidare enheter som vi använder vidare, tex enheten kraft med storheten Newton.</p>
+            <p>Hastighet förkortar vi med \( v \). Det betyder att den matematiska formeln för hastighet är \( v = \dfrac{s}{t} \). Detta är ett matematiskt uttryck som vi kan forma om efter behov.</p>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Anna cyklar med medelhastigheten 20 km/h. Hur lång sträcka rör hon sig under 25 minuter?</p>
+              <h4>Lösning</h4>
+              <p>Nu har vi \( v = 20 \text{km}/\text{h} \) och \( t=\dfrac{25}{60} \text{ h} \). Vi skall ha reda på \( s \).</p>
+              <p>Vi gör följande</p>
+              <p>\( \begin{array}{rcll}
+                v & = & \dfrac{s}{t} & \mid \cdot t \\
+                v \cdot t & = & \dfrac{s}{t} \cdot t \\
+                vt & = & s \\
+                \end{array} \)
+              </p>
+              <p>Alltså \( s = 20 \text{ km/h} \cdot \dfrac{25}{60} \text{ h} = 8,33\ldots \approx 8,3 \text{ km}\).</p>
+            </div>
+            <p></p>
+            <p>Grundstorheten för sträcka är meter, \( m \) och grundstorheten för tid är sekund, \( s \). Det betyder att enheten för hastighet är m/s. Det är blir viktigt att komma ihåg detta då du börjar räkna med hastighetsförändring, accleration.</p>
+
+          <div class="intro box">
+            <p>Hur många m/s motsvaras 1 km/h av?</p>
+            <h4>Lösning</h4>
+            <p>1 m är \( \dfrac{1}{1000} \text{ km} \) och på 1 h är det \( 60 \cdot 60 = 3600 \text{ s} \).</p>
+            <p>Vi får alltså</p>
+            <p>att 1 m/s är \( \dfrac{\frac{1}{1000} \text { km}}{\frac{1}{3600} \text{ h}} = \dfrac{1}{1000} \cdot \dfrac{3600}{1} = \dfrac{3600}{1000} = 3,6 \text{ km/h} \).</p>
+            <p>Och då vi går från km/h till m/s får vi</p>
+            <p>1 km/h är \( \dfrac{1000 \text{ m}}{60 \cdot 60 \text{ s}} = \dfrac{1000 \text{ m}}{3600 \text{ s}} = \dfrac{1}{3,6} \text{ m/s}\).</p>
+            <p>Den viktiga siffran som du skall komma ihåg är 3,6!</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Förvandla 80 km/h till m/s.</p>
+            <h4>Lösning</h4>
+            <p>Vi får \( 80 \cdot \dfrac{1}{3,6} = 22,22 \text{ m/s} \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Hur många km/h motsvas av 2 m/s?</p>
+            <h4>Lösning</h4>
+            <p>Vi får \( 2 \cdot 3,6 = 7,2 \approx 7 \text{ km/h} \).</p>
+          </div>
+          <h2 id="momentan">Momentan hastighet</h2>
+          <p>Momentan hastighet är den hastighet som ett föremål har vid en bestämd tidpunkt. Den momentana hastigheten är den hastighet som en bil har vid ett bestämt ögonblick, den hastighet som du har vi ett bestämt ögonblick då du cyklar, springer eller går. </p>
+          <p>Eftersom hastighet är förhållandet mellan sträcka och tid, kan vi bestämma den momentana hastigheten genom att anpassa en linje i en graf som anger sträckan som funktion av tiden.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 5</strong>Bestäm hastigheten vid tidpunkterna XX, XX och XX</p>
+            <h4>Lösning</h4>
+
+          </div>
+
+            <div class="video">
+
+            </div>
+
+          <div class="summary box">
+
+          </div>
+
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bertil är ute och går. Han går en sträcka om 7,5 km och det tar 1,5 h. Bestäm hans medelhastighet.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer"> <p>Vi har \( s = 7,5 \text{ km} \) och \( t = 1,5 \text{ h} \).</p><p>Vi får \( v = \dfrac{s}{t} = \dfrac{7,5 \text{ km}}{1,5 \text{ h}} = 5 \text{ km/h} \).</p>  </div></div> </li>
+          <li>Tågresan från Helsingfors till Åbo tar 1 h 54 min. Hela tågresan från Helsingfors via Karis och Salo till Åbo är 196 km. Bestäm medelhastigheten för tågfärden.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>Vi har \( t =  1\dfrac{54}{60} \text{ h} \) och \( s = 196 \text{ km} \).</p><p>Vi får \( v = \dfrac{s}{t} = \dfrac{196 \text{ km}}{1\frac{54}{60} \text{ h}} = 103,15\ldots \approx 103 \text{ km/h} \).</p></div></div>
+             <ol>
+               <li>Vad blir medelhastighet om vi beaktar fågelvägen mellan Helsingfors och Åbo som är 168 km?
+                 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                 <div class="collapse" id="2a">
+                 <div class="card card-body answer"> <p> Vi får \( v = \dfrac{168 \text{ km}}{1\frac{54}{60} \text{ h}} = 88,42\ldots \approx 88 \text{ km/h} \).</p></div></div>
+               </li>
+             </ol></li>
+
+          <li>Hur många meter rör vi oss under 5 s då vi åker 120 km/h?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Först ändrar vi hastigheten till m/s, \( 120  / 3,6 = 33,33\ldots \text{ m/s} \).</p><p>Sträckan som vi rör oss är \( s= v\cdot t = 33,33 \text{m/s} \cdot 5 \text{ s} = 166,65 \approx 170 \text{ m} \).</p>  </div></div> </li>
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Lösningen </div></div> </li>
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5c">
+                  <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol></li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="Fysik">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_acceleration.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>14. Tillämpning av logaritmer</title>
+
+ </head>
+ <body>
+  <header class="MaG">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+      <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+      <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+      <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+      <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+      <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+      <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+      <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+      <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+      <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+      <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+      <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+      <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+      <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+      <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+      <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+      <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+      <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+      <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+      <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+      <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+     </div>
+    </div>
+   </nav>
+   <a href="13_log_berakning.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaG Tal och talföljder</h3>
+   <a href="15_talfoljder.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>14. Tillämpning av logaritmer</h1>
+   <section>
+    <div class="theory">
+     <div class="intro box">
+      <p>För vilka värden på \(x\) gäller att \(4^x = 7\)?</p>
+      <h4>Lösning</h4>
+      <p>Vi löser ekvationen genom att att vi utnyttjar logaritmen med basen 10.</p>
+      <p>\(\begin{array}{rcl}
+       \lg 4^x & = & \lg 7 \\
+       x \lg 4 & = & \lg 7 \\
+       x & = & \dfrac{\lg 7}{\lg 4} \approx 1,40 \\
+       \end{array}\)
+      </p>
+      <div class="video">
+       <iframe src="https://player.vimeo.com/video/369364935" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+     </div>
+     <p>När vi löser exponentialekvationer av typen \(k^x=a\) kan vi lösa ekvationerna på två olika sätt.</p>
+     <div class="alert box">
+      <p>För att lösa ekvationen \(k^x = a\) löser vi den på något av följande sätt:</p>
+      <ol>
+       <li>Vi utnyttjar logaritmer med basen 10. Lösningarna till ekvationen \(k^x=a\) är \(x=\dfrac{\lg a}{\lg k}\).</li>
+       <li>Vi utnyttjar definitionen för logaritmer, \(\log_a x=y\) är identiskt med att \(x = a^y\).</li>
+      </ol>
+     </div>
+     <div class="exercise box">
+      <p><strong>Exempel 1</strong> Lös ekvationen \(5^x=8\).</p>
+      <h4>Lösning</h4>
+      <p>Vi löser ekvationen på två olika sätt.</p>
+      <ol>
+       <li>Då \(5^x=8\) får vi att</p>
+        <p>\(\begin{array}{rcll}
+         5^x & = & 8 & \mid \lg\\
+         \lg 5^x & = & \lg 8 \\
+         x \lg 5 & = & \lg 8 & \mid/\lg 5 \\
+         x & = & \dfrac{\lg8}{\lg 5} \approx 1,29 \end{array}\)
+       </li>
+       <li>Eller som \(5^x = 8 \Leftrightarrow x =\log_5 8 \approx 1,29\).</li>
+      </ol>
+     </div>
+     <p>Om vi inte vill arbeta med logaritmer som har basen 10 så får vi att \(\log_a x = \dfrac{\log_b x}{\log_b a}\) där \(b\) är någon bas.</p>
+     <h4>Motivering</h4>
+     <p>Eftersom \(\log_a x = y \Leftrightarrow x=a^y\) och \(x=a^y\) kan skrivas som \(y=\dfrac{\lg x}{\lg a}\) får vi att \(\log_a x = \dfrac{\lg x}{\lg a} = \dfrac{\log_b x}{\log_b a}\), där \(b\) är någon bas.</p>
+     <div class="exercise box">
+      <p><strong>Exempel 2</strong> På ett bankkonto sätter man in 1500 €. Banken ger en räntesats om 1,0 % per år. Efter hur många år är har summan stigit till över 2000 € då vi varje år betalar en kapitalinkomst skatt på 30 % av räntan?</p>
+      <h4>Lösning</h4>
+      <p>Eftersom vi varje år betalar 30 % skatt av räntan som bildas av 1,0 % så har vi en verklig ränta om \(0,70 \cdot 0,01 a = 0,007a\). Den verkliga räntan är 0,7 %.</p>  <p>Vi får en ekvation</p>
+      <p>\(\begin{array}{rcl}
+       1,007^x \cdot 1500 & > & 2000 \\
+       1,007^x & > & \frac{2000}{1500}\\
+       \lg 1,007^x & > & \lg \frac{4}{3} \\
+       x \lg 1,007 & > & \lg \frac{4}{3} \\
+       x & > & \dfrac{\lg \frac{4}{3}}{\lg 1,007} \approx 41,24 \text{ år} \\
+       \end{array}\)</p>
+       <p>Efter 42 år.</p>
+      </div>
+
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <li>För vilka värden på \(x\) gäller följande. Svar med två decimalers noggrannhet.
+      <ol>
+       <li>\(2^x=5\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1a">
+       <div class="card card-body answer"><p>\(2^x=5 \Leftrightarrow x =\dfrac{\lg 5}{\lg 2} \approx 2,32\).</p> </div></div> </li>
+       <li>\(3^x= 7\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1b">
+       <div class="card card-body answer"><p>\(x = \log_3 7 \approx 1,7712</p> </div></div> </li>
+       <li>\(7^x=14\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1c">
+       <div class="card card-body answer"><p>\(7^x=14 \Leftrightarrow x =\dfrac{\lg 14}{\lg 7} \approx 1,36\).</p> </div></div> </li>
+       <li>\(9^x = 5\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1d">
+       <div class="card card-body answer"><p>\(x= \log_9 5 \approx 0,7325</p> </div></div> </li>
+       <li>\(3^x=21\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1e">
+       <div class="card card-body answer"><p>\(3^x=21 \Leftrightarrow x =\dfrac{\lg 21}{\lg 3} \approx 2,77\).</p> </div></div> </li>
+      </ol>
+     </li>
+
+     <li>Vi placerar 1500 € så att den årliga av kastningen är 7,0 %. Efter hur många år har kapitalet ökat till 2500 € då vi varje år betalar en skatt på kapitalinkomster om 30 %?
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="2">
+      <div class="card card-body answer"> <p>Den verkliga räntan är \(0,07 \cdot 0,70\). Vi får ekvationen \((1+0,07\cdot 0,70)^n \cdot 1500 = 2500\) som har lösningen \(n=10,68\). Alltså 11 år.</p> </div></div>
+     </li>
+
+     <li>Befolkningsökningen var som störst i Finland efter andra världskriget. 1950 var befolkningsmängden 4,03 miljoner och befolkningstillväxten var 1,0 %. Om befolkningstillväxten skulle ha varit konstant 1,0 % efter 1950, när skulle befolkningsmängden överskrida år 2015 befolkningsmängd på 5,47 miljoner?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer"> <p>Vi har ekvationen \(1,01^x \cdot 4,03 = 5,47\) som vi kan skriva som \(x=\dfrac{\lg\frac{5,47}{4,03}}{\lg 1,01} \approx 30,70\) år.</p>  <p>År 1950 + 30 = 1980.</p> </div></div>
+     </li>
+
+     <li><p>Med överfiske menar man att man fiskar mera fisk än vad fiskstammen förökar sig. Det betyder att antalet fiskar i stammen minskar. Man talar om att alla fiskarter på jorden kommer att krascha inom 50 år. Då en fiskstam kraschar betyder det att antalet fiskar minskar med 10 % från vad det har varit som mest.</p>  <p>Vi tänker oss följande. En fiskstam har sin största population, antal, just nu. Om 50 år har fiskstammen kraschat med 10 %. Vad är den årliga procentuella minskningen?</p>  <p>Svara med två decimalers noggrannhet.</p>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>Vi betecknar procenten med \(p\) och antalet med \(a\).</p>  <p>Då får vi ekvationen \(p^{50} a=0,90a\) som har lösningen \(p=0,9978950083\).</p>  <p>Den årliga procentuella minskningen är \(1-0,9978950083 = 0,0021049917\). Alltså 0,21 %</p> </div></div>
+     </li>
+
+     <li>Ett företag strävar till att öka omsättningen med 60 % under 10 år.
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="5t">
+      <div class="card card-body hint"><p>Beteckna omsättningen med \(a\). Om omsättningen skall öka med 60 % är den nya omsättningen 1,6\(a\) </div></div>
+      <ol>
+       <li>Hur många procent skall omsättningen öka varje år? Svara med två decimaler. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5a">
+       <div class="card card-body answer"><p>Omsättningen i början är \(a\) och den procentuella ökningen betecknar vi \(p\). vi får ekvationen \(p^{10}\cdot a = 1,6 a\) som har lösningen \(p=\sqrt[10]{1,6} \approx 1,04812\) som betyder att den årliga ökningen skall vara \(1,04812-1 = 0,04812\) som är 4,81 %.</p> </div></div> </li>
+       <li>Om hur många år har omsättningen fördubblats? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5b">
+       <div class="card card-body answer"><p>Vi betecknar omsättningen med \(a\), \(n\) antal år och får ekvationen \(1,0481^n \cdot a = 2a\) som har lösningen \(n = \dfrac{\lg 2}{\lg 1,0481} \approx 14,75\).</p>  <p id="i1yfur7ipq">Alltså 15 år.</p> </div></div> </li>
+      </ol>
+     </li>
+
+     <li>Varje år fördubblas antalet råttor i en storstad. Hur många år tar det för antalet råttor att bli 100 falt?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>Vi betecknar antal råttor med \(a\). Vi får ekvationen \(2^n\cdot a=100 a\) som har lösningen \(n=\dfrac{\lg 100}{\lg 2} \approx 6,64\).</p>  <p>Alltså 7 år.</p> </div></div>
+     </li>
+
+     <li>Radioaktiva material har en naturligt sönderfall som kallas för halveringstid. Halveringstiden betyder att antalet aktiva, radioaktiva kärnor minskar med hälften. Halveringstiden för kol 11 som används i <a href="http://sv.wikipedia.org/wiki/Positronemissionstomografi" target="_blank">PET skanning</a> har en halveringstid på 20,5 minuter. Efter hur många minuter har aktiviteten sjunkit till en 100-del av vad den var i början?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer"> <p>Vi betecknar antalet radioaktiva kärnor med \(a\). Efter första halveringen har vi \(0,50a\) kvar, efter andra halveringen har vi \(0,50^2\cdot a\) kvar.</p>  <p>Vi söker antalet halveringar som behövs genom att lösa ekvationen \(0,50^n \cdot a = \dfrac{a}{100}\) som har lösningen \(n=\dfrac{\lg\frac{1}{100}}{\lg 0,50} \approx 6,6438\) halveringar.</p>  <p>Varje halvering tar 20,5 minuter som betyder att den totala tiden är \(20,5 \text{ minuter } \cdot 6,6438 = 136,1979\) minuter.</p> </div></div>
+     </li>
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaG">
+   <a href="13_log_berakning.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="15_talfoljder.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

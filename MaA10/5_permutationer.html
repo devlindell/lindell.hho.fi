@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Permutationer</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_kombinatorik.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 10 Sannolikhet och statistik</h3>
+      <a href="6_kombinationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Permutationer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Anna, Bertil, Cecilia och Daniel skall ställa sig i kö. De funderar hur många olika köer som de kan bilda.</p>
+            <p>Kan du hjälpa dem?</p>
+          </div>
+          <p>Först i kön kan vi placera Anna, Bertil, Cecilia eller Daniel, 4 alternativ. Som andra i kön kan vi välja mellan 3 personer, som tredje i kön kan vi välja mellan 2 personer och som fjärde har vi en person.</p>
+          <table>
+            <tbody>
+              <tr><td>1:a platsen</td><td>2:a platsen</td><td>3:e platsen</td><td>4:e platsen</td></tr>
+              <tr><td>4 personer</td><td>3 personer</td><td>2 personer</td><td>1 person</td></tr>
+            </tbody>
+          </table>
+          <p>Antalet olika kombinationer är \( 4\cdot 3\cdot 2 \cdot 1 = 24 \). Vi kan skriva \( 4\cdot 3\cdot 2 \cdot 1 \) som \( 4! \), utläses "fyra fakultet".</p>
+          <p>Antalet olika permutationer, varianter av en mängd, som består av \( n \) element är \( n! \) där \( n!=n(-1)(n-2)\cdot \ldots \cdot 2\cdot 1 \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Hur många olika köer kan Anna, Bertil, Cecilia och Daniel bilda där endast två personer deltar?</p>
+          <h4>Lösning</h4>
+          <p>Vi kan välja bland 4 personer till först och 3 på andra plats. Vi får \( 4\cdot 3 =12 \).</p>
+          <p>Men vi kan också räkna som följande: \( 4 \cdot 3 =\dfrac{4\cdot 3\cdot 2\cdot 1}{2\cdot 1} = \dfrac{4!}{2!} \).</p>
+          </div>
+          <p>Om vi allmänt skall ur en mängd \( n \) skall bilda n-permutationer, eller ordnade delmängder, som består av \( k \) st element får vi det som \( P_{n,k}=\dfrac{n!}{(n-k)!} \). På räknaren utnyttjar vi en knapp som påminner om nPr.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>I hur många olika köer kan vi placera
+            <ol>
+              <li>Knatte, Fnatte och Tjatte? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Först 3, sedan 2 och sist 1 alternativ.</p>
+                <p>\( 3! = 3\cdot 2\cdot 1=6 \).</p></div></div> </li>
+              <li>7 bröder? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( 7! = 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1 = 5040 \) st olika sätt.</p></div></div> </li>
+              <li>en riksdagsgrupp på 19 ledamöter? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( 19 ! = 1,21645 \cdot 10^{17} \) st olika sätt.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Aapo, som är ett stort fan av Väinö Linna, placerar alla sex böcker av Väinö Linna i sin bokhylla slumpmässigt. Vilken är sannolikheten att Aapo placerar de i kronologisk ordning?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Totala kombinatoner är \( 6!= 720 \). En av dessa är korrekt, alltså \( \dfrac{1}{720} \).</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li>På hur många sätt kan vi av 200 riksdagsledamöter ordna en kö som består av 3 st ledamöter.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>På första plats kan vi välja bland 200 st, sedan bland 199 st och som tredje 198 st.</p>
+              <p>Antal kombinationer är \( 200 \cdot 199 \cdot 198 = 7880400 \) st.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Ett fotbollslag består av följande antal spelare.
+            <table>
+              <tbody>
+                <tr><td>Målvakter</td><td>3 st</td></tr>
+                <tr><td>Försvarare</td><td>7 st</td></tr>
+                <tr><td>Mittfältare</td><td>7 st</td></tr>
+                <tr><td>Anfallare</td><td>5 st</td></tr>
+                <tr><td>Totalt</td><td>22 st</td></tr>
+              </tbody>
+            </table>
+            <ol>
+              <li>4 st försvarare skall spela. På hur många olika sätt kan tränaren kombinera sina försvarare? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>\( 7 \text{nPr} 4 = \dfrac{7!}{(7-4)!}= 840 \) olika sätt.</p></div></div> </li>
+              <li>På hur många sätt kan han spela sina mittfältare och anfallare då de totalt utgör 6 spelare från öppningselvan? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi får \( 12 \text{nPr} 6 = \dfrac{12!}{(12-6)!}=665280 \) olika sätt.</p></div></div> </li>
+              <li>På hur många olika sätt kan tränaren välja öppningselvan? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Han måste välja mellan en av 3 målvakter.</p>
+              <p>Av 19 utespelare skall 10 st spela.</p>
+              <p>Antalet kombinationer är \( 3\cdot \dfrac{19!}{(19-10)!} = 1,00566\ldots 10^{12} \) olika sätt.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Cecilia spelar på stryktipset och har 8 st matcher vars resultat hon är "säker" på, så kallade "säkra" val. Resten kan sluta som 1, X eller 2. Hur många rader borde hon spela för att vara säker på att hon skall ha 13 rätt?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>8 rader med 1 tecken, \( 13-8=5 \) rader som behöver 3 tecken.</p>
+              <p>Antal kombinationer är \( 1^8 \cdot 3^5=243 \) st.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>4 flickor och 3 pojkar bildar en kö. Med vilken sannolikhet kommer en pojke att vara sist i kön?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Antal flickor är 4 och pojkar 3. Vi vill ha en pojke sist, resten spelar ingen roll. Köer där vi har en pojke sist är \( 6 \cdot 5 \cdot 4 \cdot 3\cdot 2\cdot 1 \cdot 1 \).</p>
+              <p>Totala kombinationer är \( 7! \).</p>
+              <p>Sannolikheten är \( \dfrac{ 6!\cdot 1}{7!} = \dfrac{6!}{7 \cdot 6 !} = \dfrac{1}{7}=0,143 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Hur många personer bör samlas i samma utrymme så att sannolikheten för att åtminstone två personer delar födelsedag överstiger 50 %?
+            <p>Tänk via komplementet, 1-.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Person 1 har 365 dagar att ha födelsedag på, person 2 har 364 dagar att ha födelsedag på, person 3 har 363 dagar att ha födelsedag på, osv.</p>
+                <p>Sannolikheten för att den första har en unik födelsedag är \( 1-\dfrac{0}{365} \), för den andra \( 1-\dfrac{1}{365} \), för den tredje \( 1-\dfrac{2}{365} \) och för den \( n \):te \( 1-\dfrac{n-1}{365} \).</p>
+                <p>Vi får att \( (1-\dfrac{0}{365})(1-\dfrac{1}{365})(1-\dfrac{2}{365})\ldots(1-\dfrac{n-1}{365})=0,50 \).</p>
+                <p>Vi löser den lättast genom att göra en tabell och se för vilket värde på \( n \) som sannolikheten är större än 0,50.</p>
+                <p>Vi får att \( n>23 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="4_kombinatorik.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_kombinationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

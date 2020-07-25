@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>14. Ekvationer av högre grad</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="13_diskriminant.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="15_olikheter_hogre.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>14. Ekvationer av högre grad</h1>
+      <section>
+        <p>Som det sista för kursen tar vi och tittar på hur vi kan lösa ekvationer och olikheter där gradtalet är större än 2. För ekvationer finns det algorimer, färdiga recept, för hur vi skall göra. Det finns för tredjegrads ekvationer men det faller utaför gymnasiekursen. De ekvationer och olikheter som vi tittar på här är alltså en bråkdel av de alla som finns i verkligheten.</p>
+<p>Lycka till!</p>
+
+<div class="theory">
+<p>För att lösa ekvationer som har ett gradtal högre än två, tex \(x^3 -4x^2 - x = 0\), har vi ingen formel som vi kan utnyttja. Däremot har vi ett par knep som löser vissa typer av ekvationer.</p>
+<p>Vi kan utnyttja nollregeln, exempel 1, eller använda oss av substitution, exempel 2. Löser vi ekvationerna på räknare eller räknarprogram har datorn inga problem med att hitta en lösning.</p>
+<div class="exercise box">
+<p><strong>Exempel 1</strong> Lös \(2x^3+2x^2-12x=0\).</p>
+<h4>Lösning</h4>
+<p>Vi börjar med att bryta ut från \(2x^3+2x^2-12x=0\).</p>
+<p>Sedan tillämpar vi nollregeln. Visst kommer du ihåg den?</p>
+<p>\(\begin{array}{lrcll} &amp;2x^3 +2x^2-12x &amp;= &amp;0 &amp; \\ &amp;2x(x^2+x-6) &amp;= &amp;0 &amp; \\ \textrm{} &amp;2x=0 &amp; \textrm{ eller } &amp;x^2+2-6 =0 &amp;\textrm{Rotformeln.}\\ \textrm{} &amp; x_1=0 &amp; &amp;x=\dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 (-6)}}{2\cdot 1} &amp;=\dfrac{-1 \pm 5}{2} \textrm{}\\ \textrm{} &amp; \textrm{Rötterna blir:}&amp; &amp; x_2=\dfrac{-1-5}{2} =-3 &amp;x_3=\dfrac{-1+5}{2}=2 \textrm{}\\ \end{array}\)</p>
+<p>Svar: \(x_1 = 0\), \(x_2=-3\) och \(x_3=2\)</p>
+</div>
+<div class="exercise box">
+<p><strong>Exempel 2</strong> Lös \(m^4+m^2=2\).</p>
+<h4>Lösning</h4>
+<p>\(\begin{array}{lrcll} \textrm{} &amp;m^4+m^2 &amp;= &amp;2 &amp; \textrm{Vi substituerar } m^2=t\\ \textrm{och får} &amp;t^2+t -2&amp;= &amp;0 &amp; \end{array} \)</p>
+<p>som vi löser med rotformeln.</p>
+<p>\(\begin{array}{lrcll}
+  &amp; t &amp;= &amp; \dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 (-2)}}{2 \cdot 1} &amp; = \dfrac{-1 \pm 3}{2} \textrm{}\\ \textrm{Rötterna är: } &amp;t=\dfrac{-1-3}{2}=-2 &amp; \textrm{ och } &amp; t=\dfrac{-1+3}{2}=1 &amp; \textrm{}\\ \textrm{Vi substituerar tillbaka } t=m^2 &amp;m^2=-2 &amp; &amp;m^2=1 &amp; \textrm{}\\ \textrm{} &amp;\textrm{Saknar lösningar} &amp; &amp;m = \pm 1 &amp; \textrm{}\\ \end{array}\)</p>
+<p>Svar: \(m=\pm 1\)</p>
+</div>
+</div>
+
+          </section>
+      <section>
+        <h2>Uppgifter</h2>
+
+        <ol>
+        <li>För vilka värden på \(x\) gäller att
+        <ol>
+        <li>\(4x ^4 = 6\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1a">
+  <div class="card card-body answer">\(4x ^4 = 6\) ger att \(x=\pm\sqrt[4]{\dfrac{3}{2}}\).</div></div></li>
+        <li>\(3x^5-4 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1b">
+  <div class="card card-body answer">\(3x^5-4 =0\) ger att \(x=\sqrt[5]{\dfrac{4}{3}}\).</div></div></li>
+        <li>\(x^5-3 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1c">
+  <div class="card card-body answer">\(x^5-3 =0\) ger att \(x=\sqrt[5]{3}\).</div></div></li>
+          <li>\(x^4 +3 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1d">
+  <div class="card card-body answer">\(x^4 +3 =0\) Går inte eftersom \(x^4=-3\) uppfylls aldrig.</div></div></li>
+        <li>\(x^3+1 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1e">
+  <div class="card card-body answer">\(x^3+1 =0\) uppfylls då \(x=-1\).</div></div></li>
+        </ol></li>
+
+        <li>Lös ekvationen \(x^4-4x^2=0\) genom att bryta ut eller genom att substituera.
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="2">
+  <div class="card card-body answer">Vi får att \(x^2(x^2-4)=0\) som har lösningarna \(x=0\) eller \(x^2-4 = 0 \Leftrightarrow x^2 = 4 \Leftrightarrow x=\pm 2\).</div></div></li>
+
+        <li>Lös ekvationen \(n^5+4n^3=0\).<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3">
+  <div class="card card-body answer"><p>Vi får att \(n^3(n^2+4)=0\) som har lösningarna \(n=0\) och \(n^2=-4\), som sakar reella rötter.</p>
+        <p>Alltså \(n=0\).</p></div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös ekvationen \(x^3+4x^2+3x=0\).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse hint" id="4t">Bryt ut och tillämpa nollregeln.</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4">
+  <div class="card card-body answer"><p>Vi får att \(x(x^2+4x+3)=0\) som ger att \(x=0\) eller \(x^2+4x+3=0\) som har rötterna \(x=-1\) och \(x=-3\).</p>
+        <p>Alltså \(x=0, x=-1\) och \(x=-3\).</p></div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös \(x^4-6x^2 =-5\).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse hint" id="5t">Ersätt \(x^2=t\) och lös den ekvationen. Kom ihåg att substituera tillbaka.</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5">
+  <div class="card card-body answer"><p>Vi ersätter \(x^2=t\) och får \(t^2-6t+5=0\) som har rötterna \(t=1\) och \(t=5\).</p>
+        <p>Alltså är \(x=\pm1 \) och \(x=\pm\sqrt{5}\).</p></div></div></li>
+
+        <li>Lös ekvationen \(7x^7 +6x^6 = 0\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="6">
+  <div class="card card-body answer"><p>Vi får att \(x^6(7x+6)=0\) som har lösningarna \(x^6=0\) och \(7x+6=0\).</p>
+        <p>Lösningarna är \(x=0\) och \(x=-\dfrac{6}{7}\).</p></div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös \(x^3-x^2-x+1=0\).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse hint" id="7t">Får du det till \(x(x^2-1)-1(x^2-1)=0\)? Jobba härifrån vidare genom att utnyttja nollregeln.</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="7">
+  <div class="card card-body answer"><p>Vi får följande</p>
+        <p>\(\begin{array}{rcl} x^3-x^2-x+1 &amp;=&amp;0 \\ x(x^2-1)-1(x^2-1) &amp;=&amp;0 \\ (x^2-1)(x-1) &amp;=&amp;0\\ \end{array}\)</p>
+        <p>Alltså \(x^2-1=0\) eller \(x-1=0\).</p>
+        <p>Rötterna är \(x=\pm 1\).</p></div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös \((x+2)(x^2-3x+2)=0\).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p><div class="collapse" id="8t">Utnyttja nollregeln.</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="8">
+  <div class="card card-body answer"><p>Vi får att \(x+2=0 \Leftrightarrow x=-2\) och \(x^2-3x+2=0\) som har rötterna \(x=1\) och $x=2.</p>
+        <p>Rötterna är \(x=\pm 2\) eller \(x=1\).</p></div></div></li>
+        </ol>
+
+
+      </section>
+
+      </article>
+
+    <footer class="MaA2">
+      <a href="13_diskriminant.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="15_olikheter_hogre.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

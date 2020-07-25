@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>7. Ekvationer med tangens</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="6_tangens.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="8_trig_funktioner.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>7. Ekvationer med tangens</h1>
+      <section>
+        <div class="theory">
+          <p>I föregående kapitel lärde vi oss att tantentpunkten ger tangens för en vinkel. Vi bygger vidare på det för att lösa ekvationer med tangens.</p>
+          <h3>Ekvationen \( \tan \alpha = a \)</h3>
+          <p>För ekvationen \( \tan \alpha =a \) kommer vi ihåg att en lösning är tangenspunkten, den punkt som vi hittar då vi går vidare från periferipunkten mot linjen \( x=1 \).</p>
+          <p>Då vi fortsätter på linjen bort från tangenspunkten märker vi att det finns två vinklar som ger samma värde för tangens. Vinklarna \( \alpha \) och \( \pi +\alpha \).</p>
+          <p><img class="responsivepic400" src="pics/tangens_1.png" alt="" /></p>
+          <p>De vinklar som löser ekvationen \( \tan \alpha = a \) är vinklar som är multiplar av \( \alpha_0 \) med multipeln \( \pi \).</p>
+          <p>Lösningarna för ekvationen \( \tan \alpha =a \) kan vi skriva som</p>
+          <p>\( \alpha =\alpha_0 +n\cdot 180^{\circ} \) där n är ett heltal eller som</p>
+          <p>\( \alpha =\alpha_0 +n\cdot \pi \) där n är ett heltal.</p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm \( \tan x = 1 \).
+            <h4>Lösning</h4>
+            <p>Tangens är definierad då \( x\not= \dfrac{\pi}{2} +n\cdot \pi \) där \( n \in \mathbf{Z} \).</p>
+            <p>Vinkeln får vi med räknarens funktion, tan<sup>-1</sup>(1).</p>
+            <p>Vinkeln är \( x=45^{\circ} +n\cdot 180^{\circ}, n\in \mathbf{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Bestäm \( \tan 2x = \tan 3x \).
+            <h4>Lösning</h4>
+            <p>Först söker vi definitionsmängderna.</p>
+            <p>\( \tan 2x \) är inte definierad då \( 2x = \dfrac{\pi}{2} +n\cdot \pi \). Alltså då \( x = \dfrac{\pi}{4}+n\cdot \dfrac{\pi}{2} \).</p>
+            <p>\( \tan 3x \) är inte definierad då \( 3x = \dfrac{\pi}{2} +n\cdot \pi \). Alltså då \( x = \dfrac{\pi}{6}+n\cdot \dfrac{\pi}{3} \).</p>
+            <p>Vi löser ekvationen</p>
+            <p>\( \begin{array}{rcll} 2x  & = &  3x +n\cdot \pi \\ -x  & = &  n\cdot \pi  & | \text{ n är ett heltal}\\  & = &  n\cdot \pi \\ \end{array} \)</p>
+            <p>De förbjudna punkterna är</p>
+            <p>\( \begin{array}{r|r|r} n  &  x\not= \dfrac{\pi}{4}+n\cdot \dfrac{\pi}{2}  &  x\not= \dfrac{\pi}{6}+n\cdot \dfrac{\pi}{3} \\ \hline 0  &  \dfrac{\pi}{4}  &  \dfrac{\pi}{6} \\ 1  &  \dfrac{\pi}{4}+1\cdot \dfrac{\pi}{2}=\dfrac{3\pi}{4}  &  \dfrac{\pi}{6}+1\cdot \dfrac{\pi}{3}=\dfrac{3\pi}{6} \\ 2  &  \dfrac{\pi}{4}+2\cdot \dfrac{\pi}{2}=\dfrac{5\pi}{4}  &  \dfrac{\pi}{6}+2\cdot \dfrac{\pi}{3}=\dfrac{5\pi}{6} \\ 3  &  \dfrac{7\pi}{4}  &  \dfrac{7\pi}{6} \\ 4  &  \dfrac{9\pi}{4} =2\pi +\dfrac{\pi}{4} &  \dfrac{9\pi}{6}\\ 5  &   &  \dfrac{11\pi}{6}\\ 6  &   &  \dfrac{13\pi}{6}= 2\pi +\dfrac{\pi}{6}\\ \end{array} \)</p>
+            <p>Lösningarna för ekvationen är \( \pi, 2\pi, 3\pi,\ldots \). Vi märker att bland lösningarna för ekvationen finns inga förbjudna punkter. Lösningarna är \( x=n\cdot \pi, n\in \mathbf{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 3</strong> För vilka värden på \( \alpha \) gäller att \( 2\sin \alpha -5\cos\alpha = 0 \)?
+            <h4>Lösning</h4>
+            <p>Vi har att</p>
+            <p>\( \begin{array}{rcll} 2\sin\alpha-5\cos\alpha  & = &  0 \\ 2\sin\alpha  & = &  5\cos\alpha  &  | / 2\cos\alpha \not=0 \\ \dfrac{\sin\alpha}{\cos\alpha}  & = &  \dfrac{5}{2} \\ \tan \alpha  & = &  \dfrac{5}{2} \\ \end{array} \)</p>
+            <p>Vinkeln är \( \alpha = 68,2^{\circ}+n\cdot 180^{\circ}, n \in \mathbb{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 4</strong> Bestäm storleken av \( \sin\alpha \) och \( \cos\alpha \) då vi vet att \( \tan\alpha = -\dfrac{2}{3} \) och att \( \dfrac{\pi}{2} &lt; \alpha &lt; \pi \).
+            <h4>Lösning</h4>
+            <p>Då \( \tan\alpha=-\dfrac{2}{3} \) ger oss det att i en rätvinklig triangel är kateterna 2 och 3 långa, hypotenusan är då \( \sqrt{2^2+3^2}=\sqrt{13} \).</p>
+            <p>Vi får då för den ena spetsiga vinkeln att \( \mid\sin \alpha \mid = \dfrac{2}{\sqrt{13}} \) och att \( \mid\cos \alpha \mid= \dfrac{3}{\sqrt{13}} \).</p>
+            <p>Eftersom \( \dfrac{\pi}{2} &lt; \alpha &lt; \pi \) är \( \sin &gt; 0 \) och \( \cos &lt;0 \).</p>
+            <p>Vi får att \( \sin \alpha = \dfrac{2}{\sqrt{13}} \) och \( \cos\alpha = -\dfrac{3}{\sqrt{13}} \).</p>
+          </div>
+          <div class="summary box">
+            <h3>Sammanfattning</h3>
+            <ul>
+ 	            <li>Ekvationen \( \tan x = a \) har lösningarna \( x=\alpha +n\cdot \pi \) där n är ett heltal.</li>
+ 	            <li>För ekvationen \( \tan x = \tan y \) gäller att \( x=y+ +n\cdot \pi \) där n är ett heltal.</li>
+            </ul>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li>Lös följande ekvationer
+            <ol>
+              <li>\( \tan \alpha = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vinkeln är som grader:\( \alpha = 63,4^{\circ}+n\cdot 180^{\circ}, n \in \mathbb{Z} \), som radianer: \( \alpha = 1,1 +n\pi, n \in \mathbb{Z} \).</p> </div></div> </li>
+              <li>\( \tan \alpha = -1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vinkeln är som grader:\( \alpha = -45^{\circ}+n\cdot 180^{\circ}, n \in \mathbb{Z} \), som radianer: \( \alpha = \dfrac{\pi}{4} +n\pi, n \in \mathbb{Z} \).</p> </div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Bestäm \( \tan x = \tan 3x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\( \tan x \) är definierad för alla vinklar förutom då \( x=\dfrac{\pi}{2} +n\pi \).</p>
+                <p>\( \tan 3x \) är definierad för alla vinklar förutom då \( 3x=\dfrac{\pi}{2} +n\pi \), alltså \( x=\dfrac{\pi}{6} +n\dfrac{\pi}{3} \).</p>
+                <p>För ekvationen gäller</p>
+                <p>\( \begin{array}{rcll}  x  & = &  3x +n\cdot \pi \\  -2x  & = &  n\cdot \pi  & | /-2\\  x  & = & -n\cdot \dfrac{\pi}{2}  & |\text{ n är ett heltal}\\   & = &  n\cdot \dfrac{\pi}{2}\\  \end{array} \)</p>
+                <p>De förbjudna vinklarna är</p>
+                <p>\( \begin{array}{r|r|r}  n  &  x\not=\dfrac{\pi}{2} +n\pi  &  x\not=\dfrac{\pi}{6} +n\dfrac{\pi}{3} \\  \hline  0  &  \dfrac{\pi}{2}  &  \dfrac{\pi}{6} \\  1  &  \dfrac{\pi}{2} +1\cdot\pi = \dfrac{3\pi}{2}  &  \dfrac{\pi}{6} +1\cdot\dfrac{\pi}{3} =\dfrac{3\pi}{6}\\  2  &  \dfrac{\pi}{2} +2\cdot\pi = \dfrac{5\pi}{2}  &  \dfrac{\pi}{6} +2\cdot\dfrac{\pi}{3} =\dfrac{5\pi}{6}\\  3  &   &  \dfrac{\pi}{6} +3\cdot\dfrac{\pi}{3} =\dfrac{7\pi}{6}\\  4  &   &  \dfrac{9\pi}{6}\\  5  &   &  \dfrac{11\pi}{6}\\  6  &   &  \dfrac{13\pi}{6}\\  \end{array} \)</p>
+                <p>De förbjudna vinklarna och våra rötter har några gemensamma punkter, \( \dfrac{\pi}{2}+n\cdot \pi \)</p>
+                <p>Ekvationens lösningar är \( n\cdot \pi, n\in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li> Bestäm \( \tan 2x = \tan \dfrac{x}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\( \tan 2x \) är definierad för alla vinklar förutom då \( 2x=\dfrac{\pi}{2} +n\pi \), alltså \( x=\dfrac{\pi}{4} +n\cdot\dfrac{\pi}{2} \).</p>
+                <p>\( \tan \dfrac{x}{2} \) är definierad för alla vinklar förutom då \( \dfrac{x}{2}=\dfrac{\pi}{2} +n\pi \), alltså \( x=\pi +n\cdot2\pi \).</p>
+                <p>För ekvationen gäller</p>
+                <p>\( \begin{array}{rcll}    2x  & = &  \dfrac{x}{2} +n\cdot \pi \\    2x-\dfrac{x}{2}  & = &  n\cdot \pi \\   \dfrac{3x}{2}  & = &  n\cdot \pi  & | \cdot \dfrac{2}{3}\\   x  & = & n\cdot \dfrac{2\pi}{3} \\   \end{array} \)</p>
+                <p>De förbjudna vinklarna är</p>
+                <p>\( \begin{array}{r|r|r}  n  &  x\not=\dfrac{\pi}{4} +n\cdot\dfrac{\pi}{2}  &  x\not=\pi +n\cdot2\pi \\  \hline    0  &  \dfrac{\pi}{4}  &  \pi \\    1  &  \dfrac{\pi}{4} +1\cdot\dfrac{\pi}{2} = \dfrac{3\pi}{4}   &  \pi +1\cdot2\pi=3\pi\\   2  &  \dfrac{\pi}{4} +2\cdot\dfrac{\pi}{2} = \dfrac{5\pi}{4}   &  \\  3  &  \dfrac{\pi}{4} +3\cdot\dfrac{\pi}{2} = \dfrac{7\pi}{4}   &  \\  4  &  \dfrac{\pi}{4} +4\cdot\dfrac{\pi}{2} = \dfrac{9\pi}{4}   &  \\    \end{array} \)</p>    <p>Lösningarna är \( 0, \dfrac{2\pi}{3}, \dfrac{4\pi}{3}, \dfrac{6\pi}{3} = 2\pi, \dfrac{8\pi}{3}, \dfrac{10\pi}{3}, \dfrac{12\pi}{3}=4\pi \ldots \).</p>
+                <p>Ekvationens lösningar är \( x=n\cdot\dfrac{2\pi}{3} \) där \( n\in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( \sqrt{3}\sin \alpha - \cos \alpha = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( \begin{array}{rcll}  \sqrt{3}\sin\alpha-\cos\alpha  & = &  0 \\  \sqrt{3}\sin\alpha  & = &  \cos\alpha  &  \mid / \sqrt{3}\cos\alpha \not=0 \\  \dfrac{\sin\alpha}{\cos\alpha}  & = &  \dfrac{1}{\sqrt{3}} \\  \tan \alpha  & = &  \dfrac{1}{\sqrt{3}} \\  \end{array} \)</p>
+                <p>Vinkeln är \( \alpha = 30^{\circ}+n\cdot 180^{\circ}, n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( 7\sin \alpha + 3\cos \alpha = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( \begin{array}{rcll}  7\sin\alpha+3\cos\alpha  & = &  0 \\  7\sin\alpha  & = &  -3\cos\alpha  &  \mid / 7\cos\alpha \not=0 \\  \dfrac{\sin\alpha}{\cos\alpha}  & = &  -\dfrac{3}{7} \\  \tan \alpha  & = &  -\dfrac{3}{7} \\  \end{array} \)
+                <p>Vinkeln är \( \alpha = -23,2^{\circ}+n\cdot 180^{\circ}, n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( \tan \alpha = \tan (2\alpha + \dfrac{\pi}{2}) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi börjar med att undersöka vilka rötter som inte duger: \( \alpha \not= \dfrac{\pi}{2} +n \cdot \pi \) eller \( 2\alpha + \dfrac{\pi}{2} \not= \dfrac{\pi}{2}+n\cdot \pi \Leftrightarrow \alpha \not= n\cdot \pi \) där \( n \in \mathbb{Z} \).</p>
+                <p>Vi får att</p>
+                <p>\( \begin{array}{rcl}  \alpha  & = &  2\alpha + \dfrac{\pi}{2} + n\pi\\  -\alpha  & = &  \dfrac{\pi}{2} + n\pi \\  \alpha  & = &  -\dfrac{\pi}{2} + n\pi \\  \end{array} \)<p/>
+                  <p>Vi får lösningar som inte är definierade. Ekvationen saknar lösningar.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm först definitionsmängd för ekvationen. Lös sedan ekvationen \( \tan \alpha=\tan (2\alpha +\pi) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Definitionsmägden är <br />  \( \alpha \not=\dfrac{\pi}{2} +n\pi \) och \( 2\alpha + \pi \not= \dfrac{\pi}{2}+n\pi \Leftrightarrow 2\alpha \not = -\dfrac{\pi}{2} + n\pi \Leftrightarrow \alpha \not= -\dfrac{\pi}{4}+n\dfrac{\pi}{2}, n\in \mathbb{Z} \).</p>
+                <p>Sedan löser vi ekvationen</p>
+                <p>\( \begin{array}{rcl}    \alpha  & = &  2\alpha +\pi + n\pi \\      -\alpha  & = &  \pi + n\pi \\      \alpha  & = &  -\pi -n\pi \quad,n\in \mathbb{Z} \quad \text{Alltså}\\  \alpha  & = &  -\pi +n\pi \quad,n\in \mathbb{Z}\\    \end{array} \)</p>
+                <p>Eftersom n är ett heltal är \( n\cdot \pi - \pi = n\cdot \pi \).</p>    <p>Ekvationens lösningar är \( \alpha = n\cdot \pi , \quad n \in \mathbb{Z} \). </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="6_tangens.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_trig_funktioner.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

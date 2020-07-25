@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>15. Olikheter av högre grad</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="14_ekvationer_hogre.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="16_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>15. Olikheter av högre grad</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+<p>För vilka värden på \(x\) gäller att \(x^3+x^2-x-1 \geq 0\)?</p>
+<h4>Lösning</h4>
+<p>\(\begin{array}{rcl}
+  x^3+x^2-x-1 &amp;\geq &amp;0 \\
+  \end{array} \) </p>
+  <p>Vi har ett förhållande till noll så vi undersöker ekvationen: \(x^3+x^2-x-1  = 0\)</p>
+  <p>\(\begin{array}{rrcl}
+     \textrm{Vi grupperar och bryter ut} &amp;x(x^2-1)+(x^2-1) &amp;= &amp;0  \\
+   &amp;(x+1)(x^2-1) &amp;= &amp;0 \textrm{} \\
+   &amp;(x+1)(x-1)(x+1) &amp;= &amp;0 \textrm{} \\
+  &amp; (x+1)^2(x-1) &amp;=&amp;0 \\
+  \textrm{Nollregeln ger} &amp;(x+1)^2=0 &amp; &amp;x-1=0 \textrm{} \\
+  \textrm{} &amp;x=-1 &amp; &amp;x=1 \textrm{} \\
+  \end{array}\)</p>
+<p>Vi bildar ett teckenschema:</p>
+<p>\(\begin{array}{r|ccccc} &amp; &amp; -1 &amp; &amp; 1 &amp; \\ \hline (x+1)^2 &amp; +&amp;0 &amp;+ &amp; &amp;+ \\ x-1 &amp;- &amp; &amp;- &amp;0 &amp; + \\ \hline(x+1)^2(x-1) &amp;- &amp;0 &amp;- &amp;0 &amp;+ \\ \end{array}\)</p>
+<p>Svaret är: \(x=-1\) eller \(x \geq 1\).</p> </div>
+<div class="summary box">
+<p>När vi löser olikheter gäller fortfarande samma algoritm:</p>
+<ul>
+<li>Bilda ett förhållande till 0.</li>
+<li>Bestäm nollställena genom att lösa ekvationen.</li>
+<li>Skissa upp en graf eller använd dig av ett teckenschema.</li>
+<li>Analysera och svara.</li>
+</ul>
+<p>Följer du detta recept kan du lösa vilken olikhet som helst.</p>
+</div>
+<div class="exercise box">
+<p>Bestäm de \(x\) så att \(\dfrac{2x^2-2x}{x^2-9} &lt;0\).</p>
+<h4>Lösning</h4>
+<p>Vi förenklar till \(\dfrac{2x(x-1)}{(x+3)(x-3)} &lt; 0\) och undersöker täljaren och nämnaren skilt.</p>
+<p>Täljaren: \(2x(x-1) =0\) alltså \(2x=0 \Leftrightarrow x=0\) eller \(x-1=0 \Leftrightarrow x=1\).</p>
+<p>Nämnaren: \((x+3)(x-3)=0\), alltså \(x+3 =0 \Leftrightarrow x=-3\) eller \(x-3=0 \Leftrightarrow x=3\).</p> <p>Vi bilar ett teckenschema:</p>
+<p>\(\begin{array}{r|ccccccccc} &amp; &amp; -3 &amp; &amp; 0 &amp; &amp; 1 &amp; &amp; 3 &amp;\\ \hline 2x(x-1) &amp; + &amp; &amp; + &amp; 0 &amp; - &amp; 0 &amp; + &amp; &amp; + \\ (x+3)(x-3) &amp; + &amp; 0 &amp; - &amp; &amp; - &amp; &amp; -&amp; 0 &amp; + \\ \hline \textrm{Kvoten:} &amp; + &amp; \wr &amp; - &amp; 0 &amp; + &amp; 0 &amp; - &amp; \wr &amp; + \\ \end{array}\)</p>
+<p>Svaret är: \(-3&lt;x&lt;0\) och \(1&lt;x&lt;3\)</p>
+</div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+
+        <ol>
+        <li>Lös olikheten \(-2x^3+2x \leq 0\). Kom ihåg att börja med att lösa en ekvation.
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="1">
+  <div class="card card-body answer"><p>Vi får att \(-2x(x^2-1)=0\). Alltså \(-2x=0\) och \(x^2-1=0 \Leftrightarrow x=\pm 1\).</p>
+        <p>Teckenschema ger följande</p>
+        <p>\(\begin{array}{r|ccccccc} &amp; &amp; -1 &amp; &amp; 0 &amp; &amp; 1 \\ \hline -2x &amp; + &amp; + &amp;+ &amp; 0 &amp; - &amp; -&amp; - \\ x^2-1 &amp; + &amp; 0 &amp; - &amp; - &amp; - &amp; 0 &amp; + \\ \hline -2x^3+2x &amp; + &amp; 0 &amp; - &amp; 0 &amp; + &amp; 0 &amp; -\\ \end{array}\)</p>
+        <p>Alltså då \(-1\leq x \leq 0\) eller då \(x\geq 1\).</p></div></div></li>
+
+        <li>Bestäm de \(x\) så att \(x^3+x^2-6x &lt;0\).
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="2">
+  <div class="card card-body answer"><p>\(x^3+x^2-6x=0\) ger oss att \(x(x^2+x-6)=0\). \(x=0\) och \(x^2+x-6=0\) då \(x=-3\) eller \(x=2\).</p>
+        <p>Ett teckenschema ger följande</p>
+        <p>\(\begin{array}{r|ccccccc} &amp; &amp;-3 &amp; &amp; 0 &amp; &amp; 2 \\ \hline x &amp;- &amp; - &amp;- &amp;0 &amp;+ &amp;+ &amp; +\\ x^2+x-6 &amp; + &amp; 0 &amp; - &amp;- &amp;- &amp; 0 &amp;+ \\ \hline x^3+x^2-6x &amp; - &amp; 0 &amp; + &amp; 0 &amp; - &amp; 0 &amp; +\\ \end{array}\)</p>
+        <p>Alltså då \(x&lt;-3\) och \(0&lt;x&lt;2\).</p></div></div></li>
+
+        <li>För vilka värden på \(x\) gäller att \(x^4+x^2&gt;2\)?
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+          <div class="collapse hint" id="3t">Börja med att lösa \(x^4+x^2-2=0\). Utnyttja dig av substitutionen \(t=x^2\).</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="3">
+  <div class="card card-body answer"><p>Vi får att \(t^2+t-2=0\) som har rötterna \(t=1\) och \(t=-2\). Vi kan skriva \(t^2+t-2=0\) som \((t-1)(t+2)=0\).</p>
+        <p>Betyder att \(x^2=1 \Leftrightarrow x=\pm 1\) och att \(x^2=-2\) som sakar rötter.</p>
+        <p>När vi bildar ett teckenschema får vi följande</p>
+        <p>\(\begin{array}{r|cccccc} &amp; &amp; -1 &amp; &amp; 1 &amp; &amp; \\ \hline x^2 -1 &amp; + &amp; 0 &amp; - &amp; 0 &amp; + &amp; \\ x^2+2 &amp;+ &amp; + &amp; + &amp; + &amp; + \\ \hline (x^2-1)(x^2+2) &amp;+ &amp; 0 &amp; - &amp; 0 &amp; + \\ \end{array}\)</p>
+        <p>Alltså då \(x\leq -1\) eller då \(x\geq 1\).</p></div></div></li>
+
+        <li>Lös olikheten \(4x^6-3x^4 -1 &lt; -1\).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse hint" id="4t">Kommer du till ekvationen \(4x^6-3x^4=0\)? Tillämpa sedan nollregeln.</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="4">
+  <div class="card card-body answer"><p>Vi får att \(4x^6-3x^4 &lt; 0\) och vi löser ekvationen \(4x^6-3x^4 =0 \Leftrightarrow x^4(4x^2-3)=0\). Alltså \(x^4 =0 \Leftrightarrow x=0\) eller \(4x^2-3 =0 \Leftrightarrow x=\pm\dfrac{\sqrt{3}}{2}\).</p>
+        <p>Vi gör ett teckenschema och får följande</p>
+        <p>\(\begin{array}{r|cccccccc} &amp; &amp; -\dfrac{\sqrt{3}}{2} &amp; &amp; 0 &amp; &amp; \dfrac{\sqrt{3}}{2} \\ \hline x^4 &amp; +&amp; + &amp; + &amp; 0 &amp; + &amp; + &amp; + &amp; \\ 4x^2-3 &amp; + &amp; 0 &amp; - &amp; - &amp; - &amp;0 &amp; + \\ \hline 4x^6-3x^4 &amp; + &amp; 0 &amp; - &amp;0 &amp;- &amp; 0 &amp; + \\ \end{array}\)</p>
+        <p>Alltså då \(-\dfrac{\sqrt{3}}{2}&lt;x&lt; 0\) och \(0&lt;x&lt;\dfrac{\sqrt{3}}{2}\).</p></div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>För vilka värden på \(x\) gäller att \(\dfrac{x^2-x}{x^2-1}&gt;0\)?
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse hint" id="5t">Fundera efter. Förhållande till noll, ekvation och teckenschema gör susen men fundera också på när kvoten är definierad.</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="5">
+  <div class="card card-body answer"><p>Vi undersöker täljaren och nämnaren skillt för sig.</p>
+        <p>För täljaren gäller att \(x^2-x =0 \Leftrightarrow x(x-1)=0\) då \(x=0\) eller x=1.</p>
+        <p>För nämnaren gäller att \(x^2-1 =0 \Leftrightarrow x=\pm 1\). Kvoten är inte definierad om nämnaren får värdet noll.</p>
+        <p>Vi bildar ett teckenschema</p>
+        <p>\(\begin{array}{r|ccccccc} &amp; &amp; -1 &amp; &amp; 0 &amp; &amp; 1 &amp; \\ \hline x^2-x &amp; + &amp; +&amp; + &amp; 0 &amp; - &amp; 0 &amp; + \\ x^2-1 &amp; + &amp; 0 &amp; - &amp; -&amp; -&amp; 0 &amp; + \\ \hline \dfrac{x^2-x}{x^2-1}&amp; + &amp; \wr &amp; - &amp; 0 &amp; + &amp; \wr &amp; + \\ \end{array}\)</p>
+        <p>Kvoten är positiv då \(x&lt;-1\), \(0&lt;x&lt;1\) och \(x&gt;1\).</p></div></div></li>
+
+        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös olikheten \(\dfrac{-x^2+x+2}{x^3+2x^2-3x} &gt; 0\).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+  <div class="collapse hint" id="6t">Förhållande till noll, nollställen och teckenschema. När är nämnaren definierad?</div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+<div class="collapse" id="6">
+  <div class="card card-body answer"><p>Vi undersöker täljaren och nämnaren skillt för sig.</p>
+        <p>För täljaren gäller att \(x-x^2+x+2 =0\) har nollställena \(x=-1\) och \(x=2\).</p>
+        <p>För nämnaren gäller att \(x^3+2x^2-3x =0 \Leftrightarrow x(x^2+2x-3)=0\) som har nollställena \(x=0\), \(x=-3\) och \(x=1\).</p>
+        <p>Vi bilar ett teckenschema</p>
+        <p>\(\begin{array}{lr|cccccccccccc} &amp; &amp; &amp; -3 &amp; &amp; -1 &amp; &amp; 0 &amp; &amp; 1 &amp; &amp; 2 &amp; \\ \hline \text{täljaren: } &amp;-x^2+x+2 &amp; - &amp; - &amp;-&amp; 0 &amp; + &amp; + &amp; +&amp;+&amp;+&amp; 0 &amp; - &amp; \\ &amp; x &amp; - &amp;- &amp;-&amp;- &amp;- &amp; 0 &amp; + &amp; + &amp; + &amp; +&amp; + &amp;\\ &amp; x^2+2x-3 &amp; + &amp; 0 &amp; - &amp; -&amp; -&amp; -&amp;-&amp; 0 &amp; + &amp; + &amp; + &amp; \\ \text{nämnaren: }&amp; x(x^2+2x-3) &amp; - &amp; 0 &amp; + &amp; +&amp; +&amp; 0 &amp; - &amp; 0 &amp; + &amp;+ &amp;+ &amp; \\ \hline \text{kvoten: }&amp; \dfrac{x^2+2x-3}{x(x^2+2x-3)} &amp; + &amp; \wr &amp;- &amp; 0 &amp; + &amp; \wr &amp; - &amp; \wr &amp; + &amp; 0 &amp; - \\ \end{array}\)</p>
+        <p>\(x&lt;-3\), \(-1 &lt; x &lt;0\) och \(1&lt;x2\).</p></div></div></li>
+
+        </ol>
+
+
+      </section>
+
+      </article>
+
+    <footer class="MaA2">
+      <a href="14_ekvationer_hogre.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+
+      <a href="16_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

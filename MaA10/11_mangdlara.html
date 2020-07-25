@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>11. Mängdlära</title>
+
+ </head>
+ <body>
+  <header class="MaA10">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+      <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+      <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+      <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+      <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+      <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+      <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+      <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+      <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+      <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+      <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+      <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+      <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+      <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+      <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+      <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+      <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+      <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+      <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+     </div>
+    </div>
+   </nav>
+   <a href="10_betingad.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaA 10 Sannolikhet och statistik</h3>
+   <a href="12_upprepat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>11. Mängdlära</h1>
+   <section>
+    <div class="theory">
+     <p>Inom matematiken talar vi emellan om mängder. Vissa saker kan var lättare att förstå genom att rita upp mängderna. Exempel på en mängd är: äppel, päron, banan, apelsin och kiwi. Ur en mängd framkommer inte mängden element, enskilda saker, som finns i mängden. Mängerna äppel, päron, banan, banan, apelsin och kiwi och äppel, äppel, äppel, päron, banan, apelsin och kiwi representeras av samma mängd: äppel, päron, banan, apelsin och kiwi.</p>
+     <p>Mängden som består av äppel, päron, banan, apelsin och kiwi betecknas {äppel, päron, banan, apelsin, kiwi}.</p>
+     <p>För mängder finns "räkneregler" som gör att vi kan arbeta med mängderna. För att illustrera bättre vad vi har använder vi oss av Venn diagram, uppkallade efter <a href="http://en.wikipedia.org/wiki/John_Venn" target="_blank">John Venn</a>.</p>
+     <p>Vi tar två mängder: A = {äppel, päron, banan, apelsin}, B = {päron, apelsin, kiwi}.</p>
+     <p>Unionen av A och B, \( A \cup B \) är alla deras element: {äppel, päron, banan, apelsin, kiwi}.</p>
+     <p>Snittet av A och B, \( A \cap B \) är de element som de har gemensamt: {päron, apelsin}.</p>
+     <p>Mängder kan ha relationer till varandra, en mängd kan vara en del av en större mängd. Låt A = {äppel, päron, banan, apelsin, kiwi} och B = {äppel, banan}. Då är \( B \subset A \), B är en delmängd av A.</p>
+     <p>Vi låter mängderna A och B vara som ovan. Om vi tar komplementet av B i A så får vi de element i A som inte finns i B, {päron, apelsin, kiwi}. Komplementet betecknar vi med \( \overline{A} \).</p>
+    </div>
+
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <!--<li>Uppgift för Quizlet</li>
+
+     <li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1a">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1b">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1c">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+      </ol>
+     </li>
+
+     <li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2a">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2b">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2c">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+      </ol>
+     </li>-->
+
+     <li>Låt A = {a, b,c}, B={b,c,d} och C={c,d,e}. Vilken mängd beskriver uttrycket?
+      <table>
+       <tr><th>Påstående</th><th>{d} </th><th>{b, c} </th><th>{c, d} </th><th>{a, b, c, d} </th><th>{b, c, d, e} </th></tr>
+       <tr><td>\( A \cup B \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td>\( A \cap B \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td>\( A \cap B\cap C \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td>\( B \cup C \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td>\( (A \cup B) \cap C \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td>\( A \cup (B \cap C) \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer"> <p>
+        <table>
+         <tr><th>Påstående</th><th>{d} </th><th>{b, c} </th><th>{c, d} </th><th>{a, b, c, d} </th><th>{b, c, d, e} </th></tr>
+         <tr><td>\( A \cup B \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+         <tr><td>\( A \cap B \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+         <tr><td>\( A \cap B\cap C \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+         <tr><td>\( B \cup C \) </td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+         <tr><td>\( (A \cup B) \cap C \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+         <tr><td>\( A \cup (B \cap C) \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+        </table>
+       </p></div></div>
+     </li>
+
+     <li>Kombinera rätt beteckning med rätt Venn diagram.
+      <p>Välj bland uttrycken: \( A \cup B \), \( \overline{A \cap B} \), \( \overline{A \cup B} \), \( \overline{A} \cup B \), \( A \cap B \) och \( A \cup \overline{B} \).</p>
+      <table>
+       <tr><td> </td><td><img src="pics/6-1.png" alt=""  class="responsivepic250" /></td></tr>
+       <tr><td> </td><td><img src="pics/6-2.png" alt=""  class="responsivepic250" /></td></tr>
+       <tr><td> </td><td><img src="pics/6-3.png" alt=""  class="responsivepic250" /></td></tr>
+       <tr><td></td><td><img src="pics/6-4.png" alt=""  class="responsivepic250" /></td></tr>
+       <tr><td> </td><td><img src="pics/6-5.png" alt=""  class="responsivepic250" /></td></tr>
+       <tr><td> </td><td><img src="pics/6-6.png" alt=""  class="responsivepic250" /></td></tr>
+      </table>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>
+        <table>
+         <tr><td>\( A \cup B \) </td><td><img src="pics/6-1.png" alt=""  class="responsivepic250" /></td></tr>
+         <tr><td>\( A \cap B \) </td><td><img src="pics/6-2.png" alt=""  class="responsivepic250" /></td></tr>
+         <tr><td>\( \overline{A \cup B} \) </td><td><img src="pics/6-3.png" alt=""  class="responsivepic250" /></td></tr>
+         <tr><td>\( \overline{A} \cup B \) </td><td><img src="pics/6-4.png" alt=""  class="responsivepic250" /></td></tr>
+         <tr><td>\( \overline{A \cap B} \) </td><td><img src="pics/6-5.png" alt=""  class="responsivepic250" /></td></tr>
+         <tr><td>\( A \cup \overline{B} \) </td><td><img src="pics/6-6.png" alt=""  class="responsivepic250" /></td></tr>
+        </table>
+       </p></div></div>
+     </li>
+
+     <!--<li>Uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="11">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="12">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="13">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="14">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="15">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5a">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5b">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5c">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+      </ol>
+     </li>-->
+
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaA10">
+   <a href="10_betingad.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="12_upprepat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

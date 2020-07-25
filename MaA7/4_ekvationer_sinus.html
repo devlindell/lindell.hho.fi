@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>4. Ekvationer med sinus</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="3_egenskaper.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="5_ekvationer_cosinus.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>4. Ekvationer med sinus</h1>
+      <section>
+        <div class="theory">
+          <p>Vi har tidigare märkt att i en enhetscirkel ger sinus för en vinkel y-koordinaten för periferipunkten, punkten på cirkeln. Då vi speglar periferipunkten i y-axeln märker vi att på bägge sidor om y-axeln har vi en vinkel som ger samma värde.</p>
+          <p><img src="pics/4-1-1.png" alt="" class="responsivepic400" /></p>
+          <p>I bilden gäller att \( \alpha = \pi - \beta \). Vi får att ekvationen \( \sin \alpha =a \) har två lösningar. Vinklarna \( \alpha_0 \) och supplementvinkeln \( 180^{\circ} -\alpha_0 \). Dessutom gäller att när vi har gått ett helt varv, \( 2\pi \), får vi samma värde. Vi talar om att vi har vinklarna \( \alpha_0 \) och \( \pi -\alpha_0 \) och deras multiplar, \( n\cdot 2\pi \).</p>
+          <p>Lösningarna skriver vi som
+          <ul>
+            <li>\( \alpha = \alpha_0 + n\cdot 360^{\circ} \) och</li>
+            <li>\( \alpha = 180^{\circ}-\alpha_0 + n\cdot 360^{\circ} \) där n är ett heltal</li>
+          </ul>
+          eller som
+          <ul>
+            <li>\( \alpha = \alpha_0 + n\cdot 2\pi \) och</li>
+            <li>\( \alpha = \pi-\alpha_0 + n\cdot 2\pi \) där n är ett heltal.</li>
+          </ul></p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm de vinklar så att \( \sin 2 \alpha = 1 \)
+            <h4>Lösning</h4>
+            <p>Vi vet att för \( \sin \alpha = 1 \) gäller att \( \alpha = \dfrac{\pi}{2} \).</p>
+            <p>Det betyder att \( 2\alpha = \dfrac{\pi}{2} \Leftrightarrow \alpha = \dfrac{\pi}{4} \).</p>
+            <p>Eftersom perioden för sinus är \( 2\pi \) måste vi även beakta den när vi löser ekvationen.</p>
+            <p>Vi får</p>
+            <p>\( \begin{array}{rcll} 2 \alpha  & = &  \dfrac{\pi}{2} + n\cdot 2 \pi & | /2\\ \\ \alpha  & = &  \dfrac{\pi}{4} + n\cdot \pi \end{array} \)</p>
+            <p>där n är ett heltal, \( \mathbf{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Bestäm de vinklar som det gäller att \( \sin \alpha = \sin 2\alpha \).
+            <h4>Lösning</h4>
+            <p>De vinklar som uppfyller villkoret är de vinklar där \( \alpha = 2\alpha \) och supplementvinklarna \( \alpha = \pi - 2\alpha \). För för vinklarna gäller att värdena upprepas med en viss period, \( 2\pi \).</p>
+            <p>Vi får att</p>
+            <p>\( \begin{array}{rclcrcl} \sin \alpha  & = &  \sin 2\alpha \\ \alpha  & = &  2\alpha + n\cdot 2\pi  & \text{ eller }  &  \alpha  & = & \pi - 2\alpha + n\cdot 2\pi \\ -\alpha  & = &  n\cdot 2\pi  & \text{ eller } &  3\alpha  & = &  \pi + n\cdot 2\pi \\ \alpha  & = &  n\cdot 2\pi  & \text{ eller } &  \alpha  & = &  \dfrac{\pi}{3} + n\cdot \dfrac{2\pi}{3}, n \in \mathbb{Z} \\ \end{array} \)</p>
+            <p>Märk att \( -\alpha = n\cdot 2\pi \Leftrightarrow \alpha = n\cdot 2\pi \) eftersom n är ett heltal.</p>
+          </div>
+          <div class="summary box">
+            <h4>För ekvationer med sinus gäller följande</h4>
+            <p>Ekvationen \(  \sin \alpha = a \)</p>
+            <p>\( \alpha = \alpha_0 + n\cdot 360^{\circ} \) och</p>
+            <p>\( \alpha = 180^{\circ}-\alpha_0 + n\cdot 360^{\circ} \) där n är ett heltal</p>
+            <p>eller som</p>
+            <p>\( \alpha = \alpha_0 + n\cdot 2\pi \) och</p>
+            <p>\( \alpha = \pi-\alpha_0 + n\cdot 2\pi \) där n är ett heltal.</p>
+          </div>
+          <div class="summary box">
+            <h4>Sinus på räknaren</h4>
+            <p>Ekvationen \( \sin \alpha = 0,6 \) kan man lösa på olika sätt på räknare
+              <ul>
+ 	              <li>På en vanlig räknare skriver man in sin-1 (0,6). Den vinkel som du får är i intervallet 0 till 90<sup>o</sup>, 0 till \( \dfrac{\pi}{2} \) radianer. Resten lösningar får du med hjälp av enhetscirkeln.</li>
+ 	              <li>På räknarprogram (GeoGebra, TI-Nspire CAS) gäller solve(sin x = 0.6,x). Eftersom de vill ge exakta värden är kommandot nsolve i bland bättre.</li>
+              </ul></p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm de exakta värdena av sinus för följande vinklar
+            <table>
+              <tr><th></th><th>0</th><th>\( \dfrac{1}{2} \)</th><th>\( \dfrac{1}{\sqrt{2}} \)</th><th>\( \dfrac{\sqrt{3}}{2} \)</th><th>1</th></tr>
+              <tr><td>\( \sin 0 \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{6} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{4} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{3} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{2} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{2\pi}{3} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{3\pi}{4} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{5\pi}{6} \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \pi \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+            <table>
+              <tr><th></th><th>0</th><th>\( \dfrac{1}{2} \)</th><th>\( \dfrac{1}{\sqrt{2}} \)</th><th>\( \dfrac{\sqrt{3}}{2} \)</th><th>1</th></tr>
+              <tr><td>\( \sin 0 \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{6} \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{4} \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{3} \)</td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{\pi}{2} \)</td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\( \sin \dfrac{2\pi}{3} \)</td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{3\pi}{4} \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+              <tr><td>\( \sin \dfrac{5\pi}{6} \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin \pi \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+             </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Lös ekvationen \( \sin 3\alpha = \dfrac{1}{\sqrt{2}} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>För vinkeln \( \alpha = \dfrac{1}{\sqrt{2}} \) gäller att \( \alpha = \dfrac{\pi}{4} \). Dessutom gäller att \( \pi -\alpha = \dfrac{\pi}{4} \)</p>
+              <p>Vi måste beakta bägge vinklarna!</p>
+              <p>Vi får</p>
+              <p>\( \begin{array}{rcll}  3 \alpha  & = &  \dfrac{\pi}{4} +n\cdot 2\pi  & | \text{ Perioden!} \\ \\  \alpha  & = &  \dfrac{\pi}{12} +n\cdot \dfrac{2\pi}{3}  \end{array} \)</p>    <p >och</p>    <p>\( \begin{array}{rcll}   \pi- 3 \alpha  & = &  \dfrac{\pi}{4} +n\cdot 2\pi  & | \text{ Perioden!} \\     - 3 \alpha  & = &  \dfrac{\pi}{4} -\pi +n\cdot 2\pi  \\     - 3 \alpha  & = &  -\dfrac{3\pi}{4} +n\cdot 2\pi   & | /(-3) \\    \alpha  & = &  \dfrac{\pi}{4} -n\cdot \dfrac{2\pi}{3}    \end{array} \)</p>
+              <p>Sätter vi in negativa värden i \( -n\cdot \dfrac{2\pi}{3} \) får vi samma som om vi skulle sätta positiva värden i \( n\cdot \dfrac{2\pi}{3} \). Vi kan skriva perioden som \( n\cdot \dfrac{2\pi}{3} \).</p>    <p>Lösningarna är \( \alpha = \dfrac{\pi}{12} +n\cdot \dfrac{2\pi}{3} \) och \( \alpha = \dfrac{\pi}{4}+n\cdot \dfrac{2\pi}{3} \).</p> </div></div>
+          </li>
+
+          <li>Lös ekvationen \( \sin \dfrac{\alpha}{6}=0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi får att</p>    <p >\( \begin{array}{rclcrcl}  \dfrac{\alpha}{6}  & = &  0+ n\cdot2\pi  &  \text{ eller }  &  \dfrac{\alpha}{6}  & = &  \pi - 0 + n\cdot2\pi \\  \alpha  & = &  n\cdot 12\pi  &  \text{ eller }  &  \alpha  & = &  6\pi + n\cdot 12 \pi, n \in \mathbb{Z}\\  \end{array} \)</p>    <p>Lösningarna till vänster är \( \ldots, -12\pi, 0, 12\pi, \ldots \) och till höger \( \ldots, -6\pi, 6\pi, 18\pi,\ldots \) </p>    <p>Vi kan inte kombinera lösningarna.</p> </div></div>
+          </li>
+
+          <li>Lös ekvationen \( 4\sin \dfrac{\alpha}{6}=2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi får att \( \sin\dfrac{\alpha}{6} = \dfrac{1}{2} \) som vi delar upp:</p>    <p>\( \begin{array}{rclcrcl}  \dfrac{\alpha}{6}  & = &  \dfrac{\pi}{6}+n\cdot 2\pi  & \text{ eller }  &  \dfrac{\alpha}{6}  & = & \dfrac{5\pi}{6}+n\cdot 2\pi, n \in \mathbb{Z} \\  \alpha  & = &  \pi + n\cdot 12\pi  & \text{ eller }  &  \alpha  & = &  5\pi + n\cdot 12\pi \\  \end{array} \)</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( \sin 2\alpha = -\sin\alpha \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi börjar med att skriva \( -\sin\alpha \)  som \( \sin(-\alpha) \). Ekvationen ser ut som följande, \( \sin 2\alpha = \sin(-\alpha) \).</p>    <p >Vi får att</p>    <p>\( \begin{array}{rclcrcl}  2 \alpha  & = &  -\alpha +n\cdot 2\pi  & \text{ eller }  &  2\alpha  & = & \pi -(-\alpha)+n\cdot 2\pi, n\in \mathbb{Z} \\  3 \alpha  & = &  n\cdot 2\pi  & \text{ eller }  &  \alpha  & = &  \pi +n\cdot 2\pi \\  \alpha  & = &  n\cdot\dfrac{2\pi}{3}  & \text{ eller }  &  \alpha  & = &  \pi +n\cdot 2\pi, n \in \mathbb{Z}\\  \end{array} \)</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( \sin x = \sin 3x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"><p>Vi får</p>    <p>\( \begin{array}{rcll}  x  & = &  3x + n\cdot 2\pi \\  -2x  & = &  n\cdot 2\pi  & | /-2\\  x  & = &  -n\cdot \pi  \end{array} \)</p>    <p>Eftersom n är ett heltal är \( -n\cdot \pi \) samma som \( n\cdot \pi \).</p>    <p>Den andra möjligheten är</p>    <p>\( \begin{array}{rcll}    x  & = &  \pi -3x +n\cdot 2\pi \\    4x  & = &  \pi +n\cdot 2\pi  & | /4\\     x  & = &  \dfrac{\pi}{4} + n\cdot \dfrac{\pi}{2} \\    \end{array} \)</p>    <p>Alltså \( x=n\pi \) och \( x=\dfrac{\pi}{4}+n\dfrac{\pi}{2} \).</p> </div></div>
+              <ol>
+                <li><i class="fas fa-cogs fa-2x level"></i>Från uppgiften ovan, bestäm de lösningar som är i intervallet \( -\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2} \).
+                    <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                    <div class="collapse" id="7a">
+                    <div class="card card-body answer"> <p>Den första lösningen ger vinklarna \( \ldots, -\pi, 0, \pi ,2\pi,\ldots \) där 0 är i intervallet \( -\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2} \).</p>    <p>Den andra lösningen ger vinklarna \( \ldots, -\dfrac{3\pi}{4}, -\dfrac{\pi}{4}, \dfrac{\pi}{4}, \dfrac{3\pi}{4}, \ldots \) där \( -\dfrac{\pi}{4} \) och \( \dfrac{\pi}{4} \) är i intervallet \( -\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2} \) .</p>    <p>Alltså vinklarna \( -\dfrac{\pi}{4}, 0, \dfrac{\pi}{4} \).</p> </div></div>
+                </li>
+              </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilka vinklar gäller att \( (\sin x)(\sin x +1)=0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi utnyttjar nollregeln och får</p>    <p>\( \begin{array}{rcll}  \sin x  & = &  0 \\  x  & = &  0 +n \cdot \pi\\  \end{array} \)</p>    <p>och&nbsp;</p>    <p>\( \begin{array}{rcll}  \sin x +1  & = &  0 \\  \sin x   & = &  -1 \\   x  & = &  \dfrac{3\pi}{2} +n\cdot 2\pi \\  \end{array} \)</p>    <p>Alltså \( x=n\cdot \pi \) och \( x=\dfrac{3\pi}{2}+n\cdot 2\pi \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös \( 2\sin^2 \alpha -\sin \alpha =1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi substituerar \( \sin \alpha = x \).</p>    <p >Då får vi\( 2x^2 -x -1 =0 \). Då vi löser andragradsekvationen får vi \( x=-\dfrac{1}{2} \) och \( x=1 \).</p>    <p>Alltså&nbsp;</p>    <p>\( \begin{array}{rcll}  \sin \alpha  & = &  -\dfrac{1}{2} \\ \\  \alpha  & = &  \dfrac{7\pi}{6} +n\cdot 2\pi   & \text{ och }\\ \\  \alpha  & = &  \dfrac{11\pi}{6} +n\cdot 2\pi  \end{array} \)</p>    <p>och</p>    <p>\( \begin{array}{rcl}  \sin \alpha  & = &  1 \\  \alpha  & = &  \dfrac{\pi}{2} + n\cdot 2\pi\\  \end{array} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \( 2\sin^2 x -\sin x =0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi bryter ut det gemensamma \( \sin x (2\sin x -1)=0 \) och tillämpar nollregeln.</p>    <p >\( \begin{array}{rclcrcl}  \sin x  & = & 0  & \text{ eller }  &  2\sin x -1  & = & 0 \\  x  & = &  0 + n\cdot 2\pi  &   &  \sin x  & = &  \dfrac{1}{2} \\   &   &   &   &  x  & = &  \dfrac{\pi}{6} +n\cdot 2\pi \\  \end{array} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \( \sin^2 x + \sin x =2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi substituerar \( \sin x = t \). Vi får att \( t^2+t = 2 \Leftrightarrow t^2+t-2=0 \), som vi löser med rotformeln, \( t=\dfrac{-1\pm\sqrt{1^2-4\cdot1(-2)}}{2\cdot 1} = \dfrac{-1\pm\sqrt{9}}{2} = \dfrac{-1\pm 3}{2} \). Vi har alltså t=1 och t=-2.</p>    <p>Vi substituerar tillbaka och får då att \( \sin x = 1 \) och att \( \sin x = -2 \)</p>    <p>\( \sin x = -2 \) uppfylls aldrig eftersom värdemängden för sinus är mellan -1 och 1. \( \sin x = 1 \) har lösningarna \( \dfrac{\pi}{2} + n\cdot 2\pi, n\in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="3_egenskaper.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="5_ekvationer_cosinus.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

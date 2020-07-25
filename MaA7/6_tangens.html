@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Tangens och dess egenskaper</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_ekvationer_cosinus.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="7_ekvationer_tangens.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Tangens och dess egenskaper</h1>
+      <section>
+        <div class="theory">
+          <p>Hittils har vi bekantant oss med sinus och cosinus. Till nästa tar vi och lär oss om tangens. Tangens får vi genom att bilda förhållandet \( \dfrac{\sin x}{\cos x} \).</p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm definitionsmängden för tangens.
+            <h4>Lösning</h4>
+            <p>Eftersom nämnaren inte får få värdet noll så är tangens definierad då \( \cos \alpha \not=0 \). Alltså då \( \alpha \not= \dfrac{\pi}{2}+n\cdot \pi, n \in \mathbb{Z} \).</p>
+          </div>
+          <p>Då vi kommer ihåg att \( \sin \alpha = \dfrac{\text{motstående katet}}{\text{hypotenusa}} \) och \( \cos \alpha = \dfrac{\text{närliggande katet}}{\text{hypotenusa}} \) får vi att \( \tan \alpha = \dfrac{\sin \alpha}{\cos \alpha} = \dfrac{\dfrac{\text{motstående katet}}{\text{hypotenusa}}}{\dfrac{\text{närliggande katet}}{\text{hypotenusa}}} = \dfrac{\text{motstående katet}}{\text{närliggande katet}} \).</p>
+          <p>I enhetscirkeln är periferipunktens x-koordinat \( \cos \alpha \) och y-koordinat \( \sin \alpha \). Det betyder att \( \tan \alpha \) är förhållandet mellan periferipunktens koordinater.</p>
+          <p><img class="responsivepic400" src="pics/5-1.png" alt="" /></p>
+          <p>För att bestämma ett värde för \( \tan \alpha \) ser vi förbi periferipunkten och går till skärningspunkten mellan vinlens linje och linjen \( x=1 \), punkt C. Därifrån avläser vi y-koordinaten, punkt D, för att få ett värde för \( \tan \alpha \).</p>
+          <p>Vi talar om att punkten C är tangentpunkten för vinkeln \( \alpha \). Koordinaterna för tangetpunkten är \( (1, \tan \alpha) \).</p>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Låt \( \sin \alpha = \dfrac{2}{5} \) och \( \cos \alpha = \dfrac{4}{7} \). Bestäm \( \tan \alpha \).
+            <h4>Lösning</h4>
+            <p>Vi har \( \tan \alpha = \dfrac{\sin\alpha}{\cos\alpha} = \dfrac{\dfrac{2}{5}}{\dfrac{4}{7}} = \dfrac{2}{5}\cdot \dfrac{7}{4} = \dfrac{7}{10} \).</p>
+          </div>
+          <h3>Periodicitet och symmetri hos tangens</h3>
+          <p>Eftersom tangens är y-koordinaten för tangentpunkten märker vi att två vinklar ger samma värde, \( \alpha \) och \( \pi +\alpha \). Vi adderar till ett halvt varv, 180o eller \( \pi \) radianer, och får samma tangetpunkt. Detta kan vi göra med perioden \( \pi \). Perioden hos tangens är alltså \( \pi \).</p>
+          <p><img class="responsivepic400" src="pics/5-2.png" alt="" /></p>
+          <p>Alltså gäller \( \tan \alpha = \tan (\alpha + n\cdot \alpha) \) där \( n \in \mathbf{Z} \).</p>
+          <p>Vidare märker vi att</p>
+          <p><img class="responsivepic400" src="pics/5-3.png" alt="" /></p>
+          <p>Vinklarna \( \alpha \) och \( \pi-\alpha \) ger varandras motsatta tal.</p>
+          <p>Alltså \( \tan \alpha = -\tan(\pi -\alpha) \).</p>
+          <p>Då vi jämför tangens för vinklarna \( \alpha \) och \( -\alpha \) märker vi att de ger varandras motsatta tal.</p>
+          <p><img class="responsivepic400" src="pics/5-4.png" alt="" /></p>
+          <p>Alltså \( \tan \alpha = -\tan(-\alpha) \).</p>
+          <div class="summary box">
+            <p>Tangens definieras som, \( \tan x = \dfrac{\sin x}{\cos x} \).</p>
+            <p>Definitionsmängden för tangens är alla reella tal förutom \( \alpha \not= \dfrac{\pi}{2}+n\cdot \pi, n \in \mathbb{Z} \).</p>
+            <p>Perioden för tangens är \( \pi \).</p>
+            <p>För tangens gäller att \( \tan \alpha = \tan (\alpha + n\cdot \alpha) = -\tan(\pi -\alpha) = -\tan(-\alpha) \).</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Låt \( \sin\alpha = \dfrac{2}{3} \) och \( \cos\alpha=\dfrac{5}{6} \). Bestäm \( \tan\alpha \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>\( \tan \alpha = \dfrac{\sin\alpha}{\cos\alpha} = \dfrac{\dfrac{2}{3}}{\dfrac{5}{6}} = \dfrac{2}{3} \cdot \dfrac{6}{5} = \dfrac{4}{5} \).</p> </div></div>
+          </li>
+
+          <li>Låt \( \sin\alpha = \dfrac{1}{2} \) och \( \cos\alpha=\dfrac{3}{4} \). Bestäm \( \tan\alpha \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>\( \tan \alpha = \dfrac{\sin\alpha}{\cos\alpha} = \dfrac{\dfrac{1}{2}}{\dfrac{3}{4}} = \dfrac{1}{2} \cdot \dfrac{4}{3} = \dfrac{2}{3} \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Vi talar om att de trigonometriska funktionerna har teckenschema. Det betyder om de är positiva eller negativa i en viss kvadrant, område i koordinatsystemet. Rita ett koordniatsystem i ditt häfte och bestäm teckenschemat för tangens genom att studera teckenschemat för sinus och cosinus. Skriv plus eller minus i rätt kvadrant.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \( \begin{array}{c|c}-&+ \\ \hline + & - \\ \end{array} \) </p></div></div>
+          </li>
+
+          <li>Bestäm på Geogebra appletten tangensvärdet för följande vinklar genom att flytta på punkten A. Vissa vinklar får du inte helt exakt men jobba med det som är närmast. Svara med två decimalers noggrannhet.</p>
+            <div class="geogebra">
+              <iframe height="448px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/g3DeWZZJ/width/442/height/448/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/false" style="border:0px;" title="Tangenspunkter" width="442px"></iframe>
+            </div>
+            <ol><li>\( \tan 30^{\circ} \)</li>
+              <li>\( \tan 45^{\circ} \)</li>
+              <p>Hur får du följande vinklar? Utnyttja symmetrin i tangens.</p>
+              <li>\( \tan 220^{\circ} \)</li>
+              <li>\( \tan 140^{\circ} \)</li>
+            </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <ol><li>\( \tan 30^{\circ}=0,58 \)</li>
+                <li>\( \tan 45^{\circ}=1,00 \)</li>
+                <li>\( \tan 220^{\circ}=0,85 \)</li>
+                <li>\( \tan 140^{\circ}=-0,84 \)</li>
+              </ol> </div></div>
+          </li>
+
+          <li>Bestäm värdet av tangens genom att du vet periferipunktens koordinater.
+            <ol>
+              <li>Vinkeln 0<sup>o</sup> har periferipunkten \( (1,0) \). \( \tan0^{\circ} \) har då värdet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\( \tan \alpha = \dfrac{\sin \alpha}{\cos \alpha} = \dfrac{0}{1} = 0 \).</p> </div></div> </li>
+              <li>Vinkeln \( \dfrac{3\pi}{4} \) har periferipunkten \( (-\dfrac{1}{\sqrt{2}},\dfrac{1}{\sqrt{2}}) \). \( \tan \dfrac{3\pi}{4} \) har då värdet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\( \tan \alpha = \dfrac{\sin \alpha}{\cos \alpha} = \dfrac{\frac{1}{\sqrt{2}}}{-\frac{1}{\sqrt{2}}} = -1 \)</p></div></div> </li>
+              <li>Vinkeln \( \dfrac{\pi}{3} \) har periferipunkten \( (\dfrac{1}{2},\dfrac{\sqrt{3}}{2}) \). \( \tan \dfrac{\pi}{3} \) har då värdet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\( \tan \alpha = \dfrac{\sin \alpha}{\cos \alpha} = \dfrac{\sqrt{3}}{2} / \dfrac{1}{2} = \dfrac{\sqrt{3}}{2} \cdot \dfrac{2}{1} =\sqrt{3} \).</p> </div></div> </li>
+              <li>Vinkeln 90<sup>o</sup> har periferipunkten \( (0,1) \). \( \tan90^{\circ} \) har då värdet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5d">
+              <div class="card card-body answer"><p>\( \tan \alpha = \dfrac{\sin \alpha}{\cos \alpha} = \dfrac{1}{0} \) är ej definierad.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm exakta värden på \( \cos\alpha \) och \( \tan \alpha \) då \( \sin\alpha=-\dfrac{3}{5} \) och \( \pi &lt; \alpha &lt; \dfrac{3\pi}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Eftersom \( \sin\alpha = \dfrac{3}{5} \) så är hypotenusans längd 5 och ena kateten har längden 3. Den andra katetens längd är \( \sqrt{5^2-3^2} = \sqrt{25-9} = \sqrt{16}=4 \).</p>    <p>Eftersom \( \pi &lt; \alpha &lt; \dfrac{3\pi}{2} \) så är \( \cos \alpha &lt;0 \) och \( \tan \alpha &gt;0 \).</p>    <p>Vi får att \( \cos \alpha = -\dfrac{4}{5} \) och \( \tan \alpha = \dfrac{3}{4} \).</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Vinkeln \( \alpha \) uppfyller villkoret \( 6\sin\alpha + 4\cos\alpha =0 \). Bestäm exakta värden för \( \sin\alpha \) och \( \cos\alpha \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\( 6\sin\alpha + 4\cos\alpha =0 \) ger oss att \( \tan \alpha = \dfrac{\sin\alpha}{\cos \alpha}=-\dfrac{4}{6}=-\dfrac{2}{3} \). Kateternas längder är alltså 2 och 3. Hypotenusans längd är \( \sqrt{2^2+3^2}=\sqrt{13} \).</p>    <p>Alltså \( \sin\alpha = \pm\dfrac{2}{\sqrt{13}} \) och \( \cos\alpha = \pm\dfrac{3}{\sqrt{13}} \).</p>    <p>Eftersom \( \tan \alpha \) skall vara negativ måste vi alternera tecknena.</p>    <p>Vinklarna är \( \sin\alpha = \dfrac{2}{\sqrt{13}} \) och \( \cos\alpha = -\dfrac{3}{\sqrt{13}} \) eller \( -\sin\alpha = \dfrac{2}{\sqrt{13}} \) och \( \cos\alpha = \dfrac{3}{\sqrt{13}} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>När vi bildade tangens utförde vi divisionen \( \dfrac{\sin x}{\cos x} \). Om vi utför divisionen \( \dfrac{\cos x}{\sin x} \) får vi tangens inversa funktion, cotangens, \( \cot x \). Bestäm definitionsmängden för \( \cot x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Eftersom \( \cot x = \dfrac{\cos x}{\sin x} \) är cotangens definierad i alla reella tal förutom då \( \sin x =0 \). Alltså då \( x= 0 +n\cdot \pi \) där \( n \in \mathbf{Z} \).</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="5_ekvationer_cosinus.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_ekvationer_tangens.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

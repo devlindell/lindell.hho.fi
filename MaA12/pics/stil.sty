@@ -1,0 +1,60 @@
+\ProvidesPackage{stil}								% muodostaa paketin htyo
+%\usepackage[ansinew]{inputenc}				% Windowsin merkist
+%\usepackage[T1]{fontenc}							% kkset
+\usepackage[swedish]{babel}
+\usepackage[applemac]{inputenc}				%ÅÄÖ för Mac
+%\usepackage[utf8]{inputenc}						% suomalaiset babel-makrot
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsfonts}								% AMS-paketit
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{psfrag}
+\usepackage{calc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+%\usepackage[official]{eurosym}
+
+%numereringen bold, bokstäver, små romska
+\renewcommand{\labelenumi}{\textbf{\arabic{enumi}.}}
+\renewcommand{\labelenumii}{\alph{enumii})}
+\renewcommand{\labelenumiii}{(\roman{enumiii})}
+
+\pagestyle{plain}
+
+\renewcommand{\descriptionlabel}[1]{$\cdot$}	% listan 'description' tunnisteen vaihto
+
+\newcommand{\N}{\mathbb{N}}					%joukko-opillisten merkkien lyhennys
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}{\mathbb{R}^n}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\ud}{\,\mathrm{d}}				% differentiaali
+\newcommand{\dx}{\,\ud x}							% dx
+\newcommand{\dy}{\,\ud y}							% dy
+
+\swapnumbers													% ensin numero, sitten Lemma, Lause,...
+
+\theoremstyle{plain}
+\newtheorem{sats}[equation]{Sats}
+\newtheorem{lemma}[equation]{Lemma}
+\newtheorem{bevis}[equation]{Bevis}
+
+\theoremstyle{definition}
+\newtheorem*{bev}{Bevis}
+\newtheorem{df}[equation]{Definition}
+\newtheorem{ex}[equation]{Exempel}
+
+\numberwithin{equation}{subsection}
+
+\theoremstyle{definition}
+\newtheorem*{labb}{Laboration}
+\newtheorem{uppg}[equation]{Uppgift}
+\newtheorem{fundera}[equation]{Fundera p}
+\newtheorem{exem}[equation]{Exempel}
+
+

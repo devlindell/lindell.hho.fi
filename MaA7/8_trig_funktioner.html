@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. De trigonometriska funktionerna</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_ekvationer_tangens.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="9_sammansatt_funktion.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. De trigonometriska funktionerna</h1>
+      <section>
+        <div class="theory">
+          <p>När vi behandlar sinus, cosinus och tangens som funktioner har vi vinkeln som funktion av värdemängden.</p>
+          <p>Genom att ändra på vinkeln, den gröna glidaren, skapar du enhetsciklen (svart) och funktionerna för sinus (grön), cosinus (röd) och tangens (blå). Märk hur funktionerna upprepar sig själv för varje varv på enhetscirkeln.</p>
+          <div class="geogebra">
+            <iframe style="border: 0px;" src="https://tube.geogebra.org/material/iframe/id/1519689/width/590/height/492/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="590px" height="492px" scrolling="no"></iframe>
+          </div>
+          <h3>De trigonometriska funktionerna har följande egenskaper:</h3>
+            <table>
+              <tbody>
+                <tr><td></td><td>Period</td><td>Definitionsmängd</td><td>Värdemängd</td></tr>
+                <tr><td>Sinus, \( f(x)=\sin x \)</td><td>\( 2\pi \)</td><td>De reella talen, \( \mathbb{R} \)</td><td>[-1,1]</td></tr>
+                <tr><td>Cosinus, \( f(x)=\cos x \)</td><td>\( 2\pi \)</td><td>De reella talen, \( \mathbb{R} \)</td><td>[-1,1]</td></tr>
+                <tr><td>Tangens, \( f(x)=\tan x \)</td><td>\( \pi \)</td><td>De reella talen förutom \( \dfrac{\pi}{2}+n\pi \)</td><td>De reella talen, \( \mathbb{R} \)</td></tr>
+              </tbody>
+            </table>
+            <p><img class="responsivepic600" src="pics/trigfunk_1.png" alt="" /></p>
+            <p>Genom att ändra på vinkeln, tex \( f(x)=\sin 2x \), eller genom att addera till får vi en lite annan funktion. Det får du göra i första uppgiften.</p>
+          </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Ändra på värdena, A och B, för funktionen \( f(x)=A\sin Bx \) i Geogebra Appen. Hur ändrar A och B på funktionens utseende och egenskaper?
+            <div class="geogebra">
+              <iframe style="border: 0px;" src="https://tube.geogebra.org/material/iframe/id/1520017/width/661/height/347/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="661px" height="347px" scrolling="no"></iframe>
+            </div>
+            <table>
+              <tbody>
+                <tr><th>Påstående</th><th>Värdemängden</th><th>Perioden</th></tr>
+                <tr><td>A ändrar på</td><td></td><td></td></tr>
+                <tr><td>B ändrar på</td><td></td><td></td></tr>
+              </tbody>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table>
+                <tbody>
+                  <tr><th>Påstående</th><th>Värdemängden</th><th>Perioden</th></tr>
+                  <tr><td>A ändrar på</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>B ändrar på</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                </tbody>
+              </table>
+             </div></div>
+          </li>
+
+          <li>Ändra på värdena, C och D, för funktionen \( f(x)=C+\sin (D+x) \) i Geogebra Appen. Hur ändrar C och D på funktionens utseende och egenskaper?
+            <div class="geogebra">
+              <iframe style="border: 0px;" src="https://tube.geogebra.org/material/iframe/id/1520023/width/661/height/347/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="661px" height="347px" scrolling="no"></iframe>
+            </div>
+            <table>
+              <tbody>
+                <tr><th>Påstående</th><th>Ändrar på värdemängden</th><th>Flyttar på funktionen i sidoled</th></tr>
+                <tr><td>C</td><td></td><td></td></tr>
+                <tr><td>D</td><td></td><td></td></tr>
+              </tbody>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+                <table>
+                  <tbody>
+                    <tr><th>Påstående</th><th>Ändrar på värdemängden</th><th>Flyttar på funktionen i sidoled</th></tr>
+                    <tr><td>C</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td>D</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  </tbody>
+                </table>
+               </div></div>
+          </li>
+
+          <li>Ändra på värdena, A och B, för funktionen \( f(x)=A\tan Bx \) i Geogebra Appen. Hur ändrar A och B på funktionens utseende och egenskaper?
+            <div class="geogebra">
+              <iframe style="border: 0px;" src="https://tube.geogebra.org/material/iframe/id/1520031/width/683/height/347/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="683px" height="347px" scrolling="no"></iframe>
+            </div>
+            <table>
+              <tbody>
+                <tr><th>Påstående</th><th>Flyttar den i sidled.</th><th>Ändrar på hur snabbt funktionen växer.</th><th>Ändrar på perioden.</th></tr>
+                <tr><td>A</td><td></td><td></td><td></td></tr>
+                <tr><td>B</td><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer">
+                <table>
+                  <tbody>
+                    <tr><th>Påstående</th><th>Flyttar den i sidled.</th><th>Ändrar på hur snabbt funktionen växer.</th><th>Ändrar på perioden.</th></tr>
+                    <tr><td>A</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                    <tr><td>B</td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td></tr>
+                  </tbody>
+                </table>
+               </div></div>
+          </li>
+
+          <li>Ändra på värdena, C och D, för funktionen \( f(x)=C+\tan (D+x) \) i Geogebra Appen. Hur ändrar C och D på funktionens utseende och egenskaper?
+            <div class="geogebra">
+              <iframe style="border: 0px;" src="https://tube.geogebra.org/material/iframe/id/1520041/width/683/height/347/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="683px" height="347px" scrolling="no"></iframe>
+            </div>
+            <table>
+              <tbody>
+                <tr><th>Påstående</th><th>Flyttar den uppåt och nedåt.</th><th>Flyttar den höger och väster.</th></tr>
+                <tr><td>C</td><td></td><td></td></tr>
+                <tr><td>D</td><td></td><td></td></tr>
+              </tbody>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer">
+                <table>
+                  <tbody>
+                    <tr><th>Påstående</th><th>Flyttar den uppåt och nedåt.</th><th>Flyttar den höger och väster.</th></tr>
+                    <tr><td>C</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td>D</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  </tbody>
+                </table>
+               </div></div>
+          </li>
+
+          <li>Det finns ett samband mellan sinus och cosinus. Ändra på värdena A, B, C och D för \( f(x)=A+B\cos(C+Dx) \) så att funktionen f är identisk med funktionen \( g(x)=\sin x \).Vilket är sambandet mellan sinus och cosinus?
+            <div class="geogebra">
+              <iframe style="border: 0px;" src="https://tube.geogebra.org/material/iframe/id/1520061/width/743/height/418/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="743px" height="418px" scrolling="no"></iframe>
+            </div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>\( \sin x = 1\cos(90^{\circ} - x) \) eller som \( \sin x = \cos(\dfrac{\pi}{2}-x) \).</p>
+                <p>Eller som \( \sin x = -1\cos(270^{\circ} - x) \) eller som \( \sin x = -\cos(\dfrac{3\pi}{2}-x) \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Para ihop rätt funktion med rätt graf. Försök göra det utan att rita upp dem.
+            <p>Välj bland uttrycken: \( y=\sin x, y=\cos x, y=\tan x, y=1 +\cos x, y=2\sin x, y=\cos 2x \)</p>
+            <p>Grafen av funktionerna är följande:</p>
+            <table>
+              <tbody>
+                <tr><td>a)</td><td> <img class="responsivepic250" src="pics/trigfunk_3.png" alt="" /></td><td>b)</td><td> <img class="responsivepic250" src="pics/trigfunk_4.png" alt="" /></td></tr>
+                <tr><td>c)</td><td> <img class="responsivepic250" src="pics/trigfunk_7.png" alt="" /></td><td>d)</td><td> <img class="responsivepic250" src="pics/trigfunk_2.png" alt="" /></td></tr>
+                <tr><td>e)</td><td> <img class="responsivepic250" src="pics/trigfunk_6.png" alt="" /></td><td>f)</td><td> <img class="responsivepic250" src="pics/trigfunk_5.png" alt="" /></td></tr>
+              </tbody>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer">
+                <table>
+                  <tbody>
+                    <tr><td>\( y=\sin x \)</td><td> <img class="responsivepic250" src="pics/trigfunk_2.png" alt="" /></td><td>\( y=\cos x \)</td><td> <img class="responsivepic250" src="pics/trigfunk_3.png" alt="" /></td></tr>
+                    <tr><td>\( y=\tan x \)</td><td> <img class="responsivepic250" src="pics/trigfunk_4.png" alt="" /></td><td>\( y=2\sin x \)</td><td> <img class="responsivepic250" src="pics/trigfunk_5.png" alt="" /></td></tr>
+                    <tr><td>\( y=\cos 2x \)</td><td> <img class="responsivepic250" src="pics/trigfunk_6.png" alt="" /></td><td>\( y=1+\cos x \)</td><td> <img class="responsivepic250" src="pics/trigfunk_7.png" alt="" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Välj för funktionerna rätt värdemängd och period. Det blir två kryss per rad.
+            <table>
+              <tr><th>Påstående</th><th>Värdemängden [-1,1]</th><th>Värdemängden [0,2]</th><th>Värdemängden [-2,2]</th><th>Perioden \( \pi \)<th>Perioden \( 2\pi \)</th></tr>
+              <tr><td>\( 2\sin x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 2\sin 2x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 1+\cos 2x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sin 2x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 2\cos x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 2\cos 2x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 1+\sin x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 1+\sin 2x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos 2x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 1+\cos x \)</td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th>Påstående</th><th>Värdemängden [-1,1]</th><th>Värdemängden [0,2]</th><th>Värdemängden [-2,2]</th><th>Perioden \( \pi \)<th>Perioden \( 2\pi \)</th></tr>
+                  <tr><td>\( 2\sin x \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \sin x \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( 2\sin 2x \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( 1+\cos 2x \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \sin 2x \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( 2\cos x \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \cos x \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( 2\cos 2x \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( 1+\sin x \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( 1+\sin 2x \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \cos 2x \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( 1+\cos x \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                </table>
+               </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="7_ekvationer_tangens.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_sammansatt_funktion.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

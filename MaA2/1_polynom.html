@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Polynom</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="2_distributiva.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Polynom</h1>
+      <section>
+        <div class="theory">
+          <p>Låt oss titta på uttrycket \(3x^2-4x-7\). Uttrycket består av tre termer, \(3x^2\), \(-4x\) och \(-7\). Termerna \(3x^2\) och \(-4x\) har bägge en boksatvsdel, variabel, och en sifferdel, koefficient.</p>
+          <p>För att ett polynom skall kallas för polynom måste det i alla fall innehålla en term med en variabel, tex \(4a\).</p>
+          <p>Består polynomet av en term talar vi om monom, två termer talar vi om ett binom och tre termer talar vi om trinom.</p>
+          <p>Då vi har ett polynom lika ett annat polynom eller ett tal har vi en ekvation. , tex \(x^2-x=4x\). Skillnaden mellan ett polynom och en ekvation är att ekvationen måste ha ett likamedstecken, medan ett polynom är ett bokstavsutryck. Polynomet kan sedan bildan en ekvation eller en funktion.</p>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+
+        <ol>
+          <li>Välj för uttrycket antal termer som det innehåller.
+            <table>
+              <thead><tr><th>Påstående</th><th>2 termer</th><th>3 termer</th><th>4 termer</th></tr></thead>
+              <tr><td>\(x^2 -1\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(-2x^2+4x+1\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(a+4\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(4x^3-4x^2-x+7\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(-2x^2-4xy+y-5\)</td><td></td><td></td><td></td></tr>
+              <tr><td>\(x^2-xy+y\)</td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+                <table>
+                  <thead><tr><th>Påstående</th><th>2 termer</th><th>3 termer</th><th>4 termer</th></tr></thead>
+                  <tr><td>\(x^2 -1\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(-2x^2+4x+1\)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\(a+4\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(4x^3-4x^2-x+7\)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\(-2x^2-4xy+y-5\)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\(x^2-xy+y\)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </div></div>
+            </li>
+
+            <li>Har vi ett monom, binom eller trinom? Välj rätt alternativ.
+              <table>
+                <thead><tr><th>Påstående</th><th>Monom</th><th>Binom</th><th>Trinom</th></tr></thead>
+                <tr><td>\(x^2-4\)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(4x^2-5x+7\)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(4a^3-b+2\)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(a\)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(2x-6\)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(x^5\)</td><td></td><td></td><td></td></tr>
+              </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+                <div class="card card-body answer">
+                  <table>
+                    <thead><tr><th>Påstående</th><th>Monom</th><th>Binom</th><th>Trinom</th></tr></thead>
+                    <tr><td>\(x^2-4\)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td>\(4x^2-5x+7\)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                    <tr><td>\(4a^3-b+2\)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                    <tr><td>\(a\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                    <tr><td>\(2x-6\)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                    <tr><td>\(x^5\)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  </table>
+                </div></div></li>
+
+                <li>Välj rätt alternativ för uttrycket. Har vi ett polynom eller en ekvation?
+                  <table>
+                    <thead><tr><th>Påstående</th><th>Polynom</th><th>Ekvation</th></tr></thead>
+                    <tr><td>\(x-4\)</td><td></td><td></td></tr>
+                    <tr><td>\(x-3=4\)</td><td></td><td></td></tr>
+                    <tr><td>\(5a=3(2-a)\)</td><td></td><td></td></tr>
+                    <tr><td>\(4n-m\)</td><td></td><td></td></tr>
+                    <tr><td>\(4x^4=3x\)</td><td></td><td></td></tr>
+                    <tr><td>\(0=3x^2-4x\)</td><td></td><td></td></tr>
+                  </table>
+                  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                  <div class="collapse" id="3">
+                    <div class="card card-body answer">
+                      <table>
+                        <thead><tr><th>Påstående</th><th>Polynom</th><th>Ekvation</th></tr></thead>
+                        <tr><td>\(x-4\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                        <tr><td>\(x-3=4\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                        <tr><td>\(5a=3(2-a)\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                        <tr><td>\(4n-m\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                        <tr><td>\(4x^4=3x\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                        <tr><td>\(0=3x^2-4x\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                      </table>
+                    </div></div>
+              </li>
+
+              <li>Skapa
+                <ol>
+                  <li>ett binom
+                    <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                    <div class="collapse" id="4a">
+                    <div class="card card-body answer">Något med två termer, tex \(x-2.\)</div></div>
+                  </li>
+                  <li>en ekvation
+                    <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                    <div class="collapse" id="4b">
+                    <div class="card card-body answer">Något med ett polynom och ett likamedstecken fungerar, tex \(4x = 3.\)</div></div>
+                  </li>
+                  <li><i class="fas fa-shapes fa-2x level"></i>en ekvation med ett trinom av tredje grad.
+                    <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                    <div class="collapse" id="4c">
+                    <div class="card card-body answer">Något i stil med \(x^3-3x=4.\) Tre stycken termer, likamedstecken och variabel upphöjt till 3 krävs.</div></div>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+      </section>
+
+
+    </article>
+    <footer class="MaA2">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_distributiva.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

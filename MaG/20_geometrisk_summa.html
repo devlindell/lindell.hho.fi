@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>20. Geometrisk summa</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="19_aritmetisk_summa.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="21_talfoljd_rekursiv.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>20. Geometrisk summa</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi häller saft i glas om på följande sätt: det första fyller vi helt, det andra till hälften, det tredje till en fjärdedel, det fjärde till en åttondel och så fortsätter vi tills vi fyllt 10 st glas. Hur mycket saft går åt?</p>
+            <h4>Lösning</h4>
+            <p>Vi får följande mängder</p>
+            <table>
+              <tbody>
+                <tr><td>Glas</td><td>Mängd</td></tr>
+                <tr><td>1</td><td>2 dl</td></tr>
+                <tr><td>2</td><td>1 dl</td></tr>
+                <tr><td>3</td><td>\(\dfrac{1}{2}\) dl</td></tr>
+                <tr><td>4</td><td>\(\dfrac{1}{2}\cdot \dfrac{1}{2}=\dfrac{1}{4}\) dl</td></tr>
+                <tr><td>5</td><td>\(\dfrac{1}{4}\cdot \dfrac{1}{2}=\dfrac{1}{8}\) dl</td></tr>
+                <tr><td>6</td><td>\(\dfrac{1}{8}\cdot \dfrac{1}{2}=\dfrac{1}{16}\) dl</td></tr>
+                <tr><td>7</td><td>\(\dfrac{1}{16}\cdot \dfrac{1}{2}=\dfrac{1}{32}\) dl</td></tr>
+                <tr><td>8</td><td>\(\dfrac{1}{32}\cdot \dfrac{1}{2}=\dfrac{1}{64}\) dl</td></tr>
+                <tr><td>9</td><td>\(\dfrac{1}{64}\cdot \dfrac{1}{2}=\dfrac{1}{128}\) dl</td></tr>
+                <tr><td>10</td><td>\(\dfrac{1}{128}\cdot \dfrac{1}{2}=\dfrac{1}{256}\) dl</td></tr>
+              </tbody>
+            </table>
+            <p>Vi märker att det är inte mycket saft som är i glasen. Summan av dessa får vi lättast på räknare. Summan är 3,996... dl. Alltså nästan 4 dl.</p>
+          </div>
+          <p>I introduktionen har vi en geometrisk talföljd eftersom mängden alltid minskar med samma faktor, kvot. För att kunna bestämma summan har vi inte något lätt sätt utan vi får vara mera matematiska av oss.</p>
+          <p>En geometrisk talföljd består av elementen \(a_1, a_2, a_3, \ldots, a_n\). Elementen skriver vi som</p>
+          <p>\(a_1= a_1\)</p>
+          <p>\(a_2 = a_1 \cdot q\)</p>
+          <p>\(a_3 = a_1 \cdot q^2\)</p>
+          <p>\(a_n = a_1 \cdot q^{n-1}\)</p>
+          <p>Summan, \(S_n = a_1 + a_1 \cdot q + a_1 \cdot q^2 + \ldots + a_1 \cdot q^{n-1}\) som vi multiplicerar med \(q\) och får \(qS_n = a_1 \cdot q+ a_1 \cdot q^2+ a_1 \cdot q^3 + \ldots + a_1 \cdot q^n\).</p>
+          <p>Skillnaden mellan dessa är</p>
+          <p>\(\begin{array}{rcl}
+            S_n -qS_n  & = &  a_1 -a_1q^n \\
+            S_n (1-q)  & = &  a_1(1-q^n)\\
+            S_n  & = &  \dfrac{a_1(1-q^n)}{1-q}\\
+            \end{array}\)</p>
+          <div class="summary box">
+           <p>Summan för en geometrisk talföljd är \(S_n = \dfrac{a_1(1-q^n)}{1-q}\) där</p>
+           <p>\(a_1\) är första elementet</p>
+           <p>\(q\) är kvoten mellan elementen</p>
+           <p>\(n\) är antal element.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm summan av de 15 första elementen för den geometriska talföljden \(a_n=2 + 2 \cdot 4 + 2 \cdot 4^2 + 2\cdot 4^3 +\ldots \).</p>
+            <h4>Lösning</h4>
+            <p>\(a_1 = 2\), \(q= 4\) och antal element, \(n=15\) st. \(S_n = \dfrac{2(1-4^{15})}{1-4}= 715827882\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Hur många element från talföljden \(3; 1,5 \cdot 3; 1,5^2 \cdot 3, \ldots\) skall adderas för att summan överstiger 900?</p>
+            <h4>Lösning</h4>
+            <p>Vi har \(a_1=3\), \(q=1,5\), \(n=?\). Vi får att</p>
+            <p>\(\begin{array}{rcll}
+              \dfrac{3(1-1,5^n)}{1-1,5}  &  >  &  900 \\
+              \dfrac{1-1,5^n}{-0,5}  &  >  &  300  & \mid \cdot -0,5\\
+              1-1,5^n  & < &  -150 \\
+              -1,5^n  & < &  -151 \\
+              1,5^n  &  >  &  151 \\
+              n  &  >  &  \log_{1,5} 151 \approx 12,37\\
+              \end{array}\)</p>
+              <p>I alla fall 13 st element.</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> För ett nyfött barn placeras 200 €. Vid varje födelsedag placeras i barnets namn 200 € ända tills barnet fyller 18 år. Hur stor summa kan hen lyfta om vi räknar med en årlig avkastning på 7 % och en kapitalskatt på 30 %.</p>
+              <h4>Lösning</h4>
+              <p>Den verkliga räntan är \(0,07\cdot 0,70 = 0,049\).</p>
+              <p>Vi gör följande tabell</p>
+              <p>\(\begin{array}{cl}
+                \text{År}  &  \text{Total summa} \\
+                1  &  200 \\
+                2  &  200\cdot 1,049 + 200 \\
+                3  &  200\cdot 1,049^2 + 200\cdot 1,049 +200 \\
+                4  &  200\cdot 1,049^3 + 200\cdot 1,049^2 +200\cdot 1,049 +200 \\
+                \vdots \\
+                19  &  200\cdot 1,049^{18} + 200\cdot 1,049^{17} + \ldots +200\cdot 1,049 +200 \\
+                \end{array}\)</p>
+                <p>\(a_1 = 200\), \(q=1,049\) och \(n=19\). Summan är \(\dfrac{200(1-1,049^{19})}{1-1,049} = 6047,41\) €, vilket är betydligt mera än \( 18 \cdot 200 = 3600 \) €.</p>  </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm summan av den geometriska talföljden \(2, 2^2, 2^3, \ldots 2^{15}\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>\(S_n = \dfrac{2(1-2^{15})}{1-2} = 65534\).</p> </div></div>
+          </li>
+
+          <li>Bestäm summan av den geometriska talföljden \(5, 2^{-1}\cdot 5, 2^{-2}\cdot 5, \ldots 2^{-20}\cdot 5\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>\(S_n=\dfrac{5(1-\frac{1}{2}^{21})}{1-\frac{1}{2}} = 9,99\ldots\).</p> </div></div>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\(\sum_{k=1}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\(\sum_{k=1}^{30} 2^k = \dfrac{2(1-2^{30})}{1-2} = 2147483646 \).</p> </div></div> </li>
+              <li>\(\sum_{k=10}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\(\sum_{k=10}^{30} 2^k = \dfrac{2^{10}(1-2^{21})}{1-2} = 2147482624\).</p> </div></div> </li>
+              <li>\(\sum_{k=20}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\(\sum_{k=20}^{30} 2^k = \dfrac{2^{20}(1-2^{11})}{1-2} = 2146435072\).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Hur många element från talföljden \(6; 6\cdot1,5; 6\cdot 1,5^2; \ldots\) skall adderas så att summan överstiger 500?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\(a_1 = 6\)</p>    <p>\(q= 1,5\)</p>    <p>\(n = ?\)</p>    <p>Vi får \(\dfrac{6(1-1,5^n)}{1-1,5} > 500\) som ger \(n > 9,26\).</p>    <p>Alltså 10 st.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i><p>För vilket värde på \(q\) gäller att de 50 första elementen från talföljden \(0,8 ; q \cdot 0,8; q^2\cdot 0,8, \ldots\) har summan 150?</p><p>Lös ekvationen på GeoGebra, använd dig av kommandot lös().</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>\(a_1 = 0,8\), \(n=50\) och summan är 150.</p>    <p>Vi får ekvationen \(\dfrac{0,8(1-q^{50})}{1-q}=150\) som har lösningen \(q=1,04655\ldots\).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Anna fondsparar så att varje månad placerar hon 20 € av sin lön. Fonden som hon sparar i har en årlig avkastning på 5,5 %. Hur stor summa kan Anna lyfta efter 10 år av sparande? Kom ihåg att beakta en kapitalskatt på 30 %.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"><p>Den månatliga räntan är \(\dfrac{5,5}{12} = 0,4583\ldots\). Då vi beaktar skatten är räntan varje månad \(0,4583\ldots\cdot 0,70 = 0,32083\ldots \approx 0,321\) %.</p>    <p>Vi gör en tabell</p>    <p>\(\begin{array}{cl}  \text{Månad}  &  \text{Total summa} \\  1  &  20 \\  2  &  20\cdot 1,00321 + 20 \\  3  &  20\cdot 1,00321^2 + 20\cdot 1,00321 + 20 \\  4  &  20\cdot 1,00321^3 + 20\cdot 1,00321^2 + 20\cdot 1,00321 + 20 \\  \ldots \\  120  &  20\cdot 1,00321^{119} + 20\cdot 1,00321^{118} + \ldots + 20\cdot 1,00321 + 20 \\  \end{array}\)</p>    <p>Vi har en geometrisk summa där \(a_1 = 20\), \(q=1,00321\) och \(n=120\). Summan är \(\dfrac{20(1-1,00321^{120})}{1-1,00321} = 2922,13 \)€.</p> </div></div>
+            <ol>
+              <li>Hur mycket borde hon placera per månad för att uppnå summan 5000 € under samma tid med samma avkastningsprocent? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Vi utnyttjar det som vi bildade ovan och får ekvationen \(\dfrac{a_1(1-1,00321^{120})}{1-1,00321} = 5000\) som ger \(a_1 = 34,22\) €.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Vid 2000-talet värderade man att oljan i de kända oljekällorna räcker för ännu 40 år. Hur länge skulle oljan räcka om man klarade av att minska förbrukningen med 1,5 % varje år?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="7t">
+            <div class="card card-body answer"> <p>Beteckna den totala mängden olja med tex \(a\). Hur mycket förbrukas per år före och efter att man minskar på konsumptionen? Hur får du in en geometrisk summa?</p> </div></div>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7">
+                <div class="card card-body answer"> <p>Vi namnger den totala mängden olja med \(a\). Varje år konsumeras \(\dfrac{1}{40}a\) av oljan. Då konsumptionen varje år skall minska med 1,5 % minskar det första året \(\dfrac{1}{40}a\cdot0,985\), andra året \(\dfrac{1}{40}a\cdot0,985^2\), tredje året \(\dfrac{1}{40}a\cdot0,985^3\) osv så att sista året är konsumptionen \(\dfrac{1}{40}a\cdot0,985^n\).</p>    <p>Mängden olja som är kvar är \(a-[\dfrac{1}{40}a\cdot0,985+\dfrac{1}{40}a\cdot0,985^2+\ldots+\dfrac{1}{40}a\cdot0,985^n] = \\ a-\dfrac{a}{40}(0,985+0,985^2+\ldots 0,985^n)\).</p>    <p>\(0,985+0,985^2+\ldots 0,985^n\) är en geometrisk summa, \(a_1=0,985\) och \(q=0,985\).</p>    <p>Vi får \(a-\dfrac{a}{40}(\dfrac{0,985(1-0,985^n)}{1-0,985})\).</p>    <p>Eftersom oljemängden skall ta slut så är uttrycket \(\dfrac{a}{40}(\dfrac{0,985(1-0,985^n)}{1-0,985})=a\) som har lösningen \(n=62,1 \) år.</p> </div></div>
+          </li>
+
+        </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="19_aritmetisk_summa.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="21_talfoljd_rekursiv.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>4. Kontinuitet hos en funktion</title>
+
+  </head>
+  <body>
+    <header class="MaA6">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärdet fören funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_derivprod.html">10. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="11_derivpotens.html">11. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="12_derivkvot.html">12. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersöking av rationella funktioner</a>
+            <a class="dropdown-item" href="14_repetition.html">14. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="3_gransvarde.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivatan</h3>
+      <a href="5_forandring.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>4. Kontinuitet hos en funktion</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+          <p>Vi undersöker kontinuiteten hos funktionen</p>
+          <p>\(f(x)= \left\{ \begin{array}{ll} x  &  \textrm{ , då } x<-1 \\ x^2-2  &  \textrm{ , då } x\geq -1 \\ \end{array}\right.\)</p>
+          </div>
+          <p>Funktionen \(f\) består av två delar och ser ut som följande:</p>
+          <p><img src="pics/kont-1.png" class="responsivepic600" /></p>
+          <p>Polynomfunktionerna \(x\) och \(x^2-2\) är kontinuerliga. Den punkt som intresserar oss är skarven, då \(x=-1\). Frågan som vi ställer oss är: kan vi röra oss från väster och höger över skarvpunkten utan att falla ner genom ett hål i funktionen?</p>
+          <p>Vi tar och undersöker gränsvärdet i punkten \(x=-1\) genom att närma oss den från vänster och höger.</p>
+          <p>Från vänster får vi gränsvärdet\(\lim_{x \to -1_{-}} f(x)= \lim_{x \to -1_{-}} x = -1\)</p>
+          <p>och från höger \(\lim_{x \to -1_{+}} f(x)= \lim_{x \to -1_{+}} x^2-2 = (-1)^2-2 =-1\) .</p>
+          <p>Vi har samma gränsvärde i punkten \(x=-1\). För att ännu försäkra oss att funktionen är kontinuerlig bildar vi funktionsvärdet, \(f(-1) = (-1)^2-2 =-1\).</p>
+          <p>Eftersom alla tre har samma värde är funktionen kontinuerlig i \(x=-1\). Vi kan dra slutsatsen att \(f\) är kontinuerlig.</p>
+          <div class="summary box">
+          <p>För att en funktion, \(f\) skall var kontinuerlig i en punkt, \(a\) skall</p>
+          <p>\(\lim_{x \to a} f(x) = f(a)\).</p>
+          <p>Eftersom vi kan bilda gränsvärdet från höger och vänster kan vi skriva det som är ovan som</p>
+          <p>\(\lim_{x \to a_{-}} f(x) = \lim_{x \to a_{+}} f(x)=f(a)\).</p>
+          </div>
+          <div class="exercise box">
+          <p><strong>Exemepl 1</strong> Är funktionen</p>
+          <p>\(f(x)= \left\{ \begin{array}{ll} 1  &  \textrm{, då } x=2 \\ x^3-2x^2-1  &  \textrm{, annars } \\ \end{array}\right.\)</p>
+          <p>kontiunerlig i de reella talen?</p>
+          <h4>Lösning</h4>
+          <p>Funktionen består av en polynomfunktion, \(x^3-2x^2-1\), som är kontinuerlig. Vi undersöker punkten \(x=2\) genom att bilda gränsvärdena och jämföra dem med funktionsvärdet.</p>
+          <p>Gränsvärdet i punkten 2 är \(\lim_{x \to 2_{-}} f(x)= \lim_{x \to 2_{-}}x^3-2x^2-1 = 2^3 -2\cdot 2^2-1 = -1\) och \(\lim_{x \to 2_{+}} f(x)= \lim_{x \to 2_{+}}x^3-2x^2-1 = 2^3 -2\cdot 2^2-1 = -1\).</p>
+          <p>Funktionsvärdet är \(f(2)=1\). Eftersom \(\lim_{x \to 2} f(x) \not= f(2)\) så är funktionen inte kontinuerlig i de reella talen.</p>
+          <p><img src="pics/kont-2.png" class="responsivepic400" /></p>
+          </div>
+          <div class="exercise box">
+          <p><strong>Exempel 2</strong> Rita funktionen \(f(x)= \mid x^2-1 \mid\) och undersök om den är kontinuerlig.</p>
+          <p>VIDEO KOMMER</p>
+          </div>
+
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Är funktionerna kontinuerliga eller inte kontinerliga?
+            <table>
+              <tr><th>Påstående</th><th>Kontinuerlig</th><th>Inte kontinuerlig (disskontinuerlig)</th></tr>
+              <tr><td> <img src="pics/4_1a.png" class="responsivepic250" /></td><td></td><td></td></tr>
+              <tr><td> <img src="pics/4_1b.png" class="responsivepic250" /></td><td></td><td></td></tr>
+              <tr><td> <img src="pics/4_1c.png" class="responsivepic250" /></td><td></td><td></td></tr>
+              <tr><td> <img src="pics/4_1d.png" class="responsivepic250" /></td><td></td><td></td></tr>
+              <tr><td> <img src="pics/4_1f.png" class="responsivepic250" /></td><td></td><td></td></tr>
+              <tr><td> <img src="pics/4_1e.png" class="responsivepic250" /></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="1t">
+              <div class="card card-body answer"> <p>Tänk att du cyklar. Cyklar du på en kontinerlig funktion faller du inte igenom, det finns inga hål i funktionen. Cyklar du på en inte kontinerlig funktion faller du igenom. </p></div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th>Påstående</th><th>Kontinuerlig</th><th>Inte kontinuerlig (disskontinuerlig)</th></tr>
+                  <tr><td> <img src="pics/4_1a.png" class="responsivepic250" /></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td> <img src="pics/4_1b.png" class="responsivepic250" /></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td> <img src="pics/4_1c.png" class="responsivepic250" /></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td> <img src="pics/4_1d.png" class="responsivepic250" /></td><td></td><td><<i class="fas fa-check"></i></td></tr>
+                  <tr><td> <img src="pics/4_1f.png" class="responsivepic250" /></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td> <img src="pics/4_1e.png" class="responsivepic250" /></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </div></div> </li>
+
+          <li>Ändra på värdet för \(a\) genom att föra glidaren till vänster och höger. För vilket värde på \(a\) är funktionen<p>\(f(x)= \left\{  \begin{array}{ll}  -x +3  &  \textrm{ , då } x\leq 2 \\  x+a  &  \textrm{ , då } x> 2 \\  \end{array}\right.\)<p>kontinuerlig?</p>
+            <div class="geogebra">
+                <iframe height="361px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/Q2vTh7FE/width/542/height/361/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/false" style="border:0px;" width="542px"></iframe>
+            </div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>Då \(a=-1\).</p></div></div>
+              <ol>
+
+          <li>Ersätt \(a\) med det värde du fick ovan och visa sedan att funktionen i uppgiften är kontinuerlig genom att bilda gränsvärdet och funktionsvärdet i skarvpunkten.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+             <div class="card card-body answer"> <p>\(\lim_{x \to 2_{-}} f(x) = \lim_{x \to 2_{+}} f(x) = f(2) = 1\) </p></div></div> </li>
+           </ol></li>
+
+          <li>Ändra på värdet för \(a\) genom att föra glidaren till vänster och höger. För vilket värde på \(a\) är funktionen<p>\(f(x)= \left\{  \begin{array}{ll}  -x^2 +3  &  \textrm{ , då } x<1 \\  x+a  &  \textrm{ , då } x\geq 1 \\  \end{array}\right.\)</p>    <p>kontinuerlig?</p>
+              <div class="geogebra">
+                  <iframe height="400px" scrolling="no" src="https://tube.geogebra.org/material/iframe/id/678325/width/500/height/400/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="500px"></iframe>
+              </div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Då \(a=1\).</p> </div></div>
+              <ol>
+
+          <li>Ersätt \(a\) med det värde du fick ovan och visa sedan att funktionen i uppgiften är kontinuerlig genom att bilda gränsvärdet och funktionsvärdet i skarvpunkten.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+             <div class="card card-body answer"> <p>\(\lim_{x \to 1_{-}} f(x) = \lim_{x \to 1_{+}} f(x) = f(1) = 2\).</p></div></div> </li>
+           </ol></li>
+
+          <li><p>Välj rätt svar för påståendet. Det finns endast 1 st rätt formulering. </p>
+            <p>För att en funktion skall vara kontinuerlig i en punkt \(x_0\) gäller att</p>
+            <table>
+              <tr><td>1.</td><td>\(\lim_{x \to x_{0_{-}}} f(x)=\lim_{x \to x_{0_{+}}} f(x)\)</td></tr>
+              <tr><td>2.</td><td>\(\lim_{x \to x_{0_{-}}} f(x)=\lim_{x \to x_{0_{+}}}f(x) = f(x_0)\)</td></tr>
+              <tr><td>3.</td><td>\(\lim_{x \to x_{0_{-}}} f(x) = f(x_0)\)</td></tr>
+              <tr><td>4.</td><td>\(\lim_{x \to x_{0_{-}}} f(x)=\lim_{x \to x_{0_{+}}} f(x)= f(x)\)</td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Rätt svar är 2, \(\lim_{x \to x_{0_{-}}} f(x)=\lim_{x \to x_{0_{+}}}f(x) = f(x_0)\).</p> </div></div> </li>
+
+          <li>Är funktionen<p>\(f(x)= \left\{  \begin{array}{ll}  x^2-1  &  \textrm{, då } x<2 \\  -x+5  &  \textrm{, då } x \geq 2 \\  \end{array}\right.\)</p><p>kontinuerlig i de reella talen?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Jo, \(\lim_{x \to 2_{-}} f(x) = \lim_{x \to 2_{+}} f(x) = f(2) = 3\).</p> </div></div> </li>
+
+          <li>Är funktionen<p>\(f(x)= \left\{  \begin{array}{ll}  2x-1  &  \textrm{, då } x<2 \\  \frac{1}{2}x^2  &  \textrm{, då } x \geq 2 \\  \end{array}\right.\)</p>    <p>kontinuerlig i de reella talen?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Nej, \(\lim_{x \to 2_{-}} f(x) = 3 \not= \lim_{x \to 2_{+}} f(x) = f(2) = 2\). </p></div></div> </li>
+
+          <li>För vilket värde på \(a\) är funktionen<p>\(f(x)= \left\{  \begin{array}{ll}  2x-1  &  \textrm{, då } x<2 \\  \frac{1}{2}x^2+a  &  \textrm{, då } x \geq 2 \\  \end{array}\right.\)</p><p>kontinuerlig?</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+           <div class="collapse" id="7t">
+           <div class="card card-body answer"> <p>Bilda uttrycken \(\lim_{x \to 2_{-}} f(x)\), \(\lim_{x \to 2_{+}} f(x)\) och \(f(2)\) och se till att uttrycken skall ha samma värde.</p> </div></div>
+
+             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7">
+            <div class="card card-body answer"> <p>\(\lim_{x\to 2_{-}} 2x-1 = 2(2)-1=3\)</p><p>\(\lim_{x\to 2_{+}} \frac{1}{2}x^2+a = \frac{1}{2}\cdot 2^2+a = 2+a\)</p><p>\(f(2)=\frac{1}{2}\cdot 2^2+a = 2+a\)</p>    <p>Dessa skall ha samma värde, \(3=2+a\), alltså \(a=1\).</p> </div></div> </li>
+
+           <li>För vilket värde på \(a\) gäller att<p>\(f(x)=\left\{  \begin{array}{ll}  x+a  & , x\geq -1 \\  -2x^2+1  & ,x<-1 \\  \end{array}  \right.\)</p>    <p>är kontinuerlig?</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8">
+            <div class="card card-body answer"> <p>\(f\) är kontinerlig då</p><p>\(\lim_{x\to -1_{-}} f(x) =\lim_{x\to -1_{-}} -2x^2+1 = -2(-1)^2+1 = -1\),</p>    <p>\(\lim_{x\to -1_{+}} f(x) =\lim_{x\to -1_{+}} x+a = -1+a\),</p>    <p>\(f(-1) = -1+a\).</p>    <p>Alltså \(-1+a=-1 \Leftrightarrow a=0\).</p> </div></div> </li>
+
+          <li>För vilket värde på \(a\) är funktionen<p>\(f(x)= \left\{  \begin{array}{ll}  x^2+a  &  \textrm{, då } x<-1 \\  x^3-x  &  \textrm{, då } x \geq -1 \\  \end{array}\right.\)</p><p>kontinuerlig?</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9">
+            <div class="card card-body answer"> \(\lim_{x \to -1_{-}} x^2+a = (-1)^2+a = 1+a\)<p>\(\lim_{x \to -1_{+}} x^3-x = (-1)^3-(-1) = 0\).</p>    <p>\(f(-1)=(-1)^3-(-1) = 0\).</p>    <p>Dessa skall ha samma värde \(1+a=0\), alltså \(a=-1\). </div></div> </li>
+
+          <li><p>Visa att \(f\) är kontinuerlig oberoende värdet på \(a\)</p><p>\(f(x)= \left\{  \begin{array}{ll}  x + a  &  x \geq 1 \\  ax^2 + 1  &  x<1\\  \end{array}  \right.\)</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10">
+            <div class="card card-body answer"> <p>Vi får </p><p>\(\lim_{x \to 1_{-}}ax^2+1 = a+1\) och</p><p>\(\lim_{x \to 1_{+}}x+a = 1+a\).</p><p>\(f(1)=1+a\). Alltså får vi alltid samma uttryck oberoende av \(a\).</p> </div></div> </li>
+
+          <li>Visa att \(f(x)=\mid x-2 \mid\) är kontinuerlig.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="11">
+            <div class="card card-body answer"> <p>Nollstället för \(x-2\) är \(x=2\).</p>
+              <p>Vi får att</p>
+              <p>\(\mid x-2 \mid =\left\{ \begin{array}{ll} x-2  & , x\geq 2 \\ -(x-2) &  , x< 2 \\ \end{array} \right.\)</p>
+              <p>som vi kan skriva som</p>
+              <p>\(f(x) =\left\{ \begin{array}{ll} x-2  & , x\geq 2 \\ -x+2 &  , x< 2 \\ \end{array} \right.\).</p>
+              <p>Kontinuiteten undersöker vi i \(x=2\) .</p>
+              <p>\(\lim_{x \to 2_{-}} f(x)= \lim_{x \to 2_{-}} -x+2 = -2+2 = 0\),</p>
+              <p>\(\lim_{x \to 2_{+}} f(x)= \lim_{x \to 2_{+}} x-2 = 2-2 = 0\) och </p>
+              <p>\(f(2)= 2-2 =0\).</p>
+              <p>Eftersom \(\lim_{x \to 2_{-}} f(x) = \lim_{x \to 2_{+}} f(x) = f(2)\) är \(f\) kontinuerlig.</p> </div></div> </li>
+
+          <li>Visa att \(f(x)=\mid x^2-x \mid\) är kontinuerlig.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="12">
+            <div class="card card-body answer"> <p>Eftersom vi har ett absolutbelopp måste vi skriva det utan absolutbelopp för att kunna analysera funktionen. \(x^2-x\) har nollställena \(x=0\) och \(x=1\). Vi skriver funktionen som</p>
+              <p>\(f(x)=\left\{ \begin{array}{ll} x^2-x  & , \text{annars} \\ -(x^2-x)  & ,\text{då } 0\leq x \leq 1 \\ \end{array} \right.\).</p>
+              <p>Vi måste undersöka kontinuiteten i bägge skarvarna.</p>
+              <p>I \(x=0\) får vi</p>
+              <p>\(\lim_{x\to 0_{-}} x^2-x = 0\),</p>
+              <p>\(\lim_{x\to 0_{+}} -(x^2-x) = 0\) och</p>
+              <p>\(f(0) = -(0^2-0) =0\).</p>
+              <p>I \(x=1\) får vi</p>
+              <p>\(\lim_{x\to 1_{-}} -(x^2-x) = -(1^2-1)=0\),</p>
+              <p>\(\lim_{x\to 0_{+}} x^2-x =1^2-1= 0\) och</p>
+              <p>\(f(1) = -(1^2-1) =0\).</p>
+              <p>Alltså är \(f\) kontinuerlig i bägge skarvpunkterna och kontinuerlig överallt.</p> </div></div> </li>
+
+          <li>Visa att \(f(x)=\mid x^2+a \mid\) är kontinuerlig oberoende av värdet på \(a\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="13t">
+            <div class="card card-body answer"> <p>Dela upp i fall beroende på \(a\) och undersök kontinuiteten för alla fall.</p></div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="13">
+            <div class="card card-body answer"> <p>Vi börjar med att söka nollställen för absolutbeloppet, \(x^2+a=0 \Leftrightarrow x^2=-a\).</p>
+              <p>Då \(a>0\) saknas nollställen för absolutbeloppet och vi får att \(f(x)=\mid x^2+a\mid = x^2+a\).</p>
+              <p>Då \(a=0\) har vi att \(f(x)=\mid x^2\mid =x^2\).</p>
+              <p>Då \(a<0\) gäller att</p>
+              <p>\(f(x)=\left\{ \begin{array}{ll} x^2+a,  & \text{annars}\\ -(x^2+a), &  -\sqrt{\mid -a\mid } \leq x \leq \sqrt{\mid -a\mid }\\ \end{array} \right.\).</p>
+              <p>Eftersom \(a<0\) gäller följande:</p>
+              <p>\(f(x)=\left\{ \begin{array}{ll} x^2-a,  & \text{annars}\\ -x^2+a, &  -\sqrt{a} \leq x \leq \sqrt{a}\\ \end{array} \right.\).</p>
+              <p>Kontinuiteten måste vi undersöka i \(-\sqrt{a}\) och i \(\sqrt{a}\).</p>
+              <p>I \(-\sqrt{a}\) gäller följande</p>
+              <p>\(\lim_{x \to-\sqrt{a}_{-}} x^2-a = (-\sqrt{a})^2-a=0\),</p>
+              <p>\(\lim_{x \to-\sqrt{a}_{+}} x^2-a = -(\sqrt{a})^2+a=0\) och</p>
+              <p>\(f(-\sqrt{a})=-(\sqrt{a})^2+a=0\).</p>
+              <p>I \(\sqrt{a}\) gäller följande</p>
+              <p>\(\lim_{x \to\sqrt{a}_{-}} x^2-a = -(\sqrt{a})^2+a=0\),</p>
+              <p>\(\lim_{x \to\sqrt{a}_{+}} x^2-a = (-\sqrt{a})^2-a=0\) och</p>
+              <p>\(f(\sqrt{a})=-(\sqrt{a})^2+a=0\).</p>
+              <p>\(f\) är alltså kontinuerlig oberende värdet på \(a\).</p> </div></div> </li>
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA6">
+      <a href="3_gransvarde.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="5_forandring.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

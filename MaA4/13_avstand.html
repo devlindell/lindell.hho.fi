@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>13. Avstånd mellan en punkt och en linje i rymden</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="6_geometri.html">6. Geometri med vektorer</a>
+            <a class="dropdown-item" href="7_xy-planet.html">7. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">8. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">9. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">10. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">11. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">12. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">13. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">14. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="12_skalart_geometriskt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="14_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>13. Avstånd mellan en punkt och en linje i rymden</h1>
+      <section>
+        <div class="theory">
+          <p>Som det sista i kursen tar vi och ser på avstånd mellan punkter och linjer och punkter och plan. Här är egentligen ingenting nytt utan vi tillämpar det som vi lärt oss från förut.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> En linje bestäms av punkten \(A =(2,1,3)\) och vektorn \(3\overline{i}-\overline{j}+\overline{k}\). Vilken punkt på linjen är närmast punkten \(P=(8,1,7)\)? Vilket är det kortaste avståndet mellan \(P\) och linjen?</p>
+            <h4>Lösning</h4>
+            <p>Närmast punkten \(P\) på linjen är den punkt därifrån vi kan rita en normal från linjen som går genom \(P\). Vi kallar denna punkt \(X\).</p>
+            <p><img src="pics/13-1.png" class="responsivepic400"/></p>
+            <p>Vi uttrycker att \(\overrightarrow{PX} = \overrightarrow{PA}+\overrightarrow{AX} = \overrightarrow{PA} + t\overline{v}\).</p>
+            <p>Eftersom \(\overrightarrow{PX}\) och \(\overline{v}\) skall var vinkelräta mot varandra skall skalära produkten av dessa ha värdet noll.</p>
+            <p>Vi tar och bildar de nödvändiga vektorerna.</p>
+            <p>\(\begin{array}{rl}
+              \overrightarrow{PA}=  &  (2-8)\overline{i}+(1-1)\overline{j}+(3-7)\overline{k} \\
+              = & -6\overline{i}-4\overline{k}\\
+              \end{array}\)</p>
+            <p>och</p>
+            <p>\(\begin{array}{rl}
+                \overrightarrow{PX}=  &  \overrightarrow{PA}+t\overline{v} \\
+                = &  -6\overline{i}-4\overline{k} + t(3\overline{i}-\overline{j}+\overline{k}) \\
+                =  & (-6+3t)\overline{i}-t\overline{j}+(-4+t)\overline{k}\\
+                \end{array}\)</p>
+            <p>Sedan bestämmer vi \(\overrightarrow{PX}\cdot \overline{v}=0\):</p>
+            <p>\(\begin{array}{rcl}  \overrightarrow{PX}\cdot \overline{v} & = & 0 \\
+                  ((-6+3t)\overline{i}-t\overline{j}+(-4+t)\overline{k}) \cdot (3\overline{i}-\overline{j}+\overline{k})  & = &  0 \\
+                  (-6+3t)\cdot 3 -t(-1) + (-4+t)\cdot 1  & = &  0 \\
+                  -18 +9t +t+-4+t & = & 0 \\
+                  11t  & = & 22 \\
+                  t  &  =  &  \dfrac{22}{11}=2
+                  \end{array}\)</p>
+            <p>Vi har alltså att \(\overrightarrow{AX} = 2\overline{v}\).</p>
+            <p>Då kan vi bestämma koordinaterna för \(X\).</p>
+            <p>\(\begin{array}{rl}
+              \overrightarrow{OX}=  & \overrightarrow{OA}+\overrightarrow{AX} \\
+              = &  \overrightarrow{OA} + 2 \overline{v} \\
+              =  & 2 \overline{i}+\overline{j}+3\overline{k} + 2(3 \overline{i}-\overline{j}+\overline{k} \\
+              =  &  8 \overline{i}-\overline{j}+5\overline{k}\\
+              \end{array}\)</p>
+            <p>\(X\) har koordinaten \((8,-1,5)\).</p>
+            <p>Avståndet mellan P och linjen är det kortaste, alltså avståndet mellan P och X. Avståndet \(\mid PX\mid = \sqrt{(8-8)^2+(1-(-1))^2+(7-5)^2}=\sqrt{8} = 2\sqrt{2}\).</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Ett plan spänns upp av punkten \(A = (1,3,0)\) och basvektorerna \(\overline{u}=\overline{i}+\overline{k}\) och \(\overline{v}=\overline{i}-\overline{j}+\overline{k}\). Vilken punkt i planet är närmast punkten \(P=(-2,-4,1)\). Bestäm avståndet mellan planet och punkten P.</p>
+              <h4>Lösning</h4>
+              <p>Vi börjar med att rita en bild.</p>
+              <p><img  src="pics/13-3.png" class="responsivepic400" /></p>
+              <p>Det som vi vill ha är \(\mid \overrightarrow{PX} \mid\).</p>
+              <p>\(\overrightarrow{PX}\) kan vi uttrycka som \(\overrightarrow{PA} + \overrightarrow{AX}\). Eftersom \(\overrightarrow{AX}\) är i planet som spänns upp av \(\overline{u}\) och \(\overline{v}\) så kan vi uttrycka \(\overrightarrow{AX} = r\overline{u} + s\overline{v}\).</p>
+              <p>Vi får att \(\overrightarrow{PX}=\overline{PA}+ r\overline{u} + s\overline{v}\).</p>
+              <p>Vidare gäller det att \(\overrightarrow{PX}\) är vinkelrät mot bägge basvektorerna, \(\overline{u}\) och \(\overline{v}\).</p>
+              <p>\(\overrightarrow{PA}=(1-(-2))\overline{i}+(3-(-4))\overline{j}+(0-1)\overline{k} = 3\overline{i} +7\overline{j}-\overline{k}\).</p>
+              <p>Då är vi färdiga att börja räkna.</p>
+              <p>\(\begin{array}{rl}
+                \overrightarrow{PX}=  &  \overline{PA}+  r\overline{u} + s\overline{v} \\
+                  = &  3\overline{i} +7\overline{j}-\overline{k} + r(\overline{i}+\overline{k})+s(\overline{i}-\overline{j}+\overline{k}) \\
+                  =  &   (3+r+s)\overline{i}+(7-s)\overline{j}+(-1+r+s)\overline{k} \\
+                  \end{array}\)</p>
+              <p>Att \(\overrightarrow{PX}\) är vinkelrät mot \(\overline{u}\) betyder att \(\overrightarrow{PX}\cdot \overline{u}=0\) och att \(\overrightarrow{PX}\) är vinkelrät mot \(\overline{v}\) betyder att \(\overrightarrow{PX}\cdot \overline{v}=0\).</p>
+              <p>Vi bildar dessa uttryck.</p>
+              <p>\(\begin{array}{rcl}
+                \overrightarrow{PX} \cdot \overline{u} &  = &  0 \\
+                (3+r+s)\cdot 1 +(7-s)\cdot 0 + (-1+r+s)\cdot 1  &  =  &  0 \\
+                3 +r+s-1+r+s  &  =  &  0 \\
+                2r+2s  &  =  &  -2 \\
+                \end{array}\)</p>
+              <p>och</p>
+              <p> \(\begin{array}{rcl}
+                \overrightarrow{PX} \cdot \overline{v} &  = &  0 \\
+                (3+r+s)\cdot 1 +(7-s)(-1) + (-1+r+s)\cdot 1  &  =  &  0 \\
+                3 +r+s-7+s-1+r+s  &  =  &  0 \\
+                2r+3s  &  =  &  5 \\
+                \end{array}\)</p>
+              <p>Vi får ett ekvationssystem</p>
+              <p>\(\left\{  \begin{array}{rcl}  2r + 2s  &  =  &  -2 \\  2r+3s & = & 5 \\  \end{array}  \right.\)</p>
+              <p>Ekvationssystemet har lösningarna \(s=7\) och \(r=-8\).</p>
+              <p>Vi får \(\overrightarrow{PX}\) som \((3-8+7)\overline{i}+(7-7)\overline{j}+(-1-8+7)\overline{k}=2\overline{i}-2\overline{k}\).</p>
+              <p>Längden är \(\mid \overrightarrow{PX} \mid = \sqrt{2^2+(-2)^2}=\sqrt{8}=2\sqrt{2}\).</p>
+            </div>
+          </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Bestäm avståndet för punkten \(P = (3,1,4)\) från</p>
+            <ol>
+              <li>\(x\)-axeln. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\(\sqrt{17} \approx 4,1\)</p> </div></div> </li>
+              <li>\(y\)-axeln <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer">5 l.e. </div></div> </li>
+              <li>\(xy\)-planet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer">4 l.e. </div></div> </li>
+              <li>\(xz\)-planet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer">1 l.e. </div></div> </li>
+            </ol></li>
+
+          <li>En linje går genom punkten \((4,1,-1)\) och \((3,-1,0)\).
+            <ol>
+            <li>Vilken punkt på linjen är närmast punkten \(P = (1,-2,0)\)? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2a">
+            <div class="card card-body answer"><p>\((\dfrac{8}{3},\dfrac{4}{3},-\dfrac{5}{3})\)</p> </div></div> </li>
+            <li>Bestäm avståndet mellan P och linjen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2b">
+            <div class="card card-body answer">3,9 l.e. </div></div> </li>
+          </ol></li>
+
+          <li>Bestäm avståndet, med hjälp av vektorer, från punkten \(P (-1,4)\) till linjen som går genom punkterna \((-1,-2)\) och \((3,4)\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\(\dfrac{10}{3}\)</p> </div></div> </li>
+
+          <li>Bestäm avståndet från punkten \(P=(10,1,-2)\) till linjen som går genom punkterna \((3,2,1)\) och \((2,2,2)\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Närmaste punkt är \((8,2,-4)\).</p>
+                <p>Avståndet är 3 l.e.</p> </div></div> </li>
+
+          <li>Bestäm avståndet mellan punkten \((10,1,-2)\) och planet som spänns upp av punkterna \((1,1,2)\), \((3,0,3)\) och \((2,2,5)\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Punkten närmast är \((6,-3,2)\).</p>
+              <p>\((\sqrt{50}=) 5\sqrt{2}\approx,7,1\)</p>
+            </div></div> </li>
+
+          <li>Ett flygplan startar från \((1,5,0)\) och flyger i riktningen \(2\overline{i}-\overline{j}+2\overline{k}\). Ekvationen \(x-2y-4=0\) beskriver en strandlinje. Hur högt ovanför strandlinjen kommer flygplanet att flyga då en ruta motsvarar 100 m?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> 650 m </div></div> </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="12_skalart_geometriskt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="14_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

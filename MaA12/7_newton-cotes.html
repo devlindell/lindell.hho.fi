@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>7. Newton-Cotes metoder för integrering</title>
+
+  </head>
+  <body>
+    <header class="MaA12">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </nav>
+      <a href="6_newton-raphson.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 12 Algoritmer i matematiken</h3>
+      <a href="#"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>7. Newton-Cotes metoder för integrering</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi bestämmer arean mellan funktionen \( f(x) = x^3 + x^2 +4\) och \(x\)-axeln i intervallet -2 till 1 utan att integrera.</p>
+            <p>Vi använder oss av tre numeriska metoder, rektangelformeln, trapetsformeln och Simpson formel. Gemensamt för alla tre är att vi delar in arean i mindre delar. </p>
+            <p>För att kunna jämföra de numeriska metoderna med det exakta värdet så bestämmer vi det, \[ \displaystyle\int_{-2}^0 x^3+x^2+4 = 11\dfrac{1}{4}. \]</p>
+            <p>Vi börjar med rektangelformeln.</p>
+            <h3>Rektangelformeln</h3>
+            <p>Tanken är att vi bildar rektanglar. Det studerar vi med hjälp av GeoGebra.</p>
+            <div class="geogebra">
+              GeoGebra app
+            </div>
+            <p>Vi märker att vi kommer närmare det exakta värdet destu mera intervall som vi delar in arean i.</p>
+            <h3>Traptesformeln</h3>
+            <p>Här bildar vi trapeter. Fördelen är att trapetsernas area är beroende av två längder. Vi studerar arean med hjälp av GeoGebra.</p>
+            <div class="geogebra">
+              GeoGebra app
+            </div>
+            <p>Vi märker att med Trapetsformeln kommer vi närmare det exakta värdet än med rektangelmetoden. </p>
+            <h3>Simpsons formel</h3>
+            <p>Med Sipsons formel utnyttjar vi intervall där vi har vägda medelvärden för arean.</p>
+            <div class="geogebra">
+              GeoGebra app
+            </div>
+            <p>Närmast sanningen kommer vi med Simpsons metod.</p>
+
+            <div class="summary box">
+
+            </div>
+            <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm storleken av arean som bildas mellan \( f(x) = \) och \( x \)-axeln då vi delar upp intervallet i XX delar.</p>
+            <h4>Lösning</h4>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm arean som bildas mellan \( f(x) = x^3 -2x +4 \) och \(x\)-axeln i intervallet \(-2\) och \(1\). Använd dig av 3 intervall.
+            <ol>
+              <li>Med rektangelmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Bredden på intervallet är 1. Vi får \(A = 1 (f(-1,5) + f(-0,5) + f(0,5)) = 11,625 \).</p>  </div></div> </li>
+              <li>Med trapetsmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Vi får \( A = 1 (\dfrac{1}{2}f(-2)+f(-1)+f(0)+\dfrac{1}{2}f(1)) = 10,5 \).</p> </div></div> </li>
+              <li>Med Simpsons metod <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi får \( A = \dfrac{1}{3} \cdot 1 (f(-2) + 4f(-1) + 2f(0) + f(1)) = 10\dfrac{1}{3} \). </p> </div></div> </li>
+              <li>Exakt på räknare eller för hand <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-2}^1 x^3-2x+4 \mathrm{ d}x = 11\dfrac{1}{4} \).</p> </div></div> </li>
+              <!---
+              <li>Varför ger rektangelmetoden det värde som är närmast exaktvärde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p></p> </div></div> </li>
+              -->
+            </ol>
+          </li>
+
+          <li>Bestäm arean som bildas mellan \( f(x) = -x^2 + 4x + 5 \) och \(x\)-axeln. Använd dig av intervallbredden 1.
+            <ol>
+              <li>Med rektangelmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Bredden på intervallet är 1. Vi har 6 st intervall. Skärningspunkterna är \(-1\) och \(5\). Bestäm dessa!</p>
+                <p>Vi får \(A = 1 (f(-0,5) + f(0,5) + f(1,5) + f(2,5) + f(3,5) + f(4,5)) = 36,5 \).</p>  </div></div> </li>
+              <li>Med trapetsmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vi får \( A = 1 (\dfrac{1}{2}f(-1)+f(0)+f(1)+f(2)+f(3)+f(4)+\dfrac{1}{2}f(5)) = 35 \).</p> </div></div> </li>
+              <li>Med Simpsons metod <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi får \( A = \dfrac{1}{3} \cdot 1 ( f(-1) + 4f(0) + 2f(1) + 4f(2) + 2f(3) + 4f(4) + f(5) ) = 36 \). </p> </div></div> </li>
+              <li>Exakt på räknare eller för hand <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-1}^5 -x^2+4x+5 \mathrm{ d}x = 36 \).</p> </div></div> </li>
+              <!---
+              <li>Varför ger Simpsons metod det värde som är närmast exaktvärde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p></p> </div></div> </li>
+              -->
+            </ol>
+          </li>
+
+          <!--
+          <li>Uppgift
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA12">
+      <a href="6_newton-raphson.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="#"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

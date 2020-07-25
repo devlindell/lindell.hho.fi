@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>16. Normalfördelning</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="15_korrelation.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 10 Sannolikhet och statistik</h3>
+      <a href="17_statistik_int.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>16. Normalfördelning</h1>
+      <section>
+        <div class="theory">
+          <p>Anna, Bertil, Cecilia och Daniel märkte att då de gjorde sitt statistikarbete om kurskamraternas längd blev grafen med intervallen 10 cm formad så att största antalet var mellan 160 och 179 cm. De flesta personers längd var alltså nära medeltalet.</p>
+          <p>De blir ivriga och skickar ut en länk via sociala medier till sina vänner och släktingar där de frågar efter personens kön och längd. När de klassindelar datan i klasser om 5 cm ser det ut som följande:</p>
+          <table>
+            <tbody>
+              <tr><td>Längd</td><td>Män</td><td>Kvinnor</td><td>Totalt</td></tr>
+              <tr><td>150-154</td><td>0</td><td>2</td><td>2</td></tr>
+              <tr><td>155-159</td><td>1</td><td>8</td><td>9</td></tr>
+              <tr><td>160-164</td><td>4</td><td>13</td><td>17</td></tr>
+              <tr><td>165-169</td><td>8</td><td>20</td><td>28</td></tr>
+              <tr><td>170-174</td><td>16</td><td>14</td><td>30</td></tr>
+              <tr><td>175-179</td><td>20</td><td>7</td><td>27</td></tr>
+              <tr><td>180-184</td><td>17</td><td>5</td><td>22</td></tr>
+              <tr><td>185-189</td><td>10</td><td>1</td><td>11</td></tr>
+              <tr><td>190-194</td><td>2</td><td>0</td><td>2</td></tr>
+            </tbody>
+          </table>
+          <p><img class="responsivepic600" src="pics/norm_1.png" alt="" /></p>
+          <p>Vi märker att vi har tre toppar, en för män (blå), en för kvinnor (gul) och toppen för det gemensamma (grönt). Sedan avtar längderna mot kortare och längre. Fenomenet med att största delen av materialet har värden som är vid medeltalet och sedan avtar det kallas för normalfördelning.</p>
+          <p>Det att vi kan tillämpa normalfördelning på tex längd på människor, svansarnas längd på råttor och hur länge en mobiltelefon håller förrän den får något tekniskt fel hjälper oss att förutspå statistiska händelser.</p>
+          <p>Medeltalet för männens längd blir 177 cm, kvinnorna 168 cm och totalt 173 cm. Standardavvikelsen blir 7,5 cm, 7,7 cm och 8,8 cm (som vi avrundar till 9 cm).</p>
+          <p>Vi tittar närmare på normalfördelningen för den totala längden. Eftersom vi går till att tala om en hel population talar vi inte om medelvärdet utan väntevärdet 173 cm. Inom den första standarden har vi 34,1 % + 34,1 % = 68,2 % av populationen och deras längd varierar 173 - 9 cm = 164 cm och 173 + 9 = 182 cm.</p>
+          <p>Inom två standarder har vi 13,6 % + 34,1 % + 34,1 % + 13,6 % = 95,4 %. Längdintervallet blir 155 cm till 191 cm.</p>
+          <p><img class="responsivepic600" src="pics/norm_2.png" alt="" /></p>
+          <p>För att lättare kunna räkna exakta andelar av en population som rör sig inom vissa gränser arbetar man med normalfördelningens fördelningsfunktion, \( \phi (x)=\dfrac{1}{\sqrt{2\pi}} \displaystyle \int_{-\infty}^x e^{-\dfrac{t^2}{2}} \textrm{d }t \). För att få värden som normalfördelningen ger oss använder vi oss av tabellen på sid 61 i MAOL eller <a href="https://sv.wikipedia.org/wiki/Lista_över_den_kumulativa_normalfördelningsfunktionen" target="_blank">tabellen här</a>.</p>
+          <p>För mera teori om Normalfördelningen se <a href="http://en.wikipedia.org/wiki/Normal_distribution" target="_blank">här</a>.</p>
+          <p>Det som det betyder är att för att få exakta värden måste vi först standardisera vårt material förrän vi kan räkna med det.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Då vi utgår från materialet som Anna, Bertil, Cecilia och Daniel gjorde.</p>
+            <ol style="list-style-type: lower-alpha;" start="1">
+ 	            <li>Hur många procent av populationen är kortare än 180 cm?</li>
+ 	            <li>Hur många procent av populationen är längre än 170 cm?</li>
+ 	            <li>Hur många procent är populationen är mellan 175 cm och 185 cm?</li>
+            </ol>
+              <div class="video">
+                <iframe src="https://www.youtube.com/embed/WDUhoJUvVxg?rel=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Längden för svansarna hos en apstam är normalfördelade. Väntevärdet är 25 cm och standardavvikelsen är 4 cm.</p>
+              <ol style="list-style-type: lower-alpha;" start="1">
+ 	              <li>Hur stor del av stammen har svansar som är kortare än 31 cm?</li>
+ 	              <li>Hur stor del av stammen har svansar som är längre än 30 cm?</li>
+ 	              <li>Hur stor del av stammen har svansar som är mellan 23 cm och 28 cm?</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol style="list-style-type: lower-alpha;" start="1">
+ 	              <li>Eftersom längden för svansarna följer normalfördelningen betecknar vi N(25,6). Vi får \( P(X \leq 31 ) = P(Z < \dfrac{31-25}{6})=\Phi(1) = 0,8413 \).
+                  84,1 % av apstammen har svansar som är kortare än 31 cm.</li>
+ 	                <li>Nu söker vi \( P(X \geq 30) = 1- P(X < 30) = 1 - P(Z < \dfrac{30-25}{6}) \\ = 1-\Phi(0,833\ldots) = 1 - 0,7967 = 0,2033 \) .
+                    20,3 % av apstammen har svansar som är längre än 30 cm.</li>
+ 	                  <li><p>Här igen är vi intresserade av \( P(23 \leq X \leq 28) = P (\dfrac{23-25}{6} \leq Z \leq \dfrac{28-25}{6} )= \Phi(0,5) -\Phi(-0,33\ldots) \\ = \Phi(0,5) -(1-\Phi(0,33\ldots)) = 0,6915-(1-0,6293) \\ = 0,6915 - 0,3707 = 0,3208 \).</p>
+                    <p>Alltså 32,1 % av aporna har en svans som är mellan 23 och 28 cm.</p></li>
+                  </ol>
+                </div>
+                <div class="exercise box">
+                  <p><strong>Exempel 3</strong> Garantin hos en surfplatta är 12 månader. Hur stor del av surfplattorna måste tillverkaren reparera på garanti då väntevärdet för att en surfplatta håller är 14 månader och standardavvikelsen är 1 månad?</p>
+                  <h4>Lösning</h4>
+                  <p>Det att en surfplatta går sönder är normalfördelat, N(14,1).</p>
+                  <p>Det vi söker är \( P(X \leq 12) = P(Z \leq \dfrac{12-14}{1} )= \Phi(-2) = 1-\Phi(2) = 1-0,9772 = 0,0228 \).</p>
+                  <p>2,3 % av surfplattorna behöver service under garantin.</p>
+                </div>
+                <div class="exercise box">
+                  <p><strong>Exempel 4</strong> Hur stor borde standardavvikelsen vara för att en mobiltelefontillverkare endast skall behöva reparera högst 5 % av mobiltelefonerna på garanti då väntevärdet för att telefonen håller är 16 månader och garantin är 12 månader.</p>
+                  <h4>Lösning</h4>
+                  <p>Hållbarheten hos mobiltelefonen är normalfördelat, N(16,\( \sigma \)). 5 % betyder att normalfördelningen skall ha värdet 1,65. Det som vi nu söker är \( P(X \leq 12) = P(Z \leq \dfrac{16-12}{\sigma} ) = 1,6449 \). Vi löser ekvationen.</p>
+                  <p>\( \begin{array}{rcl} \dfrac{16-12}{\sigma}  &  =  &  1,6449 \\ \sigma  &  =  &  \dfrac{16-12}{1,6449} = 2,43 \\ \end{array} \)</p>
+                  <p>Standardavvikelsen skall var 2,4 månader.</p>
+                </div>
+                <div class="summary box">
+                  <p>För då vi räknar med normalfördelning använder vi oss av följande formler</p>
+                    <ul>
+ 	                    <li>\( \Phi(-a) = 1-\Phi(a) \)</li>
+ 	                    <li>\( P(X\leq 1,23) =\Phi(1,23) = 0,8907 \)</li>
+ 	                    <li>\( P(0,10 \leq X \leq 0,75) = \Phi(0,75) - \Phi(0,10) \)</li>
+ 	                    <li>\( P(X \geq 1,57) = 1- P(X\leq 1,57) \)</li>
+                    </ul>
+                    <p>För att använda oss av färdiga värden från tabeller gäller vid normeringen av \( N(\mu,\sigma) \) att \( P(X\leq a) = P(Z \leq \dfrac{a-\mu}{\sigma}) \).</p>
+                  </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Längden för gurkor som säljs i affärer är normalfördelade. Väntevärdet är 33 cm och standardavvikelsen är 3 cm. Kom ihåg att vi har N(33,3)
+            <ol>
+              <li>Hur många procent av gurkorna är kortare än 35 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Vi får att \( P(X\leq 35)=P(Z\leq \dfrac{35-33}{3}) \approx \Phi (0,66) = 0,7454 \). Alltså 74,5 %.</p></div></div> </li>
+              <li>Hur många procent av gurkorna är längre än 40 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Vi har \( P(X\geq 40) = 1-P(X\leq 40) = 1-P(Z\leq \dfrac{40-33}{3}) \\ \approx 1 - \Phi(2,33) = 1- 0,9901 =0,0099 \). Alltså 1,0 %.</p></div></div> </li>
+              <li>Hur många procent av gurkorna är mellan 30 cm och 38 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi har</p>
+                <p>\( \begin{array}{rcl}  P(30 \leq X 38)  & = &  P(\dfrac{30-33}{3} \leq X \leq \dfrac{38-33}{3}) \\ & \approx& P(-1 \leq X \leq 1,66) \\   & = &  \Phi(1,66) -\Phi(-1) = \Phi(1,66) -(1-\Phi(1)) \\ & = & 0,9515-1+0,8413 = 0,7928  \end{array} \)</p>
+                <p>Alltså 79,3 %.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Längden hos människor är normalfördelad. För finska män gäller att väntevärdet för en fullvuxen är 181 cm. Standardavvikelsen är 6,0 cm.
+            <ol>
+              <li>Hur många procent av fullvuxna finska män är kortare än 178 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vi har \( P(X \leq 178) = P(Z \leq \dfrac{178-181}{6}) = \Phi(-0.5) = 1-\Phi(0,5) \approx 1- 0,6915=0,3085 \). Alltså 30,1 %.</p></div></div> </li>
+              <li>Hur många procent av fullvuxna finska män är längre än 175 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vi har</p>
+                <p>\( \begin{array}{rcl}  P(X \geq 175)  & = &  1-P(X\leq 175) = 1-P(Z\leq \dfrac{175-181}{6}) \\   & \approx &  1- \Phi(-1) = 1-(1-\Phi(1))  = 1-1+\Phi(1) = 0,8413  \end{array} \)</p>
+                <p>Alltså 84,1%.</p></div></div> </li>
+              <li>Hur många procent av fullvuxna finska män är mellan 170 och 190 cm långa? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi har</p>
+                <p>\( \begin{array}{rcl}  P(170 \leq X \leq 190)  & = &  P(\dfrac{170-181}{6} \leq Z \leq \dfrac{190-181}{6}) \\   & \approx &  \Phi(1,5) - \Phi(-1,83) =\Phi(1,5) - (1-\Phi(1,83)) \\   & = & 0,9332-1+0,9664 = 0,8996    \end{array} \).</p>
+                <p>Alltså 90,0 %.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Paket av grötflingor packas så att de i medeltal väger 308 g med standardavvikelsen 10 g. Hur många procent av paketen väger mindre än 300 g, som anges på paketet? Svara med en decimals noggrannheten.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi har N(308,10).</p>
+                <p>Sannolikheten är \( P(X\leq 300)= P(Z\leq \dfrac{300-308}{10} = \Phi(-0,8) = 1-\Phi(0,8) \approx 1-0,7881 = 0,2119 \).</p>
+                <p>Alltså 21,2 %.</p></div></div>
+          </li>
+
+          <li>Garantitiden för ett bilmärke är 5 år. Hos bilarna uppstår fel med väntevärdet 70 månader och standardavvikelsen är 9 månader. Hos hur många procent av bilarna uppstår det fel under garantitiden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi har N(70,9).</p>
+                <p>Vi söker \( P(X\leq 60) = P(Z\leq \dfrac{60-70}{9})\approx \Phi(-1,11) = 1-\Phi(1,11) = 1-0,8665 = 0,1335 \).</p>
+                <p>Alltså 13,4 %.</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En däcktillverkare bestämmer sig för att medelhållbarheten för däcken skall vara 45 000 km och att 99,9 % av däcken skall hålla körsträckan 46 000 utan problem. Bestäm standardavvikelsen i km för att detta skall uppfyllas.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi har \( N(45000, \sigma) \).</p>
+              <p>Vi söker \( P(X \leq 46000) = P(Z\leq \dfrac{46000-45000}{\sigma} \).</p>
+              <p>För sannolikheten gäller att 99,9 % är \( 0,999 = \Phi(3,0902) \).</p>
+              <p>Vi får alltså \( \dfrac{46000-45000}{\sigma} = 3,0902 \) som har lösningen \( \sigma = 323,60 \). Alltså 320 km.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Vid en äppelodling sorteras äpplena enligt vikt. Vikten för äpplen kan ses normalfördelad med väntevärdet 60 g och standardavvikelsen 10 g. Man vill sortera äpplena i tre viktklasser, så att 25 % bedöms som små, 50 % som medelstora och 25 % som stora. Hur skall dessa gränser väljas med en grams noggrannhet?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>För den tyngsta 25 % gäller: \( P(Z \leq \dfrac{X-60}{10}) \) skall få värdet som motsvaras av \( \Phi(x)=0,75 \).</p>
+                <p>Alltså \( P(Z \leq \dfrac{X-60}{10})=0,67 \) som ger \( X=66,7 \) g.</p>
+                <p>Eftersom normalfördelningen är symmetrisk är avståndet mellan variansen och tyngsta 25 % samma som variansen och lättaste 25 %.</p>
+                <p>Den här vägen kommer vi åt gränserna 66,7 g och 53,3 g.</p>
+                <p>Allstå 53 g och 67 g.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Väntevärdet för att det skall uppstå problem hos en mobiltelefon är 14 månader med standardavvikelsen 2 månader. Hur lång garanti, i månader, kan tillverkaren lova om de endast vill reparera 10 % av mobiltelefonerna under garantitiden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>\( P(Z = \dfrac{X-14}{2}) \) skall ha värdet 1,2816 som motsvaras av lägsta eller högsta 5 %.</p>
+                <p>Ekvationen ger lösningen 16,5632 som betyder att på avståndet 2,5632 från väntevärdet hittar vi lägsta och högsta 5 %.</p>
+                <p>Den gräns som vi söker är 11,4368 månader.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="15_korrelation.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="17_statistik_int.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

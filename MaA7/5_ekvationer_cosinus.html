@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Ekvationer med cosiuns</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_ekvationer_sinus.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="6_tangens.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Ekvationer med cosiuns</h1>
+      <section>
+        <div class="theory">
+          <h3>Ekvationen \( \cos \alpha = a \)</h3>
+          <p>För ekvationen \( \cos \alpha =a \) utgår vi på samma sätt som för ekvationen \( \sin \alpha = a \). Vi börjar med en enhetscirkel och kommer ihåg att cosinus ger periferipunktens x-koordinat.</p>
+          <p>Vi får att</p>
+          <p><img class="responsivepic400" src="pics/4-2-1.png" alt="" /></p>
+          <p>På bilden gäller att \( \beta = -\alpha \). Vi får att ekvationen \( \cos \alpha =a \) har två lösningar, vinklarna \( \alpha \) och \( -\alpha \). När vi går hela varv kommer vi tillbaka till samma periferipunkter.</p>
+          <p>Lösningarna för ekvationen \( \cos \alpha =a \) där \( \alpha_0 \) är en lösning kan vi skriva som</p>
+          <p>\( \alpha = \pm\alpha_0 + n\cdot 360^{\circ} \) där n är ett heltal, eller som</p>
+          <p>\( \alpha = \pm\alpha_0 + n\cdot 2\pi \) där n är ett heltal.</p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Lös ekvationen \( 2\cos \alpha +1=0 \)
+            <h4>Lösning</h4>
+            <p>Vi får</p>
+            <p>\( \begin{array}{rcl} 2 \cos \alpha +1  & = &  0 \\ 2 \cos \alpha  & = &  =-1 \\ \cos \alpha  & = &  = -\dfrac{1}{2} \\ \end{array} \)</p>
+            <p>En vinkel som uppfyller villkoret är \( \alpha = 120^{\circ} = \dfrac{2\pi}{3} \).</p>
+            <p>(Vissa exakta värden för vinklar för sinus och cosinus hittar du i MAOL:s tabeller.)</p>
+            <p>Vi får alltså \( \alpha = \pm \dfrac{2\pi}{3} +n\cdot 2\pi \), där \( n \in \mathbb{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Bestäm de vinklar som uppfyller ekvationen \( \cos \alpha = \cos 3\alpha \).
+            <h4>Lösning</h4>
+            <p>Vi får \( \alpha =\pm 3\alpha +n\cdot 2\pi \) som vi måste dela upp i två olika fall.</p>
+            <p>Fall 1</p>
+            <p>\( \begin{array}{rcll} \alpha  & = &  3\alpha +n\cdot 2\pi \\ -2 \alpha  & = &  n\cdot 2\pi  & | /(-2)\\ \alpha  & = &  -n\cdot \pi  &  \end{array} \)</p>
+            <p>som är samma som \( \alpha = n\cdot \pi \) eftersomn är ett heltal.</p>
+            <p>Fall 2</p>
+            <p>\( \begin{array}{rcll} \alpha  & = &  -3\alpha +n\cdot 2\pi \\ 4 \alpha  & = &  n\cdot 2\pi  & | /4\\ \alpha  & = &  n\cdot \dfrac{\pi}{2}  &  \end{array} \)</p>
+            <p>Lösningarna kan vi skriva som \( \alpha = n\cdot \dfrac{\pi}{2} \), där n är ett heltal.</p>
+          </div>
+          <div class="summary box">
+            <h3>För ekvationer med cosinus gäller följande</h3>
+            <p>\( \cos \alpha = a \)</p>
+            <p>\( \alpha = \pm\alpha_0 + n\cdot 360^{\circ} \) där n är ett heltal</p>
+            <p>eller som</p>
+            <p>\( \alpha = \pm\alpha_0 + n\cdot 2\pi \) där n är ett heltal.</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><li>Bestäm de exakta värdena av cosinus för följande vinklar
+            <table>
+              <tr><th></th><th>-1</th><th>\( -\dfrac{\sqrt{3}}{2} \)</th><th>\( -\dfrac{1}{\sqrt{2}} \)</th><th>\( -\dfrac{1}{2} \)</th><th>0</th><th>\( \dfrac{1}{2} \)</th><th>\( \dfrac{1}{\sqrt{2}} \)</th><th>\( \dfrac{\sqrt{3}}{2} \)</th><th>1</th></tr>
+              <tr><td>\( \cos 0 \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{\pi}{6} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{\pi}{4} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{\pi}{3} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{\pi}{2} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{2\pi}{3} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{3\pi}{4} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \dfrac{5\pi}{6} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \cos \pi \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table>
+                <tr><th></th><th>-1</th><th>\( -\dfrac{\sqrt{3}}{2} \)</th><th>\( -\dfrac{1}{\sqrt{2}} \)</th><th>\( -\dfrac{1}{2} \)</th><th>0</th><th>\( \dfrac{1}{2} \)</th><th>\( \dfrac{1}{\sqrt{2}} \)</th><th>\( \dfrac{\sqrt{3}}{2} \)</th><th>1</th></tr>
+                <tr><td>\( \cos 0 \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\( \cos \dfrac{\pi}{6} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\( \cos \dfrac{\pi}{4} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>\( \cos \dfrac{\pi}{3} \)</td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos \dfrac{\pi}{2} \)</td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos \dfrac{2\pi}{3} \)</td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos \dfrac{3\pi}{4} \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos \dfrac{5\pi}{6} \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos \pi \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              </table>
+             </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bestäm \( \cos 2 \alpha = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Enhetscirkeln ger oss att \( \dfrac{\pi}{2} = 0 \).  För cosinus gäller att lösningen är en vinkel och dess motsatta vinkel.</p>    <p>Alltså</p>    <p>\( \begin{array}{rcll}  2 \alpha  & = &  \pm\dfrac{\pi}{2} +n\cdot 2 \pi  & | /2\\ \\  \alpha  & = &  \pm\dfrac{\pi}{4} +n\cdot \pi  \end{array} \)<br> där n är ett heltal.</p> </div></div>
+          </li>
+
+          <li>Bestäm \( \cos 4x = \dfrac{1}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>För cosinus gäller att \( \dfrac{\pi}{3} = \dfrac{1}{2} \). Dessutom har vi vinkeln och den motsatta.</p>    <p>Alltså</p>    <p>\( \begin{array}{rcll}  4 x  & = &  \pm \dfrac{\pi}{3} +n\cdot 2\pi  &  | /4 \\ \\  x  & = &  \pm \dfrac{\pi}{12} +n\cdot \dfrac{\pi}{2}      \end{array} \)</p> <p>där n är ett heltal.</p> </div></div>
+          </li>
+
+          <li>Lös ekvationen \( 2\cos \alpha -1 =0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi får att</p>    <p>\( \begin{array}{rcl}  2 \cos \alpha -1  & = & 0\\  2\cos \alpha  & = &  1 \\  \cos \alpha  & = &  \dfrac{1}{2} \\  \end{array} \)</p>
+              <p>som har lösningen \( \alpha=\dfrac{\pi}{3} + n\cdot 2\pi \) där \( n\in \mathbb{Z} \). För cosinus har vi vinkeln och dess motsatta vinkel.</p>    <p>Alltså \( \alpha = \pm \dfrac{\pi}{3} + n\cdot 2\pi, n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de x som löser ekvationen \( \cos (3x +\dfrac{\pi}{2})=\dfrac{\sqrt{3}}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Enhetscirkleln eller tabellboken ger oss att \( \cos \dfrac{\pi}{6} = \dfrac{\sqrt{3}}{2} \).</p>    <p>Vi får</p>    <p>\( \begin{array}{rcll}  3x +\dfrac{\pi}{2} = \dfrac{\pi}{6} +n\cdot 2\pi \\  3x  = \dfrac{\pi}{6}-\dfrac{\pi}{2} +n\cdot 2\pi \\  3x  = -\dfrac{\pi}{3} +n\cdot 2\pi  & | /3\\  x  = -\dfrac{\pi}{9} +n\cdot \dfrac{2\pi}{3} \\  \end{array} \)</p>    <p>och</p>    <p>\( \begin{array}{rcll}  3x +\dfrac{\pi}{2} = -\dfrac{\pi}{6} +n\cdot 2\pi \\  3x  = -\dfrac{\pi}{6}-\dfrac{\pi}{2} +n\cdot 2\pi \\  3x  = -\dfrac{2\pi}{3} +n\cdot 2\pi  & | /3\\  x  = -\dfrac{2\pi}{9} +n\cdot \dfrac{2\pi}{3} \\  \end{array} \)</p>    <p>Alltså \( x = -\dfrac{\pi}{9} +n\cdot \dfrac{2\pi}{3} \) och \( x = -\dfrac{2\pi}{9} +n\cdot \dfrac{2\pi}{3} \) där \( n\in \mathbf{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( \cos \dfrac{x}{3} =\cos \dfrac{x}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får</p>    <p>\( \begin{array}{rcll}  \dfrac{x}{3}  & = &  \dfrac{x}{2} +n \cdot 2\pi \\  \dfrac{x}{3} -\dfrac{x}{2}  & = &  n \cdot 2\pi \\  -\dfrac{x}{6}  & = &  n \cdot 2\pi  & |\cdot (-6) \\  x  & = & -n\cdot 12 \pi \\   & = &  n\cdot 12\pi\\  \end{array} \)</p>    <p>och</p>    <p>\( \begin{array}{rcll}  \dfrac{x}{3}  & = &  -\dfrac{x}{2} +n \cdot 2\pi \\  \dfrac{x}{3} +\dfrac{x}{2}  & = &  n \cdot 2\pi  \\  \dfrac{5x}{6}  & = &  n \cdot 2\pi  & |\cdot \dfrac{6}{5} \\  x  & = & n\cdot \dfrac{12 \pi}{5} \\  \end{array} \)</p>    <p>Alltså\( x=n\cdot 12\pi \) och \( x =n\cdot \dfrac{12 \pi}{5} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( \cos 2x =\cos \dfrac{x}{4} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi får</p>    <p>\( \begin{array}{rcll}    2x  & = &  \dfrac{x}{4} +n \cdot 2\pi \\    2x -\dfrac{x}{4}  & = &  n \cdot 2\pi \\    \dfrac{7x}{4}  & = &  n \cdot 2\pi  & |\cdot \dfrac{4}{7} \\    x  & = & n\cdot \dfrac{8\pi}{7} \\      \end{array} \)</p>    <p>och</p>    <p>\( \begin{array}{rcll}    2x  & = &  -\dfrac{x}{4} +n \cdot 2\pi \\    2x +\dfrac{x}{4}  & = &  n \cdot 2\pi  \\    \dfrac{9x}{4}  & = &  n \cdot 2\pi  & |\cdot \dfrac{4}{9} \\    x  & = & n\cdot \dfrac{8\pi}{9} \\      \end{array} \)</p>    <p>Alltså \( x=n\cdot \dfrac{8\pi}{7} \) och \( x=n\cdot \dfrac{8\pi}{9} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös \( \cos^2 x +\cos x =2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi substituerar \( \cos x =t \). Då får vi ekvationen \( t^2 +t = 2 \Leftrightarrow t^2-t-2=0 \) som har lösningarna \( t_1 = 1 \) och \( t_2=-2 \).</p>    <p>Då vi substituerar tillbaka får vi \( \cos x = 1 \) och \( \cos x =-2 \).</p>    <p>För \( \cos x = 1 \) gäller att \( x= 0 +n\cdot 2\pi \). Ekvationen \( \cos x = -2 \) saknar lösningar eftersom värdemängden för cosinus är mellan -1 och 1.</p>    <p>Alltså \( x= 0 +n\cdot 2\pi \) där \( n \in \mathbf{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm \( \cos(\cos x )=1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Cosinus får värdet 1 då vinkeln har värdet \( 0 +n\cdot 2\pi \).</p>    <p>Då gäller att den inre \( \cos x =0 \), alltså \( x=\dfrac{\pi}{2} \) och \( x=\dfrac{3\pi}{2} \).</p>    <p>Som vi kan skriva som \( x = \dfrac{\pi}{2} +n\cdot \pi \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="4_ekvationer_sinus.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_tangens.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>3. Ekvationer och olikheter med absolutbelopp</title>
+
+  </head>
+  <body>
+    <header class="MaA5">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+            <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+            <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+            <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+            <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+            <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+            <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+            <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+            <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="2_absolutbelopp.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+      <a href="4_avstand.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>3. Ekvationer och olikheter med absolutbelopp</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vilka tal satisfierar ekvationen \( \mid x-1 \mid =4 \)</p>
+          <h4>Lösning</h4>
+          <p>Vi ser grafiskt på ekvationen.</p>
+          <p><img src="pics/3-1.png" alt="" class="responsivepic400" /></p>
+          <p>Per definition är</p>
+          <p>\( \begin{array}{rcr} x-1 = 4  &  \text{ och }  &  -(x-1)=4\\ \underline{\underline{x=5}}  &   &  x-1=-4 \\  &   &  \underline{\underline{x=-3}} \\ \end{array} \)</p>
+          <p>Eller så kan vi lösa ekvationen genom att kvadrera bägge led. Vi kan kvadrera eftersom bägge led är positiva.</p>
+          <p>\( \begin{array}{rrcll}  &  \mid x-1 \mid  & = &  4 \quad\text{Vi kvadrerar bägge led eftersom de är positiva.} \\ \text{och vi får då att: }  &  (x-1)^2  &  = & 4^2  &  \\  &  x^2-2x+1 & = & 16  &  \\  &  x^2-2x-15  & = & 0  &  \\ \end{array} \)</p>
+          <p>Rotformeln ger:</p>
+          <p>\( \begin{array}{rrcll}  &  x &  = &  \dfrac{-(-2)\pm \sqrt{(-2)^2-4\cdot 1 (-15)}}{2\cdot 1}\\  &   &  = &  \dfrac{2\pm \sqrt{64}}{2} \\ \\  &   &  =  & \dfrac{2\pm 8}{2} \\  &  x_1 = \dfrac{2+8}{2}=5  &  \text{ och }  &  x_2=\dfrac{2-8}{2}=-3  &  \\ \end{array} \)</p>
+        </div>
+          <p>Vi får alltså samma rötter oberoende om vi arbetar vi definitionen eller om vi kvadrerar.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> För vilka värden på \( x \) gäller att \( \mid x-3 \mid < 7 \)?</p>
+            <h4>Lösning</h4>
+            <p>Vi löser den på två olika sätt.</p>
+            <p>Vi söker de värden på \( x \) så att avståndet är mindre än 7. Per definitionen kan vi skriva det som dubbelolikheten</p>
+            <p> \( \begin{array}{cl} -7 < x-3 < 7  &  \mid +3 \text{ Vi manipulerar hela olikheten med samma tal}\\ -7+3 < x-3+3 < 7+3 \\ -4 < x < 10 \\ \end{array} \)</p>
+            <p> Eller så kan vi lösa den genom att kvadrera:</p>
+            <p> \( \begin{array}{rrcll}  &  \mid x-3 \mid  &  <  &  7  &  \mid (\quad)^2 \quad \text{Bägge led positiva.} \\  &  (x-3)^2  &  <  &  7^2  &  \\  &  x^2-6x+9  &  <  &  < 49 \\  &  x^2-6x-40  &  <  &  0 \\ \end{array} \)
+            <p>Vi studerar hur parabeln beter sig genom att lösa nollställena.</p>
+            <p>\( \begin{array}{rrcll}
+               &  x  &  =  &  \dfrac{-(-6)\pm \sqrt{(-6)^2-4\cdot 1 (-40)}}{2\cdot 1} \\ \\  &   &  =  & \dfrac{6\pm 14}{2} \\  &  x_1  & =  &  \dfrac{6+14}{2} = 10 \\  &  x_2  &  =  &  \dfrac{6-14}{2}= -4 \\ \end{array} \)
+            </p>
+            <p>Vi har en parabel som öppnar sig uppåt</p>
+            Svar: \( -4 < x < 10 \)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm \( \mid 1-x\mid  >  3 \).</p>
+            <h4>Lösning</h4>
+            <p>Eftersom avståndet skall vara större än 3 kan vi inte lösa det som en dubbelolikhet. Vi delar upp den i två led:</p>
+            <p> \( \begin{array}{rclcrcl} 1-x  &   >  &  3  &  \text{ och }  &  -(1-x)  &   >   &  3 \\ -x  &   >   &  2  &   &  -1+x  &   >   &  3 \\ x  &  <  &  -2  &   &  x  &   >   &  4 \\ \end{array} \)</p> <p> När vi kombinerar bägge led får vi att \( x < -2 \) eller \( x > 4 \) uppfyller olikheten.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Lös ekvationen \( \mid 2x-1\mid =\mid x +1 \mid \).</p>
+            <h4>Lösning</h4>
+            <h5>Alternativ 1:</h5>
+            <p> Per definition får vi att:</p>
+            <p> \( \begin{array}{rcl} 2x-1  &  =  &  x+1 \\ x  &  =  &  2 \\ \text{och att: } 2x-1  &  =  &  -(x-1) \\ 2x-1  &  =  &  -x-1 \\ 3x  & = &  0 \\ x  & = &  0 \\ \end{array} \)</p>
+            <h5>Alternativ 2:</h5>
+            <p> \( \begin{array}{rcll} \mid 2x-1 \mid  &  =  &  \mid x+1 \mid  &  \mid (\quad)^2, \text{Bägge leden positiva.} \\ (2x-1)^2  &  =  &  (x+1)^2 \\ 4x^2-4x+1  &  =  &  x^2+2x+1 \\ 3x^2 -6x  &  =  &  0 \\ 3x(x-2)  &  =  &  0 \\ \text{Nollregeln: } \\ 3x=0  &  \text{ eller }  &  x-2=0 \\ \underline{\underline{x=0}}  &   &  \underline{\underline{x=2}}\\ \end{array} \)</p>
+          </div>
+          <div class="summary box">
+            <h3>Ekvationer med absolutbelopp på GeoGebra</h3>
+            <p>VIDEO</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> För vilka värden på \( x \) gäller att \( \mid x-1 \mid  >  2x+1 \)?</p>
+            <h4>Lösning</h4>
+            <h5>Alternativ 1:</h5>
+            <p>Vi arbetar med definitionen och då kan vi skriva</p>
+            <p> \( \mid x-1\mid \left\{ \begin{array}{rl} x-1  &  ,\text{ då } x \geq 1 \\ -(x-1)  &  ,\text{ då } x < 1 \\ \end{array} \right. \) </p>
+            <p>Vi får att</p>
+            <p> då \( x \leq 1 \):</p>
+            <p> \( \begin{array}{rcll} x-1  &   >   &  2x+1 \\ -x  &   >  &  2  & \mid \cdot(-1) \text{ Riktningen byts!}\\ x  &  < &  -2  & \text{ som inte uppfylls då } x \geq 1 \\ \end{array} \)</p>
+            <p> då \( x < 1 \) :</p>
+            <p> \( \begin{array}{rcll} -(x-1)  &   >   &  2x +1 \\ -x+1  &   >   &  2x+1 \\ -3x  &   >  0  &  \mid /-3 \text{ Riktningen byts!} \\ x  &  < 0  &  \text{som uppfylls.} \end{array} \)</p>
+            <p> Svar: \( x < 0 \) </p>
+            <h5>Alternativ 2: </h5>
+            <p>Vi kvadrerar fastän bägge led inte är positiva.</p>
+            <p> \( \begin{array}{rcll} \mid x-1 \mid  &   >   &  2x+1  &  \mid (\quad)^2\\ (x-1)^2  &   >   &  (2x+1)^2 \\ x^2-2x+1  &   >   &   & 4x^2+4x+1 \\ -3x^2 -6x  & < &  0 \\ \end{array} \)</p>
+            <p>Nollställen får vi via ekvationen:</p>
+            <p>\( \begin{array}{rcll}
+              -3x(x+2)  &  =  &  0 \\ -3x=0  &  \text{ eller }  &  x+2=0 \\ x=0  &   &  x=-2 \\ \end{array} \)</p>
+              <p> Eftersom bägge led inte var positiva när vi kvadrerade kan vi få in falska rötter. Det som vi gör är att testa rötterna.</p>
+              <p> \( x=0 \):</p>
+              <p> \( \begin{array}{rcl} \mid 0-1\mid  & = &  2\cdot 0 +1\\ \mid -1 \mid  &  =  &  1 \\ 1  &  =  &  1 \text{ Stämmer!}\\ \end{array} \)</p>
+              <p> \( x=-2 \):</p>
+              <p> \( \begin{array}{rcl} \mid -2-1 \mid  &  =  &  2(-2)+1 \\ \mid -3 \mid  &  =  &  -4+1 \\ 3  & = &  -3 \text{ Som inte stämmer!} \end{array} \)</p>
+              <p> Vi har en parabel som öppnar sig neråt, \( -3x^2-6x \), med endast en rot, \( x=0 \) och utrycket är positivt då \( x < 0 \).</p>
+            </div>
+            <div class="summary box">
+              <h3>Olikheter på GeoGebra</h3>
+              <p>VIDEO</p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li>Lös ekvationerna
+            <ol>
+              <li>\( \mid x+1 \mid =5 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( \mid x+1 \mid =5 \)​ betyder att \( x+1=5 \Leftrightarrow x=4 \) och \( -(x+1)=5 \Leftrightarrow x=-6 \).</p> </div></div> </li>
+              <li>\( \mid2x-1 \mid =1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( \mid2x-1 \mid =1 \)​ ger att \( 2x-1=1 \Leftrightarrow x=1 \) och \( -(2x-1)=1 \Leftrightarrow x=0 \).</p> </div></div> </li>
+              <li>\( \mid \dfrac{1}{2}x-2 \mid =3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( \mid \dfrac{1}{2}x-2 \mid =3 \) betyder att \( \dfrac{1}{2}x-2=3 \Leftrightarrow x=10 \) och \( -(\dfrac{1}{2}x-2)=3 \Leftrightarrow x=-2 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös ekvationerna
+            <ol>
+              <li>\( \mid x+1\mid = x-1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\( \mid x+1 \mid =x-1 \) kan vi skriva som \( x+1 = x-1 \) som saknar rötter och \( -(x+1)=x-1 \Leftrightarrow x=0 \).</p> </div></div> </li>
+              <li>\( \mid 3x-4 \mid = \mid x \mid \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( \mid 3x-4\mid = \mid x \mid \) löser vi genom att kvadrera.</p>
+              <p>\( \mid 3x-4\mid^2 = \mid x \mid^2 \Leftrightarrow (3x-4)^2 = (x)^2 \) som har rötterna 1 och 2.</p> </div></div> </li>
+              <li>\( x=2\mid x-3 \mid \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>För \( x=2\mid x-3 \mid \) gäller att \( x-3 > 0 \Leftrightarrow x > 3 \).</p>
+                <p>Vi arbetar med definitionen: \( x=2(x-3) \Leftrightarrow x=6 \) och \( x=2\cdot-(x-3) \Leftrightarrow x=3 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös olikheterna
+            <ol>
+              <li>\( \mid x +1 \mid <5 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>\( \mid x +1 \mid <5 \Leftrightarrow -5 < x+1 < 5 \Leftrightarrow -6<x<4 \)</p> </div></div> </li>
+              <li>\( \mid 1-x\mid  >  7 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( \mid 1-x \mid  >  7 \) betyder att \( 1-x  >  7 \Leftrightarrow x < -6"  \) och att \( -(1-x) > 7 \Leftrightarrow x > 8 \).</p> </div></div> </li>
+              <li>\( \mid 2x-1\mid < 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>\( \mid 2x -1 \mid 2 \) betyder att \( -2 < 2x-1<2 \Leftrightarrow -\dfrac{1}{2}<x<\dfrac{3}{2} \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös ekvationerna
+            <ol>
+              <li>\( \mid x+1\mid = \mid x-1\mid \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Eftersom \( \mid x+1\mid = \mid x-1\mid \) är positiva kan vi kvadrera. Vi får \( \mid x+1 \mid^2 = \mid x-1\mid^2 \Leftrightarrow x=0 \).</p> </div></div> </li>
+              <li>\( \mid 2x \mid = x-2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\( \mid 2x \mid \) ger att \( x > 0 \) och \( x-2 > 0 \) ger att \( x > 2 \), alltså \( x > 2 \).</p>
+                <p>Sedan arbetar vi med definitionen: \( 2x=x-1 \Leftrightarrow x=-2 \) och \( -2x=x-2 \Leftrightarrow x=\dfrac{2}{3} \). Bägge talen är mindre än 2 så ekvationen saknar lösningar.</p> </div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( x^2-4x+4 = \mid 2x-1 \mid \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi har att \( 2x-1  >  0 \Leftrightarrow x > \dfrac{1}{2} \).</p>
+                <p>Definitionen ger att \( x^2-4x+4 = 2x -1 \Leftrightarrow x=5 \) eller \( x=1 \) och att \( x^2-4x+4=-(2x-1) \) saknar reella rötter.</p>
+                <p>Våra rötter är alltså 1 och 5.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös olikheten \( \mid x^2-x-4 \mid < 2 \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( \mid x^2-x-4 \mid < 2 \) betyder att \( x^2-x-4 < 2 \) och att \( x^2-x-4 < -2 \). För att lösa dessa olikheter löser vi ekvationerna \( x^2-x-4=2 \) som har nollställena \( 2 \) och \( 3 \) och \( x^2-x-4=-2 \) som har nollställena \( -2 \) och \( 1 \). När vi analyserar tecknen för paralberna får vi att \( -2 < x < 1 \) och \( 2< x < 3 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm för vilka värden på x gäller att \( \mid 2x-4\mid < x-2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi har att \( 2x-4 > 0 \Leftrightarrow x > 2 \). Absolutbeloppet delar vi upp enligt definitionen.</p>
+                <p>\( \mid 2x-4 \mid = \left\{
+                  \begin{array}{ll}
+                  2x - 4 & , \text{då } x \geq 2 \\
+                  -(2x-4) & , \text{då } x < 2 \\
+                  \end{array} \right. \)</p>
+                <p>Vi delar upp i två fall</p>
+                <p>Då \( x \geq 2 \) får vi \( 2x-4 < x-2 \) som har lösningen \( x < 2 \). Kriteriet är att \( x \geq 2 \), lösningen duger inte.</p>
+                <p>Och fallet då \( x < 2 \). Då har vi \( -(2x-4) < x-2 \) som har lösningen \( x > 2 \). Kriteriet är \( x < 2 \), lösningen duger inte.</p>
+                <p>Olikheten saknar lösningar.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA5">
+      <a href="2_absolutbelopp.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="4_avstand.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

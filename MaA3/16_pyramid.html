@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>16. Pyramid</title>
+
+  </head>
+  <body>
+    <header class="MaA3">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_intro.html">1. Introduktion</a>
+            <a class="dropdown-item" href="2_likformighet.html">2. Likformighet</a>
+            <a class="dropdown-item" href="3_likformighet_areor.html">3. Likformighet och areor</a>
+            <a class="dropdown-item" href="4_triangeln.html">4. Triangeln</a>
+            <a class="dropdown-item" href="5_pythagoras.html">5. Pythagoras sats</a>
+            <a class="dropdown-item" href="6_trigonometri.html">6. Trigonometri i en rätvinklig triangel</a>
+            <a class="dropdown-item" href="7_sinussatsen.html">7. Sinussatsen</a>
+            <a class="dropdown-item" href="8_cosinussatsen.html">8. Cosinussatsen</a>
+            <a class="dropdown-item" href="9_fyrhorningen.html">9. Fyrhörningen</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_tangenten_cirkeln.html">11. Tangenter för cirkeln</a>
+            <a class="dropdown-item" href="12_bagvinkeln.html">12. Bågvinkeln</a>
+            <a class="dropdown-item" href="13_ratblock.html">13. Rätblock</a>
+            <a class="dropdown-item" href="14_kuben.html">14. Kuben</a>
+            <a class="dropdown-item" href="15_prismat.html">15. Prismat</a>
+            <a class="dropdown-item" href="16_pyramid.html">16. Pyramid</a>
+            <a class="dropdown-item" href="17_kon.html">17. Konen</a>
+            <a class="dropdown-item" href="18_sfar.html">18. Sfären</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="15_prismat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 3 Geometri</h3>
+      <a href="17_kon.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>16. Pyramiden</h1>
+      <section>
+        <div class="theory">
+          <p>En exakt härledning över pyramidens volym kommer i integralkalkylen, kurs 9. Här tar vi och motiverar den med hjälp av volymen för en kub.</p>
+          <p><img src="pics/16_1.png" alt="" class="responsivepic400" /></p>
+          <h4>Motivering</h4>
+          <p>Vi betecknar volymen för pyramiden med \( V_p \) och volymen för kuben med \( V_k \). Vidare betecknar i längden för kuben med \( 2a \).</p>
+          <p>\( \begin{array}{rl} V_p =  &  \dfrac{1}{6}V_k \\ \\ =  &  \dfrac{1}{6}(2a)^3 \\ \\ =  &  \dfrac{8}{6}a^3 \\ \\ =  &  \dfrac{4}{3} a^3.\\ \\ A_b =  &  (2a)^2=4a^2.\\ \\ \textrm{Alltså }  &  \dfrac{1}{3}\cdot 4a^2\cdot a. \\ \end{array} \)</p>
+          <p>Detta skriver vi som \( \dfrac{1}{3}A_bh \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> För en pyramid vars botten är en kvadrat vet vi att diagonalen över bottenarean är \( 3\sqrt{2} \) lång och att vinkeln mellan bottenarean och kanten mot toppen är 60<sup>o</sup>. Bestäm volymen för pyramiden.</p>
+            <h4>Lösning</h4>
+            <p>Vi har följande situation</p>
+            <p><img src="pics/16_2-1.png" alt="" class="responsivepic250" /></p>
+            <p>Då vi ser uppifrån får vi kanten för pyramiden via Pythagoras.</p>
+            <p><img src="pics/16_2-2.png" alt="" class="responsivepic250" /></p>
+            <p>\( \begin{array}{rl} a^2 + a^2 = &  (3\sqrt{2})^2 \\ 2a^2 = & 3^2 \cdot 2 \\ a= & 3\\ \end{array} \)</p>
+            <p><img src="pics/16_2-3.png" alt="" class="responsivepic250" /></p>
+            <p>och så utnyttjar vi trigonometri för att få höjden.</p>
+            <p>\( \begin{array}{rl} \tan 60^{\circ} =  &  \dfrac{h}{\dfrac{3}{\sqrt{2}}} \\ \\ h =  &  \dfrac{3}{\sqrt{2}}\tan60^{\circ} \\ \\ h=  &  \dfrac{3\sqrt{6}}{2}\\ \end{array} \)</p>
+            <p>Och volymen får vi som \( V=\dfrac{1}{3}A_b\cdot h = \dfrac{1}{3}\cdot 3^2 \cdot \dfrac{3\sqrt{6}}{2} = \dfrac{9\sqrt{6}}{2} \).</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>När Khufus pyramid byggdes var den 147 meter hög (i dagens läge är den 139 m hög) och längden på dess kvadratiska bas är 230 m. Man räknar med att Pyramiden byggdes under 20 år. Hur många m<sup>3</sup> sten per vecka gick det åt om vi räknar med att volymen ökade hela tiden lika mycket?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>Den totala volymen är \( V= \dfrac{1}{3}A\cdot b = \dfrac{1}{3}\cdot 230^2 \cdot 147 = 2592100 \) m<sup>3</sup>.</p>
+              <p>Under 20 år har vi \( 20\cdot 52 = 1040 \) veckor.</p>
+              <p>Det betyder \( \dfrac{2592100}{1040} = 2492,40 \) m<sup>3</sup> per vecka. Alltså 2500 m<sup>3</sup> per vecka.</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Taket på ett torn har formen av en kvadratisk pyramid. Höjden för taket är 5,0 m och längden för bottensidan är 4,0 m. Bestäm totala arean och volymen för taket.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Tvärsnittet av taket utgör en likbent triangel med höjden 5,0 och sidan 4,0. För att få längden använder vi oss av Pythagoras. De likbenta sidorna är \( \sqrt{2^2+5^2} = \sqrt{29}  \) m lång.</p>
+                <p>Den totala arean består av 4 st trianglar med basen 4,0 m och höjden \( \sqrt{29} \) m. Den totala arean är \( 4 \cdot \dfrac{1}{2} \cdot 4 \cdot \sqrt{29} = 43,08\ldots \) m<sup>2</sup>. </p>
+                <p>Volymen är \( \dfrac{1}{3} Ah = \dfrac{1}{3} \cdot 4^2 \cdot 5 = 26,66\ldots \) m^3.</p>
+                <p>Alltså 43,1 m<sup>2</sup> och 26,7 m<sup>3</sup>.</p> </div></div>
+          </li>
+
+          <!--<li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li>En regelbunden kvadratisk pyramid som är lika hög som bred har volymen 9,0 dm<sup>3</sup>. Bestäm längden för sidan och höjden samt vinkeln mellan sidokanten och bottenytans diagonal.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Eftersom \( V=\dfrac{1}{3} Ah \) och bottenytans sidor är lika långa som höjden får vi ekvationen \( V=\dfrac{1}{3}s^3 \).</p>
+                <p>Alltså \( 9 = \dfrac{1}{3}s^3 \Leftrightarrow s=3 \).</p>
+                <p>Genom att studera tvärsnittet för pyramiden får vi diagonalen till \( 3\sqrt{2} \) (försäkra dig om detta), hälften av det är \( \dfrac{3\sqrt{2}}{2} = \dfrac{3}{\sqrt{2}} \). Höjden är 3.</p>
+                <p>Vi får att vinkeln mellan sidokanten och bottenytans diagonal till \( \tan \alpha = \dfrac{3}{\dfrac{3}{\sqrt{2}}}, \Leftrightarrow \alpha = 54,735\ldots \).</p>
+                <p>Alltså 54,7<sup>o</sup>.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Från en regelbunden kvadratisk pyramid vars bottensida är 12 cm har man tagit bort toppen. Höjden för det som är kvar är 5,0 cm och bottensidan för det som man tog bort är 7 cm. Hur hög var pyramiden ursprungligen och bestäm volymen för den kropp som är kvar.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi arbetar med tvärsnitt.</p>
+                <p><img src="pics/16_4_1.png" alt="" class="responsivepic250" /></p>
+                <p>Diagonalerna för kvadraterna är \( 7\sqrt{2} \) och \( 12\sqrt{2} \).</p>
+                <p>Då vi bildar ett tvärsnitt med diagonalerna får vi att</p>
+                <p><img src="pics/16_4_2.png" alt="" class="responsivepic250" /></p>
+                <p>Vi får förhållandet \( \dfrac{x}{\dfrac{7\sqrt{2}}{2}} = \dfrac{5+x}{\dfrac{12\sqrt{2}}{2}} \).</p>
+                <p>Då vi löser ekvationen får vi \( x=7 \). Alltså är ursprungliga höjden 12 cm.</p>
+                <p>Den sökta volymen får vi då vi subtraherar den ena volymen från den andra.</p>
+                <p>\( V = V_{\text{stor}} - V_{\text{liten}} = \dfrac{1}{3} A_{\text{stor}}\cdot h_{\text{stor}} - \dfrac{1}{3} A_{\text{liten}}\cdot h_{\text{liten}} =  \)</p>
+                <p>\( \dfrac{1}{3}(A_{\text{stor}}\cdot h_{\text{stor}} - A_{\text{liten}}\cdot h_{\text{liten}}) = \dfrac{1}{3}(12^2 \cdot 12 - 7^2 \cdot 7) = 461,66\ldots  \) cm<sup>3</sup>.</p>
+                <p>Alltså 460 cm<sup>3</sup>.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Största möjliga kub skrivs in i en regelbunden kvadratisk pyramid. Hur många procent utgör höjden av kuben av pyramidens höjd? Svara med en tiondel procents noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Hur placerar du in kuben så att den blir så stor som möjligt?</p>
+                <p>Sidan \( s \) i kuben \( \dfrac{a\sqrt{2}}{3} \), där \( a \) är sidan i pyramiden.</p>
+                <p>\( \dfrac{24}{27} = 0,888\ldots \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>En Platonisk kropp är en figur vars alla sidoytor består av regelbundna månghörningar. Bestäm volymen och den totala arean för en kropp som består av liksidiga trianglar, tetraeder.</p>
+            <p>Mera om Platoniska kroppar kan du läsa på <a href="http://en.wikipedia.org/wiki/Platonic_solid" target="_blank">Wikipeida</a>.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Area \( a^2\sqrt{3} \), volym \( \dfrac{a^3\sqrt{2}}{12} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>En geometrisk figur bildas så att mittpunkterna på en kubs sidor sammanbinds.
+            <ol>
+              <li>Vilken geometrisk figur får vi? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Två pyramider.</p> </div></div> </li>
+              <li>Hur många procent utgör den bildade kroppen av kubens volym?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Då sidan i kuben har längden \( a \) är sidan i pyramiden \( \sqrt{2}\cdot \dfrac{a}{2} = \dfrac{a}{\sqrt{2}} \).</p>
+                <p>Volymen för en pyramid är \( V=\dfrac{1}{3}(\dfrac{a}{\sqrt{2}})^2 \cdot \dfrac{a}{2} = \dfrac{a^3}{12} \).</p>
+                <p>Pyramidernas procentuella andel är \( \dfrac{2\cdot \dfrac{a^3}{12}}{a^3} = \dfrac{1}{6} = 0,1666\ldots = 16,7 \% \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA3">
+      <a href="15_prismat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="17_kon.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

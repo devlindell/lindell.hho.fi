@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>3. Uppgifter med rottermer</title>
+
+  </head>
+  <body>
+    <header class="MaA15">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_intro.html">1. Introduktion</a>
+            <a class="dropdown-item" href="2_forsta_uppg.html">2. De första uppgifterna</a>
+            <a class="dropdown-item" href="3_rottermer.html">3. Uppgifter med rottermer</a>
+            <a class="dropdown-item" href="4_polynom.html">4. Polynom och rationella uppgifter</a>
+            <a class="dropdown-item" href="5_antalet_rotter.html">5. Antalet reella rötter för ekvationer</a>
+            <a class="dropdown-item" href="6_derivata.html">6. Tangenter och derivata</a>
+            <a class="dropdown-item" href="7_praktiska.html">7. Praktiska tillämpningar</a>
+            <a class="dropdown-item" href="8_trigonometri.html">8. Trigonometriska funktioner</a>
+            <a class="dropdown-item" href="9_vektorer.html">9. Vektorer</a>
+            <a class="dropdown-item" href="10_potenser_rotter.html">10. Potenser och rötter</a>
+            <a class="dropdown-item" href="11_logaritmer_summor.html">11. Logaritmer och summor</a>
+            <a class="dropdown-item" href="12_areor.html">12. Areor och rotationskroppar</a>
+            <a class="dropdown-item" href="13_sannolikheter.html">13. Sannolikheter</a>
+          </div>
+        </div>
+      </nav>
+      <a href="2_forsta_uppg.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 15 Repetition inför studentskrivningarna</h3>
+      <a href="4_polynom.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>3. Uppgifter med rottermer</h1>
+      <section>
+        <div class="theory">
+          <div class="discussion box">
+            <p>Diskutera med din bänkkamrat över följande</p>
+            <ul>
+              <li>När är en kvadratrot definierad?</li>
+              <li>Hur förenklar vi kvadratrötter, tex \( \sqrt{3}\cdot \sqrt{6} \) eller \( 5\sqrt{2} - \sqrt{18} \) ?</li>
+              <li>Hur kvadrerar vi kvadratrötter, tex \( (4\sqrt{2})^2 \)?</li>
+              <li>Hur deriverar vi en kvadratrot, tex \( D\sqrt{x^2-1} \)?</li>
+              <li>Hur integrerar vi en kvadratrot, tex \( \displaystyle\int \sqrt{x^2-1} \mathrm{\,d}x \)?</li>
+            </ul>
+          </div>
+
+          </div>
+      </section>
+      <section>
+
+        <h2>Inledande uppgifter</h2>
+        <ol>
+            <li>När är en kvadratrot definierad? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria- controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1">
+              <div class="card card-body answer"><p>Då det vi tar roten av är större än 0.</p></div></div>
+            </li>
+
+          <li>När är följande kvadratrötter definierade?
+            <table>
+              <tr><th>Påstående</th><th>\( x \geq -2 \) </th><th>\( x \geq -1 \) </th><th>\( x \geq 0 \) </th><th>\( x \geq 1 \) </th><th>\( x \geq 2 \) </th></tr>
+              <tr><td>\( \sqrt{x} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x+1} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x-1} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x+2} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x-2} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{\dfrac{x}{2}} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{\dfrac{x}{2}+1} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{\dfrac{x}{2}-1} \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"> <p>
+              <table>
+              <tr><th>Påstående</th><th>\( x \geq -2 \) </th><th>\( x \geq -1 \) </th><th>\( x \geq 0 \) </th><th>\( x \geq 1 \) </th><th>\( x \geq 2 \) </th></tr>
+              <tr><td>\( \sqrt{x} \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x+1} \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x-1} \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+              <tr><td>\( \sqrt{x+2} \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{x-2} \) </td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              <tr><td>\( \sqrt{\dfrac{x}{2}} \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{\dfrac{x}{2}+1} \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{\dfrac{x}{2}-1} \) </td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              </table>
+            </p></div></div>
+          </li>
+
+          <li><p>Kombinera så att uttrycken har samma värde.</p>
+            <p>Välj av sex följande uttryck: \( \sqrt{2}\cdot \sqrt{5} \), \( \sqrt{2}\cdot \sqrt{8} \), \( \sqrt{3}\cdot \sqrt{5} \), \( \sqrt{3} \cdot \sqrt{6} \), \( \sqrt{8} \) och \( \sqrt{12} \) </p>
+            <table>
+                <tr><td></td><td>\( 2\sqrt{2} \) </td></tr>
+                <tr><td></td><td>\( 3\sqrt{2} \) </td></tr>
+                <tr><td></td><td>\( \sqrt{10} \) </td></tr>
+                <tr><td></td><td>\( 4 \) </td></tr>
+                <tr><td></td><td>\( \sqrt{15} \) </td></tr>
+                <tr><td></td><td>\( 2\sqrt{3} \) </td></tr>
+              </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>
+                <table>
+                  <tr><td>\( \sqrt{8} \) </td><td>\( 2\sqrt{2} \) </td></tr>
+                    <tr><td>\( \sqrt{3} \cdot \sqrt{6} \) </td><td>\( 3\sqrt{2} \) </td></tr>
+                    <tr><td>\( \sqrt{2}\cdot \sqrt{5} \) </td><td>\( \sqrt{10} \) </td></tr>
+                    <tr><td>\( \sqrt{2}\cdot \sqrt{8} \) </td><td>\( 4 \) </td></tr>
+                    <tr><td>\( \sqrt{3}\cdot \sqrt{5} \) </td><td>\( \sqrt{15} \) </td></tr>
+                    <tr><td>\( \sqrt{12} \) </td><td>\( 2\sqrt{3} \) </td></tr>
+                  </table></p></div></div>
+          </li>
+
+          <li><p>Kombinera rätt kvadrering med rätt värde. </p>
+            <p>Välj bland följande uttryck: \( (\sqrt{2})^2 \), \( (\sqrt{3})^2 \), \( (2\sqrt{2})^2 \), \( (2\sqrt{3})^2 \), \( (3\sqrt{2})^2 \) och \( (4\sqrt{2})^2 \).</p>
+            <table>
+              <tr><td></td><td>32 </td></tr>
+              <tr><td></td><td>8 </td></tr>
+              <tr><td></td><td>18 </td></tr>
+              <tr><td></td><td>2 </td></tr>
+              <tr><td></td><td>3 </td></tr>
+              <tr><td></td><td>12 </td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p><table>
+                <tr><td>\( (4\sqrt{2})^2 \) </td><td>32 </td></tr>
+                <tr><td>\( (2\sqrt{2})^2 \) </td><td>8 </td></tr>
+                <tr><td>\( (3\sqrt{2})^2 \) </td><td>18 </td></tr>
+                <tr><td>\( (\sqrt{2})^2 \) </td><td>2 </td></tr>
+                <tr><td>\( (\sqrt{3})^2 \) </td><td>3 </td></tr>
+                <tr><td>\( (2\sqrt{3})^2 \) </td><td>12 </td></tr>
+              </table></p></div></div>
+          </li>
+
+          <li>Bestäm följande derivator
+            <ol>
+            <li>\( D \sqrt{x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="4a">
+            <div class="card card-body answer"><p>\( D \sqrt{x} = D x^{\frac{1}{2}} = \dfrac{1}{2}x^{\frac{1}{2}-1} = \dfrac{1}{2}x^{-\dfrac{1}{2}} = \dfrac{1}{2\sqrt{x}} \)</p></div></div> </li>
+            <li>\( D\sqrt{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="4b">
+            <div class="card card-body answer"><p>\( D \sqrt{x^2-1} = D (x^2-1)^{\frac{1}{2}} = \dfrac{1}{2}(x^2-1)^{-\dfrac{1}{2}} \cdot 2x= \dfrac{x}{\sqrt{x^2-1}} \)</p></div></div> </li>
+            <li>\( D\sqrt{x^2+x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="4c">
+            <div class="card card-body answer"><p>\( D\sqrt{x^2+x} = D(x^2+x)^{\frac{1}{2}} = \dfrac{1}{2}(x^2+x)^{-\dfrac{1}{2}}\cdot(2x+1) = \dfrac{2x+1}{2\sqrt{x^2+x}} \)</p></div></div> </li>
+          </ol>
+          </li>
+
+          <li>Bestäm följande integraler
+            <ol>
+            <li>\( \displaystyle\int \sqrt{x} \mathrm{\,d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5a">
+            <div class="card card-body answer"><p>\( \displaystyle\int \sqrt{x} \mathrm{\,d}x = \displaystyle\int x^{\frac{1}{2}} \mathrm{\,d}x = \dfrac{1}{1+\dfrac{1}{2}}x^{1+\dfrac{1}{2}} + C= \dfrac{1}{\dfrac{3}{2}}x^{\frac{3}{2}}+C = \dfrac{2x\sqrt{x}}{3}+C \)</p></div></div> </li>
+            <li>\( \displaystyle\int \sqrt{x+1}\mathrm{\,d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5b">
+            <div class="card card-body answer"><p><p>\( \displaystyle\int \sqrt{x+1}\mathrm{\,d}x = \displaystyle\int (x+1)^{\frac{1}{2}} = \dfrac{1}{\dfrac{3}{2}}(x+1)^{\frac{3}{2}}+C = \dfrac{2(x+1)\sqrt{x+1}}{3}+C \)</p><p>Eftersom den inre funktionens, \( x+1 \), derivata är \( 1 \) behöver vi inte beakta den.</p></p></div></div> </li>
+            <li>\( \displaystyle\int x\sqrt{x^2+1} \mathrm{\,d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5c">
+            <div class="card card-body answer"><p>\( \displaystyle\int x\sqrt{x^2+1} \mathrm{\,d}x = \displaystyle\int x(x^2+1)^{\frac{1}{2}}\mathrm{\,d}x = \dfrac{1}{2}\displaystyle\int 2x(x^2+1)^{\frac{1}{2}} \mathrm{\,d}x = \dfrac{1}{2}\cdot\dfrac{1}{\dfrac{3}{2}}(x^2+1)^{\frac{3}{2}}+C = \dfrac{1}{3}(x^2+1)\sqrt{x^2+1}+C \)</p></div></div> </li>
+          </ol>
+          </li>
+
+          <h2>Utan räknare</h2>
+          <div class="theory">
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Visa utan användning av närmevärden att \( x \) och \( y \) är inverterade tal om \( x=\sqrt{5-2\sqrt{6}} \) och \( y=\sqrt{2\sqrt{6}+5} \).</p>
+              <h4>Lösning</h4>
+              <p>Om \( x \) och \( y \) är inverterade tal gäller att \( x \cdot y = 1 \). Alltså
+                <p>\( \begin{array}{l}
+                \sqrt{5-2\sqrt{6}} \cdot \sqrt{2\sqrt{6}+5} \\
+                = \sqrt{(5-2\sqrt{6})(2\sqrt{6}+5)} \\
+                = \sqrt{10\sqrt{6}+25-4\sqrt{36}-10\sqrt{6}} \\
+                = \sqrt{25-4\cdot6} \\
+                = \sqrt{25-24} \\
+                = \sqrt{1} = 1 \\
+              \end{array} \)</p>
+              <p>Alltså: \( x \) och \( y \) är varandras inverterade tal.</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Visa utan att använda närmevärden att \( \sqrt{85-60\sqrt{2}}=3\sqrt{5}-2\sqrt{10} \).</p>
+              <h4>Lösning</h4>
+              <p>För en kvadratrot gäller \( \sqrt{a} = b \Leftrightarrow b^2=a \) och \( a,b \geq 0 \). Vi betecknar \( a=85-60\sqrt{2} \) och \( b=3\sqrt{5}-2\sqrt{10} \). \( b=3\sqrt{5}-2\sqrt{10} \geq 0 \) så vi börjar räkna.</p>
+              <p>\( b^2 = (3\sqrt{5}-2\sqrt{10})^2 = 9\cdot 5 -12\sqrt{50}+4\cdot 10 = 85 -12\cdot5\sqrt{2} = 85-60\sqrt{2} = a \).</p>
+              <p>Alltså \( \sqrt{85-60\sqrt{2}}=3\sqrt{5}-2\sqrt{10} \).</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Lös olikheten \( \mid x-1 \mid - \sqrt{x+1} > 0 \).</p>
+              <h4>Lösning</h4>
+              <p>Kvadratroten ger att \( x+1\geq 0 \Leftrightarrow x\geq -1 \).</p>
+              <p>\( \begin{array}{rrcll}  & \mid x-1 \mid - \sqrt{x+1}  &  >   & 0  &  \\
+                & \mid x-1 \mid  &  >   & \sqrt{x+1}  & \mid ()^2 \textrm{eftersom bägge led positiva} \\
+                & (x-1)^2  &  >   & x+1  &  \\
+                & x^2-2x+1  &  >   & x+1  &  \\
+                & x^2 -3x  &  >   & 0 &  \\
+                \textrm{Löser ekvation: } & x^2-3x  & =  & 0  &  \\
+                &  x(x-3)  &  =  &  0 &  \\
+                \textrm{Alltså }  &  x=0  &  \textrm{eller}  &  x-3=0 \\
+                &   &   &  x=3 \\
+                \end{array} \) </p>
+              <p>Vi har en parabel som öppnar sig uppåt med nollställena 0 och 3.</p>
+              <p><img src="pics/parabel_upp.png" alt="" class="responsivepic250" /></p>
+              <p>Och när vi jämför med när roten är definierad får vi svaret \( -1\leq x \leq 0  \) eller \( x\geq 3 \).</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 4</strong> Lös ekvationen \( x-\sqrt{43-3x}=11 \).</p>
+              <h4>Lösning</h4>
+              <p>Roten är definierad då \( 43-3x \geq 0 \Leftrightarrow x \leq \dfrac{43}{3} = 14\dfrac{1}{3} \).</p>
+              <p>\( \begin{array}{rrcll}  & x-\sqrt{43-3x}  & =  & 11  &  \\  & -\sqrt{43-3x}  & =  & 11-x  &  \mid (\quad)^2 \text{ då } x-11 \geq 0 \Leftrightarrow x \geq 11 \\  & 43-3x  & =  & 121-22x+x^2  &  \\  & x^2-19x +78 & =  & 0  &  \\  & x  & =  & \dfrac{19\pm \sqrt{(-19)^2-4\cdot 1\cdot 78}}{2\cdot 1}  &  \\  &   & =  & \dfrac{19\pm\sqrt{49}}{2}=\dfrac{19\pm 7}{2}  &  \\ \end{array} \)</p>
+              <p>Rötterna är \( x=\dfrac{19-7}{2}=6 \) och \( x=\dfrac{19+7}{2}=13 \).</p>
+              <p>Alltså \( x= 13 \).</p>
+            </div>
+          </div>
+
+          <li>Derivera funktionen \( f(x) = 2\sqrt{x} + \dfrac{3}{x^2} - 4 \). [V06, 2a)]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( f(x) = 2\sqrt{x} + \dfrac{3}{x^2} - 4 = 2 x^{\frac{1}{2}} + 3 x^{-2} \).</p>    <p>\( f'(x)=x^{-\dfrac{1}{2}}-6x^{-3} (= \dfrac{1}{\sqrt{x}} + \dfrac{6}{x^3}) \)</p></div></div>
+          </li>
+
+          <li>Lös ekvationen \( \sqrt{x-2} = 1+ \dfrac{2}{\sqrt{x-2}} \). [H00, 2]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( \begin{array}{rcll}  \sqrt{x-2}  & = &  1+ \dfrac{2}{\sqrt{x-2}}  & \mid \sqrt{x-2}\\  (\sqrt{x-2})^2  & = &  \sqrt{x-2} + \sqrt{x-2}\cdot \dfrac{2}{\sqrt{x-2}} \\  x-2  & = &  \sqrt{x-2} +2 \\  x-4  & = & \sqrt{x-2}  & \mid (\quad)^2 \\  x^2-8x+16  & = &  x-2 \\  x^2-9x +18  & = &  0\\  x  & = &  \dfrac{9\pm \sqrt{(-9)^2-4\cdot 1 \cdot 18}}{2\cdot 1} \\  x  & = &  \dfrac{9\pm3}{2}    \end{array} \)</p><p>Vi får rötterna \( x=3 \) och \( x=6 \).</p>    <p>Kontroll ger att \( x=6 \).</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de reella rötterna till ekvationen \( \sqrt{2-x} = x+2 \). [H08, 7]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>\( \begin{array}{rcll}  \sqrt{2-x}  & = &  x+2  & \mid (\quad)^2 \\  2-x  & = &  (x+2)^2 \\  2-x  & = &  x^2+4x+4 \\  x^2 +5x -2  & = &  0 \\  \text{Rotformeln ger} \\  x  & = & \dfrac{-5\pm\sqrt{17}}{2} \\  \end{array} \)</p><p>Eftersom vi har kvadrerat måste rötterna vara positiva, alltså \( x=\dfrac{-5+\sqrt{17}}{2} \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att värdena av uttrycken \( x^2 +1 + \sqrt{x^4+2x^2} \) och \( x^2+1 -\sqrt{x^4 + 2x^2} \) är varandras inverterade tal för alla värden på \( x \). [V88, 2]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Om \( x \) och \( y \) är varandras inverterade tal gäller att \( x\cdot y =1 \).</p>
+                <p>\( \begin{array}{rcl} x \cdot y  & = &  (x^2+1+\sqrt{x^4+2x^2}) (x^2+1-\sqrt{x^4+2x^2}) \\  & = &  (x^2+1)^2-(\sqrt{x^4 + 2x^2})^2\\  & = &  x^4 + 2x^2 +1 -x^4-2x^2 \\  & = &  1\\ \end{array} \)</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <h2>Med räknare</h2>
+          <div class="theory">
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Bestäm största och minsta värdet för uttrycket \( 2x-\sqrt{1-x^2} \) [V92, 7]</p>
+              <h4>Lösning</h4>
+              <h4>TI nSpire CAS</h4>
+              <p>Vi definierar funktionen på räknaren, define f(x)=2x- sqrt(1-x^2).</p>
+              <p>Funktionen är definierad då \( 1-x^2 \geq 0 \Leftrightarrow -1\leq x \leq 1 \). På räknaren solve()</p>
+              <p>Derivera funktionen och spara derivatafunktionen som \( g(x) \), define g(x)=\( \dfrac{d}{dx} f(x) \).</p>
+              <p>Bestäm nollställena för derivatan, solve(g(x)=0,x). Nollstället är \( x=\dfrac{-2\sqrt{5}}{5} \).</p>
+              <p>Funktionen får sitt största och minsta värde i derivatans nollställe eller i intervallets ändpunkter.</p>
+              <p>\( f(-1)= -2 \)</p>
+              <p>\( f(\dfrac{-2\sqrt{5}}{5}) = -\sqrt{5} \approx -2,24 \).</p>
+              <p>\( f(1)=2 \)</p>
+              <p>Minsta värdet är \( -\sqrt{5} \) och största värdet 2.</p> </div>
+              <div class="exercise box">
+                <p><strong>Exempel 2</strong> En rektangel har en sida på x-axeln och två hörn på cirkeln \( x^2+y^2=2 \) ovanför \( x \)-axeln. Bestäm rektangelns största möjliga area.</p>
+                <h4>Lösning</h4>
+                <h4>TI nSpire CAS</h4>
+                <p>För att rita funktionerna på räknaren löser vi \( x^2 + y^2 =2 \) som \( y = \pm\sqrt{2-x^2} \). Övre delen av cirkeln får vi genom att rita \( y=\sqrt{2-x^2} \) och cirkelns nedre del genom att rita \( y=-\sqrt{2-x^2} \).</p>
+                <p><img src="pics/3_ex2_1.png" alt="" class="responsivepic400" /></p>
+                <p>Rektangelns \( x \) koordinat är \( x \). \( y \)-koordinaten är \( \sqrt{2-x^2} \). \( x \) rör sig mellan \( 0 \) och \( 2 \).</p>
+                <p>Arean för kvadraten är \( A(x)=2x \cdot \sqrt{2-x^2} \). Vi definierar den via define kommandot.</p>
+                <p>Vi bestämmer derivatan och derivatans nollställen.</p>
+                <p><img src="pics/3_ex2_2.png" alt="" class="responsivepic400" /></p>
+                <p>Derivatans nollställe i intervallet \( [0,2] \) är \( x=1 \).</p>
+                <p>Vi hittar största och minsta värde i derivatans nollställe eller i intervallets ändpunkter.</p>
+                <p><img src="pics/3_ex2_3.png" alt="" class="responsivepic400" /></p>
+                <p>Största möjliga arean är 2.</p>
+              </div>
+              <div class="exercise box">
+                <p><strong>Exempel 3</strong> Kurvan \( y^2=x^2-x^4, x\geq 0 \) begränsar ett slutet område. Beräkna områdets area. Beräkna ytterligare volymen av den rotationskropp som uppstår, då området roterar kring \( x \)-axeln.</p>
+                <h4>Lösning</h4>
+                <h4>Ti nSpire CAS</h4>
+                <p>Vi skriver kurvan som \( y = \pm \sqrt{x^2-x^4} \) och plottar in bägge leden.</p>
+                <p><img src="pics/3_ex3_1.png" alt="" class="responsivepic400" /></p>
+                <p>Vi behöver skärningspunkterna. För att räkna dem definierar vi funktionen. Vi tar endast den övre eftersom figuren är symmetrisk.</p>
+                <p><img src="pics/3_ex3_2.png" alt="" class="responsivepic400" /></p>
+                <p>Våra intressanta nollställen är \( x=0 \) och \( x=1 \).</p>
+                <p>Arean får vi som \( \dfrac{2}{3} \). Volymen som \( \dfrac{2\pi}{15} \).</p>
+                <p><img src="pics/3_ex3_3.png" alt="" class="responsivepic400" /></p>
+              </div>
+            </div>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li>Beräkna arean av det område som begränsas av de räta linjerna \( x=0, x=2, y=0 \) och kurvan \( y=\dfrac{3x}{\sqrt{2x^2+1}} \). [V84, 6]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#17" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="17">
+              <div class="card card-body answer"> <p>Vi skall bestämma \( A = \displaystyle\int_0^2 \dfrac{3x}{\sqrt{2x^2+1}} \mathrm{\,d}x = 3 \).</p></div></div>
+          </li>
+
+          <li>Bestäm funktionens \( f(x)=x+\sqrt{9-x^2}, -3\leq x \leq 3 \) största och minsta värde. Rita funktionens graf. [V08, 9]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#18" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="18">
+              <div class="card card-body answer"> <p>\( f(x)= x+\sqrt{9-x^2} = x+(9-x^2)^{\frac{1}{2}} \).</p>
+                <p>\( f'(x)=1 -2x\cdot \dfrac{1}{2}(9-x^2)^{-\dfrac{1}{2}} = 1-\dfrac{x}{\sqrt{9-x^2}} \).</p>
+                <p>Söker nollstället, \( f'(x)=0 \), alltså</p>
+                <p>\( \begin{array}{rcll} 1-\dfrac{x}{\sqrt{9-x^2}}  & = &  0 \\ \\ \dfrac{x}{\sqrt{9-x^2}}  & = &  1 \\ \\ \sqrt{9-x^2}  & = &  x  & \mid (\quad)^2\\ 9-x^2  & = &  x^2 \\ 2x^2  & = & 9 \\ x^2  & = &  \dfrac{9}{2}  & \mid{\sqrt{\quad}} \\ x  & = &  \pm \dfrac{3}{\sqrt{2}}\\ \end{array} \)</p>
+                <p>Roten är $x=\dfrac{3}{\sqrt{2}}.</p>
+                <p>Största och minsta värdet får vi i derivatans nollställe eller i intervallets ändpunkter.</p>
+                <p>\( \begin{array}{rcl} f(-3)  & = &  -3 +\sqrt{9-(-3)^2} = -3\\ \\ f(\dfrac{3}{\sqrt{2}})  & = &  \dfrac{3}{\sqrt{2}} +\sqrt{9-(\dfrac{3}{\sqrt{2}})^2} = \dfrac{3}{\sqrt{2}} +\sqrt{9-\dfrac{9}{2}} = \dfrac{3}{\sqrt{2}} +\sqrt{\dfrac{18-9}{2}} = \dfrac{3}{\sqrt{2}} + \dfrac{3}{\sqrt{2}} = 3\sqrt{2}\\ \\ f(3)  & = &  3 +\sqrt{9-3^2} = 3\\ \end{array} \)</p>
+                <p>Största värdet är \( 3\sqrt{2} \) och minsta värdet är \( -3 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#19" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="19">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#21" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="21">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="22">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#23" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="23">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#24" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="24">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#25" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="25">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA15">
+      <a href="2_forsta_uppg.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="4_polynom.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Kombinationer</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_permutationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 10 Sannolikhet och statistik</h3>
+      <a href="7_multiplikation.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Kombinationer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Anna, Bertil, Cecilia och Daniel funderar över hur många par de kan bilda. Kan du hjälpa dem?</p>
+          </div>
+          <p>Paret Anna och Bertil är samma som Bertil och Anna. Vi gör följade tabell:</p>
+          <table>
+            <tbody>
+              <tr><td>Anna</td><td>Bertil</td></tr>
+              <tr><td>Anna</td><td>Cecilia</td></tr>
+              <tr><td>Anna</td><td>Daniel</td></tr>
+              <tr><td>Bertil</td><td>Cecilia</td></tr>
+              <tr><td>Bertil</td><td>Daniel</td></tr>
+              <tr><td>Cecilia</td><td>Daniel</td></tr>
+            </tbody>
+          </table>
+          <p>Då vi räknar raderna märker vi att de kan bilda på sex olika sätt. Då vi ordnade dem i köer, permutationer, fick vi 12 olika köer. Det som vi måste beakta är att permutationerna Anna, Bertil och Bertil, Anna är samma kombination. Då vi delar antal permutationer med två får vi antalet kombinationer att stämma.</p>
+          <p>Om vi allmänt ur en mängd \( n \) skall bila kombinationer beståendes av \( k \) element får vi det som \( C_{n,k} = \dfrac{P_{n,k}}{k!} = \dfrac{n!}{k!(n-k)!} = \displaystyle{n \choose k} \).</p>
+          <p>För att slå in \( \displaystyle{n \choose k} \) på räknaren använder du dig av nCr funktionen.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm sannolikheten att vi i ett parti poker direkt får färg då korten delas ut.</p>
+            <h4>Lösning</h4>
+            <p>För att få färg så skall alla fem kort vara av samma sort. Ur en färg, som består av 13 kort, är vi intresserade av 5. Antalet kombinationer är \( \displaystyle{13\choose 5} \). I kortpacken är det 4 färger som kan bilda färg så totala antalet gynnsamma utfall är \( 4\cdot \displaystyle{13\choose 5} \).</p>
+            <p>Totala antalet utfall, kombinationer, som vi kan bilda med 5 st kort är \( \displaystyle{52 \choose 5} \).</p>
+            <p>Sannolikheten är \( \dfrac{4\cdot \displaystyle{13\choose 5}}{\displaystyle{52\choose 5}} = 0,00198 \). Vi borde få färg direkt vid utdelningen ca 1 gång av 500.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>På hur många sätt kan vi av Jukolas sju bröder bilda grupper som består av 5 stycken bröder?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"><p>Vi får \( \displaystyle{7 \choose 5}=21 \).</p></div></div>
+          </li>
+
+          <li>Hur många "händer" kan man dra ur en kortpacke då man drar 5 st kort?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2a">
+            <div class="card card-body answer"><p>Vi får \( 52 \text{ nCr } 5 = \displaystyle{52\choose 5} = 2598960 \) st.</p></div></div>
+          </li>
+
+          <li>I Bridge delas kortpackens 52 kort jämt bland spelets 4 deltagare. På hur många sätt kan kortpacken delas?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \( 52 \text{ nCr } 13 = 6,3501\ldots \cdot 10^{11} \).</p>
+                <p>Alltså ca 635 miljarder olika sätt.</p></div></div>
+          </li>
+
+          <li>I Lotto dras 7 siffror och 2 tilläggsiffror av 39. När du spelar normalt väljer man 7 st siffror.
+            <ol>
+              <li>Hur många olika rader kan vi bilda i Lotto? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Vi får \( \displaystyle{39 \choose 7}=15380937 \).</p></div></div> </li>
+              <li>Bestäm sannolikheten för att få 7 rätt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( \dfrac{1}{15380937} \)</p></div></div> </li>
+              <li>Bestäm sannolikheten att inte ha någon siffra rätt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Antal lottorader är \( \displaystyle{39\choose 7} \).</p>
+                <p>Rader som inte innehåller en endaste siffra är \( \displaystyle{39-9 \choose 7} = \displaystyle{30\choose 7} \). Av 29 siffror skall våra 7 siffror vara.</p>
+                <p>Sannolikheten är \( \dfrac{\displaystyle{30\choose 7}}{\displaystyle{39 \choose 7}}=0,13236 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Ett idrottslag består av 22 spelare. För en dopingtest väljs 5 spelare slumpmässigt.
+            <ol>
+              <li>Hur många olika stickprov kan man få av laget? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Antal kominationer är \( \displaystyle{22\choose 5}=26334 \).</p></div></div> </li>
+              <li>I laget finns tre spelare som använt förbjudna preparat. Med vilken sannolikhet består stickprovet av endast rena spelare? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Antal rena kombinationer är \( \displaystyle{22-3 \choose 5} \).</p>
+                <p>Sannolikheten är \( \dfrac{\displaystyle{19\choose 5}}{\displaystyle{22\choose 5}}=0,44159 \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lotto kan man spela som system. Det betyder att man väljer flera siffror än 7. I system 9/39 väljer man 9 siffror av 39. I delmomenten räknar vi med att vi spelar 9 siffror.
+            <ol>
+              <li>Hur många normala rutfält med 7 siffror motsvarar valet av 9 siffror? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>Vi får \( \displaystyle{9\choose 7}=36 \).</p></div></div> </li>
+              <li>Med vilken sannolikhet får man 7 rätt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>Vi får att \( \dfrac{\displaystyle{7 \choose 7} \cdot \displaystyle{32\choose 2}}{\displaystyle{39 \choose 7}} = 0,000032248 \)</p></div></div> </li>
+              <li>Med vilken sannolikhet har man ingen siffra rätt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7c">
+              <div class="card card-body answer"><p>Vi skall inte ha någon av de 7 normala eller 2 tilläggssiffrorna rätt.</p>
+                <p>Sannolikheten är \( \dfrac{\displaystyle{7\choose 0}\displaystyle{2\choose 0}\displaystyle{30\choose 9}}{\displaystyle{39\choose 7}} = 0,930187 \).</p></div></div> </li>
+              <li>Med vilken sannolikhet har man i alla fall en siffra rätt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7d">
+              <div class="card card-body answer"><p>Sannolikheten är \( 1-P(\text{Ingen siffra rätt}) = 1 - 0,930187 = 0,06981 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vilket sätt inom kombinatoriken beskriver följande händelse?
+            <table>
+              <tr><th>Påstående</th><th>\( n\cdot n \cdot n \ldots \cdot n \)</th><th>\( n! \) </th><th>\( \displaystyle{n\choose k} \)</th></tr>
+              <tr><td>Antal kombinationer då vi agerar slumpmässigt.</td><td></td><td></td><td></td></tr>
+              <tr><td>Antal grupper där ordningen spelar roll.</td><td></td><td></td><td></td></tr>
+              <tr><td>Antal grupper där ordningen inte spelar någon roll.</td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>
+                <table>
+                  <tr><th>Påstående</th><th>\( n\cdot n \cdot n \ldots \cdot n \)</th><th>\( n! \) </th><th>\( \displaystyle{n\choose k} \)</th></tr>
+                  <tr><td>Antal kombinationer då vi agerar slumpmässigt.</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>Antal grupper där ordningen spelar roll.</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>Antal grupper där ordningen inte spelar någon roll.</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                </table>
+              </p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att följande stämmer.
+            <p>Arbeta via definitionen.</p>
+            <ol>
+              <li>\( \displaystyle{n\choose 0}=\displaystyle{n\choose n} = 1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14a">
+              <div class="card card-body answer"><p>\( \displaystyle{n\choose 0}=\dfrac{n!}{0!(n-0)!}=\dfrac{n!}{1\cdot n!}=\dfrac{n!}{n!} = 1 \) och \( \displaystyle{n\choose n}=\dfrac{n!}{n!(n-n)!} = \dfrac{n!}{n!\cdot 0!} = 1 \).</p></div></div> </li>
+              <li>\( \displaystyle{n\choose n-k} = \displaystyle{n\choose k} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14b">
+              <div class="card card-body answer"><p>\( \displaystyle{n\choose n-k} =\dfrac{n!}{(n-k)![n-(n-k)]!} = \dfrac{n!}{(n-k)!k!} = {n\choose k} \)</p></div></div> </li>
+              <li>\( \displaystyle{n\choose k} + \displaystyle{n \choose k+1} = \displaystyle{n+1\choose k+1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14c">
+              <div class="card card-body answer"><p>\( \begin{array}{rcl}
+                \displaystyle{n\choose k}+\displaystyle{n\choose k+1}  & = &  ^{k+1)}\dfrac{n!}{k!(n-k)!}+^{n-k)}\dfrac{n!}{(k+1)![n-(k+1)]!} \\  & = &  \dfrac{n!(k+1)}{(k+1)!(n-k)!}+\dfrac{n!(n-k)}{(k+1)!(n-k)!} \\ & = & \dfrac{n!(k+1+n-k)}{(k+1)!(n-k)!}\\  & = &  \dfrac{(n+1)!}{(k+1)!(n-k)!}\\  & = &  \displaystyle{n+1\choose k+1}\end{array} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="5_permutationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_multiplikation.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

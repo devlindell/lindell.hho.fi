@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Iteration</title>
+
+  </head>
+  <body>
+    <header class="MaA12">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_komplexatal.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 12 Algoritmer i matematiken</h3>
+      <a href="6_newton-raphson.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Iteration och rekursivt definierad talföljd</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi börjar med att undersöka von Kochs kurva.</p>
+            Video
+
+          </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Låt \( f(x)=2x-1\). Iterera funktionen
+              <ol start="1" style="list-style-type:lower-alpha">
+                <li>med startvärdet 1,</li>
+                <li>med startvärdet \( x \).</li>
+              </ol>
+              använd dig av 4 iterationer.</p>
+          </div>
+          <p>I MaG arbetade vi med talföljder. Då tittade vi på talföljder där följande element är beroende av föregeående element. Dessa talföljder kallas för rekursivt definierade talföljder.</p>
+          <h2>Rekursivt definierad talföljd</h2>
+          <div class="intro box">
+            <p>Vi studerar talföljden där \(a_1=4\) och \(a_n= \dfrac{1}{a_{n-1}}+n, n=1,2,3,\ldots\).</p>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/371384840" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Talföljder där nästa element baserar sig på föregående element heter rekursiva talföljder.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm de 5 första elementen för talföljden \(a_1 = 2\), \(a_n=a_{n-1}-2n\) då \(n=1,2,3\ldots\).</p>
+            <h4>Lösning</h4>
+            <p>Vi bygger upp följande talföljd:</p>
+            <p>\(a_1 = 2\)</p>
+            <p>\(a_2 = a_1 -2 n = 2 -2\cdot 2 = -2\)</p>
+            <p>\(a_3 = a_2 -2 n = -2 -2\cdot 3 = -8\)</p>
+            <p>\(a_4 = a_3-2n = -8-2\cdot 4 = -20\)</p>
+            <p>\(a_5 = a_4-2n= -20 -2\cdot 5 = -30\)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Bestäm den allmänna formen för följande rekursivt definierade talföljder.</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>\(a_1=3\), \(a_n=3a_{n-1}\) då \(n=2,3,4,\ldots\)</li>
+              <li>\(a_1=1\), \(a_n=(1-\dfrac{1}{n})a_{n-1}\) då \(n=2,3,4,\ldots\).</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol start="1" style="list-style-type:lower-alpha">
+            <li><p>Vi har</p>
+            <p>\(a_1=3\)</p>
+            <p>\(a_2=3 \cdot 3 = 3^2\)</p>
+            <p>\(a_3=3 \cdot 3^2=3^2\)</p>
+            <p>\(a_n=3^n\).</p></li>
+            <li><p>\(a_1 = 1\)</p>
+            <p>\(a_2 = (1-\dfrac{1}{2})1 = \dfrac{1}{2}\)</p>
+            <p>\(a_3 = (1-\dfrac{1}{3})\dfrac{1}{2} = \dfrac{2}{3}\cdot\dfrac{1}{2} = \dfrac{1}{3}\)</p>
+            <p>\(a_4 = (1-\dfrac{1}{4})\dfrac{1}{3} = \dfrac{3}{4}\cdot\dfrac{1}{3} = \dfrac{1}{4}\)</p>
+            <p>\(a_n= \dfrac{1}{n}, n=1,2,3,\ldots\).</p></li>
+          </ol>
+          </div>
+          <p>För att exakt visa att den allmänna formen ger exakt samma talföljd som den rekursivt definierade använder man sig av <a href="https://sv.wikipedia.org/wiki/Matematisk_induktion" target="_blank">matematisk induktion</a>. I kurs 11 tränar vi oss på det.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Bestäm de första termerna i talföljden som bestäms som \(a_n=a_{n-1}+a_{n-2}\).</p>
+            <h4>Lösning</h4>
+            <p>\(a_3 = a_2+a_1\)</p>
+            <p>\(a_4 = a_3+a_2 = (a_2+a_1) + a_2 = 2a_2+a_1\)</p>
+            <p>\(a_5 = a_4+a_3 = (2a_2+a_1) + (a_2+a_1) = 3a_2+2a_1\)</p>
+            <p>\(a_6 = a_5+a_4 = (3a_2+2a_1) + (2a_2+a_1) = 5a_2+3a_1\)</p>
+            <p>\(a_7 = a_6+a_5 = (5a_2+3a_1) + (3a_2+2a_1) = 8a_2 +5a_1\).</p>
+            <p>Vi märker att alla termer är uppbyggda och beroende av \(a_1\) och \(a_2\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 5</strong> För en insektpopulation på 10 000 individer gäller att varje år ökar populationen med 9 % och efter årets ungar är uppfödda flyttar 500 st insekter ut för att bilda en ny population.</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>Bilda den rekursiva talföljden.</li>
+              <li>Efter hur många år överskrider populationen 15 000 insekter?</li>
+            </ol>
+            <h4>Lösning</h4>
+            <p>Vi får</p>
+            <p>\(\begin{array}{cl}
+              År & \text{Antal, lämpligt avrundat vid behov} \\
+              1 & 10000 \\  2 & 10000 \cdot 1,09 -500 = 10400   \\
+              3 & 10400 \cdot 1,09 -500 = 10836   \\
+              4 & 10836 \cdot 1,09 -500 = 11311  \\
+              5 & 11829 \\
+              6 & 12394 \\
+              7 & 13009 \\
+              8 & 13680 \\
+              9 & 14411 \\
+              10& 15208 \\
+              \end{array}\)</p>
+              <p>Efter 10 år överskrider populationen 15 000 individer.</p>
+              <p>Om vi gör det exakt får vi</p>
+              <p>\(\begin{array}{cl}
+                År & \text{Exakt} \\
+                1 & 10000 \\
+                2 & 10000\cdot1,09-500 \\
+                3 & (10000\cdot 1,09 - 500)1,09-500 = 10000\cdot1,09^2-500\cdot1,09 -500 \\
+                4 & (10000\cdot1,09^2-500\cdot1,09 -500)1,09-500 \\
+                & =10000\cdot1,09^3-500\cdot1,09^2- 500\cdot1,09 -500 \\
+                n & 10000\cdot1,09^{n-1} -500\cdot1,09^{n-2} -500\cdot1,09^{n-3} -\ldots-500\cdot1,09^1 -500 \\
+                \end{array}\)</p>
+                <p>Den andra delen är en geometrisk summa där \(a_1=500\) och \(q=1,09\). Summan av den är \(\dfrac{-500(1-1,09^{n-1})}{1-1,09}\).</p>
+                <p>Vi får att \(10 000\cdot 1,09^{n-1} +\dfrac{-500(1-1,09^{n-1})}{1-1,09} > 15 000\) som har lösningen \(n>9,75\). Alltså 10 år.</p>
+              </div>
+              <div class="video box">
+                  <h3>Rekursivt definieradet talföljder på LibreOfficeCalc</h3>
+              </div>
+
+         </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><a href="https://en.wikipedia.org/wiki/Wacław_Sierpiński" target="_blank">Waclaw Sierpinksi</a> var en polsk matematiker som undersökte mängdlära, talteori, funktioner och topolgi. Han skapade två figurer som bygger på fraktaler, Sierpinski triangeln och Sierpinski mattan.
+            <ol>
+            <li>Sierpinski trianglen skapar vi på följande sätt.
+              <ol style="list-style-type:decimal;">
+                <li>Rita en triangel.</li>
+                <li>Förena mittpunkterna till triangelns sidor så att det bildas en mindre triangel. Färglägg den mindre triangeln.</li>
+                <li>I figuren bildas nya vita trianglar. Upprepa steg 2 för varje vit triangel upprepande gånger.</li>
+              </ol>
+              Hur ser figuren ut efter 4 gånger?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1a">
+            <div class="card card-body answer"> <p>Vi får något i stil med </p><p><img src="pics/5_Sierpinski_triangle_2.png" class="responsivepic600" alt=""></p><p>Om vi fortsätter får vi </p><p><img src="pics/5_Sierpinski_triangle.png" class="responsivepic600" alt=""></p> </div></div>
+          </li>
+          <li>Sierpinski mattan skapar vi på följande sätt.
+            <ol>
+              <li>Rita en kvadrat.</li>
+              <li>Dela kvadraten i 9 mindre lika stora kvadrater och färglägg den mittersta kvaraten.</li>
+              <li>I figuren bildas vita kvadrater. Upprepa steg 2 för varje vit kvadrat upprepande gånger.</li>
+            </ol>
+            Hur ser figuren ut efter 4 gånger?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="1b">
+          <div class="card card-body answer"> <p>Vi får något i stil med </p>
+            <p><img src="pics/5_Sierpinski_matta_1.png" class="responsivepic400" alt=""></p>
+            <p><img src="pics/5_Sierpinski_matta_2.png" class="responsivepic400" alt=""></p>
+            <p><img src="pics/5_Sierpinski_matta_3.png" class="responsivepic400" alt=""></p>
+            <p><img src="pics/5_Sierpinski_matta_4.png" class="responsivepic400" alt=""></p>
+            <p><img src="pics/5_Sierpinski_matta_5.png" class="responsivepic400" alt=""></p>
+            <p><img src="pics/5_Sierpinski_matta_6.png" class="responsivepic400" alt=""></p>
+          </div></div>
+          </li>
+          </ol>
+          </li>
+
+          <li>Sumererna kunde redan för 4 000 år sedan bestämma ett närmevärde för talet \( \sqrt{a} \) med hjälp av följande algortim:
+            <ol type="1">
+              <li>Börja med en kvalificerad gissning, \( b > 0\).</li>
+              <li>Nästa värde får vi genom att räkna medelvärdet av \( b \) och \( \dfrac{a}{b} \).</li>
+              <li>Vi fortsätter på samma sätt upprepande gånger.</li>
+            </ol>
+            <ol>
+            <li>Använd algoritmen för att bestämma ett närmevärde för \( \sqrt{3} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"> <p>Vi gissar på \( 1 \) eftersom \( 1 < 3 < 2^2 \).</p><p>Bild från LibreOffice</p> </div></div>
+            </li>
+            <li>Använd algoritmen för att bestämma ett närmevärde för \( \sqrt{17} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"> <p>Vi gissar på \( 4 \) eftersom \( 4^2 < 17 < 5^2 \).</p><p>Bild från LibreOffice</p> </div></div>
+            </li>
+            <li>Beskriv algoritmen som en rekursiv talföljd.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"> Lösningen </div></div>
+            </li>
+          </ol>
+        </li>
+
+          <li>Iterera funktionen \( f(x) = 1 + \dfrac{1}{x^2} \) med startvärdet 1. Vilket tal kommer vi att närma oss?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Bild från LibreOffice</p><p>Vi kommer att närma oss </p> </div></div>
+          </li>
+
+          <li>Iterera funktionen \( f(x) = 3x - 2 \) med startvärdet \( x \). Bestäm resultatet av de fem första iterationerna.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                f^1(x) & = & 3x -2 \\
+                f^2(x) & = & 3(3x-2)-2 = 3^2x-3\cdot 2-2  \\
+                f^3(x) & = & 3(3^2x-3\cdot 2-2) - 2 = 3^3x-3^2\cdot 2 - 3\cdot 2 - 2 \\
+                f^4(x) & = & 3(3^3x-3^2\cdot 2 - 3 \cdot 2 - 2) -2 = 3^4 x - 3^3 \cdot 2 - 3^2 \cdot 2 -3\cdot 2 - 2 \\
+                f^5(x) & = & 3(3^4 x - 3^3 \cdot 2 - 3^2 \cdot 2 -3\cdot 2 - 2) -2 = 3^5 x - 3^4 \cdot 2 - 3^3 \cdot 2 - 3^2 \cdot 2- 3\cdot 2 - 2 \\
+                \end{array} \)
+              </p>
+               </div></div>
+          </li>
+
+          <li>Iterera funktionen \( f(x) = x + 3 \) med startvärdet \( x \). Bestäm värdet efter den \( n\):te iterationen \( f^n(x) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer">
+                <p>Vi får</p>
+                  <p>\( \begin{array}{rcl}
+                  f^1(x) & = & x+3 \\
+                  f^2(x) & = & x+3 + 3 = x + 2 \cdot 3  \\
+                  f^3(x) & = & x + 2 \cdot 3 + 3 = x+ 3 \cdot 3 \\
+                  f^4(x) & = & x+ 3 \cdot 3  + 3 = x+ 4 \cdot 3 \\
+                  f^n(x) & = & x+ n \cdot 3 \\
+                  \end{array} \)
+                </p>
+              </div></div>
+          </li>
+
+          <li>Bestäm de tre följande elementen för talföljden \(a_n=2-na_{n-1}\) då \(a_1=3\) och \(n=2,3,\ldots\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"> <p>\( a_1 = 3, a_2 = -4, a_3 = 14 \) och \( a_4 = -54 \).</p> </div></div>
+          </li>
+
+          <li>Bestäm de fyra följande elementen för talföljden som börjar med \(a_1=2\) och som bestäms rekursivt av \(a_n=3-a_{n-1}\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( a_1 = 2, a_2 = 1, a_3 = 2, a_4 = 1 \) och \( a_5 = 2 \).</p> </div></div>
+          </li>
+
+          <li>Bestäm de fyra följande elementen för den rekursiva talföljden som defineras som \(a_n = a_{n-1} +2a_{n-2}\) då \(a_1 = 2\) och \(a_2=4\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\( a_1 = 2, a_2 = 4, a_3 = 8, a_4 = 16, a_5 = 32 \) och \( a_6 = 64 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den allmänna formeln för följande rekursivt definierade talföljder
+            <ol>
+              <li>\(a_1 = 2\), \(a_n=a_{n-1}+2\) då \(n=2,3,4,\ldots\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9a">
+              <div class="card card-body answer"><p>\(a_1 = 2\)</p> <p>\(a_2 = 2 + 2 = 4\)</p> <p>\(a_3 = 4 + 2 = 6\)</p> <p>\(a_4 = 6 + 2 = 8\)</p> <p>\(a_n = 2n, n=1,2,3\ldots\)</p> </div></div> </li>
+              <li>\(a_1 =1\) och \(a_n=2a_{n-1}\) då \(n=2,3,4,\ldots\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9b">
+              <div class="card card-body answer"><p>\(a_1 = 1\)</p> <p>\(a_2 = 2\cdot 1 = 2\)</p> <p>\(a_3 = 2\cdot 2 = 4\)</p> <p>\(a_4 = 2\cdot 4 = 8\)</p> <p>\(a_5 = 2\cdot 8 = 16\)</p> <p>\(a_n = 2^{n-1}, n=1,2,3,\ldots\)</p> </div></div> </li>
+              <li>\(a_1 = 1\) och \(a_n=na_{n-1}\), då \(n=2,3,4,\ldots\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9c">
+              <div class="card card-body answer"><p>\(a_1 = 1\)</p> <p>\(a_2 = 2\cdot 1 = 2\)</p> <p>\(a_3 = 3\cdot 2 = 6 = 3\cdot 2\cdot 1 \)</p> <p>\(a_4 = 4\cdot 6 = 24 = 4\cdot 3\cdot 2\cdot 1 \)</p> <p>\(a_n = n!, n=1,2,3,\ldots\)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den allmänna formeln för följande rekursivt definierade talföljder.
+            <ol>
+              <li>\(a_1= 1\) och \(a_n=\dfrac{a_{n-1}}{2}\) då \(n=2,3,4,\ldots\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>\(a_1 = 1\)</p> <p>\(a_2 = \dfrac{1}{2}\)</p> <p>\(a_3 = \dfrac{\frac{1}{2}}{2} = \dfrac{1}{4}\)</p> <p>\(a_4 = \dfrac{\frac{1}{4}}{2} = \dfrac{1}{8}\)</p> <p>\(a_5 = \dfrac{\frac{1}{8}}{2} = \dfrac{1}{16}\)</p> <p>\(a_n= \dfrac{1}{2^{n-1}}, n=1,2,3,\ldots\).</p> </div></div> </li>
+              <li>\(a_1= 3\) och \(a_n=\dfrac{a_{n-1}}{n}\) då \(n=2,3,4,\ldots\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>\(a_1 = 3\)</p> <p>\(a_2 = \dfrac{3}{2}\)</p> <p>\(a_3 = \dfrac{\frac{3}{2}}{3} = \dfrac{3}{6}\)</p> <p>\(a_4 = \dfrac{\frac{3}{6}}{4} = \dfrac{3}{24}\)</p> <p>\(a_n = \dfrac{3}{n!}, n=1,2,3,\ldots\)</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>I en stad bor det 25 000 personer. Varje år föds det 1,5 % nya invånare och pga av missnöje flyttar det varje bort 200 personer.
+            <ol>
+              <li>Bilda den rekursiva talföljd som beskriver mängden invånare i staden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11a">
+              <div class="card card-body answer"><p>\(a_1 = 25000\)</p> <p>\(a_n = a_1 \cdot 1,015-200\)</p> </div></div> </li>
+              <li>Efter hur många år överstiger befolkningen 26 000 invånare? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11b">
+              <div class="card card-body answer"><p id="f2drwnvif64">En tabell med värden ger 7 år.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>En talföljd definieras som \(a_1=4\) och \(a_{n+1}=a_n+k\). För vilket värde på \(k\) gäller att \(\sum_{i=1}^5 a_i = 0\)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Vi får</p>    <p>\(\begin{array}{rcl}  \sum_{i=1}^5 a_i &=& 0 \\   4 + [4+k] + [(4+k)+k] + [(4+k+k)+k] + [(4+k+k+k)+k] &=& 0 \\  5\cdot 4 + 10k &=& 0 \\  10k &=& -20 \\  k &=& -\frac{10}{20} = -\frac{1}{2}\\  \end{array}\)</p> </div></div>
+          </li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA12">
+      <a href="4_komplexatal.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_newton-raphson.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

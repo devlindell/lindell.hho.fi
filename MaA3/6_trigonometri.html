@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Trigonometri i en rätvinklig triangel</title>
+
+  </head>
+  <body>
+    <header class="MaA3">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_intro.html">1. Introduktion</a>
+            <a class="dropdown-item" href="2_likformighet.html">2. Likformighet</a>
+            <a class="dropdown-item" href="3_likformighet_areor.html">3. Likformighet och areor</a>
+            <a class="dropdown-item" href="4_triangeln.html">4. Triangeln</a>
+            <a class="dropdown-item" href="5_pythagoras.html">5. Pythagoras sats</a>
+            <a class="dropdown-item" href="6_trigonometri.html">6. Trigonometri i en rätvinklig triangel</a>
+            <a class="dropdown-item" href="7_sinussatsen.html">7. Sinussatsen</a>
+            <a class="dropdown-item" href="8_cosinussatsen.html">8. Cosinussatsen</a>
+            <a class="dropdown-item" href="9_fyrhorningen.html">9. Fyrhörningen</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_tangenten_cirkeln.html">11. Tangenter för cirkeln</a>
+            <a class="dropdown-item" href="12_bagvinkeln.html">12. Bågvinkeln</a>
+            <a class="dropdown-item" href="13_ratblock.html">13. Rätblock</a>
+            <a class="dropdown-item" href="14_kuben.html">14. Kuben</a>
+            <a class="dropdown-item" href="15_prismat.html">15. Prismat</a>
+            <a class="dropdown-item" href="16_pyramid.html">16. Pyramid</a>
+            <a class="dropdown-item" href="17_kon.html">17. Konen</a>
+            <a class="dropdown-item" href="18_sfar.html">18. Sfären</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_pythagoras.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 3 Geometri</h3>
+      <a href="7_sinussatsen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Trigonometri i en rätvinklig triangel</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi börjar med att studera vinklar i rätvinkliga trianglar som är likformiga.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/393656997" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Då vi förstorar eller förminskar en rätvinklig triangel märker vi att förhållandet mellan sidorna hålls konstant. För vinklarna gäller att storleken på vinklarna är samma i de likformiga trianglarna.</p>
+          <p>Sinus, cosinus och tangens är ett mått på förhållandet mellan sidorna och storleken på en bestämd vinkel i en rätvinklig triangel.</p>
+          <div class="summary box">
+            <p>Definition av sinus, cosinus och tangens.</p>
+            <table>
+              <tbody>
+                <tr><td><img src="pics/6_1.png" alt="" class="responsivepic400" /></td><td><p>\( \sin \alpha = \dfrac{a}{c} \)</p><p>\( \cos \alpha = \dfrac{b}{c} \)</p><p>\( \tan \alpha = \dfrac{a}{b} \)</p></td></tr></tbody>
+              </table>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Bestäm storleken av \( \alpha \) i triangeln nedan.</p>
+              <p><img src="pics/6_2.png" alt="" class="responsivepic400" /></p>
+              <div class="video">
+                <iframe width="640" height="564" src="https://player.vimeo.com/video/317990685" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+              </div>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Vi vet att \( \cos \alpha = \dfrac{3}{4} \). Bestäm \( \sin \alpha \) och \( \tan \alpha \).</p> <h4>Lösning</h4>
+              <p>Vi börjar med att rita en bild.</p>
+              <p><img src="pics/6_3.png" alt="" class="responsivepic400" /></p>
+              <p>Pyhtagoras ger oss att</p>
+              <p>\( \begin{array}{rl} 4^2 =  &  3^2+x^2 \\ x^2 =  & 16-9 = 7 \\ x =  &  \sqrt{7} \textrm{ eftersom vi har en sträcka.} \\ \sin \alpha =  &  \dfrac{\sqrt{7}}{4} \\ \\ \tan \alpha =  &  \dfrac{\sqrt{7}}{3} \\ \end{array} \)</p>
+              <div class="video"><iframe width="640" height="564" src="https://player.vimeo.com/video/317991360" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+              </div>
+            </div>
+            <div class="summary box">
+              <p>För att bestämma arean för en triangel kan vi utnyttja sinus.</p>
+              <p>\( A=\dfrac{1}{2}bc\sin\alpha. \)</p>
+              <p><img src="pics/6_4.png" alt="" class="responsivepic400" /></p>
+              <div class="video"><iframe width="640" height="564" src="https://player.vimeo.com/video/317992033" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe></div>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Bestäm arean av triangeln i figuren nedan.</p>
+              <p><img src="pics/6_5.png" alt="" class="responsivepic400" /></p>
+              <h4>Lösning</h4>
+              <p>Arean får vi via \( A=\dfrac{1}{2}ab\sin\alpha = \dfrac{1}{2}\cdot 9,5 \cdot 7,5 \sin 50^{\circ} = 27,3  \) cm<sup>2</sup>.</p>
+              <div class="video"><iframe width="640" height="564" src="https://player.vimeo.com/video/317992648" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+              </div>
+            </div>
+            <div class="summary box">
+              <h4>Räkna trigonometri på GeoGebra</h4>
+              <p>Bestämma värdet av vinklar och bestämma storleken av vinklar.</p>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><p>Bestäm \( \sin \alpha \), \( \cos \alpha \) och \( \tan \alpha \) för triangeln.</p>
+            <p><img src="pics/6_6.png" alt="" class="responsivepic400" /></p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>Motstånde katet 2, hypotenusa \( \sqrt{13} \). Alltså sinus, \( \sin \alpha=\dfrac{2}{\sqrt{13}} \)</p>
+              <p>Närliggande katet 3, hypotenusa \( \sqrt{13} \). Alltså cosinus,\( \cos \alpha=\dfrac{3}{\sqrt{13}} \)</p>
+              <p>Närliggande katet 3, motstånde katet 2. Alltså tangens,\( \tan \alpha=\dfrac{2}{3} \)</p> </div></div>
+          </li>
+
+          <li>Bestäm storleken av vinklarna \( \alpha \), \( \beta \) och \( \gamma \) i momenten a), b) och c) med en tiondels grads nogrannhet.
+            <ol>
+              <li><p><img src="pics/6_7-a.png" alt="" class="responsivepic400" /></p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vi har närliggande katet och hypotensuan. \( \cos\alpha = \dfrac{3}{8} \) ger \( \alpha = 67,97\ldots = 68,0 \).</p> </div></div> </li>
+              <li><p><img src="pics/6_7-b.png" alt="" class="responsivepic400" /></p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vi har motstående katet och hypotenusan. \( \sin \beta =\dfrac{2}{6} \) ger \( \beta = 19,47\ldots=19,5 \).</p> </div></div> </li>
+              <li><p><img src="pics/6_7-c.png" alt="" class="responsivepic400" /></p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi har bägge kateterna. \( \tan \gamma = \dfrac{4,5}{6,5} \) ger \( \gamma = 34,695\ldots = 34,7 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm längden av \( x \), \( y \) och \( z \). Svara med en tiondel centimeters noggrannhet.
+            <ol>
+              <li><p><img src="pics/6_8-a.png" alt="" class="responsivepic400" /></p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi har motstånde katet och hypotnusan. Vi utnyttjar sinus. Vi får \( \sin 50^{\circ}=\dfrac{x}{8} \) som ger \( x=6,128\ldots = 6,1 \) cm.</p> </div></div> </li>
+              <li><p><img src="pics/6_8-b.png" alt="" class="responsivepic400" /></p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi har närliggande katet och hypotnusan. Vi utnyttjar cosinus. Vi får att \( \cos 30^{\circ}=\dfrac{5,5}{y} \) som ger \( y=6,351\ldots =6,4 \) cm.</p> </div></div> </li>
+              <li><p><img src="pics/6_8-c.png" alt="" class="responsivepic400" /></p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Vi har båda kateterna. Vi utnyttjar tangens. Vi får att \( \tan48^{\circ}=\dfrac{z}{2} \) som ger \( z=2,221\ldots = 2,2 \) cm.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li> Toppvinkeln för i en likbent triangel är 50<sup>o</sup> och benen har längden 5,6 cm. Bestäm arean av triangeln med en tiondel kvardatcentimeters noggrannhet.
+            <p>Kom ihåg att du kan bestämma triangelns area med \( A=\dfrac{1}{2}bc\sin\alpha \).</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Arean av triangeln är \( A=\dfrac{1}{2}bc\sin\alpha = \dfrac{1}{2}5,6\cdot 5,6\sin 50^{\circ} =12,012 \) cm<sup>2</sup>.</p> </div></div>
+          </li>
+
+          <li><p>Bestäm vinkeln mellan \( a \) och \( b \) då vi vet att \( a \)= 4,0 cm, \( b \)= 6,0 cm och arean är 10 cm<sup>2</sup>. Svar med en tiondel grads noggrannhet.</p>
+            <p><img src="pics/6_9.png" alt="" class="responsivepic400" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi får att \( A=\dfrac{1}{2}bc\sin\alpha \) ger \( 10=\dfrac{1}{2}4\cdot 6 \sin \alpha \).</p>
+                <p>\( \alpha = 56,443\ldots = 56,4^{\circ} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Benen i en likbent triangel är 7,0 cm långa och basen är 4,0 cm lång. Bestäm storleken av triangelns alla vinklar men en tiondels grads noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Toppvinkeln: Då vi ritar en bild märker vi att vi hittar en rätvinklig triangel vars hypotenusa är 7,0 cm och motstående katet 2,0 cm.</p>
+                <p>Halva toppvinklen har storleken \( \sin \alpha =\dfrac{2}{7} \Leftrightarrow \alpha = 16,60\ldots^{\circ} \).</p>
+                <p>Toppvinkeln är \( 33,203\ldots^{\circ} \) stor.</p>
+                <p>Basvinklarna får vi via cosinus.</p>
+                <p>\( \cos \alpha =\dfrac{2}{7} \Leftrightarrow \alpha = 73,3984\ldots ^{\circ} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En havsstrand lutar jämt med 1,5<sup>o</sup>. Hur många meter upp på stranden varierar havsvattnet då havsnivån mellan ebb och flod är 2,5 m? Svara med en tiondels meters noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får att \( \sin 1,5^{\circ}=\dfrac{2,5}{x} \Leftrightarrow x= 95,504\ldots = 95,5 \) m.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Vi vet att \( \sin \alpha = \dfrac{3}{5} \). Bestäm \( \cos \alpha \) och \( \tan \alpha \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="8t">
+            <div class="card card-body hint"> <p>Tänk efter, hur definierar vi sinus, cosinus och tangens?</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Eftersom sinus är \( \dfrac{\text{motstående katet}}{\text{hypotenusa}} \) så är längden av motstånde katet 3 och hypotenusan 5. Den andra kateten får vi via Pyhgagoras, \( x^2 +3^2 = 5^2 \). Allstå 4, lös ekvationen.</p> <p>Då kan vi ställa upp \( \cos\alpha = \dfrac{4}{5} \) och \( \tan\alpha=\dfrac{3}{4} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i><p>För att bestämma exakta värden för vinklar utnyttjar vi oss av Typtriangel I och Typtriangel II. Typtriangel I får vi då vi utnyttjar en kvadrat med sidan 1 och dess diagonal. Typtriagnel II får vi då vi utnyttjar en liksidig triangel med sidan 2 och delar in den i två lika stora delar. Bestäm utgående från detta exakta värden för</p>
+            <table>
+              <tbody>
+                <tr><td><img src="pics/6_10.png" alt="" class="responsivepic400" /></td><td><img src="pics/6_11.png" class="responsivepic400" /></td></tr>
+              </tbody>
+            </table>
+            <ol>
+              <li>\( \sin 45^{\circ} \), \( \cos 45^{\circ} \) och \( \tan 45^{\circ} \)</li>
+              <li>\( \sin 30^{\circ} \), \( \cos 30^{\circ} \) och \( \tan 30^{\circ} \)</li>
+              <li>\( \sin 60^{\circ} \), \( \cos 60^{\circ} \) och \( \tan 60^{\circ} \)</li>
+            </ol>
+            <p>Vilket samband hittar du?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>\( \sin 45^{\circ} = \cos 45^{\circ} = \dfrac{1}{\sqrt{2}} \)</p>
+                <p>\( \sin 30^{\circ} = \cos 60^{\circ} = \dfrac{1}{2} \)</p>
+                <p>\( \sin 60^{\circ} = \cos 30^{\circ} = \dfrac{\sqrt{3}}{2} \)</p>
+                <p>\( \tan 45^{\circ} = 1, \tan 30^{\circ} = \dfrac{1}{\sqrt{3}}, \tan 60^{\circ} = \sqrt{3} \)</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA3">
+      <a href="5_pythagoras.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_sinussatsen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

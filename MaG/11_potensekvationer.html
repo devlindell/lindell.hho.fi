@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Potensekvationer</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkane och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföjder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_relationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="12_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Potensekvationer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Hur löser vi följande ekvationer?</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>\(x^2 = 4\)</li>
+              <li>\(x^2 = 5\)</li>
+              <li>\(x^3 = 5\)</li>
+              <li>\(x^3 = -5\)</li>
+            </ol>
+            <h4>Lösning</h4>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/368295735" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Då vi löser potensekvationer arbetar vi med potenser eller rötter. Eftersom \(n \cdot \dfrac{1}{n} = 1\) utnyttjar vi detta för att lösa potensekvationer.</p>
+          <p>För allmänna rötter har vi följande samband:</p>
+          <table>
+            <tbody>
+              <tr><td>Exponenten skrivs som \(\dfrac{1}{n}\)</td><td>Roten skrivs som</td></tr>
+              <tr><td>\(\dfrac{1}{2}\)</td><td>\(\sqrt{\quad}\)</td></tr>
+              <tr><td>\(\dfrac{1}{3}\)</td><td>\(\sqrt[3]{\quad}\)</td></tr>
+              <tr><td>\(\dfrac{1}{4}\)</td><td>\(\sqrt[4]{\quad}\)</td></tr>
+              <tr><td>\(\vdots\)</td><td>\(\vdots\)</td></tr>
+              <tr><td>\(\dfrac{1}{n}\)</td><td>\(\sqrt[n]{\quad}\)</td></tr>
+            </tbody>
+          </table>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Lös följande ekvationer</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>\(x^6 = 4\)</li>
+              <li>\(3x^4 = 12\)</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>För att lösa \(x^6=4\) måste vi operera med \(\dfrac{1}{6}\) på bägge sidor, eftersom \(6 \cdot \dfrac{1}{6}=1\). Vi får att</p>
+                <p>\(\begin{array}{rcll}
+                  x^6  & = &  4  & \mid (\,)^{\frac{1}{6}} \\
+                  (x^6)^{\frac{1}{6}}  & = &  4^{\frac{1}{6}} \\
+                  x  & = &  \sqrt[6]{4}\\
+                  \end{array}\)</p> </li>
+                  <li>Vi börjar med att förenkla. Då får vi</p>
+                    <p>\(\begin{array}{rcll}
+                      3x^4  & = &  12   & \mid /3\\
+                      x^4  & = &  4
+                      \end{array}\)</p>
+                  <p>För att komma vidare måste vi operera med \(\dfrac{1}{4}\) på bägge led eftersom \(4 \cdot \dfrac{1}{4} =1\). Vi får att</p>
+                  <p>
+                    \(\begin{array}{rcll}
+                    x^4  & = &  4  & \mid (\,)^{\frac{1}{4}} \\
+                    (x^4)^{\frac{1}{4}}  & = &  4^{\frac{1}{4}} \\
+                    x  & = &  \sqrt[4]{4}  \end{array}\)</p></li></ol>
+                  </div>
+                  <div class="alert box">
+                    <h3>När vi löser en potensekvation gör vi följande</h3>
+                    <ol>
+                      <li>Höj bägge led i ekvationen med en exponentens inverterade värde, tex \(x^4\) höjs med \((\,)^{\frac{1}{4}}\) eftersom \(4\cdot \dfrac{1}{4}=1\) eller ta samma grads rot av bägge led, tex med \(x^4\) tar du \(\sqrt[4]{\quad}\).</li>
+                      <li>Förenkla och ta det lugnt</li>
+                      <li>Vid svaret funderar om du har arbetat med en jämn- eller udda potens. Jämna potenser har två lösningar, plus och minus, udda har en.</li>
+                    </ol>
+                  </div>
+                  <div class="exercise box">
+                    <p><strong>Exempel 2</strong> Förenkla</p>
+                    <ol start="1" style="list-style-type:lower-alpha">
+                      <li>\(\sqrt[4]{16}\)</li>
+                      <li>\(\sqrt[6]{27}\)</li>
+                    </ol>
+                    <h4>Lösning</h4>
+                    <ol start="1" style="list-style-type:lower-alpha">
+                    <li>Vi får <p>\(\sqrt[4]{16} = 16^{\frac{1}{4}} = (2^4)^{\frac{1}{4}}=2^{4\cdot \frac{1}{4}}=2^1 =2\).</p> </li>
+                    <li>Vi får <p>\(\sqrt[6]{27} =27^{\frac{1}{6}} =(3^3)^{\frac{1}{6}}= 3^{3\cdot \frac{1}{6}}= 3^{\frac{1}{2}}=\sqrt{3}\).</p></li>
+                  </ol>
+                </div>
+                <div class="exercise box">
+                  <p><strong>Exempel 3</strong> Lös följande ekvationer:</p>
+                  <ol start="1" style="list-style-type:lower-alpha">
+                    <li>\(3^2 = 81^x\)</li>
+                    <li>\(16 \cdot 64^x = 256^{x-1}\).</li>
+                  </ol>
+                  <h4>Lösning</h4>
+                  <ol start="1" style="list-style-type:lower-alpha">
+                  <li>Vi skriver 81 som \(3^4\). Då får vi</p>
+                    <p>  \(\begin{array}{rcl}
+                      3^2  &  =  &  81^x \\
+                      3^2  &  =  &  (3^4)^x \\
+                      3^2  &  =  &  3^{4x} \\
+                      \end{array}\)</p>
+                      <p>Eftersom vi har samma bas måste exponenterna vara samma för att ekvationen skall gälla. \(2=4x\) ger att \(x=\frac{1}{2}\).</p></li>
+                      <li>Vi använder oss av att \(16=2^4\), \(64=2^6\) och \(256=2^8\). Vi får alltså</p>
+                        <p>\(\begin{array}{rcll}
+                          16 \cdot 64^x  & = &  256^{x-1} \\
+                          2^4 \cdot (2^6)^x  &  =  &  (2^8)^{x-1} \\
+                          2^4 \cdot 2^{64x}  &  =  &  2^{8(x-1)}\\
+                          2^{4+6x}  & = & 2^{8(x-1)}  & \textrm{ Samma bas! Undersöker exponenterna.} \\
+                          4+6x  &  =  &  8(x-1) \\
+                          4+6x  &  =  &  8x-8 \\
+                          -2x  &  =  &  -12 \\
+                          x  &  = &  6 \\  \end{array}\)</p>
+                        </li></ol>
+                        </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Kombinera rätt exponent med rätt rot.</p>
+            <p>Välj bland följande: \(\dfrac{1}{7}\), \(\dfrac{1}{6}\), \(\dfrac{1}{5}\), \(\dfrac{1}{4}\), \(\dfrac{1}{3}\), \(\dfrac{1}{2}\), \(\dfrac{1}{m}\) och \(\dfrac{1}{n}\).</p>
+            <table>
+              <tr><th>Exponenten</th><th>Roten</th></tr>
+              <tr><td></td><td>\(\sqrt{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[3]{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[4]{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[6]{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[5]{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[m]{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[7]{\quad}\)</td></tr>
+              <tr><td></td><td>\(\sqrt[n]{\quad}\)</td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1">
+              <div class="card card-body answer">
+              <table>
+                <tr><th>Korrekt svar</th><th></th></tr>
+                <tr><td>\(\dfrac{1}{2}\)</td><td>\(\sqrt{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{3}\)</td><td>\(\sqrt[3]{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{4}\)</td><td>\(\sqrt[4]{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{6}\)</td><td>\(\sqrt[6]{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{5}\)</td><td>\(\sqrt[5]{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{m}\)</td><td>\(\sqrt[m]{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{7}\)</td><td>\(\sqrt[7]{\quad}\)</td></tr>
+                <tr><td>\(\dfrac{1}{n}\)</td><td>\(\sqrt[n]{\quad}\)</td></tr>
+              </table>
+            </div></div> </li>
+
+          <li>Kombinera uttrycken i rätt ordning så att lösningen av ekvationen är logisk och korrekt.
+            <ol>
+              <li><p>Lös \(x^3=9\)</p>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">
+                <table>
+                  <tr><th>Korrekt svar</th><th></th></tr>
+                  <tr><td>\(x^3=9\)</td><td>(1.)</td></tr>
+                  <tr><td>\(\sqrt[3]{x^3}=\sqrt[3]{9}\)</td><td>(2.)</td></tr>
+                  <tr><td>\(x=\sqrt[3]{9}\)</td><td>(3.)</td></tr>
+                </table>
+               </div></div> </li>
+              <li><p>Lös \(x^3=8\).</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">
+              <table>
+                <tr><th>Korrekt svar</th><th></th></tr>
+                <tr><td>\(x^3=8\)</td><td>(1.)</td></tr>
+                <tr><td>\(\sqrt[3]{x^3}=\sqrt[3]{8}\)</td><td>(2.)</td></tr>
+                <tr><td>\(x=\sqrt[3]{8}\)</td><td>(3.)</td></tr>
+                <tr><td>\(x=2\)</td><td>(4.)</td></tr>
+              </table>
+              </div></div> </li>
+              <li><p>Lös \(x^4=15\).</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">
+               <table>
+                 <tr><th>Korrekt svar</th><th></th></tr>
+                 <tr><td>\(x^4=15\)</td><td>(1.)</td></tr>
+                 <tr><td>\(\sqrt[4]{x^4}=\sqrt[4]{15}\)</td><td>(2.)</td></tr>
+                 <tr><td>\(x=\sqrt[4]{15}\)</td><td>(3.)</td></tr>
+                 <tr><td>Vi har en jämn funktion, alltså är \(x=\pm\sqrt[4]{15}\)</td><td>(4.)</td></tr>
+               </table>
+              </div></div> </li>
+              <li><p>Lös \(x^6=64\).</p>  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer">
+               <table>
+                 <tr><th>Korrekt svar</th><th></th></tr>
+                 <tr><td>\(x^6=64\)</td><td>(1.)</td></tr>
+                 <tr><td>\((x^6)^{\frac{1}{6}}=(64)^{\frac{1}{6}}\)</td><td>(2.)</td></tr>
+                 <tr><td>\(x=\sqrt[6]{64}\)</td><td>(3.)</td></tr>
+                 <tr><td>\(x=2\)</td><td>(4.)</td></tr>
+                 <tr><td>Vi har en jämn funktion, alltså \(x=\pm 2\)</td><td>(5.)</td></tr>
+               </table>
+              </div></div> </li>
+            </ol></li>
+
+        <li>Lös följande ekvationer.
+            <ol>
+              <li>\(x^6 = 729\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi får att</p>    <p>\(\begin{array}{rcll}  x^6  & = &  729  & \mid (\,)^{\frac{1}{6}}\\  x  & = &  729^{\frac{1}{6}} \\   & = &  \sqrt[6]{729} = 3  \end{array}\)</p>    <p>Eftersom vi har en jämn funktion är svaret \(x=\pm 3\).</p> </div></div> </li>
+              <li>\(x^7 = 128\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  x^7  & = &  128  & \mid (\,)^{\frac{1}{7}} \\  x  & = &  128^{\frac{1}{7}} \\   & = &  \sqrt[7]{128} = 2\\  \end{array}\)</p>    <p>Eftersom vi har en udda funktion har vi endast en rot, \(x=2\).</p> </div></div> </li>
+              <li>\(x^3 = 343\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  x^3  & = &  343  & \mid (\,)^{\frac{1}{3}}\\  x  & = &  343^{\frac{1}{3}} \\   & = &  \sqrt[3]{343} = 7\\  \end{array}\)</p>    <p>Eftersom vi har en udda funktion har vi endast en rot, \(x=7\).</p> </div></div> </li>
+              <li>\(x^4=625\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3d">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  x^4 & = & 625  & \sqrt[4]{\quad} \\  x  & = &  \sqrt[4]{625} \\  x  & = &  5\\  \end{array}\)</p>    <p>Eftersom vi har en jämn funktion är \(x=\pm 5\).</p> </div></div> </li>
+              <li>\(x^5= 243\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3e">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  x^5 & = &  243  & \mid \sqrt[5]{\quad} \\  x  & = &  \sqrt[5]{243} \\  x  & = &  3  \end{array}\)</p> </div></div> </li>
+           </ol></li>
+
+       <li>För vilket värde på \(x\) gäller att
+         <ol>
+           <li>\(x^8 = 6561\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+           <div class="collapse" id="4a">
+           <div class="card card-body answer"><p>\(\begin{array}{rcll}  x^8  & = &  6561  & \mid (\,)^{\frac{1}{8}} \\  x  & = &  6561^{\frac{1}{8}} \\   & = &  \sqrt[8]{6561} = 3  \end{array}\)</p>    <p>Eftersom vi har en jämn funktion har vi två rötter, \(x=\pm 3\).</p> </div></div> </li>
+           <li>\(x^4 = -256\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+           <div class="collapse" id="4b">
+           <div class="card card-body answer"><p>Inget värde upphöjt till 4 kan vara negativt. Därför saknar ekvationen lösningar.</p> </div></div> </li>
+           <li>\(x^5 = -243\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+           <div class="collapse" id="4c">
+           <div class="card card-body answer"><p>Eftersom vi har en udda exponent finns det lösningar för ekvationen.</p>    <p>\(\begin{array}{rcll}  x^5  & = &  -243  &  \mid (\,)^{\frac{1}{5}} \\  x  & = &  (-243)^{\frac{1}{5}} = -3 \\  \end{array}\)</p> </div></div> </li>
+           <li>\(x^2=-81\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+           <div class="collapse" id="4d">
+           <div class="card card-body answer"><p>Eftersom vi har en jämn funktion kan vi inte få negativa värden.</p>    <p>Ekvationen saknar lösningar.</p> </div></div> </li>
+           <li>\(x^3=-125\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+           <div class="collapse" id="4e">
+           <div class="card card-body answer"><p>\(\begin{array}{rcll}  x^3  & = &  -125  & \mid \sqrt[3]{\quad} \\  x  & = &  \sqrt[3]{-125} \\  x  & = &  -5 \\  \end{array}\)</p> </div></div> </li>
+        </ol></li>
+
+        <li>Förenkla
+          <ol>
+            <li>\(\sqrt[4]{3^4}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5a">
+            <div class="card card-body answer"><p>\(\sqrt[4]{3^4} = (3^4)^{\frac{1}{4}} = 3^{4 \cdot \frac{1}{4}}=3^1 =3\).</p> </div></div> </li>
+            <li>\(\sqrt{3^4}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5b">
+            <div class="card card-body answer"><p>\(\sqrt{3^4} = (3^4)^{\frac{1}{2}}=3^{4\cdot  \frac{1}{2}}=3^2 =9\).</p> </div></div> </li>
+            <li>\(\sqrt[4]{81}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5c">
+            <div class="card card-body answer"><p>\(\sqrt[4]{81} = 81^{\frac{1}{4}} = (3^4)^{\frac{1}{4}} = 3^{ 4\cdot\frac{1}{4}} = 3^1 = 3\)</p> </div></div> </li>
+            <li>\(\sqrt[8]{16}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5d">
+            <div class="card card-body answer"><p>\(\sqrt[8]{16} = 16^{\frac{1}{8}} = (2^4)^{\frac{1}{8}} = 2^{ 4\cdot\frac{1}{8}} = 2^{\frac{1}{2}} = \sqrt{2}\)</p> </div></div> </li>
+            <li>\(\sqrt[3]{64}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5e">
+            <div class="card card-body answer"><p>\(\sqrt[3]{64} = (2^6)^{\frac{1}{3}} = 2^{6\cdot \frac{1}{3}} = 2^2 = 4\)</p> </div></div> </li>
+            <li>\(\sqrt[5]{\sqrt{3}}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5f">
+            <div class="card card-body answer"><p>\(\sqrt[5]{\sqrt{3}} = (3^{\frac{1}{2}})^{\frac{1}{5}} = 3^{\frac{1}{2} \cdot \frac{1}{5}} =3^{\frac{1}{10}} =\sqrt[10]{3} \).</p> </div></div> </li>
+            <li><p id="t1ry41druo5">Visa att \(\sqrt[3]{729} = 9\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5g" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5g">
+            <div class="card card-body answer"><p>\(\sqrt[3]{729} = 729^{\frac{1}{3}} = (3^6)^{\frac{1}{3}} = 3^{ 6\cdot\frac{1}{3}} = 3^2 = 9\)</p> </div></div> </li>
+          </ol></li>
+
+          <li>Lös ekvationerna och ge exakt svar.
+            <ol>
+              <li>\(2x^4 = 162\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  2x^4  & = &  162  & \mid /2\\  x^4  & = &  81  & \mid \sqrt[4]{\quad} \\  x  & = &  3  \end{array}\)</p>    <p>Eftersom vi har en jämn funktion gäller att \(x=\pm 3\).</p> </div></div> </li>
+              <li>\(3x^3 = 81\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  3x^3  & = &  81  & \mid /3\\  x^3  & = &  27  & \mid \sqrt[3]{\quad}\\  x  & = &  3 \\   \end{array}\)</p>    <p>Eftersom vi har en udda funktion gäller att \(x=3\).</p> </div></div> </li>
+              <li>\(3x^6 = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  3x^6  & = &  2  & \mid /3\\  x^6  & = &  \frac{2}{3}  & \mid (\,)^{\frac{1}{6}} \\  x  & = &  (\frac{2}{3})^{\frac{1}{6}}\\  \end{array}\)</p>    <p>Eftersom vi har en jämn funktion är rötterna \(x=\pm(\frac{2}{3})^{\frac{1}{6}} =\sqrt[6]{\dfrac{2}{3}}\).</p>  </div></div> </li>
+              <li>\(\dfrac{1}{4}x^3 = 1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6d">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  \dfrac{1}{4}x^3  & = &  1  & \mid \cdot 4\\  x^3  & = &  4  & \mid (\,)^{\frac{1}{3}} \\  x  & = &  4^{\frac{1}{3}} \\   & = &  \sqrt[3]{4}\\  \end{array}\)</p>    <p>Eftersom vi har en udda funktion har vi endast en rot, \(x=\sqrt[3]{4}\).</p> </div></div> </li>
+              <li>\(\dfrac{2}{5}x^6 = \dfrac{2}{3}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6e">
+              <div class="card card-body answer"><p>\(\begin{array}{rcll}  \frac{2}{5}x^6  & = &  \frac{2}{3}  & \mid \cdot \frac{5}{2}\\  x^6  & = &  \frac{5}{3}  & \mid (\,)^{\frac{1}{6}} \\  x  & = &  (\frac{5}{3})^{\frac{1}{6}}\\  \end{array}\)</p>    <p>Eftersom vi har en jämn funktion gäller att \(x= \pm (\dfrac{5}{3})^{\frac{1}{6}}\).</p> </div></div> </li>
+            </ol></li>
+
+            <li>Lös följande ekvationer.
+              <ol>
+                <li>\(9^{x-1}=3^3\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7a">
+                <div class="card card-body answer"><p>\(\begin{array}{rcll}  9^{x-1} & = & 3^3  & \mid \,9=3^2\\  3^{2(x-1)}  & = &  3^2  &  \\   \text{ Alltså} \\  2(x-1) & = & 2  & \mid /2 \\  x-1  & = & 1 \\  x & = & 2 \\  \end{array}\)</p> </div></div> </li>
+                <li>\(4^{x+1} -63 =1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7b">
+                <div class="card card-body answer"><p>\(\begin{array}{rcll}  4^{x+1} -63  & = & 1 \\  4^{x+1}  & = &  64  & \mid \, 64=4^3 \\  4^{x+1}  & = &  4^3 \\  \text{Samma bas} \\  x+1  & = &  3 \\  x  & = &  2 \\  \end{array}\)</p> </div></div> </li>
+                <li>\(25^x -625=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7c">
+                <div class="card card-body answer"><p>\(\begin{array}{rcll}  25^x -625 & = & 0 \\  25^x  & = &  625  & \mid 25=5^2, 5^4 = 625\\  (5^2)^x = 5^4 \\  5^{2x}  & = &  5^4  & \mid \text{ Samma bas} \\  2x  & = &  4 \\  x & = &  2\\  \end{array}\)</p> </div></div> </li>
+                <li>\((2^3)^x \cdot (4^3)^x = 64^{x-1}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7d">
+                <div class="card card-body answer"><p>\(\begin{array}{rcll}  (2^3)^x \cdot (4^3)^x  & = &  64^{x-1} \\  2^{3x} \cdot 4^{3x} & = &  64^{x-1}  & \mid 4=2^2, 64=2^6\\  2^{3x} \cdot (2^2)^{3x}  & = &  (2^6)^{x-1} \\  2^{3x} \cdot 2^{6x}  & = &  2^{6(x-1)} \\  2^{3x+6x}  & = &  2^{6x-6}  & \text{ Samma bas}\\  3x +6x  & = &  6x-6  & \mid -6x\\  3x  & = &  -6  & \mid /3 \\  x  & = &  -\frac{6}{3}=-2  \end{array}\)</p> </div></div> </li>
+                <li>\(27^{x-1} \cdot 9^x = 2187\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7e">
+                <div class="card card-body answer"><p>\(\begin{array}{rcll}  27^{x-1} \cdot 9^x  & = &  2187  & \mid 27=3^3, 9=3^2, 2187 = 3^7\\  (3^3)^{x-1} \cdot (3^2)^x  & = &  3^7\\  3^{3(x-1)} \cdot 3^{2x}  & = &  3^7 \\  3^{3(x-1)+2x}  & = &  3^7  & \mid \text{ Samma bas}\\  3(x-1)+2x  & = &  7 \\  3x-3+2x  & = &  7 \\  5x  & = &  10 \\  x  & = &  2\\  \end{array}\)</p> </div></div> </li>
+              </ol></li>
+        </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="10_relationer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

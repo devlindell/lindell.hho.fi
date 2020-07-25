@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Algoritmer</title>
+
+  </head>
+  <body>
+    <header class="MaA12">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 12 Algoritmer i matematiken</h3>
+      <a href="2_polynomdiv.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Algoritmer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vad betyder Algoritm? Ta reda på olika definitioner genom att se vad <a href="https://svenska.se" target="_blank">SAOL</a>, Wikipedia på <a href="https://sv.wikipedia.org/" target="_blank">svenska</a>, <a href="https://fi.wikipedia.org/" target="_blank">finska</a> och <a href="https://en.wikipedia.org/" target="_blank">engelska</a> och <a href="https://www.synonymer.se" target="_blank">synonymer.se</a> skriver.</p>
+          </div>
+
+          <p>När vi arbetar med algorimter så gör vi ett resept över vad som skall hända. Man kan tala om att man använder sig av programmering på meta nivå, en abstrakt nivå där vi inte ser på de exakta kommandorna.</p>
+
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Gör en algoritm över hur man går framåt.</p>
+            <h3>Lösning</h3>
+            <p>Det beror på hur noggrannt vi vill beskriva men på en metanivå har vi något i stil med</p>
+              <ol>
+                <li>Lyft upp ena foten</li>
+                <li>Luta dig framåt tills foten som är i luten tar i marken.</li>
+                <li>Lyft upp andra fonten.</li>
+                <li>Luta dig framåt tills foten som är i luten tar i marken.</li>
+              </ol>
+           <p>och så fortsätter vi. Du märker att beroende på hur nogrann man vill vara så kan man beskriva tex "Lyft upp foten" med "Lyft upp foten och gör en liten cirkelformad rörelse framåt". </p>
+         </div>
+              <p>I uppgifterna så försök vara så noggrann som möjlig utan att vara allt för petnoga. Kursen handlar om numeriska metoder där vi bestämmer nollställen för funktioner eller areor under funktioner och då gör vi flera gånger samma steg. Därför börjar vi med att öva med att skapa algoritmer.</p>
+          </div>
+          <div class="summary box">
+            <p>När vi skapar algoritmer, funderar på en metanivå vad som skall hända, börjar vi snabbt tänka i banor där vi har uttryck som
+              <ul>
+                <li>när eller då, (if)</li>
+                  <li>om... så, (if ... then)</li>
+                  <li>annars, (else)</li>
+                  <li>upprepa (loop eller while)</li>
+              </ul>
+              dessa bildar grunder för tankesättet då man skapar algoritmer.</p>
+          </div>
+          <p>Använd dig av dessa då du löser uppgifterna.</p>
+        </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Formulera en algoritm för följande
+          <ol>
+
+          <li>Koka potatis.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li>Tag fram potatis.</li>
+              <li>Skala eller tvätt potatisen.</li>
+              <li>Tag fram en kastrull, mät vatten och koka upp vattnet.</li>
+              <li>När vattnet kokar så lägg i potatisen.</li>
+              <li>Koka potatisen tills den är färdig.</li>
+              <li>Häll vattnet från kastrullen.</li>
+            </ol>
+            <p>Följande är inte perfekt, men det ger dig en fingervisning över vad som du kan ha med. Hur skiljer sig algortimen från den som du skapar i nästa uppgift?</p>
+            </div></div>
+          </li>
+
+          <li>Tillred potatis för fyra personer till middag.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li>Tag fram potatis.</li>
+              <li>Beräkna hur många potatisar som går åt</p>
+              <li>Skala eller tvätt potatisen.</li>
+              <li>Tag fram en kastrull, mät vatten och koka upp vattnet.</li>
+              <li>När vattnet kokar så lägg i potatisen.</li>
+              <li>Koka potatisen tills den är färdig.</li>
+              <li>Häll vattnet från kastrullen.</li>
+              <li>Meddela de som skall äta att potatisen är färdig.</li>
+            </ol>
+            <p>OBS! Du märker att här är endast då vi kokar potatis. För olika sätt att tillreda den så börjar vi med en om... så sats.</p>
+            <p>Följande är inte perfekt, men det ger dig en fingervisning över vad som du kan ha med. Här får du gärna vara så noggrann av dig som du bara vill vara.</p> </div></div>
+          </li>
+
+          <li>Äta morgonmål hemma.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1c">
+            <div class="card card-body answer"> <p>Något i stil med</p>
+            <ol>
+            <li>Fundera vad du skall äta.</li>
+            <li>Plockar farm ingredienserna.</li>
+            <li>Plocka fram kärl.</li>
+            <li>Tillred morgonmålet.</li>
+            <li>Ät morgonmålet.</li>
+            <li>Städa undan och lägg kärlen i diskmaskinen.</li>
+          </ol>
+          <p>Beroende på hur ditt morgonmål ser ut så ser det olika ut från detta. Försök att göra det så noggrannt som möjligt.</p> </div></div>
+          </li>
+
+          <li>Gå upp för en trappa med 16 steg.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li>Ställ dig vid trappan.</li>
+              <li>Upprepa 16 gånger: <ol>
+                <li>Lyft ena benet snett framåt.</li>
+                <li>Luta dig framåt och sätt foten på trappsteget.</li>
+                <li>Lyft andra foten så att den blir övanför nästa trappsteg.</li>
+                <li>Luta dig framåt och sätt foten på trappsteget.</li>
+              </ol></li>
+              <li>När du är framme så stanna upp.</li>
+            </ol>
+            <p>Följande är inte perfekt, men det ger dig en fingervisning över vad som du kan ha med.</p> </div></div>
+          </li>
+        </ol></li>
+
+          <li>Formulera en algoritm över hur du löser en ekvation av första grad.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"><p>Något i stil med</p>
+              <ol>
+              <li>Sortera uttrycket så att du får termer med den variabeln som du vill lösa ut på vänster sida och annat på höger sida.</li>
+              <li>Om möjligt, addera ihop termeran på vänster sida. Gör motsvarande på höger sida.</li>
+              <li>Identifiera koefficienten framför variabeln.</li>
+              <li>Multiplicera med det inverterade talet.</li>
+              <li>Markera svaret.</li>
+            </ol>
+            <p>Eller som</p>
+            <ol>
+              <li>Addera till motsatta termer så att termer mex \(x\) är till vänster och andra till höger.</li>
+              <li>Förenkla.</li>
+              <li>Multiplicera med det inverterade talet som finns framför \(x\):et.</li>
+              <li>Förenkla.</li>
+            </ol>
+            <p>Följande är inte perfekt, men det ger dig en fingervisning över vad som du kan ha med.</p> </div></div>
+          </li>
+
+          <li>Formulera en algoritm över hur du löser en andragradsekvation.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li>Sortera uttrycket så att du får termerna i fallande grad på vänster sida.</li>
+              <li>Identiefiera koefficienterna framför \( x^2 \), \( x \) och termen utan variabler.</li>
+              <li>Använd dig av rotformeln.</li>
+              <li>Markera svaret.</li>
+            </ol>
+            <p>Följande är inte perfekt, men det ger dig en fingervisning över vad som du kan ha med.</p> </div></div>
+          </li>
+
+          <li>Formulera en algoritm över hur du löser en olkihet av första grad.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li>Sortera uttrycket så att du får termer med den variabeln som du vill lösa ut på vänster sida och annat på höger sida.</li>
+              <li>Om möjligt, addera ihop termeran på vänster sida. Gör motsvarande på höger sida.</li>
+              <li>Identifiera koefficienten framför variabeln.</li>
+              <li>Multiplicera med det inverterade talet.</li>
+              <li>Om det är negativt så byt rikting för olikheten, annars så fortsätter du räkna.</li>
+              <li>Markera svaret.</li>
+            </ol>
+            <p>Följande är inte perfekt, men det ger dig en fingervisning över vad som du kan ha med.</p> </div></div> </div></div>
+          </li>
+
+          <li>Formulera en algoritm över hur du undersöker en funktion.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li>Derivera funktionen.</li>
+              <li>Bestäm nollställena för derivatafunktionen.</li>
+              <li>Bilda ett teckenschema.</li>
+              <li>Analysera och svara.</li>
+            </ol>
+            <p>Då har vi inte beaktat om vi undersöker en funktion som är definierad i ett intervall, eller en rationell funktion som kan ha punkter där den inte är definierad.</p> </div></div>
+          </li>
+
+          <li>Algorimter är grunden då man programmerar. Klicka dig till <a href="https://code.org/hourofcode/overview" target="_blank">Code.org</a> och jobba med Hour of Code.</li>
+
+          <li>Formulera en algoritm hur man dividerar i trappa, typ \( \dfrac{2112}{8} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+              <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            </div></div>
+          </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA12">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_polynomdiv.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
