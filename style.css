@@ -346,22 +346,19 @@ nav ul li a {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-}
-
-.grid-container_2col {
-display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .grid-item {
-  border: dotted #BDBDBD 1px;
+  border: dotted #BDBDBD 2px;
   border-radius: 5px;
   padding: 5px;
-  margin: auto auto;
+  margin: 3px 3px;
 }
 
 .Fysik {
