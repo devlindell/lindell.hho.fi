@@ -60,22 +60,27 @@ footer {
 table {
   /*display: block;*/
   table-layout: auto;
-  min-width: 500px;
-  /*width: 90%;*/
+  min-width: 300px;
+  max-width: 90%;
   border-spacing: 5px;
-  overflow-x: auto;
+  background-color: #f5f5f5;
+  /*overflow-x: auto;*/
+
 }
 
-thead {
+th {
   font-weight: 900;
-  background-color: lightblue; /*kolla färgen */
   text-align: center;
   border: 1px solid gray;
 }
 
-td {
+td, th {
   border: 1px solid gray;
+  padding: 5px;
 }
+
+/*tr:hover {background-color: #FAE9E1;}*/
+/*tr:nth-child(even) {background-color: #FCFCFC;}*/
 
 button {
   margin: 0.5rem;
@@ -218,9 +223,6 @@ nav ul li a {
   color: #FFE4E3;
 }
 
-.hard {
-  background-color: lightred; /* Kolla en bra färg */
-}
 
 .btn-sm, .btn-sm:visited {
   background-color: #BAD9DE;
@@ -356,6 +358,7 @@ nav ul li a {
 
 .grid-item {
   border: dotted #BDBDBD 2px;
+  background-color: #f5f5f5;
   border-radius: 5px;
   padding: 5px;
   margin: 3px 3px;

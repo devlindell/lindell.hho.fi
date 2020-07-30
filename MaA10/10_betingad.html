@@ -60,26 +60,23 @@
             <p>För semesterorten gäller att sannolikheten för lågtryck är 0,1, ostadigt 0,2 och sannolikheten för högtryck är 0,7.</p>
             <p>Vi skiver sannolikheterna som</p>
             <table>
-              <tbody>
                 <tr><td>P(lågryck) = 0,1</td></tr>
                 <tr><td>P(ostadigt) = 0,2</td></tr>
                 <tr><td>P(högtryck) = 0,7</td></tr>
-              </tbody>
             </table>
             <p>Vidare inför vi en sannolikhet för regn. Om det regnar är beroende av vädertypen, vi talar om betingad sannolikhet.</p>
-            <table><tbody>
+            <table>
               <tr><td>P(regn | lågtryck)= 0,6</td></tr>
               <tr><td>P(regn | ostadigt)= 0,3</td></tr>
               <tr><td>P(regn | högtryck)= 0,1</td></tr>
-            </tbody>
             </table>
             <p>Vi tolkar raderna så att sannolikheten för regn då det är lågtryck är 0,6, regn då det är ostadigt är 0,3 och regn då det är högtryck 0,1.</p>
             <p>För att bestämma sannolikheten för att det regnar på en slumpmässig dag gör vi en tabell.</p>
             <table>
-              <tbody><tr><td>Vädertyp</td><td colspan="2" rowspan="1">Lågtryck (0,1)</td><td colspan="2" rowspan="1">Ostadigt (0,2)</td><td colspan="2" rowspan="1">Högtryck (0,7)</td></tr>
+               <tr><th>Vädertyp</th><td colspan="2" rowspan="1">Lågtryck (0,1)</td><td colspan="2" rowspan="1">Ostadigt (0,2)</td><td colspan="2" rowspan="1">Högtryck (0,7)</td></tr>
                 <tr><td></td><td>Ej regn (0,4)</td><td>Regn (0,6)</td><td>Ej regn (0,7)</td><td>Regn (0,3)</td><td>Ej regn (0,9)</td><td>Regn (0,1)</td></tr>
-                <tr><td>Sannolikheter:</td><td></td><td>\( 0,1 \cdot 0,6 \)</td><td></td><td>\( 0,2\cdot 0,3 \)</td><td></td><td>\( 0,7 \cdot 0,1 \)</td></tr>
-              </tbody>
+                <tr><th>Sannolikheter:</th><td></td><td>\( 0,1 \cdot 0,6 \)</td><td></td><td>\( 0,2\cdot 0,3 \)</td><td></td><td>\( 0,7 \cdot 0,1 \)</td></tr>
+
             </table>
             <p>Vår sökta sannolikhet blir den totala sannolikheten för regn: \( 0,1 \cdot 0,6+0,2\cdot 0,3 +0,7 \cdot 0,1= 0,19 \).</p>
             <p>Matematiskt betecknar vi betingade sannolikheter som P(A|B) = \( \dfrac{P(A \cap B)}{P(B)} \). Vi är intresserade av att veta hur stor andel A utgör av B.</p>

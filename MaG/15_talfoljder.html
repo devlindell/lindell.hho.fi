@@ -65,8 +65,7 @@
             <p>I översta lagret har vi 1 apelsin. I andra lagret 3 st apelsiner. I följande lager har vi 6 st apelsiner.</p>
             <p>Vi kan göra följande tabell</p>
             <table>
-	             <tbody>
-		               <tr><td>Lager</td><td>Antal apelsiner</td></tr>
+              <tr class="MaG"><th>Lager</th><th>Antal apelsiner</th></tr>
 		               <tr><td>1</td><td>1</td></tr>
 		               <tr><td>2</td><td>3 = 1 + 2</td></tr>
 		               <tr><td>3</td><td>6 = 3 + 3</td></tr>
@@ -74,8 +73,7 @@
 		               <tr><td>5</td><td>10 + 5 = 15</td></tr>
 		               <tr><td>6</td><td>15 + 6 = 21</td></tr>
 		               <tr><td>7</td><td>21 + 7 = 28</td></tr>
-	              </tbody>
-            </table>
+	              </table>
             <p>Alltså 10 st och 28 st apelsiner.</p>
             <p>Vi märker att antalet apelsiner i ett lager beror på antalet i föregående lager och hur mångte lagret är. Om vi vill ha flera lager så tar vi hjälp av ett kalkyleringsprogram som sköter räknandet för oss.</p>
             <p>Det gör vi med rektanglarna.</p>
@@ -84,15 +82,13 @@
             <p>VIDEO</p>
             <p>Vill vi lösa problemet mera matematiskt så gör vi följande tabell:</p>
             <table>
-	             <tbody>
-		               <tr><td>Figur</td><td>Antal kvadrater</td></tr>
+		               <tr class="MaG"><th>Figur</th><th>Antal kvadrater</th></tr>
 		               <tr><td>1</td><td>1</td></tr>
 		               <tr><td>2</td><td>3 = 1 + 2</td></tr>
 		               <tr><td>3</td><td>5 = 3 + 2</td></tr>
 		               <tr><td>4</td><td>7 = 5 + 2</td></tr>
 		               <tr><td>allmänt</td><td>antalet i förra figuren + 2</td></tr>
-	              </tbody>
-            </table>
+	              </table>
             <p>Matematiskt kan vi uttrycka antalet som</p>
             <p>\(\left\{  \begin{array}{rcl}  a_1 &=& 1 \\  a_n &=& a_{n-1} +2  \end{array}  \right.\)</p>
             <p>Beteckningen \(a_1\) betyder första elementet. Beteckningen \(a_n\) betyder något element i talföljden och beteckningen \(a_{n-1}\) betyder föregående element.</p>
@@ -139,6 +135,7 @@
               </div>
               </p>
               <table>
+              <tr class="MaG"><th>Element</th><th>Antal i ordningen</th></tr>
               <tr><td></td><td>(1.)</td></tr>
               <tr><td></td><td>(2.)</td></tr>
               <tr><td></td><td>(3.)</td></tr>
@@ -150,7 +147,7 @@
             <div class="collapse" id="1">
             <div class="card card-body answer">
               <table>
-                <tr><th>Korrekt svar</th><th></th></tr>
+                <tr class="MaG"><th>Element</th><th>Antal i ordningen</th></tr>
                 <tr><td>\(a_1\)</td><td>(1.)</td></tr>
                 <tr><td>\(a_2\)</td><td>(2.)</td></tr>
                 <tr><td>\(a_3\)</td><td>(3.)</td></tr>
@@ -173,6 +170,7 @@
               </div>
               </p>
               <table>
+                <tr class="MaG"><th>Element</th><th>Antal i ordningen</th></tr>
                 <tr><td></td><td>(1.)</td></tr>
                 <tr><td></td><td>(2.)</td></tr>
                 <tr><td></td><td>(3.)</td></tr>
@@ -184,7 +182,7 @@
               <div class="collapse" id="2">
               <div class="card card-body answer">
                 <table>
-                  <tr><th>Korrekt svar</th><th></th></tr>
+                  <tr class="MaG"><th>Element</th><th>Antal i ordningen</th></tr>
                   <tr><td>\(a_1\)</td><td>(1.)</td></tr>
                   <tr><td>\(a_{n-2}\)</td><td>(2.)</td></tr>
                   <tr><td>\(a_{n-1}\)</td><td>(3.)</td></tr>
@@ -268,8 +266,8 @@
             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
             <div class="collapse" id="11t">
             <div class="card card-body hint"> Dela upp elementen i mindre beståndsdelar och undersök vad du hittar. </div></div>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Vi märker att \(1=2\cdot 1-1\), \(3=2\cdot 2-1\), \(5=2\cdot 2-1\) och \(7=2\cdot 3-1\). Vi kan uttrycka talföljden som \(2n-1\) där \(n=1,2,3 \ldots\) eller som \(2n+1\) där \(n=0,1,2,3 \ldots\).</p> </div></div>
           </li>
 
@@ -281,7 +279,24 @@
               <div class="card card-body answer">
                 <p>144 par kaniner</p>
                 <p>Den talföljd som vi får ser ut som </p>
-                  <p><img src="pics/500px-FibonacciRabbit.png" class="responsivepic300" /></p>    <table>  	<tbody>  		<tr>  			<td>Månad</td>  			<td>Antal kaninpar</td>  		</tr>  		<tr>  			<td>1</td>  			<td>1</td>  		</tr>  		<tr>  			<td>2</td>  			<td>1</td>  		</tr>  		<tr>  			<td>3</td>  			<td>2</td>  		</tr>  		<tr>  			<td>4</td>  			<td>3</td>  		</tr>  		<tr>  			<td>5</td>  			<td>5</td>  		</tr>  		<tr>  			<td>6</td>  			<td>8</td>  		</tr>  		<tr>  			<td>7</td>  			<td>13</td>  		</tr>  		<tr>  			<td>8</td>  			<td>21</td>  		</tr>  		<tr>  			<td>9</td>  			<td>34</td>  		</tr>  		<tr>  			<td>10</td>  			<td>55</td>  		</tr>  		<tr>  			<td>11</td>  			<td>89</td>  		</tr>  		<tr>  			<td>12</td>  			<td>144</td>  		</tr>  	</tbody>  </table>    <p>Alltså 144 par kaniner.</p>    <p>Talföljden ser ut som 1, 1, 2, 3, 5, 8, 13, 21, ... där följande element, siffra, är beroende av föregående element. Eftersom elementerna är beroende av varandra talar vi om en rekursivt definierad talföljd. Talföljden går under namnet Fibonnacis talföljd. Tillämpningar av talföljden hittar man i naturen.</p>
+                  <p><img src="pics/500px-FibonacciRabbit.png" class="responsivepic300" /></p>
+                  <table>
+                    <tr class="MaG"><th>Månad</th><th>Antal kaninpar</th></tr>
+                    <tr><td>1</td><td>1</td></tr>
+                    <tr><td>2</td><td>1</td></tr>
+                    <tr><td>3</td><td>2</td></tr>
+                    <tr><td>4</td><td>3</td></tr>
+                    <tr><td>5</td><td>5</td></tr>
+                    <tr><td>6</td><td>8</td></tr>
+                    <tr><td>7</td><td>13</td></tr>
+                    <tr><td>8</td><td>21</td></tr>
+                    <tr><td>9</td><td>34</td></tr>
+                    <tr><td>10</td><td>55</td></tr>
+                    <tr><td>11</td><td>89</td></tr>
+                    <tr><td>12</td><td>144</td></tr>
+                  </table>
+                  <p>Alltså 144 par kaniner.</p>
+                  <p>Talföljden ser ut som 1, 1, 2, 3, 5, 8, 13, 21, ... där följande element, siffra, är beroende av föregående element. Eftersom elementerna är beroende av varandra talar vi om en rekursivt definierad talföljd. Talföljden går under namnet Fibonnacis talföljd. Tillämpningar av talföljden hittar man i naturen.</p>
                </div></div>
           </li>
 

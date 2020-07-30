@@ -72,15 +72,13 @@
             <h4>Lösning</h4>
             <p>För att bilda en funktion börjar vi med att göra en tabell.</p>
             <table>
-              <tbody>
-                <tr><td>Tid</td><td>Mängd kvar</td></tr>
+                <tr class="MaA8"><th>Tid</th><th>Mängd kvar</th></tr>
                 <tr><td>0</td><td>\( 3,6 \)</td></tr>
                 <tr><td>20</td><td>\( 3,6 \cdot 0,5 \)</td></tr>
                 <tr><td>40</td><td>\( 3,6 \cdot 0,5^2 \)</td></tr>
                 <tr><td>60</td><td>\( 3,6 \cdot 0,5^3 \)</td></tr>
                 <tr><td>\( t \)</td><td>\( 3,6 \cdot 0,5^{\frac{t}{20}} \)</td></tr>
-              </tbody>
-            </table>
+              </table>
             <p>Inom naturvetenskaper brukar man uttrycka exponentiella förlopp med funktioner som har basen \( e \), \( 0,5=e^{\ln 0,5} \). Vår funktion är \( 3,6 \cdot (e^{\ln 0,5})^{\frac{t}{20}} = 3,6e^{\frac{t}{20}\ln 0,5} \). Eftersom vi har en tillämpad uppgift kan vi skriva det som \( 3,6e^{-0,0347t} \).</p>
             <p>Funktionen är \( m(t)=3,6e^{\frac{t}{20}\ln 0,5} \) där \( t \) är tiden i minuter efter att isotoperna injicerats.</p>
             <p>För att bestämma hastigheten för sönderfallet deriverar vi funktionen, \( m'(t)=3,6e^{\frac{t}{20}\ln 0,5} \cdot \dfrac{1}{20}\ln 0,5 \).</p>
