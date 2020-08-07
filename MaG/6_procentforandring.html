@@ -114,17 +114,31 @@
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift
+          <li>Ett lager från ett luftfilter avlägsnar 25 % av luftburna partiklar.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Hur många procent av partiklarna avlägsnar 5 st lager? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer">Lösningen </div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Ett lager avlägsnar 25 %, då är det kvar 75 %.</p>
+              <p>Då vi har \( a \) st partiklar i början är det efter varje lager kvar \( 0,75a \) st partiklar. Efter 5 lager har vi kvar \( 0,75a \cdot 0,75 \cdot 0,75 \cdot 0,75 \cdot 0,75 = 0,75^5 a = 0,2373a \). </p>
+              <p>Procentuella andelen som har avlägsnats är \( a - 0,2373a = 0,7627a \). Alltså 76,3 %.</p>
+              </div></div> </li>
+              <li>Hur många procent av partiklarna avlägsnas av 25 st lager? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer">Lösningen </div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Motsvarande som ovan. Per lager har vi kvar \( 0,75a \) st partiklar. Efter 25 lager är mängden \( 0,75^{25}a = 0,0007525a \).</p>
+              <p>Andelen som har avlägsnats är \( a - 0,0007525a = 0,9992475a \). Alltså 99,92 %.</p>
+              </div></div> </li>
+              <li><i class="fas fa-jedi fa-2x level"></i>Hur många lager skall vi ha för att bygga ett filter som avlägsnar i alla fall 98 % av partiklarna? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer">Lösningen </div></div> </li>
+              <div class="card card-body answer"><p>Vi inser att det får finnas kvar 2 %, alltså \( 0,02a \) av partiklarna i början.</p>
+              <p>Från föregående uppgifterna fick vi fram en formel. Nu vet vi inte bara hur många lager som vi har. Vi betecknar antalet med \( n \). Vi får ekvationen \( 0,75^n a = 0,02a \). </p>
+              <p>I bägge led har vi \( a \), de kan vi förkorta bort. Ekvationen blir \( 0,75^n = 0,02 \). För att lösa denna ekvation exakt behöver vi logaritmer. För att nu hitta en lösning gafflar vi fram en lösning (vi testar).</p>
+              <p>\( 0,75^{10} = 0,0563 \), för stort värde.</p>
+              <p>\( 0,75^{15} = 0,0133 \), för litet värde.</p>
+              <p>\( 0,75^{12} = 0,0316 \), för stort värde.</p>
+              <p>\( 0,75^{13} = 0,0237 \), för stort värde.</p>
+              <p>\( 0,75^{14} = 0,0178 \), för litet värde.</p>
+              <p>Vi skall alltså ha 14 lager för att avlägsna 98 % av partiklarna.</p>
+              </div></div> </li>
             </ol>
           </li>
 
@@ -157,21 +171,17 @@
               <div class="card card-body answer"> <p>Eftersom bilen förlorar 10 % av sitt värde varje år är värdet \(0,9 \cdot 25 000\) efter första året. År 2 är värdet \(0,90^2 \cdot 25000\). Efter 8 år är värdet \(0,9^8 \cdot 25000 = 10761,68 \approx 10 800 \approx 11000\) €.</p> </div></div>
           </li>
 
-          <li>En studerande löste följande uppgift:
-            <div class="exercise box">
-              <p>För en överfiskad fiskart gäller att beståndet minskar med 2,5 % varje år. I en sjö finns det 1 500 fiskar. Efter hur många år är beståndet nere i hälften om trenden forstätter konstant?</p>  <p>Lösnigen var följande</p><p>Hälften betyder \(\dfrac{1500}{2} = 750\) fiskar. Det minskar med 2,5 % varje år. Alltså efter \(\dfrac{750}{2,5} = 300\) år är beståndet nere i hälften.</p></div>
-            <p>Lös uppgiften, korrigera felen och förklara varför som det far åt skogen med lösningen ovan.</p>
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer">  </div></div>
-          </li>
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
 
           <li><i class="fas fa-jedi fa-2x level"></i>För att få större skatteintäkter beslutar sig en regering för att höja mervärdeskatten för sötsaker på 20 % med 3 procentenheter. Det som händer är att försäljningen minskar med 1,5 %. Går det som regeringen hoppades och hur många procent högre intäkter får de?
             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
             <div class="collapse" id="6t">
             <div class="card card-body hint"> <p>Gör en tabell</p>
               <p><table>
-                <tbody>
                   <tr><td>procent</td><td>försäljning</td><td>statens inkomst</td></tr>
                   <tr><td>20 %</td><td></td><td></td></tr>
                   <tr><td>23 %</td><td></td><td></td></tr>
@@ -182,7 +192,7 @@
               <div class="card card-body answer"> <p>Vi gör följande tabell</p>
                 <p>
                   <table>
-                    <tbody>
+
                       <tr><td>procent</td><td>försäljning</td><td>statens inkomst</td></tr>
                       <tr><td>20 %</td><td>\(a\)</td><td>\(0,20a\)</td></tr>
                       <tr><td>23 %</td><td>\((1-0,015)a\)</td><td>\(0,23 \cdot 0,985a\)</td></tr>
@@ -208,7 +218,7 @@
           <li><i class="fas fa-cogs fa-2x level"></i>Torv innehåller 90 % vatten. Hur många procent av vattnet måste avdunsta för att torven skall innehålla 45 % vatten efter torkningsprocessen?
             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
             <div class="collapse" id="8t">
-            <div class="card card-body hint"> <table>  	<tbody>  		<tr>  			<td><strong>massa</strong></td>  			<td>a</td>  			<td>b</td>  		</tr>  		<tr>  			<td><strong>vatten</strong></td>  			<td>0,9a</td>  			<td>0,45b</td>  		</tr>  		<tr>  			<td><strong>annat</strong></td>  			<td>0,1a</td>  			<td>0,55b</td>  		</tr>  	</tbody>  </table>    <p>"Annat" är konstant! Arbeta utgående från detta.</p> </div></div>
+            <div class="card card-body hint"> <table><tr><th>massa</th><td>a</td><td>b</td></tr><tr><th>vatten</th><td>0,9a</td><td>0,45b</td></tr><tr><th>annat</th><td>0,1a</td><td>0,55b</td></tr>  	</tbody>  </table>    <p>"Annat" är konstant! Arbeta utgående från detta.</p> </div></div>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <div class="answer"><p>\(p = \dfrac{0,1 \cdot 0,45}{0,55 \cdot 0,9} = 0,09090\ldots\). Eftersom mängden minskar får vi den eftersökta procenten som \(1 - \dfrac{0,1 \cdot 0,45}{0,55 \cdot 0,9} = 0,9090\ldots\), vilket ger 91 %.</p> </div></div>
@@ -217,8 +227,14 @@
           <li><i class="fas fa-jedi fa-2x level"></i>Äpple består av 70 % vatten och 4 % socker. Äpple torkas så att andelen vatten sjunker till 10 %. Bestäm andelen socker i äpplena efter torkningen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <table>
-                <tbody> 		<tr> 			<td>&nbsp;</td> 			<td><strong>då</strong></td> 			<td><strong>nu</strong></td> 		</tr> 		<tr> 			<td><strong>total massa</strong></td> 			<td>a</td> 			<td>b</td> 		</tr> 		<tr> 			<td><strong>vatten</strong></td> 			<td>0,7a</td> 			<td>0,1b</td> 		</tr> 		<tr> 			<td><strong>socker</strong></td> 			<td>0,04a</td> 			<td>pb</td> 		</tr> 		<tr> 			<td><strong>inte vatten</strong></td> 			<td>0,3a</td> 			<td>0,9b</td> 		</tr> 	</tbody> </table>
+              <div class="card card-body answer">
+                <table>
+                 <tr><td></td><th>då</th><th>nu</th></tr>
+                 <tr><th>total massa</th><td>a</td><td>b</td></tr>
+                 <tr><th>vatten</th><td>0,7a</td><td>0,1b</td></tr>
+                 <tr><th>socker</th><td>0,04a</td><td>pb</td></tr>
+                 <tr><th>inte vatten</th><td>0,3a</td><td>0,9b</td></tr>
+               </table>
                 <p>Kombinera raderna med socker och inte vatten. \(0,04a = pb\) och \(0,3a=0,9b\).</p>
                 <p>Lös ut \(b\) ur dessa: \(b=\dfrac{0,04a}{p}\) och \(b=\dfrac{0,3a}{0,9}\).</p>
                 <p>Kombination av dessa ger \(p=\dfrac{0,04\cdot0,9}{0,3} = 0,12\). Alltså 12 %.</p> </div></div>
@@ -228,7 +244,12 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Tabellen ser ut som:</p>
-                <table>  	<tbody>  		<tr>  			<td>&nbsp;</td>  			<td><strong>då</strong></td>  			<td><strong>nu</strong></td>  		</tr>  		<tr>  			<td><strong>hyresintäkter</strong></td>  			<td>\(0,88a\)</td>  			<td>\(0,88a \cdot p = 1,1 \cdot 1,04 a\)</td>  		</tr>  		<tr>  			<td><strong>underhållet</strong></td>  			<td>\(a\)</td>  			<td>\(1,04a\)</td>  		</tr>  	</tbody>  </table>
+                <table>
+                  <tr><td></td><th>då</th><th>nu</th></tr>
+                  <tr><th>hyresintäkter</th><td>\(0,88a\)</td><td>\(0,88a \cdot p = 1,1 \cdot 1,04 a\)</td></tr>
+                  <tr><th>underhållet</th><td>\(a\)</td><td>\(1,04a\)</td></tr>
+                </tbody>
+              </table>
                 <p>Då vi löser ut \(p\) från \(0,88a\cdot p = 1,1\cdot 1,04a\) får vi \(p=1,30\).</p>
                 <p>Hyrorna borde höjas med 30 %.</p> </div></div>
           </li>

@@ -420,7 +420,7 @@ h3 {
 
 .kurs {
   font-size: 1rem;
-  height: 80px;
+  height: 125px;
   width: 250px;
   margin: 10px;
 }
@@ -428,7 +428,7 @@ h3 {
 .kurs h4 {
   font-size: 1rem;
   color: black;
-  margin-top: 5%;
+  margin-top: 20%;
 }
 
 }
