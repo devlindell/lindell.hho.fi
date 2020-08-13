@@ -110,9 +110,9 @@
               <li>\( \displaystyle\int (2x^3+6x-3)\textrm{ d}x \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
               <div class="card card-body answer"><p>\( \displaystyle\int (2x^3+6x-3)\textrm{ d}x = 2\cdot\dfrac{1}{4}x^4+6\cdot\dfrac{1}{2}x^2-3x+C=\dfrac{1}{2}x^4+3x^2-3x+C \) </p></div></div> </li>
-              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( \displaystyle\int (-3x^4+x^2+9)\textrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+              <div class="card card-body answer"><p>\( \displaystyle\int (-3x^4+x^2+9)\textrm{ d}x = -3 \cdot \dfrac{1}{4}x^4 + \dfrac{1}{3}x^3 + 9x + C =  -\dfrac{3}{4}x^4 + \dfrac{1}{3}x^3 + 9x + C \)</p></div></div> </li>
             </ol>
           </li>
 
@@ -124,29 +124,82 @@
               <li>\( \displaystyle\int \sqrt[3]{x} \textrm{ d}x \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
               <div class="card card-body answer"><p>\( \displaystyle\int \sqrt[3]{x} \textrm{ d}x = \displaystyle\int x^{\frac{1}{3}} \textrm{ d}x = \dfrac{1}{\dfrac{1}{3}+1}x^{\frac{1}{3}+1} + C = \dfrac{3}{4}x^{\frac{4}{3}} + C = \dfrac{3}{4}x\sqrt[3]{x}+C \) .</p></div></div> </li>
-              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( \displaystyle\int (x+1)\sqrt{x} \textrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+              <div class="card card-body answer"><p>
+                \(
+                \begin{array}{rcl}
+                \displaystyle\int (x+1)\sqrt{x} \textrm{ d}x
+                & = & \displaystyle\int x\sqrt{x} +\sqrt{x} \textrm{ d}x \\
+                & = & \displaystyle\int x^{\frac{3}{2}} +x^{\frac{1}{2}} \textrm{ d}x \\
+                & = & \dfrac{1}{1+\frac{3}{2}} x^{1+\frac{3}{2}} + \dfrac{1}{1+\frac{1}{2}} x^{1+\frac{1}{2}} \\
+                & = & \dfrac{1}{\frac{5}{2}} x^{\frac{5}{2}} + \dfrac{1}{\frac{3}{2}} x^{\frac{3}{2}} \\
+                & = & \dfrac{2}{5} x^{\frac{5}{2}} + \dfrac{2}{3} x^{\frac{3}{2}} \\
+                & = & \dfrac{2}{5} \sqrt{x^{5}} + \dfrac{2}{3} \sqrt{x^{3}} \\
+                & = & \dfrac{2x^2}{5} \sqrt{x} + \dfrac{2x}{3} \sqrt{x} \\
+                & = & (\dfrac{2x^2}{5} + \dfrac{2x}{3} )\sqrt{x} \\
+                \end{array} \)
+                </p></div></div> </li>
             </ol>
           </li>
 
-          <li>Bestäm alla primitiva funktioner för \( \dfrac{2}{\sqrt{x}} \) .
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>\( \displaystyle\int \dfrac{2}{\sqrt{x}} \textrm{ d}x = \displaystyle\int 2x^{-\dfrac{1}{2}} \textrm{ d}x = 2\cdot\dfrac{1}{-\dfrac{1}{2}+1} x^{-\dfrac{1}{2}+1} + C = 2\cdot\dfrac{1}{\dfrac{1}{2}} x^{\frac{1}{2}}+ C = 2 \cdot 2 \cdot 2 x^{\frac{1}{2}} + C = 4x^{\frac{1}{2}}+C = 4\sqrt{x}+C \) .</p></div></div>
+          <li>Integrera följande funktioner.
+            <ol>
+              <li>\( \dfrac{1}{x^4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>
+                \( \begin{array}{rcl}
+                 \displaystyle\int \dfrac{1}{x^4} \textrm{ d}x & = & \displaystyle\int x^{-4} \textrm{ d}x \\
+                 & = &  \dfrac{1}{-4+1} x^{-4+1} + C \\
+                 & = &  \dfrac{1}{-3} x^{-3} + C \\
+                 & = &  -\dfrac{1}{3x^3} + C \\
+                 \end{array}\)</p></div></div> </li>
+              <li>\( \dfrac{2}{\sqrt{x}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>
+                \( \begin{array}{rcl}
+                \displaystyle\int \dfrac{2}{\sqrt{x}} \textrm{ d}x & = & \displaystyle\int 2x^{-\frac{1}{2}} \textrm{ d}x \\
+                & = & 2\cdot\dfrac{1}{-\dfrac{1}{2}+1} x^{-\frac{1}{2}+1} + C \\
+                & = & 2\cdot\dfrac{1}{\dfrac{1}{2}} x^{\frac{1}{2}}+ C  \\
+                & = & 2 \cdot 2 \cdot x^{\frac{1}{2}} + C \\
+                & = & 4x^{\frac{1}{2}}+C \\
+                & = & 4\sqrt{x}+C \\
+                \end{array}\) </p></div></div> </li>
+              <li>\( \dfrac{1}{6x\sqrt{x}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>
+                \( \begin{array}{rcl}
+                \displaystyle\int \dfrac{1}{6x\sqrt{x}} \textrm{ d}x & = & \displaystyle\int \dfrac{1}{6x^{\frac{3}{2}}} \textrm{ d}x \\
+                & = & \displaystyle\int \dfrac{1}{6} \cdot x^{-\frac{3}{2}} \textrm{ d}x \\
+                & = & \dfrac{1}{6} \cdot \dfrac{1}{-\frac{3}{2}+1} \cdot x^{-\frac{3}{2}+1} +C \\
+                & = & \dfrac{1}{6} \cdot \dfrac{1}{-\frac{1}{2}} \cdot x^{-\frac{1}{2}} +C \\
+                & = & \dfrac{1}{6} \cdot (-2) \cdot \dfrac{1}{\sqrt{x}} +C \\
+                & = &  -\dfrac{3}{\sqrt{x}} +C \\
+                \end{array} \)
+              </p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm alla primitiva funktioner för \( \dfrac{3}{4\sqrt{x}} \) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>
+                \( \begin{array}{rcl}
+                \displaystyle\int \dfrac{3}{4\sqrt{x}} \textrm{ d}x & = & \displaystyle\int \dfrac{3}{4} x^{-\frac{1}{2}} \textrm{ d}x \\
+                & = & \dfrac{3}{4}\cdot\dfrac{1}{-\dfrac{1}{2}+1} x^{-\frac{1}{2}+1} + C \\
+                & = & \dfrac{3}{4}\cdot\dfrac{1}{\dfrac{1}{2}} x^{\frac{1}{2}}+ C \\
+                & = & \dfrac{3}{4} \cdot 2 \cdot x^{\frac{1}{2}} + C \\
+                & = & \dfrac{3}{2} x^{\frac{1}{2}}+C \\
+                & = & \dfrac{3}{2}\sqrt{x}+C \\
+                \end{array}\)</p></div></div>
           </li>
 
           <li>Bestäm alla primitiva funktioner för \( (x-\dfrac{1}{x})^2 \) .
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Först förenklar vi \( (x-\dfrac{1}{x})^2 = x^2-2\cdot x \cdot \dfrac{1}{x} + \dfrac{1}{x^2} = x^2-2+\dfrac{1}{x^2} = x^2-2+x^{-2} \) .</p> <p>Sedan integrerar vi\( \displaystyle\int x^2-2+x^{-2} \textrm{ d}x = \dfrac{1}{3}x^3-2x+\dfrac{1}{-1}x^{-1} + C = \dfrac{1}{3}x^3-2x - \dfrac{1}{x} + C \) .</p></div></div>
           </li>
 
-          <!--<li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den primitiva funktion för \( f(x)= 8x+\dfrac{2}{x^3} \)  som får värdet 5 då x = 1.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
