@@ -198,21 +198,32 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm den primitiva funktion för \( f(x)=1-e^{-x} \), vars minsta värde är 4.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får \( F(x) = x+e^{-x} +C \).</p>
+              <p>Eftersom \( f \) är \( F \):s derivatafunktion kan vi bestämma extremvärdespunkterna med hjälp av \( f \). \( f(x)=1-e^{-x}=0 \) då \( x = 0\).</p>
+              <p>Alltså skall \( F \) gå genom punkten \( (0,4) \).</p>
+              <p>\( 0 + e^0 + C = 4 \) ger \( C = 3 \).</p>
+              <p>\( F(x) = x + e^{-x} + 3 \). </p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm den primitiva funktion till funktionen \( f(x) = e^{2x}-2e^x \) som tangerar linjen \( y=-x \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>För att kunna integrera behöver vi korrigera. \( \displaystyle\int e^{2x} - 2e^x \textrm{ d}x = \displaystyle\int \dfrac{1}{2}\cdot 2e^{2x} - 2e^x \textrm{ d}x = \dfrac{1}{2}e^{2x}-2e^x + C \). </p>
+              <p>Eftersom \( F \) skall tangera linjen \( y = -x \) skall tangenten för \( F \):s riktningskoefficient ha värdet -1. \( x \)-koordinaten får vi med hjälp av \( f \).</p>
+              <p>\( f(x) = e^{2x}-2e^x = -1 \). För att lösa den för hand gör vi substitutionen \( e^x = t \). Då får vi \( t^2-2t = -1 \) som har lösningen \( t=1 \). Alltså \( e^x = 1 \) som ger \( x = 0 \).</p>
+              <p>Eftersom linjens ekvation är \( y=-x \) skall \( F \) gå genom punkten \( (0,0) \).</p>
+              <p>Alltså \( F(x) = \dfrac{1}{2}e^{2\cdot0}-2e^0 + C = 0 \) ger \( C = \dfrac{3}{2} \).</p>
+              <p>\( F(x)= \dfrac{1}{2}e^{2x}-2e^x + \dfrac{3}{2} \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
