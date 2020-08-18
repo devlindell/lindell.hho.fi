@@ -43,6 +43,7 @@
             <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
             <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
             <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+            <a class="dropdown-item" href="22_repetition.html">22. Repetition</a>
           </div>
         </div>
       </nav>
@@ -56,22 +57,7 @@
       <h1>22. Repetition</h1>
       <section>
         <div class="theory">
-          <div class="intro box">
-
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
-          </div>
-          <div class="summary box">
-
-          </div>
-          <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
+          <p>Sedan är det bara att repetera.</p>
 
           </div>
       </section>
@@ -197,10 +183,31 @@
                   </div></div>
             </li>
 
-            <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="8">
-                <div class="card card-body answer"> <p>Lösningen</p></div></div>
+            <li><i class="fas fa-shapes fa-2x level"></i>På håltimmen dricker Anna en halv liter energidryck som innehåller 160 mg koffein. Mängden koffein i en människa minskar med cirka 13 % per timme.
+              <ol>
+                <li>Bilda ett uttryck som anger andelen milligram koffein i kroppen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="8a">
+                <div class="card card-body answer"><p>I början har vi 160 mg och det minskar med 13 % per timme. Vi får ekvationen \( 160 (1-0,13)^t \) som vi kan förenkla till \{ 160\cdot 0,87^t \).</p></div></div> </li>
+                <li>Efter hur många timmar är mängden koffein i kroppen under 100 mg? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="8b">
+                <div class="card card-body answer"><p>Vi får ekvationen</p>
+                <p>\( \begin{array}{rcl}
+                  160\cdot 0,87^t & = & 100 \\
+                  0,87^t & = & \dfrac{100}{160} \\
+                  t & = & \log_{0,87}\dfrac{10}{16} =  3,37\ldots \\
+                  \end{array} \) </p>
+                  <p>Efter 3 timmar och 23 minuter.</p>
+                </div></div> </li>
+                <li>Efter hur många timmar är mängden koffein i kroppen under 10 mg? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="8c">
+                <div class="card card-body answer"><p>Som ovan. Vi får ekvationen</p>
+                <p>\( \begin{array}{rcl}
+                  160\cdot 0,87^t & = & 10 \\
+                  0,87^t & = & \dfrac{10}{160} \\
+                  t & = & \log_{0,87}\dfrac{1}{16} =  19,91\ldots \\
+                  \end{array} \) </p>
+                  <p>Efter 19 timmar och 55 minuter.</p></div></div> </li>
+              </ol>
             </li>
 
             <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift

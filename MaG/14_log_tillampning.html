@@ -43,6 +43,7 @@
       <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
       <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
       <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+      <a class="dropdown-item" href="22_repetition.html">22. Repetition</a>
      </div>
     </div>
    </nav>
@@ -135,47 +136,87 @@
       </ol>
      </li>
 
-     <li>Vi placerar 1500 € så att den årliga av kastningen är 7,0 %. Efter hur många år har kapitalet ökat till 2500 € då vi varje år betalar en skatt på kapitalinkomster om 30 %?
+     <li>År 2014 gjorde finländarna 750 000 resor till fasta Spaninen och Kanarieöarna. Antalet resor växte med 3 % årligen. Vi vill ta reda på efter hur många år vi gör 1,5 miljoner resor om året om takten fortätter i samma grad. Vi betecknar antalet år som gått sedan 2014 med \( t \). Vilken av ekvationerna motsvarar beskrivningen ovan?
+          <ol style="list-style-type:upper-alpha;">
+            <li>\( 0,75 \cdot 1,03^t = 1,5 \)</li>
+            <li>\( 0,75 + 1,03^t = 1,5 \)</li>
+            <li>\( 0,75 \cdot 1,03t = 1,5 \)</li>
+          </ol>
+          <p>Vilken av alternativen löser den rätta ekvationen?
+          <ol style="list-style-type:upper-roman;">
+            <li>\( t = \dfrac{1,5}{0,75\cdot 1,03} \)</li>
+            <li>\( t = \log_{1,03} 1,5 \)</li>
+            <li>\( t = \log_{1,03} 2 \)</li>
+          </ol>
+         <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+         <div class="collapse" id="1.5">
+         <div class="card card-body answer"> <p>Vi har 750 000 resor och det sker en årlig ökning om 3 % varje år. Ekvationen blir \( 750 000 (1+0,03)^t = 1500000 \).</p>
+          <p>Alltså \( 0,75 \cdot 1,03^t = 1,5 \) är rätt alternativ.</p>
+          <p>Då vi löser den får vi </p>
+          <p>\( \begin{array}{rcl}
+          0,75 \cdot 1,03^t & = & 1,5 \\
+          1,03^t & = & \dfrac{1,5}{0,75} \\
+          t & = & \log_{1,03} 2 \\
+          \end{array} \)</p>
+          <p>Alltså alternativ c).</p>
+         </div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Vi placerar 1500 € så att den årliga av kastningen är 7,0 %. Efter hur många år har kapitalet ökat till 2500 € då vi varje år betalar en skatt på kapitalinkomster om 30 %?
       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
       <div class="collapse" id="2">
       <div class="card card-body answer"> <p>Den verkliga räntan är \(0,07 \cdot 0,70\). Vi får ekvationen \((1+0,07\cdot 0,70)^n \cdot 1500 = 2500\) som har lösningen \(n=10,68\). Alltså 11 år.</p> </div></div>
      </li>
 
-     <li>Befolkningsökningen var som störst i Finland efter andra världskriget. 1950 var befolkningsmängden 4,03 miljoner och befolkningstillväxten var 1,0 %. Om befolkningstillväxten skulle ha varit konstant 1,0 % efter 1950, när skulle befolkningsmängden överskrida år 2015 befolkningsmängd på 5,47 miljoner?
+     <li><i class="fas fa-shapes fa-2x level"></i>Befolkningsökningen var som störst i Finland efter andra världskriget. 1950 var befolkningsmängden 4,03 miljoner och befolkningstillväxten var 1,0 %. Om befolkningstillväxten skulle ha varit konstant 1,0 % efter 1950, när skulle befolkningsmängden överskrida år 2015 befolkningsmängd på 5,47 miljoner?
        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
        <div class="collapse" id="3">
        <div class="card card-body answer"> <p>Vi har ekvationen \(1,01^x \cdot 4,03 = 5,47\) som vi kan skriva som \(x=\dfrac{\lg\frac{5,47}{4,03}}{\lg 1,01} \approx 30,70\) år.</p>  <p>År 1950 + 30 = 1980.</p> </div></div>
      </li>
 
-     <li><p>Med överfiske menar man att man fiskar mera fisk än vad fiskstammen förökar sig. Det betyder att antalet fiskar i stammen minskar. Man talar om att alla fiskarter på jorden kommer att krascha inom 50 år. Då en fiskstam kraschar betyder det att antalet fiskar minskar med 10 % från vad det har varit som mest.</p>  <p>Vi tänker oss följande. En fiskstam har sin största population, antal, just nu. Om 50 år har fiskstammen kraschat med 10 %. Vad är den årliga procentuella minskningen?</p>  <p>Svara med två decimalers noggrannhet.</p>
+     <li><p><i class="fas fa-shapes fa-2x level"></i>Med överfiske menar man att man fiskar mera fisk än vad fiskstammen förökar sig. Det betyder att antalet fiskar i stammen minskar. Man talar om att alla fiskarter på jorden kommer att krascha inom 50 år. Då en fiskstam kraschar betyder det att antalet fiskar minskar med 10 % från vad det har varit som mest.</p>  <p>Vi tänker oss följande. En fiskstam har sin största population, antal, just nu. Om 50 år har fiskstammen kraschat med 10 %. Vad är den årliga procentuella minskningen?</p>  <p>Svara med två decimalers noggrannhet.</p>
        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
        <div class="collapse" id="4">
        <div class="card card-body answer"> <p>Vi betecknar procenten med \(p\) och antalet med \(a\).</p>  <p>Då får vi ekvationen \(p^{50} a=0,90a\) som har lösningen \(p=0,9978950083\).</p>  <p>Den årliga procentuella minskningen är \(1-0,9978950083 = 0,0021049917\). Alltså 0,21 %</p> </div></div>
      </li>
 
-     <li>Ett företag strävar till att öka omsättningen med 60 % under 10 år.
-      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-      <div class="collapse" id="5t">
+     <li><i class="fas fa-shapes fa-2x level"></i>Kolväteutsläppen från vägtrafiken i Finalnd var som mest ungefär 70 000 ton om året, men har minskat med ca 5 % efter rekordåret. När inföll rekordåret, då utsläppen 2012 uppgick till ca 23 000 ton?
+         <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+         <div class="collapse" id="6">
+         <div class="card card-body answer"> <p>Vi vet att utsläppen har minskat med 5 % varje år, då kan vi bilda ekvationen \( 70 000 (1-0,05)^n = 23 000 \).</p>
+          <p>Då vi löser ekvationen får vi</p>
+            <p>\( \begin{array}{rcl}
+            70 000 (1-0,05)^n & = & 23 000 \\
+            70 000 \cdot 0,95^n & = & 23 000 \\
+            0,95^n & = & \dfrac{23000}{70000} \\
+            n & = & \log_{0,95} \dfrac{23}{70} = 21,6987\ldots \\
+            \end{array} \)</p>
+         <p>Rekordåret var 22 år före 2012, alltså år 1990.</p></div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Ett företag strävar till att öka omsättningen med 60 % under 10 år.
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+      <div class="collapse" id="7t">
       <div class="card card-body hint"><p>Beteckna omsättningen med \(a\). Om omsättningen skall öka med 60 % är den nya omsättningen 1,6\(a\) </div></div>
       <ol>
-       <li>Hur många procent skall omsättningen öka varje år? Svara med två decimaler. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-       <div class="collapse" id="5a">
+       <li>Hur många procent skall omsättningen öka varje år? Svara med två decimaler. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7a">
        <div class="card card-body answer"><p>Omsättningen i början är \(a\) och den procentuella ökningen betecknar vi \(p\). vi får ekvationen \(p^{10}\cdot a = 1,6 a\) som har lösningen \(p=\sqrt[10]{1,6} \approx 1,04812\) som betyder att den årliga ökningen skall vara \(1,04812-1 = 0,04812\) som är 4,81 %.</p> </div></div> </li>
-       <li>Om hur många år har omsättningen fördubblats? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-       <div class="collapse" id="5b">
+       <li>Om hur många år har omsättningen fördubblats? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7b">
        <div class="card card-body answer"><p>Vi betecknar omsättningen med \(a\), \(n\) antal år och får ekvationen \(1,0481^n \cdot a = 2a\) som har lösningen \(n = \dfrac{\lg 2}{\lg 1,0481} \approx 14,75\).</p>  <p id="i1yfur7ipq">Alltså 15 år.</p> </div></div> </li>
       </ol>
      </li>
 
-     <li>Varje år fördubblas antalet råttor i en storstad. Hur många år tar det för antalet råttor att bli 100 falt?
-       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-       <div class="collapse" id="6">
+     <li><i class="fas fa-cogs fa-2x level"></i>Varje år fördubblas antalet råttor i en storstad. Hur många år tar det för antalet råttor att bli 100 falt?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8">
        <div class="card card-body answer"> <p>Vi betecknar antal råttor med \(a\). Vi får ekvationen \(2^n\cdot a=100 a\) som har lösningen \(n=\dfrac{\lg 100}{\lg 2} \approx 6,64\).</p>  <p>Alltså 7 år.</p> </div></div>
      </li>
 
-     <li>Radioaktiva material har en naturligt sönderfall som kallas för halveringstid. Halveringstiden betyder att antalet aktiva, radioaktiva kärnor minskar med hälften. Halveringstiden för kol 11 som används i <a href="http://sv.wikipedia.org/wiki/Positronemissionstomografi" target="_blank">PET skanning</a> har en halveringstid på 20,5 minuter. Efter hur många minuter har aktiviteten sjunkit till en 100-del av vad den var i början?
-       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-       <div class="collapse" id="7">
+     <li><i class="fas fa-cogs fa-2x level"></i>Radioaktiva material har en naturligt sönderfall som kallas för halveringstid. Halveringstiden betyder att antalet aktiva, radioaktiva kärnor minskar med hälften. Halveringstiden för kol 11 som används i <a href="http://sv.wikipedia.org/wiki/Positronemissionstomografi" target="_blank">PET skanning</a> har en halveringstid på 20,5 minuter. Efter hur många minuter har aktiviteten sjunkit till en 100-del av vad den var i början?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
        <div class="card card-body answer"> <p>Vi betecknar antalet radioaktiva kärnor med \(a\). Efter första halveringen har vi \(0,50a\) kvar, efter andra halveringen har vi \(0,50^2\cdot a\) kvar.</p>  <p>Vi söker antalet halveringar som behövs genom att lösa ekvationen \(0,50^n \cdot a = \dfrac{a}{100}\) som har lösningen \(n=\dfrac{\lg\frac{1}{100}}{\lg 0,50} \approx 6,6438\) halveringar.</p>  <p>Varje halvering tar 20,5 minuter som betyder att den totala tiden är \(20,5 \text{ minuter } \cdot 6,6438 = 136,1979\) minuter.</p> </div></div>
      </li>
 
