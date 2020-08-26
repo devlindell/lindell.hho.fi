@@ -311,21 +311,39 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_0^3 (a^2t^3 +a) \textrm{ d}t = 0 \)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får </p>
+                \( \begin{array}{rcl}
+                \displaystyle\int_0^3 (a^2t^3 +a) \textrm{ d}t & = & 0 \\
+                \bigg/_0^3 a^2\cdot \dfrac{1}{4}t^4 +at & = & 0 \\
+                a^2\cdot \dfrac{1}{4}\cdot 3^4 +a\cdot 3 - (a^2\cdot \dfrac{1}{4}0^4 +a\cdot 0) & = & 0 \\
+                \dfrac{81}{4}a^2 +3a & = & 0 \\
+                a(\dfrac{81}{4}a +3) & = & 0 \\
+                \end{array} \) </p>
+                <p>Alltså då \( a = 0 \) eller då \( \dfrac{81}{4}a +3 = 0 \), alltså \( a = -\dfrac{1}{3} \).</p>
+              </p></div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( a \) har den primitiva funktionen \( \displaystyle\int_{a}^{a+1} x^2 + x +1 \textrm{ d}x \) ett så litet värde som möjligt?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi börjar med att bestämma den primitiva funktionen.</p>
+                <p> \( \begin{array}{rcl}
+                  \displaystyle\int_{a}^{a+1} x^2 + x +1 \textrm{ d}x & = & \bigg/_{a}^{a+1} \dfrac{1}{3}x^3 + \dfrac{1}{2}x^2 + x \\
+                  & = & \dfrac{1}{3}\cdot (a+1)^3 + \dfrac{1}{2}\cdot (a+1)^2 + (a+1) -(\dfrac{1}{3}\cdot a^3 + \dfrac{1}{2}\cdot a^2 + a) \\
+                  & = & a^2 +2a + \dfrac{11}{6} \\
+                  \end{array} \) </p>
+                  <p>Vi söker minsta värdet för uttrycket. \( f'(a) = 2a+2 \). Derivatans nollställen är \( f'(a) = 0\) då \( 2a+2 = 0 \), alltså \( a = -1 \).</p>
+                  <p>Då \( f'(0) = 2 > 0 \) och \( f'(-2) = -2 < 0 \) har vi ett minsta värde i \( a = -1 \).</p>
+                  <p>Då \( a = -1 \).</p> 
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5a">
