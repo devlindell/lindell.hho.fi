@@ -223,31 +223,53 @@
               </div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm för funktionen \( f(x) = e^{-2x} - 2e^{-x} \) den primitiva funktion som för funktionsvärdet 0 får värdet 1.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi bildar den primitiva funktionen</p>
+                <p> \( \begin{array}{rcl}
+                F (x) & = & \displaystyle\int e^{-2x} - 2e^{-x} \textrm{ d}x \\
+                & = & \displaystyle\int (-\dfrac{1}{2})(-2)e^{-2x} + 2(-1)e^{-x} \textrm{ d}x \\
+                & = & -\dfrac{1}{2}e^{-2x} +2e^{-x} + C \\
+                \end{array} \) </p>
+                <p>\( F(x) \) skall genom punten, \( (0,1) \). Vi får ekvationen \( -\dfrac{1}{2}e^{-2\cdot 0} +2e^{0} + C = 1 \), alltså \( C= -\dfrac{1}{2} \).</p>
+                <p>\( F(x) = -\dfrac{1}{2}e^{-2x} +2e^{-x} -\dfrac{1}{2} \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>För funktionen \( f \) vet vi att \( f(0) = 1 \) och att i \( f \):s definitionsmängd gäller att
+            <ol>
+              <li>\( f'(x) = \dfrac{x}{e^{f(x)}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>\( f'(x) = x e^{f(x)} \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+            <p>Bestäm funktionen \( f \).</p>
+          </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>Härled integreringsformen för funktionen \( a^x \). Bestäm med hjälp av formeln den primitiva funktionen för \( 2^x \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Från gammalt har vi \( D a^x = a^x \ln a \).</p>
+              <p>Då vi integrerar bägge led får vi </p>
+              <p>\( \begin{array}{rcll}
+                \displaystyle\int D a^x & = & \displaystyle\int a^x \ln a \\
+                 a^x & = & \displaystyle\int a^x \ln a & \mid /\ln a \text{ Vi kastar om leden.}\\
+                 \displaystyle\int a^x \textrm{ d}x & = & \dfrac{a^x}{\ln a} + C \\
+                 \end{array} \) </p>
+              <p>Vi får \( \displaystyle\int 2^x = \dfrac{2^x}{\ln 2} + C \).</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5a">
