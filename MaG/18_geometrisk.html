@@ -167,7 +167,20 @@
               </ol>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Ge exempel på en geometrisk talföljd som</p>    <ol start="1" style="list-style-type:lower-alpha">  	<li>är växande och</li>  	<li>är avtagande.</li>  </ol>
+          <li>Bestäm det 7:e elementet för den geometriska talföljden \( 1000, 400, 160, \ldots \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5">
+              <div class="card card-body answer"> <p>Kvoten mellan elementen är \( q_1 = \dfrac{400}{1000} = 0,4 \) och \( q_2 = \dfrac{160}{400} = 0,4 \).</p>
+              <p>Den allmänna termen är \( a_n = a_1 \cdot q^{n-1} = 1000 \cdot 0,4^{n-1} \).</p>
+              <p>Det 7:e elmentet är \( a_7 = 1000\cdot 0,4^{7-1} = 4,096 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ge exempel på en geometrisk talföljd som</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>är växande och</li>
+              <li>är avtagande.</li>
+            </ol>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
               <div class="card card-body answer"> Rita den på GeoGebra och se hur den beter sig. En kvot över 1 ger en växande, en kvot mellan 0 och 1 ger en avtagande.</div></div>
@@ -194,6 +207,18 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>\(a_1 = 1 = 2^0\)</p>    <p>\(a_2 = 2 = 2^1\)</p>    <p>\(a_3 = 4 = 2^2\)</p>    <p>\(a_4 = 8 = 2^3\)</p>    <p>\(a_n = 2^{n-1}\).</p>    <p>Olikheten är \(2^{n-1} < 10000\) som ger \(n  <  14,29\).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Om levnadskostnaderna för en familj ökar med 4,7 % varje år, hur många procent större är kostnaderna år 2027 än år 2020?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.5">
+              <div class="card card-body answer"> <p>Levnadskostnaerna år 2020 betecknar vi med \( a \).</p>
+                <p>Vi har en geometrisk talföljd, eller procentuell förändring. Allänna termen är \( a_n = a \cdot 1,047^{n-1} \) där n = 1 läget år 2020.</p>
+                <p>Eller så kan vi skriva uttrycket som \( a \cdot 1,047^n \) då vi tänker 2021 som första element.</p>
+                <p>Vi får kostnaderna år 2027 till \( a \cdot 1,047^7 \).</p>
+                <p>Den procentuella skillnaden är \( \dfrac{a \cdot 1,047^7}{a} = 1,047^7 = 1,379198486 \).</p>
+                <p>Vi har en ökning om \( 1,379198486 - 1 = 0,379198486 \), alltså 37,9 %.</p>
+              </div></div>
           </li>
 
           <li><p><i class="fas fa-cogs fa-2x level"></i>En person har en årslön på 38 000. Bestäm årslönen om 4 år då den höjs med a) 100 € och b) 4,0 % årligen. Hurdana talföljder har vi?</p>
