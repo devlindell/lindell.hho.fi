@@ -172,9 +172,30 @@
      </li>
 
      <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den totala summan som betalas i ränta för ett snabblån på 2000 € som avkortas varje månad under två år med den årliga räntan 24,0 %.
-      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-      <div class="collapse" id="8">
-      <div class="card card-body answer"><p>Månatligen avkortar vi \(\dfrac{2000}{24} = 83,33\) €.</p>  <p>Den månatliga räntan är \(\dfrac{24}{12} = 2,0\) %.</p>  <p>Varje månad minskar räntan som vi betalar av kapitalet med \(0,02 \cdot 83,33\).</p>  <p>Den totala räntesumman är \(0,02 \cdot 2000 + 0,02 \cdot (2000 - 83,33) + \ldots 0,02 \cdot 83,33\). Summan har värdet \(\dfrac{24}{2}(0,02\cdot 2000 + 0,02\cdot 83,33) = 499,99 = 500\) €.</p> </div></div></li>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="8">
+        <div class="card card-body answer"><p>Månatligen avkortar vi \(\dfrac{2000}{24} = 83,33\) €.</p>
+        <p>Den månatliga räntan är \(\dfrac{24}{12} = 2,0\) %.</p>  <p>Varje månad minskar räntan som vi betalar av kapitalet med \(0,02 \cdot 83,33\).</p>  <p>Den totala räntesumman är \(0,02 \cdot 2000 + 0,02 \cdot (2000 - 83,33) + \ldots 0,02 \cdot 83,33\). Summan har värdet \(\dfrac{24}{2}(0,02\cdot 2000 + 0,02\cdot 83,33) = 499,99 = 500\) €.</p> </div></div></li>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Anna behöver 120 m<sup>2</sup> av en 0,40 mm tjock byggnadsplast. Plasten finns i en tätt virad rulle, som har den yttre diametern 22,7 cm. Själva plastlagret är 8,1 cm tjockt. Finns det tillräckligt med plast i rullen, om vi dessutom vet att rullen är 1,5 m lång?
+         <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+         <div class="collapse" id="8.5">
+         <div class="card card-body answer"> <p>Ett lager plast i rullen är 0,40 mm = 0,040 cm tjockt.</p>
+          <p>Diametern för ett plastlager är alltid \( 2 \cdot 0,40 \text{ mm} = 0,80 \) mm längre än diametern för föregående lager. Diametrarna för lagren bildar en aritmetisk talföljd.</p>
+          <p>Plastens totala längd är </p>
+            <p> \( \begin{array}{rcll}
+              p & = & p_1 + p_2 + \ldots p_n & \mid p = 2\pi r = \pi d \\
+              & = & \pi d_1 + \pi d_2 + \ldots + \pi d_n \\
+              & = & \pi(d_1 + d_2 + \ldots +d_n) \\
+              & = & \pi \cdot n \cdot \dfrac{d_1+d_n}{2} \\
+              \end{array} \)</p>
+              <p>Första lagrets diameter är \( d_1 = (22,7 \text{ cm}-2\cdot 8,1\text{ cm})+0,040\text{ cm} = 6,54 \) cm.</p>
+              <p>Sista lagrets diameter är \( d_n = 22,7\text{ cm}-0,040\text{ cm} = 22,66 \) cm.</p>
+              <p>Antal varv är \( n = \dfrac{8,1 \text{ cm}}{ 0,040 \text{ cm}} = 202,5 \text{ st} \).</p>
+              <p>Plastens längd är \( p = \pi \cdot n \cdot \dfrac{d_1+d_n}{2} = \pi \cdot 202,5 \cdot \dfrac{6,54 \text{ cm} +22,66 \text{ cm}}{2} = 9288,11\ldots \text{ cm} = 92,88\ldots \text{ m} \).</p>
+              <p>Arean av plasten är \( 92,88\ldots \cdot 1,5 \text{ m} = 139,32\ldots \text{ m}^2 \). Som är mindre än 120 m<sup>2</sup> som Anna behöver.</p>
+         </p></div></div>
      </li>
 
      <li><i class="fas fa-cogs fa-2x level"></i>För en aritmetiskt talföljd, \(a_1, a_2, a_3, \ldots\) gäller att summan av de tre första elementen är 3 och summan av de tre elementen efter det är 20. Bestäm det första elementet \(a_1\) och skillnaden \(d\) för talföljden.
