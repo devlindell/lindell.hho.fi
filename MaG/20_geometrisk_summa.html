@@ -137,26 +137,46 @@
           <li>Bestäm summan av den geometriska talföljden \(2, 2^2, 2^3, \ldots 2^{15}\).
             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
             <div class="collapse" id="1">
-            <div class="card card-body answer"> <p>\(S_n = \dfrac{2(1-2^{15})}{1-2} = 65534\).</p> </div></div>
+            <div class="card card-body answer"> <p>Kvoten \( q = \dfrac{2^2}{2} = 2 \), första elementet är \( a_1 = 2 \) och antal element är 15 st.</p>
+              <p>\(S_n = \dfrac{2(1-2^{15})}{1-2} = 65534\).</p> </div></div>
+          </li>
+
+          <li>Bestäm summan av de hundra första termerna i den geometriska talföljden \( (2,6,18,54, \ldots ) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5">
+              <div class="card card-body answer"> <p>Talföljden är geometrisk. Kvoten är \( q = \dfrac{6}{2} = 3 \).</p>
+              <p>Vi har \( n = 100 \) element. Det första elementet är \( a_1 = 2 \).</p>
+              <p>Summan är \( S_{100} = \dfrac{2(1-3^{100})}{1-3} = 1 - 3^{100} \approx 5,15 \cdot 10^{47} \).</p>
+              </div></div>
           </li>
 
           <li>Bestäm summan av den geometriska talföljden \(5, 2^{-1}\cdot 5, 2^{-2}\cdot 5, \ldots 2^{-20}\cdot 5\).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2">
-              <div class="card card-body answer"> <p>\(S_n=\dfrac{5(1-\frac{1}{2}^{21})}{1-\frac{1}{2}} = 9,99\ldots\).</p> </div></div>
+              <div class="card card-body answer"> <p>Kvoten är \( q = \dfrac{5\cdot 2^{-1}}{5} = 2^{-1} = \dfrac{1}{2} \), första elementet är \( a_1 = 5 \) och antal element är 21 st.</p>
+                <p>\(S_n=\dfrac{5(1-\frac{1}{2}^{21})}{1-\frac{1}{2}} = 9,99\ldots\).</p> </div></div>
+          </li>
+
+          <li>Bestäm summan av de hundra första termerna i den geometriska talföljden \( (2,-6,18,-54, \ldots ) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5">
+              <div class="card card-body answer"> <p>Talföljden är geometrisk. Kvoten är \( q = \dfrac{-6}{2} = -3 \).</p>
+              <p>Vi har \( n = 100 \) element. Det första elementet är \( a_1 = 2 \).</p>
+              <p>Summan är \( S_{100} = \dfrac{2(1-(-3)^{100})}{1-(-3)} = \dfrac{1 - 3^{100}}{2} \approx -2,58 \cdot 10^{47} \).</p>
+              </div></div>
           </li>
 
           <li>Bestäm
             <ol>
-              <li>\(\sum_{k=1}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\(\displaystyle\sum_{k=1}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3a">
-              <div class="card card-body answer"><p>\(\sum_{k=1}^{30} 2^k = \dfrac{2(1-2^{30})}{1-2} = 2147483646 \).</p> </div></div> </li>
-              <li>\(\sum_{k=10}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>\(\displaystyle\sum_{k=1}^{30} 2^k = \dfrac{2(1-2^{30})}{1-2} = 2147483646 \).</p> </div></div> </li>
+              <li>\(\displaystyle\sum_{k=10}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3b">
-              <div class="card card-body answer"><p>\(\sum_{k=10}^{30} 2^k = \dfrac{2^{10}(1-2^{21})}{1-2} = 2147482624\).</p> </div></div> </li>
-              <li>\(\sum_{k=20}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>\(\displaystyle\sum_{k=10}^{30} 2^k = \dfrac{2^{10}(1-2^{21})}{1-2} = 2147482624\).</p> </div></div> </li>
+              <li>\(\displaystyle\sum_{k=20}^{30} 2^k\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3c">
-              <div class="card card-body answer"><p>\(\sum_{k=20}^{30} 2^k = \dfrac{2^{20}(1-2^{11})}{1-2} = 2146435072\).</p> </div></div> </li>
+              <div class="card card-body answer"><p>\(\displaystyle\sum_{k=20}^{30} 2^k = \dfrac{2^{20}(1-2^{11})}{1-2} = 2146435072\).</p> </div></div> </li>
             </ol>
           </li>
 
@@ -170,6 +190,44 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>\(a_1 = 0,8\), \(n=50\) och summan är 150.</p>    <p>Vi får ekvationen \(\dfrac{0,8(1-q^{50})}{1-q}=150\) som har lösningen \(q=1,04655\ldots\).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Anna sätter varje månad in 100 € på ett konto där räntan är 2,4 %. Räntan läggs till kapitalet varje månad.
+            <p>(I verkligheten har inga konton så hög ränta. För att komma nära 2,4 % borde vi använda oss av fonder, men då betalas inte räntan varje månad.)</p>
+            <ol>
+              <li>Hur mycket pengar finns det i fonden efter 5 år?<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5a">
+              <div class="card card-body answer"><p>Räntesatsen är på årlig basis. Räntan varje månad är \( \dfrac{2,4 \text{ %}}{12} = 0,2 \) %.</p>
+              <p>Totalt har vi \( 12 \cdot 5 = 60 \) månader.</p>
+              <p>Den första insättningnen ger \( 1,002^{60}\cdot 100 \) €.</p>
+              <p>Den andra insättningnen ger \( 1,002^{59}\cdot 100 \) €.</p>
+              <p>Den sista insättningnen ger \( 1,002^{1}\cdot 100 \) €.</p>
+              <p>Den totala summan är \( 1,002^{60} \cdot 100 + 1,002^{59}\cdot 100 + \ldots + 1,002^{1}\cdot 100 \). Vi kan skriva den som \( 100 (1,002^{60} + 1,002^{59} + \ldots + 1,002) \).
+              <p>Summan är geometrisk.</p>
+              <p>Summan är \( 1,002\cdot 100 \cdot \dfrac{1-1,002^{60}}{1-1,002} \approx 6,3381 \) €.</p>
+            </div></div> </li>
+              <li>Hur många månader borde Anna spara på detta sätt för att kunna för sina sparpengar köpa en etta för 95 000 €? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5b">
+              <div class="card card-body answer"><p>Vi utnyttjar ekvationen som vi bildade i a).</p>
+                <p>Ekvationen är \(  1,002\cdot 100 \cdot \dfrac{1-1,002^{n}}{1-1,002} = 95 000 \).</p>
+                <p>Vi kan lösa den med hjälp av logaritmer, eller så på räknarprogram, Geogebra eller TI-CAS. Vi får \( n = 532,23 \) månader, alltså 44 år och 5 månader. (; </p>
+              </div></div> </li>
+              <li>Vad borde Anna ändra på för att spara ihop så att hon kan köpa lägenheten om 15 år? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5c">
+              <div class="card card-body answer"><p>Det finns två alternativ, antingen skall räntan vara högre, eller så skall summan vara större. Vi undersöker bägge fallen.</p>
+              <p>Under 15 år har vi \( 12 \cdot 15 = 180 \) månader.</p>
+              <p>Vi utnyttjar ekvationen från a).</p>
+              <p>Vi betecknar räntan med \( p \). Ekvationen är \( (1+p)\cdot 100 \cdot \dfrac{1-(1+p)^{180}}{1-(1+p)} = 95 000 \). </p>
+              <p>Försöker du lösa den på räknare, tar det en stund och den ger ingenting. Vi testar oss fram.</p>
+              <p>Kom ihåg att vi arbetar med räntan per månad!</p>
+              <p>Då räntan är 0,5 % per månad får vi 29 227,30 €. För litet.</p>
+              <p>Då räntan är 1,0 % får vi 50 457,60 €. För litet.</p>
+              <p>Då räntan är 1,5 % får vi 91 920,90 €. Det närmar sig.</p>
+              <p>Då räntan är 1,55 % får vi 97 856,70 €. Lite för mycket. Men det är bra.</p>
+              <p>På årsbasis borde räntan vara \( 12 \cdot 1,55 \text{ %} = 18,6 \text{ %} \).</p>
+              <p>Vi låter räntan vara konstant 0,2 % per månad och ändrar på summan, den betecknar vi med \( k \). Ekvationen är \( 1,002\cdot k \cdot \dfrac{1-1,002^{180}}{1-1,002} = 95 000 \). Då vi löser ekvationen får vi \( k = 438,11 \) € per månad.</p>
+              </div></div> </li>
+            </ol>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Anna fondsparar så att varje månad placerar hon 20 € av sin lön. Fonden som hon sparar i har en årlig avkastning på 5,5 %. Hur stor summa kan Anna lyfta efter 10 år av sparande? Kom ihåg att beakta en kapitalskatt på 30 %.
