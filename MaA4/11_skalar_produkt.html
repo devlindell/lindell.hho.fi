@@ -149,33 +149,60 @@
           <li>Är triangeln ABC som bestäms av punkterna \((-2,2)\), \((-1,5)\) och \((4,0)\) rätvinklig?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> Ja, rät vinkel vid punkten \((-2,2)\). </div></div> </li>
+              <div class="card card-body answer"> <p>Det räcker att hitta en rät vinkel.</p>
+                <p>Vi bilar vektorerna mellan punkterna, \(A=(-2,2)\), \(B=(-1,5)\) och \(C=(4,0)\)</p>
+                <p>\( \overrightarrow{AB} = (-1-(-2))\overline{i} + (5-2)\overline{j} =  \overline{i} + 3\overline{j} \).</p>
+                <p>\( \overrightarrow{AC} = (4-(-2))\overline{i} + (0-2)\overline{j} = 6 \overline{i} - 2\overline{j} \).</p>
+                <p>\( \overrightarrow{BC} = (4-(-1))\overline{i} + (0-5)\overline{j} = 5 \overline{i} - 5\overline{j} \).</p>
+                <p>Vi bilar de skalära produkterna.</p>
+                <p>\( \overrightarrow{AB} \cdot \overrightarrow{AC} = 1\cdot 6 +3(-2) = 0 \). Här är en rät vinkel. (Eftersom vi har hittat den behöver vi inte undersöka de andra.)</p>
+                <p>\( \overrightarrow{AB} \cdot \overrightarrow{BC} = 1\cdot 5 +3(-5) = -10 \).</p>
+                <p>\( \overrightarrow{AC} \cdot \overrightarrow{BC} = 6\cdot 5 -2(-5) = 40 \).</p>
+                <p>Ja, triangeln är rät vinkel vid punkten \( (-2,2) \). </div></div> </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \(k\) så att triangeln som bestäms av punkterna \((-4,1)\), \((k,4)\) och \((-3,6)\) är rätvinklig.
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilka värden på \(k\) gäller att triangeln som bestäms av punkterna \((-4,1)\), \((k,4)\) och \((-3,6)\) är rätvinklig.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> \(k = -1 \) eller\(k = -6 \). </div></div> </li>
+              <div class="card card-body answer"> <p>Vi bildar vektorerna mellan punkterna \(A=(-4,1)\), \(B=(k,4)\) och \(C=(-3,6)\).</p>
+              <p>\( \overrightarrow{AB} = (k-(-4))\overline{i} + (4-1)\overline{j} =  (k+4)\overline{i} + 3\overline{j} \).</p>
+              <p>\( \overrightarrow{BC} = (-3-k)\overline{i} + (6-4)\overline{j} =  (-3-k)\overline{i} +2\overline{j} \).</p>
+              <p>Eftersom \( k \) endast finns i en punkt klarar vi oss med dessa vektorer. Vi bildar den skalära produkten och tvingar att ha värdet 0.</p>
+              <p>\( \begin{array}{rcl}
+                \overrightarrow{AB} \cdot \overrightarrow{BC} & = & 0 \\
+                (k+4)(-3-k)+3\cdot 2 & = & 0 \\
+                \end{array} \) </p>
+                <p>Ekvationen har lösningarna \( k_1 = -6 \) och \( k_2 = -1 \).</p>
+              </div></div> </li>
 
           <li>Bestäm för linjen \(2x-6y-6=0\)
             <ol>
               <li>en riktningsvektor <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5a">
-              <div class="card card-body answer">\(3\overline{i}+\overline{j}\) eller \(-3\overline{i}-\overline{j}\) och multiplar av dessa. </div></div> </li>
+              <div class="card card-body answer"><p> \( 2x-6y -6 = 0 \Leftrightarrow y = \dfrac{1}{3}x +1 \).</p>
+                <p>Riktningsvektorerna är \(3\overline{i}+\overline{j}\) eller \(-3\overline{i}-\overline{j}\) och multiplar av dessa.</p> </div></div> </li>
               <li>en normalvektor (en vektor som bildar en normal) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5b">
-              <div class="card card-body answer">\(-\overline{i}+3\overline{j}\) eller \(\overline{i}-3\overline{j}\) och multiplar av dessa. </div></div> </li>
+              <div class="card card-body answer"><p>Eftersom linjens riktningskoefficient är \( \dfrac{1}{3} \) så är normalens riktningskoefficient \( -3 \). (Produkten skall ha värdet \( -1 \).)</p>
+              <p>Riktningsvektorerna är \(-\overline{i}+3\overline{j}\) eller \(\overline{i}-3\overline{j}\) och multiplar av dessa.</p> </div></div> </li>
               <li>en normalvektor vars längd är 1 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="5c">
-                  <div class="card card-body answer">\(\dfrac{1}{\sqrt{10}}(-\overline{i}+3\overline{j})\) eller \(\dfrac{1}{\sqrt{10}}(\overline{i}-3\overline{j})\). </div></div> </li>
+                  <div class="card card-body answer"><p>Vi söker enhetsvektorn för normalvektorn, \( \overline{n}^0 = \dfrac{1}{\mid \overline{n} \mid }\cdot \overline{n} \).</p>
+                  <p>Längden av vektorn \( -\overline{i}+3\overline{j} \) är \( \sqrt{(-1)^2+3^2} = \sqrt{10} \).</p>
+                  <p>Normalvektorns enhetsvektor är \(\dfrac{1}{\sqrt{10}}(-\overline{i}+3\overline{j})\) eller \(\dfrac{1}{\sqrt{10}}(\overline{i}-3\overline{j})\).</p> </div></div> </li>
               <li>en normalvektor vars längd är 10. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="5d">
-                 <div class="card card-body answer"><p>\(\sqrt{10}(-\overline{i}+3\overline{j})\) eller \(\sqrt{10}(\overline{i}-3\overline{j})\). </p></div></div> </li>
+                 <div class="card card-body answer"><p>Längden av de vektorer som vi bestämde i c) har längden 1. Vi gör dem 10 ggr längre.</p>
+                  <p>Vi får \(\dfrac{10}{\sqrt{10}}(-\overline{i}+3\overline{j}) = \sqrt{10}(-\overline{i}+3\overline{j})\) eller \(\sqrt{10}(\overline{i}-3\overline{j})\). </p></div></div> </li>
             </ol></li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Hitta i alla fall fyra vektorer som alla har olika längd som är vinkelräta mot \(\overline{a}=\overline{i}+2\overline{j}+\overline{k}\).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Tex: \(-\overline{j}+2\overline{k}\), \(\overline{i}-\overline{k}\), \(-4\overline{i}+2\overline{j}\) och \(-4\overline{i}+\overline{j}+2\overline{k}\).</p> </div></div>
+              <div class="card card-body answer"> <p>Vektorerna är av typ \( \overline{b} = x\overline{i} + y\overline{j} + z\overline{k} \).</p>
+              <p>Då \( \overline{a} \) och \( \overline{b} \) skall vara vinkelräta skall den skalära produkten ha värdet 0.</p>
+              <p>Vi får \( 1\cdot x +2\cdot y +1\cdot z =0 \).</p>
+              <p>Testa dig fram (; </p>
+              <p>Tex: \(-\overline{j}+2\overline{k}\), \(\overline{i}-\overline{k}\), \(-4\overline{i}+2\overline{j}\) och \(-4\overline{i}+\overline{j}+2\overline{k}\).</p> </div></div>
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>I triangeln \( ABC \) gäller att \( \overline{AB} \cdot \overline{CB} = \overline{BA} \cdot \overline{CA} \). Visa att sidorna \( BC \) och \( AC \) är lika långa.
@@ -184,11 +211,17 @@
               <div class="card card-body answer"> <p>Till exempel på följande sätt.</p>
                 <p>Vi betecknar \( \overrightarrow{AB} = \overline{a} \) och \( \overrightarrow{AC} = \overline{b} \), då är \( \overrightarrow{CB} = \overline{a}-\overline{b} \).</p>
                 <p>\( \overline{AB} \cdot \overline{CB} = \overline{a} \cdot (\overline{a}-\overline{b}) \).</p>
-                <p>\( \overline{BA} \cdot \overline{CA} = \)
-              </p>
-
-
-              </p></div></div>
+                <p>\( \overline{BA} \cdot \overline{CA} = -\overline{a} \cdot -\overline{b} \).</p>
+              <p>\( \overline{AB} \cdot \overline{CB} = \overline{BA} \cdot \overline{CA} \) är samma som \( \overline{AB} \cdot \overline{CB} - \overline{BA} \cdot \overline{CA} = 0 \), alltså \( \overline{a} \cdot (\overline{a}-\overline{b}) - (-\overline{a} \cdot -\overline{b}) = 0 \).</p>
+              <p>Alltså </p>
+              <p>\( \begin{array}{rcll}
+              \mid \overline{a} \mid^2 -2(\overline{a} \cdot \overline{b}) & = & 0 & \mid + \mid \overline{b}\mid^2 \\
+              \mid \overline{a} \mid^2 -2(\overline{a} \cdot \overline{b}) +\mid \overline{b}\mid^2 & = & \mid \overline{b}\mid^2   \\
+              (\overline{a}-\overline{b})^2 & = & (\overline{b})^2 \\
+              \overline{a}-\overline{b} & = & \overline{b} \\
+              \end{array} \) </p>
+              <p>Alltså är \( BC \) lika lång som \( AC \).</p>
+              </div></div>
           </li>
 
           </ol>
