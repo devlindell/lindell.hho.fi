@@ -144,6 +144,30 @@
             </ol>
           </li>
 
+          <li><i class="fas fa-shapes fa-2x level"></i>En triangel bildas av punkterna \( A=(0,-1,-2) \), \( B=(1,0,1) \) och \( C =(-2,2,3) \). Bestäm storleken av vinklarna för triangeln med en tiondels decimals noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5">
+              <div class="card card-body answer"> <p>Vi bildar vektorerna.</p>
+                <p> \( \overline{a} = \overrightarrow{AB} = (1-0)\overline{i} + (0-(-1))\overline{j} + (1-(-2))\overline{k} = \overline{i} + \overline{j} +3\overline{k} \)</p>
+                <p> \( \overline{b} = \overrightarrow{AC} = (-2-0)\overline{i} + (2-(-1))\overline{j} + (3-(-2))\overline{k} = -2\overline{i} + 3\overline{j} +5\overline{k} \)</p>
+                <p> \( \overline{c} = \overrightarrow{BC} = (-2-1)\overline{i} + (2-0)\overline{j} + (3-1)\overline{k} = -3\overline{i} + 2\overline{j} +2\overline{k} \)</p>
+                <p>Längderna av vektorerna är </p>
+                <p> \( \mid \overline{a} \mid = \sqrt{11} \)</p>
+                <p> \( \mid \overline{b} \mid = \sqrt{38} \)</p>
+                <p> \( \mid \overline{c} \mid = \sqrt{17} \)</p>
+                <p>De skalära produkterna är </p>
+                <p>\( \overline{a} \cdot \overline{b} = 16 \)</p>
+                <p>\( \overline{a} \cdot \overline{c} = 5 \)</p>
+                <p>\( \overline{b} \cdot \overline{c} = 22 \)</p>
+                <p>Vi får vinklarna </p>
+                <p>\( \angle(\overline{a},\overline{b}) = 38,5^{\circ} \)</p>
+                <p>\( \angle(\overline{a},\overline{c}) = 68,6^{\circ} \)</p>
+                <p>\( \angle(\overline{b},\overline{c}) = 30,1^{\circ} \)</p>
+                <p>Eftersom vi får den mindre vinkeln med hjälp av skalära produkten är vinkeln \( \angle(\overline{a},\overline{c}) = 180^{\circ} - 68,6^{\circ} = 111,4^{\circ} \). Du kan rita ut punkterna i GeoGebra och se efter.</p>
+                <p>Triangelns vinkelsumma är 38,5<sup>o</sup>+111,4<sup>o</sup>+30,1<sup>o</sup> = 180<sup>o</sup>.</p>
+              </div></div>
+          </li>
+
           <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \(k\) har vinkeln mellan \(\overline{a}=2\overline{i}-2\overline{j}\) och \(\overline{b}=k\overline{i}-2\overline{j}\) värdet \(45^{\circ}\)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
@@ -183,15 +207,54 @@
             <div class="card card-body hint"> <p>Vilka värden har skalära produkten av en spetsig vinkel? Bilda modigt en olikhet.</p> </div></div>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p> Då \( 2 < k < 5 \). </p> </div></div> </li>
+              <div class="card card-body answer"> <p>Vi namnger punkterna \(A= (0,3)\), \(B=(3,4)\) och \(C=(1,k)\).</p>
+                <p>Vi bildar vektorerna som vi behöver.</p>
+                <p>\( \overrightarrow{CA} = (0-1)\overline{i} + (3-k)\overline{j} = -\overline{i} + (3-k)\overline{j} \)</p>
+                <p>\( \overrightarrow{CB} = (3-1)\overline{i} + (4-k)\overline{j} = 2\overline{i} + (4-k)\overline{j} \)</p>
+                <p>Vinkeln skall vara spetsig. Det betyder att den skalära produkten skall ha positiva värden. Vi bildar en olikhet, \( -1\cdot 2 + (3-k)(4-k) > 0 \).</p>
+                <p>Olikeheten löser du för hand eller på räknare. Då \( k < 2 \) eller då \( k > 5 \). </p> </div></div>
+          </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Ett flygplan startar från punkten \((2,4,0)\) och lyfter i riktningen \(2\overline{i}+3\overline{j}+\overline{k}\). Hur stor vinkel bildar flygplanets rutt mot marken? Svara med noggrannheten 0,1 grader.
-            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-            <div class="collapse" id="6t">
+          <li><i class="fas fa-cogs fa-2x level"></i>En linje går genom punkterna \( (-1,0,3) \) och \( (1,3,2) \). Bestäm storleken av vinkeln som linjen bildar med följande plan.
+            <ol>
+              <li>\( xy \)-planet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11a">
+              <div class="card card-body answer"><p>Riktningsvektorn för linjen är \( \overline{s} = (-1-1)\overline{i} + (0-3)\overline{j} + (3-2)\overline{k} = -2\overline{i} -3\overline{j} + \overline{k} \).</p>
+              <p>Eller så kommer du till \( \overline{s} = 2\overline{i} +3\overline{j} - \overline{k} \).</p>
+              <p>Den vektor som är i \( xy \)-planet och har samma riktning är \( \overline{a} = -2\overline{i} -3\overline{j} \).</p>
+              <p>Vi bestämmer vinkeln mellan dessa.</p>
+              <p>\( \overline{a} \cdot \overline{s} = -2(-2) -3(-3) + 0\cdot 1 = 13 \).</p>
+              <p>\( \mid \overline{a} \mid = \sqrt{2^2+(-3)^2} = \sqrt{13} \).</p>
+              <p>\( \mid \overline{s} \mid = \sqrt{(-2)^2+(-3)^2+1^2} = \sqrt{14} \).</p>
+              <p>\( \cos (\overline{a},\overline{s}) = \dfrac{13}{\sqrt{13}\cdot\sqrt{14}} \)</p>
+              <p>Vinkeln är \( 15,5^{\circ}\).</p>
+              </div></div> </li>
+              <li>\( yz \)-planet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11b">
+              <div class="card card-body answer"><p>Den vektor som är i \( yz \)-planet och har samma riktning är \( \overline{a} = -3\overline{j} +\overline{k} \).</p>
+              <p>Vi bestämmer vinkeln mellan dessa.</p>
+              <p>\( \overline{a} \cdot \overline{s} = -2\cdot 0 -3(-3) + 1\cdot 1 = 10 \).</p>
+              <p>\( \mid \overline{a} \mid = \sqrt{(-3)^2+1^2} = \sqrt{10} \).</p>
+              <p>\( \mid \overline{s} \mid = \sqrt{(-2)^2+(-3)^2+1^2} = \sqrt{14} \).</p>
+              <p>\( \cos (\overline{a},\overline{s}) = \dfrac{10}{\sqrt{10}\cdot\sqrt{14}} \)</p>
+              <p>Vinkeln är \( 32,3^{\circ}\).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ett flygplan startar från punkten \((2,4,0)\) och lyfter i riktningen \( 2\overline{i}+3\overline{j}+\overline{k} \). Hur stor vinkel bildar flygplanets rutt mot marken? Svara med noggrannheten 0,1 grader.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="12t">
             <div class="card card-body answer"> <p>Rita bild och fundera. Hur kan du uttrycka den vektor som går längs med marken och beskriver planets rutt?</p> </div></div>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Vinkeln är \( 15,5^{\circ}\).</p> </div></div> </li>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Vektorn som beskrivers flygplanets rutt längd med marken är \( \overline{s} = 2\overline{i}+3\overline{j} \).</p>
+                <p>Vektorn som beskriver flygplanets rutt är \( \overline{a}= 2\overline{i}+3\overline{j}+\overline{k} \).</p>
+                <p>Vi bestämmer vinkeln mellan dessa.</p>
+                <p>\( \overline{a} \cdot \overline{s} = 2\cdot 2 +3\cdot 3 + 1\cdot 0 = 13 \).</p>
+                <p>\( \mid \overline{a} \mid = \sqrt{2^2+3^2+1^2} = \sqrt{14} \).</p>
+                <p>\( \mid \overline{s} \mid = \sqrt{2^2+3^2} = \sqrt{13} \).</p>
+                <p>\( \cos (\overline{a},\overline{s}) = \dfrac{13}{\sqrt{14}\cdot\sqrt{13}} \)</p>
+                <p>Vinkeln är \( 15,5^{\circ}\).</p> </div></div> </li>
           </ol>
 
       </section>
