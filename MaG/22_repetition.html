@@ -64,9 +64,9 @@
       <section>
         <h2>Uppgifter</h2>
         <ol>
-            <li>Uppgift för Quizlet</li>
+            <!--<li>Uppgift för Quizlet</li>-->
 
-            <li>Uppgift
+            <li>
               <ol>
                 <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="1a">
@@ -125,6 +125,63 @@
                 <li>Deluppgit e <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="2.5e">
                 <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              </ol>
+            </li>
+
+            <li>
+              <ol>
+                <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1a">
+                <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+                <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1b">
+                <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+                <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1c">
+                <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              </ol>
+            </li>
+
+            <li>Låt \(a_n = 2n-3 \) där \( n = 1,2,3,\ldots \).
+              <ol>
+                <li>Bestäm de fyra första elementen.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2.8a">
+                <div class="card card-body answer"><p>Vi får</p>
+                  <p>\( a_1 = 2\cdot 1 -3 = -1 \)</p>
+                  <p>\( a_2 = 2\cdot 2 -3 = 1 \)</p>
+                  <p>\( a_3 = 2\cdot 3 -3 = 3 \)</p>
+                  <p>\( a_4 = 2\cdot 4 -3 = 5 \)</p>
+                </p></div></div> </li>
+                <li>Visa att talföljden är aritmetisk. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2.8b">
+                <div class="card card-body answer"><p>Vi bildar differensen, \( d = a_n{n+1} - a_n = 2(n+1)-3 -(2n-3) = 2n+2-3-2n+3 = 2 \).</p>
+                  <p>Talföljden är aritmetisk.</p>
+                </div></div> </li>
+                <li>Bestäm summan för de 50 första elementen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2.8c">
+                <div class="card card-body answer"><p>Vi behöver \( a_{50} = 2\cdot 50 -3 = 97 \).</p>
+                  <p>Vi får \( S_{100} = \dfrac{n(a_1+a_n)}{2} = \dfrac{50(-1+97)}{2} = 2400 \). </p></div></div> </li>
+              </ol>
+            </li>
+
+            <li>Låt \(a_n = 2\cdot (\dfrac{1}{4})^{n-1} \) där \( n = 1,2,3,\ldots \).
+              <ol>
+                <li>Bestäm de fyra första elementen.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2.9a">
+                <div class="card card-body answer"><p>Vi får</p>
+                  <p>\( a_1 = 2\cdot (\dfrac{1}{4})^{1-1} = 2\cdot \dfrac{1}{4}^0 = 2 \)</p>
+                  <p>\( a_2 = 2\cdot (\dfrac{1}{4})^{2-1} = 2\cdot \dfrac{1}{4}^1 = \dfrac{1}{2} \)</p>
+                  <p>\( a_3 = 2\cdot (\dfrac{1}{4})^{3-1} = 2\cdot \dfrac{1}{4}^2 = \dfrac{1}{8} \)</p>
+                  <p>\( a_4 = 2\cdot (\dfrac{1}{4})^{4-1} = 2\cdot \dfrac{1}{4}^3 = \dfrac{1}{32} \)</p>
+                </p></div></div> </li>
+                <li>Visa att talföljden är geometrisk. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2.9b">
+                <div class="card card-body answer"><p>Vi bildar kvoten, \( q = \dfrac{a_{n+1}}{a_n} = \dfrac{2\cdot (\dfrac{1}{4})^{(n+1)-1}}{2\cdot (\dfrac{1}{4})^{n-1}} = \dfrac{1}{4}^{n-(n-1)} = \dfrac{1}{4} \).</p>
+                  <p>Talföljden är geometrisk.</p>
+                </div></div> </li>
+                <li>Bestäm summan för de 50 första elementen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2.9c">
+                <div class="card card-body answer"><p>Vi får \( S_{100} = \dfrac{a_1(1-q^n)}{1-q} = \dfrac{2(1-\dfrac{1}{4}^{50})}{1-\dfrac{1}{4}} = 2\dfrac{2}{3} \). </p></div></div> </li>
               </ol>
             </li>
 
@@ -221,7 +278,7 @@
               <ol>
                 <li>Bilda ett uttryck som anger andelen milligram koffein i kroppen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="8a">
-                <div class="card card-body answer"><p>I början har vi 160 mg och det minskar med 13 % per timme. Vi får ekvationen \( 160 (1-0,13)^t \) som vi kan förenkla till \{ 160\cdot 0,87^t \).</p></div></div> </li>
+                <div class="card card-body answer"><p>I början har vi 160 mg och det minskar med 13 % per timme. Vi får ekvationen \( 160 (1-0,13)^t \) som vi kan förenkla till \( 160\cdot 0,87^t \).</p></div></div> </li>
                 <li>Efter hur många timmar är mängden koffein i kroppen under 100 mg? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="8b">
                 <div class="card card-body answer"><p>Vi får ekvationen</p>
