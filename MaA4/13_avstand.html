@@ -94,12 +94,12 @@
               <p><img  src="pics/13-3.png" class="responsivepic400" /></p>
               <p>Det som vi vill ha är \(\mid \overrightarrow{PX} \mid\).</p>
               <p>\(\overrightarrow{PX}\) kan vi uttrycka som \(\overrightarrow{PA} + \overrightarrow{AX}\). Eftersom \(\overrightarrow{AX}\) är i planet som spänns upp av \(\overline{u}\) och \(\overline{v}\) så kan vi uttrycka \(\overrightarrow{AX} = r\overline{u} + s\overline{v}\).</p>
-              <p>Vi får att \(\overrightarrow{PX}=\overline{PA}+ r\overline{u} + s\overline{v}\).</p>
+              <p>Vi får att \(\overrightarrow{PX}=\overrightarrow{PA}+ r\overline{u} + s\overline{v}\).</p>
               <p>Vidare gäller det att \(\overrightarrow{PX}\) är vinkelrät mot bägge basvektorerna, \(\overline{u}\) och \(\overline{v}\).</p>
               <p>\(\overrightarrow{PA}=(1-(-2))\overline{i}+(3-(-4))\overline{j}+(0-1)\overline{k} = 3\overline{i} +7\overline{j}-\overline{k}\).</p>
               <p>Då är vi färdiga att börja räkna.</p>
               <p>\(\begin{array}{rl}
-                \overrightarrow{PX}=  &  \overline{PA}+  r\overline{u} + s\overline{v} \\
+                \overrightarrow{PX}=  &  \overrightarrow{PA}+  r\overline{u} + s\overline{v} \\
                   = &  3\overline{i} +7\overline{j}-\overline{k} + r(\overline{i}+\overline{k})+s(\overline{i}-\overline{j}+\overline{k}) \\
                   =  &   (3+r+s)\overline{i}+(7-s)\overline{j}+(-1+r+s)\overline{k} \\
                   \end{array}\)</p>
@@ -212,32 +212,92 @@
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm avståndet, med hjälp av vektorer, från punkten \(P (-1,4)\) till linjen som går genom punkterna \((-1,-2)\) och \((3,4)\).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>\(\dfrac{10}{3}\)</p> </div></div>
+              <div class="card card-body answer"> <p>Situationen är följande </p>
+                <p><img src="pics/13-6.png" class="responsivepic400" /></p>
+                <p>Vi bestämmer koordinaterna för \( X \).</p>
+                <p>Vi vet att \( \overrightarrow{PX} \cdot \overline{s} = 0 \).</p>
+                <p>\( \overrightarrow{PX} = \overrightarrow{PA} + t\overline{s} \).</p>
+                <p>Vi bildar vektorerna.</p>
+                <p>\( \overrightarrow{PA} = (-1-(-1))\overline{i} + (-2-4)\overline{j} = -6\overline{j} \)</p>
+                <p>\( \overline{s} = \overrightarrow{AB} = (3-(-1))\overline{i} + (4-(-2))\overline{j} = 4 \overline{i} + 6\overline{j} \)</p>
+                <p>Vi får att \( \overrightarrow{PX} = 4t \overline{i} + (-6+6t)\overline{j} \)</p>
+                <p>Vi utnyttjar att den skalära produkten \( \overrightarrow{PX} \cdot \overline{s} = 0 \) och får \( t = \dfrac{9}{13} \).</p>
+                <p>Vektorn \( \overrightarrow{PX} = \dfrac{36}{13} \overline{i} -\dfrac{24}{13}\overline{j} \).</p>
+                <p>Längden \( \mid \overrightarrow{PX} \mid =  \sqrt{(\dfrac{36}{13})^2 + (-\dfrac{24}{13})^2} = \dfrac{12}{\sqrt{13}} \approx 3,3 \) l.e.</p>
+                </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm avståndet från punkten \(P=(10,1,-2)\) till linjen som går genom punkterna \((3,2,1)\) och \((2,2,2)\).
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm avståndet från punkten \(P=(10,1,-2)\) till linjen som går genom punkterna \( A=(3,2,1) \) och \( B= (2,2,2) \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Närmaste punkt är \((8,2,-4)\).</p>
-                <p>Avståndet är 3 l.e.</p> </div></div>
+              <div class="card card-body answer"> <p>Vi betecknar punkten med \( X \).</p>
+                <p>Situtationen är följande</p>
+                <p><img src="pics/13-5.png" class="responsivepic400" /></p>
+                <p>Vi skall bilda \( \overrightarrow{PX} = \overrightarrow{PA} + t\overline{s} \).</p>
+                <p>Dessutom skall \( \overrightarrow{PX} \cdot \overline{s} = 0\).</p>
+                <p>\( \overrightarrow{PA} = (3-10)\overline{i} + (2-1)\overline{j} + (1-(-2))\overline{k} = -7\overline{i} +\overline{j} +3\overline{k} \)</p>
+                <p>Vektorn genom \( A \) och \( B \).</p>
+                <p>\( \overrightarrow{AB} = \overline{s} = (2-3)\overline{i} + (2-2)\overline{j} + (2-1)\overline{k} = -\overline{i} +\overline{k} \)</p>
+                <p>\( \overrightarrow{PX} = \overrightarrow{PA} +t\overline{s} = (-7-t)\overline{i} +\overline{j} +(3+t)\overline{k}\).</p>
+                <p>Vi undersöker den skalära produkten</p>
+                <p>\( \overrightarrow{PX} \cdot \overline{s} = 0\) alltså \( (-7-t)(-1)+1\cdot 0 +(3+t)\cdot 1 = 0 \).</p>
+                <p>Alltså då  \( t =  -5 \).</p>
+                <p>Vi får då att \( \overrightarrow{PX} = -2\overline{i} + \overline{j} -2\overline{k} \).</p>
+                <p>\( \mid \overrightarrow{PX} \mid = \sqrt{(-2)^2+1^2+(-2)^2} = 3 \) l.e.</p>
+                <p>Eller så kan du bestämma koordianterna för \( X \) som är \((8,2,-4) \) och bestämma avsåndet mellan \( P \) och \( X \).</p>
+                 </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm avståndet mellan punkten \((10,1,-2)\) och planet som spänns upp av punkterna \((1,1,2)\), \((3,0,3)\) och \((2,2,5)\).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Punkten närmast är \((6,-3,2)\).</p>
+              <div class="card card-body answer">
+                <p>Vi börjar med att rita en bild.</p>
+                <p>NY BILD, NÄSTAN SAMMA!!!</p>
+                <p><img  src="pics/13-3.png" class="responsivepic400" /></p>
+                <p>Det som vi vill ha är \(\mid \overrightarrow{PX} \mid\).</p>
+                <p>Vi har \(\overrightarrow{PX} = \overrightarrow{PA} + \overrightarrow{AX}\). Eftersom \(\overrightarrow{AX}\) är i planet som spänns upp av \(\overline{u}\) och \(\overline{v}\) så kan vi uttrycka \(\overrightarrow{AX} = r\overline{u} + s\overline{v}\).</p>
+                <p>\( \overline{u} \) och \( \overline{v} \) bildar vi med hjälp av \( A= (1,1,2) \), \( B=(3,0,3) \) och \( C= (2,2,5) \) så att \( \overline{u} = \overrightarrow{AB} = (3-1)\overline{i} + (0-1)\overline{i} + (3-2)\overline{i} = 2\overline{i} -\overline{i} + \overline{i} \) och \( \overline{v} = \overrightarrow{AC} = (2-1)\overline{i} + (2-1)\overline{i} + (5-2)\overline{i} = \overline{i} +\overline{i} + 3\overline{i} \)</p>
+                <p>Vi får att \(\overrightarrow{PX}=\overrightarrow{PA}+ r\overline{u} + s\overline{v}\).</p>
+                <p>Vidare gäller det att \(\overrightarrow{PX}\) är vinkelrät mot bägge basvektorerna, \(\overline{u}\) och \(\overline{v}\).</p>
+                <p>Vi bildar de vektorer som vi behöver.</p>
+                <p>\(\overrightarrow{PA}=(1-10)\overline{i}+(1-1)\overline{j}+(1-(-2))\overline{k} = -9\overline{i} +3 \overline{k}\).</p>
+                <p>Då är vi färdiga att börja räkna.</p>
+                <p>\(\begin{array}{rl}
+                  \overrightarrow{PX}=  &  \overrightarrow{PA}+  r\overline{u} + s\overline{v} \\
+                    = &   (-9+2r+s)\overline{i}+(-r+s)\overline{j}+(3+r+3s)\overline{k} \\
+                    \end{array}\)</p>
+                <p>Att \(\overrightarrow{PX}\) är vinkelrät mot \(\overline{u}\) betyder att \(\overrightarrow{PX}\cdot \overline{u}=0\) och att \(\overrightarrow{PX}\) är vinkelrät mot \(\overline{v}\) betyder att \(\overrightarrow{PX}\cdot \overline{v}=0\).</p>
+                <p>Vi bildar dessa uttryck.</p>
+                <p>\(\begin{array}{rcl}
+                  \overrightarrow{PX} \cdot \overline{u} &  = &  0 \\
+                  (-9+2r+s)\cdot 2 +(-r+s)(-1) + (3+r+3s)\cdot 1  &  =  &  0 \\
+                  6r+4s  &  =  &  15 \\
+                  \end{array}\)</p>
+                <p>och</p>
+                <p> \(\begin{array}{rcl}
+                  \overrightarrow{PX} \cdot \overline{v} &  = &  0 \\
+                  (-9+2r+s)\cdot 1 +(-r+s)\cdot 1 + (3+r+3s)\cdot 3  &  =  &  0 \\
+                  4r+11s  &  =  &  0 \\
+                  \end{array}\)</p>
+                <p>Vi får ett ekvationssystem vars lösningar är \( r = \dfrac{33}{10 }\) och \( s = -\dfrac{6}{5} \).</p>
+                <!-- HÄR ÄR DU -->
+                <p>Vi får \(\overrightarrow{PX}\) som \((3-8+7)\overline{i}+(7-7)\overline{j}+(-1-8+7)\overline{k}=2\overline{i}-2\overline{k}\).</p>
+                <p>Längden är \(\mid \overrightarrow{PX} \mid = \sqrt{2^2+(-2)^2}=\sqrt{8}=2\sqrt{2}\).</p>
+
+                <p>Punkten närmast är \((6,-3,2)\).</p>
               <p>\((\sqrt{50}=) 5\sqrt{2}\approx,7,1\)</p>
             </div></div> </li>
 
@@ -247,11 +307,11 @@
               <div class="card card-body answer"> 650 m </div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           </ol>
 

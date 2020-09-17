@@ -121,7 +121,7 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
               <div class="card card-body answer"> <p>Funktionen som ger tvärsnittsarean är \( A(x) = (2x+1)^2 \).</p>
-              <p>\( V = \displaystyle_0^{0,5} (2x+1)^2 \textrm{ d}x = 1,166\ldots \) m<sup>3</sup></p>.
+              <p>\( V = \displaystyle\int_0^{0,5} (2x+1)^2 \textrm{ d}x = 1,166\ldots \) m<sup>3</sup></p>.
               <p>Alltså 1,2 m<sup>3</sup></p>
             </div></div>
           </li>
@@ -136,7 +136,10 @@
           <li><i class="fas fa-shapes fa-2x level"></i>Formen för en kropp följer kurvan \( \dfrac{4}{x} \) då \( 1\leq x \leq 4 \) så att tvärsnittsarean bildar liksidiga trianglar där höjden är \( \dfrac{4}{x} \). Bestäm volymen för kroppen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>På avståndet \( x \) är höjden för tvärsnittet \( \dfrac{4}{x} \). Basytan är \( \dfrac{4}{x}=\dfrac{b\sqrt{3}}{2} \Leftrightarrow b=\dfrac{8}{x\sqrt{3}} \). Arean för tvärsnitten är \( A(x)=\dfrac{1}{2}\cdot \dfrac{8}{x\sqrt{3}} \cdot \dfrac{4}{x} = \dfrac{16}{x^2\sqrt{3}} \).</p>
+              <div class="card card-body answer"> <p>På avståndet \( x \) är höjden för tvärsnittet \( \dfrac{4}{x} \).
+              <p>Antingen kan vi utnyttja likformighet eller Pythagoras för att få ett förhållande mellan basytan och höjden.</p>
+              <p>Då höjden är \( h = f(x) \) och basytans längd är \( b \) kan vi bilda förhållandet \( \dfrac{h}{b} \). Eftersom triangeln är liksidig kan vi arbeta med Typtriangel 2. Då gäller att \( \dfrac{h}{b} = \dfrac{\sqrt{3}}{2} \). Då \( h = f(x) \) får vi att basytan är \( \dfrac{4}{x}=\dfrac{b\sqrt{3}}{2} \Leftrightarrow b=\dfrac{8}{x\sqrt{3}} \).</p>
+              <p>Arean för tvärsnitten är \( A(x)=\dfrac{1}{2}\cdot \dfrac{8}{x\sqrt{3}} \cdot \dfrac{4}{x} = \dfrac{16}{x^2\sqrt{3}} \).</p>
               <p>Volymen är \( \displaystyle\int_1^4 A(x)=\mathrm{ d} x = \displaystyle\int_1^4 \dfrac{16}{x^2\sqrt{3}} \mathrm{ d}x = \dfrac{16}{\sqrt{3}} \bigg/_1^4 -\dfrac{1}{x} = 4\sqrt{3} \).</p></div></div>
           </li>
 
@@ -146,7 +149,7 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Längderna för sidorna för en matförpackning med kvadratiska tvärsnittsareor följer funktionen \( x+5 \). Bestäm höjden för förpackningen med en mm noggrannhet då man vill att den skall rymma 4,5 dl.
+          <li><i class="fas fa-shapes fa-2x level"></i>Längderna i centimeter för sidorna för en matförpackning med kvadratiska tvärsnittsareor följer funktionen \( x+5 \). Bestäm höjden för förpackningen med en mm noggrannhet då man vill att den skall rymma 4,5 dl.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>4,5 dl motsvaras av 450 cm<sup>3</sup>.</p>
