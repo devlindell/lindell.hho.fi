@@ -136,25 +136,39 @@
      <li>Bestäm \(\displaystyle\sum_{n=1}^{10} 9-2n\).
        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
        <div class="collapse" id="3">
-       <div class="card card-body answer"> <p>\(\displaystyle\sum_{n=1}^{10} 9-2n = \dfrac{10}{2}[(9-2\cdot 1)+(9-2\cdot 10)] = -20\).</p> </div></div>
+       <div class="card card-body answer"> <p>Vi får följande</p>
+         <p>\( a_1 = 9-2\cdot 1 = 7 \) </p>
+         <p>\( a_{10} = 9-2\cdot 10 = -11 \) </p>
+         <p>Antal element är 10 st.</p>
+         <p>\(\displaystyle\sum_{n=1}^{10} 9-2n = \dfrac{10}{2}(7+-11) = -20\).</p> </div></div>
       </li>
 
      <li>Bestäm \(\displaystyle\sum_{n=1}^{100} 2n-1\).
        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
        <div class="collapse" id="4">
-       <div class="card card-body answer"> <p>\(\displaystyle\sum_{n=1}^{100} 2n-1 = \dfrac{100}{2}[(2\cdot 1-1)+(2\cdot 100-1)] = 50(1+199)=10000\).</p> </div></div>
+       <div class="card card-body answer"> <p>Vi får följande</p>
+         <p>\( a_1 = 2\cdot 1-1 = 1 \) </p>
+         <p>\( a_{100} = 2\cdot 100-1 = 199 \) </p>
+         <p>Antal element är 100 st.</p>
+         <p>\(\displaystyle\sum_{n=1}^{100} 2n-1 = \dfrac{100}{2}(1+199) = 10000\).</p> </div></div>
      </li>
 
      <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \(\displaystyle\sum_{k=1}^{n} 2k-1\).
        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
        <div class="collapse" id="5">
-       <div class="card card-body answer"> <p>\(\displaystyle\sum_{k=1}^{n} 2k-1 = \dfrac{n}{2}[(2\cdot 1-1)+(2n-1)] = \dfrac{n}{2}(1+2n-1) = \dfrac{n\cdot 2n}{2} =n^2\).</p> </div></div>
+       <div class="card card-body answer"> <p>Vi får följande</p>
+         <p>\( a_1 = 2\cdot 1-1 = 1 \) </p>
+         <p>\( a_{n} = 2\cdot n-1 = 2n-1 \) </p>
+         <p>Antal element är n st.</p>
+         <p>\(\displaystyle\sum_{k=1}^{n} 2k-1 = \dfrac{n}{2}(1+(2n-1)) = \dfrac{n}{2}(1+2n-1) = \dfrac{n\cdot 2n}{2} =n^2\).</p> </div></div>
      </li>
 
      <li><p>Av 750 konservburkar skall byggas ett så högt torn som möjligt så att överst är 1 burk, där under sedan 2 burkar, sedan 3 burkar osv.</p>  <p>Hur många konservburkar bildar bottnet?</p>
       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
       <div class="collapse" id="6">
-      <div class="card card-body answer"><p>Vi har en aritmetisk summa där första elementet är \(a_1=1\) och \(d = 1\). Vår summa är \(\dfrac{n}{2}(1+n) = 750\) som har lösningarna \(n=\pm 38,29\). Eftersom \(n > 0\) så består bottnet av 38 burkar.</p> </div></div>
+      <div class="card card-body answer"><p>Vi har en aritmetisk summa där första elementet är \(a_1=1\) och \(d = 1\).</p>
+        <p>Vår summa är \(\dfrac{n}{2}(1+n) = 750\) som har lösningarna \(n=\pm 38,29\). Den kan du lösa på GeoGebra eller för hand.</p>
+        <p>Eftersom \(n > 0\) så består bottnet av 38 burkar.</p> </div></div>
       <ol>
        <li>Hur många konservburkar är över? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
        <div class="collapse" id="6a">
@@ -165,7 +179,9 @@
      <li><i class="fas fa-shapes fa-2x level"></i>I skolans gymnastiksal arrangeras stolarna i sådana rader att i första finns 14 stolar och så att i nästa rad finns 4 st flera stolar än i föregående rad. Hur många rader behövs då det skall finnas plats för 320 elever?
       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
       <div class="collapse" id="7">
-      <div class="card card-body answer"><p>Vår talföljd ser ut som \(a_n = 14 + 4(n-1)\) där \(n=1,2,3,\ldots\).</p>  <p>Summan är \(\displaystyle\sum_{i=1}^n 14+4(i-1) = 320\), alltså \(\dfrac{n}{2}(14+14+4(n-1))=320\) som har lösningarna \(n=-16\) och \(n=10\).</p>  <p>Det behövs 10 rader.</p> </div></div></li>
+      <div class="card card-body answer"><p>Vår talföljd ser ut som \(a_n = 14 + 4(n-1)\) där \(n=1,2,3,\ldots\).</p>
+      <p>Summan är \(\displaystyle\sum_{i=1}^n 14+4(i-1) = 320\), alltså \(\dfrac{n}{2}(14+14+4(n-1))=320\) som har lösningarna \(n=-16\) och \(n=10\).</p>
+      <p>Det behövs 10 rader.</p> </div></div></li>
      </li>
 
      <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den totala summan som betalas i ränta för ett snabblån på 2000 € som avkortas varje månad under två år med den årliga räntan 24,0 %.
