@@ -59,6 +59,11 @@
           <p>Vi kan antingen tala om sannolikheten som \( \dfrac{2}{5} \), av fem kulor är två svarta, eller som \( 0,40 \), av 100 kulor är 40 svarta.</p>
           <p>Vi märker att summan av sannolikheterna är ett, \( 0,40 + 0,60 =1,00 \). Sannolikheten för en händelse rör sig mellan noll och ett. Är sannolikheten lika med noll kommer den inte att ske och är sannolikheten ett kommer den med säkerhet att ske.</p>
           <p>Vi talar om att sannolikheten och komplementet för sannolikheten alltid har summan 1.</p>
+          <div class="summary box">
+            <p>Sannolikheten för händelsen A är \( P(A) \dfrac{\text{antalet gynsamma fall}}{\text{totala antalet utfall}} \).</p>
+            <p>För det motsatta talar vi om komplementet, \( \overline{A} \). Sannolikheten för komplementet är \( 1 - P(A) = P(\overline{A}) \).</p>
+            <p>Med andra ord gäller att \( P(A) + P(\overline{A}) = 1 \).</p>
+          </div>
           <div class="exercise box">
             <p><strong>Exempel 1</strong> Vi singlar slant tre gånger. Bestäm sannolikheten att vi</p>
             <ol style="list-style-type: lower-alpha;">
@@ -185,11 +190,27 @@
               </p></div></div>
           </li>
 
-          <!--<li>Uppgift
+          <li><p>Från statistik kan vi bilda sannolikheter. Då måste statistiken vara tillräckligt bred av sig, den skall ha tillräkligt mycket data i sig.</p>
+            <p>I tabellen nedan ser du statistik över barn födda mellan 1998-2004. Bestäm sannolikheten att det föddes en pojke och bestäm sannolikheten att det föddes en flicka.</p>
+            <table>
+              <caption>stat.fi</caption>
+              <tr class="MaA10"><th>år</th><th>antalet födda</th><th>antal pojkar</th></tr>
+              <tr><td>1998</td><td>57 039</td><td>29 085</td></tr>
+              <tr><td>1999</td><td>57 658</td><td>29 451</td></tr>
+              <tr><td>2000</td><td>56 772</td><td>29 274</td></tr>
+              <tr><td>2001</td><td>55 998</td><td>28 637</td></tr>
+              <tr><td>2002</td><td>55 546</td><td>28 560</td></tr>
+              <tr><td>2003</td><td>56 632</td><td>26 842</td></tr>
+              <tr><td>2004</td><td>57 532</td><td>29 633</td></tr>
+            </table>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>För att bestämma sannolikheten för en pojke bildar sannolikheten, \( P(\text{pojke}) = \dfrac{203 482}{397177} = 0,5123 \).</p>
+                <p>Alltså 0,512.</p>
+                <p>Antingen föds det en pojke, eller en flicka. Vi får \( P(\text{flicka}) = 1 - P(\text{pojke}) = 1- 0,5123 = 0,4877 \).</p>
+                <p>Alltså 0,488.</p>
+              </div></div>
+          </li>
 
           <li>I en undersökning om vad de gör på sin fritid svarade 299 gymnaster som följande: 102 idrottar, 89 musicerar och 108 idrottar och musicerar.
             <ol>
@@ -199,9 +220,9 @@
               <li>Hur många håller på med musik på sin fritid? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5b">
               <div class="card card-body answer"><p>89 musicerar och 108 musicerar och idrottar = 197 musicerar.</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
             </ol>
           </li>
 
@@ -247,13 +268,23 @@
             </ol>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sannolikheten att ett barn föds under ett veckoslut.
+            <p>Vilka påståenden är sanna?</p>
+            <ol>
+              <li>I en familj med sju stycken barn finns det alltid två stycken barn som är födda under ett veckoslut.</li>
+              <li>Om de två första barnen i familjen är födda under ett veckoslut, föds resten fem barn under veckan.</li>
+              <li>I en undervisningsgrupp som består av 21 studerande, är sex stycken födda under ett veckoslut.</li>
+              <li>Av jorden befolkning är 29 % födda under ett veckoslut.</li>
+            </ol>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi antar att sannolikheten att födas under en dag är lika stor. Vi får sannolikheten, \( P(\text{föds under veckoslut}) = \dfrac{2}{7} = 0,2857 \), alltså 29 %.</p>
+                <p>I verkligheten gäller det att födslar som startas eller kejsarsnitt sker under veckan, och då stämmer inte vårt antagande i början.</p>
+                <p>Av påståendena gäller endast d).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
