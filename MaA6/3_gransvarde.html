@@ -106,7 +106,7 @@
             <p>\( \begin{array}{cl} x  &  \dfrac{x}{x-1} \\ 0,5  &  -1\\ 0,9  &  -9\\ 0,99  &  -99\\ 0,999  &  -999\\ \end{array} \)</p>
             <p>Och från höger ser det ut som följande.</p>
             <p>\( \begin{array}{cl} x  &  \dfrac{x}{x-1} \\ 1,5  &  3\\ 1,1  &  11\\ 1,01  &  101\\ 1,001  &  1001\\ \end{array} \)</p> <p>Vi märker att vi inte alls närmar oss samma värde. \( \lim_{x \to 1}\dfrac{x}{x-1} \) existerar inte. Det ger även grafen av funktionen.</p>
-            <p><img src="pics/grans-3.png" alt="" class="responsivepic400" /></p>
+            <p><img src="pics/grans-3.png" alt="" class="responsivepic600" /></p>
           </div>
           <div class="summary box">
             <ul>
@@ -114,7 +114,33 @@
               <li>Har vi situationen \( \dfrac{}{0} \) eller \( \dfrac{0}{0} \) måste vi förkorta för att kunna undersöka gränsvärdet.</li> <li>Kan vi inte förkorta för att undersöka gränsvärdet kan vi undersöka gränsvärdet genom att göra en tabell. Hur exakt vi gör kommer fram i kurs 13.</li>
             </ul>
           </div>
-        </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Bestäm \( \lim_{x \to 0} \dfrac{6x}{x^2-3x} \) på räknarprogram.</p>
+            <!--<h4>Lösningen på GeoGebra</h4>
+            <div class="video">
+            </div>
+            <h4>Lösningen på TI-CAS</h4>
+            <div class="video">
+            </div>-->
+          </div>
+          <div class="summary box">
+            <p>För att en funktion \( f \) skall ha ett gränsvärde i punkten \( x_0 \) så gäller att gränsvärdet från höger och gränsvärdet från vänster skall ha samma värden.</p>
+            <p>Matematiskt skriver vi det som \( \lim_{x \to x_0} f(x) = \lim_{x \to x_{0_{+}}} f(x) = \lim_{x \to x_{0_{-}}} f(x) \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 5</strong> För vilket värde på \( a \) existerar gränsvärdet i \( x=2 \) för funktionen \( f(x) =
+              \left\{ \begin{array}{ll}
+              3x - 2 & \text{ , då } x < 2 \\
+              -x + a & \text{ , då } x > 2 \\
+              \end{array} \right. \)</p>
+              <h4>Lösning</h4>
+              <p>Vi bildar gränsvärdet från höger och från vänster. De ser vi till att får samma värde. Då existerar ett gränsvärde i punkten \( x = 2 \).</p>
+              <p>Från höger: \( \lim_{x \to 2_{+}} -x+a = -2+a \) .</p>
+              <p>Från vänster: \( \lim_{x \to 2_{-}} 3x-2 = 3\cdot 2 -2 = 4 \) .</p>
+              <p>Eftersom höger- och vänster gränsvärden skall ha samma värde får vi ekvationen</p>
+              <p>\( -2+a = 4 \) som har lösningen 6. Alltså \(a = 6 \).</p>
+            </div>
+          </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
@@ -153,19 +179,34 @@
             </table>
             </p></div></div></li>
 
-          <!--<li>Uppgift
+          <li>Bestäm följade gränsvärden. Kontrollera dina uträckningar genom att kontrollera med GeoGebra eller TI-CAS.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( \lim_{x \to 5} \dfrac{x^2-3}{x-3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( \lim_{x \to 5} \dfrac{x^2-3}{x-3} = \dfrac{5^2-3}{5-3} = \dfrac{22}{2} = 11 \) </p>
+                <p>På GeoGebra</p>
+                <p><img src="pics/grans-5a-g.png" class="responsivepic600" /></p>
+                <p>På TI-CAS</p>
+                <p><img src="pics/grans-5a-ti.png" class="responsivepic600" /></p>
+              </div></div> </li>
+              <li>\( \lim_{x \to 4} \dfrac{6}{7-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( \lim_{x \to 4} \dfrac{6}{7-x} = \dfrac{6}{7-4} = \dfrac{6}{3} = 2 \) </p>
+                <p>På GeoGebra</p>
+                <p><img src="pics/grans-5b-g.png" class="responsivepic600" /></p>
+                <p>På TI-CAS</p>
+                <p><img src="pics/grans-5b-ti.png" class="responsivepic600" /></p>
+              </div></div> </li>
+              <li>\( \lim_{x \to 2} \dfrac{x^2-16}{x-4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi får \( \lim_{x \to 2} \dfrac{x^2-16}{x-4} = \dfrac{2^2-16}{2-4} = \dfrac{-12}{-2} = 6 \) </p>
+                <p>På GeoGebra</p>
+                <p><img src="pics/grans-5c-g.png" class="responsivepic600" /></p>
+                <p>På TI-CAS</p>
+                <p><img src="pics/grans-5c-ti.png" class="responsivepic600" /></p>
+              </div></div> </li>
             </ol>
-          </li>-->
+          </li>
 
           <li>Bestäm gränsvärdet för funktionen \( f(x)=\dfrac{3x}{x-1} \) i \( x=2 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -183,25 +224,29 @@
           <li>Bestäm gränsvärdet för \( f(x)=\dfrac{x^2-16}{x-4} \) då \( x=4 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>\( \lim_{x\to 4}\dfrac{x^2-16}{x-4} = \lim_{x \to 4} \dfrac{(x-4)(x+4)}{x-4} = \lim_{x \to 4} x+4 = 4+4 = 8 \).</p></div></div>
+              <div class="card card-body answer"> <p>Eftersom vi har \( \dfrac{0}{0} \) måste vi förkorta.</p>
+                <p>\( \lim_{x\to 4}\dfrac{x^2-16}{x-4} = \lim_{x \to 4} \dfrac{(x-4)(x+4)}{x-4} = \lim_{x \to 4} x+4 = 4+4 = 8 \).</p></div></div>
           </li>
 
           <li>Bestäm gränsvärdet för \( f(x)=\dfrac{x^2-16}{x+4} \) då \( x=-4 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>\( \lim_{x \to -4} \dfrac{x^2-16}{x+4} = \lim_{x \to -4} \dfrac{(x-4)(x+4)}{x+4} = \lim_{x \to -4} x-4 = -4-4=-8 \).</p></div></div>
+              <div class="card card-body answer"> <p>Eftersom vi har \( \dfrac{0}{0} \) måste vi förkorta.</p>
+                <p>\( \lim_{x \to -4} \dfrac{x^2-16}{x+4} = \lim_{x \to -4} \dfrac{(x-4)(x+4)}{x+4} = \lim_{x \to -4} x-4 = -4-4=-8 \).</p></div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm gränsvärdet för \( f(x)=\dfrac{x^2-3x+2}{x-2} \) då \( x=2 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>\( \lim_{x \to 2}\dfrac{x^2-3x+2}{x-2} = \lim_{x \to 2} \dfrac{(x-1)(x-2)}{x-2} = \lim_{x\to 2} x-1=2-1=1 \).</p></div></div>
+              <div class="card card-body answer"> <p>Eftersom vi har \( \dfrac{0}{0} \) måste vi förkorta.</p>
+                <p>\( \lim_{x \to 2}\dfrac{x^2-3x+2}{x-2} = \lim_{x \to 2} \dfrac{(x-1)(x-2)}{x-2} = \lim_{x\to 2} x-1=2-1=1 \).</p></div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm gränsvärdet för \( f(x)=\dfrac{x^2-x}{x-1} \) då \( x=1 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>\( \lim_{x \to 1}\dfrac{x^2-x}{x-1} = \lim_{x \to 1}\dfrac{x(x-1)}{x-1} =\lim_{x \to 1} x = 1 \).</p></div></div>
+              <div class="card card-body answer"> <p>Eftersom vi har \( \dfrac{0}{0} \) måste vi förkorta.</p>
+                <p>\( \lim_{x \to 1}\dfrac{x^2-x}{x-1} = \lim_{x \to 1}\dfrac{x(x-1)}{x-1} =\lim_{x \to 1} x = 1 \).</p></div></div>
           </li>
 
           <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
@@ -220,36 +265,77 @@
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \( \lim_{x \to 2} \dfrac{x^2+3x+2}{x^2+x} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>\( \lim_{x \to 2} \dfrac{x^2+3x+2}{x^2+x} = \lim_{x \to 2} \dfrac{(x+2)(x+1)}{x(x+1)} = \lim_{x \to 2} \dfrac{x+2}{x} = \dfrac{2+2}{2} = 2 \).</p></div></div>
+              <div class="card card-body answer"> <p>\( \lim_{x \to 2} \dfrac{x^2+3x+2}{x^2+x} = \lim_{x \to 2} \dfrac{(x+2)(x+1)}{x(x+1)} = \lim_{x \to 2} \dfrac{x+2}{x} = \dfrac{2+2}{2} = 2 \).</p>
+              <p>Eller som \( \lim_{x \to 2} \dfrac{x^2+3x+2}{x^2+x} = \dfrac{2^2+3\cdot 2+2}{2^2+2} = \dfrac{12}{6} = 2 \).</p>
+              </div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( a \) existerar gränsvärdet i \( x=3 \) för funktionen</p>
+            <p>\( f(x) =
+            \left\{ \begin{array}{ll}
+            -2x +a & \text{ , då } x < 3 \\
+            x -4 & \text{ , då } x \geq 3 \\
+            \end{array} \right. \)
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi bildar gränsvärdet från höger och från vänster. De ser vi till att får samma värde. Då existerar ett gränsvärde i punkten \( x = 3 \).</p>
+              <p>Från höger: \( \lim_{x \to 3_{+}} x-4 = 3-4 =-1 \) .</p>
+              <p>Från vänster: \( \lim_{x \to 2_{-}} 2x+a = 2\cdot 3 +a = 6+a \) .</p>
+              <p>Eftersom höger- och vänster gränsvärden skall ha samma värde får vi ekvationen</p>
+              <p>\( -1 = 6+a \) som har lösningen \( a = -7 \).</p>
+            </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( k \) existerar gränsvärdet i \( x=2 \) för funktionen </p>
+            <p>\( f(x) =
+            \left\{ \begin{array}{ll}
+            \dfrac{1}{2}x^2 +1 & \text{ , då } x < 2 \\
+            kx + 3 & \text{ , då } x > 2 \\
+            \end{array} \right. \)</p>
+            <p>Bestäm gränsvärdet i \( x = 2\). </p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi bildar gränsvärdet från höger och från vänster. De ser vi till att får samma värde. Då existerar ett gränsvärde i punkten \( x = 2 \).</p>
+              <p>Från höger: \( \lim_{x \to 2_{+}} kx+3 = k\cdot 2+3 =2k+3 \) .</p>
+              <p>Från vänster: \( \lim_{x \to 2_{-}} \dfrac{1}{2}x^2+1 = \dfrac{1}{2}\cdot 2^2 +1 = 3 \) .</p>
+              <p>Eftersom höger- och vänster gränsvärden skall ha samma värde får vi ekvationen</p>
+              <p>\( 2k+3 = 3 \) som har lösningen \( k = 0 \).</p>
+              <p>Gränsvärdet är \( \lim_{x \to 2} f(x) = 3 \).</p>
+            </div></div>
+          </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm \( \lim_{x \to 0} \dfrac{2x^2+4x}{2x^2-2x} \).
+          <li><i class="fas fa-cogs fa-2x level"></i>Existerar gränsvärdet för funktionen </p>
+            <p><p>\( f(x) =
+            \left\{ \begin{array}{ll}
+            -x^2 -5 & \text{ , då } x < -3 \\
+            x + 7 & \text{ , då } x > -3 \\
+            \end{array} \right. \)</p>
+            <p>då \( x = -3 \)?</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>\( \lim_{x \to 0} \dfrac{2x^2+4x}{2x^2-2x} = \lim_{x \to 0} \dfrac{2x(x+2)}{2x(x-1)} = \lim_{x \to 0}\dfrac{x+2}{x-1} = \dfrac{0+2}{0-1} = -2 \).</p></div></div>
+              <div class="card card-body answer"> <p>Vi bildar gränsvärdet från höger och från vänster. Får vi samma värde existerar gränsvärdet.</p>
+              <p>Från höger: \( \lim_{x \to -3_{+}} x+7 = -3+7 =4 \) .</p>
+              <p>Från vänster: \( \lim_{x \to -3_{-}} -x^2 -5 = -(-3)^2-5 = -9-5 = -14 \) .</p>
+              <p>Eftersom höger- och vänstergränsvärden har olika värden existerar inte gränsvärdet.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \( \lim_{x \to 0} \dfrac{2x^2+4x}{2x^2-2x} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Eftersom vi har \( \dfrac{0}{0} \) måste vi förkorta.</p>
+                <p>\( \lim_{x \to 0} \dfrac{2x^2+4x}{2x^2-2x} = \lim_{x \to 0} \dfrac{2x(x+2)}{2x(x-1)} = \lim_{x \to 0}\dfrac{x+2}{x-1} = \dfrac{0+2}{0-1} = -2 \).</p></div></div>
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Bestäm \( a \) så att \( f(x)=\dfrac{x^2+ax-2}{x-1} \) har ett gränsvärde i punkten 1.
             <p>Vad skall du kunna förkorta med för att kunna bestämma gränsvärdet? Utnyttja att \( x=1 \) är ett nollställe för täljaren.</p>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="15">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16">
               <div class="card card-body answer"> <p>Förkorta med \( (x-1) \) betyder att täljaren har en faktor \( (x-1) \)<p>Att täljaren har faktorn \( (x-1) \) betyder att \( x=1 \) är ett nollställe för täljaren.</p>
               <p>\( 1^2+a\cdot 1-2=0 \) ger \( a=1 \).</p></div></div>
               <ol>
-                <li>Bestäm gränsvärdet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="15a">
+                <li>Bestäm gränsvärdet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="16a">
                 <div class="card card-body answer"><p>\( \lim_{x \to 1} \dfrac{x^2+x-2}{x-1} = \lim_{x \to 1} \dfrac{(x+2)(x-1)}{x-1} = \lim_{x \to 1} x+2 = 1+2 = 3 \).</p></div></div> </li>
               </ol>
           </li>
