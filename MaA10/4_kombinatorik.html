@@ -60,17 +60,25 @@
           <p>Dessutom existerar det en möjlighet att han får resten av boken skriven rätt och efter det skriven den på engelska. Sannolikheten är liten men den existerar...</p>
           <p>Vi ser på de två första orden som 10 lådor som skall fyllas med rätt innehåll.</p>
           <table>
-             
+
               <tr><td>N</td><td>I</td><td>I</td><td>N</td><td>_</td><td>K</td><td>U</td><td>I</td><td>N</td><td>,</td></tr>
-             
+
           </table>
             <p>För första rutan kan vi välja mellan 33 tangenter, för den andra mellan 33 tangenter, den tredje 33 tangenter och så vidare. Vi får \( 33 \cdot 33 \cdot 33 \cdot 33 \cdot 33\cdot 33 \cdot 33\cdot 33 \cdot 33 \cdot 33 = 33^{10} = 1 531 578 985 264 449 \).</p>
             <p>Som du märker är finns det en hel del olika sätt att kombinera 10 stycken tecken, och en av dessa ger "Niin kuin,". I de flesta fallen skriver han något i stil med "Ahm?.re sf".</p>
             <div class="exercise box">
-              <p<strong>Exempel 1</strong> En sifferkombination bestäms genom att kasta en sexsidig tärning 3 gånger. Hur många olika sifferkombinationer kan man bilda?</p>
+              <p><strong>Exempel 1</strong> En sifferkombination bestäms genom att kasta en sexsidig tärning 3 gånger. Hur många olika sifferkombinationer kan man bilda?</p>
               <h4>Lösning</h4>
               <p>På tärningen har vi siffrorna 1-6. På första plats finns det 6 olika möjligheter, andra plats 6 st och till sist 6 st.</p>
               <p>Antalet kombinationer är \( 6 \cdot 6 \cdot 6 = 6^3 = 216 \) st.</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> I ett lotteri finns 100 lotter, varav 20 st ger vinst. Anna köper tre lotter. Bestäm sannolikheten att hon i alla fall har en vinst.</p>
+              <h4>Lösning</h4>
+              <p>Vi kan inte bestämma sannolikheten direkt. Komplementet för "i alla fall en vinst" är "ingen vinst".</p>
+              <p>Sannolikheten för vinst är \( \dfrac{20}{100} = 0,20 \) och sannolikheten för ingen vinst är \( 0,80 \).</p>
+              <p>Vi skall ha 3 st ingen vinst efter varann.</p>
+              <p>Vi får \( P(\text{i alla fall en vinst}) = 1 - P(\text{ingen vinst}) = 1 - 0,80^2 = 0,488 \approx 0,49 \).</p>
             </div>
           </div>
       </section>
@@ -119,10 +127,17 @@
               <div class="card card-body answer"> <p>\( 10 \cdot 10 \cdot 10 \cdot 10 = 10000 \).</p></div></div>
           </li>
 
-          <li>I stryktipset kan man välja mellan 1,X och 2. Totalt finns det 13 matcher vars utgång man skall gissa (eller veta). Hur många olika tipsrader finns det totalt?
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>3 tecken per rad, 13 rader. Antal kombinatoner är \( 3^{13}=1594323 \).</p></div></div>
+          <li>I stryktipset kan man välja mellan 1,X och 2. Totalt finns det 13 matcher vars utgång man skall gissa (eller veta).
+            <ol>
+                <li>Hur många olika tipsrader finns det totalt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5a">
+                <div class="card card-body answer"><p>3 tecken per rad, 13 rader. Antal kombinatoner är \( 3^{13}=1594323 \).</p></div></div> </li>
+                <li>Bestäm sannolikheten att ha 13 rätt genom att slumpmässigt välja tecken. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5b">
+                <div class="card card-body answer"><p>1 rad är rätt.</p>
+                  <p>Vi får sannolikheten \( P(\text{13 rätt}) = \dfrac{1}{3^{13}} \approx 6,27 \cdot 10^{-7} \).</p>
+                </div></div> </li>
+              </ol>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>En registerplåt består av tre bokstäver från A till Z, borträknat Q och W och tre siffror från 0 till 9. Hur många olika registerplåtar kan man bilda av detta?
@@ -132,13 +147,24 @@
               <p>Vi har \( 24 \cdot 24 \cdot 24 \cdot 10\cdot 10\cdot 10 = 13 824 000 \) stycken.</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>I en familj finns det 4 st barn (inte tvillingar). Bestäm följande sannolikheter.
+            <ol>
+              <li>Att alla barn är födda på olika dagar. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>Antalet gynnsamma fall är \( 7 \cdot 6 \cdot 5 \cdot 4 \). Det första barnet föds någon dag, följande får inte födas på samma dag som det första barnet osv.</p>
+              <p>Totala fall är \( 7 \cdot 7 \cdot 7 \cdot 7 = 7^4 \).</p>
+              <p>Vi får sannolikheten \( P(\text{Alla barn födda på olika dagar}) = \dfrac{7 \cdot 6 \cdot 5 \cdot 4}{7^4} = 0,34985 \ldots \approx 0,35 \).</p>
+              </div></div> </li>
+              <li>I alla fall två barn är födda på samma dag. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>Att i alla fall två barn är födda på samma dag är komplementet till att alla barn är födda på olika dagar.</p>
+              <p>Vi får \( P(\text{i alla fall två barn är födda på samma dag}) \\
+                = 1 - P(\text{Alla barn födda på olika dagar}) = 1 - 0,34985 \ldots \approx 0,65 \) .</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -160,13 +186,21 @@
             </ol>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Åt en spelare delas 5 st spelkort. Bestäm sannolikheten att i alla fall 2 st kort har samma valör.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Då vi drar det första kortet har vi 52 st att välja emellan, sedan är det 51 och vid de 5:e kortet är det 48 olika kort som vi kan dra.</p>
+              <p>De totala antalet kombinationer är \( 52 \cdot 51 \cdot 50 \cdot 49 \cdot 48 \).</p>
+              <p>Att 2 kort har samma valör kan vi inte räkna direkt. Vi måste gå via komplementet.</p>
+              <p>Kompementet är händelsen "alla kort har olika valör".</p>
+              <p>Då finns det för första kortet 52 st olika kort, för det andra kortet 48 olika kort, för det 3:e 44 olika valörer, 4:e 40 olika valörer och för 5:e 36 olika valörer.</p>
+              <p>Totala kombinationer för händelsen "alla kort har olika valör" är \( 52 \cdot 48 \cdot 44 \cdot 40 \cdot 36 \).</p>
+              <p>Den sökta sannolikheten är \( P(\text{i alla fall 2 har samma valör}) = \\
+                1 - P(\text{alla kort har samma valör}) = 1 -\dfrac{52 \cdot 48 \cdot 44 \cdot 40 \cdot 36}{52 \cdot 51 \cdot 50 \cdot 49 \cdot 48} = 0,4929\ldots  \approx 0,493 \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
