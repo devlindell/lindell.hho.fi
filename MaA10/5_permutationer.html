@@ -64,14 +64,19 @@
               <tr><td>4 personer</td><td>3 personer</td><td>2 personer</td><td>1 person</td></tr>
           </table>
           <p>Antalet olika kombinationer är \( 4\cdot 3\cdot 2 \cdot 1 = 24 \). Vi kan skriva \( 4\cdot 3\cdot 2 \cdot 1 \) som \( 4! \), utläses "fyra fakultet".</p>
-          <p>Antalet olika permutationer, varianter av en mängd, som består av \( n \) element är \( n! \) där \( n!=n(-1)(n-2)\cdot \ldots \cdot 2\cdot 1 \).</p>
+          <div class="summary box">
+            <p>Antalet olika permutationer, varianter av en mängd, som består av \( n \) element är \( n! \) där \( n!=n(-1)(n-2)\cdot \ldots \cdot 2\cdot 1 \).</p>
+          </div>
           <div class="exercise box">
             <p><strong>Exempel 1</strong> Hur många olika köer kan Anna, Bertil, Cecilia och Daniel bilda där endast två personer deltar?</p>
           <h4>Lösning</h4>
           <p>Vi kan välja bland 4 personer till först och 3 på andra plats. Vi får \( 4\cdot 3 =12 \).</p>
           <p>Men vi kan också räkna som följande: \( 4 \cdot 3 =\dfrac{4\cdot 3\cdot 2\cdot 1}{2\cdot 1} = \dfrac{4!}{2!} \).</p>
           </div>
-          <p>Om vi allmänt skall ur en mängd \( n \) skall bilda n-permutationer, eller ordnade delmängder, som består av \( k \) st element får vi det som \( P_{n,k}=\dfrac{n!}{(n-k)!} \). På räknaren utnyttjar vi en knapp som påminner om nPr.</p>
+          <div class="summary box">
+          <p>Om vi allmänt skall ur en mängd \( n \) skall bilda n-permutationer, eller ordnade delmängder, som består av \( k \) st element får vi det som \( P_{n,k}=\dfrac{n!}{(n-k)!} \). </p>
+          <p>På räknaren utnyttjar vi en knapp som påminner om nPr.</p>
+        </div>
         </div>
       </section>
       <section>
@@ -114,11 +119,14 @@
               <div class="card card-body answer"> <p>Totala kombinatoner är \( 6!= 720 \). En av dessa är korrekt, alltså \( \dfrac{1}{720} \).</p></div></div>
           </li>
 
-          <!--<li>Uppgift
+          <li>De nio basgrupperna i en skola kommer varje dag i olika ordning till matsalen och äta. Hur många läsår tar det att basgrupperna äter i samma ordning?
+            <p>Ett skolår består av 190 skoldagar.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Totala antalet kombinationer är \( 9 \cdot 8 \cdot \ldots \cdot 2 \cdot 1 = 9 ! = 362 880 \) st.</p>
+              <p>Antal skolår är ca 1910 år.</p>
+              </div></div>
+          </li>
 
           <li>På hur många sätt kan vi av 200 riksdagsledamöter ordna en kö som består av 3 st ledamöter.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -150,19 +158,32 @@
             </ol>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>5 syskon ,inga tvillingar, placeras slumpmässigt i kö. Bestäm sannolikheten att kön som syskonen bildar är i någondera ordningsföljd.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Totala antalet köer som syskonen kan bilda är \( 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5! \).</p>
+                <p>Antal köer där de är i ordningsföljd är 2 st.</p>
+                <p>Sannolikheten är \( P(\text{ordningsföljd}) = \dfrac{2}{5!} = 0,0166\ldots \). Alltså 0,017.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>Hur många sittorningar kan man skapa för 18 studerande då det finns
+            <ol>
+              <li>18 st <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>I första pulpeten kan vi välja bland 18 studerande, sedan 17 osv.</p>
+                <p>Totala antalet kombinationer är \( 18 ! \approx 6,4 \cdot 10^{15}\).</p>
+              </div></div> </li>
+              <li>32 st <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Första studerande kan välja mellan 32 platser, den andra mellan 31, och den sista mellan 18 st.</p>
+                <p>Antalet kombinationer är \( 32 \cdot 31 \cdot 30 \cdot \ldots \cdot 18 = \dfrac{32!}{(32-18)!} = \dfrac{32!}{14!} \approx 3,01 \cdot 10^{24} \).</p>
+              </div></div> </li>
+              sittplatser i klassrummet?
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -206,13 +227,18 @@
                 <p>Vi får att \( n>23 \).</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="15">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Bestäm antalet nollor som följande tal slutar på.
+            <ol>
+              <li>\( 32 ! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14a">
+              <div class="card card-body answer"><p>\( 32 ! = 32 \cdot 31 \cdot \ldots \cdot 2 \ cdot 1 = \)</p></div></div> </li>
+              <li>\( 101! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5a">

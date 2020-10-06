@@ -68,14 +68,14 @@
           <div class="exercise box">
           <p><strong>Exempel 1</strong> Vi bestämmer derivatans värde i punkten \(x=1\) för funktionen \(f(x)=x^2-1\).</p>
            <h4>Lösning</h4>
-          <p>Vi får</p> <p>\(\begin{array}{rcl}f'(1) &=& \lim_{h \to 0} \dfrac{f(x_0+h)-f(x)}{h} \\ &=& \lim_{h \to 0} \dfrac{((1+h)^2-1)-(1^2-1)}{h}\\ &=& \lim_{h \to 0} \dfrac{1+2h+h^2-1-0}{h} \\ &=& \lim_{h \to 0} \dfrac{h(2+h)}{h} \\ &=& \lim_{h \to 0} 2+h \\ &=& 2\end{array}\).</p>
+          <p>Vi får</p> <p>\(\begin{array}{rcl}f'(1) & = & \lim_{h \to 0} \dfrac{f(x_0+h)-f(x)}{h} \\ & = & \lim_{h \to 0} \dfrac{((1+h)^2-1)-(1^2-1)}{h}\\ & = & \lim_{h \to 0} \dfrac{1+2h+h^2-1-0}{h} \\ & = & \lim_{h \to 0} \dfrac{h(2+h)}{h} \\ & = & \lim_{h \to 0} 2+h \\ & = & 2\end{array}\).</p>
           <p>Derivatans värde i punkten 1 är 2.</p>
           <div class="video">
             <iframe src="https://player.vimeo.com/video/296477505" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
           </div>
           <div class="exercise box">
-          <p><strong>Exempel 2</strong> Bestäm derivatafunktionen för \(f(x)=x^2-1\).</p>
+          <p><strong>Exempel 2</strong> Bestäm derivatafunktionen för \(f(x)=x^2-1\) med hjälp av differentialkvoten.</p>
           <div class="video">
             <iframe src="https://player.vimeo.com/video/296479149" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
@@ -87,6 +87,12 @@
           <p>För att bevisa det behöver i exponentialfunktioner, som kommer i kurs 8.</p>
           <div class="exercise box">
           <p><strong>Exempel 3</strong> Derivera \(x^3-2x^2-\dfrac{1}{2}x-4\).</p>
+          <h4>Lösning</h4>
+          <p>Vi får </p>
+          <p> \( \begin{array}{rcl}
+            D x^3-2x^2-\dfrac{1}{2}x-4 & = & 3 \cdot x^{3-1} -2\cdot 2\cdot x^{2-1} -\dfrac{1}{2}\cdot 1 \cdot x^{1-1} - 0 \\
+            & = & 3x^2 -4x -\dfrac{1}{2} \\
+            \end{array} \) </p>
           <div class="video">
             <iframe src="https://player.vimeo.com/video/296479684" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
@@ -103,7 +109,7 @@
               <div class="grid-item">\(x^2-1\)</div>
               <div class="grid-item">\(x^3-1\)</div>
             </div>
-            
+
             <table><tr class="MaA6"><th>Funktion</th><th>Derivatafunktion</th></tr>
               <tr><td></td><td>\(1\)</td></tr>
               <tr><td></td><td>\(2x\) </td></tr>
@@ -143,22 +149,41 @@
               <li>\(D(\dfrac{1}{4}x^4-x^2+2)\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="5c">
                   <div class="card card-body answer"><p>\(D(\dfrac{1}{4}x^4-x^2+2) = \dfrac{1}{4}\cdot 4 x^{4-1}-2x^{2-1}+0 = x^3-2x\)</p> </div></div> </li>
-            </ol></li>
+            </ol>
+            </li>
 
-            <li>Bestäm derivatans värde i punkten 3 för funktionen \(f(x)=x^2-1\) genom att bilda ett gränsvärde.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-              <div class="collapse" id="6t">
-              <div class="card card-body answer"> <p>Bilda kvoten \(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h}\) och förenkla. Du skall få samma värde som i uppgiften ovan.</p></div></div>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>\(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h} = \\ \lim_{h \to 0} \dfrac{h^2+6h}{h} = \lim_{h \to 0} \dfrac{h(h+6)}{h} = \\ \lim_{h\to 0}h+6 = 6\)</p> </div></div> </li>
+            <li>Bestäm
+              <ol>
+                <li>\( x^3 -3x^2 +6x +9 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"><p>\( D x^3 -3x^2 +6x +9  =  3x^{3-1} -3\cdot 2x^{2-1} +6x^{1-1} = 3x^2-6x+6\)</p></div></div> </li>
+                <li>\( \dfrac{2}{3}(4x^6-6x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6b">
+                <div class="card card-body answer"><p>\( D \dfrac{2}{3}(4x^6-6x) = D\dfrac{8}{3}x^6 - 4x = \dfrac{8}{3}\cdot 6 x^{6-1} - 4\cdot 1 x^{1-1} = 16x^5-4 \)</p>
+                  <p>Eller så kan du derivera som \( D \dfrac{2}{3}(4x^6-6x) = \dfrac{2}{3}D(4x^6-6x) = \dfrac{2}{3}(24x^5-6) = 16x^5-4\).</p>
+                </div></div> </li>
+                <li>\( \dfrac{t-2t^2}{6} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6c">
+                <div class="card card-body answer"><p>\( D\dfrac{t-2t^2}{6} = D (\dfrac{t}{6}-\dfrac{2t^2}{6}) =  \dfrac{1}{6}\cdot 1 t^{1-1} -\dfrac{1}{3}\cdot 2 t^{2-1} = \dfrac{1}{6}-\dfrac{2}{3}t = \dfrac{1-4t}{6} \)</p>
+                <p>Eller så kan du derivera som \( D\dfrac{1}{6}(t-2t^2) = \dfrac{1}{6}D(t-2t^2) = \dfrac{1}{6}(1-4t) \).</p>
+                </div></div> </li>
+              </ol>
+            </li>
 
-            <li>Bestäm derivatans värde i punkten 0 för funktionen \(f(x)=x^2-x\) genom att bilda ett gränsvärde.
+            <li><i class="fas fa-cogs fa-2x level"></i>Bestäm derivatans värde i punkten 3 för funktionen \(f(x)=x^2-1\) genom att bilda ett gränsvärde.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
               <div class="collapse" id="7t">
-              <div class="card card-body answer"> <p>Bilda kvoten \(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h}\) och förenkla. Du skall få samma värde som i uppgiften ovan.</p> </div></div>
+              <div class="card card-body answer"> <p>Bilda kvoten \(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h}\) och förenkla. Du skall få samma värde som i uppgiften ovan.</p></div></div>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h} = \\ \lim_{h \to 0} \dfrac{h^2+6h}{h} = \lim_{h \to 0} \dfrac{h(h+6)}{h} = \\ \lim_{h\to 0}h+6 = 6\)</p> </div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Bestäm derivatans värde i punkten 0 för funktionen \(f(x)=x^2-x\) genom att bilda ett gränsvärde.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="8t">
+              <div class="card card-body answer"> <p>Bilda kvoten \(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h}\) och förenkla. Du skall få samma värde som i uppgiften ovan.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
               <div class="card card-body answer"> \(\lim_{h \to 0 } \dfrac{(0+h)^2-(0+h)-(0^2-0)}{h} = \\ \lim_{h \to 0} \dfrac{h^2-h}{h} = \lim_{h \to 0} \dfrac{h(h-1)}{h} = \\ \lim_{h \to 0}h-1 =-1\) </div></div> </li>
 
             <li>Kryssa för de rätta alternativen för funktionens derivatafunktion.
@@ -167,8 +192,8 @@
                 <tr><td>\(f'(x)=2x\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                 <tr><td>\(f'(x)=3x^2\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
               </table>
-                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="8">
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9">
                 <div class="card card-body answer">
                   <table><tr class="MaA6"><th>Påstående</th><th>\(f(x)=x-2\) </th><th>\(f(x)=x-3\)</th><th>\(f(x)=x^2-2\)</th><th>\(f(x)=x^2-3\)</th><th>\(f(x)=x^3-2\)</th><th>\(f(x)=x^3-3\)</th></tr>
                     <tr><td>\(f'(x)=1\)</td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
@@ -177,30 +202,30 @@
                   </table>
                  </div></div> </li>
 
-            <li>Inom fysiken utnyttjar man aktivt derivator. Bestäm följande derivator.
+            <li><i class="fas fa-cogs fa-2x level"></i>Inom fysiken utnyttjar man aktivt derivator. Bestäm följande derivator.
               <ol>
-                <li>\(\dfrac{d}{dt}(x_0+v_0t +\dfrac{1}{2}at^2)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="9a">
+                <li>\(\dfrac{d}{dt}(x_0+v_0t +\dfrac{1}{2}at^2)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10a">
                 <div class="card card-body answer">\(\dfrac{d}{dt}(x_0+v_0t +\dfrac{1}{2}at^2) = v_0 +\dfrac{1}{2}2at = v_0 + at\) </div></div> </li>
-                <li>\(\dfrac{d}{dt}(Fv)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="9b">
+                <li>\(\dfrac{d}{dt}(Fv)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10b">
                 <div class="card card-body answer">\(\dfrac{d}{dt}(Fv) = \dfrac{d}{dt}(\dfrac{Fs}{t}) = \dfrac{d}{dt}(Fst^{-1}) = Fs(-1)t^{-2} = \dfrac{-Fs}{t^2}\) </div></div> </li>
              </ol></li>
 
-            <li>I vilken punkt har derivatan för funktionen \(f(x)=\dfrac{1}{2}x^2-2x\) värdet 2?
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-              <div class="collapse" id="10t">
-              <div class="card card-body answer"> Derivera och undersök när derivatan har värdet 2. </div></div>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10">
-              <div class="card card-body answer"><p> \(f'(x)=x-2\). Vi löser ekvationen \(f'(x)=2\), alltså \(x-2=2\) som har lösningen \(x=4\)</p> </div></div> </li>
-
-            <li class="hard">I vilken \(x\)-koordinat har derivatan för funktionen \(f(x)=\dfrac{1}{3}x^3-2x^2-4\) värdet 0?
+            <li><i class="fas fa-cogs fa-2x level"></i>I vilken punkt har derivatan för funktionen \(f(x)=\dfrac{1}{2}x^2-2x\) värdet 2?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
               <div class="collapse" id="11t">
-              <div class="card card-body answer"> Derivera och undersök när derivatan har värdet 0. </div></div>
+              <div class="card card-body answer"> Derivera och undersök när derivatan har värdet 2. </div></div>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
+              <div class="card card-body answer"><p> \(f'(x)=x-2\). Vi löser ekvationen \(f'(x)=2\), alltså \(x-2=2\) som har lösningen \(x=4\)</p> </div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>I vilken \(x\)-koordinat har derivatan för funktionen \(f(x)=\dfrac{1}{3}x^3-2x^2-4\) värdet 0?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="12t">
+              <div class="card card-body answer"> Derivera och undersök när derivatan har värdet 0. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
               <div class="card card-body answer"><p>\(f’(x)=x^2-4x\). Vi löser ekvationen \(x^2-4x=0\), som har rötterna \(x=0\) och \(x=4\).</p></div></div> </li>
 
           </ol>
