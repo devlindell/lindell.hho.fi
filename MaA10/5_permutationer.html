@@ -227,16 +227,44 @@
                 <p>Vi får att \( n>23 \).</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-jedi fa-2x level"></i>Bestäm antalet nollor som följande tal slutar på.
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm antalet nollor som följande tal slutar på.
             <ol>
-              <li>\( 32 ! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( 23 ! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14a">
-              <div class="card card-body answer"><p>\( 32 ! = 32 \cdot 31 \cdot \ldots \cdot 2 \ cdot 1 = \)</p></div></div> </li>
-              <li>\( 101! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>\( 23 ! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15 \cdot 16 \cdot 17 \cdot 18 \cdot 19 \cdot 20 \cdot 21 \cdot 22 \cdot 23 \).</p>
+                <p>För att en produkt skall sluta på en nolla skall den ha en faktor 10 i sig.</p>
+                <p>Det vi söker är antalet tal som har faktorn 10 i sig. Men kom ihåg att \( 2 \cdot 5 = 10 \). Så det vi söker är faktorer av \( 5 \), faktorerna \( 5, 10, 15 \) och \( 20 \).</p>
+                <p>Alltså slutar \( 23 ! \) på 4 st nollor.</p>
+              </div></div> </li>
+              <li>\( 101 ! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Logiken är samma, vi söker faktorer som slutar på 0 eller 5.</p>
+              <p>Den sista faktorn i \( 101 ! \) som har faktorn 5 är 100. Antalet faktorer i \( 101 ! \) som innehåller faktorn 5 är \( \dfrac{100}{5} = 20 \) st.</p>
+              <p>Men eftersom \( 5 \cdot 5 = 25 \) måste vi beakta dessa. Antalet faktoer i \( 101 ! \) som innehåller faktorn 25 är \( \dfrac{100}{25} = 4 \) st.</p>
+              <p>Alltså slutar \( 101 ! \) på \( 20 + 4 = 24 \) nollor.</p>
+              </div></div> </li>
+              <li>\( 1000! \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14c">
+              <div class="card card-body answer"><p>Vi fortsätter med samma logik.</p>
+              <p>Antal faktorer som slutar på 5 i \( 1000 ! \) är \( \dfrac{1000}{5} = 200 \) st.</p>
+              <p>Sedan undersöker vi \( 5 \cdot 5 = 5^2 = 25 \). Antal faktorer i \( 1000! \) är \( \dfrac{1000}{25} = 40 \).</p>
+              <p>Till nästa undersöker vi \( 5^3 = 125 \). Antal faktorer i \( 1000! \) är \( \dfrac{1000}{125} = 8 \).</p>
+              <p>Till sist undersöker vi \( 5^4 = 625 \). Antal faktorer i \( 1000! \) är \( \dfrac{1000}{625} = 1,6 \). Alltså 1 st.</p>
+              <p>Totala antalet nollor är \( 200 + 40 + 8 + 1 = 249 \) st.</p>
+              </div></div> </li>
+              <li>Skapa en algoritm som berättar hur du kan undersöka hur många nollor en fakultet slutar på. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14d">
+              <div class="card card-body answer"><p>Algorimten är följande <ol>
+                <li>Börja med att dividera med 5. Använd dig av heltalet.</li>
+                <li>Dividera sedan med \( 5^2 \). Använd dig av heltalet.</li>
+                <li>Dividera sedan med \( 5^3 \). Använd dig av heltalet.</li>
+                <li>Fortsätt med detta så länge du får kvoter som är större än 1.</li>
+                <li>Addera ihop heltalen som du fick från divisionerna. Dessa är antalet nollor i fakulteten.</li>
+              </ol>
+              </p>
+              </div></div> </li>
             </ol>
-          </li>-->
+          </li>
 
           <!--<li>Uppgift
             <ol>
