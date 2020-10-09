@@ -64,6 +64,7 @@ table {
   max-width: 90%;
   border-spacing: 5px;
   background-color: #f5f5f5;
+  margin: 1rem;
   /*overflow-x: auto;*/
 
 }
@@ -259,7 +260,7 @@ nav ul li a {
   border-radius: 20px;
   height: 200px;
   width: 250px;
-  margin: 20px;
+  margin: 15px;
   display: inline-block;
   padding: 5px;
   transition: background-color 0.5s linear,
@@ -408,10 +409,11 @@ nav ul li a {
 
 html {
   font-size : 14px;
+  margin: 0.5rem;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .mobile {
@@ -421,7 +423,7 @@ h3 {
 .kurs {
   font-size: 1rem;
   height: 125px;
-  width: 250px;
+  width: 156px;
   margin: 10px;
 }
 
@@ -431,6 +433,10 @@ h3 {
   margin-top: 20%;
 }
 
+.box {
+  padding: 1rem;
+}
+
 }
 
 @media only screen and (max-width: 520px) {
@@ -438,4 +444,5 @@ h3 {
 html {
   font-size : 12px;
 }
+
 }

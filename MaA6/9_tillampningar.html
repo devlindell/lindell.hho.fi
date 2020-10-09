@@ -125,13 +125,23 @@
               </div></div>
           </li>
 
-          <!--<li>Uppgift
+          <li>För ett rektangelformat område finns det staket för 60 m. Bestäm dimensionerna, längd och bredd, för området då man vill att arean är så stor som möjligt.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi betecknar längden med \( l \) och bredden med \( b \).</p>
+                <p>Arean för området är \( A = lb \). För omkretsen gäller \( 2l+2b = 60 \), alltså \( b = 30 - l \).</p>
+                <p>Vi bildar en funktion som ger arean, \( A (l) = l(30-l) = -l^2 +30l \), där \( 0 < l < 30 \).</p>
+                <p>Vi får \( A'(l) = -2l+30 \).</p>
+                <p>Derivatans nollställe, \( -2l + 30 = 0 \) ger \( l = 15 \).</p>
+                <p>Funktionens extremvärden hittar vi i derivatans nollställen eller i intervallet ändpunkter.</p>
+                <p>\( A(0) = 0 \) m<sup>2</sup>.</p>
+                <p>\( A(15) = 225 \) m<sup>2</sup>.</p>
+                <p>\( A(30) = 0 \) m<sup>2</sup>.</p>
+                <p>Alltså skall längden vara 15 m och bredden 15 m.</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -150,11 +160,25 @@
                 <p>Största värdet är \( \dfrac{32}{3\sqrt{3}}\approx 6,2 \).</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Då man ökar på tryckhastigheten för en tryckmaskin ökar stoppen i produktionen. Då manskinen är inställd på att trycka 5 000 ark i timmen, fungerar den 20 timmar i dygnet. Man värderar att för varje ökning på 100 tryckta ark ökar på tiden på stoppen med 15 min. Vilken hastighet borde tryckmaskinen vara inställd på så att antalet ark som trycks per dygn är så stort som möjligt? Hur många ark trycker maskinen per dygn då?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi bildar en funktion som anger totala mänden tryckta papper per dygn.</p>
+                <table>
+                  <tr class="MaA6"><th>Hastighet, ark/timme</th><th>tid i drift</th></tr>
+                  <tr><td>5 000</td><td>20</td></tr>
+                  <tr><td>\( 5000 + 400 = 5 400 \)</td><td>\( 20 - 4 \cdot 0,25 \)</td></tr>
+                  <tr><td>\( 5000 + t\cdot 100  \)</td><td>\( 20 - t \cdot 0,25 \)</td></tr>
+                </table>
+                <p>Funktionen är \( f(t) = (5000+100t)(20-0,25t) = -25t^2+750t+100000 \).</p>
+                <p>Derivatafunktionen är \( f'(t) = -50t+750 \).</p>
+                <p>Derivatans nollställe \( f'(t) = 0 \) då \( t = 15 \). </p>
+                <p>Eftersom funktionen \( f \) är en parabel som öppnar sig nedåt är derivatans nollställe funktionens största värde. Det värde vi söker.</p>
+                <p>Antingen motiverar du eller så jobbar du med ett intervall. Intervallet är \( -50 < t < 80 \).</p>
+                <p>Det betyder att hastigheten är \( 5000 + 15 \cdot 100 = 6500 \) ark/timme.</p>
+                <p>Dygnets totala mängd är \( f(15) = 105 625 \) ark.</p>
+            </div></div>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i><p>Akashi Kaikyō är en hängbro i Japan som sammanbinder Kobe på Honsu med Iwaya på ön Awaj. Bron blev färdig 1998 och med sina 1991 m mellan centralspannet var det det längsta i världen för en hängbro. En bild av bron ser du nedan.</p>
             <p><img class="responsivepic600" src="pics/9-Akashi-bridge.jpg" alt="" /></p>

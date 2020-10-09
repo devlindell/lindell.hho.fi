@@ -202,11 +202,63 @@
               </table></p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Teckenschemat för en funktion är följande.
+            <p>\( \begin{array}{c|ccc}
+              & & -2 & & \\
+              \hline f'(x) & + & 0 & - \\
+              \end{array} \) </p>
+              <p>Beskriv hur funktionen beter sig.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi kan fylla ut teckenschemat till följande</p>
+                <p>\( \begin{array}{c|ccc}
+                  & & -2 & & \\
+                  \hline f'(x) & + & 0 & - \\
+                  f(x) & \nearrow & & \searrow \\
+                  \end{array} \) </p>
+                  <p>Vi har en funktion som växer, har ett maxima i \( x = -2 \) och sedan avtar den. Tex en parabel.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Teckenschemat för en funktion är följande.
+            <p>\( \begin{array}{c|ccccc}
+              & & 0 & & 1 & \\
+              \hline f'(x) & - & 0 & + & 0 & - \\
+              \end{array} \) </p>
+              <p>Beskriv hur funktionen beter sig.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5">
+              <div class="card card-body answer"> <p>Vi kan fylla ut teckenschemat till följande</p>
+                <p>\( \begin{array}{c|ccccc}
+                  & & 0 & & 1 & \\
+                  \hline f'(x) & - & 0 & + & 0 & - \\
+                  f(x) & \searrow & & \nearrow & & \searrow \\
+                  \end{array} \) </p>
+                  <p>Vi har en funktion som avtar, växer och sedan avtar den. Vi har ett lokalt minimi i \( x = 0 \) och lokart maxima i \( x = 1 \).</p>
+                  <p>Globala maximin och minimin saknas. </p>
+                  <p>Vi har en funktion av tredje grad.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Teckenschemat för en funktion är följande.
+            <p>\( \begin{array}{c|ccc}
+              & & 3 & & \\
+              \hline f'(x) & + & 0 & + \\
+              \end{array} \) </p>
+              <p>Beskriv hur funktionen beter sig.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.8">
+              <div class="card card-body answer"> <p>Vi kan fylla ut teckenschemat till följande</p>
+                <p>\( \begin{array}{c|ccc}
+                  & & 3 & & \\
+                  \hline f'(x) & + & 0 & + \\
+                  f(x) & \nearrow & & \nearrow \\
+                  \end{array} \) </p>
+                  <p>Vi har en funktion som växer, har en terasspunkt i \( x = 3 \) och sedan växer den.</p>
+                  <p>Den saknar extremvärden.</p>
+                  <p>Funktionen kan vara en tredjegradsfunktion, av typ \( f(x) = x^3 + \text{en siffra} \).</p>
+              </div></div>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm när funktionen \( f(x)=x^3-3x^2+1 \) är växande och avtagande.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -216,26 +268,27 @@
                 <p>Växande då \( x < 0 \) och \( x > 2 \) och avtagande då \( 0 < x < 2 \).</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm extremvärdena för funktionen \( f(x)=-\frac{1}{4}x^4+\frac{1}{3}x^3+\frac{1}{2}x^2 \).
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm extremvärdena för funktionen \( f(x)=-\dfrac{1}{4}x^4+\dfrac{1}{3}x^3+\dfrac{1}{2}x^2 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=-x^3+x^2+x \).</p>
-                <p>Derivatans nollställen kommer vi åt via utbrytning \( x(-x^2+x+1)=0 \). \( x=0 \) och \( x=\frac{1\pm\sqrt{5}}{2} \).</p><p>Globalt maximum då \( x=\frac{1+\sqrt{5}}{2} \) som ger värdet \( \frac{1}{24}(5\sqrt{5}+13) \).</p>
-                <p> Lokalt minimmum då \( x=0 \) som ger värdet 0. Lokalt maximum då \( x=\frac{1-\sqrt{5}}{2} \) som ger värdet \( \frac{1}{24}(-5\sqrt{5}+13) \).</p></div></div>
+                <p>Derivatans nollställen kommer vi åt via utbrytning \( x(-x^2+x+1)=0 \). \( x=0 \) och \( x=\dfrac{1\pm\sqrt{5}}{2} \).</p><p>Globalt maximum då \( x=\dfrac{1+\sqrt{5}}{2} \) som ger värdet \( \dfrac{1}{24}(5\sqrt{5}+13) \).</p>
+                <p> Lokalt minimmum då \( x=0 \) som ger värdet 0. Lokalt maximum då \( x=\dfrac{1-\sqrt{5}}{2} \) som ger värdet \( \dfrac{1}{24}(-5\sqrt{5}+13) \).</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm när funktionen \( f(x)=x^4-x^2 \) är växande och avtagande.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=4x^3-2x \).</p>\( f'(x)=0 \) då \( x=0 \) och \( x=\pm\frac{1}{\sqrt{2}} \).</p>
-                <p>Funktionen är växande då \( -\frac{1}{\sqrt{2}} <  x  <  0 \) och \( x > \frac{1}{\sqrt{2}} \).</p>
-                <p>Funktionen är avtagande då \( x < -\frac{1}{\sqrt{2}} \) och \( 0 < x < \frac{1}{\sqrt{2}} \).</p></div></div>
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=4x^3-2x \).</p>
+                <p>\( f'(x)=0 \) då \( x=0 \) och \( x=\pm\dfrac{1}{\sqrt{2}} \).</p>
+                <p>Funktionen är växande då \( -\dfrac{1}{\sqrt{2}} <  x  <  0 \) och \( x > \dfrac{1}{\sqrt{2}} \).</p>
+                <p>Funktionen är avtagande då \( x < -\dfrac{1}{\sqrt{2}} \) och \( 0 < x < \dfrac{1}{\sqrt{2}} \).</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm största och minsta värdet för funktionen \( f(x)=x^3-2x^2 \) i intervallet \( [-1,2] \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=3x^2-4x \) som har nollställena 0 och \( \frac{4}{3} \).</p>
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=3x^2-4x \) som har nollställena 0 och \( \dfrac{4}{3} \).</p>
                 <p>Eftersom vi har ett intervall jämför vi funktionens värden i intervallets ändpunkter och i de punkter där \( f'(x)=0 \) för att få fram största och minsta värden.</p>
                 <p>Minsta värdet hittar vi då \( f(-1)=-3 \) och största värdet då \( f(0)=0 \) och \( f(2)=0 \).</p></div></div>
           </li>
