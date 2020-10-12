@@ -52,199 +52,351 @@
       <section>
         <div class="theory">
           <div class="exercise box">
-<p>Lös ekvationerna</p>
-<ol style="list-style-type: lower-alpha;">
-<li>\(x^2-9=0\)</li>
-<li>\(3x^2-2x=0\)</li>
-</ol>
-<h4>Lösning</h4>
-<ol style="list-style-type: lower-alpha;">
-<li>Vi får att <p>\(\begin{array}{rcll} x^2-9&amp;= &amp;0 &amp; \textrm{Flytta över termerna med x till vänster, de andra till höger.} \\ x^2&amp;= &amp;9 &amp; \mid \sqrt{\quad} \textrm{ Vi tar roten av bägge leden.}\\ x&amp;= &amp;\pm 3 &amp; \textrm{Märk att vi har två rötter.}\\ \end{array}\) </p></li>
-<li>och <p>\(\begin{array}{rcll} 3x^2 -2x&amp;= &amp;0 &amp; \textrm{Vi bryter ut det gemensamna.}\\ x(3x-2)&amp;= &amp;0 &amp; \textrm{Vi utnyttjar nollregeln.}\\ &amp;&amp;&amp;\text{Uttrycket får värdet 0 om antingen } x=0 \textrm{ eller } 3x-2=0\\ x =0 &amp; \textrm{eller} &amp;3x-2=0 &amp; \textrm{}\\ &amp; &amp; x=\dfrac{2}{3}&amp; \textrm{Två rötter, } x=0 \textrm{ eller } x=\dfrac{2}{3} \textrm{ löser ekvationen.}\\ \end{array}\)</p></li>
-</div>
-<div class="intro box">
-<p>Lös ekvationen \(x^2+x=6\).</p>
-<p>Denna ekvation kan vi inte lösa som ovan. Vi behöver bättre verktyg.</p>
-<p>Därför härleder vi rotformeln åt oss så att vi kan lösa (nästan) vilken andragradsekvation som hellst.</p>
-<h4>Härledning</h4>
-<p>Vi börjar med</p>
-<p>\(\begin{array}{rcl} ax^2 + bx +c &amp; = &amp; 0 \\ ax^2 + bx &amp; = &amp; -c \\ \end{array}\)</p>
-<p>Vi utnyttjar oss av kvadratkompletering och kommer ihåg hur man kvadrerar (\((a+b)^2 = a^2 + 2ab + b^2\)).</p>
-<p>\(\begin{array}{rcl} (\sqrt{a}x + \dfrac{b}{2\sqrt{a}})^2 &amp; = &amp; -c + (\dfrac{b}{2\sqrt{a}})^2 \end{array}\)</p> <p>Eftersom \(bx\) är dubbla produkten som bör uppfylla villkoret \(bx = \heartsuit \cdot \sqrt{a} \cdot x \cdot 2\). Vi får att \(\heartsuit = \dfrac{b}{2\sqrt{a}}\) och vi kompenserar i höger led med samma term som vi lägger till i vänster led.</p>
-<p>Kontroll: \(ax^2 + \dfrac{b}{2\sqrt{a}} \cdot 2 \cdot \sqrt{a} \cdot x + (\dfrac{b}{2\sqrt{a}})^2 = -c + (\dfrac{b}{2\sqrt{a}})^2\).</p>
-<p>Tillbaka till härledningen:</p>
-<p>\(\begin{array}{rcll} (\sqrt{a}x + \dfrac{b}{2\sqrt{a}})^2 &amp; = &amp; -c + \dfrac{b^2}{4a} &amp; \mid \sqrt{\quad} \\ \sqrt{a}x + \dfrac{b}{2\sqrt{a}} &amp; = &amp; \pm\sqrt{-c + \dfrac{b^2}{4a}} \\ \sqrt{a}x &amp; = &amp; - \dfrac{b}{2\sqrt{a}} \pm\sqrt{-c + \dfrac{b^2}{4a}} &amp; \mid \text{Vi förlänger $c$ med $4a$} \\ \sqrt{a}x &amp; = &amp; \dfrac{-b}{2\sqrt{a}} \pm \sqrt{\dfrac{b^2-4ac}{4a}} \\ \sqrt{a}x &amp; = &amp; \dfrac{-b \pm \sqrt{b^2-4ac}}{2\sqrt{a}} &amp; \mid /\sqrt{a} \\ x &amp; = &amp; \dfrac{-b \pm \sqrt{b^2-4ac}}{2\sqrt{a} \cdot \sqrt{a}} \\ x &amp; = &amp; \dfrac{-b \pm \sqrt{b^2-4ac}}{2a} \\ \end{array}\)</p>
-<p>Kontentan av härledningen blir att ekvationen \(ax^2 +bx +c=0\) har rötterna \(x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\).</p>
-<p>Nu har vi verktyg att lösa \(x^2+x=6\).</p>
-<h4>Lösning</h4>
-<p>Vi får att</p>
-<p>\(\begin{array}{rcll} x^2+x &amp; = &amp; 6 &amp; \textrm{Vi flyttar alla termer till vänster sida.}\\ x^2 +x -6 &amp; = &amp;0 &amp; \textrm{Vi använder oss av rotformeln.} a= 1 \textrm{, } b=1 \textrm{ och } c=-6\\ x&amp; = &amp;\dfrac{-1 \pm \sqrt{(1)^2-4\cdot 1 \cdot -6}}{2\cdot 1} &amp; \textrm{Vi räknar ut ett värde.}\\ x &amp;= &amp;\dfrac{-1 \pm \sqrt{25}}{2} &amp; \textrm{}\\ x&amp;= &amp;\dfrac{-1 \pm 5}{2} &amp; \textrm{Vi delar upp det som två rötter.}\\ x= \dfrac{-1-5}{2}&amp; \textrm{eller} &amp;x= \dfrac{-1+5}{2} &amp; \textrm{Sista föränklingen,}\\ x=-3&amp; &amp;x=2 &amp; \textrm{och vi får rötterna.}\\ \end{array}\)</p>
-</div>
-<div class="exercise box">
-<p><strong>Exempel 1</strong> Lös \(x^2-x-2=0\).</p>
-<h4>Lösning</h4>
-<p>\(\begin{array}{rcll} x^2-x-2&amp;= &amp;0 &amp; \textrm{}a=1 \textrm{, } b=-1 \textrm{ och } c=-2\\ x &amp; = &amp;\dfrac{-(-1) \pm \sqrt{(-1)^2 -4\cdot 1(-2)}}{2 \cdot 1} &amp; \textrm{}\\ x &amp;= &amp;\dfrac{1 \pm \sqrt{9}}{2} &amp; \textrm{}\\ x &amp; = &amp; \dfrac{1 \pm 3}{2} &amp; \textrm{Delar upp det till två rötter.}\\ x = \dfrac{1-3}{2}&amp; \textrm{eller} &amp; x = \dfrac{1+3}{2}&amp; \textrm{}\\ x = -1&amp; &amp;x=2 &amp; \textrm{}\\ \end{array}\)</p>
-<div class="video">
-<iframe width="640" height="564" src="https://player.vimeo.com/video/306102917" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-</div>
-</div>
-<div class="exercise box">
-<p><strong>Exempel 2</strong> Lös \(x^2+2x=3\).</p>
-<h4>Lösning</h4>
-<p>\(\begin{array}{rcll} x^2+2x &amp; = &amp;3 &amp; \textrm{Flytta alla termer till vänster sida.}\\ x^2 +2x -3&amp;= &amp;0 &amp; \textrm{}a=1 \textrm{, } b=2 \textrm{ och } c=-3\\ x&amp;= &amp;\dfrac{-2 \pm \sqrt{2^2 -4\cdot 1(-3)}}{2 \cdot 1} &amp; \textrm{Vi förenklar och får att}\\ x &amp;= &amp; \dfrac{-2 \pm \sqrt{16}}{2} &amp; \textrm{}\\ x &amp;= &amp; \dfrac{-2 \pm 4}{2} &amp; \textrm{Dela upp till två rötter.}\\ x= \dfrac{-2-4}{2}&amp; \textrm{eller} &amp; x= \dfrac{-2+4}{2} &amp; \textrm{}\\ x=-3&amp; &amp;x=1 &amp; \textrm{}\\ \end{array}\) </p>
-</div>
-<div class="summary box">
-<p>Lösningarna för ekvationen \(ax^2+bx+c =0\) får vi genom rotformeln.</p>
-<p>Rotformel är \(x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\).</p>
-</div>
-
-
+            <p>Lös ekvationerna</p>
+            <ol style="list-style-type: lower-alpha;">
+              <li>\(x^2-9=0\)</li>
+              <li>\(3x^2-2x=0\)</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol style="list-style-type: lower-alpha;">
+              <li>Vi får att
+                <p>\(\begin{array}{rcll} x^2-9 & = & 0  &  \textrm{Flytta över termerna med x till vänster, de andra till höger.} \\
+                  x^2 & = & 9  &  \mid \sqrt{\quad} \textrm{ Vi tar roten av bägge leden.}\\
+                  x & = & \pm 3  &  \textrm{Märk att vi har två rötter.}\\
+                  \end{array} \) </p></li>
+              <li>och
+                <p>\(\begin{array}{rcll} 3x^2 -2x & = & 0  &  \textrm{Vi bryter ut det gemensamna.}\\
+                  x(3x-2) & = & 0  &  \textrm{Vi utnyttjar nollregeln.}\\
+                  \end{array} \) </p>
+                  <p>Uttrycket får värdet 0 om antingen då \( x=0 \) eller då \( 3x-2=0 \).</p>
+                  <p>\( \begin{array}{rcll}
+                  x =0  &  \textrm{eller}  & 3x-2=0  &  \textrm{}\\
+                  &  &  x=\dfrac{2}{3} &
+                  \end{array}\)</p>
+                <p>Två rötter, \( x=0 \) eller \( x=\dfrac{2}{3} \) löser ekvationen.</p>
+                </li>
+            </div>
+            <div class="intro box">
+              <p>Lös ekvationen \(x^2+x=6\).</p>
+              <p>Denna ekvation kan vi inte lösa som ovan. Vi behöver bättre verktyg.</p>
+              <p>Därför härleder vi rotformeln åt oss så att vi kan lösa (nästan) vilken andragradsekvation som hellst.</p>
+              <h4>Härledning</h4>
+              <p>Vi börjar med</p>
+              <p>\(\begin{array}{rcl} ax^2 + bx +c  & = &  0 \\
+                ax^2 + bx  & = &  -c \\
+                \end{array}\)</p>
+              <p>Vi utnyttjar oss av kvadratkompletering och kommer ihåg hur man kvadrerar, \((a+b)^2 = a^2 + 2ab + b^2 \).</p>
+              <p>\(\begin{array}{rcl} (\sqrt{a}x + \dfrac{b}{2\sqrt{a}})^2  & = &  -c + (\dfrac{b}{2\sqrt{a}})^2 \end{array}\)</p> <p>Eftersom \(bx\) är dubbla produkten som bör uppfylla villkoret \(bx = \heartsuit \cdot \sqrt{a} \cdot x \cdot 2\). Vi får att \(\heartsuit = \dfrac{b}{2\sqrt{a}}\) och vi kompenserar i höger led med samma term som vi lägger till i vänster led.</p>
+              <p>Kontroll: \(ax^2 + \dfrac{b}{2\sqrt{a}} \cdot 2 \cdot \sqrt{a} \cdot x + (\dfrac{b}{2\sqrt{a}})^2 = -c + (\dfrac{b}{2\sqrt{a}})^2\).</p>
+              <p>Tillbaka till härledningen:</p>
+              <p>\(\begin{array}{rcll} (\sqrt{a}x + \dfrac{b}{2\sqrt{a}})^2  & = &  -c + \dfrac{b^2}{4a}  &  \mid \sqrt{\quad} \\ \sqrt{a}x + \dfrac{b}{2\sqrt{a}}  & = &  \pm\sqrt{-c + \dfrac{b^2}{4a}} \\ \sqrt{a}x  & = &  - \dfrac{b}{2\sqrt{a}} \pm\sqrt{-c + \dfrac{b^2}{4a}}  &  \mid \text{Vi förlänger $c$ med $4a$} \\ \sqrt{a}x  & = &  \dfrac{-b}{2\sqrt{a}} \pm \sqrt{\dfrac{b^2-4ac}{4a}} \\ \sqrt{a}x  & = &  \dfrac{-b \pm \sqrt{b^2-4ac}}{2\sqrt{a}}  &  \mid /\sqrt{a} \\ x  & = &  \dfrac{-b \pm \sqrt{b^2-4ac}}{2\sqrt{a} \cdot \sqrt{a}} \\ x  & = &  \dfrac{-b \pm \sqrt{b^2-4ac}}{2a} \\ \end{array}\)</p>
+              <p>Kontentan av härledningen blir att ekvationen \(ax^2 +bx +c=0\) har rötterna \(x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\).</p>
+              <p>Nu har vi verktyg att lösa \(x^2+x=6\).</p>
+              <h4>Lösning</h4>
+              <p>Vi får att</p>
+              <p>\(\begin{array}{rcll} x^2+x  & = &  6  &  \textrm{Vi flyttar alla termer till vänster sida.}\\
+                x^2 +x -6  & = & 0
+                \end{array} \)</p>
+              <p>Vi använder oss av rotformeln, \( a= 1 \), \( b=1 \) och \( c=-6 \).</p>
+              <p>\( \begin{array}{rcll}
+                x & = & \dfrac{-1 \pm \sqrt{(1)^2-4\cdot 1 \cdot -6}}{2\cdot 1}  &  \textrm{Vi räknar ut ett värde.}\\
+                x  & = & \dfrac{-1 \pm \sqrt{25}}{2}  &  \textrm{}\\
+                x & = & \dfrac{-1 \pm 5}{2}  &  \textrm{Vi delar upp det som två rötter.}\\
+                x= \dfrac{-1-5}{2} & \textrm{eller}  & x= \dfrac{-1+5}{2}  &  \textrm{Sista förenklingen,}\\
+                x=\dfrac{-6}{2}=-3 &   & x=\dfrac{4}{2}=2  &  \textrm{och vi får rötterna.}\\
+                \end{array}\)</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Lös \(x^2-x-2=0\).</p>
+              <h4>Lösning</h4>
+              <p>\(\begin{array}{rcll} x^2-x-2 & = & 0 &  \textrm{}a=1 \textrm{, } b=-1 \textrm{ och } c=-2\\
+                x  & = & \dfrac{-(-1) \pm \sqrt{(-1)^2 -4\cdot 1(-2)}}{2 \cdot 1}  &  \textrm{}\\
+                x  & = & \dfrac{1 \pm \sqrt{9}}{2}  &  \textrm{}\\
+                x  & = &  \dfrac{1 \pm 3}{2}  &  \textrm{Delar upp det till två rötter.}\\
+                x = \dfrac{1-3}{2} &  \textrm{eller}  &  x = \dfrac{1+3}{2} & \textrm{}\\
+                x = \dfrac{-2}{2}=-1 & & x=\dfrac{4}{2}=2  &  \textrm{}\\
+                \end{array}\)</p>
+              <div class="video">
+                <iframe width="640" height="564" src="https://player.vimeo.com/video/306102917" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+              </div>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Lös \(2x^2+4x=6\).</p>
+              <h4>Lösning</h4>
+              <p>\(\begin{array}{rcll} 2x^2+4x  & = & 6  &  \textrm{Flytta alla termer till vänster sida.}\\
+              2x^2 +4x -6 & = & 0  &  \textrm{}a=2 \textrm{, } b=4 \textrm{ och } c=--6\\
+              x & = & \dfrac{-4 \pm \sqrt{4^2 -4\cdot 2(-6)}}{2 \cdot 2}  &  \textrm{Vi förenklar och får att}\\
+              x  & = &  \dfrac{-4 \pm \sqrt{64}}{4}  &  \textrm{}\\
+              x  & = &  \dfrac{-4 \pm 8}{4}  &  \textrm{Dela upp till två rötter.}\\
+              x= \dfrac{-4-8}{4} &  \textrm{eller}  &  x= \dfrac{-4+8}{4}  &  \textrm{}\\
+              x=\dfrac{-12}{4}= -3 & & x=\dfrac{4}{4}=1  &  \textrm{}\\ \end{array}\) </p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Lös \( 1 + \dfrac{12}{x^2} = \dfrac{8}{x} \).</p>
+              <h4>Lösning</h4>
+              <p>Vi förenklar uttrycket och använder oss av rotformeln. Eftersom vi har rationella uttryck, bråkuttryck, måste vi undersöka definitionsmängden.</p>
+              <p>Termerna \( \dfrac{12}{x^2} \) och \( \dfrac{8}{x} \) är inte definierade då \( x = 0 \). </p>
+              <p>Vi löser ekvationen </p>
+              <p>\( \begin{array}{rcl}
+                1 + \dfrac{12}{x^2} & = & \dfrac{8}{x} & \mid \cdot x^2 \not=0\\
+                x^2\cdot 1 + x^2\cdot \dfrac{12}{x^2} & = & x^2\cdot \dfrac{8}{x} \\
+                x^2 + 12 & = & 8x \\
+                x^2 -8x +12 & = & 0 \\
+                \end{array} \) </p>
+                <p>Insättning i rotformeln ger \( x=\dfrac{-(-8)\pm\sqrt{(-8)^2-4\cdot 1 \cdot 12}}{2\cdot 1} = \dfrac{8\pm\sqrt{16}}{2} = \dfrac{8\pm 4}{2}\)</p>
+                <p>Våra rötter är \( x_1 = \dfrac{8-4}{2} = \dfrac{4}{2} = 2 \) och \( x_2 = \dfrac{8+4}{2} = \dfrac{12}{2} = 6 \).</p>
+                <p>Som det sista jämför vi rötterna med definitionsmängden, \( x \not= 0 \). </p>
+                <p>Bägge rötter duger.</p>
+              </div>
+            <div class="summary box">
+              <p>Lösningarna för ekvationen \(ax^2+bx+c =0\) får vi genom rotformeln.</p>
+              <p>Rotformel är \(x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\).</p>
+            </div>
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
 
         <ol>
-<li>Lös följande ekvationer genom att utnyttja kvadratroten.
-<ol>
-<li>\(x^2-4=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1a">
-  <div class="card card-body answer">\(\begin{array}{rcll}  x^2-4&amp;=&amp;0 \\  x^2 &amp;=&amp;4 &amp;\mid \sqrt{\,} \\  x &amp;=&amp; \pm 2\\  \end{array}\)</div></div></li>
-<li>\(-9+x^2=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1b">
-  <div class="card card-body answer">\(\begin{array}{rcll}  -9+x^2&amp;=&amp;0 \\  x^2 &amp;=&amp;9 &amp;\mid \sqrt{\,} \\  x &amp;=&amp; \pm 3 \\  \end{array}\)</div></div></li>
-<li>\(x^2-3=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1c">
-  <div class="card card-body answer"><div class="answer">\(\begin{array}{rcll}  x^2-3&amp;=&amp;0 \\  x^2 &amp;=&amp;3 &amp;\mid \sqrt{\,}\\  x&amp;=&amp;\pm \sqrt{3}\\  \end{array}\)</div></div></li>
-</ol></li>
-<li>Lös följande ekvationer genom att utnyttja kvadratroten.
-<ol>
-<li>\(-16 + x^2 = 0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="2a">
-  <div class="card card-body answer"><div class="answer">\(\begin{array}{rcll}  -16 + x^2 &amp;=&amp; 0 \\  x^2 &amp;=&amp; 16 &amp;\mid \sqrt{\,} \\  x&amp;=&amp;\pm 4  \end{array}\)</div></div></li>
-<li>\(x^2 -25=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="2b">
-  <div class="card card-body answer"><div class="answer">\(\begin{array}{rcll}  x^2 -25&amp;=&amp;0 \\  x^2 &amp;=&amp;25 &amp;\mid \sqrt{\,} \\  x &amp;=&amp; \pm 5 \\  \end{array}\)</div></div></li>
-<li>\(x^2 +9 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="2c">
-  <div class="card card-body answer"><div class="answer">\(\begin{array}{rcll}  x^2 +9 &amp;=&amp; 0 \\  x^2 &amp;=&amp;-9 \\  \end{array}\)</div></div></li>
-</ol></li>
+          <li>Lös följande ekvationer genom att utnyttja kvadratroten.
+            <ol>
+              <li>\(x^2-4=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer">\(\begin{array}{rcll}  x^2-4 & = & 0 \\  x^2  & = & 4  & = & \mid \sqrt{\,} \\  x  & = &  \pm 2\\  \end{array}\)</div></div>
+              </li>
+              <li>\(-9+x^2=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer">\(\begin{array}{rcll}  -9+x^2 & = & 0 \\  x^2  & = & 9  & = & \mid \sqrt{\,} \\  x  & = &  \pm 3 \\  \end{array}\)</div></div>
+              </li>
+              <li>\(x^2-3=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"> \(\begin{array}{rcll}  x^2-3 & = & 0 \\  x^2  & = & 3  & = & \mid \sqrt{\,}\\  x & = & \pm \sqrt{3}\\  \end{array}\)</div></div>
+              </li>
+            </ol>
+          </li>
 
-<li>Lös följande ekvationer genom att utnyttja dig av nollregeln.
-<ol>
-<li>\(2x^2-4x =0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="3a">
-  <div class="card card-body answer"><div class="answer"><p>\(\begin{array}{rcl}  2x^2-4x &amp;=&amp;0 \\  2x(x-2) &amp;=&amp;0\\  \end{array}</p><p>Alltså \(2x=0 \Leftrightarrow x=0\) eller \(x-2=0 \Leftrightarrow x=2\)</p></div></div></li>
-<li>\(x^2+4x=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="3b">
-  <div class="card card-body answer"><div class="answer"><p>\(\begin{array}{rcl}  x^2+4x&amp;=&amp;0\\  x(x+4) &amp;=&amp;0\\  \end{array}\)</p><p >Alltså \(x=0\) eller \(x+4=0 \Leftrightarrow x=-4\).</p></div></div></li>
-<li>\(x^2-x=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="3c">
-  <div class="card card-body answer"><div class="answer"><p>\(\begin{array}{rcl}  x^2-x&amp;=&amp;0 \\  x(x-1) &amp;=&amp;0\\  \end{array}\)</p><p>Alltså \(x=0\) eller \(x-1=0 \Leftrightarrow x=1\).</p></div></div></li>
-</ol></li>
+          <li>Lös följande ekvationer genom att utnyttja kvadratroten.
+            <ol>
+              <li>\(-16 + x^2 = 0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"> \( \begin{array}{rcll}
+                -16 + x^2  & = &  0 \\
+                x^2  & = &  16  & = & \mid \sqrt{\,} \\
+                x & = & \pm 4
+                \end{array}\)</div></div>
+              </li>
+              <li>\(x^2 -25=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"> \(\begin{array}{rcll}
+                x^2 -25 & = & 0 \\
+                x^2  & = & 25  & = & \mid \sqrt{\,} \\
+                x  & = &  \pm 5 \\
+                \end{array}\)</div></div>
+              </li>
+              <li>\(x^2 +9 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"> \(\begin{array}{rcll}
+                x^2 +9  & = &  0 \\
+                x^2  & = & -9 \\
+                \end{array}\)</div></div>
+              </li>
+            </ol>
+          </li>
 
-<li>Lös följande ekvationer genom att utnyttja dig av nollregeln. De kan kännas lite svårare men ge inte upp.
-<ol>
-<li>\(3x^2 = 6x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="4a">
-  <div class="card card-body answer"><div class="answer"><p>\(\begin{array}{rcl}  3x^2 &amp;=&amp; 6x \\  3x^2-6x &amp;=&amp;0 \\  3x(x-2) &amp;=&amp; 0 \\  \end{array}\)</p><p>Alltså \(3x=0 \Leftrightarrow x=0\) eller \(x-2 =0 \Leftrightarrow x=2\).</p></div></div></li>
-<li>\(2x^2-x=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="4b">
-  <div class="card card-body answer"><div class="answer"><p>\(\begin{array}{rcl}  2x^2-x&amp;=&amp;0 \\  x(2x-1) &amp;=&amp; 0\\  \end{array}\)</p><p>Alltså \(x=0\) eller \(2x-1=0 \Leftrightarrow x=\dfrac{1}{2}\).</p></li>
-<li>\(x^2=-2x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="4c">
-  <div class="card card-body answer"><div class="answer"><p>\(\begin{array}{rcl}  x^2&amp;=&amp;-2x \\  x^2+2x&amp;=&amp;0\\  x(x+2)&amp;=&amp;0\\  \end{array}\)</p><p>Alltså \(x=0\) eller \(x+2=0 \Leftrightarrow x=-2\).</p></div></div></li>
-</ol></li>
+          <li>Lös följande ekvationer genom att utnyttja dig av nollregeln.
+            <ol>
+              <li>\(2x^2-4x =0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"> <p>\( \begin{array}{rcl}
+                2x^2-4x  & = & 0 \\
+                2x(x-2)  & = & 0\\
+                \end{array} \)</p>
+                <p>Alltså \(2x=0 \Leftrightarrow x=0\) eller \(x-2=0 \Leftrightarrow x=2\)</p></div></div>
+              </li>
+              <li>\(x^2+4x=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"> <p>\(\begin{array}{rcl}  x^2+4x & = & 0\\  x(x+4)  & = & 0\\  \end{array}\)</p><p >Alltså \(x=0\) eller \(x+4=0 \Leftrightarrow x=-4\).</p></div></div>
+              </li>
+              <li>\(x^2-x=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"> <p>\(\begin{array}{rcl}  x^2-x & = & 0 \\  x(x-1)  & = & 0\\  \end{array}\)</p><p>Alltså \(x=0\) eller \(x-1=0 \Leftrightarrow x=1\).</p></div></div>
+              </li>
+            </ol>
+          </li>
 
-<li>Lös
-<ol>
-<li>\(x^2+x-2=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="5a">
-  <div class="card card-body answer"><div class="answer">Vi har \(x=\dfrac{-1\pm\sqrt{1^2-4\cdot1(-2)}}{2\cdot 1}\) som har lösningarna \(x=1\) eller \(x=-2\).</div></div></li>
-<li>\(x^2+3=4x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="5b">
-  <div class="card card-body answer"><div class="answer"><p>\(x^2+3=4x \Leftrightarrow x^2-4x+3=0\)</p><p>Vi har \(x=\dfrac{4\pm\sqrt{(-4)^2-4\cdot 1\cdot 3}}{2\cdot 1}\) som ger \(x=3\) eller \(x=1\).</p></div></div></li>
-<li>\(x^2-x=6\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="5c">
-  <div class="card card-body answer"><div class="answer"><p>\( x^2-x=6 \Leftrightarrow x^2-x-6=0\)</p><p>Lösningarna är \(="x=\dfrac{1\pm \sqrt{(-1)^2-4\cdot 1(-6)}}{2\cdot}\). Alltså \(x=-2\) eller \(x=3\).</p></div></div></li>
-</ol></li>
+          <li>Lös följande ekvationer genom att utnyttja dig av nollregeln. De kan kännas lite svårare men ge inte upp.
+            <ol>
+              <li>\(3x^2 = 6x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"> <p>\(\begin{array}{rcl}  3x^2  & = &  6x \\  3x^2-6x  & = & 0 \\  3x(x-2)  & = &  0 \\  \end{array}\)</p><p>Alltså \(3x=0 \Leftrightarrow x=0\) eller \(x-2 =0 \Leftrightarrow x=2\).</p></div></div>
+              </li>
+              <li>\(2x^2-x=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"> <p>\(\begin{array}{rcl}  2x^2-x & = & 0 \\  x(2x-1)  & = &  0\\  \end{array}\)</p><p>Alltså \(x=0\) eller \(2x-1=0 \Leftrightarrow x=\dfrac{1}{2}\).</p></div></div>
+              </li>
+              <li>\(x^2=-2x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"> <p>\(\begin{array}{rcl}  x^2 & = & -2x \\  x^2+2x & = & 0\\  x(x+2) & = & 0\\  \end{array}\)</p><p>Alltså \(x=0\) eller \(x+2=0 \Leftrightarrow x=-2\).</p></div></div>
+            </li>
+          </ol>
+        </li>
 
-<li>Lös
-<ol>
-<li>\(2x^2-6x+4=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="6a">
-  <div class="card card-body answer"><div class="answer">Vi får att \(x=\dfrac{6\pm\sqrt{6^2-4\cdot2\cdot4}}{2\cdot 2}\) som ger att \(x=1\) eller \(x=2\).</div></div></li>
-<li>\(3x^2-6x-9=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="6b">
-  <div class="card card-body answer"><div class="answer">Vi får att \(x=\dfrac{6\pm\sqrt{(-6)^2-4\cdot3(-9)}}{2\cdot3}\) som ger att \(x=-1\) eller \(x=3\).</div></div></li>
-<li>\(2x^2+10x+12=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="6c">
-  <div class="card card-body answer"><div class="answer">Vi får att \(x=\dfrac{-10\pm\sqrt{10^2-4\cdot2\cdot12}}{2\cdot 2}\) som ger att \(x=-3\) eller \(x=-2\).</div></div></li>
-</ol></li>
+        <li>Lös
+          <ol>
+            <li>\(x^2+x-2=0\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5a">
+            <div class="card card-body answer"> <p>Vi har \(x=\dfrac{-1\pm\sqrt{1^2-4\cdot1(-2)}}{2\cdot 1}\) som har lösningarna \(x=1\) eller \(x=-2\).</p></div></div>
+            </li>
+            <li>\(x^2+3=4x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5b">
+            <div class="card card-body answer"> <p>\(x^2+3=4x \Leftrightarrow x^2-4x+3=0\)</p><p>Vi har \(x=\dfrac{4\pm\sqrt{(-4)^2-4\cdot 1\cdot 3}}{2\cdot 1}\) som ger \(x=3\) eller \(x=1\).</p></div></div>
+            </li>
+            <li>\(x^2-x=6\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5c">
+            <div class="card card-body answer"> <p>\( x^2-x=6 \Leftrightarrow x^2-x-6=0\)</p><p>Lösningarna är \(="x=\dfrac{1\pm \sqrt{(-1)^2-4\cdot 1(-6)}}{2\cdot}\). Alltså \(x=-2\) eller \(x=3\).</p></div></div>
+            </li>
+          </ol>
+        </li>
 
-<li>Lös
-<ol>
-<li>\(x^2+\dfrac{3}{2}x-1=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="7a">
-  <div class="card card-body answer"><div class="answer">Vi får att \(x=\dfrac{-\dfrac{3}{2}\pm\sqrt{(\dfrac{3}{2})^2-4\cdot 1(-1)}}{2\cdot 1}\) som har rötterna \(x= \dfrac{1}{2} \) och \( x = -2 \).</div></div></li>
-<li>\(x^2+6\dfrac{1}{3}x+2=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="7b">
-  <div class="card card-body answer"><div class="answer">Vi får \(x=\dfrac{-6\dfrac{1}{3}\pm\sqrt{(6\dfrac{1}{3})^2-4\cdot 1\cdot 2}}{2\cdot 1}\) som ger att \(x=-\dfrac{1}{3}\) eller \(x=-6\).</div></div></li>
-<li>\(4x^2+4x=3\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="7c">
-  <div class="card card-body answer"><div class="answer">\(4x^2+4x - 3  =0\), alltså \(x=\dfrac{-4\pm\sqrt{4^2-4\cdot 4(-3)}}{2\cdot 4} = \dfrac{-4\pm\sqrt{64}}{8} = \dfrac{-4\pm 8}{8}\) som ger att \(x=\dfrac{1}{2}\) och \(x=\dfrac{3}{2}\).</div></div></li>
-</ol></li>
+        <li>Lös
+          <ol>
+            <li>\(2x^2-6x+4=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6a">
+            <div class="card card-body answer"> <p>Vi får att \(x=\dfrac{6\pm\sqrt{6^2-4\cdot2\cdot4}}{2\cdot 2}\) som ger att \(x=1\) eller \(x=2\).</p></div></div>
+            </li>
+            <li>\(3x^2-6x-9=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6b">
+            <div class="card card-body answer"> <p>Vi får att \(x=\dfrac{6\pm\sqrt{(-6)^2-4\cdot3(-9)}}{2\cdot3}\) som ger att \(x=-1\) eller \(x=3\).</p></div></div>
+            </li>
+            <li>\(2x^2+10x+12=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6c">
+            <div class="card card-body answer"> <p>Vi får att \(x=\dfrac{-10\pm\sqrt{10^2-4\cdot2\cdot12}}{2\cdot 2}\) som ger att \(x=-3\) eller \(x=-2\).</p></div></div>
+            </li>
+          </ol>
+        </li>
 
-<li>Lös
-<ol>
-<li>\(x^2-2x=-2x+1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="8a">
-  <div class="card card-body answer"><div class="answer">\("x^2-2x=-2x+1 \Leftrightarrow x^2  =1\) som har lösningarna \(x=\pm 1\).</div></div></li>
-<li>\(3x+4=x^2+4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="8b">
-  <div class="card card-body answer"><div class="answer"><p>\(3x+4=x^2+4 \Leftrightarrow x^2 -3x =0\) som vi kan lösa med nollregeln: </p><p>\(x(x-3)=0\).</p>
-<p>\(x=0\) eller \(x-3=0 \Leftrightarrow x=3\).</p></div></div></li>
-<li>\(x+2=x^2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="8c">
-  <div class="card card-body answer"><div class="answer"><p>\(x+2=x^2 \Leftrightarrow x^2-x-2=0\)</p><p>Rötterna är \(x=\dfrac{1\pm \sqrt{(-1)^2-4\cdot 1(-2)}}{2\cdot 1}\) som ger att \(x=-1\) eller \(x=2\).</p></div></div></li>
-</ol></li>
+        <li>Lös
+          <ol>
+            <li>\(x^2+\dfrac{3}{2}x-1=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7a">
+            <div class="card card-body answer"> <p>Vi får att \(x=\dfrac{-\dfrac{3}{2}\pm\sqrt{(\dfrac{3}{2})^2-4\cdot 1(-1)}}{2\cdot 1}\) som har rötterna \(x= \dfrac{1}{2} \) och \( x = -2 \).</p></div></div>
+            </li>
+            <li>\(x^2+6\dfrac{1}{3}x+2=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7b">
+            <div class="card card-body answer"> <p>Vi får \(x=\dfrac{-6\dfrac{1}{3}\pm\sqrt{(6\dfrac{1}{3})^2-4\cdot 1\cdot 2}}{2\cdot 1}\) som ger att \(x=-\dfrac{1}{3}\) eller \(x=-6\).</p></div></div>
+            </li>
+            <li>\(4x^2+4x=3\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7c">
+            <div class="card card-body answer"> <p>\(4x^2+4x - 3  =0\), alltså \(x=\dfrac{-4\pm\sqrt{4^2-4\cdot 4(-3)}}{2\cdot 4} = \dfrac{-4\pm\sqrt{64}}{8} = \dfrac{-4\pm 8}{8}\) som ger att \(x=\dfrac{1}{2}\) och \(x=\dfrac{3}{2}\).</p></div></div>
+            </li>
+          </ol>
+        </li>
 
-<li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös
-  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-  <div class="collapse" id="9t">
-    <div class="hint">
-Lita på dig själv och räkna modigt på bara. Alla rötter är inte fina heltal eller bråktal.</div></div></div>
-<ol>
-<li>\(x^2-x-\dfrac{1}{4} =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="9a">
-  <div class="card card-body answer"><div class="answer">\(x^2-x-\dfrac{1}{4} =0 \Leftrightarrow 4x^2-4x-1=0\), rötterna är \( x=\dfrac{4\pm\sqrt{(-4)^2-4\cdot4(-1)}}{2\cdot 4}\) som har rötterna \(x=\dfrac{1\pm \sqrt{2}}{2}\).</div></div></li>
-<li>\(x^2-4x+1 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="9b">
-  <div class="card card-body answer"><div class="answer">Rötterna är \(x=\dfrac{4\pm\sqrt{(-4)^2-4\cdot 1 \cdot 1}}{2\cdot 1}\) som ger att \(x=2\pm\sqrt{3}\).</div></div></li>
-<li>\(x^2 + (1-\sqrt{2})x-\sqrt{2}=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="9c">
-  <div class="card card-body answer"><div class="answer">Vi får att \(x=\dfrac{-(1-\sqrt{2})\pm\sqrt{(1-\sqrt{2})^2-4\cdot 1(-\sqrt{2})}}{2\cdot 1}\) som har rötterna \(x=\sqrt{2}\) eller \(x=-1\).</div></div></li>
-</ol></li>
+        <li>Lös
+          <ol>
+            <li>\(x^2-2x=-2x+1\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8a">
+            <div class="card card-body answer"> <p>\("x^2-2x=-2x+1 \Leftrightarrow x^2  =1\) som har lösningarna \(x=\pm 1\).</p></div></div>
+            </li>
+            <li>\(3x+4=x^2+4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8b">
+            <div class="card card-body answer"> <p>\(3x+4=x^2+4 \Leftrightarrow x^2 -3x =0\) som vi kan lösa med nollregeln: </p>
+              <p>\(x(x-3)=0\).</p>
+            <p>\(x=0\) eller \(x-3=0 \Leftrightarrow x=3\).</p></div></div>
+            </li>
+            <li>\(x+2=x^2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8c">
+            <div class="card card-body answer"> <p>\(x+2=x^2 \Leftrightarrow x^2-x-2=0\)</p><p>Rötterna är \(x=\dfrac{1\pm \sqrt{(-1)^2-4\cdot 1(-2)}}{2\cdot 1}\) som ger att \(x=-1\) eller \(x=2\).</p></div></div>
+            </li>
+          </ol>
+        </li>
 
-<li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Bestäm koefficienterna \(p\) och \(q\) för andragradsekvationen \(x^2 +px + q=0\) då rötterna för ekvationen är \(-2-\sqrt{6}\) och \(-2+\sqrt{6}\).
-<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-<div class="collapse" id="10t">
-  <div class="hint">
-    <ul>
-<li>Tänk bakvägen på rotformeln \(\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}\).</li>
-<li>Vad gäller för \(a\) och \(b\) ?</li>
-<li>Hur kommer du åt \(c\)?</li>
-<li>Vad bör du göra för att få endast \(x^2\) som första term?</li>
-</ul></div></div>
- <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="10">
-  <div class="card card-body answer"><div class="answer"><p>\(a=\dfrac{1}{2}\), \(b=2\) och \(c=-1\), ger oss \(\dfrac{1}{2}x^2+2x-1=0\). Multiplicera allt med 2 och så får vi \(x^2+4x-2=0\).</p>
-<p>Alltså \(p=4\) och \(q=-2\).</p></div></div></li>
-</ol>
+        <li><i class="fas fa-shapes fa-2x level"></i>Lös följande ekvationer. Kom ihåg att bestämma definitionsmängden.
+          <p>Börja med att förenkla till formen, \( ax^2 + bx + c = 0 \). Använd dig efter det av rotformeln.</p>
+          <ol>
+            <li>\( \dfrac{3}{x^2} - \dfrac{1}{x} = 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8.5a">
+            <div class="card card-body answer"><p>Vi förenklar ekvationen till \( 4x^2 + x - 3 = 0\).</p>
+            <p>Rotformeln ger \( x_1 = \dfrac{3}{4} \) och \( x_2 = -1 \). Bägge rötterna uppfyller definitionsmängden, \( x \not= 0 \).</p>
+            </div></div> </li>
+            <li>\( \dfrac{2}{x+1} = \dfrac{2x+3}{3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8.5b">
+            <div class="card card-body answer"><p>Vi förenklar ekvationen till \( 2x^2+5x-3=0\).</p>
+            <p>Rotformeln ger \( x_1 = \dfrac{1}{2} \) och \( x_2 = -3 \). Bägge rötterna uppfyller definitionsmängden, \( x \not= -1 \).</p></div></div> </li>
+            <li>\( \dfrac{x^2}{x-1} = \dfrac{9}{2}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8.5c">
+            <div class="card card-body answer"><p>Vi förenklar ekvationen till \( 2x^2-9x+9=0\).</p>
+            <p>Rotformeln ger \( x_1 = \dfrac{3}{2} \) och \( x_2 = 3 \). Bägge rötterna uppfyller definitionsmängden, \( x \not= -1 \).</p></div></div> </li>
+          </ol>
+        </li>
 
+        <li><i class="fas fa-cogs fa-2x level"></i>Lös
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+          <div class="collapse" id="9t">
+          <div class="hint">
+          Lita på dig själv och räkna modigt på bara. Alla rötter är inte fina heltal eller bråktal.</div></div>
+          <ol>
+            <li>\(x^2-x-\dfrac{1}{4} =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9a">
+            <div class="card card-body answer"> <p>\(x^2-x-\dfrac{1}{4} =0 \Leftrightarrow 4x^2-4x-1=0\), rötterna är \( x=\dfrac{4\pm\sqrt{(-4)^2-4\cdot4(-1)}}{2\cdot 4}\) som har rötterna \(x=\dfrac{1\pm \sqrt{2}}{2}\).</p></div></div>
+            </li>
+            <li>\(x^2-4x+1 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9b">
+            <div class="card card-body answer"> <p>Rötterna är \(x=\dfrac{4\pm\sqrt{(-4)^2-4\cdot 1 \cdot 1}}{2\cdot 1}\) som ger att \(x=2\pm\sqrt{3}\).</p></div></div>
+            </li>
+            <li>\(x^2 + (1-\sqrt{2})x-\sqrt{2}=0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9c">
+            <div class="card card-body answer"> <p>Vi får att \(x=\dfrac{-(1-\sqrt{2})\pm\sqrt{(1-\sqrt{2})^2-4\cdot 1(-\sqrt{2})}}{2\cdot 1}\) som har rötterna \(x=\sqrt{2}\) eller \(x=-1\).</p></div></div>
+            </li>
+          </ol>
+        </li>
 
+        <li><i class="fas fa-cogs fa-2x level"></i>Bestäm koefficienterna \(p\) och \(q\) för andragradsekvationen \(x^2 +px + q=0\) då rötterna för ekvationen är \(-2-\sqrt{6}\) och \(-2+\sqrt{6}\).
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+        <div class="collapse" id="10t">
+        <div class="hint">
+          <ul>
+            <li>Tänk bakvägen på rotformeln \(\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}\).</li>
+            <li>Vad gäller för \(a\) och \(b\) ?</li>
+            <li>Hur kommer du åt \(c\)?</li>
+            <li>Vad bör du göra för att få endast \(x^2\) som första term?</li>
+          </ul></div></div>
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="10">
+          <div class="card card-body answer"> <p>\(a=\dfrac{1}{2}\), \(b=2\) och \(c=-1\), ger oss \(\dfrac{1}{2}x^2+2x-1=0\). Multiplicera allt med 2 och så får vi \(x^2+4x-2=0\).</p>
+          <p>Alltså \(p=4\) och \(q=-2\).</p></div></div>
+        </li>
 
-      </section>
+        <li><i class="fas fa-jedi fa-2x level"></i>Lös ut \( x \) ur ekvationerna.
+          <ol>
+            <li>\( x^2 +ax +a-1 = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="12a">
+            <div class="card card-body answer"><p>Rotformeln ger</p>
+              <p> \( \begin{array}{rcl}
+                x & = & \dfrac{-a \pm \sqrt{a^2-4\cdot 1 (a-1)}}{2\cdot 1} \\
+                & = & \dfrac{-a \pm \sqrt{a^2-4a+4}}{2} \\
+                & = & \dfrac{-a \pm \sqrt{(a-2)^2}}{2} \\
+                & = & \dfrac{-a \pm (a-2)}{2} \\
+                \end{array} \) </p>
+                <p>Alltså \( x_1 = \dfrac{-a-(a-2)}{2} = -a+1 \) och \( x_2 = \dfrac{-a+(a-2)}{2} = -1 \).</p>
+            </div></div> </li>
+            <li>\( x^2+ax-x-a = 0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="12b">
+            <div class="card card-body answer"><p>Vi börjar med \( x^2+ax-x-a = 0 \Leftrightarrow x^2+(a-1)x -a = 0 \). </p>
+              <p>Rotformeln ger</p>
+                <p> \( \begin{array}{rcl}
+                  x & = & \dfrac{-(a-1) \pm \sqrt{(a-1)^2-4\cdot 1 (-a)}}{2\cdot 1} \\
+                  & = & \dfrac{-a+1 \pm \sqrt{a^2+2a+1}}{2} \\
+                  & = & \dfrac{-a+1 \pm \sqrt{(a+1)^2}}{2} \\
+                  & = & \dfrac{-a+1 \pm (a+1)}{2} \\
+                  \end{array} \) </p>
+                  <p>Alltså \( x_1 = \dfrac{-a+1-(a+1)}{2} = -a \) och \( x_2 = \dfrac{-a+1+(a+1)}{2} = 1 \).</p>
+            </div></div> </li>
+          </ol>
+        </li>
+      </ol>
+
+    </section>
 
       </article>
 
