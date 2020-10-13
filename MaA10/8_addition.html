@@ -71,6 +71,9 @@
           <p>Allmänt har vi händelserna A och B. Då vi söker sannolikheten för A eller B måste vi beakta den sannolikhet då A och B gäller samtidigt.</p>
           <div class="summary box">
             <p>Sannolikheten för P(A eller B) = P(A) - P(B) - P(A och B).</p>
+            <p>Grafiskt ser vi det som följande:</p>
+            <p><img src="pics/8-1.png" class="responsivepic400" /></p>
+            <p>Vi har de olika sannolikheterna, sedan måste vi ta bort den gemensamma delen.</p>
           </div>
           <div class="exercise box">
             <p><strong>Exempel 1</strong> Ur en kortpacke dras två kort. Bestäm sannolikheten att bägge kort är röda (hjärter eller ruter) eller att bägge kort är åttor.</p>
@@ -137,14 +140,18 @@
               <div class="card card-body answer"> <p>Vi får \( P(\text{2 eller 4:a}) = \dfrac{4}{52}+\dfrac{4}{52} = 0,15385 \).</p></div></div>
           </li>
 
-          <!--<li>Uppgift
+          <li>Ur en kortpacke drar vi två kort. Bestäm sannolikheten att bägge kort är spader eller bildkort? Som bildkort räknas knekt, dam, kung och ess.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Sannolikheten att bägge kort är spader är \( P(\text{bägge spader}) = \dfrac{13}{52} \cdot \dfrac{12}{51} \).</p>
+              <p>Att bägge kort är bildkort är \( P(\text{bildkort}) = \dfrac{16}{52} \cdot \dfrac{15}{51} \).</p>
+              <p>Spader bildkort är \( P(\text{spader och bildkort}) = \dfrac{3}{52} \cdot \dfrac{2}{51} \).</p>
+              <p>Sannolikheten är \( \dfrac{13}{52} \cdot \dfrac{12}{51} + \dfrac{16}{52} \cdot \dfrac{15}{51} - \dfrac{3}{52} \cdot \dfrac{2}{51} = 0,1447\ldots \).</p>
+              <p>Alltså 0,14.</p>
+              </div></div>
+          </li>
 
           <li>Utesluter följande händelser varandra?
-
             <table>
               <tr class="MaA10"><th>Påstående</th><th>Utesluter varandra </th><th>Utesluter inte varandra </th></tr>
               <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet ger en fyra.</p> <p>B: andra kastet ger en trea.</p> </td><td></td><td></td></tr>

@@ -76,6 +76,7 @@
             <div class="exercise box">
               <p><strong>Exempel 1</strong> Människor hör till någon av fyra blodgrupper, A, B, AB och O. I Finland är andelen som hör till respekitive grupp följande</p>
               <table>
+                  <caption>https://fi.wikipedia.org/wiki/Veriryhmä</caption>
                   <tr class="MaA10"><th>Blodgrupp</th><th>Andel</th></tr>
                   <tr><td>A</td><td>44 %</td></tr>
                   <tr><td>B</td><td>17 %</td></tr>
@@ -113,7 +114,8 @@
         <ol>
           <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>De bästa spelarna i NBA kastar in frikast med sannolikheten 0,90. Bestäm sannolikheten för att en spelare får in
+          <li>De bästa spelarna i NBA kastar in frikast med sannolikheten 0,90. Det att frikasten far i korgen är oberoende av föregående kast.
+            <p>Bestäm sannolikheten för att en spelare får in</p>
             <ol>
               <li>2 frikast efter varandra. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
@@ -121,25 +123,35 @@
               <li>3 frikast efter varandra. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
               <div class="card card-body answer"><p>\( 0,90 \cdot 0,90 \cdot 0,90 = 0,729 \)</p></div></div> </li>
-              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Första kastet missar och det andra går in.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+              <div class="card card-body answer"><p>Sannolikheten för att en spelare missar är \( 1- 0,90 = 0,10 \).</p>
+              <p>Sannolikheten är \( P(\text{första missar, andra in}) = 0,10 \cdot 0,90 = 0,09 \).</p>
+              </div></div> </li>
             </ol>
           </li>
 
-          <!--<li>Uppgift
+          <li>Cecilia sår två frön, ett för citronträd och ett för äppelträd. Vi antar att fröen gror är oberende händelser av varandra. Sannolikheten att fröet för citronträdet gror är 0,4 och fröet för äppelträdet gror är 0,3.
+            <p>Bestäm följande sannolikheter.</p>
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Att bägge frön gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Händelsen är oberende av varandra.</p>
+              <p>Sannolikheten är \( P(\text{bägge gror}) = 0,3 \cdot 0,4 = 0,12 \).</p>
+              </div></div> </li>
+              <li>Inget av fröen gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Sannolikhete att citronträndet inte gror är 0,60 och sannolikheten för att äppelträdet inte gror är 0,70.</p>
+              <p>Sannolikheten är \( P(\text{ingendera frö gror}) = 0,60 \cdot 0,70 = 0,42 \).</p>
+              </div></div> </li>
+              <li>Fröet för citronträdet gror och föret för äppelträdet gror inte. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Sannolikheten är \( P(\text{citronfröet gror, äppel gror inte}) = 0,40 \cdot 0,70 = 0,28 \).</p></div></div> </li>
+              <li>Fröet för citronträdet gror inte och fröet för äppelträdet gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Sannolikheten är \( P(\text{citron gror inte, äppel gror}) = 0,60 \cdot 0,30 = 0,18 \).</p></div></div> </li>
             </ol>
-          </li>-->
+          </li>
 
           <li>Vilken är sannolikheten att vi ur en kortpacke drar en tvåa följt av en fyra efter att vi lagt tillbaka det första kortet i packen? Vi räknar med att ässet har valören 1.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -196,17 +208,27 @@
             </ol>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Lönar det sig att slå vad att med fyra tärningskast får man i alla fall en 6:a?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi arbetar via komplementet.</p>
+              <p>Sannolikheten för att inte få en 6:a är \( \dfrac{5}{6} \).</p>
+              <p>Vi får \( P(\text{4 kast, iaf en 6:a}) = 1 - P(\text{4 kast, ingen 6:a}) = 1 - (\dfrac{5}{6})^4 = 0,5177\ldots \).</p>
+              <p>Eftersom sannolikheten är större än 0,5 lönar det sig.</p>
+              <p>Uppgiften är samma som <a href="https://en.wikipedia.org/wiki/Antoine_Gombaud" target="_blank">Chevalier de Méré</a> ställde <a href="https://en.wikipedia.org/wiki/Blaise_Pascal" target="_blank">Blaise Pascal</a> i deras brevkorrespondas och gav sannolikhetsläran en stor knuff framåt.</p>
+              </p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Två tärningar kastas 24 gånger. Lönar det sig att slå vad för att det i alla fall kommer en dubbelsexa?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi arbetar via komplementet.</p>
+              <p>Sannolikheten att vi inte får en dubbelsexa är \( P(inte dubbelsexa) = \dfrac{35}{36} \).</p>
+              <p>Vi får \( P(\text{24 kast, iaf 1 dubbelsexa}) = 1 - P(\text{24 kast, ingen dubbelsexa}) = 1 - (\dfrac{35}{36})^{24} = 0,4914\ldots \).</p>
+              <p>Eftersom sannolikheten är mindre än 0,50 så lönar det sig inte.</p>
+              <p>Detta är det andra problemet som de Méré ställde Pascal.</p>
+              </div></div>
+          </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Inom trafiken i Europa kör 1,9 % av bilisterna påverkade av droger. I en razzia testas 200 personer. Bestäm följande sannolikheter.
             <ol>
@@ -224,13 +246,30 @@
             </ol>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-cogs fa-2x level"></i>Av alla barn som föds i Finland är 51,1 % pojkar. Hur många procent av familjer som består av 7 st barn består endast av
+            <p class="source">Källa: https://tilastokoulu.stat.fi/verkkokoulu_v2.xql?course_id=tkoulu_vaesto&lesson_id=5&subject_id=3&page_type=sisalto, 13.10.2020</p>
+            <ol>
+              <li>pojkar? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11a">
+              <div class="card card-body answer"><p>Sannolikheten är oberende av varandra.</p>
+                <p>Sannoliheten är \( P(\text{7 bröder}) = 0,511^7 = 0,009098\ldots \).</p>
+                <p>Alltså 9,1 %.</p>
+              </div></div> </li>
+              <li>flickor? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11b">
+              <div class="card card-body answer"><p>Sannolikheten för en flicka är 48,9 %.</p>
+                <p>Sannolikheten är \( P(\text{7 systrar}) = 0,489^7 = 0,006685\ldots \).</p>
+                <p>Alltså 6,7 %.</p>
+              </div></div> </li>
+              <li>Hur många procent flera familjer finns det som består av 7 bröder än familjer som består av 7 systrar? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11c">
+              <div class="card card-body answer"><p>Vi får förhållandet \( \dfrac{P(\text{7 bröder})}{P(\text{7 systrar})} = \dfrac{0,009098}{0,006685} = 1,3609\ldots \).</p>
+                <p>Alltså 36,1 % flera.</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>

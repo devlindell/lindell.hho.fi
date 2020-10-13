@@ -224,6 +224,10 @@ nav ul li a {
   color: #FFE4E3;
 }
 
+.source {
+  color: #2A272A;
+  font-size: 0.75rem;
+}
 
 .btn-sm, .btn-sm:visited {
   background-color: #BAD9DE;
