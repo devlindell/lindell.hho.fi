@@ -83,17 +83,22 @@
           <p>Toppens koordinater är \((3,4)\).</p>
         </div>
         <div class="summary box">
-          <p>Toppen är den punkt där parabeln byter riktning. Toppen för en parabel finns mitt mellan nollställena. Vill vi räkna ut x-koordinaten räknar vi ut den via \(\dfrac{\dfrac{-b-\sqrt{b^2-4ac}}{2a} + \dfrac{-b+\sqrt{b^2-4ac}}{2a}}{2} = -\dfrac{b}{2a} \).</p>
+          <p>Toppen är den punkt där parabeln byter riktning. Toppen för en parabel finns mitt mellan nollställena.</p>
+          <p>Vill du räkna ut \(x\)-koordinaten räknar du ut den via \(\dfrac{\dfrac{-b-\sqrt{b^2-4ac}}{2a} + \dfrac{-b+\sqrt{b^2-4ac}}{2a}}{2} = -\dfrac{b}{2a} \).</p>
 
         </div>
         <div class="exercise box">
           <strong>Exempel 3</strong> Bestäm på Geogebra ekvationen för vajrarna som spänner upp Golden Gate bron från San Francisco till Marin County i Kalifornien, USA .
           <a href="pics/10_GoldenGate.jpg" target="_blank"><img src="pics/10_GoldenGate.jpg" alt="" class="responsivepic600" /></a>
-          <!--<div class="video">
-        </div>-->
-        <p>VIDEO</p>
-        <p>In med bilden och punkter.</p>
-        <p>I CAS använd dig av RegressionPoly({A,B,C},2)  för att få funktionen</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/470227972" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <p>För att bestämma funktionen gör du följande.</p>
+          <ul>
+            <li>Importera bilden i GeoGebra.</li>
+            <li>Markera några punkter på kurvan som du vill ha. Ingen panik, man kan alltid flytta på punkterna.</li>
+            <li>I Inmatningsfältet eller CAS använder du dig av RegressionPoly({A,B,C},2), eller FitPoly för att bestämma funktionen.</li>
+          </ul>
         </div>
 
       </div>
@@ -103,6 +108,8 @@
 
         <ol>
          	<li><p>Kombinera rätt funktion med rätt graf.</p>
+            <p>Försök att fundera dig fram till rätt lösning. Fundera hur koefficienterna \( a \), \( b \) och \( c \) påverkar grafen av parabeln, \( y = ax^2 +bx +c \).</p>
+            <p>Vilken koefficient ändrar på hur brett parabeln öppnar sig? Vilken koefficeint flyttar parabeln i sidled? Vilken koefficient flyttar på parabeln uppåt och nedåt?</p>
         <p><img src="pics/andra_parabler.png" alt="" class="responsivepic600" /></p>
 
         <p>Välj bland följande:
@@ -249,16 +256,43 @@
           </ol>
         </li>
 
-        <li>I vilka punkter skär \(f(x)=-x^2-x+6\) \(x\)-axeln?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på variablen \( t \) gäller att funktionsvärdena för \( f(t) = 4t^2-t-5 \) och \( g(t) = t^2-t+7 \) är samma. Vilka är dessa funktionsvärden?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5.5">
+            <div class="card card-body answer"> <p>Vi skall lösa ekvationen \( f(t) = g(t) \).</p>
+              <p>Alltså \( 4t^2 -t-5 = t^2-t+7 \). Vi löser med rotformlen och får lösningarna \( t_1 = -2 \) och \( t = 2 \).</p>
+              <p>Då \( t = -2 \) har bägge funktionerna funktionsvärdet \( f(-2) = 13 \), och då \( t = 2 \) har bägge funktionerna funktionsvärdet \( f(2) = 9 \).</p>
+            </div></div>
+        </li>
+
+        <li>I vilka punkter skär \(f(x)=-x^2-x+6\) \(x\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
         <div class="collapse" id="6">
         <div class="card card-body answer"> <p>\(x\)-koordinaterna för skärningspunkterna hittar vi genom att bestämma nollställena. Alltså \(-x^2-x+6=0\) som har lösningarna \(x=2\) och \(x=-3\).</p>
         <p>För skärningspunkterna gäller att \(y\)-koordinaten har värdet 0.</p>
         <p>Skärningspunkterna är \((2,0)\) och \((-3,0)\).</p>
         </div></div></li>
-        <li>I vilken punkt skär \(f(x)=x^2-4x-5\) \(y\)-axeln?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+
+        <li>I vilka punkter skär \( f(x)=x^2+2x-3 \) \(x\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="6.5">
+        <div class="card card-body answer"> <p>\(x\)-koordinaterna för skärningspunkterna hittar vi genom att bestämma nollställena. Alltså \(x^2+2x-3=0\) som har lösningarna \(x_1 = -3 \) och \( x = 1 \).</p>
+        <p>För skärningspunkterna gäller att \(y\)-koordinaten har värdet 0.</p>
+        <p>Skärningspunkterna är \((-3,0)\) och \((1,0)\).</p>
+        </div></div></li>
+
+        <li><i class="fas fa-cogs fa-2x level"></i>I vilken punkt skär \(f(x)=x^2-4x-5\) \(y\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
         <div class="collapse" id="7">
         <div class="card card-body answer"> <p>Då funktionen skär \(y\)-axeln gäller det att \(x\)-koordinaten har värdet 0. Vi får att \(f(0)=-5\).</p>
         <p>Punkten är \((0,-5)\).</p></div></div></li>
+
+        <li><i class="fas fa-cogs fa-2x level"></i>I vilken punkt skär \( f(x) = x^2-7x+6 \) \(y\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="7.5">
+        <div class="card card-body answer"> <p>Då funktionen skär \(y\)-axeln gäller det att \(x\)-koordinaten har värdet 0. Vi får att \(f(0)=6\).</p>
+        <p>Punkten är \((0,6)\).</p></div></div>
+        </li>
 
         <li><i class="fas fa-jedi fa-2x level"></i>En parabel går genom punkterna \((-1,0)\), \((0,-5)\) och \((2,-9)\). Bestäm uttrycket för funktionen.
         <p>Lös uppgiften utan att använda dig av räknare eller räknarprogram. Du kan kolla lösningen på räknare eller räknarprogram. Ekvationssystemet kan du lösa på räknare om du vill.</p>

@@ -54,7 +54,7 @@
       <h1>10. Betingad sannolikhet</h1>
       <section>
         <div class="theory">
-          Om du inte är bekant med mängdlära från tex kurs 11 så rekommenderas att du börjar med kapitel 6.1.
+          Om du inte är bekant med mängdlära från tex kurs 11 så rekommenderas att du börjar med kapitel <a href="11_mangdlara.html" target="_blank" />11 om Mängdlära</a>.
           <div class="intro box">
             <p>Anna, Bertil, Cecilia och Daniel grubblar igen. De skall resa på solsemester och funderar på sannolikheten att det kommer att regna väl framme under en slumpmässigt vald dag.</p>
             <p>För semesterorten gäller att sannolikheten för lågtryck är 0,1, ostadigt 0,2 och sannolikheten för högtryck är 0,7.</p>
@@ -87,7 +87,7 @@
             <h4>Lösning</h4>
             <p>Vi använder oss av samma beteckningar som ovan. Nu är vi intresserade av P(högtryck|regn).</p>
             <p>Vi kan skriva P(högtryck|regn) = \( \dfrac{\textrm{P(högtryck och regn)}}{\textrm{P(regn)}} \\ = \dfrac{\textrm{P(regn och högtryck)}}{\textrm{P(regn och lågtryck)}+\textrm{P(regn och ostadigt)}+\textrm{P(regn och högtryck)}} \).</p>
-            <p>Den sökta sannolikheten är \( \dfrac{0,7\cdot0,1}{0,1\cdot0,6 + 0,2\cdot 0,3 + 0,7\cdot 0,1} = 0,3684 \).</p>
+            <p>Den sökta sannolikheten är \( \dfrac{0,7\cdot0,1}{0,1\cdot0,6 + 0,2\cdot 0,3 + 0,7\cdot 0,1} = 0,3684 \)</p>
             <p>Sannolikheten att det är högtryck ute är 0,37.</p>
           </div>
         </div>
@@ -99,13 +99,15 @@
 
           <li>12,6 % av alla män och 9,9 % av alla kvinnor är vänsterhänta. Vi studerar en population som består av 45 % män och 55 % kvinnor. Från populationen väljs slumpmässigt en person. Bestäm sannolikheten för att personen är
             <ol>
-              <li>en vänsterhänt kvinna <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>en vänsterhänt kvinna
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
               <div class="card card-body answer"><p>\( P(\text{Vänsterhänt kvinna}) = P(\text{Kvinna och vänsterhänt}) \\ = 0,55\cdot 0,099 = 0,05445 \).</p></div></div> </li>
               <li>vänsterhänt <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
               <div class="card card-body answer"><p>\( P(\text{Vänsterhänt}) = P(\text{Vänsterhänt man}) \text{ eller }P(\text{Vänsterhänt kvinna}) \\ = 0,45\cdot 0,126 + 0,55 \cdot 0,099 = 0,11115 \).</p></div></div> </li>
-              <li>en kvinna om vi vet att personen är vänsterhänt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>en kvinna om vi vet att personen är vänsterhänt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
               <div class="card card-body answer"><p>Vi får att \( P(\text{Kvinna} \mid \text{Vänsterhänt}) = \dfrac{P(\text{Kvinna och vänsterhänt})}{P(\text{Man och vänsterhänt})+P(\text{Kvinna och vänsterhänt})} \\ = \dfrac{0,55 \cdot 0,099}{0,45\cdot 0,126 + 0,55 \cdot 0,099} = 0,48987 \).</p></div></div> </li>
             </ol>
@@ -113,10 +115,12 @@
 
           <li>I en fabrik där man tillverkar lampor finns det tre produktionslinjer. Linje 1 producerar 35 %, linje 2 producerar 40 % och linje 3 producerar 25 % av alla lampor. Av lamporna som produceras vid linje 1 är 3 % defekta. För linje 2 gäller 4 % och linje 3 är 6 % defekta. Bestäm sannolikheten för att
             <ol>
-              <li>en slumpmässigt vald lampa är defekt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>en slumpmässigt vald lampa är defekt?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
               <div class="card card-body answer"><p>\( P(\text{Defekt}) = 0,35\cdot 0,03 + 0,40\cdot 0,04 + \cdot 0,25\cdot 0,06 = 0,0415 \).</p></div></div> </li>
-              <li>en lampa som är defekt kommer från linje 1. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>en lampa som är defekt kommer från linje 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
               <div class="card card-body answer"><p>\( P(\text{Linje 1} \mid \text{Defekt}) \\ =  \dfrac{0,03\cdot 0,35}{0,03\cdot 0,35 + 0,04\cdot 0,4 + 0,06\cdot 0,25} \\ =0,25301  \)</p></div></div> </li>
               <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
