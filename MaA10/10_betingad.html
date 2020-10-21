@@ -83,7 +83,7 @@
           </div>
           <p>I exemplet ovan kan vi gå uppifrån ner och lösa problemet. Oftast är livet inte så lätt och inom sannolikhetsläran utnyttjar vi <a href="http://sv.wikipedia.org/wiki/Bayes_sats" target="_blank">Bayes sats</a> för att lösa sannolikhets problem där vi vill gå baklänges.</p>
           <div class="exercise box">
-            <p>Antag att Anna, Bertil, Cecilia och Daniel är på sin semesterort. En morgon vaknar de till att det regnar. Vilken är sannolikheten att det är högtryck ute?</p>
+            <p><strong>Exempel 1</strong> Antag att Anna, Bertil, Cecilia och Daniel är på sin semesterort. En morgon vaknar de till att det regnar. Vilken är sannolikheten att det är högtryck ute?</p>
             <h4>Lösning</h4>
             <p>Vi använder oss av samma beteckningar som ovan. Nu är vi intresserade av P(högtryck|regn).</p>
             <p>Vi kan skriva P(högtryck|regn) = \( \dfrac{\textrm{P(högtryck och regn)}}{\textrm{P(regn)}} \\ = \dfrac{\textrm{P(regn och högtryck)}}{\textrm{P(regn och lågtryck)}+\textrm{P(regn och ostadigt)}+\textrm{P(regn och högtryck)}} \).</p>
@@ -129,19 +129,27 @@
             </ol>
           </li>
 
-          <!--<li>Uppgift
+          <li>Sannolikheten för att en korgbollspelare gör korg i första straffkastet är 60 %, sannolikheten för korg i det andra är 70 % om det blivit korg i det första kastet, och sannolikheten för korg i det tredje kastet är 80 % om det blivit korg i de båda föregående kasten. Vad är sannolikheten att korgbollspelaren gör korg i de två första straffkasten och missar i det tredje.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi söker sannolikheten för att 1:a lyckas, 2:a lyckas och 3:e misslyckas.</p>
+              <p>Vi får sannolikheten \( P(\text{1:a lyckas} \cdot P(\text{2:a lyckas}) \cdot P(\text{3:e misslyckas}) = \\
+                0,60 \cdot 0,70 \cdot (1-0,80) = 0,084 \)</p>
+              <p>Alltså 0,08.</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <li>För en bergsby gäller följande observationer
+              <ul>
+                <li>om det inte regnar en dag så regnar det följande dag med sannolikheten \( \dfrac{1}{3} \).</li>
+                <li>om det regnar en dag </li>
+              </ul>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -175,16 +183,22 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Sannolikheten är \( P(\text{Strupcancer} \mid \text{ Rökare}) \\=   \dfrac{P(\text{Strupcancer och rökare})}{P(\text{Rökare})}   \\= \dfrac{0,001 \cdot 0,90}{0,10} = 0,009 \).</p>
+              <p>Av hela befolkningen drabbas 0,1 % av strupcancer, alltså 0,001.</p>
               <p>Detta betyder att strupcancer är 9 gånger vanligare hos rökare än ickerökare.</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>I en fruktkorg finns röda och gröna äpplen. Vi tar slumpmässigt två äpplen ur korgen och får två röda äpplen med sannolikheten \( \dfrac{6}{11} \). Hur många röda äpplen finns det i korgen då antalet gröna äpplen är 3?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi betecknar antalet röda äpplen med \( x \).</p>
+                <p>Då kan vi bilda sannolikheten \( P(\text{det första och andra äpplet är rött}) = \dfrac{6}{11} \).</p>
+                <p>Alltså \( P(\text{första är rött}) \cdot P(\text{det andra rött | det första rött}) = \dfrac{6}{11} \).</p>
+                <p>Vi får ekvationen \( \dfrac{x}{x+3} \cdot \dfrac{x-1}{x+2} = \dfrac{6}{11} \). Då vi löser ekvationen får vi rötterna \( x_1 = 9 \) och \( x_2 = -0,8 \).</p>
+                <p>Alltså 9 st.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>

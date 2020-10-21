@@ -55,7 +55,7 @@
       <section>
         <div class="theory">
           <div class="intro box">
-            <p>Bertil sår blommor. På påsen står att fröna gror med sannolikheten 0,95 %. Han sår 10 st frön. Han funderar på sannolikheten för att minst 9 frön gror.</p>
+            <p>Bertil sår blommor. På påsen står att fröna gror med sannolikheten 95 %. Han sår 10 st frön. Han funderar på sannolikheten för att minst 9 frön gror.</p>
           <p>Sannolikheten att minst 9 frön gror betyder att 9 eller 10 frön gror.</p>
           <p>Har vi 9 frön som skall gro skall 1 frö inte gro. Sannolikheten för att ett frö gror är 0,95 och att det inte gror är 1-0,95=0,05. Sannolikheten för att 9 frön gror och 1 inte gror är \( 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,05 = 0,95^9 \cdot 0,05 \).</p>
           <p>Dessa kombinationer kan vi bilda på \( \displaystyle\displaystyle{10 \choose 9} \) olika sätt. Betyder att sannolikheten för att 9 frön gror är \( \displaystyle{10 \choose 9}0,95^9 \cdot 0,05 \).</p>
@@ -64,10 +64,17 @@
           <p>I sannolikheter som ovan där vi har upprepade försök av olika kombinationer talar vi om binomialsannolikhet.</p>
         </div>
         <div class="summary box">
-          <p>Låt p vara sannolikheten att A sker. Då sker inte A med sannolikheten 1-p. Sannolikheten för att A sker k gånger av n är \(  \displaystyle{n \choose k}p^n\cdot (1-p)^{n-k}. \).</p>
+          <p>Låt \( p \) vara sannolikheten att A sker. Då sker inte A med sannolikheten \( 1-p \). Sannolikheten för att A sker \( k \) gånger av n är \(  \displaystyle{n \choose k} p^k \cdot (1-p)^{n-k}. \).</p>
+          <p>Upprepat försök kallas också för binomialsannolikhet.</p>
         </div>
         <div class="exercise box">
-          <p><strong>Exempel 1</strong> I ett hörförståelse test som består av 20 frågor med alternativen a, b, c och d, vet en elev svaren till 5 av frågorna. Resten gissar hen. Bestäm sannolikheten att hen</p>
+          <p><strong>Exempel 1</strong> Jobba på GeoGebras statistikdel och bilda binomialfördelningen för antal frön som gror i introduktionen. Du sår 10 st frön och att de gror med sannolikheten 95 %. Hur många frön kan vi vänta oss att gror?</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/470693907" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="exercise box">
+          <p><strong>Exempel 2</strong> I ett hörförståelse test som består av 20 frågor med alternativen a, b, c och d, vet en elev svaren till 5 av frågorna. Resten gissar hen. Bestäm sannolikheten att hen</p>
           <ol start="1" style="list-style-type:lower-alpha">
             <li>har 15 rätt.</li>
             <li>har minst 15 rätt.</li>
@@ -97,29 +104,49 @@
               <div class="card card-body answer"><p>\( \displaystyle{10 \choose 8} 0,91^8 \cdot 0,09^2 = 0,171407\ldots \).</p></div></div> </li>
               <li>Bestäm sannolikheten att alla frön gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>\displaystyle{10 \choose 10} 0,91^{10}\cdot 0,09^0 = 0,91^{10} = 0,389416\ldots \).</p></div></div> </li>
+              <div class="card card-body answer"><p>\( \displaystyle{10 \choose 10} 0,91^{10}\cdot 0,09^0 = 0,91^{10} = 0,389416\ldots \).</p></div></div> </li>
               <li>Bestäm sannolikheten att minst 8 st gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
               <div class="card card-body answer"><p>Minst 8 st gror betyder att 8, 9 eller 10 st gror.<p>Vi får \( \displaystyle{10 \choose 8}0,91^8\cdot 0,09^2 + \displaystyle{10 \choose 9}0,91^9\cdot 0,09^1 + \displaystyle{10 \choose 10}0,91^{10}\cdot 0,09^0  \\= 0,945959\ldots \)</p></div></div> </li>
               <li>Bestäm sannolikheten att högst 7 st gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1d">
               <div class="card card-body answer"><p>Att högst 7 st gror är komplementet till att 8, 9 eller 10 st gror. I föregående delen räknade vi ut sannolikheten för att 8, 9 eller 10 st gror.<p>Vi får \( 1 - 0,9459599\ldots = 0,0540400\ldots \).</p></div></div> </li>
+              <li>Jobba på GeoGebras statistikdel och bilda binomialfördelningen för antal frön som gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p><img src="pics/12-2.png" class="responsivepic600" /></p>
+              </div></div> </li>
             </ol>
           </li>
 
-          <!--<li>Uppgift
+          <li>Vi kastar en tärning 5 gånger. Bestäm följande sannolikheter.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Att vi får exakt 2 st sexor. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Sannolikheten för en 6:a är \( \dfrac{1}{6} \). Sannolikheten för något annat är \( \dfrac{5}{6} \).</p>
+              <p>Vi får \( \displaystyle{5 \choose 2} (\dfrac{1}{6})^2(\dfrac{5}{6})^3 = 0,16075\ldots \)</p>
+              <p>Alltså 0,16.</p>
+              </div></div> </li>
+              <li>Att vi får högst 2 st sexor. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>För att få högst 2 st sexor skall vi få 0, 1 eller 2 st sexor. På motsvarande sätt som ovan.</p>
+              <p>Vi får \( \displaystyle{5 \choose 0} (\dfrac{1}{6})^0(\dfrac{5}{6})^5 + \displaystyle{5 \choose 1} (\dfrac{1}{6})^1(\dfrac{5}{6})^4 + \displaystyle{5 \choose 2} (\dfrac{1}{6})^2(\dfrac{5}{6})^3 =  0,964486\ldots \).</p>
+              <p>Alltså 0,96.</p>
+              </div></div> </li>
+              <li>Att vi får minst 2 st sexor. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi skall få 5, 4, 3 eller 2 st sexor.</p>
+              <p>Vi utnyttjar förra uppgifterna. Sannolikheten för 5, 4 eller 3 är komplementet till b). Sannolikheten för 2 st är i a).</p>
+              <p>Vi får \( 1 - 0,964486\ldots + 0,16075\ldots = 0,19630\ldots \).</p>
+              <p>Alltså 0,17.</p>
+              </div></div> </li>
+              <li>Jobba på GeoGebras statistikdel och bilda binomialfördelningen för händelsen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Fördelningen är följande:</p>
+              <p><img src="pics/12-3.png" class="responsivepic600" /></p>
+              </div></div> </li>
             </ol>
-          </li>-->
+          </li>
 
           <li>I styktipset väljer man 1, X eller 2 bland 13 matcher. Bestäm sannolikheten att då vi spelar på stryktipset och gissar 10 eller 11 rätt.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -128,19 +155,17 @@
                 <p>Vi får \( \displaystyle{13 \choose 11}(\frac{1}{3})^{11}\cdot (\frac{2}{3})^{2} + \displaystyle{13 \choose 10}(\frac{1}{3})^{10}\cdot (\frac{2}{3})^{3} = 0,0016307\ldots \).</p></div></div>
                 <ol>
 
-          <!--</li>-->
-
           <li>Vilken är sannolikheten att då vi spelar stryktips har mindre än 10 rätt?
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
               <div class="card card-body answer"> <p>Mindre än 10 rätt är komplementet till 10, 11, 12 eller 13 rätt.</p>
                 <p>Vi får \( 1- (\displaystyle{13 \choose 10}(\frac{1}{3})^{10} (\frac{2}{3})^{3}+ \displaystyle{13 \choose 11}(\frac{1}{3})^{11} (\frac{2}{3})^{2}+ \displaystyle{13 \choose 12}(\frac{1}{3})^{12} (\frac{2}{3})^{1}+\displaystyle{13 \choose 13}(\frac{1}{3})^{13} (\frac{2}{3})^{0} )= 0,998352\ldots \).</p></div></div>
           </li>
 
           <li>Jobba på GeoGebras statistikdel och bilda binomialfördelningen för stryktipset, där vi spelar 13 matcher och spelar om matchen slutar med 1 X eller 2.
             <p>Genom att gissa, hur många rätt kommer vi högst sannolikt att ha?</p>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
               <div class="card card-body answer"> <p>På GeoGebras statistikdel får vi följande graf och tabell:</p>
               <p><img src="pics/12-4.png" class="responsivepic600" /></p>
               <p>Vi ser att största sannolikheten är för 4 rätt, 0,23.</p>
@@ -148,8 +173,8 @@
           </li>
 
           <li>Då Daniel spelar stryktips har han 8 st "säkra" matcher. Bestäm sannolikheten att han kommer att vinna pengar då det i alla fall krävs 10 rätt för utbetalning.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
               <div class="card card-body answer"> <p>Daniel skall i alla fall ha 10, 11, 12 eller 13 matcher rätt.</p>
                 <p>8 "säkra" matcher betyder att av 13-8=5 matcher skall vi gissa 2, 3, 4 eller 5 rätt.</p>
                 <p>Vi får \( \displaystyle{5 \choose 2}(\frac{1}{3}^{2}) (\frac{2}{3}^{3})+ \displaystyle{5 \choose 3}(\frac{1}{3}^{3}) (\frac{2}{3}^{2}) \ldots \) eller så via komplementet \( 1-\displaystyle{5 \choose 0}(\frac{1}{3}^{0}) (\frac{2}{3}^{5}) + \displaystyle{5 \choose 1}(\frac{1}{3}^{1}) (\frac{2}{3}^{4})) = 0,53909\ldots \).</p></div></div>
@@ -157,25 +182,48 @@
 
         </ol>
       </li>
-          <li><i class="fas fa-shapes fa-2x level"></i>HC Hakkila och Martsarin Myrsky Hockey möts åter igen i finalserien. För att vinna mästerskapet krävs 4 segrar. Under denna säsong har Martsarin Myrsky Hockey vunnit 5 matcher av 6 som lagen möts i.
-            <p>Bilda binomialfördelningen över antalet matcher som krävs i finalserien.</p>
+          <li><i class="fas fa-shapes fa-2x level"></i>HC Hakkila och Martsarin Myrsky Hockey möts åter igen i finalserien. För att vinna mästerskapet krävs 4 segrar. Under denna säsong har Martsarin Myrsky Hockey vunnit 5 matcher av 6 som lagen möts i. Bestäm sannolikheten att Martsarin Myrsky Hockey vinner mästerskapet. Bilda binomialfördelningen på över antalet matcher som krävs i finalserien. Hur många matcher kommer det högst sannolikt att behövas spela?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>Vi jobbar på GeoGebra. Sannolikheten att Martsarin Myrsky Hockey vinner en match är \( \dfrac{5}{6} \) och HC Hakkila \( \dfrac{1}{6} \).</p>
               <p>Vi får fördelningen</p>
               <p><img src="pics/12-6.png" class="responsivepic600" /></p>
-              <p>Vi ser att största sannlikheten har 6 matcher, 0,39. Minsta sannolikheten har 4 matcher, 0,08.</p>
+              <p>För att Martsarin Myrsky Hockey skall vinna krävs 4, 5, 6 eller 7 matcher.</p>
+              <p>Deras sannolikhet är \( 0,982367\ldots \), alltså 0,98.</p>
+              <p>Största sannolikheten är för 6 matcher, 0,39.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Aviapolis Basket leder med en poäng i en korgbollsmatch då speltiden är slut. Kivistön Koripallo har fått tre frikast vilka ger ett poäng var om de lyckas. Sannolikheten för ett lyckat frikast är 0,75. Med vilken sannolikhet vinner Kivistön Koripallo matchen?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.5">
+              <div class="card card-body answer"> <p>Kivistön Koripallo vinner om de får 2 eller 3 poäng.</p>
+                <p>Vi får sannolikheten \( P(\text{Kivistön Koripallo får 2 poäng}) + P(\text{Kivistön Koripallo får 3 poäng}) = \\ \displaystyle{3 \choose 2} \cdot 0,75^2 \cdot 0,25^1 + \displaystyle{3 \choose 3} \cdot 0,75^3 \cdot 0,25^0 = 0,84375 \)</p>
+                <p>Alltså 0,84.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En handelsman vet av erfarenhet att sannolikheten att en kund som kommer till hans souvenirbutik köper en T-skjorta är 90 %. En dag kommer en charterbuss med 48 personer till butiken. Vilken är sannolikheten att den mängd på 45 T-skjortor som finns i lagret inte skall ta slut om varje kund köper högst en tröja?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.7">
+              <div class="card card-body answer"> <p>Mängden T-skjortor räcker om högst 45 personer köper en.</p>
+              <p>Vi får sannolikheten \( P(\text{Högst 45 personer köper}) = 1 - P(\text{Minst 46 personer köper}) =  \\ 1 - P(\text{46 eller 47 eller 48 köper}) = 1 - (P(46) + P(47) + P(48)) = \\
+                1 - (\displaystyle{48 \choose 46} \cdot 0,90^46 \cdot 0,10^2 + \displaystyle{48 \choose 47} \cdot 0,90^47 \cdot 0,10^1 + \displaystyle{48 \choose 48} \cdot 0,90^48 \cdot 0,10^0) = 0,87109\ldots  \) </p>
+              <p>Alltså 0,87.</p>
             </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>I ett lotteri är sannolikheten för vinst 25 %. Vi köper 5 lotter. Bestäm sannolikheterna för 0, 1, 2, 3, 4 och 5 vinster och presentera sannolikheterna grafiskt.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Sannolikheterna är:</p>
-                <p><img src="pics/7-2.png" alt="" class="responsivepic600" /></p>
+              <div class="card card-body answer"> <p>På GeoGebra får vi det som:</p>
+                <p><img src="pics/12-8.png" class="responsivepic600" /></p>
+                <p>På TI-CAS bestämmer vi först sannolikheterna för att sedan rita grafen.</p>
+                <p>Sannolikheterna är:</p>
+                <p><img src="pics/7-2.png" alt="" class="responsivepic400" /></p>
                 <p>Observera formeln hur du lätt kommer åt de andra sannolikheterna.</p>
                 <p>Grafen:</p>
-                <p><img src="pics/7-3.png" alt="" class="responsivepic600" /></p></div></div>
+                <p><img src="pics/7-3.png" alt="" class="responsivepic400" /></p></div></div>
           </li>
 
           <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
