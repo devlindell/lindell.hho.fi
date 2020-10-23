@@ -55,7 +55,7 @@
             <h4>Bevis</h4>
             <p>Vi tar funktionen \( h(x) \) som är produkten av \( f(x) \) och \( g(x) \), alltså \( h(x)= f(x)g(x) \). Vi skall visa att \( h'(x)=f'(x)g'(x) \).</p>
             <p>\( \begin{array}{rl} h'(x)= & \lim_{h \to 0} \dfrac{h(x+h)-h(x)}{h} \\ = & \lim_{h \to 0} \dfrac{f(x+h)g(x+h)-f(x)g(x)}{h} \\ = & \lim_{h \to 0} \dfrac{f(x+h)g(x+h)-f(x)g(x+h)+f(x)g(x+h)-f(x)g(x)}{h} \\ = & \lim_{h \to 0} \dfrac{[f(x+h)-f(x)]g(x+h)+f(x)[g(x+h)-g(x)]}{h} \\ = & \lim_{h \to 0} \dfrac{f(x+h)-f(x)}{h} \cdot \lim_{h\to 0} g(x+h)+ \lim_{h\to 0}f(x)\cdot \lim_{h\to 0}\dfrac{g(x+h)-g(x)}{h} \\ = &f'(x)g(x)+f(x)g'(x)\\ \end{array} \)</p>
-            <p>Alltså \( f(x)g(x)=f'(x)g(x)+g'(x)f(x) \)</p>
+            <p>Alltså \( Df(x)g(x)=f'(x)g(x)+g'(x)f(x) \)</p>
           </div>
           <div class="exercise box">
             <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)(x+1) \) genom att använda produktregeln.</p>
@@ -64,6 +64,10 @@
             </div>
           </div>
           <p>När vi deriverar funktioner som består av en funktion gånger en annan funktion så får vi först förenkla och sedan derivera. Eller så får vi derivera med hjälp av produktregeln.</p>
+          <div class="summary box">
+            <p>Derivatan av produkten mellan två funktioner är \( D f(x)g(x)=f'(x)g(x)+g'(x)f(x) \).</p>
+            <p>Vi kan också använda oss av notationen \( Dfg = f'g + g'f \).</p>
+          </dvi>
         </div>
       </section>
       <section>
@@ -105,17 +109,17 @@
               <div class="card card-body answer"> <p>\( D(x-2)(x-2)=1(x-2)+1(x-2)=2x-4 \) eller som \( D(x^2-4x+4)=2x-4 \).</p></div></div>
           </li>
 
-          <!--<li>Uppgift
+          <li>Bestäm \( D 2x(x+1) \)
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får \( D 2x(x+1) = 2(x+1) + 2x\cdot 1 = 2x +2 +2x = 4x+2\).</p></div></div>
           </li>
 
-          <li>Uppgift
+          <li>Bestäm \( D x(x-1)(x+1) \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi får \( D x(x-1)(x+1) = Dx(x^2-1) = 1(x^2-1)+x\cdot 2x = x^2-1+2x^2 = 3x^2 -1 \).</p></div></div>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm minsta värde för funktionen \( f(x)=(x-1)(x+2) \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -132,25 +136,40 @@
                 <p>Teckenschemat ger att funktionen växer, avtar och växer. Lokalt största värde i \( \dfrac{1}{3} \), värdet är \( \dfrac{4}{27} \). Lokalt minsta värde i \( 1 \), värdet är \( 0 \).</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter där \( f(x) = x(x+1)(x+2) \) byter riktning.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Antingen förenklar du till \( f(x) = (x^2+x)(x+2) \) eller till \( f(x) = x^3+3x^2+2x \) före du deriverar.</p>
+              <p>\( f'(x) = 3x^2+6x+2 \).</p>
+              <p>De punkter där funktionen byter riktning är derivatans nollställen, \( f'(x)=0 \). Alltså \( 3x^2 +6x+2 = 0 \). Punktern är \( x_1 = \dfrac{-3-\sqrt{3}}{3} \) och  \( x_2 = \dfrac{-3+\sqrt{3}}{3} \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( f'(1) \) då \( f(x) = (x^3-4)(x^2+1) \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får \( f'(x) = 3x^2(x^2+1) + (x^3-4)\cdot 2x = 6x^2 + 6x -12 \).</p>
+              <p>\( f'(1) = 6\cdot 1^2 +6\cdot 1 -12 = 0 \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm när funktinen \( f(x) = (x^2-2)(2x+1) \) är växande och avtagande.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x) = 2x(2x+1)+(x^2-2)\cdot 2 = 6x^2+2x-4 \).</p>
+              <p>Derivatans nollställe, \( f'(x)=0 \), alltså \( 6x^2+2x-4 = 0 \) då \( x = -1 \) och \( x = \dfrac{2}{3} \).</p>
+              <p>Vi bildar ett teckenchema:</p>
+              <p> \( \begin{array}{c|ccccc}
+                & & -1 & & \dfrac{2}{3} \\
+                \hline f'(x) & + & 0 & - & 0 & + \\
+                f'(x) & \nearrow & & \searrow & & \nearrow \\
+                \end{array} \) </p>
+              <p>Vi har ett lokalt maximum i \( x = -1 \), \( f(-1) = 1 \).</p>
+              <p>Vi har ett lokalit minimum i \( x = \dfrac{2}{3} \), \( f(\dfrac{2}{3}) = -\dfrac{98}{27} \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Bestäm största och minsta värde för funktionen \( f(x) = \) är växande och avtagande.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
