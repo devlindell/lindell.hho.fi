@@ -54,14 +54,26 @@
       <h1>15. Korrelation</h1>
       <section>
         <div class="theory">
-          <p>I arbetet om kurskamraternas längder som Anna, Bertil, Cecilia och Daniel fick de som respons att undersöka om det finns ett samband mellan hur könet påverkar längden. Inom statistik talar vi om korrelation. Vi undersöker om könet korrelerar med längden.</p>
-          <p>Före vi kommer till sambandet mellan kön och längd så studerar vi följande bilder.</p>
-          <p><img src="pics/korr_1.png" alt="" class="responsivepic600" /></p>
-          <p>och </p>
-          <p><img src="pics/korr_2.png" alt="" class="responsivepic600" /></p>
-          <p>I bild 1 har vi punkterna fint samlade. Du märker att de nästan lägger sig på en linje. Här har vi ett bra samband mellan ålder och längd.</p>
-          <p>I bild 2 märker vi igen att punkterna är spridda över hela grafen. Här finns ingen direkt korrelation mellan när du stiger upp på morgonen och vad du äter till morgonmål.</p>
-          <p>För att mäta hur bra två variabler korrelerar använder vi oss av <a href="http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient" target="_blank">Pearsons</a> och <a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient" target="_blank">Spearmans</a> korrelationskoefficienter. Det viktiga som du skall veta är att värdet för korrelationen, r, ligger mellan -1 och 1. Då \( \mid r \mid  >  0,8 \) har vi en stark korrelation.</p>
+          <p>I arbetet om kurskamraternas längder som Anna, Bertil, Cecilia och Daniel fick de som respons att undersöka om det finns ett samband mellan hur könet påverkar längden. Inom statistik talar vi om att undersöka om det finns en korrelation, samband, mellan två variabler. </p>
+          <p>Vi undersöker om könet korrelerar med längden.</p>
+          <p>Men före vi gör det studerar vi följande tre bilder.</p>
+          <p><img src="pics/korr_1.png" alt="" class="responsivepic400" /></p>
+          <p>Bild 1, Samband mellan längd och ålder?</p>
+          <p><img src="pics/korr_2.png" alt="" class="responsivepic400" /></p>
+          <p>Bild 2, Samband mellan typ av morgonmål och när man stiger upp?</p>
+          <p><img src="pics/korr_3.png" alt="" class="responsivepic400" /></p>
+          <p>Bild 2, Samband mellan mängd av sand genom kroppen och ålder?</p>
+          <p>I bild 1 har vi punkterna fint samlade. Du märker att de nästan lägger sig på en linje. Här har vi ett bra samband mellan ålder och längd. Vi har en positiv korrelation.</p>
+          <p>I bild 2 märker vi igen att punkterna är spridda över hela grafen. Här finns ingen direkt korrelation mellan när du stiger upp på morgonen och vad du äter till morgonmål. Korrelationen är nära noll.</p>
+          <p>Bild 3 påminner om bild 1 på så sätt att punkterna är fint samlade. Vi har ett samband mellan ålder och hur mycket sand som far genom kroppen, där mängden sand minska med åldern. Vi har en negativ korrelation.</p>
+          <p>För att mäta hur bra två variabler korrelerar använder vi oss av <a href="http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient" target="_blank">Pearsons</a> och <a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient" target="_blank">Spearmans</a> korrelationskoefficienter. Det viktiga som du skall veta är att värdet för korrelationen, r, ligger mellan -1 och 1. Då \( \mid r \mid  >  0,8 \) har vi en stark korrelation. </p>
+          <table>
+            <tr class="MaA10"><th>Värdet på \( r \)</th><th>Korrelation</th></tr>
+            <tr><td>0 - 0,30</td><td>betydelselös</td></tr>
+            <tr><td>0,30 - 0,60</td><td>måttlig</td></tr>
+            <tr><td>0,60 - 0,80</td><td>märkbar</td></tr>
+            <tr><td>0,80 - 1</td><td>stark</td></tr>
+          </table>
           <p>Nu är vi färdiga att gå tillbaka till könen och längden. Eftersom vi inte kan pricka in flicka och pojke ger vi dem värdena 1 och 2 (eller 2 och 3. Det är ingen skillnad så länge de har något värde).</p>
           <p>Tabellen blir och se ut som följande:</p>
             <table>
@@ -77,6 +89,7 @@
             <div class="video">
               <iframe src="https://player.vimeo.com/video/371198148" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
+            <p>På LibreOfficeCalc får du fram korrelationskoefficienten antingen via en graf eller så direkt med kommandot =korrel().</p>
           </div>
       </section>
       <section>
@@ -133,31 +146,90 @@
             </ol>
           </li>
 
-          <!--<li>Uppgift
+          <li>Anna och Bertil gjorde ett statistiskt arbete över om det finns en korrelation mellan längden av skolvägen och tiden som man kommer i tid till första lektionen. De följde med sina klasskamraters tider under en vecka och de fick följande data.
+            <table>
+              <tr class="MaA10"><th>Avstånd till skolan (km)</th><th>Minuter man är på plats före lektionen börjar. + är i tid, - är försenad.</th><tr>
+              <tr><td>1,5</td><td>5</td></tr>
+              <tr><td>1,7</td><td>5</td></tr>
+              <tr><td>1,8</td><td>5</td></tr>
+              <tr><td>2,0</td><td>5</td></tr>
+              <tr><td>3,6</td><td>5</td></tr>
+              <tr><td>0,4</td><td>-2</td></tr>
+              <tr><td>1,2</td><td>7</td></tr>
+              <tr><td>0,8</td><td>-4</td></tr>
+              <tr><td>5,3</td><td>10</td></tr>
+              <tr><td>0,1</td><td>1</td></tr>
+              <tr><td>1,3</td><td>-3</td></tr>
+              <tr><td>1,7</td><td>-15</td></tr>
+              <tr><td>0,6</td><td>7</td></tr>
+              <tr><td>0,9</td><td>6</td></tr>
+              <tr><td>1,1</td><td>4</td></tr>
+            </table>
+              <p>Finn det en korrelation mellan avståndet till skolan och vilken tid man är i skolan?</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>En graf i LibreOffice ger att \( R^2 = 0,1067\ldots \). Alltså \( R = 0,3266\ldots \).</p>
+              <p>Eller kommandot =Korrel() ger \( 0,3266\ldots \).</p>
+              <p>Korrelationen är måttlig. Alltså inte direkt.</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <li>Cecilia och Daniel gjorde ett statistiskt arbete över om det finns ett samband mellan hur många timmar per dygn som man sover och ålder. De intervjuade personer i sin närmsta krets och fick följande data.
+            <table>
+              <tr class="MaA10"><th>Ålder</th><th>Timmar man sover per dygn.</th><tr>
+              <tr><td>17</td><td>7,5</td></tr>
+              <tr><td>18</td><td>6,5</td></tr>
+              <tr><td>17</td><td>8</td></tr>
+              <tr><td>15</td><td>8,5</td></tr>
+              <tr><td>47</td><td>8,5</td></tr>
+              <tr><td>48</td><td>8,5</td></tr>
+              <tr><td>55</td><td>6,5</td></tr>
+              <tr><td>57</td><td>7,5</td></tr>
+              <tr><td>67</td><td>7,5</td></tr>
+              <tr><td>84</td><td>6</td></tr>
+              <tr><td>5</td><td>10</td></tr>
+              <tr><td>3</td><td>11</td></tr>
+              <tr><td>12</td><td>9</td></tr>
+              <tr><td>15</td><td>8,5</td></tr>
+              <tr><td>11</td><td>8</td></tr>
+            </table>
+            <p>Finns det ett samband mellan ålder och hur många timmar man sover per dygn?</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>På LibreOfficeCalc får vi korrelationen till \( -0,6407\ldots \).</p>
+              <p>Vi har en negativ korrelation. Korrelationen är märkbar. Det betyder att ju äldre man blir destu mindre sover man per dygn.</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Följade uppgift är från korta matematikens studentexamensprov från hösten 2020.
+            <p>Bedöm på basis av din allmänbildning vilket av alternativen som bäst beskriver korrelationen mellan följande variabler.</p>
+            <table>
+              <tr class="MaA10"><th></th><th>Positiv korrelation</th><th>Korrelationen är nära 0</th><th>Negativ korrelation</th></tr>
+              <tr><td>Längd och vikt hos finska barn.</td><td></td><td></td><td></td></tr>
+              <tr><td>Skonummer och blodtryck hos finländska vuxna.</td><td></td><td></td><td></td></tr>
+              <tr><td>Ett lands bruttonationalprodukt per invånare och barndödlighet.</td><td></td><td></td><td></td></tr>
+              <tr><td>Lodräta och vågräta koordinater för pilar som träffat en piltavla.</td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"> <p>Den rätta raden är</p>
+              <table>
+                <tr class="MaA10"><th></th><th>Positiv korrelation</th><th>Korrelationen är nära 0</th><th>Negativ korrelation</th></tr>
+                <tr><td>Längd och vikt hos finska barn.</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>Skonummer och blodtryck hos finländska vuxna.</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>Ett lands bruttonationalprodukt per invånare och barndödlighet.</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>Lodräta och vågräta koordinater för pilar som träffat en piltavla.</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+              </table>
+            </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
-
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
