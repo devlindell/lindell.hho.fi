@@ -51,101 +51,163 @@
       <h1>14. Ekvationer av högre grad</h1>
       <section>
         <p>Som det sista för kursen tar vi och tittar på hur vi kan lösa ekvationer och olikheter där gradtalet är större än 2. För ekvationer finns det algorimer, färdiga recept, för hur vi skall göra. Det finns för tredjegrads ekvationer men det faller utaför gymnasiekursen. De ekvationer och olikheter som vi tittar på här är alltså en bråkdel av de alla som finns i verkligheten.</p>
-<p>Lycka till!</p>
-
-<div class="theory">
-<p>För att lösa ekvationer som har ett gradtal högre än två, tex \(x^3 -4x^2 - x = 0\), har vi ingen formel som vi kan utnyttja. Däremot har vi ett par knep som löser vissa typer av ekvationer.</p>
-<p>Vi kan utnyttja nollregeln, exempel 1, eller använda oss av substitution, exempel 2. Löser vi ekvationerna på räknare eller räknarprogram har datorn inga problem med att hitta en lösning.</p>
-<div class="exercise box">
-<p><strong>Exempel 1</strong> Lös \(2x^3+2x^2-12x=0\).</p>
-<h4>Lösning</h4>
-<p>Vi börjar med att bryta ut från \(2x^3+2x^2-12x=0\).</p>
-<p>Sedan tillämpar vi nollregeln. Visst kommer du ihåg den?</p>
-<p>\(\begin{array}{lrcll} &amp;2x^3 +2x^2-12x &amp;= &amp;0 &amp; \\ &amp;2x(x^2+x-6) &amp;= &amp;0 &amp; \\ \textrm{} &amp;2x=0 &amp; \textrm{ eller } &amp;x^2+2-6 =0 &amp;\textrm{Rotformeln.}\\ \textrm{} &amp; x_1=0 &amp; &amp;x=\dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 (-6)}}{2\cdot 1} &amp;=\dfrac{-1 \pm 5}{2} \textrm{}\\ \textrm{} &amp; \textrm{Rötterna blir:}&amp; &amp; x_2=\dfrac{-1-5}{2} =-3 &amp;x_3=\dfrac{-1+5}{2}=2 \textrm{}\\ \end{array}\)</p>
-<p>Svar: \(x_1 = 0\), \(x_2=-3\) och \(x_3=2\)</p>
-</div>
-<div class="exercise box">
-<p><strong>Exempel 2</strong> Lös \(m^4+m^2=2\).</p>
-<h4>Lösning</h4>
-<p>\(\begin{array}{lrcll} \textrm{} &amp;m^4+m^2 &amp;= &amp;2 &amp; \textrm{Vi substituerar } m^2=t\\ \textrm{och får} &amp;t^2+t -2&amp;= &amp;0 &amp; \end{array} \)</p>
-<p>som vi löser med rotformeln.</p>
-<p>\(\begin{array}{lrcll}
-  &amp; t &amp;= &amp; \dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 (-2)}}{2 \cdot 1} &amp; = \dfrac{-1 \pm 3}{2} \textrm{}\\ \textrm{Rötterna är: } &amp;t=\dfrac{-1-3}{2}=-2 &amp; \textrm{ och } &amp; t=\dfrac{-1+3}{2}=1 &amp; \textrm{}\\ \textrm{Vi substituerar tillbaka } t=m^2 &amp;m^2=-2 &amp; &amp;m^2=1 &amp; \textrm{}\\ \textrm{} &amp;\textrm{Saknar lösningar} &amp; &amp;m = \pm 1 &amp; \textrm{}\\ \end{array}\)</p>
-<p>Svar: \(m=\pm 1\)</p>
-</div>
-</div>
+        <p>Lycka till!</p>
+        <div class="theory">
+          <p>För att lösa ekvationer som har ett gradtal högre än två, tex \(x^3 -4x^2 - x = 0\), har vi ingen formel som vi kan utnyttja. Däremot har vi ett par knep som löser vissa typer av ekvationer.</p>
+          <p>Vi kan utnyttja nollregeln, exempel 1, eller använda oss av substitution, exempel 2. Löser vi ekvationerna på räknare eller räknarprogram har datorn inga problem med att hitta en lösning.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Lös \(2x^3+2x^2-12x=0\).</p>
+            <h4>Lösning</h4>
+            <p>Vi börjar med att bryta ut från \(2x^3+2x^2-12x=0\).</p>
+            <p>Sedan tillämpar vi nollregeln. Visst kommer du ihåg den?</p>
+            <p>\(\begin{array}{rcl}
+              &2x^3 +2x^2-12x &= &0 & \\
+              &2x(x^2+x-6) &= &0 & \\
+              \textrm{} &2x=0 & \textrm{ eller } & x^2+2-6 =0 \\
+              \end{array}\)</p>
+              <p>Vi får \( 2x=0 \) som har roten \( x_1 = 0 \).</p>
+              <p>\( x^2+2-6 =0 \) löser vi med rotformeln.</p>
+              <p><p>\(\begin{array}{rcl}
+              x & = & \dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 (-6)}}{2\cdot 1} \\
+              & = & \dfrac{-1 \pm 5}{2} \\
+              x_2 & = & \dfrac{-1-5}{2} = -3 \\
+              x_3 & = & \dfrac{-1+5}{2}=2 \\
+              \end{array}\)</p>
+            <p>Svar: \(x_1 = 0\), \(x_2=-3\) och \(x_3=2\)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Lös \(m^4+m^2=2\).</p>
+            <h4>Lösning</h4>
+            <p>\(\begin{array}{lrcll} \textrm{} &m^4+m^2 &= &2 & \textrm{Vi substituerar } m^2=t\\ \textrm{och får} &t^2+t -2&= &0 & \end{array} \)</p>
+            <p>som vi löser med rotformeln.</p>
+            <p>\(\begin{array}{rcl}
+              t & = & \dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 (-2)}}{2 \cdot 1} \\
+              & = & \dfrac{-1 \pm 3}{2} \\
+              \end{array}\)</p>
+              <p>Vi får rötterna, </p>
+              <p>\(\begin{array}{rcl}
+               t_1 & = & \dfrac{-1-3}{2}=-2 \\
+               t_2 & = & \dfrac{-1+3}{2}=1 \\
+               \end{array}\)</p>
+               <p>Vi substituerar tillbaka: </p>
+                 <p>\(\begin{array}{rcl}
+                t_1 = m^2 = -2 \\
+                \end{array} \) </p>
+                <p>Ekvationen saknar lösningar.</p>
+                <p>\(\begin{array}{rcl}
+                t_2 & = & m^2=1 \\
+                m & = & \pm 1 \\
+               \end{array}\)</p>
+              <p>Svar: \(m=\pm 1\)</p>
+            </div>
+          </div>
 
           </section>
-      <section>
+          <section>
         <h2>Uppgifter</h2>
 
         <ol>
-        <li>För vilka värden på \(x\) gäller att
-        <ol>
-        <li>\(4x ^4 = 6\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1a">
-  <div class="card card-body answer">\(4x ^4 = 6\) ger att \(x=\pm\sqrt[4]{\dfrac{3}{2}}\).</div></div></li>
-        <li>\(3x^5-4 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1b">
-  <div class="card card-body answer">\(3x^5-4 =0\) ger att \(x=\sqrt[5]{\dfrac{4}{3}}\).</div></div></li>
-        <li>\(x^5-3 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1c">
-  <div class="card card-body answer">\(x^5-3 =0\) ger att \(x=\sqrt[5]{3}\).</div></div></li>
-          <li>\(x^4 +3 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1d">
-  <div class="card card-body answer">\(x^4 +3 =0\) Går inte eftersom \(x^4=-3\) uppfylls aldrig.</div></div></li>
-        <li>\(x^3+1 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="1e">
-  <div class="card card-body answer">\(x^3+1 =0\) uppfylls då \(x=-1\).</div></div></li>
-        </ol></li>
+          <li>För vilka värden på \(x\) gäller att
+            <ol>
+              <li>\(4x ^4 = 6\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\(4x ^4 = 6\) ger att \(x=\pm\sqrt[4]{\dfrac{3}{2}}\)</p>.</div></div></li>
+              <li>\(3x^5-4 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\(3x^5-4 =0\) ger att \(x=\sqrt[5]{\dfrac{4}{3}}\).</p></div></div></li>
+              <li>\(x^5-3 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\(x^5-3 =0\) ger att \(x=\sqrt[5]{3}\).</p></div></div></li>
+              <li>\(x^4 +3 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>\(x^4 +3 =0\) Går inte eftersom \(x^4=-3\) uppfylls aldrig.</p></div></div></li>
+              <li>\(x^3+1 =0\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p>\(x^3+1 =0\) uppfylls då \(x=-1\).</p></div></div></li>
+            </ol>
+          </li>
 
-        <li>Lös ekvationen \(x^4-4x^2=0\) genom att bryta ut eller genom att substituera.
-        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="2">
-  <div class="card card-body answer">Vi får att \(x^2(x^2-4)=0\) som har lösningarna \(x=0\) eller \(x^2-4 = 0 \Leftrightarrow x^2 = 4 \Leftrightarrow x=\pm 2\).</div></div></li>
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \(x^4-4x^2=0\) genom att bryta ut eller genom att substituera.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"><p>Vi får att \(x^2(x^2-4)=0\) som har lösningarna \(x=0\) eller \(x^2-4 = 0 \Leftrightarrow x^2 = 4 \Leftrightarrow x=\pm 2\).</p></div></div></li>
 
-        <li>Lös ekvationen \(n^5+4n^3=0\).<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="3">
-  <div class="card card-body answer"><p>Vi får att \(n^3(n^2+4)=0\) som har lösningarna \(n=0\) och \(n^2=-4\), som sakar reella rötter.</p>
-        <p>Alltså \(n=0\).</p></div></div></li>
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \(n^5+4n^3=0\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3">
+            <div class="card card-body answer"><p>Vi får att \(n^3(n^2+4)=0\) som har lösningarna \(n=0\) och \(n^2=-4\), som sakar reella rötter.</p>
+            <p>Alltså \(n=0\).</p></div></div></li>
 
-        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös ekvationen \(x^3+4x^2+3x=0\).
-          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-  <div class="collapse hint" id="4t">Bryt ut och tillämpa nollregeln.</div>
-        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="4">
-  <div class="card card-body answer"><p>Vi får att \(x(x^2+4x+3)=0\) som ger att \(x=0\) eller \(x^2+4x+3=0\) som har rötterna \(x=-1\) och \(x=-3\).</p>
-        <p>Alltså \(x=0, x=-1\) och \(x=-3\).</p></div></div></li>
+            <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( x^5 - 6x = 0 \).
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="3.3">
+                <div class="card card-body answer"> <p>Vi bryter ut och får \( x(x^4-6) = 0 \).</p>
+                  <p>Alltså \( x = 0 \) eller \( x^4- 6 = 0\).</p>
+                  <p>Vi får att \( x^4 = 6 \Leftrightarrow x = \pm \sqrt[4]{6} \).</p>
+                  <p>Lösningen är \( x = 0 \) och \(  x = \pm \sqrt[4]{6} \).</p>
+                </div></div>
+            </li>
 
-        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös \(x^4-6x^2 =-5\).
-          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-  <div class="collapse hint" id="5t">Ersätt \(x^2=t\) och lös den ekvationen. Kom ihåg att substituera tillbaka.</div>
-        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="5">
-  <div class="card card-body answer"><p>Vi ersätter \(x^2=t\) och får \(t^2-6t+5=0\) som har rötterna \(t=1\) och \(t=5\).</p>
-        <p>Alltså är \(x=\pm1 \) och \(x=\pm\sqrt{5}\).</p></div></div></li>
+            <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationen \( (9x^2-1)(x^2-2x-3)=0 \).
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="3.6">
+                <div class="card card-body answer"> <p>Vi delar upp ekvationen.</p>
+                  <p>Vi får \( 9x^2-1 = 0 \Leftrightarrow x^2 = \dfrac{1}{9} \). Vi får \( x = \pm \sqrt{\dfrac{1}{9}} = \pm\dfrac{1}{3} \).</p>
+                  <p>Och vi får \( x^2-2x-3 = 0 \) som vi löser med rotformeln och får \( x = -1 \) och \( x = 3\).</p>
+                  <p>Rötterna är \( x = \pm\dfrac{1}{3} \), \(x=-1 \) och \( x = 3\).</p>
+                </div></div>
+            </li>
 
-        <li>Lös ekvationen \(7x^7 +6x^6 = 0\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="6">
-  <div class="card card-body answer"><p>Vi får att \(x^6(7x+6)=0\) som har lösningarna \(x^6=0\) och \(7x+6=0\).</p>
-        <p>Lösningarna är \(x=0\) och \(x=-\dfrac{6}{7}\).</p></div></div></li>
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \(x^3+4x^2+3x=0\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse hint" id="4t"><p>Bryt ut och tillämpa nollregeln.</p></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="4">
+            <div class="card card-body answer"><p>Vi får att \(x(x^2+4x+3)=0\) som ger att \(x=0\) eller \(x^2+4x+3=0\) som har rötterna \(x=-1\) och \(x=-3\).</p>
+            <p>Alltså \(x=0, x=-1\) och \(x=-3\).</p></div></div></li>
 
-        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös \(x^3-x^2-x+1=0\).
-          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
-  <div class="collapse hint" id="7t">Får du det till \(x(x^2-1)-1(x^2-1)=0\)? Jobba härifrån vidare genom att utnyttja nollregeln.</div>
-        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="7">
-  <div class="card card-body answer"><p>Vi får följande</p>
-        <p>\(\begin{array}{rcl} x^3-x^2-x+1 &amp;=&amp;0 \\ x(x^2-1)-1(x^2-1) &amp;=&amp;0 \\ (x^2-1)(x-1) &amp;=&amp;0\\ \end{array}\)</p>
-        <p>Alltså \(x^2-1=0\) eller \(x-1=0\).</p>
-        <p>Rötterna är \(x=\pm 1\).</p></div></div></li>
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös \(x^4-6x^2 =-5\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse hint" id="5t"><p>Ersätt \(x^2=t\) och lös den ekvationen. Kom ihåg att substituera tillbaka.</p></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5">
+            <div class="card card-body answer"><p>Vi ersätter \(x^2=t\) och får \(t^2-6t+5=0\) som har rötterna \(t=1\) och \(t=5\).</p>
+            <p>Alltså är \(x=\pm1 \) och \(x=\pm\sqrt{5}\).</p></div></div></li>
 
-        <li><span style="color: #e74b3c; font-family: Times; font-size: 2em;">*</span>Lös \((x+2)(x^2-3x+2)=0\).
-          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p><div class="collapse" id="8t">Utnyttja nollregeln.</div>
-        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-<div class="collapse" id="8">
-  <div class="card card-body answer"><p>Vi får att \(x+2=0 \Leftrightarrow x=-2\) och \(x^2-3x+2=0\) som har rötterna \(x=1\) och $x=2.</p>
-        <p>Rötterna är \(x=\pm 2\) eller \(x=1\).</p></div></div></li>
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \(7x^7 +6x^6 = 0\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"><p>Vi får att \(x^6(7x+6)=0\) som har lösningarna \(x^6=0\) och \(7x+6=0\).</p>
+            <p>Lösningarna är \(x=0\) och \(x=-\dfrac{6}{7}\).</p></div></div></li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös \(x^3-x^2-x+1=0\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse hint" id="7t"><p>Får du det till \(x(x^2-1)-1(x^2-1)=0\)? Jobba härifrån vidare genom att utnyttja nollregeln.</p></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7">
+            <div class="card card-body answer"><p>Vi får följande</p>
+            <p>\(\begin{array}{rcl} x^3-x^2-x+1 &=&0 \\ x(x^2-1)-1(x^2-1) &=&0 \\ (x^2-1)(x-1) &=&0\\ \end{array}\)</p>
+            <p>Alltså \(x^2-1=0\) eller \(x-1=0\).</p>
+            <p>Rötterna är \(x=\pm 1\).</p></div></div></li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös \((x+2)(x^2-3x+2)=0\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p><div class="collapse" id="8t"><p>Utnyttja nollregeln.</p></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8">
+            <div class="card card-body answer"><p>Vi får att \(x+2=0 \Leftrightarrow x=-2\) och \(x^2-3x+2=0\) som har rötterna \(x=1\) och \( x=2 \).</p>
+              <p>Rötterna är \(x=\pm 2\) eller \(x=1\).</p></div></div></li>
+
+            <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( a \) har ekvationen \( x^3 -3x^2-4x + a + 2 = 0 \) roten \( -1 \)? Vad är då de övriga rötterna?
+                  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                  <div class="collapse" id="14">
+                  <div class="card card-body answer"> <p>Då roten är \( x = -1 \) betyder det att uttrycket får värdet 0. Alltså </p>
+                  <p>\( (-1)^3-3(-1)^2-4(-1)+a+2 =0 \) alltså \( a = -2 \).</p>
+                  <p>Vi får \( x^3-3x^2-4x = 0\). Vi får \( x(x^2-3x-4)=0 \) som vi delar upp.</p>
+                  <p>Vi får \( x = 0 \) och \( x^2-3x-4=0 \) som har lösningarna \( x = -1 \) och \( x = 4 \).</p>
+                  <p>Alltså \( x = 0 \) och \( x = 4 \).</p>
+                  </div></div>
+            </li>
+
         </ol>
 
 
