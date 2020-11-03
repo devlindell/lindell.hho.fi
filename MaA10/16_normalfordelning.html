@@ -75,7 +75,7 @@
           <p>Vi tittar närmare på normalfördelningen för den totala längden. Eftersom vi går till att tala om en hel population talar vi inte om medelvärdet utan väntevärdet 173 cm. Inom den första standarden har vi 34,1 % + 34,1 % = 68,2 % av populationen och deras längd varierar 173 - 9 cm = 164 cm och 173 + 9 = 182 cm.</p>
           <p>Inom två standarder har vi 13,6 % + 34,1 % + 34,1 % + 13,6 % = 95,4 %. Längdintervallet blir 155 cm till 191 cm.</p>
           <p><img class="responsivepic600" src="pics/norm_2.png" alt="" /></p>
-          <p>För att lättare kunna räkna exakta andelar av en population som rör sig inom vissa gränser arbetar man med normalfördelningens fördelningsfunktion, \( \phi (x)=\dfrac{1}{\sqrt{2\pi}} \displaystyle \int_{-\infty}^x e^{-\dfrac{t^2}{2}} \textrm{d }t \). För att få värden som normalfördelningen ger oss använder vi oss av tabellen på sid 61 i MAOL eller <a href="https://sv.wikipedia.org/wiki/Lista_över_den_kumulativa_normalfördelningsfunktionen" target="_blank">tabellen här</a>.</p>
+          <p>För att lättare kunna räkna exakta andelar av en population som rör sig inom vissa gränser arbetar man med normalfördelningens fördelningsfunktion, \( \phi (x)=\dfrac{1}{\sqrt{2\pi}} \displaystyle \int_{-\infty}^x e^{-\dfrac{t^2}{2}} \textrm{d }t \). För att få värden som normalfördelningen ger oss använder vi oss av tabellen på sid 61 i MAOL, <a href="https://sv.wikipedia.org/wiki/Lista_över_den_kumulativa_normalfördelningsfunktionen" target="_blank">tabellen på Wikipedia</a> eller <a href="https://cheat.abitti.fi/build/index.html?sv" target="_blank">tabellen i cheat.abitti.fi</a>( klicka på Matematik och Sannolikhetsfördelningar). </p>
           <p>För mera teori om Normalfördelningen se <a href="http://en.wikipedia.org/wiki/Normal_distribution" target="_blank">här</a>.</p>
           <p>Det som det betyder är att för att få exakta värden måste vi först standardisera vårt material förrän vi kan räkna med det.</p>
           <div class="exercise box">
@@ -86,7 +86,7 @@
  	            <li>Hur många procent är populationen är mellan 175 cm och 185 cm?</li>
             </ol>
               <div class="video">
-                <iframe src="https://www.youtube.com/embed/WDUhoJUvVxg?rel=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <iframe src="https://player.vimeo.com/video/475129509" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </div>
             </div>
             <div class="exercise box">
@@ -107,11 +107,16 @@
                   </ol>
                 </div>
                 <div class="exercise box">
-                  <p><strong>Exempel 3</strong> Garantin hos en surfplatta är 12 månader. Hur stor del av surfplattorna måste tillverkaren reparera på garanti då väntevärdet för att en surfplatta håller är 14 månader och standardavvikelsen är 1 månad?</p>
+                  <p><strong>Exempel 3</strong> Garantin hos en surfplatta är 12 månader. Hur stor del av surfplattorna måste tillverkaren reparera på garanti då väntevärdet för att en surfplatta fungerar utan tekniska problem är 14 månader och standardavvikelsen är 1 månad?</p>
                   <h4>Lösning</h4>
                   <p>Det att en surfplatta går sönder är normalfördelat, N(14,1).</p>
                   <p>Det vi söker är \( P(X \leq 12) = P(Z \leq \dfrac{12-14}{1} )= \Phi(-2) = 1-\Phi(2) = 1-0,9772 = 0,0228 \).</p>
                   <p>2,3 % av surfplattorna behöver service under garantin.</p>
+                  <h4>Lösningen på GeoGebra</h4>
+                  <div class="video">
+                    <iframe src="https://player.vimeo.com/video/475118084" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                  </div>
+                  <p>För att bestämm normalfördelningen kan du antingen jobba med GeoGebras statistikdel eller så i CAS utnyttja dig av kommandot normalfördelning().</p>
                 </div>
                 <div class="exercise box">
                   <p><strong>Exempel 4</strong> Hur stor borde standardavvikelsen vara för att en mobiltelefontillverkare endast skall behöva reparera högst 5 % av mobiltelefonerna på garanti då väntevärdet för att telefonen håller är 16 månader och garantin är 12 månader.</p>
@@ -187,11 +192,38 @@
                 <p>Alltså 13,4 %.</p></div></div>
           </li>
 
-          <!--<li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+          <li>Längden hos nyfödda flickor i Finland följer i stort sett en normalfördelning. För längden gäller att väntevärdet är 50 cm och standardavvikelsen är 3 cm.
+            <ol>
+              <li>Hur mång procent av de nyfödda flickorna har en längd i intervallet 45 - 55 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Vi har (50,3)</p>
+                <p>Vi söker </p>
+                <p>\( \begin{array}{rcl}
+                  P( 45 \leq X \leq 55) & = & P(\dfrac{45-50}{3} \leq Z \leq \dfrac{55-50}{3}) \\
+                  & = & \Phi(\dfrac{5}{3})-\Phi(-\dfrac{5}{3}) \\
+                  & = & \Phi(\dfrac{5}{3})-(1-\Phi(\dfrac{5}{3})) \\
+                  & = & 0,9515 -(1-0,9515) = 0,903 \\
+                  \end{array} \) </p>
+                  <p>Alltså 90,3 %.</p>
+              </div></div> </li>
+              <li>År 2015 föddes 27 044 flickor i Finland. Hur många hade en längd i intervallet 45 till 55 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Vi får \( 0,903 \cdot 27044 = 24420,732 \approx 24421 \).</p>
+              <p>Alltså 24421 eller 24420 stycken.</p></div></div> </li>
+              <li>Hur många flickor som föddes år 2015 föddes längre än 60 cm? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Vi får </p>
+                <p> \( \begin{array}{rcl}
+                  P( X \geq 60 ) & = & 1 - P(X \leq 60) \\
+                  & = & 1 - P(Z \leq \dfrac{60-50}{3}) \\
+                  & = & 1 - \Phi(\dfrac{10}{3}) \\
+                  & = & 1 - 0,9996 = 0,0004 \\
+                  \end{array} \) </p>
+                <p>Antalet är \( 0,0004 \cdot 27044 = 10,8176 \approx 11 \).</p>
+                <p>Alltså 11 st.</p>
+              </div></div> </li>
+            </ol>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>En däcktillverkare bestämmer sig för att medelhållbarheten för däcken skall vara 45 000 km och att 99,9 % av däcken skall hålla körsträckan 46 000 utan problem. Bestäm standardavvikelsen i km för att detta skall uppfyllas.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -208,7 +240,7 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -238,19 +270,53 @@
                 <p>Den gräns som vi söker är 11,4368 månader.</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Vid en hastighetskontroll konstaterades att 30 % av bilarna hade en hastighet under 60 km/h och 75 % under 80 km/h. Vi antar att bilarnas hastigheter följder en normalfördelning. Bestäm bilarnas medelhastighet och standardavvikelse.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi jobbar med de normerade värdena. Då gäller att \( P (X \leq 60) = 0,30 \).</p>
+              <p>Vi får att \( P(Z \leq \dfrac{60-\mu}{\sigma}) = 0,30 \). Eftersom tabellvärdena börjar vid 0,50 jobbar vi via komplementet. Vi söker \( \Phi(X) < 0,30 \), som är samma som \( 1- \Phi(X) > 0,30 \).</p>
+              <p>Vi får \( 1 - P(Z \leq \dfrac{60-\mu}{\sigma}) = 0,30 \), alltså \( P(Z \leq \dfrac{60-\mu}{\sigma}) = 0,70 \).</p>
+              <p>Vi får \( \dfrac{60-\mu}{\sigma} = -0,52 \). Minustecknet är med för att sannolikheten är mindre än 50%.</p>
+              <p>Det andra kriteriet ger oss \( P(Z \leq \dfrac{80-\mu}{\sigma}) = 0,75 \).</p>
+              <p>Vi får \( \dfrac{80-\mu}{\sigma} = 0,67 \).</p>
+              <p>Vi har ekvationssystemet </p>
+              <p>\( \left\{ \begin{array}{l}
+                \dfrac{60-\mu}{\sigma} = -0,52 \\
+                \dfrac{80-\mu}{\sigma} = 0,67 \\
+                \end{array} \right. \) </p>
+                <p>Vi får lösningarna \( \mu = 68,73\ldots \) och \( \sigma = 16,80\ldots \).</p>
+                <p>Medelhastigheten är 69 km/h och standardavvikelsen är 17 km/h.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Vitsordsfördelningen studentexamen i lång matematik är följande: l 5 %, e 15 %, m 20 %, c 21 %, b 19 %, a 15 % och i 5 %. Ett år var gränsen för approbatur, a, 26 poäng och gränsen för eximia 86 poäng.
+            <p>Bestäm poängmedeltalet och standardavvikelsen för den långa matematiken detta år. Bestäm dessutom poänggränserna för de övriga vitsorden då resultaten är apporximativt normalfördelade.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi bildar två ekvationer som vi löser i ett ekvationssystem.</p>
+                <p>Den första är \( P(X \leq \dfrac{26 - \mu}{\sigma}) = 0,05 \).</p>
+                <p>Den andra är \( P(X \leq \dfrac{86 - \mu}{\sigma}) = 0,80 \).</p>
+                <p>Vi får ekvationssystemet </p>
+                <p>\( \left\{ \begin{array}{l}
+                   \Phi (\dfrac{26 - \mu}{\sigma}) = 0,05 \\
+                   \Phi (\dfrac{86 - \mu}{\sigma}) = 0,80 \\
+                   \end{array} \right. \) </p>
+                <p>Som betyder att </p>
+                <p>\( \left\{ \begin{array}{l}
+                   \Phi (\dfrac{26 - \mu}{\sigma}) = -1,64 \\
+                   \Phi (\dfrac{86 - \mu}{\sigma}) = 0,84 \\
+                   \end{array} \right. \) </p>
+                <p>Ekvationssystemet har lösningarna \( \mu = 65,677\ldots \) och \( \sigma = 24,19\ldots \).</p>
+                <p>Medeltalet är 65,6 poäng och standardavvikelsen är 24,2 poäng.</p>
+                <p>De övriga gränserna är följande.</p>
+                <p>b: \( \Phi(\dfrac{x-65,6}{24,2}) = 0,20 \). Alltså \( \dfrac{x-65,6}{24,2} = -0,84 \) ger \( x = 45,23 \). Gräsen för b är 45 poäng.</p>
+                <p>c: \( \Phi(\dfrac{x-65,6}{24,2}) = 0,39 \). Alltså \( \dfrac{x-65,6}{24,2} = -0,28 \) ger \( x = 58,84 \). Gräsen för c är 59 poäng.</p>
+                <p>m: \( \Phi(\dfrac{x-65,6}{24,2}) = 0,60 \). Alltså \( \dfrac{x-65,6}{24,2} = 0,25 \) ger \( x = 71,73 \). Gräsen för m är 71 poäng.</p>
+                <p>l: \( \Phi(\dfrac{x-65,6}{24,2}) = 0,95 \). Alltså \( \dfrac{x-65,6}{24,2} = 1,64 \) ger \( x = 105,41 \). Gräsen för l är 105 poäng.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
