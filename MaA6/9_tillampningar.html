@@ -99,7 +99,7 @@
                   <tr><td></td><td>Nu</td><td>Sedan</td></tr>
                   <tr><td>Pris</td><td>75 €</td><td>75 + 5n</td></tr>
                   <tr><td>Volym</td><td>80 st</td><td>80 - 10n</td></tr>
-                  <tr><td>Intäkter</td><td>\( 75 \cdot 80 \)</td><td>\( (75+5n)(9-10n) \)</td></tr>
+                  <tr><td>Intäkter</td><td>\( 75 \cdot 80 \)</td><td>\( (75+5n)(80-10n) \)</td></tr>
                 </tbody>
               </table></p>
               <p>Funktionen är \( f(n)=-50n^2-350n+6000 \).</p>
@@ -111,7 +111,7 @@
           <li>Från ett A4 ark (210 x 297 mm) klipper man bort kvadrater i varje hörn och viker upp sidorna så att vi får en ask. Hur stora kvadrater skall vi klippa bort då vi vill ha så stor volym på asken som möjligt?
             <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
             <div class="collapse" id="2">
-            <div class="card card-body answer"> <p>Funktionen som ger volymen är \( V(x)=(29-2x)(297-2x)x = 4x^3-1014x^2+62370x \). Intervallet är \( ]0,105[ \) som kommer från \( 29-2x > 0 \) och att vi behöver en höjd, \( x > 0 \).</p>
+            <div class="card card-body answer"> <p>Funktionen som ger volymen är \( V(x)=(210-2x)(297-2x)x = 4x^3-1014x^2+62370x \). Intervallet är \( ]0,105[ \) som kommer från \( 210-2x > 0 \) och att vi behöver en höjd, \( x > 0 \).</p>
               <p>\( V'(x)=12x^2-2028x+62370 \) och \( V'(x)=0 \) ger \( x=40,42 \) och \( x=128,58 \), som är utanför intervallet.</p>
               <p>\( V(0)=4\cdot 0^3=1014\cdot 0^2 +62370\cdot 0 =0 \)</p>
               <p>\( V(40,42) = 4\cdot 40,42^3=1014\cdot 40,42^2 +62370\cdot 40,42 =1128400 \)</p>
@@ -154,10 +154,10 @@
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>Längden är \( 2x \) och höjden är \( -x^2+4 \). Intervallet som duger är \( ]0,2[ \).</p>
                 <p>Areafunktionen är \( A(x)=2x(-x^2+4)=-2x^3+8x \) i \( ]0,2[ \).</p>
-                <p>\( A'(x)=-6x^2+8 \) som har nollställena \( x=\dfrac{2}{\sqrt{3}} \approx 1,15 \).</p>
+                <p>\( A'(x)=-6x^2+8 \) som har nollställena \( x=\sqrt{\dfrac{4}{3}}=\dfrac{2}{\sqrt{3}} \approx 1,15 \).</p>
                 <p>Största arean hittar vi i derivatans nollställe eller i intervallets ändpunkter.</p>
                 <p>\( A(0)=-2\cdot0^3+8\cdot0 =0 \)</p>
-                <p>\( A(\dfrac{2}{\sqrt{3}})=-2\cdot\dfrac{2}{\sqrt{3}}^3+8\cdot\dfrac{2}{\sqrt{3}} =\dfrac{32}{3\sqrt{3}} \)</p>
+                <p>\( A(\dfrac{2}{\sqrt{3}})=-2\cdot(\dfrac{2}{\sqrt{3}})^3+8\cdot\dfrac{2}{\sqrt{3}} =\dfrac{32}{3\sqrt{3}} \)</p>
                 <p>\( A(2)=-2\cdot2^3+8\cdot2 =0 \)</p>
                 <p>Största värdet är \( \dfrac{32}{3\sqrt{3}}\approx 6,2 \).</p></div></div>
           </li>
