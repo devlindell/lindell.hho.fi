@@ -125,11 +125,11 @@
         <div class="collapse" id="1">
         <div class="card card-body answer">
         <table>
-          <tr class="MaA2"><th>Påstående</th><th>0 rötter </th><th>1 rot </th><th>2 rötter </th></tr>
-          <tr><td>\(5x^2 +2x -3 =0\) </td><td></td><td></td><td>X</td></tr>
-          <tr><td>\(x-3=x^2\)</td><td>X</td><td></td><td></td></tr>
-          <tr><td>\(2x^2+1 =0\) </td><td>X</td><td></td><td></td></tr>
-          <tr><td>\(x^2+2x=-1\) </td><td></td><td>X</td><td></td></tr>
+          <tr class="MaA2"><th>Påstående</th><th>0 rötter </th><th>1 rot </th><th>2 rötter </th><th>Värdet för diskriminanten</th></tr>
+          <tr><td>\(5x^2 +2x -3 =0\) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td>\( 2^2 -4\cdot 5 (-3) = 64 \)</td></tr>
+          <tr><td>\(x-3=x^2\)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td>\( (-1)^2-4\cdot 1(-3) = -10 \)</td></tr>
+          <tr><td>\(2x^2+1 =0\) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td>\( 0^2 - 4\cdot 2 \cdot 1 = 0\)</td></tr>
+          <tr><td>\(x^2+2x=-1\) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td>\( 2^2-4\cdot 2\cdot 1 = 0 \)</td></tr>
         </table>
         </div></div></li>
 
@@ -143,9 +143,9 @@
           </p>
         <table>
           <tr class="MaA2"><th>För diskriminanten gäller</th><th>Skärningspunkter för parabeln </td></tr>
-          <tr><td> </td><td>Parabeln skär x-axeln 2 gånger. </td></tr>
-          <tr><td> </td><td>Parabeln skär inte \(x\)-axeln. </td></tr>
-          <tr><td> </td><td>Parabeln tangerar \(x\)-axeln. </td></tr>
+          <tr><td> </td><td>Parabeln skär \( x \)-axeln 2 gånger. </td></tr>
+          <tr><td> </td><td>Parabeln skär inte \( x \)-axeln. </td></tr>
+          <tr><td> </td><td>Parabeln tangerar \( x \)-axeln. </td></tr>
         </table>
 
 
@@ -173,9 +173,9 @@
         <div class="card card-body answer">
         <table>
           <tr class="MaA2"><th>Påstående</th><th>0 gånger </th><th>1 gång, tangerar </th><th>2 gånger </th></tr>
-          <tr><td>\(y=-4x^2+4x-1\) </td><td></td><td>X</td><td></td></tr>
-          <tr><td>\(f(x)=-2x^2+x-3\) </td><td>X</td><td></td><td></td></tr>
-          <tr><td>\(y=x^2-2\) </td><td></td><td></td><td>X</td></tr>
+          <tr><td>\(y=-4x^2+4x-1\) </td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+          <tr><td>\(f(x)=-2x^2+x-3\) </td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+          <tr><td>\(y=x^2-2\) </td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
         </table>
         </div></div></li>
 
@@ -185,7 +185,9 @@
           <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
           <div class="collapse" id="4">
           <div class="card card-body answer"><p>Eftersom funktionen inte skall få skära \(x\)-axeln så betyder det att ekvationen \(3x^2-8x+a=0\) skall sakna lösningar eller ha en lösning. Det sker då diskriminanten är negativ eller lika med noll.</p>
-          <p>Alltså \(D=b^2-4ac \leq 0\) ger oss att \((-8)^2-4\cdot 3\cdot a \leq 0\) som sker då \(a\geq \dfrac{64}{12} = 5\dfrac{1}{3}\).</p></div></div></li>
+          <p>Alltså \(D=b^2-4ac \leq 0\) ger oss att \((-8)^2-4\cdot 3\cdot a \leq 0\) som sker då \(a\geq \dfrac{64}{12} = 5\dfrac{1}{3}\).</p>
+          <p>Om du tolkar att 0 inte är ett positivt värde får du \((-8)^2-4\cdot 3\cdot a < 0\), som har lösningen \( a > 5\dfrac{1}{3} \).</p>
+        </div></div></li>
 
         <li>För vilket värde på \(a\) gäller det att \(f(x)=x^2+ax+a\) tangerar \(x\)-axeln?
           <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
@@ -209,6 +211,7 @@
           <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
           <div class="collapse" id="7">
           <div class="card card-body answer"><p>Vi har att \(f(x)=-4x^2+4ax-1\). Det som vi är intresserade att det i alla fall finns en lösning för ekvationen \(-4x^2+4ax-1=0\).</p>
+          <p>I alla fall en rot, betyder 1 eller 2 rötter. Diskriminanten skall ha värdet noll eller vara positiv.</p>
           <p>Det sker då \(D=b^2-4ac \geq 0\). Alltså \((4a)^2-4(-4)(-1)\geq 0\) som har lösningarna \(a\leq -1\) eller \(a\geq 1\).</p></div></div></li>
 
         <li><i class="fas fa-cogs fa-2x level"></i>För vilka värden på \(a\) har ekvationen \((a+1)x^2 + (a+1)x-1 =0\) endast en lösning?

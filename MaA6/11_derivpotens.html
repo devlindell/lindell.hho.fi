@@ -109,7 +109,8 @@
               <li>Bestäm nollställena för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3a">
               <div class="card card-body answer"><p>Nollställena är de punkter då \( f(x)=0 \).</p>
-                <p>Alltså \( (x^2-3x)^4 = 0 \). Det räcker att undersöka \( x^2-3x=0 \), alltså \( x(x-3)=0 \). Det sker då \( x = 0 \) eller då \( x=3 \) (nollregeln). </p>
+                <p>Alltså \( (x^2-3x)^4 = 0 \). Det räcker att undersöka \( x^2-3x=0 \), alltså \( x(x-3)=0 \).</p>
+                <p>Det sker då \( x = 0 \) eller då \(x-3 = 0 \), alltså då \( x=3 \). </p>
               </div></div> </li>
               <li>Bestäm derivatans nollställen <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3b">
@@ -136,13 +137,30 @@
             <ol>
               <li>Bestäm \( f'(1) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6a">
-              <div class="card card-body answer"><p>Derivatafunktionen är \( f'(x)=3x^2(2x-1)^5+10x^3(2x-1)^4 \). Då är \( f'(1)=13 \).</p></div></div> </li>
+              <div class="card card-body answer"><p>För att derivera använder vi oss av produktregeln \( Dfg = f'g+g'f \) och potensregeln \( Df^n = nf^{n-1}f' \).</p>
+                <p>Derivatafunktionen är \( f'(x)=3x^2(2x-1)^5 + x^3\cdot 5(2x-1)^4\cdot 2 =3x^2(2x-1)^5+10x^3(2x-1)^4 \).</p>
+                <p>Då är \( f'(1)=13 \).</p></div></div> </li>
               <li>Bestäm de punkter där funktionen \( f \) byter riktning. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6b">
-              <div class="card card-body answer"><p>Lös ekvationen \( f'(x)=0 \). Använd dig av utbrytning. \( x=0, x=\dfrac{1}{2} \) och \( x=\dfrac{3}{16} \).</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi löser ekvationen \( f'(x)=0 \). För att lätt göra det använder vi oss av faktorisering.</p>
+                <p>Vi får \( f'(x) = 3x^2(2x-1)^5+10x^3(2x-1)^4  = x^2(2x-1)^4[3(2x-1)+10x] \\
+                  = x^2(2x-1)^4(16x-3) \)</p>
+                <p>Vi utnyttjar nollregeln, och får rötterna.</p>
+                <p>Vi får \( x=0, x=\dfrac{1}{2} \) och \( x=\dfrac{3}{16} \).</p></div></div> </li>
               <li>Bestäm den punkt där funktionen får sitt minsta värde. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6c">
-              <div class="card card-body answer"><p>Bilda ett teckenschema och undersök det. Minsta värdet i punkten \( x=\dfrac{3}{16} \).</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi bildar ett teckenschema.</p>
+                <p>\( \begin{array}{c|ccccccc}
+                  & & 0 & & \dfrac{1}{2} & & \dfrac{3}{16} & & \\
+                  \hline
+                  x^2 & + & 0 & + & + & + & + & + \\
+                  (2x-1)^4 & + & + & + & 0 & + & + & + \\
+                  16 x -3 & - & - & - & - & - & 0 & + \\
+                  \hline
+                  f'(x) & - & 0 & - & 0 & - & 0 & + \\
+                  f(x) & \searrow & & \searrow & & \searrow & & \nearrow \\
+                  \end{array} \) </p>
+                <p>Vi har ett minsta värdet i punkten \( x=\dfrac{3}{16} \).</p></div></div> </li>
             </ol>
           </li>
 
