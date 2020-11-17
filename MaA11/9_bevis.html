@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../style.css">
 
 
-    <title>Botten för kapitel</title>
+    <title>9. Bevisföring</title>
 
   </head>
   <body>
@@ -23,56 +23,63 @@
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="1_mangder.html">1. Mängder</a>
-<a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
-<a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
-<a class="dropdown-item" href="4_euklides.html">4. Euklides algoritm</a>
-<a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
-<a class="dropdown-item" href="6_kryptering.html">6. Kryptering</a>
-<a class="dropdown-item" href="7_diofantisk.html">7. Diofantisk ekvation</a>
-<a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
-<a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
-<a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
-<a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
+            <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Euklides algoritm</a>
+            <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
+            <a class="dropdown-item" href="6_kryptering.html">6. Kryptering</a>
+            <a class="dropdown-item" href="7_diofantisk.html">7. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
+            <a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
+            <a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
           </div>
         </div>
       </nav>
-      <a href="#"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_konnektiv.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
       <h3 class="mobile">MaA 11 Talteori och bevis</h3>
-      <a href="#"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="10_induktion.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
       <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
     </header>
 
     <article>
-      <h1>Rubriken</h1>
+      <h1>9. Bevisföring</h1>
       <section>
         <div class="theory">
           <div class="intro box">
-
+            <p>Vi visar att triangelns vinkelsumma är 180<sup>o</sup>.</p>
+            <p>(Motsvarande bevis gjorde vi i MaA 3, men repetition är nyckeln till kunskap.)</p>
             <div class="video">
-
+              <p>Video med beviset.</p>
             </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
           </div>
           <div class="summary box">
-
+            <p>När du bevisar matematik så håll dig till följande råd:
+              <ul>
+                <li>Se till att beviset gäller allmänt.</li>
+                <li>Testa att beviset stämmer.</li>
+                <li>Ha en logisk ordning i ditt bevis.</li>
+                <li>Hoppa inte över några steg.</li>
+                <li>KISS (Keep It Simple & Stupid)</li>
+              </ul>
+            </p>
+            <p>Oftast kör man fast när man bevisar något. Börja då från slutet och försök få början och slutet att passa ihop.</p>
           </div>
           <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
+              <p><strong>Exempel 1</strong> Visa att fyrhörningens vinkelsumma är 360<sup>o</sup>.</p>
+              <h4>Lösning</h4>
+
+          </div>
+
 
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
@@ -98,39 +105,55 @@
               <div class="collapse" id="2c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
-          <li>Uppgift
+          <li>Visa att vinkelsumman i en regelbunden sexhörning är 720<sup>o</sup>.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi vet att en triangels vinkelsumma är 180<sup>o</sup>.</p>
+              <p>Vi delar in sexhörningen i trianglar.</p>
+              <p><img src="pics/9_3.png" class="responsivepic400" /></p>
+              <p>Eftersom sexhörningen består av 4 st trianglar är vinkelsumman \( 4 \cdot 180^{\circ} = 720^{\circ} \).</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <li>Visa att vinkelsumman i en regelbunden tiohörning är 1440<sup>o</sup>.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi bevisar satsen på motsvarande sätt som förra uppgiften.</p>
+                <p>Vi vet att en triangels vinkelsumma är 180<sup>o</sup>.</p>
+                <p>Vi delar in tiohörningen i trianglar.</p>
+                <p><img src="pics/9_4.png" class="responsivepic400" /></p>
+                <p>Eftersom sexhörningen består av 8 st trianglar är vinkelsumman \( 8 \cdot 180^{\circ} = 1440^{\circ} \).</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att summan av två på varandra följande jämna tal är jämnt.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Då vi multiplicerar med 2 får vi ett jämnt tal, alltså innehåller varje jämnt tal faktorn 2.
+                <p>Vi betecknar ett jämnt tal med \( 2n \). Då är följande jämna tal \( 2(n+1) \).</p>
+                <p>Då vi bestämmer summan får vi \( 2n + 2(n+1) = 2n + 2n+2 = 4n+2 = 2(2n+1) \).</p>
+                <p>Eftersom produkten innehåller faktorn 2 är summan jämn.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att summan av två på varandra följande udda tal är jämnt.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Eftersom vi kan beteckna ett jämnt tal som \( 2n \). Då kan vi beteckna ett udda tal som \( 2n+1 \). Två följande på varandra är \( 2n+1 \) och \( 2n+3 \). Eller som \( 2n-1 \) och \( 2n+1 \).</p>
+                <p>Vi bildar summan \( (2n + 1) +(2n+3) = 4n+4 = 2(2n+2)= 2\cdot 2(n+1) \).</p>
+                <p>Eftersom produkten innehåller faktorn 2 är produkten jämn.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -140,39 +163,64 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( x^3 > x^2 \) då \( x > 1 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Skall vi visa att \( x^3 > x^2 \) så gäller att \( x^3 - x^2 > 0 \), då \( x > 1 \).</p>
+              <p>Antingen kan vi visa det genom att undersöka en funktion, eller genom att lösa en olikhet.</p>
+              <p>Vi inför en funktion \( f(x) = x^3-x^2 \), och visar att den är positiv då \( x > 1 \).</p>
+              <p>\( f'(x) = 3x^2-2x \). Vi söker funktionens minsta värde.</p>
+              <p>Derivatans nollställe, \( f'(x) = 0 \). Alltså \( 3x^2 -2x = 0 \). Vi får \( x_1 = 0 \) och \( x_2 = \dfrac{2}{3} \). Eftersom \( x > 1 \) byter inte funktionen riktning i det intervall som vi undersöker.</p>
+              <p>Vi får \( f'(2) = 3(2)^2 -2 \cdot 2 = 8 > 0 \). Funktionen är strängt växande i intervallet.</p>
+              <p>Vi söker funktionens minsta värde, \( f(1) = 1^3-1^2 = 0 \).</p>
+              <p>Alltså är \( f(x) > 0 \). Då gäller att \( x^3 - x^2 > 0 \) som betyder att \( x^3 > x^2 \) då \( x > 1 \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( e^x > x \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>För att visa att \( e^x > x \) så visar vi att \( e^x -x > 0 \).</p>
+              <p>Vi inför funktionen \( f(x) = e^x -x \) och visar att funktionens minsta värde är positivt.</p>
+              <p>Derivatafunktionen är \( f'(x) = e^x - 1 \).</p>
+              <p>Derivatans nollställe: \( f'(x) = 0 \). Alltså \( e^x - 1 = 0 \). Det sker då \( x = 0 \).</p>
+              <p>Vi undersöker derivatans tecken.</p>
+              <p>\( f'(-1) = e^{-1} -1 = \dfrac{1}{e} -1 \approx -0,63\ldots < 0 \). Funktionen avtagande.</p>
+              <p>\( f'(1) = e^{1} -1 = e -1 \approx 1,71\ldots > 0 \). Funktionen växande.</p>
+              <p>Vi har ett minsta värde i \( x = 0 \). Värdet är \( f(0) = e^0 -1 = 0 \).</p>
+              <p>Eftersom funktionens minsta värde är 0 är resten av värdena positiva. Då gäller att \( e^x -x > 0 \) och att \( e^x > x \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>Vinkelsumman i en regelbunden månghörning kan bestämmas med formeln \( (n-2)\cdot 180^{\circ} \) där \( n \) är antal hörn för månghörningen. Bevisa att formeln stämmer.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi undersöker vinkelsummorna för de figurer som vi känner. Vi får följande </p>
+              <table>
+                <tr class="MaA11"><th>Hörn</th><th>Vinkelsumma</th></tr>
+                <tr><td>3</td><td>\( 180^{\circ} \)</td></tr>
+                <tr><td>4</td><td>\( 2 \cdot 180^{\circ} \)</td></tr>
+                <tr><td>5</td><td>\( 3 \cdot 180^{\circ} \)</td></tr>
+              </table>
+                <p>Vi märker att sambandet är \( (n-2)\cdot 180^{\circ} \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -190,7 +238,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
@@ -200,9 +248,8 @@
     </article>
 
     <footer class="MaA11">
-      <a href="#"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
-      <a href="#"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
-
+      <a href="8_konnektiv.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="10_induktion.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
     </footer>
 
 
