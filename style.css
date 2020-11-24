@@ -221,7 +221,7 @@ nav ul li a {
   position: absolute;
   left: 2rem;
   z-index: -1;
-  color: #FFE4E3;
+  color: #E8C3D1; /*#FFE4E3 Gamla */
 }
 
 .source {

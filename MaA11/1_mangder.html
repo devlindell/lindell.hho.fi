@@ -44,93 +44,259 @@
 
     <article>
       <h1>1. Mängder</h1>
-      <p>Material kommer strax bara jag hinner skapa det.</p>
-      <p>/K</p>
       <section>
         <div class="theory">
-          <div class="intro box">
-
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
-          </div>
-          <div class="summary box">
-
-          </div>
+          <p>Inom matematiken talar vi emellan om mängder. Vissa saker kan var lättare att förstå genom att rita upp mängderna. Exempel på en mängd är: äppel, päron, banan, apelsin och kiwi. Ur en mängd framkommer inte mängden element, enskilda saker, som finns i mängden. Mängerna äppel, päron, banan, banan, apelsin och kiwi och äppel, äppel, äppel, päron, banan, apelsin och kiwi representeras av samma mängd: äppel, päron, banan, apelsin och kiwi.</p>
+          <p>Mängden som består av äppel, päron, banan, apelsin och kiwi betecknas {äppel, päron, banan, apelsin, kiwi}.</p>
+          <p>För mängder finns räkneregler som gör att vi kan arbeta med mängderna. För att illustrera bättre vad vi har använder vi oss av Venn diagram, uppkallade efter <a href="http://en.wikipedia.org/wiki/John_Venn" target="_blank">John Venn</a>.</p>
+          <p>Vi tar två mängder: A = {äppel, päron, banan, apelsin}, B = {päron, apelsin, kiwi}.</p>
+          <p>Unionen av A och B, \( A \cup B \) är alla deras element: {äppel, päron, banan, apelsin, kiwi}.</p>
+          <p>Grafiskt ser vi på unionen som</p>
+          <p><img src="pics/1-1.png" class="responsivepic400" /></p>
+          <p>Snittet av A och B, \( A \cap B \) är de element som de har gemensamt: {päron, apelsin}.</p>
+          <p>Grafiskt ser vi på snittet som</p>
+          <p><img src="pics/1-2.png" class="responsivepic400" /></p>
+          <p>Mängddifferensen mellan A och B, \( A \setminus B \) är de element som endast finns i A: {äppel, banan}.</p>
+          <p>Grafiskt ser vi på mängddifferensen som</p>
+          <p><img src="pics/1-3.png" class="responsivepic400" /></p>
+          <p>Mängder kan ha relationer till varandra, en mängd kan vara en del av en större mängd. Låt A = {äppel, päron, banan, apelsin, kiwi} och B = {äppel, banan}. Då är \( B \subset A \), B är en delmängd av A.</p>
+          <p>Vi låter mängderna A och B vara som ovan. Om vi tar komplementet av B i A så får vi de element i A som inte finns i B, {päron, apelsin, kiwi}. Komplementet betecknar vi med \( \overline{A} \).</p>
           <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
+          <p><strong>Exempel 1 </strong> Låt \( A = \{3,1,4,1,5,9\} \) och \( B = \{2,7,1,8,2,8\} \). Bestäm följande </p>
+            <ol style="list-style-type:lower-alpha">
+              <li>Unionen av A och B, \( A \cup B \).</li>
+              <li>Snittet av A och B, \( A \cap B \).</li>
+              <li>Mängddifferensen av A och B, \( A \setminus B \).</li>
+              <li>Låt A och B tillhöra mängden \( \{0,1,2,3,4,5,6,7,8,9\} \). Bestäm \( \overline{A \cup B} \).</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol style="list-style-type:lower-alpha">
+              <li>\( A \cup B \) är alla elementen i A och B. Alltså \( A \cup B = \{ 1,2,3,4,5,7,8,9\} \).</li>
+              <li>\( A \cap B \) är de gemensamma elementen i A och B. Alltså \( A \cap B = \{1 \} \).</li>
+              <li>\( A \setminus B \) är de element som endast finns i A. Alltså \( \{3,4,5,9\} \).</li>
+              <li>För att bestämma \( \overline{A \cup B} \) bestämmer vi först \( A \cup B \). Det gjorde vi i a). Eftersom \( (A \cup B ) \subset \{0,1,2,3,4,5,6,7,8,9\} \) är det enda element som saknas 0 och 6. Alltså \( \overline{A \cup B} = \{0,6\} \).</li>
+            </ol>
+          </div>
+          <p>Då vi jobbar med större mängder betecknar vi mängderna med hjälp av regler. Då består regeln av hurdana tal som vi använder oss av och regeln vad som gäller för talen.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Skriv upp elementen i följande mängder.
+              <ol style="list-style-type:lower-alpha">
+                <li>\( \{ n \in \mathbf{N} \mid n \leq 10 \} \)</li>
+                <li>\( \{ x \in \mathbf{Z} \mid -1 \leq 2x-5 \leq 8 \} \)</li>
+                <li>\( \{ \text{Veckans sju dagar} \} \)</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol style="list-style-type:lower-alpha">
+                <li>Det första kriteriet ger oss att vi jobbar med tal mindre än eller lika med 10. Det andra att elementen skall vara naturliga tal. Alltså \( \{0,1,2,3,4,5,6,7,8,9,10 \} \).</li>
+                <li>Olikheten \( -1 \leq 2x-5 \leq 8 \) är samma som \( -3 \leq x \leq 1,5 \). Eftersom talen skall vara heltal är mängden \( \{-3,-2,-1,0,1 \} \).</li>
+                <li>\( \{ \text{Veckans sju dagar} \} \) ger oss mängden {måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag}.</li>
+              </ol>
+
             </div>
+
+          <div class="summary box">
+            <p>För mängder gäller följande räkneregler:
+              <ul>
+                <li>Unionen: då har vi alla element i A och B. Betecknas \( A \cup B \).</li>
+                <li>Snittet: då har vi endast de gemensamma elementen i A och B. Betecknas \( A \cap B \).</li>
+                <li>Delmäng: vi har en mängd som är en del av en större mängd. Betecknas \( A \subset B \).</li>
+                <li>Komplement: de element som inte finns i en mängd. Betecknas \( \overline{A} \).</li>
+              </ul>
+            </p>
+          </div>
 
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <li>Låt \( A = \{0,2,4,6,8\} \), \( B = \{1, 3,5,7,9 \} \) och \( C = \{0, 1,2,3,4 \} \). Bestäm följande talmängder.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( A \cup B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>\( A \cup B  = \{0,1,2,3,4,5,6,7,8,9 \} \)</p></div></div> </li>
+              <li>\( A \cap B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi märker att A och B inte har några gemensamma element. Vi talar om att vi har den tomma mängden.</p>
+                <p>\( A \cap B = \{ \varnothing \}\)</p></div></div> </li>
+              <li>\( A \cup C \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>\( A \cup C  = \{0, 2,4 \}\)</p></div></div> </li>
+              <li>\( B \cup C \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>\( B \cup C = \{1,3 \} \)</p></div></div> </li>
+              <li>\( (A \cup C ) \cap B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p>Vi börjar med \( A \cup C  = \{0, 2,4 \}\)</p>
+                <p>Vi får \( (A \cup C ) \cap B = \{ \varnothing \} \), tomma mängden.</p>
+              </div></div> </li>
+              <li>\( (B \cup C ) \cap A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1f">
+              <div class="card card-body answer"><p>Vi börjar med \( B \cup C = \{1,3 \} \)</p>
+                <p>Vi får \( (B \cup C ) \cap A  = \{ \varnothing \}\), tomma mängden.</p>
+              </div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <li>Låt \( A = \{ 2,4,6,8,10\} \), \( B = \{ 3,6,9 \} \) och \( C = \{ 5,10\} \).
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( A \cap B \cap C \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( A \cap B \cap C  = \{ 6 \} \cap \{5,10\} = \{ \varnothing \}\).</p></div></div> </li>
+              <li>\( A \cup B \cup C \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( A \cup B \cup C = \{2,3,4,6,8,9,10 \} \cup \{5,10\} = \{2,3,4,5,6,8,9,10\}\).</p></div></div> </li>
+              <li>\( (A \cap B) \cup (A \cap C) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi delar in i steg.</p>
+                <p>\( A \cap B = \{ 6 \} \)</p>
+                <p>\( A \cap C = \{ 10 \} \)</p>
+                <p>Alltså \( (A \cap B) \cup (A \cap C) = \{6,10\}\).</p>
+              </div></div> </li>
+              <li>\( (A \cup B) \cap (A \cup C) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Vi delar in i steg.</p>
+                <p>\( A \cup B = \{ 2,3,4,6,8,9,10 \} \)</p>
+                <p>\( A \cup C = \{ 2,4,5,6,8,10 \} \)</p>
+                <p>Alltså \( (A \cup B) \cap (A \cup C) = \{2,4,6,8,10\}\).</p>
+              </div></div> </li>
+              <li>\( (A \setminus B) \cup (B \setminus A) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2e">
+              <div class="card card-body answer"><p>Vi delar in i steg.</p>
+                <p>\( A \setminus B = \{ 2,4,8,10 \} \)</p>
+                <p>\( B \setminus A = \{ 3,9 \} \)</p>
+                <p>Alltså \( (A \setminus B) \cup (B \setminus A) = \{2,3,4,8,9,10\}\).</p>
+              </div></div> </li>
+              <li>\( C \cap (A \setminus C) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2f">
+              <div class="card card-body answer"><p>Vi får \( C \cap (A \setminus C) = C \cap \{2,4,6,8\} = \{ \varnothing \} \).</p></div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>Bestäm komplementmängden till \( A = \{2,4,5,6\} \), om universalmängden \( U \) består av
+            <ol>
+              <li>\( U = \{0,1,2,3,4,5,6\} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi får \( \overline{A} = \{0,1,3 \} \).</p></div></div> </li>
+              <li>\( U = \{2,3,4,5,6,7,8,9\} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi får \( \overline{A} = \{3,7,8,9 \} \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
           </li>
 
-          <li>Uppgift
+          <li>Låt \( A = \{a, b,c\} \), \(B=\{b,c,d\}\) och \(C=\{c,d,e\}\). Vilken mängd beskriver uttrycket?
+           <table>
+            <tr class="MaA11"><th>Påstående</th><th>\( \{d\} \)</th><th>\( \{b, c\} \)</th><th>\( \{c, d\} \)</th><th>\( \{a, b, c, d\} \)</th><th>\( \{b, c, d, e\} \)</th></tr>
+            <tr><td>\( A \cup B \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>\( A \cap B \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>\( A \cap B\cap C \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>\( B \cup C \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>\( (A \cup B) \cap C \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>\( A \cup (B \cap C) \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+           </table>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får</p>
+                <table>
+                 <tr class="MaA11"><th>Påstående</th><th>\( \{d\} \)</th><th>\( \{b, c\} \)</th><th>\( \{c, d\} \)</th><th>\( \{a, b, c, d\} \)</th><th>\( \{b, c, d, e\} \)</th></tr>
+                 <tr><td>\( A \cup B \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                 <tr><td>\( A \cap B \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                 <tr><td>\( A \cap B\cap C \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                 <tr><td>\( B \cup C \) </td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                 <tr><td>\( (A \cup B) \cap C \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                 <tr><td>\( A \cup (B \cap C) \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <li>Kombinera rätt beteckning med rätt Venn diagram.
+           <p>Välj bland uttrycken:
+             <div class="grid-container">
+               <div class="grid-item">\( A \cup B \)</div>
+               <div class="grid-item">\( \overline{A \cap B} \)</div>
+               <div class="grid-item">\( \overline{A \cup B} \)</div>
+               <div class="grid-item">\( \overline{A} \cup B \)</div>
+               <div class="grid-item">\( A \cap B \)</div>
+               <div class="grid-item">\( A \cup \overline{B} \)</div>
+             </div>
+             </p>
+           <table>
+            <tr class="MaA11"><th>Beteckning</th><th>Venn diagram</th></tr>
+            <tr><td> </td><td><img src="pics/1-5a.png" alt=""  class="responsivepic250" /></td></tr>
+            <tr><td> </td><td><img src="pics/1-5b.png" alt=""  class="responsivepic250" /></td></tr>
+            <tr><td> </td><td><img src="pics/1-5c.png" alt=""  class="responsivepic250" /></td></tr>
+            <tr><td></td><td><img src="pics/1-5d.png" alt=""  class="responsivepic250" /></td></tr>
+            <tr><td> </td><td><img src="pics/1-5e.png" alt=""  class="responsivepic250" /></td></tr>
+            <tr><td> </td><td><img src="pics/1-5f.png" alt=""  class="responsivepic250" /></td></tr>
+           </table>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får</p>
+                <table>
+                 <tr class="MaA11"><th>Beteckning</th><th>Venn diagram</th></tr>
+                 <tr><td>\( A \cup B \) </td><td><img src="pics/1-5a.png" alt=""  class="responsivepic250" /></td></tr>
+                 <tr><td>\( A \cap B \) </td><td><img src="pics/1-5b.png" alt=""  class="responsivepic250" /></td></tr>
+                 <tr><td>\( \overline{A \cup B} \) </td><td><img src="pics/1-5c.png" alt=""  class="responsivepic250" /></td></tr>
+                 <tr><td>\( \overline{A} \cup B \) </td><td><img src="pics/1-5d.png" alt=""  class="responsivepic250" /></td></tr>
+                 <tr><td>\( \overline{A \cap B} \) </td><td><img src="pics/1-5e.png" alt=""  class="responsivepic250" /></td></tr>
+                 <tr><td>\( A \cup \overline{B} \) </td><td><img src="pics/1-5f.png" alt=""  class="responsivepic250" /></td></tr>
+                </table>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>Följande uppgift handlar om talmängder.
+            <ol>
+              <li>Börja med att repetera talmängder. Vilka finns det och vilka tal hör till respektive talmängd? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Talmängderna är
+                <ul>
+                <li>Naturliga tal, \( \mathbf{N}, 0, 1, 2, 3, \ldots \)</li>
+                <li>Heltal, \( \mathbf{Z}, \ldots, -2,-1,0,1,2,\ldots \)</li>
+                <li>Rationella tal, \( \mathbf{Q}, \dfrac{m}{n} \) så att \(m \) och \(n \) är heltal och \( n \not= 0\).</li>
+                <li>Reella tal, \( \mathbf{R} \). Alla tal ovan och dessutom tex \( \pi, \sqrt{2} \).</li>
+                <li>Komplexa tal, \( \mathbf{C} \). Alla tal ovan och dessutom de tal som tex löser ekvationen \( x^2 = -1 \).</li>
+              </ul>
+                </p></div></div> </li>
+              <li>Ordna talmängderna så att det framkommer vilken talmäng är delmängd till vilken talmängd. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Eftersom varje talmängd är en fortsättning, utvidgning, av föregående får vi följande.</p>
+              <p>Vi får \( \mathbf{N} \subset \mathbf{Z} \subset \mathbf{Q} \subset \mathbf{R} \subset \mathbf{C} \).</p></div></div> </li>
+              <li>Hur många element innehåller varje talmängd? Ordna talmängderna i storleksordning. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Uppgiften är inte så lätt som man först tror. Eftersom varje talmängd har oändligt många element är frågan att kan man jämföra oändliga mängder.</p>
+              <p>För att jämföra storleken på mängder talar man om kardinalitet. Läs artikeln på <a href="https://sv.wikipedia.org/wiki/Kardinalitet" target="_blank">Wikipedia om Kardinalitet</a> och fundera sedan på storleken av talmängderna.</p>
+
+              </p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv upp elementen i följande talmängder.
+            <ol>
+              <li>\( \{ n \in \mathbf{Z} \mid -3 \leq 4n+1 \leq 15 \} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>Kriteriet \( -3 \leq 4n +1 \leq 15 \) är samma som \( -1 \leq n \leq 3,5 \).</p>
+                <p>Efterom talen är heltal är mängden \( \{-1, 0,1,2,3 \} \).</p>
+              </div></div> </li>
+              <li>\( \{ x \in \mathbf{Q} \mid x^2 = 2 \} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>Kriteriet \( x^2=2 \) ger att \( x = \pm\sqrt{2} \).</p>
+                <p>Eftersom talen är rationella tal är mängden tom, \( \{ \varnothing \} \).</p>
+              </div></div> </li>
+              <li>\( \{ x \in \mathbf{R} \mid x^2 = 2 \} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7c">
+              <div class="card card-body answer"><p>På motsvarande sätt som ovan, talen som duger är \( x= \pm \sqrt{2} \). Nu är talen som vi jobbar med reella tal. Alltså \( \{-\sqrt{2}, \sqrt{2} \} \).</p></div></div> </li>
+              <li>\( \{ n \in \mathbf{N} \mid n \leq 10, \sqrt{n} \in \mathbf{N} \} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7d">
+              <div class="card card-body answer"><p>Kriteriet \( n \leq 10 \) betyder att vi arbetar med tal mindre än 10. Kriteriet \( \sqrt{n} \in \mathbf{N} \) ger oss att värdet av kvadratroten är naturligt. Alltså är mängden \( \{0,1,4,9\} \).</p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -140,15 +306,28 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><p><i class="fas fa-cogs fa-2x level"></i>Med beteckningen \( A \times B \) menas den karteiska produkten för två mängder. Då bildar vi alla par som vi kan baserat på mängderna \( A \) och \( B \) så att vi först väljer från \( A \) och sedan från \( B \). </p>
+            <p>Då \( A = \{1,2\} \) och  \( B = \{3,4\} \) är \( A \times B = \{(1,3), (1,4), (2,3), (2,4) \} \). Märk att \( A \times B \) sällan är samma som \( B \times A \).</p>
+            <p>Låt \( A = \{a\} \), \( B = \{1,2\} \), \( C = \{x,y,z\} \) och \( D = \{\varnothing \} \). Bilda följande karteiska produkter.</p>
+            <ol>
+              <li>\( A \times B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Vi får \( A \times B  = \{(a,1), (a,2) \}\).</p></div></div> </li>
+              <li>\( A \times B \times C\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Vi får \( A \times B \times C  = \{(a,1,x), (a,1,y), (a,1,z), (a,2,x), (a,2,y), (a,2,z) \}\).</p></div></div> </li>
+              <li>\( B \times C \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>Vi får \( B \times C  = \{(1,x), (1,y), (1,z), (2,x), (2,y), (2,z) \}\).</p></div></div> </li>
+              <li>\( B \times D \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10d">
+              <div class="card card-body answer"><p>Eftersom \( D \) är tomma mängden är \( B \times D = \{\varnothing \} \).</p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
-
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -190,7 +369,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
