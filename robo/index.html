@@ -2,258 +2,138 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Robotiikkaa Vantaan aikuisopistossa</title>
+    <title>Robotik och programmering</title>
   </head>
   <body>
-    <nav>
-      <ul id="menu">
-        <li><a href="#alku">Alku</a></li>
-        <li><a href="#jatko">Jatko</a></li>
-        <li><a href="#vaativampaa">Vaativampaa</a></li>
-        <li><a href="#koodausta">Koodausta</a></li>
-        <li><a href="#jatkoksi">Mitä jatkoksi?</a></li>
-        <li><a href="#kubo">Kubo</a></li>
-        <li><a href="#dash">Dash</a></li>
-        <li><a href="#makeblock">Makeblock</a></li>
-        <li><a href="#lego">Lego Mindstorms</a></li>
+    <header class="Robo">
+      <nav>
+        <!--<div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_mangder.html">1. Mängder</a>
+            <a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
+            <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Euklides algoritm</a>
+            <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
+            <a class="dropdown-item" href="6_kryptering.html">6. Kryptering</a>
+            <a class="dropdown-item" href="7_diofantisk.html">7. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
+            <a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
+            <a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
+          </div>
+        </div>-->
+      </nav>
+      <a href="../index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">Robotik och programmering</h3>
+      <a href="1_mangder.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <p>Innehållsförteckningen för sidan är följande:</p>
+      <ol>
+        <li><a href="#python">Python</a></li>
+        <li><a href="#mindstorms">Mindstorms</a></li>
+        <li><a href="#mindstorms_block">Mindstorms och block</a></li>
+        <li><a href="#mindstorms_python">Mindstorms och Python</a></li>
         <li><a href="#arduino">Arduino</a></li>
-        <li><a href="#code_org">Code.org</a></li>
-        <li><a href="#sonic_pi">Sonic Pi</a></li>
-      </ul>
-    </nav>
-    <section>
-      <p>Tervetuloa kurssille. Tällä sivulla löydät materiaalit jotka käytetään Vantaan aikuisopiston kurssilla Robotiikaa aikuisille. Kurssissa ei ole lähtötasoa vaan voit aloittaa ihan alusta, Kubolla. Jos koodaaminen on sinulle tututtu voit siirtyä vativimpiin tehtäviin. Katso esim Arduino tai Sonic Pi.</p>
+        <li><a href="#arduino_cansat">Python och CanSat</a></li>
+      </ol>
+      <h2 id="python">Python</h2>
+      <p>Python är ett programmeringsspråk som följer en engelskspråkig syntax. Eftersom man kan programmera Mindstorms ev3:orna med Python behandlar vi Python på denna kurs. Python kan man lära sig via webbsidor och programmera i deras webbapplikationer, eller så kan man skriva programmen på sin dator och köra den lokalt.</p>
+      <h4>Python via Codecademy</h4>
+      <p>Surfa till <a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a> och registrera dig. Leta reda på Learn Python 1, Learn Python 2 och Learn Python 3 och klara av dessa helheter.</p>
+      <p>Här på vår kurs utnyttjar vi gratismaterialet på Codecademy. Vill du lära dig mera så är det bara att betala för mera innehåll.</p>
 
-      <p>Materiaali seuraa kolme polkua, <a href="#aloittelija">Olen aloittelija</a>, <a href="#jotain">Osaan jotain</a> ja <a href="#osaan">Osaan ohjelmoida</a>. Jos jokin kohta tuntuu liian helpolta tai haastavalta voit hyvin siirtyä eteenpäin.</p>
+      <h4>Python på datorn</h4>
+      <p>För att komma igång med Python så följ instuktionerna på <a href="https://www.python.org/about/gettingstarted/" target="_blank">Getting Started</a> på python.org och <a href="https://wiki.python.org/moin/BeginnersGuide/Download" target="_blank">för att få reda på hur du installerar Python</a> på din dator.</p>
 
-      <div class="anto box" id="aloittelija">
-      <h1>Olen aloittelija</h1>
-      <p>Tämä osio on ajateltu niille jotka eivät ole aikaisemmin olleet ohjelmoinnin tekemisissä. Jos alku on liian helppoa voit siirtyä testamaan <a href="#dash">Dashia</a>.  </p>
-      <h2 id="alku">Alku: Kubo</h2>
-      <h3 id="kubo">Kubo <a href="#menu"><i class="fas fa-arrow-up"></i></a></h3>
-        <ol>
-          <li>Tutustu paloihin jotka ovat pussissa.</li>
-          <li>Mitä eroa on sinisillä ja punaisilla nuolilla ja paloille missä on pallo? Miten palat missä on pallo liittyy paloihin missä on nuoleja?
-            <p>Kubolla on kaksi mustipaikka koodille, yksi siniselle ja toinen punaiselle.</p>
-            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#kubo_1" aria-expanded="false" aria-controls="collapseExample">Ratkaisu</button></p>
-            <div class="collapse" id="kubo_1">
-            <div class="card card-body hint">
-              <p>Koodi mitä haluaa että Kubo muistaa sijoitetaan "pallo"-palikoiden sisään. Ohjelma aktivoidaan laittamalla Kubo samanvärisen nuolo-palikan päälle. Kubo-robootti muistaa kaksi ohjelmaa, sinisen ja punaisen.</p>
-              <p>Kun ohjelmoi Kuboa kääntymään, oikealle tai vasemmalle, niin se kääntyy ja ottaa askeleen eteenpäin.</p>
-              <p>Loopia toistaa tietyn pätkän koodia, rakenne on seuraavanlainen: </p>
-              <p><img src="kubo1.jpg" class="responsivepic600"></p>
-              <p>Kuvassa Kubo suorittaa 4 kertaa komennot mene askeleen eteenpäin, käänny vasemalle ja ota askel.</p>
-              <p>Kuin Kubo lukee koodia niin se loistaa violetin värisenä. Sinisenä se odottaa, vihreänä värisenä se suorittaa ohjelmaa ja jos se on punaisena sitä ahdistaa. Voi olla ettei koodissa ole käytetty loppu-palikkaa. Jos Kubo vaikuttaa siltä että Kubo ei tee sitä mitä sen pitäisi niin tyhjennä sen muistia ottamalla pää pois kehosta.</p>
-              <p>Ohjelma voi olla noin 20 palikkaa pitkä. Pituuden voi kiertää pysähtymällä Kuboa toisen värin nuolo-palikkaan, jolloin se jatkaa tai suoraan liittämällä nuoli-palikkaa toiseen koodipätkää.</p>
-            </div></div>
-          </li>
-          <li>Tee ohjelma missä Kubo ajaa 5 kertaa eteenpäin.</li>
-          <li>Tee ohjelma missä Kubo ajaa neliössä.</li>
-          <li>Palikoissa missä on kaksi nuolta mitkä menee ympäri voidaan hyödyntää loopina.</li>
-          <li>Tee ohjelma missä Kubo ajaa neliötä käyttäen loopia.</li>
-          <li>Ottakaa Kubo tuubista kartta. Tehtäsi on seuraava:
-            <ol>
-          <li>Olet jalankulkija ja seuraatte liikennesääntöjä, kadusta yli mennään suojatietä pitkin.</li>
-          <li>Aloita ruudusta B1. </li>
-          <li>Siirry Kioskille (E1) ja Leipomoon (H1) yhdellä pätkällä koodia.</li>
-          <li>Leipomosta siirryt Ravintolaan (C7) siten että koodissa käytät looppia.</li>
-          <li>Ravintolasta siirryt Lipputangolle (I tai J 10) siten että teet ylimääräisen kierroksen istutuksien (E8) ympäri.</li>
-          <li>Lipputangosta siirryt ruutuun I4 katsomaan maalausta joka on ruudussa I5 (Koska Kubo kääntyy niin kuin kääntyy, suunta ja askel , tämä saatta tuntua vaikealta. Tee se niin hyvin kuin pystyt.), ja sieltä aloitusruutuun B1. Selvitkö yhdellä koodinpätkällä? Vai jaatko koodin kahteen osaan?</li>
-        </ol></li>
-        </ol>
-
-        <h2 id="jatko">Jatko: Dash ja Makeblock</h2>
-        <h3 id="dash">Dash <a href="#menu"><i class="fas fa-arrow-up"></i></a></h3>
-        <ol>
-          <li>Ota Dash ja iPadi. iPadilla on kansio nimeltään Robotiikka tai Pelit. Käynnistä Blockly niminen sovellus.</li>
-          <li>Painamalla Play nappia pääset eteenpäin sovelluksessa.</li>
-          <li>Dashin saa päälle virtanapista, valkoinen nappi kyljestä.</li>
-          <li>Dashin saa yhdistetty näytön oikeasta yläkulmasta.</li>
-          <li>Jos haluat voit tehdä oman profiilin Manage Profilesin alla.</li>
-          <li>Siirry tilaan joka näyttää tältä.
-            <p><img src="dash1.jpg" class="responsivepic600"></p></li>
-          <li>Vasemmalla on ohjelmia mitkä käytetään. Mitä löydät Startin alla? Entäs Drive? Mistä löydät looppeja? Mitä löydät Variablesin alla?</li>
-          <li>Variables eli muuttujat ovat tietolaatikkoja, joihin tallennetaan tietoa jota ohjelma tarvitsee myöhemmin.</li>
-          <li>Blockeja (näitä värikkäitä laatikoita) saat käyttöön vetämällä ne oikealla olevaan työtilaan. Laatikot pitävät olla yhdessä jotta ohjelma on yhtenäinen.
-            <p><img src="dash2.jpg" class="responsivepic600"></p></li>
-          <li>Jos haluat muuttaa muuttajan arvoa, niin paina muuntajan laatikkoa ja muuttakaa arvoa. Saat näkyviin seruaavantapainen ruutu.
-            <p><img src="dash3.jpg" class="responsivepic600"></p></li>
-          <li>Tee seuraavaa:
-            <ol>
-              <li>Ohjelma missä Dash ajaa eteenpäin noin 1 metri, ja peruuttaa takaisin lähtöpaikalle.</li>
-              <li>Tee seuraavaksi ohjelman missä Dash ajaa neliötä loopin avulla.</li>
-              <li>Lisää lopuksi Controlin alla Repeat X times tai Repeat forever palikka.</li>
-              <li>Tee ohjelma joka Dash suoriittaa monta kertaa peräkkäin.</li>
-              <li>Hyvä, seuraavaksi tehdään musiikkia.</li>
-              <li>Kiinnitä Xylofoni ja Nuija Dashiin.</li>
-              <li>Lookin alla saat Dashin pään siirtymään ylös ja alas, vasemmalle ja oikealle.</li>
-              <li>Ohjelmoi Dashiä niin että hän soittaa pienen kappaleen. Muistakaa Loop- ja Repeat-palikat. Wait, joka on Controlin alla, saattaa myös olla hyödyllinen.</li>
+      <h2 id="mindstorms">Mindstorms</h2>
+      <p>Lego Mindstorms är en robotikbyggsats som är utvecklad av Lego. Legon är bekanta för många och det sänker tröskeln för att testa med robotik. Dessutom är sensorerna av hög kvalitet, vilket är bra då man vill bygga robotar. Lego Mindstorms kan man programmera antingen med hjäp av block eller genom att skriva Python.</p>
+      <p>Motorer kopplas till portarna A - D och sensorer till portarna 1 - 4.</p>
+      <h3 id="mindstorms_block">Mindstorms och block</h3>
+      <p>Om du inte har jobbat med robotik tidigare är Legos Mindstorms en bra inkörsport.</p>
+      <p>Börja med att göra följande.</p>
+      <ol>
+        <li>Börja med att ladda ner <a href="https://education.lego.com/en-us/downloads/mindstorms-ev3/software" target="_blank">Mindstorms programmet</a> till din dator och installera det.</li>
+        <li>Bygg sedan ihop grundroboten, den som kan köra.</li>
+        <li>Bekanta dig med programmet.</li>
+        <li>Använd dig av grundroboten och få den att köra i en kvadrat.
+          <ol>
+            <li><p>Motorer kan du styra med tre olika block.</p>
+              <p><img src="mindstorms3.jpg" class="responsivepic600"></p></li>
+              <li>Hur skiljer sig blocken från varandra? Vad har de för fördel mot de andra och vad kan de ha för nackdel?</li>
+              <li>I bilden finns markerat 1. och 2. Hur ändras motorns beteende då man ändrar på variablerna som finns under menyerna?</li>
+              <li>Hur får du roboten att köra framåt och sedan svänga? Hur får du den att köra i en kvadrat utan loop och med loop-blocket? Hur får du roboten att köra oändligt många gånger i en kvadrat?</li>
             </ol>
-          </li>
-          <li>Paljon mitä liitetään robotiikkaan koskee valintoja. Koodissa valintoja tehdään käyttäen if-lausetta (jos - niin). <em>Jos</em> jokin ehto toteutuu <em>niin</em> tee seuraavaa. Harjoitellaan if-lauseen käyttöä seuraavaksi
+        <li>Sedan tar vi och lägger till anvsåndssensorn och gyron. Ändra på programkoden så att roboten kör omkring av sig själv och undviker hinder som är närmare än 30 cm.</li>
           <ol>
-            <li>Tee ohjelma missä Dash ajaa ympäri luokkaa osumatta esteisiin. Ajattele että <em>jos</em> edessä on este <em>niin</em> tee... </li>
-            <li>Kun perusohjelma on valmis voit kehittää sitä. Miten Dash kannattaa liikkua jotta hän pääsee esteestä ohi? Sanooko tai vilkuuko Dash kun hän huomaa esteen?</li>
-          </ol></ol>
-        </ol>
-
-        <h4>Dash ja muuttujat</h4>
-        <p>Muuttujat (variables) ovat tietolaatikoita mihin ohjelma tallentaa tietoa, mitä käytetään myöhemmin ohjelmassa.</p>
-        <ol>
-          <li>Muuttujat löydät Variablesin alla. Vetämällä sen työpöydälle voit muokata sitä painamalla blokkia.</li>
-          <li>Normaalissa ohjelmointikielessä muuttajille annetaan nimi, Dashin Blocklyssa muuttujia on viisi: appelsiini, banaani, jne.</li>
-          <li>Muutujalle tietyn arvo, tallentaa arvon jollekin toisella nimellä, antaa satunnaisarvon sekä antaa arvon jostain Dashin sensoreista.</li>
-          <li>Harjoitellaan muuttajien käyttöa tekemällä seuraavat harjoitukset
-            <ol>
-              <li>Arvotaan muuttujalle arvon, ja Dash ajaa niin monta neliötä (tai muita kuvioita).</li>
-              <li>Itseohjautuva Dash. Kun hän huomaa esteen niin hän arpoo lähteekö hän peruttamaan oikealle tai vasemmalle.</li>
-              <li>Kuten yllä mutta jos Dash huomaa että perässä on joku niin hän ajaa nopeampaa, kunnes takana ei enää ole ketään.</li>
-              <li>Arvo muuttajalle arvon ja sen perusteella Dash soittaa jonkun melodian Xylofonilla.</li>
-            </ol></li>
-        </ol>
-
-        <h3 id="makeblock">Makeblock <a href="#menu"><i class="fas fa-arrow-up"></i></a></h3>
-        <ol>
-          <li>Makeblock koostuu paloista mitkä kiinnitetään toisiinsa magnettien avulla. Palikat ovivat joko kiinnittää suoraan toisiinsa tai sitten kaapeleiden avulla. Palikoita on kolme eri laista:
+            <li>Hur utnyttjar du gyro-sensorn för att få roboten att undvika hinder?</li>
+          </ol>
+        <li>Till nästa tar vi och bekantar oss med tryck-sensorn. Ändra roboten så att den kör omkring i 30 sekunder, undviker hinder, då man har tryckt en gång på trycksensorn. </li>
+        <li>Som det sista tar vi och bekantar oss med ljus-sensorn. Ändra roboten så att den kör omkring på en bana eller så att den kör omkring på ett bord, utan att falla ner.
           <ol>
-            <li>vihreät antavat sähköa ja mahdollistavat kommunikaation, mm Bluetooth ja Wifi.</li>
-            <li>oranssit ohjaavat, mm nappeja, ääni- ja kosteusmittarin.</li>
-            <li>siniset näyttävät dataa tai tekee toiminnon, mm näyttö, LED valoja ja ohjaimia moottoreihin.</li>
+            <li>När du använder dig av ljus-sensorn, kan du mäta värdena som den mäter. Du gör det genom att på roboten klicka dig fram i menyn där du får fram sensorernas rådata. Motsvarande data får du fram i datorns programmeringsmiljö.</li>
+            <li>Hur utnyttjar du informationen som står ovan och if-satsen för att få roboten att göra det vad du vill?</li>
           </ol>
         </li>
-        <li>Tutustu mitä laatikossa on. Jos kaipaat niin kannen sisäpuolella on ohjekirja.</li>
-        <li>Jokainen piiri mitä rakennat tarvitsee sähköä. Jotta piiri toimii niin ajattele että signaali menee vasemmalta oikealle. Katso kuvaa.
-        <p><img src="makeblock1.jpg" class="responsivepic600"></p></li>
-        <li>Rakenna yksinkertainen piiri missä käytät Power, Temp Sensor ja Display. Temp Sensor vaatii mittarin. Saatko näkyviin lämpötilan?</li>
-        <li>Jotta saa piirit keskustelemaan keskenään käytetään Wireless-T ja Wireless-R palikat. Liitä ne ensin yhteen, ne vilkuu hetken, kun valo palaa ne ovat valiina käyttöön.</li>
-        <li>Rakenna piiri joka koostuu kahdeosta osasta. 1. osa koostuu Power ja Knobista, 2. osassa on 8x8 LED valo. Mihin liität Wireless-R ja Wireless-T palikat jotta saadaan signaali kulkemaan 1. osasta 2. osaan?</li>
-        <li>Ennen kuin otetaan ohjelmointia mukaan niin rakenna seuraavat kaksiosaiset piirit:
-        <ol>
-          <li>Liiketunnstin, joka sytyttää LED-nauhaa kun PIR-sensori havaitsee liikehdintää.</li>
-          <li>Kosteusilmaisin, joka pitää ääntä jos kun kosteus on tarpeeksi korkea. Testaa laittamalla kosteusilmasin veteen.</li>
-          <li>Moottori jota ohjataan Light Sensorin avulla. Mitä eroa on DC Motor Driver ja Servo Driverin välillä?</li>
-        </ol></li>
-        </ol>
-        <h4>Makeblock ja ohjelmointia</h4>
-        <ol>
-          <li>Seuraavaksi katsotaan miten voidaan ohjelmoida ja tehdä piireistä monipuolisempia.</li>
-          <li>Lataa/ käynnistä Makeblockin Neuron sovellus tabletilla.</li>
-          <li>Valitse Classic Verison, se toimii Creative Lab Kitin kanssa.</li>
-          <li>Käytä Bluetooth-palikaa jotta saat yhteyden piiriin.</li>
-          <li>Näytön yläreunassa näet palikoita mitkä käytät. Alareunassa löydät komentoja.
-          <p><img src="makeblock2.jpg" class=responsivepic600></p></li>
-          <li>Vetämällä palikat alas työpöydälle voit ohjelmoida niitä.</li>
-          <li>Painamalla palikan kuvaa voit muuttaa sen asetuksia. Vetämällä palikasta tai toimiosta toiseen saat ne liitettyä yhteen. Painamalla viivaa saat sen poistettua ruksista.</li>
-          <li>Rakenna Bluetooth, Power, Gyro Sensor ja 8x8 LEDia käyttäen piiriä joka näyttää sydäntä jos piiri on suorassa.
-          <p><img src="makeblock3.jpg" class=responsivepic600></p></li>
-          <li>Rakenna jotain seuraavista ideoista
-          <ol>
-            <li>Auto joka ajaa itsekseen, varoen esteitä. Saatko siihen käytettyä PIR Sensoria? Sound Sensoria? Light Sensoria?</li>
-            <li>Kastelujärjestelmän joka kastelee kasvit kun multa on kuivaa.</li>
-            <li>Diskovalojärjestelmää joka muuttaa valaistusta äänenkorkeuden mukaan.</li>
-            <li>Mitä muuta hauskaa keksit?</li>
-          </ol></li>
-        </ol>
-
-      <h1 id="jotain">Osaan jotain</h1>
-        <h2 id="lego">Lego Mindstorms</h2>
-        <p>Lego Mindstorms on Legon kehittämä robtiikka-sarja. Legot ovat monelle tuttuja jotka madaltavat kynnystä rakentaa. Lisäksi sensorit ovat laadukkaita. Lego Mindstroms voidaan ohjelmoida joko palikoilla, blokeilla tai kirjoittamalla Pyhonia.</p>
-        <p>Mottoreita kytketään portteihin A - D ja sensorit portteihin 1 - 4.</p>
-        <h2>Mindstorms ja blokit</h2>
-        <ol>
-          <li>Perusnäkymä Mindstorms apissa on seuraava:
-          <p><img src="mindstorms.jpg" class="responsivepic600"></p></li>
-          <li>Paina "New Program" niin pääset alkuun.</li>
-        <li>Valikot löytyvät alhaalta: Vihreän alla ohjataan mottoreita, ääntä ja näyttöä, Keltaisen alla on Loop, If-lauseet, odotus ja jos haluaa tehdä lisä funktioita, Violetin alla on kommenttityökalu.
-        <p><img src="mindstorms2.jpg" class="responsivepic600"></li>
-        <li>Ensimmäiseksi rakennetaan robottia joka ajaa neliötä.
-        <ol>
-          <li>Mottoreita voidaan ohjata kolmella eri blokeilla.</p>
-            <p><img src="mindstorms3.jpg" class="responsivepic600"></p></li>
-            <li>Miten ne eroaa toisistaan? Mitkä ovat niiden hyödyt ja mahdolliset rajoitteet?</li>
-            <li>Kuvassa on merkattu 1. ja 2. Miten moottorin käyttäytymien muuttuu muuttamalla vaikon olevia valintoja?</li>
-          </li>
-          <li>Miten saat robootin ajamaan etenpääin ja kääntymään? Miten saat sen ajamaan neliötä ilman ja loopin kanssa? Miten saat sen tekemään asian loputtomasti?</li>
-        </ol>
-        <li>Sitten lisätään etäisyyssensoria ja gyroa. Muokaa sitä että se ajaa itsekseen ja väistää esteitä jos ne ovat lähempänä kuin 30 cm.
-          <ol>
-            <li>Miten hyödynnät gyro-sensoria kun robottii yrittää väistää estettä?</li>
-          </ol>
-        </li>
-        <li>Tutustutaan paine-sensoriin. Muuta robottia siten että se ajaa 30 s ympäri, väistäen esteitä, kun painenappia on painettu kerran.</li>
-        <li>Tutustutaan valo-sensoriin. Muuta robottia siten että se kiertää rataa tai ajaa pöydällä putoamatta alas.
-        <ol>
-          <li>Kun käytät valo-sensoria, voit mitata valon arvoja. Teet sen valitsemalla robotissa valikon missä saat esille sensoreiden raaka data, vastaavia arvoja saat näkymiin ohjelmointisovelluksessa.</li>
-          <li>Miten hyödynnät sen tiedon ja ehto-lauseen?</li>
-        </ol></li>
       </ol>
 
-        <h2 id="osaan">Lego ja Python</h2>
-        <p>Legon oma ohjelmointi-ympäristö käy nopeasti hankalaksi jos haluaa rakentaa suurempaa projektia. Jotta saamme muuttujat käyttöön meidän on pakko ohjelmoida kirjoittaen. Lego Mindstormseja voidaan ohjelmoida Pythonilla.</p>
+
+      <h3 id="mindstorms_python">Mindstorms och Python</h3>
+      <p>Legos egna programmeringsmiljö blir snabbt krånglig av sig om man vill göra mera avancerade program av sig. Vill vi jobba med variabler så får vi lov att börja programmera med Pyhton.</p>
+      <ol>
+        <li>Surfra till <a href="https://education.lego.com/en-us/support/mindstorms-ev3/python-for-ev3" target="_blank">https://education.lego.com/en-us/support/mindstorms-ev3/python-for-ev3</a>. På MicroSD korten finns färdigt EV 3 MicroPyhton Image.</li>
+        <li>Bygg sedan ihop grundroboten, den som kan köra.</li>
+        <li>Du behöver ladda ner och installera Visual Studio Code editorn och Lego Education EV 3 tilläggsbiblioteket.</li>
+        <li>Tag och se igenom Legos egna instruktionsvideo.</li>
+        <li>I videon slutet på Visual Studio Code (Steps 4-5) finns Expanding the example program. Kom igåg att göra detta!</li>
+        <li>På sidan finns Download the EV3 MicroPython Getting Started Guide. Öppna den och använd den som hjälp. För att komma igång.</li>
+        <li>Vid <a href="https://pybricks.github.io/ev3-micropython/" target="_blank">Go to the Online Documentation and Sample Programs</a> hittar du samma dokumentation och modellprogram. Använd dig av detta som hjälp, inte så att du direkt kopierar. (: </li>
+          <li>Gör en robot som klarar av följande:
           <ol>
-            <li>Siirry osoitteeseen <a href="https://education.lego.com/en-us/support/mindstorms-ev3/python-for-ev3" target="_blank">https://education.lego.com/en-us/support/mindstorms-ev3/python-for-ev3</a>. MicroSD korteilla on valmiiksi EV 3 MicroPyhton Image.</li>
-            <li>Tarvitset ladata ja asentaa Visual Studio Code editorin ja Lego Education EV3 lisäkirjaston.</li>
-            <li>Legon omat ohjevideot on hyvä katsoa läpi.</li>
-            <li>Visual Studio Code (Steps 4-5) videon lopussa on Expanding the example program. Muista tehdä se.</li>
-            <li>Sivulla on Download the EV3 MicroPython Getting Started Guide (incl. API and sample code). Avaa se ja käytä apuna.</li>
-            <li>Tee seuraavat tai vastaavat rakennelmat.
-            <ol>
-              <li>Robotin joka ajaa neliötä.</li>
-              <li>Robotin joka ajaa ympäri huonetta väistäen esteitä. Miten saat siihen liitettyä gyroa?</li>
-              <li>Robotin joka valo-sensorin avulla ajaa rataa pitkin.</li>
-            </ol></li>
-            <li>Kappaleesta 9 ja eteenpäin löydät esimerkkejä ja sivilla 54 löydät sisällysluettelon missä on listattuna kaikki komennot mitkä voit käyttää.</li>
-          </ol>
+            <li>En robot som kör runt i en kvadrat.</li>
+            <li>En robot som kör omkring och undviker hinder. Hur kan du utnyttja dig av gyro-sensorn?</li>
+            <li>En robot som med hjälp av ljussensorn klarar av att följa en bana.</li>
+          </ol></li>
+          <!--<li>Från och med kapitel 9 hittar du exempel och från och med sidan 54 hittar du innehållsförteckning där alla kommandon är listade.</li>-->
+        </ol>
 
-       <h2 id="vaativampaa">Vaativampaa: Arduino</h2>
-        <p>Seuraavat työt ja komponenteillä saa helposti vaativimia, ja helpompia töitä tehdyksi. Ohjelmointi tapahtuu kirjoittaen, jolloin oma tietokone on pakko olla mukana.</p>
-        <h3 id="arduino">Arduino <a href="#menu"><i class="fas fa-arrow-up"></i></a></h3>
-        <p>Arduino on mikrokontrolleri johon liitetään komponenttejä. Vantaan Robotiikkakeskuksessa on Mehackitin kehittämä rakennussarja. Mene osoitteeseen <a href="https://learn.mehackit.org" target="_blank">learn.mehackit.org</a>, rekisteröi ja valitse Elektroniikkaa ja ohjemlointia Arduinoilla (Maker Kit).</p>
-        <p>Aloita luvusta 1 ja asenna Adruino IDE.</p>
-        <p>Materiaalia kannattaa edetä järjestyksessä. Jotkut asiat vievät enemmän aikaa kuin toiset. Haaste tehtävät voit jättää tekemättä, jos siltä tuntuu. Luvut 2 - 5 luovat sen perustan mitä tarvitset tekmään projektityön, joka on luku 6. Materiaali on luotu lukion kurssille, tarkoitaa että materiaalia on noin 40 tunnille. Teet sen minkä ehdit. </p>
 
-      </div>
-
-        <h2 id="koodausta">Koodausta: Code.org ja Sonic Pi</h2>
-        Tässä osiossa löydät sivuja missä käsitellään koodausta. Näitten ratkaisemiseksi suosittelen tietokonetta.
-        <h3 id="code.org">Code.org <a href="#menu"><i class="fas fa-arrow-up"></i></a></h3>
-        <p>Code.org on nuorille suunnattu ohjelmointi sivusto. Kun lähtee rakentamaan voi hyvin aloittaa tästa. Mene <a href="https://studio.code.org/courses" target="_blank">Code.orgin</a> sivulle ja aloita Kurssista 4.</p>
-        <p>Jos tehtävät tuntuvat liian helpolta niin hyppää muutaman yli kunnes löydät sinulle sopivia tehtävän.</p>
-        <h3 id="sonic_pi">Sonic Pi <a href="#menu"><i class="fas fa-arrow-up"></i></a></h3>
-        <p><a href="https://sonic-pi.net" target="_blank">Sonic Pi</a> on sovellus missä koodaat musiikkia. Tyyli on vapaa, se voi olla jazzia, klassista tai vaikka EDM:ää. Lataa omalle koneelle sopiva versio ja aloita opiskelu <a href="https://sonic-pi.net/tutorial.html" target="_blank">tutoriaalin</a> avulla.
-
-        <h2 id="jatkoksi">Mitä jatkoksi?</h2>
-        <p>Paljon joka liittyy robotiikkaan liittyy myös ohjelmointiin. Tietyllä alustalla rakentaminen, esim Arduino tai Raspberry Pi, vaatii tietyn ohjelmointikielen. Jotta ohjelmointi sujuu ohjelmointikielellä ei ole väliä. Seuraavilla sivuilla ovat hyviä harjoittelemaan ohjelmointia:
-          <ul>
-            <li><a href="https://ohjelmointi-19.mooc.fi" target="_blank">Helsingin yliopiston avoin JavaScript Mooc</a></li>
-            <li><a href="https://www.elementsofai.com/fi" target="_blank">Elements of AI</a>. Avoin verkkokurssi joka käsittelee tekoälyä.</li>
-            <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a>. Tällä on paljon joka on ilmaista. Jotkut polut ja kurssit maksavat.</li>
-          </ul>
-          <p>Lisäksi löytyy Helmetistä hyviä kirjoja jotka käsittelevät robotiikka ja tekoälyä. Ray Kurzweilin The singularity is near on klassikko. Suosittelen, kirjaa löytyy vain englanniksi. Pekka Vahvansen Kone kaikkivaltias on kriittinen muistutus meille kaikille robotiikasta ja uhkista.</p>
-            <ul>
-              <li>Maija-Riitta Ollilla, Tekoälyn etiikka</li>
-              <li>Timo Siukonen ja Pekka Neittaanmäki, Mitä tulisi tietää tekoälystä</li>
-              <li>Pentti O. A. Haikonen, Tietoisuus, tekoäly ja robotit</li>
-              <li>Ray Kurzweil, The singularity is near : when humans transcend biology</li>
-              <li>Ray Kurzweil, How to create a mind: the secret of human thought revealed</li>
-              <li>Pekka Vahvanen, Kone kaikkivaltias : kuinka digitalisaatio tuhoaa kaiken meille arvokkaan</li>
-            </ul>
+      <h2 id="arduino">Arduino</h2>
+      <p>Arduino är en mikrokontroller. Det betyder att Arduinon är en liten dator som man kan koppla olika komponenter till. Sedan kör Arduinon det program som finns installerat på den.</p>
+      <p>I skolan har vi Mehackits Maker Kit. Den fungerar som en bra grund då man vill gå mera in på djupet. Materialet hittar du <a href="https://mehackit.org/kurssit/maker_kit_suomi/" target="_blank">här</a>.</p>
+      <p>Här gäller det att bekanta sig med teorin, programmera, lösa problem och sedan få det att fungera. (: </p>
 
 
 
-    </section>
+      <h3 id="arduino_cansat">Arduino och CanSat</h3>
+      <p>Här utnyttjar vi Arduiono för att bygga en satellit, inte större än en konservburk.</p>
+      <p>Mera material kommer. (; </p>
+
+
+
+      </article>
+    <footer class="Robo">
+      <a href="../index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="1_mangder.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

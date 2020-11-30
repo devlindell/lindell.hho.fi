@@ -30,14 +30,22 @@ ol li li {
 
 
 a {
-  color: #2A272A; /*Kolla en bra färg */
+  color: #3F86B5; /*Kolla en bra färg  #2A272A och #F2AAAA*/
   text-decoration: none;
   font-weight: 500;
 }
 
+header a {
+  color: black;
+}
+
+footer a {
+  color: black;
+}
+
 a:hover,
 a:active {
-  color: #F2AAAA; /*Kolla färgen*/
+  color: #232E36; /*#F2AAAA; Kolla färgen*/
   text-decoration: underline;
 }
 
