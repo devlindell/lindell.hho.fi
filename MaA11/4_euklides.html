@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../style.css">
 
 
-    <title>4. Euklides algoritm</title>
+    <title>4. Delninsgsekvationen och Euklides algoritm</title>
 
   </head>
   <body>
@@ -43,50 +43,88 @@
     </header>
 
     <article>
-      <h1>4. Euklides algoritm</h1>
+      <h1>4. Delninsgsekvationen och Euklides algoritm</h1>
       <section>
-        <p>Material kommer strax bara jag hinner skapa det.</p>
-        <p>/K</p>
         <div class="theory">
+          <p>Hittils har vi jobbat med delninsgsekvationen utan att namne att vi jobbar med den. Delningsekvationen handlar om att vi skriver divisioner med hjälp av rest.</p>
           <div class="intro box">
-
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
+            <p>Vi utför divisionen \( \dfrac{13}{4} \). Vi får att \( \dfrac{13}{4} = 3 \text{ rest } 1 \).</p>
+            <p>Vi kan skriva \( 13 = 3\cdot 4 + 1 \). Detta är delningsekvationen.</p>
           </div>
+          <p>Matematiskt uttrycker vi delninsgsekvationen på följande sätt.</p>
           <div class="summary box">
-
+            <p>Anta att \( b \) är ett positivt heltal. Varje heltal \( a \) kan skrivas som \[ a = br + q \] där \( q \) och \( r \) är heltal och \( 0 \leq r < b \).</p>
           </div>
           <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
+            <p><strong>Exempel 1</strong></p> Visa att summan av 99 på varandra följande heltal är delbar med 11.</p>
+            <h4>Lösning</h4>
+            <p>Vi betecknar det minsta talet med \( k \). Då är följande \( k +1 \) och vi får summan \( k + (k+1)+(k+2)+\ldots+ (k+98) \).</p>
+            <p>Vi märker att vi har en aritmetisk summa. Summan är \( S_n = \dfrac{n(a_1 + a_n)}{2} \).</p>
+            <p>Vi får \( \dfrac{99(k+(k+98))}{2} = \dfrac{99(2k +98)}{2} \).</p>
+            <p>Då vi vill visa att summan är delbar med 3, skall vi förenkla så att vi hittar faktorn 11.</p>
+            <p>Vi får \( 11\cdot 9 \cdot \dfrac{2(k+49)}{2} = 11 \cdot 9 (k + 49) \).</p>
+            <p>Alltså är summan delbar med 11. Dessutom är den delbar med alla faktorer som vi hittar i summan.</p>
+          </div>
 
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Visa att talet \( n(n+2)(n+4) \) är delbart med talet 3 för alla heltal \( n \).</p>
+              <p>För att visa att \( n(n+2)(n+4) \) är delbart med 3 för alla heltal så skall vi visa att då vi sätter in talen av formen \( 3q \), \( 3q +1 \) och \( 3p + 2 \) i \( n(n+2)(n+4) \) så skall vi hitta en faktor 3.</p>
+              <p>Vi börjar med \( 3q \), \( 3q(3q+2)(3q+4) = 3\cdot q(3q+2)(3q+4) \). Här har vi en faktor 3.</p>
+              <p>Följande \( 3q + 1 \), \( (3q+1)(3q+1+2)(3q+1+4) = (3q+1)(3q+3)(3q+5) = 3(3q+1)(q+1)(3q+5) \). Här har vi en faktor 3.</p>
+              <p>Det sista är \( 3q +2 \), \( (3q+2)(3q+2+2)(3q+2+4) = (3q+2)(3q+4)(3q+6) = 3(3q+2)(3q+4)(q+2) \). Här har vi också en faktor 3.</p>
+              <p>Alltså är talet \( n (n+2)(n+4) \) alltid delbart med 3.</p>
+            </div>
+            <p>Euklides algortim handlar om att vi utnyttjar delningsekvationen för att bestämma största gemensamma faktor för två positiva heltal.</p>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Bestäm med hjälp av Euklides algoritm största gemensamma faktor för talen 396 och 332.</p>
+              <h4>Lösning</h4>
+              <p>Vi delar det större talet med det mindre och skriver resultatet med hjälp av delningsekvationen.</p>
+              <p>Alltså \( \dfrac{396}{332} = 1 \text{ rest } 64 \). Alltså \( 396 = 332 \cdot 1 + 64 \).</p>
+              <p>Sedan dividerar vi 332 med resten 64. \( \dfrac{332}{64} = 5 \text{ rest } 12 \). Alltså \( 332 = 64 \cdot 5 + 12 \).</p>
+              <p>Sedan dividerar vi 64 med 12. \( \dfrac{64}{12} = 5 \text{ rest } 4 \). Alltså \( 64 = 12\cdot 5 + 4 \).</p>
+              <p>Sedan dividerar vi 12 med 4. \( \dfrac{12}{4} = 3 \text{ rest } 0 \). Alltså \( 12 = 4\cdot 3 + 0 \).</p>
+              <p>Eftersom vi har resten 0 slutar vi dividera.</p>
+              <p>Det betyder att \( SGF(12,4) = 4 \) och \( SGF(396,332) = 4 \).</p>
+            </div>
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <li>Bestäm största gemensamma faktor för följande tal med hjälp av Euklides algoritm.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>202 och 102 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \dfrac{202}{102} = 1 \text{ rest } 100\). Alltså \( 202 = 102 \cdot 1 + 100 \).</p>
+                <p>\( \dfrac{102}{100} = 1 \text{ rest } 2\). Alltså \( 102 = 100 \cdot 1 + 2 \).</p>
+                <p>\( \dfrac{100}{2} = 50 \text{ rest } 0\). Alltså \( 100 = 2 \cdot 50 + 0 \).</p>
+                <p>Alltså \( SGF(202,102) = 2 \).</p>
+              </div></div> </li>
+              <li>111 och 629 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \dfrac{629}{111} = 5 \text{ rest } 74\). Alltså \( 629 = 111 \cdot 5 + 74 \).</p>
+                <p>\( \dfrac{111}{74} = 1 \text{ rest } 37 \). Alltså \( 111 = 74 \cdot 1 + 37 \).</p>
+                <p>\( \dfrac{74}{37} = 2 \text{ rest } 0\). Alltså \( 74 = 37 \cdot 2 + 0 \).</p>
+                <p>Alltså \( SGF(111,629) = 37 \).</p>
+              </div></div> </li>
+              <li>11055 och 29614 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \dfrac{29614}{11055} = 2 \text{ rest } 7504\). Alltså \( 29614 = 11055 \cdot 2 + 7504 \).</p>
+                <p>\( \dfrac{11055}{7504} = 1 \text{ rest } 3551 \). Alltså \( 11055 = 7504 \cdot 1 + 3351 \).</p>
+                <p>\( \dfrac{7504}{3551} = 2 \text{ rest } 402 \). Alltså \( 7504 = 3551 \cdot 2 + 402 \).</p>
+                <p>\( \dfrac{3551}{402} = 8 \text{ rest } 335 \). Alltså \( 3551 = 402 \cdot 8 + 335 \).</p>
+                <p>\( \dfrac{402}{335} = 1 \text{ rest } 67 \). Alltså \( 402 = 335 \cdot 1 + 67 \).</p>
+                <p>\( \dfrac{335}{67} = 5 \text{ rest } 0 \). Alltså \( 335 = 67 \cdot 5 + 0 \).</p>
+                <p>Alltså \( SGF(11055,29614) = 5 \).</p></div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
@@ -98,9 +136,9 @@
               <div class="collapse" id="2c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -116,57 +154,110 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Delbarhet hos tal kan man även undersöka genom att förenkla uttrycket som det representerar, tex summan för två jämna tal efter varandra, \( 2n \) och \( 2n +2 \), kan vi undersöka genom att förenkla uttrycket. \( 2n + (2n+2) = 4n+2 = 2(n+1) \).</p>
+            <p>Eftersom det förenklade uttrycket innehåller en faktor 2, kan vi säga att summan är jämn, eller delbar med två.</p>
+            <ol>
+              <li>Undersök summan av två på varandra följande udda tal. Med vilket tal är summan delbar? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Talen är \(2n+1 \) och \( 2n+3 \).</p>
+                <p>Summan är \( (2n+1)+(2n+3) = 4n+4 = 2\cdot 2 (n+1) \).</p>
+                <p>Vi ser att summan är jämn, delbar med 2 och delbar med 4.</p>
+              </div></div> </li>
+              <li>Undersök summan av tre på varandra följande tal. Men vilket tal är summan delbar? Är det en skillnad om vi börjar med ett jämnt eller udda?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi börjar med jämt + udda + jämt.</p>
+                <p>\( 2n + (2n+1) + 2(n+1) = 6n+3 = 3(2n+1) \).</p>
+                <p>Vi får att talet är udda, och delbart med 3.</p>
+                <p>Fallet udda, jämnt, udda.</p>
+                <p>\( (2n+1)+(2n+2)+(2n+3) = 6n+6 = 2\cdot 3(n+1) \).</p>
+                <p>Vi får att talet är delbart med 2, 3 och 6.</p>
+              </div></div> </li>
+              <li>Undersök produkten av två på varandra följande heltal. Med vilket tal är produkten delbar?<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Vi får \( 2n \cdot 2(n+2) = 4n(n+2) \).</p>
+                <p>Vi märker att produkten är delbar med 2, 4 och talet n som vi bygger upp våra heltal med.</p>
+              </div></div> </li>
+              <li>Undersök produkten av två på varandra följande udda tal. Med vilket tal är produkten delbar?<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6d">
+              <div class="card card-body answer"><p>Vi får \( (2n+1) \cdot (2n+3) = 4n^2 +8n +3 \).</p>
+                <p>Utgående från det här kan vi inte säga något om produkten.</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
-
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv en algoritm över hur du utnyttjar Euklides algoritm för att bestämma största gemensamma faktor för två tal.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>Talet \( a \) är delbart med talet 28 och talet \( b \) är delbart med talet 21. Visa att
+            <ol>
+              <li>talet \( a + b \) är delbart med 7. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"><p>Eftersom talet \( a \) är delbart med 28 är det också delbart med olika varianter av \( 2 \cdot 2 \cdot 7 \).</p>
+                <p>För talet \( b \) gäller motsvarande, \( 21 = 3 \cdot 7 \).</p>
+                <p>Då kommer summan av \( a + b \) innehålla faktorn 7, och vara delbart med 7.</p>
+              </div></div> </li>
+              <li>talet \( ab \) är delbart med talet 12. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"><p>Samma logik som ovan.</p>
+                <p>Produkten \( ab \) innehåller produkten av alla primtalsuppdelningar. Också \( 2^2 \cdot 3 = 12 \).</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Visa att summan av \( n \) st på varandra följande heltal är delbar med \( n \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+              <div class="card card-body answer"> <p>Vi betecknar det första talet med \( k \), följande är \( k +1 \) och det sista är \( k + n -1 \).</p>
+                <p>Vi bestämmer summan \( k+(k+1)+(k+2)+\ldots+(k+n-1) \).</p>
+                <p>Vi har en aritmetisk summa, \( S_n = \dfrac{n(a_1+a_n)}{2} \).</p>
+                <p>Vi får \( \dfrac{(n(k+(k+n-1)))}{2} =
+                Vi har \(  + (k+1)+(k+2)</p></div></div>
+          </li>-->
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att talet \( (n+1)^2 -(n-1)^2 \) alltid är delbart med talet 4 för alla heltal \( n \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>De tal som vi undersöker är \( 4q \), \( 4q+1 \), \( 4q+2 \) och \( 4q+3 \).</p>
+                <p>\( 4q \) ger oss \( (4q+1)^2 -(4q-1)^2 = 16q^2+8q+1 -16q^2+8q-1 = 16 q = 4^2 q \). Här är faktor 4.</p>
+                <p>\( 4q+1 \) ger oss \( (4q+1+1)^2 - (4q+1-1)^2 = 16q^2+16q+4 - 16q^2 = 4(4q+1) \). Här är en faktor 4.</p>
+                <p>\( 4q+2 \) ger oss \( (4q+2+1)^2 -(4q+2-1)^2 = 16q^2 + 24q+9 -16q^2-8q-1 = 16q+8 = 4(4q+2) \). Här är en faktor 4.</p>
+                <p>\( 4q +3 \) ger oss \( (4q+3+1)^2 -(4q+3-1)^2 = 16q^2 +32q +16 -16q^2 -16q -4 = 16q +12 = 4(4q+3) \). Här är en faktor 4.</p>
+                <p>Alltså är \( (n+1)^2 -(n-1)^2 \) delbart med 4.</p>
+                <p>Om vi förenklar \( (n+1)^2 -(n-1)^2 = (n+1+(n-1))(n+1)-(n-1)) = 2n \cdot 2 = 4n \). Då är varenda tal som vi sätter in 4 gånger större och delbart med 4:a.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att talet \( n(n+1)(2n+1) \) är delbart med talet 6 för alla heltal \( n \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi skall undersöka med talen \( 6q, 6q+1, 6q+2, 6q+3, 6q+4 \) och \( 6q+5 \).</p>
+                <p>\( 6q \) ger \( 6q(6q+1)(2(6q)+1) = 6q(6q+1)(12q+1) \). Här är en faktor 6.</p>
+                <p>\( 6q + 1 \) ger \( (6q+1)(6q+1+1)(2(6q+1)+1) = (6q+1)(6q+2)(12q+3) = (6q+1)(72 q^2 + 42 q + 6) = (6q+1)6(12q^2+7q +1) \). Här är en faktor 6.</p>
+                <p>\( 6q+2 \) ger \( (6q+2)(6q+2+1)(2(6q+2)+1) = (6q+2)(6q+3)(12q+5) = (36q^2 + 30q+6)(12q+5) = 6(6q^2+5q+1)(12q+5) \). Här är en faktor 6.</p>
+                <p>\( 6q+3 \) ger \( (6q+3)(6q+3+1)(2(6q+3)+1) = (6q+3)(6q+4)(12q+7) = (36q^2 + 42q +12)(12q+5) = 6(6q^2+7q+2)(12q+5) \). Här är en faktor 6.</p>
+                <p>\( 6q+4 \) ger \( (6q+4)(6q+4+1)(2(6q+4)+1) = (6q+4)(6q+5)(12q+9) = (6q+5)(72q^2 + 102q +36) = (6q+5)6(12q^2+17q+6) \). Här är en faktor 6.</p>
+                <p>\( 6q+5 \) ger \( (6q+5)(6q+5+1)(2(6q+5)+1) = (6q+5)(6q+6)(12q+11) = (6q+5)6(q+1)(12q+11) \). Här är en faktor 6.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fab fa-python fa-2x level"></i>Skriv ett program för hur man bestämmer största gemensamma faktor för två tal genom att utnyttja Euklides algoritm.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -190,7 +281,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
