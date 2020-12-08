@@ -25,7 +25,7 @@
             <a class="dropdown-item" href="1_mangder.html">1. Mängder</a>
             <a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
             <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
-            <a class="dropdown-item" href="4_euklides.html">4. Euklides algoritm</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Delningsekvation och Euklides algoritm</a>
             <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
             <a class="dropdown-item" href="6_kryptering.html">6. Kryptering</a>
             <a class="dropdown-item" href="7_diofantisk.html">7. Diofantisk ekvation</a>
@@ -45,36 +45,56 @@
     <article>
       <h1>5. Kongruens</h1>
       <section>
-        <p>Material kommer strax bara jag hinner skapa det.</p>
-        <p>/K</p>
         <div class="theory">
           <div class="intro box">
-
-            <div class="video">
-
+            <p>Vilken veckodag
+              <ol style="list-style-type:lower-alpha">
+                <li>är det om 4 dygn?</li>
+                <li>är det om 18 dygn?</li>
+                <li>var det för 17 dygn sedan?</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol style="list-style-type:lower-alpha">
+                <li>Om det idag är måndag så är det om 4 dygn fredag.</li>
+                <li>Eftersom veckan består av 7 dygn är det om 18 dygn samma dag som om \( 18 -7 \dot 2 = 4 \) dygn.</li>
+                <li>För 17 dyng sedan var det samma dag som för \( 17 - 7\cdot 2 = 3 \) dygn sedan. Är det måndag idag var det för 3 dygn sedan fredag. </li>
+              </ol>
             </div>
-            <div class="geogebra">
-
+            <p>Vi märker att talen 18 och 4 har samma egenskaper kring delbarhet med talet 7. Inom matematiken talar vi om kongruens.</p>
+            <div class="summary box">
+              <p>Anta att \( n \) är ett heltal som är större än 1. Heltalen \( a \) och \( b \) är kongruenta modulo \( n \) om deras differens är delbar med talet \( n \).</p>
+              <p>Om talen \( a \) och \( b \) kongruenta modulo \( n \), betecknar vi det med \( a \equiv b \quad (\mod n) \).</p>
             </div>
-            <img src="pics/" alt="" class="responsivepic600">
-          </div>
-          <div class="summary box">
-
-          </div>
-          <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
+            <p>För våra tal gäller \( 18 - 4 = 14 \) och \( 14 \) är delbart med 7. Alltså \( 18 \equiv 4 \quad (\mod 7) \).</p>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Visa att
+                <ol style="list-style-type:lower-alpha">
+                  <li>\( 48 \equiv 13 \quad (\mod 7) \)</li>
+                  <li>\( -6 \equiv 12 \quad (\mod 3) \)</li>
+                </ol>
+                <h4>Lösning</h4>
+                <ol style="list-style-type:lower-alpha">
+                  <li><p>Eftersom \( 48 \equiv 13 \quad (\mod 7) \) betyder det att \( 48 - 13 = 35 = 7 \cdot 5 \)</p>
+                  <p>Alltså är \( 48 \equiv 13 \quad (\mod 7) \).</p></li>
+                  <li><p>Eftersom \( -6 \equiv 12 \quad (\mod 3) \) betyder det att \( -6 -12 = -18 = 3(-6) \).</p>
+                  <p>Alltså är \( -6 \equiv 12 \quad (\mod 3) \).</p></li>
+                </ol>
+              </div>
+              <div class="summary box">
+                <h4>Egenskaper för kongruens</h4>
+                <p>Kongruens har följande egenskaper.</p>
+              </div>
 
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <li>Visa att
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\(  \equiv  \quad (\mod ) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
               <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -86,7 +106,7 @@
             </ol>
           </li>
 
-          <li>Uppgift
+          <li>Bestäm resten för följande divisioner.
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
@@ -130,31 +150,31 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att talet XX är delbart med talet Y
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att talet XX är delbart med talet Y
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
