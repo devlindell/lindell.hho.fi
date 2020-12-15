@@ -45,77 +45,159 @@
     <article>
       <h1>6. Kryptering</h1>
       <section>
-        <p>Material kommer strax bara jag hinner skapa det.</p>
-        <p>/K</p>
         <div class="theory">
+          <p>Då Anna skickar ett meddelande till Bertil vill hon inte att Cecilia skall kunna läsa meddelanet. För att Cecilia inte skall kunna läsa det krypterar Anna meddelandet så att Bertil vet vad han skall göra för att kunna tyda meddelandet.</p>
+          <p>I sin enkelhet skiver Anna meddelandet. Hon krypterar det med en nyckel. Bertil får meddelande och dekrypterar meddelandet då han vet vilken nyckel Anna har krypterat meddelandet med.</p>
+          <p>Nu är verkligheten inte så simpel av sig. Utan när teknologin utvecklas kommer människan på nya sätt att kryptera.</p>
+          <p>Vi tar här och bekantar oss med symmetrisk och assymterisk kryptering. Den symmetriska krypteringen är historiskt sätt äldre och simplare av sig. Det gör det mycket lättare att bryta än assymetrisk kryptering.</p>
 
-          <h4>Symmetrisk kryptering</h4>
+          <h2>Symmetrisk kryptering</h2>
+          <p>I symmetrisk kyptering använder sig sändaren och mottagaren av samma nyckel för att kryptera och dekryptera meddelandet. Nackdelen med att båda använder sig av samma nyckel är att om någon obehörig får reda på nyckel som är det lätt att tyda alla meddelanden som skickats mellan personerna.</p>
+          <p>
 
-          <h4>Caesar krypto</h4>
+          <h3>Caesar krypto</h3>
           <!--Elementär algebra, sid 136-->
+          <p>Ett av de äldsta kända sätten att kryptera meddelanden är Caesarkryptot som den romerske kejsaren Julius Caesar använde sig av. Kyptot går ut på att man flyttar bokstäverna och tecken fram ett visst antal steg.</p>
+          <p><img src="pics/krypto_caesar.png" class="responsivepic400" /></p>
+          <p class="source">https://commons.wikimedia.org/wiki/File:Caesar3.svg</p>
+          <p>I bilden flyttar vi framåt varje bokstav med 3. Det som man måste komma överrens, de som krypterar, är att var kommer mellanslag och siffror in i nyckeln.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Anna och Bertil skickar meddelanden åt varandra. De krypterar med Caesarkryptering och flyttar varje bokstav 3 steg framåt. Mellanslag placerar de efter Ö. Siffror använder de sig inte av.</p>
+            <ol>
+              <li>Kryptera meddelandet: "VI TRÄFFAS VID SJÖN".</li>
+              <li>Använd samma nyckel och dekryptera meddelandet "KAPWDCVDIW".</li>
+            </ol>
+            <h4>Lösning</h4>
+            <p>Vi behöver en tabell över teckena som används.</p>
+            <table>
+              <tr class="MaA11"><th>Okrypterat tecken</th><th>Värde</th><th>Krypterat tecken</th><th>Okrypterat tecken</th><th>Värde</th><th>Krypterat tecken</th></tr>
+              <tr><td>A</td><td>0</td><td>D</td><td>P</td><td>15</td><td>S</td></tr>
+              <tr><td>B</td><td>1</td><td>E</td><td>Q</td><td>16</td><td>T</td></tr>
+              <tr><td>C</td><td>2</td><td>F</td><td>R</td><td>17</td><td>U</td></tr>
+              <tr><td>D</td><td>3</td><td>G</td><td>S</td><td>18</td><td>V</td></tr>
+              <tr><td>E</td><td>4</td><td>H</td><td>T</td><td>19</td><td>W</td></tr>
+              <tr><td>F</td><td>5</td><td>I</td><td>U</td><td>20</td><td>X</td></tr>
+              <tr><td>G</td><td>6</td><td>J</td><td>V</td><td>21</td><td>Y</td></tr>
+              <tr><td>H</td><td>7</td><td>K</td><td>W</td><td>22</td><td>Z</td></tr>
+              <tr><td>I</td><td>8</td><td>L</td><td>X</td><td>23</td><td>Å</td></tr>
+              <tr><td>J</td><td>9</td><td>M</td><td>Y</td><td>24</td><td>Ä</td></tr>
+              <tr><td>K</td><td>10</td><td>N</td><td>Z</td><td>25</td><td>Ö</td></tr>
+              <tr><td>L</td><td>11</td><td>O</td><td>Å</td><td>26</td><td>mellansteg, &blank;</td></tr>
+              <tr><td>M</td><td>12</td><td>P</td><td>Ä</td><td>27</td><td>A</td></tr>
+              <tr><td>N</td><td>13</td><td>Q</td><td>Ö</td><td>28</td><td>B</td></tr>
+              <tr><td>O</td><td>14</td><td>R</td><td>mellanslag, &blank;</td><td>29</td><td>C</td></tr>
+              </table>
+              <p>Vi får </p>
+              <ol>
+                <li>Det krypterade meddelandet är "YLCWVAIIDVCYLGCVMBQ".</li>
+                <li>Vi går baklänges för att dekryptera. Meddelandet är "HÄMTA SAFT".</li>
+              </ol>
+          </div>
 
-          <h4>Assymetriska krypton</h4>
+          <h2>Assymetriska krypton</h2>
+          <p>Eftersom symmetrisk kryptering är såpass lätt att bryta av sig använder man sig av assymetrisk kryptering.</p>
+          <p>Assymetrisk kryptering går ut på att sändaren och mottagaren har en offentlig och en privat nyckel. Då Anna vill skicka ett meddelande till Bertil, krypteras meddelandet med Bertils offentliga nyckel. Sedan dekrypterar Bertil meddelandet med sin privata nyckel.</p>
+          <p>Då vi krypterar med symmetriska krypton kan vi vara säkra på att användaren är den som den anger sig vara, förutsatt att krypteringen inte är bruten.</p>
+          <p>Eftersom vi har offentliga nycklar i assymterisk kryptering vet vi inte exakt vem som har skickat meddlandet. Därför undertecknas meddelandet med sändarens privata nyckel för att försäkra mottagaren att meddelandet har kommit från sändaren.</p>
 
-          <h4>RSA-systemet</h4>
+          <h3>RSA-systemet</h3>
           <!--Gamla boken sid 147-->
-          <h4>Offentlig kommunikation</h4>
+          <p>RSA-kryptering grundar sig på användning av stora primtal. Algoritmen för RSA-kryptering är följande</p>
+          <ol>
+            <li>Låt \( p \) och \( q \) vara stora primtal så att \( p \not= q \). Stora primtal är sådan som är större än \( 100^{100} \).</li>
+            <li>Bilda \( n = pq \) och \( z = (p-1)(q-1) \).</li>
+            <li>Välj \( d \in \{1,2,\ldots, z \} \) så att \( SGF(d,z)=1 \).</li>
+            <li>Låt \( e \) vara ett heltal som uppfyller \( 1 \leq e \leq z \) och \( ed \equiv 1 \quad (\mod z) \).</li>
+            <li>Representera texten som skall krypteras med en följd, \( m_1, m_2, \ldots \) av heltal, sådana att \( 0 \leq m_i \leq n-1 \) för varje \( i \).</li>
+            <li>Kryptera varje \( m_i \), genom att sätta \( E(m_i) = c_i \), där \( c_i \) är det tal i \( \{0,1,\ldots n-1 \} \) som uppfyller \( m_i^e \equiv e_i \quad (\mod n) \).</li>
+            <li>För att dekryptera definierar vi \( D(c_i) \) för varje \( c_i \) som det tal \( \{0,1,\ldots, n-1 \} \) som uppfyller \( c_i^d \equiv D(c_i) \quad (\mod n) \). Då kommer vi att ha \( D(c_i) = m_i \) för varje \( i \) och då har vi dekrypterat meddelandet.</li>
+          </ol>
+          <p>För att kryptera en text behöver man känna till värdena \( e \) och \( n \). Dessa tal är den offentliga nyckeln. Den hemliga nyckeln består av talet \( d \) och av primtalen \( p \) och \( d \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Vi tar och krypterar MUGG med RSA-kryptering. Låt \( p = 3 \) och \( q = 11 \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har inte stora primtal, men vi jobbar med dem.</p>
+            <p>Eftersom \( p = 3 \) och \( q = 11 \) får vi \( n = pq = 33 \) och \( z = (p-1)(q-1) = 20 \).</p>
+            <p>Talet \( d \) väljer vi från mängden \( \{1,2,\ldots,20 \} \) så att \(SGF(d,z) = 1 \), alltså så att \( d \) och 20 är relativ prima. Vi väljer \( d = 3 \), vilket ger \( e = 7 \), eftersom \( ed = 21 \equiv 1 \quad (\mod 20) \).</p>
+            <p>Sedan tar vi och krypterar. Vi kryterar MUGG. För att kryptera bildar vi en tabell. I kolumnent för \( m_i \) tar vi värdena från tabellen ovan där vi krypterade med Caesarkyptering.</p>
+            <p>I vår tredje kolumn har vi talen \( c_1 , c_2, c_3 \) och \( c_4 \) som motsvaras av vårt kryptogram, \( c_i = \equiv m_1^7 \quad (\mod 33) \).</p>
+            <table>
+              <tr class="MaA11"><th>Bokstav</th><th>\( i \)</th><th>\( m_i \)</th><th>\( E(m_i)=c_i \)</th></tr>
+              <tr><td>M</td><td>1</td><td>12</td></tr>
+              <tr><td>U</td><td>2</td><td>20</td></tr>
+              <tr><td>G</td><td>3</td><td>6</td></tr>
+              <tr><td>G</td><td>4</td><td>6</td></tr>
+            </table>
+            <p>För att bestämma \( c_i \) osv så bestämmer vi \( m^7 \quad (\mod 33) \) lönar det att tänka sig \( 7 = 1 + 2 + 2^2 \), alltså \( m_i^7 = m_i \cdot m_i^2 \cdot m_i^{2^2} \). Det ger oss att \( c_i \equiv m_i \cdot m_i^2 \cdot m_i^{2^2} \quad (\mod 33) \).</p>
+            <p>Till exempel är \( m_1 \equiv 12 \quad (\mod 33) \).</p>
+            <p>Fortsättning följer...</p>
+            <!-- Sid 153-->
 
-          <h4>Läs mera</h4>
+          <h3>Offentlig kommunikation</h3>
+
+          <h2>Läs mera</h2>
 
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <li>I följande meddelanden är krypterade med Caesarkryptering. Bokstäverna är flyttade 8 steg framåt. Placera in mellanslaget sist i alfabetet och använd dig inte av siffror.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Kryptera "ANFALL VID GRYNINGEN". <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Det krypterade meddelandet är "IVNITTH&blank;QLHOZCVQVOMV".</p></div></div> </li>
+              <li>Dektyptera "LMHFZHQVÄMHSTWSIHLMHLFZHZWUIZVI". <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Det okrypterade meddelandet är "DE ÄR INTE KLOKA DE DÄR ROMARNA"</p></div></div> </li>
+              <li>Dektyptera "PMTIHNZIVSZQSMH&blank;IZHWKSÖXMZIÄHNGZÖÄWUHMVHTQÄMVHJCHQHOITTQMV".<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Det okrypterade meddelandet är "HELA FRANKRIKE VAR OCKUPERAT FÖRUTOM EN LITEN BY I GALLIEN"</p></div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <li>I följande meddelanden är krypterade med Caesarkryptering. Bokstäverna är flyttade 5 steg framåt. Placera in mellanslaget sist i alfabetet och använd dig inte av siffror.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Kryptera "VAD STÅR DET I EN NORSK RONDELL" <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Det krypterade meddelandet är "ÅFIEXYBWIJYENEJSESTWXPEWTSIJQQ".</p></div></div> </li>
+              <li>Dektryptera "RFÖEBYYFEÅFWÅ" <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Meddelandet är "MAX ÅTTA VARV".</p></div></div> </li>
+              <li>Dektyptera "ÅNQPJSEÅNYX" <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Meddelandet är "VILKEN VITS".</p></div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li>Uppgift
+          <li>Antag att \( p = 43 \) och \( q = 37 \). Antag vidare att \( d = 5 \). Bestäm de följande parametrarna i RSA-kryptering.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>\( n = pq = 1591 \)</p>
+                <p>\( z = (p-1)(q-1) = 1512 \).</p>
+                <p>\( d = 7 \)</p>
+                <p>\( e = \)</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Antag att \( p = 61 \) och \( q = 67 \). Bestäm och välj de övriga parametrarna i RSA-kryptering.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>\( n = pq = 4087 \)</p>
+                <p>\( z = (p-1)(q-1) = 3960 \).</p>
+                <p>Resten av talen beror på dina val, \( d \) och \( e \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -131,21 +213,80 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Enigma var Tysklands krypteringsapparat under andra världskriget. Den bestod av roterande hjul som var i olika positioner.
+            <p>På <a href="https://www.mpoweruk.com/enigma.htm" target="_blank">Electropaedia</a>, finns en bra artikel.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Enigma_machine" target="_blank">Wikipedias</a> är inte heller helt dålig av sig.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10">
+          <li><i class="fab fa-python fa-2x level"></i>Skriv ett program som krypterar meddelanden med hjälp av Caesar kryptering. Låt användaren mata in hur många steg som man flyttar bokstäverna.
+            <p>Klarar du av att skapa så att man kan flytta negativa steg?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><p><i class="fas fa-cogs fa-2x level"></i>Då vi använder oss av Caesarkryptering kan vi matematiskt bekriva det som en funktion, tex \( E(x) = x + 4 \) då vi flyttar tecknena 4 steg framåt. Eftersom vi har 29 bokstäver + mellanslag har vi totalt 30 tecken. Som en mängd har vi talen från \( \{0,1,2,\ldots ,28,29\} = \mathbf{Z}_{30} \).</p>
+          <p>Dektypteringsnyckeln är den inversa funktionen (MaA 13). Den är funktionen \( D(y) = y - 4 = y + 26 \).</p>
+          <p>När vi utvecklar funktionen får kan vi skriva krypteringsnyckeln som \( E(x) = ax + b \) där \( a, b \in \mathbf{Z}_{30} \). Då \( a \) inte får värdet 0 talar vi om att vi har en affin avbildning, eller en affin krytpering.</p>
+          <ol>
+            <li>Bestäm den kryptot för nyckeln \( D(x) = 4x+11 \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10a">
+            <div class="card card-body answer"><p>Vi får</p>
+              <table>
+                <tr class="MaA11"><th>Okrypterat tecken</th><th>Värde</th><th>Nytt värde<th>Krypterat tecken</th></tr>
+                <tr><td>A</td><td>0</td><td>11</td><td>L</td></tr>
+                <tr><td>B</td><td>1</td><td>15</td><td>P</td></tr>
+                <tr><td>C</td><td>2</td><td>19</td><td>T</td></tr>
+                <tr><td>D</td><td>3</td><td>23</td><td>X</td></tr>
+                <tr><td>E</td><td>4</td><td>27</td><td>Ä</td></tr>
+                <tr><td>F</td><td>5</td><td>31 - 29 = 2</td><td>C</td></tr>
+                <tr><td>G</td><td>6</td><td>35 = 6</td><td>G</td></tr>
+                <tr><td>H</td><td>7</td><td>39 = 10</td><td>K</td></tr>
+                <tr><td>I</td><td>8</td><td>43 = 14</td><td>N</td></tr>
+                <tr><td>J</td><td>9</td><td>47 = 18</td><td>S</td></tr>
+                <tr><td>K</td><td>10</td><td>51 = 22</td><td>W</td></tr>
+                <tr><td>L</td><td>11</td><td>55 = 26</td><td>Å</td></tr>
+                <tr><td>M</td><td>12</td><td>59 = 30 = 1</td><td>B</td></tr>
+                <tr><td>N</td><td>13</td><td>63 = 5</td><td>F</td></tr>
+                <tr><td>O</td><td>14</td><td>67 = 9</td><td>J</td></tr>
+                <tr><td>P</td><td>15</td><td>71 = 13</td><td>N</td></tr>
+                <tr><td>Q</td><td>16</td><td>75 = 17</td><td>R</td></tr>
+                <tr><td>R</td><td>17</td><td>79 = 21</td><td>V</td></tr>
+                <tr><td>S</td><td>18</td><td>83 = 25</td><td>Z</td></tr>
+                <tr><td>T</td><td>19</td><td>87 = 0</td><td>A</td></tr>
+                <tr><td>U</td><td>20</td><td>91 = 4</td><td>E</td></tr>
+                <tr><td>V</td><td>21</td><td>95 = 8</td><td>I</td></tr>
+                <tr><td>W</td><td>22</td><td>99 = 12</td><td>M</td></tr>
+                <tr><td>X</td><td>23</td><td>103 = 16</td><td>Q</td></tr>
+                <tr><td>Y</td><td>24</td><td>107 = 20</td><td>U</td></tr>
+                <tr><td>Z</td><td>25</td><td>111 = 24</td><td>Y</td></tr>
+                <tr><td>Å</td><td>26</td><td>115 = 28</td><td>Ö</td></tr>
+                <tr><td>Ä</td><td>27</td><td>119 = 3</td><td>D</td></tr>
+                <tr><td>Ö</td><td>28</td><td>123 = 7</td><td>H</td></tr>
+                <tr><td>mellansteg, &blank;</td><td>29</td><td>127 = 11</td><td>L</td></tr>
+                </table>
+            </div></div> </li>
+            <li>Dektyptera meddelandet "EZKLINÅWÄFLFUTWÄÅ".<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10b">
+            <div class="card card-body answer"><p>Vi får "USH VILKEN NYCKEL".</p>
+            </div></div> </li>
+            <li>Hur många olika krypteringsnycklar kan man bilda? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10c">
+            <div class="card card-body answer"><p>Eftersom \( a \) inte få ha värdet 0 finns det 29 olika möjligheter. För \( b \) finns det 30 olika.</p>
+            <p>Vi har \( 29 \cdot 30 = 870 \) olika nycklar som vi kan skapa.</p>
+            </div></div> </li>
+            <li>Vad finns det för nackdelar med affin kryptering? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10d">
+            <div class="card card-body answer"><p>Eftersom vi endast kan skapa 870 olika nycklar och själva krypteringsnycklarna är inte så svåra att bryta är det inte ett helt säkert sätt att krytera viktigare meddelanden.</p></div></div> </li>
+          </ol>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -161,15 +302,15 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>Cecilia har gett ut sina offentliga nycklar i form av talen \( n = 55 \) och \( e = 3 \). Hon får ett meddelande som är kodat enligt dessa nycklar, och meddelandet är talet 2017. Cecilia känner till primtalsparametrarna \( p = 5 \) och \( q = 11 \). Hur lyder meddelandet i klartext? Meddelandet 2017 bildas av en teckensträng på två bokstäver, och dessa bokstäver har kodats till tal enligt systemet a = 00, b = 01, c = 02 osv. Koden måste alltså brytas ner i två delar: först tolkas talet 20 och sedan tolkas talet 17.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Det ursprungliga meddelandet är "pi".</p></div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -187,7 +328,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
