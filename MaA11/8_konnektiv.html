@@ -45,42 +45,77 @@
     <article>
       <h1>8. Konnektiv och sanningsvärden</h1>
       <section>
-        <p>Material kommer strax bara jag hinner skapa det.</p>
-        <p>/K</p>
         <div class="theory">
           <div class="intro box">
-            <p>
+            <p>Vad betyder instruktionen på hissens vägg? Är det tillåtet för fem tyngdlyftare att använda hissen, om var och en av dem väger 130 kg? Hur är det med 12 magra gossar, som väger 50 kg? Hur är det med en ensam tyndlyftare?</p>
+            <p><img src="pics/starka_man.jpg" class="responsivepic400"></p>
+          </div>
+            <p>För att undersöka problem som ovan använder vi oss av sanningsvärden och sanningsvärdetabeller. Varje påstående kan ha två värde, antingen är det sant, eller så är det falskt. Sanna värden betecknar vi med 1 och falska värden med 0.</p>
+            <p>Då vi jobbar med sanningsvärden och sanningsvärdetabeller utnyttjar vi oss också av konnektiv. Konnektiven är lite som räknesätten då vi räknar med siffor. Vi har konnektiven: negation, disjunktion, konjuktion, implikation och ekvivalen.</p>
             <h4>Negation</h4>
-
+            <p>Negation betyder det motsatta. Vi får följande sanningsvärdetabell.</p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( \neg A \) </th></tr>
+              <tr><td>1</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td></tr>
+            </table>
 
             <h4>Disjunktion</h4>
+            <p>Disjunktionen tolkas som eller, antingen skall \(A \) eller \( B \) vara sann för att disjunktionen är sann.</p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \vee B \)</th></tr>
+              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>1</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td></tr>
+            </table>
 
             <h4>Konjunktion</h4>
+            <p>Disjunktionen tolkas som och, då skall \(A \) och \( B \) vara sanna samtidigt för att konjuktionen är sann.</p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \wedge B \)</th></tr>
+              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td><td>0</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td></tr>
+            </table>
 
             <h4>Implikation</h4>
+            <p>Implikationen tolkas som "om A så B". Av konnektiven är det den som ställer till med mest problem. För att implikationen gäller att sant leder till sant. Något falskt leder inte till något sant, medan falskt alltid leder till något sant.</p>
+            </p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \Rightarrow B \)</th></tr>
+              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td></tr>
+            </table>
 
             <h4>Ekvivalens</h4>
+            <p>Ekvivalens betyder att två uttryck är identiska. Vi tolkar ekvivalen som en dubbel implikation. Alltså \( A \Leftrightarrow B \) som \( (A \Leftarrow B) \wedge (B \Leftarrow A) \).</p>
+            <p>Vi får sanningstabellen </p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \Rightarrow B \)</th><th>\( B \Rightarrow A \)</th><th> \( A \Leftrightarrow B \)</tr>
+              <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+            </table>
 
-
-
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
-          </div>
-          <div class="summary box">
-
-          </div>
-          <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Vi beteckar A: "det regnar", B: "det blåser" och C: "det är molnigt". Översätt till svenska
+                <ol>
+                  <li>\( A \wedge (B \vee C) \)</li>
+                  <li>\( (A \wedge B) \vee C \)</li>
+                </ol>
+              </div>
 
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
           <li>Uppgift
             <ol>

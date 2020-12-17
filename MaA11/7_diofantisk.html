@@ -45,110 +45,162 @@
     <article>
       <h1>7. Diofantisk ekvation</h1>
       <section>
-        <p>Material kommer strax bara jag hinner skapa det.</p>
-        <p>/K</p>
         <div class="theory">
           <div class="intro box">
-
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
-          </div>
-          <div class="summary box">
-
-          </div>
-          <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
-
+            <p>Då vi vill lösa ekvationen \( 87x-64y = 3 \). märker vi att vi får talpar som uppfyller ekvationen. </p>
+            <p>För att lösa den utnyttjar vi divisionsekvationen och gör följande:</p>
+            <p>\( \begin{array}{rcl}
+              87 & = & 1 \cdot 64 +23 \\
+              64 & = & 2 \cdot 23 +18 \\
+              23 & = & 1 \cdot 18 +5 \\
+              18 & = & 3 \cdot 5 + 3 \\
+              5 & = & 1\cdot 3 +2 \\
+              3 & = & 1 \cdot 2 +1 \\
+              2 & = & 2\cdot 1 +0 \\
+              \end{array} \)</p>
+              <p>Det betyder att sgf(87,64)=1. Och för att lösa ekvationen fortsätter vi på följande sätt:</p>
+              <p>Vi börjar från näst sista raden, eftersom vi har en rest.</p>
+              <p>\( \begin{array}{rcl}
+                1 & = & 3 - 2 \\
+                1 & = & 3 - (5- 3) = 2 \cdot 3 -5 \\
+                1 & = & 2 (18 -3 \cdot 5) -5 = 2 \cdot 18 -7 \cdot 5 \\
+                1 & = & 2 \cdot 18 -7(23 - 18) = -7 \cdot 23 +9 \cdot 18 \\
+                1 & = & -7 \cdot 23 +9(64 -2\cdot 23)=9 \cdot 64 -25 \cdot 23 \\
+                1 & = & 9 \cdot 64 -25 (87 - 64) = 34 \cdot 64 -25 \cdot 87\\
+                1 & = & (-25) \cdot 87 - (-34) \cdot 64 \\
+                \end{array} \) </p>
+                <p>Eftersom vi skall ha \( =3 \) multiplicerar vi hela ekvationen med 3. Vi får alltså</p>
+                <p>\( \begin{array}{rcl}
+                  3\cdot 1 & = & - 25 \cdot  3 \cdot 87 - (-34) \cdot 3 \cdot 64 \\
+                  3 & = &  - 75 \cdot 87 - (-102) \cdot 64 \\
+                  \end{array} \) </p>
+                  <p>Alltså är \( x=-75 \) och \( y=-102 \) en lösning.</p>
+                  <p>Sedan söker vi resten av lösningarna. </p>
+                  <p>\( x = -75 + (-64) = -139 \) och \( y=-102 -87 = -189 \). Vi testar talparet: \( 87(-139)-64(-189)=3\). </p>
+                  <p>Alltså stämmer det.</p>
+                  <p>Då kan vi uttrycka lösningarna som \( x = -75 -64n \) och \( y=-102 -87n\) där \( n \) är ett heltal.</p>
+                </div>
+                <p>En diofantisk ekvation är en ekvation vars lösningar är talpar.</p>
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <li>Lös följande diofantiska ekvationer.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( 11x+13y=4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \left\{ \begin{array}{l}
+                  x = 24 +13n \\
+                  y = -20 -11n\\
+                  \end{array} \right. \) </p>
+                </div></div> </li>
+              <li>\( 5x+10y=21 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Saknar lösning för att 21 är inte delbart med SGF(5, 10)</p></div></div> </li>
+              <li>\( 7x+21y=28 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \left\{ \begin{array}{l}
+                  x = -8 +3n \\
+                  y = 4 - 1n \\
+                  \end{array} \right. \) </p>
+                </div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <li>Bestäm heltalslösningarna för följande ekvationer.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( 5x+10y=85 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \left\{ \begin{array}{l}
+                  x = -17+ 2n \\
+                  y = 17 - 1n \\
+                  \end{array} \right. \) </p>
+                </div></div> </li>
+              <li>\( 3x+5y=8 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \left\{ \begin{array}{l}
+                  x = 16 +5n \\
+                  y = -8 - 3n \\
+                  \end{array} \right. \) </p>
+                </div></div> </li>
+              <li>\( 221x+238y=1156 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \left\{ \begin{array}{l}
+                  x=68 +13n \\
+                  y = -68 - 14n \\
+                  \end{array} \right. \) </p>
+                </div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <li>Lös ekvationen \( 98x+35 y = 14 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>\( x=-2+5n \) och \( y=6-14n \), där \( n \in \mathbf{Z}\).</p></div></div>
           </li>
 
-          <li>Uppgift
+          <li>Lös ekvationen \( 98x+35 y = 13 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Går inte. Vi får att sgf(98,35)=7 och 7 är inte en faktor i 13 så ekvationen saknar lösningar.</p></div></div>
           </li>
 
-          <li>Uppgift
+          <li>Lös ekvationen \( 77x +91y=168 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>\( x=144+13n \) och \( y=-120-11n \), där \( n \in \mathbf{Z} \).</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Den diofantiska ekvationen \( 13x + 31y = 44 \) har en lösning \( (1, 1) \). Skriv den generella lösningen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får</p>
+                <p>\( \left\{ \begin{array}{l}
+                  x = 1 +31n \\
+                  y = 1-13n \\
+                  \end{array} \right. \) </p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>I en husdjursaffär finns på en avdelning fiskar, papegojor och möss. Cecilia ville göra sin far svarslös genom att fråga hur många det fanns av vardera slaget om antalet huvuden var 28 och antalet fötter 20. Hjälp fadern att lösa uppgiften!
+          <p>(Bilda två ekvationssystem och jobba vidare från dem.)</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>\( x+y+z=28 \) och \( 2y+4x =20 \) vilket ger</p>
+                <p>\( \left\{ \begin{array}{rcl}
+                  x & = & 28-n \\
+                  y & = & -10+2n \\
+                  z & = & 10-n \\
+                  \end{array} \right. \) </p>
+                  <p>Eftersom \( x,y \) och \( x \) är heltal måste \( n \) vara 6,7,8 eller 9. Alltså (22,2,4), (21,4,3), (20,6,2) eller (19,8,1).</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilka värden på \( a \) i intervallet \( 11 < a < 19 \) saknar ekvationen \( 84x+990y=a \) lösningar?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>sgf(84,990)=6. Alltså måste \( a \) innehålla faktorn 6. \( a = 12 \) eller \( 18 \).</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -190,7 +242,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
