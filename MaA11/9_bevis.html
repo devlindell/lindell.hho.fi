@@ -50,7 +50,7 @@
             <p>Vi visar att triangelns vinkelsumma är 180<sup>o</sup>.</p>
             <p>(Motsvarande bevis gjorde vi i MaA 3, men repetition är nyckeln till kunskap.)</p>
             <div class="video">
-              <p>Video med beviset.</p>
+                  <iframe width="640" height="564" src="https://player.vimeo.com/video/317958673" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
             </div>
           </div>
           <div class="summary box">
@@ -64,14 +64,44 @@
               </ul>
             </p>
             <p>Oftast kör man fast när man bevisar något. Börja då från slutet och försök få början och slutet att passa ihop.</p>
+            <p>Matematiska bevis bygger man upp genom att ha antaganden, sedan ett påstående och till sist har vi själva beviset.</p>
           </div>
           <div class="exercise box">
               <p><strong>Exempel 1</strong> Visa att fyrhörningens vinkelsumma är 360<sup>o</sup>.</p>
               <h4>Lösning</h4>
-
+              <p>Vi bygger upp beviset genom att börja med ett antagande, sedan ett påstående och till sist själva beviset.</p>
+              <p>Vårt antagande är att triangelns vinkelsumma är 180<sup>o</sup>.</p>
+              <p>Vårt påstående är att fyrhörningens vinkelsumma är 360<sup>o</sup>.</p>
+              <p>Vårt bevis är följande:</p>
+              <p>Vi delar upp en fyrhörning i två trianglar.</p>
+              <p><img src="pics/9_2.png" class="responsivepic400" /></p>
+              <p>Vi har triangeln ABC och triangeln ACD. En triangel har vinkelsumman 180<sup>o</sup>. Då har två trianglar vinkelsumman \( 2 \cdot 180^{\circ} \).</p>
+              <p>Då har fyrhörningen vinkelsumman 360<sup>o</sup>.</p>
+            </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Visa att kvadraten på ett udda tal är udda.</p>
+            <h4>Lösning</h4>
+            <p>Vårt antagande är att a är udda.</p>
+            <p>Vårt påstående är att \( a^2 \) är udda.</p>
+            <p>Vårt bevis är följande:</p>
+            <p>Vi betecknar ett udda tal med \( a= 2n+1 \).</p>
+            <p>Sedan bildar vi \( a^2 = (2n+1)^2 = 4n^2+4n+1 = 2(2n+2) + 1\). </p>
+            <p>2 gånger något blir alltid jämnt, men genom att addera 1 så blir talet udda.</p>
+            <p>Alltså är kvadraten på ett udda tal alltid udda.</p>
           </div>
-
-
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Visa att \( x - 1 < x^2 \) för alla reella tal.</p>
+            <h4>Lösning</h4>
+            <p>Då vi skall visa att \( x - 1 < x^2 \) är det samma som att visa att \( x-1 -x^2 < 0 \).</p>
+            <p>Om vi inför en funktion, \( f(x) = -x^2-x-1 \) så skall vi visa att den alltid är negativ.</p>
+            <p>Det kan vi visa genom att bestämma toppen och visa att dess y-värde är negativt. Eller så bestämmer vi funktionens största värde med hjälp av derivata.</p>
+            <p>Derivatafunktionen är \( f'(x) = -2x+1 \).</p>
+            <p>Derivatans nollställe, \( f'(x) = 0 \) är \( -2x+1 = 0 \) ger oss \( x= \dfrac{1}{2} \).</p>
+            <p>Då \( f'(0) = -2\cdot 0 + 1 = 1 \). Alltså är \( f \) växande.</p>
+            <p>Då \( f'(1) = -2\cdot 1 + 1 = -1 \). Alltså är \( f \) avtagande.</p>
+            <p>Med andra ord har vi ett största värde i \( x = \dfrac{1}{2} \). Det största värdet är \( f(\dfrac{1}{2}) = -(\dfrac{1}{2})^2 -\dfrac{1}{2}-1 = -\dfrac{1}{4}-\dfrac{1}{2}-1 = -1\dfrac{3}{4} \).</p>
+            <p>Alltså är \( f \) hela tiden negativ. Och då gäller att \( x-1 -x^2 < 0 \), som ger oss att \( x - 1 < x^2 \).</p>
+          </div>
           </div>
       </section>
       <section>
@@ -153,13 +183,15 @@
               </div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att ett jämnt tal i kvadrat alltid är jämnt.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi kan betckna ett jämnt heltal med \( a=2n \).</p>
+                <p>Då vi bildar \(a^2 \) får vi \( (2n)^2 = 4n^2 = 2\cdot 2n^2\). Alltså har vi ett jämnt tal.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
