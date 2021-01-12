@@ -45,25 +45,56 @@
     <article>
       <h1>10. Induktionsbevis</h1>
       <section>
-        <p>Material kommer strax bara jag hinner skapa det.</p>
-        <p>/K</p>
         <div class="theory">
+          <p>Iduktionsbevis är en form av bevisföring som vi använder då vi till exempel bevisar att en formel gäller. Tanken bakom bevisföringen är att vi först testar att formeln stämmer sedan visar vi att den stämmer på ett allmänt sätt.</p>
           <div class="intro box">
-
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
+            <p>Visa att summan av \( 0 + 1 + 2 + 3 + \ldots + n = \dfrac{n(n+1)}{2} \).</p>
+            <p>Vi har härlett formeln i kursen MaG då vi behandlade aritmetisk summa. Men hur visar vi att den stämmer utan att härleda den på nytt?</p>
+            <p>Vi visar att formeln bestämmer med hjälp av induktion. Först tar vi och testar att den fungear (grundsteget), sedan tar vi och visar att den fungerar allmänt (induktionssteget).</p>
+            <p><strong>Grundsteget</strong>: Vi testar formeln med \( n = 1 \).</p>
+            <p>Vi får \( 0 + 1 = 1 \) och \( \dfrac{1(1+1)}{2} = 1 \). Formlen tycks stämma.</p>
+            <p><strong>Induktionssteget</strong>: Vi använder oss av \( k + 1 \).</p>
+            <p>Då får vi \( 0 + 1 + 2 + \ldots + k + (k + 1) \) som vi skall visa att är samma som \( \dfrac{(k+1)(k+1+1)}{2} = \dfrac{(k+1)(k+2)}{2} = \dfrac{k^2+3k+2}{2} \).</p>
+            <p>Eftersom \( 0 + 1 + 2 + \ldots + k = \dfrac{k(k+1)}{2} \) är \( 0 + 1 + 2 + \ldots + k + (k + 1) = \dfrac{k(k+1)}{2} + ^{2)}(k+1) = \\ \dfrac{k(k+1)}{2} + \dfrac{2(k+1)}{2} = \dfrac{k^2+k+2k+2}{2} =  \dfrac{k^2+3k+2}{2} \)</p>
+            <p>Då har vi visat att \( 0 + 1 + 2 + 3 + \ldots + n = \dfrac{n(n+1)}{2} \).</p>
           </div>
-          <div class="summary box">
 
+          <div class="summary box">
+            <p>Då vi bevisar med hjälp av induktion testar vi först att formeln/påståendet stämmer. Detta steg kallar vi för grundsteget. Sedan tar vi och visar allmänt med ett mera än vad som finns i formeln. Detta kallar vi för induktionssteget.</p>
           </div>
           <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
+            <p><strong>Exempel 1</strong> Bevisa med induktion att \( \displaystyle \sum_{k=0}^n k\cdot 2^k = (n-1)2^{n+1} + 2 \) då \( n \in \mathbf{N} \).</p>
+              <h4>Lösning</h4>
+              <p><strong>Grundsteget</strong>: Vi testar med \( n = 1 \). Vi får \( 0 \cdot 2^0 + 1 \cdot 2^1 = 2 \) och \( (1-1)2^{1+1} + 2 = 0 + 2 = 2 \). Formeln tycks stämma.</p>
+              <p><strong>Induktionssteget</strong>: Vi använder oss av \( k + 1 \). Då skall vi visa att \( \displaystyle \sum_{k=0}^{k+1} k \cdot 2^k = (k+1-1)2^{k+1+1}+2 = k \cdot 2^{k+2} +2 \).</p>
+              <p>Vi delar upp räkningarna.</p>
+              <p>\( \begin{array}{rcl}
+                \displaystyle \sum_{k=0}^{k+1} k \cdot 2^k & = & \underbrace{0 \cdot 2^0 + 1\cdot 2^1 + k\cdot 2^k}_{\displaystyle\sum_{k=0}^{k} k \cdot 2^k} + (k+1) \cdot 2^{k+1} \\
+                & = & \displaystyle\sum_{k=0}^{k+1} k \cdot 2^k + (k+1) \cdot 2^{k+1} \\
+                & = & (k-1)2^{k+1} + 2 + (k+1) \cdot 2^{k+1} \\
+                & = & (k-1+k+1)2^{k+1} +2 \\
+                & = & 2k\cdot 2^{k+1} +2 \\
+                & = & k \cdot 2^{k+2} +2 \\
+                \end{array} \) </p>
+                <p>Vilket är det som vi skulle visa. Alltså stämmer formeln.</p>
             </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Visa att \( 2^n > n^2 \) när \( n \in \mathbf{N} \) och \( n \geq 5 \).</p>
+              <h4>Lösning</h4>
+              <p><strong>Grundsteget</strong>: Vi testar med \( n = 5 \). \( 2^5 = 32 \) och \( 5^2 = 25 \).</p>
+              <p>Formeln tycks stämma.</p>
+              <p><strong>Induktionssteget</strong>: Vi använder oss av \( k + 1 \). Då skall vi visa att \( 2^{k+1} > (k+1)^2 \).</p>
+              <p>Vi gör som följande, observera att vi har ett större än tecken som vi jobbar med.</p>
+              <p>\( \begin{array}{rcl}
+                2^{k+1} & = & 2^k \cdot 2 \\
+                & > & k^2 \cdot 2 = 2k^2 = k^2 + k^2 \\
+                & \geq & k^2 + 5k = k^2 + 4k + k \\
+                & > & k^2 + 4k + 1 = (k+1)^2 \\
+                \end{array} \) </p>
+              <p>Eftersom grundsteget och induktionssteget stämmer stämmer det ursprungliga påståendet.</p>
+          </div>
+          <p>I exemplet ovan är ett typexempel över matematisk bevsiföring där man börjar med något \( 2^{k+1} \) och sedan skall man komma fram till något annat \( (k+1)^2 \). I praktiken börjar man från början, sedan räknar man från slutet och sedan försöker man få början och slutet att passa ihop.</p>
 
           </div>
       </section>
