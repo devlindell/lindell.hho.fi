@@ -80,9 +80,9 @@
             </div>
 
           <div class="exercise box">
-            <p><strong>Exempel 2</strong> Visa att \( 2^n > n^2 \) när \( n \in \mathbf{N} \) och \( n \geq 5 \).</p>
+            <p><strong>Exempel 2</strong> Visa att \( 2^n \geq n^2 \) när \( n \in \mathbf{N} \) och \( n \geq 4 \).</p>
               <h4>Lösning</h4>
-              <p><strong>Grundsteget</strong>: Vi testar med \( n = 5 \). \( 2^5 = 32 \) och \( 5^2 = 25 \).</p>
+              <p><strong>Grundsteget</strong>: Vi testar med \( n = 4 \). \( 2^4 = 16 \) och \( 4^2 = 16 \).</p>
               <p>Formeln tycks stämma.</p>
               <p><strong>Induktionssteget</strong>: Vi använder oss av \( k + 1 \). Då skall vi visa att \( 2^{k+1} > (k+1)^2 \).</p>
               <p>Vi gör som följande, observera att vi har ett större än tecken som vi jobbar med.</p>
@@ -103,7 +103,7 @@
         <ol>
           <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
@@ -115,20 +115,24 @@
               <div class="collapse" id="1c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
-          <li>Uppgift
-            <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-            </ol>
+          <li>Visa att \( 1 + 5 + 9 + \ldots (4n+1) = (n+1)(2n+1) \) för \( n = 0, 1,2, \ldots \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 0 \). Vi får \( (4\cdot 0 + 1) = 1 \) och \( (0+1)(2\cdot 0 + 1) = 1 \).</p>
+              <p>Formeln tycks stämma.</p>
+              <p>Induktionssteget: vi använder oss av \( k + 1 \).</p>
+              <p>Vi skall komma fram till \( (k+1+1)(2(k+1)+1) = (k+2)(2k+3) = 2k^2 + 7k + 6\).</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{rcl}
+                1 + 5 + \ldots + (4k+1) + (4(k+1)+1) & = & (k+1)(2k+1) + (4(k+1)+1) \\
+                & = & (k+1)(2k+1) + (4k+5) \\
+                & = & 2k^2 + 7k + 6 \\
+                \end{array} \) </p>
+                <p>Alltså stämmer formeln.</p>
+
+            </div></div>
           </li>
 
           <li>Bevisa med induktion att \( \displaystyle \sum_{k=0}^{n} k^3 = \dfrac{n^2(n+1)^2}{4} \).
@@ -148,17 +152,28 @@
               </div></div>
           </li>
 
-          <li>Uppgift
+          <li>Antag att \( q \not=1 \). Bevisa med induktion att \( \displaystyle\sum_{k=0}^{n} q^k = \dfrac{1-q^{n+1}}{1-q} \) då \( n \in \mathbf{N} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 0 \). Vi får \( q^0 = 1 \) och \( \dfrac{1-q^{0+1}}{1-q} = \dfrac{1-q}{1-q} = 1\). Formeln tycks stämma. </p>
+                <p>Induktionssteget: Vi jobbar med \( k +1 \).</p>
+                <p>Vi skall komma fram till \( \dfrac{1-q^{k+1+1}}{1-q} = \dfrac{1-q^{k+2}}{1-q} \) </p>
+                <p>Vi får </p>
+                <p>\( \begin{array}{rcl}
+                  q^0 + q^1 + \ldots + q^k + q^{k+1} & = & \dfrac{1-q^{k+1}}{1-q} + ^{1-q)}q^{k+1} \\
+                  & = & \dfrac{1-q^{k+1} + q^{k+1}(1-q)}{1-q} \\
+                  & = & \dfrac{1-q^{k+1} + q^{k+1} -q^{k+2}}{1-q} \\
+                  & = & \dfrac{1-q^{k+2}}{1-q} \\
+                  \end{array} \) </p>
+                  <p>Formeln stämmer.</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bevisa med induktion att \( 1^2 + 2^2 + 3^2 + \ldots + n^2 > \dfrac{n^3}{3} \) då \( n \in \mathbf{Z}_+ \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -216,33 +231,61 @@
               </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet \( 5^{123456} \).
-            <!--Uppgift 746 i gamla boken-->
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet \( 5^{123456} \) med hjälp av induktion.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi visar först med hjälp av induktion att \( 5^k \equiv 5 ( \mod 10 ) \) för alla positiva heltal.</p>
+                <p>Grundsteget: \( 5^1 \equiv 5 (\mod 10) \).</p>
+                <p>Induktonssteget: Vi får \( 5^{k+1} = 5^k \cdot 5 \equiv 5 \cdot 5 \equiv 5 (\mod 10) \).</p>
+                <p>Alltså gäller att \( 5^k \equiv 5 ( \mod 10 ) \) för alla positiva heltal.</p>
+                <p>Då gäller också att \( 5^{123456} \equiv 5 (\mod 10) \). Så sista siffran är 5.</p>
+
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Bevisa Aritmetiskens fundamentalsats.
-              <!-- sid 110, nya boken -->
+          <li><i class="fas fa-cogs fa-2x level"></i>Bevisa Aritmetiskens fundamentalsats, att varje heltal som är större än 1 kan entydigt skrivas som en produkt av primtal.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi bevisar satsen med hjälp av induktion.</p>
+                <p>Grundsteget: Då \( n = 2 \) gäller att primtalsfaktoriseringen är 1 och 2 eftersom 2 är ett primtal.</p>
+                <p>Induktionssteget: Vi skriver \( k +1 \) som en produkt av primtal.</p>
+                <p>Om talet \( k +1 \) är ett primtal är dess primtalsfaktorisering talet \( k +1 \) självt.</p>
+                <p>Om talet \( k +1 \)in är ett primtal kan vi skriva det i formen \( k + 1 = ab \) är \( 2 \leq a < k \) och \( 2 \leq b < k \).</p>
+                <p>Enligt induktionsatagandet kan \( a \) och \(b \) skrivas som produkter av primtal, \( a = a_1\cdot a_2 \cdot \ldots \cdot a_i \) och \( b = b_1\cdot b_2 \cdot \ldots \cdot b_i \). </p>
+                <p>Men då kan vi skriva \( k+1 \) som en produkt av primtal, \( k+1 = ab =  a_1\cdot a_2 \cdot \ldots \cdot a_i \cdot b_1\cdot b_2 \cdot \ldots \cdot b_i \).</p>
+                <p>Alltså gäller induktionsantagandet.</p>
+                <p>Alltså stämmer satsen.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Visa att vinkelsumman i en konvex \(n\)-hörning är \( (n-2)\cdot 180^{\circ} \) då \( n \geq 3 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+              <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 3 \). Vi får \( (3-2)\cdot 180^{\circ} = 180^{\circ} \) som vi visat tidigare att stämmer.</p>
+                <p>Induktionssteget: Vi anväder oss av \( k + 1 \).</p>
+                <p>Vi får \( (k+1-2)\cdot 180^{\circ} = ...</p>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bevisa Bernoullis olikhet, \( (1+x)^n \geq 1 + nx \), där \( x > -1 \) och \( n \in \mathbf{N} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi bevisar den med induktion.</p>
+                <p>Grundsteget: Vi testar med \( n = 0 \). Vi får \( (1+x)^0 = 1 \) och \( 1 + 0 \cdot x = 1\). Påståendet tycks stämma.</p>
+                <p>Induktionssteget: Vi jobbar med \( k +1 \). Vi får då </p>
+                <p>\( \begin{array}{rcl}
+                  (1+x)^{k+1} & = & (1+x)^k (1+x) \\
+                  & \leq & (1+kx)(1+x) \\
+                  & = & 1+x+kx+kx^2 \\
+                  & \leq & 1 + x + kx \\
+                  & = & 1 + (k+1)x \\
+                  \end{array} \) </p>
+                  <p>Vilket var det vi skulle komma fram till. Satsen stämmer.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -272,7 +315,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
