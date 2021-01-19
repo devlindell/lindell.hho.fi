@@ -128,75 +128,186 @@
             </ol>
           </li>
 
-          <li>Visa med induktion att \( 1 \cdot 2^0 + 2\cdot 2^1 + 3 \cdot 2^2 + \ldots + n \cdot 2^{n-1} = (n-1)2^{n+1} \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Grundsteget:</p></div></div>
-          </li>
-
-          <li>Visa med induktion att för alla heltal \( n \geq 2 \) gäller \[ \dfrac{1}{1\cdot 3} + \dfrac{1}{2\cdot 4} + \dfrac{1}{3\cdot 5} + \ldots + \dfrac{1}{(n-1)(n+1)} = \dfrac{3}{4} - \dfrac{2n+1}{2n(2n(+1))} \]
+          <li>Bestäm för talen 68 och 64350 deras strösta gemensamma faktor genom att utnyttja primtalsuppdelningen och Euklides algoritm.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Primtalsuppdelningen ger SGF(68,64350) = 2.</p>
+                <p>Euklides algoritm ger </p>
+                <p>\( \begin{array}{rcl}
+                  64350 / 68 & = & 946 \text{ rest } 22 \\
+                  68 / 22 & = & 3 \text{ rest } 2 \\
+                  22 / 2 & = & 11 \text{ rest } 0 \\
+                  \end{array} \) </p>
+                  <p>Alltså är SGF(68,64350) = 2.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>Visa att följande kongruenser gäller.
+            <ol>
+              <li>\( 7 \equiv 19 (\mod 3) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>\( 7 \equiv 19 (\mod 3) \) eftersom \( 7 - 19 = -12 = 3 \cdot (-4) \). </p></div></div> </li>
+              <li>\( -3 \equiv 19 (\mod 11) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>\( -3 \equiv 19 (\mod 11) \) eftersom \( -3 - 19 = -22 = 11 \cdot (-2) \).</p></div></div> </li>
+              <li>\( -3 \equiv 8 \equiv 19 (\mod 11) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>\( -3 \equiv 8 \equiv 19 (\mod 11) \) eftersom \( -3 - 8 = -11 = 11(-1) \), \( 8 -19 = 11 \) och \( -3 - 19 = -22 = 11 \cdot (-2) \).</p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>Lös följande diofantiska ekvationer.
+            <ol>
+              <li>\( 2x + 3 y = 11 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>Med hjälp av divisionsalgoritmen får vi </p>
+                <p> \( \begin{array}{rcl}
+                  3 & = & 1 \cdot 2 + 1 \\
+                  2 & = & 2 \cdot 1 + 0 \\
+                  \end{array} \) </p>
+                <p>Alltså sgf(3,2)=1 och 1 är en faktor i 11.</p>
+                <p>Sedan går vi baklänges och börjar med \( 1 = 3 - 2\cdot 1\). Vi jobbar vidare och kommer till \( 2 \cdot (-11) + 3 \cdot 11 = 11 \). </p>
+                <p>Alltså är en lösning \( x = -11 \) och \( y = 11 \).</p>
+                <p>Kandidaterna är \( x = -11 \pm 3 n \) och \( y = 11 \pm 2n \).</p>
+                <p>Vi för lösningarna \( x = -11 + 3 n \) och \( y = 11 - 2n \).</p>
+              </div></div> </li>
+              <li>\( 35x + 80y = 36 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>Med hjälp av divisionsalgoritmen får vi </p>
+                <p> \( \begin{array}{rcl}
+                  80 & = & 2 \cdot 35 + 5 \\
+                  35 & = & 7 \cdot 5 + 0 \\
+                  \end{array} \) </p>
+                <p>Alltså sgf(35,80)=5. Men 5 är inte en faktor i 36 så ekvationen saknar lösningar.</p>
+              </div></div> </li>
+              <li>\( 1332 x + 1032 y = 3600 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7c">
+              <div class="card card-body answer"><p>Med hjälp av divisionsalgoritmen får vi </p>
+                <p> \( \begin{array}{rcl}
+                  1332 & = & 1 \cdot 1032 + 300 \\
+                  1032 & = & 3 \cdot 300 + 132 \\
+                  300 & = & 2 \cdot 132 + 36 \\
+                  132 & = & 3 \cdot 36 + 24 \\
+                  36 & = & 1 \cdot 24 + 12 \\
+                  24 & = & 2 \cdot 12 \\
+                  \end{array} \) </p>
+                <p>Alltså sgf(1332,1032)=12 och 12 är en faktor i \(3600 = 12 \cdot 300\).</p>
+                <p>Sedan går vi baklänges och börjar med \( 12 = 132 - 36 \cdot 3 \). Vi jobbar vidare och kommer till \( 1332 \cdot 31 + 1032 (-40) = 12 \). </p>
+                <p>Alltså är en lösning \( x = 300 \cdot 31 = 9300 \) och \( y = -40 \cdot 300 = -12000 \).</p>
+                <p>Kandidaterna är \( x = 9300 \pm 1032 n \) och \( y = -12000 \pm 1332n \).</p>
+                <p>Vi för lösningarna \( x = 9300 + 1032 n \) och \( y = -12000 - 1332n \).</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>För vilka värden på A, B och C är följande satser sanna?
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li>Visa med induktion att \( 1 \cdot 2^0 + 2\cdot 2^1 + 3 \cdot 2^2 + \ldots + n \cdot 2^{n-1} = (n-1)2^{n} + 1 \) då \( n = 1,2,3,4,\ldots \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 1 \). Vi får \( 1 \cdot 2^{1-1} = 1 \) och \( (1-1)2^{1} + 1 = 1 \).</p>
+              <p>Formeln tycks stämma.</p>
+              <p>Induktionssteget: Vi jobbar med \( k + 1 \).</p>
+              <p>Vi skall komma fram till \( (k+1-1)2^{k+1} + 1 = k\cdot 2^{k+1} + 1 \).</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{rcl}
+                1 \cdot 2^0 + 2\cdot 2^1 + \ldots + k \cdot 2^{k-1} + (k+1) \cdot 2^{k+1-1} & = & (k-1)2^{k} + 1 + (k+1) \cdot 2^{k+1-1} \\
+                & = & (k-1)2^{k} + 1 + (k+1) \cdot 2^{k} \\
+                & = & 2^k \cdot (k-1+k+1) +1 \\
+                & = & 2^k \cdot 2k +1 \\
+                & = & k\cdot 2^{k+1} +1 \\
+                \end{array} \) </p>
+                <p>Alltså stämmer formeln.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li>Visa med induktion att för alla heltal \( n \geq 2 \) gäller \[ \dfrac{1}{1\cdot 3} + \dfrac{1}{2\cdot 4} + \dfrac{1}{3\cdot 5} + \ldots + \dfrac{1}{(n-1)(n+1)} = \dfrac{3}{4} - \dfrac{2n+1}{2n(n+1)} \]
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 2 \). Vi får \( \dfrac{1}{(2-1)(2+1)} = \dfrac{1}{3} \) och \( \dfrac{3}{4} - \dfrac{2\cdot 2+1}{2\cdot 2(2+1)} = \dfrac{1}{3} \).</p>
+              <p>Formeln tycks stämma.</p>
+              <p>Induktionssteget: Vi jobbar med \( k + 1 \).</p>
+              <p>Vi skall komma fram till \( \dfrac{3}{4} - \dfrac{2(k+1)+1}{2(k+1)(k+1+1)} = \dfrac{3}{4} -\dfrac{2k+3}{2(k+1)(k+2)} \).</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{l}
+                \dfrac{1}{1\cdot 3} + \dfrac{1}{2\cdot 4} + \ldots + \dfrac{1}{(k-1)(k+1)} + \dfrac{1}{(k+1-1)(k+1+1)} \\
+                 =  \dfrac{3}{4} - ^{k+2)}\dfrac{2k+1}{2k(k+1)} + ^{2(k+1)}\dfrac{1}{k(k+2)} \\
+                 = \dfrac{3}{4} - \dfrac{(k+2)(2k+1)+2(k+1)}{2k(k+1)(k+2)} \\
+                 <!--HÄR ÄR DU!!!-->
+              \end{array} \) </p>
+              <p>Alltså stämmer formeln.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bevisuppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bevisuppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#17" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="17">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#18" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="18">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="15">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#19" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="19">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
@@ -212,7 +323,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
