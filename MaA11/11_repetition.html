@@ -200,17 +200,43 @@
             </ol>
           </li>
 
-          <li>För vilka värden på A, B och C är följande satser sanna?
+          <li>För vilka värden på A och B är följande logiska satser sanna?
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( A \wedge B \Rightarrow A \vee B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{|c|c|c|c|c|}
+                  \hline A & B & A \wedge B & A \wedge B \Rightarrow A & A \wedge B \Rightarrow A \vee B \\
+                  \hline 1 & 1 & 1 & 1 & 1 \\
+                  \hline 1 & 0 & 0 & 1 & 1 \\
+                  \hline 0 & 1 & 0 & 1 & 1 \\
+                  \hline 0 & 0 & 0 & 1 & 1 \\
+                  \hline \end{array} \) </p>
+                  <p>Alltid sann, vi har en tautologi.</p>
+              </div></div> </li>
+              <li>\( (A \wedge B) \Rightarrow (A \vee B)  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"> <p>Vi får</p>
+                <p>\( \begin{array}{|c|c|c|c|c|}
+                  \hline A & B & A \wedge B & A \vee B & (A \wedge B) \Rightarrow (A \vee B) \\
+                  \hline 1 & 1 & 1 & 1 & 1 \\
+                  \hline 1 & 0 & 0 & 1 & 1 \\
+                  \hline 0 & 1 & 0 & 1 & 1 \\
+                  \hline 0 & 0 & 0 & 0 & 1 \\
+                  \hline \end{array} \) </p>
+                  <p>Alltid sann, vi har en tautologi.</p>
+
+              </div></div> </li>
+              <li>Visa att \( \neg(A \wedge B) \Leftrightarrow \neg A \vee \neg B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{|c|c|c|c|}
+                  \hline A & B & A \wedge B & \underbrace{\neg(A \wedge B)}_{C} &  \neg A & \neg B & \underbrace{\neg A \vee \neg B}_{D} & C \Leftrightarrow D \\
+                  \hline 1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+                  \hline 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 \\
+                  \hline 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 \\
+                  \hline 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+                  \hline \end{array} \) </p></div></div> </li>
             </ol>
           </li>
 
@@ -233,7 +259,7 @@
               </div></div>
           </li>
 
-          <li>Visa med induktion att för alla heltal \( n \geq 2 \) gäller \[ \dfrac{1}{1\cdot 3} + \dfrac{1}{2\cdot 4} + \dfrac{1}{3\cdot 5} + \ldots + \dfrac{1}{(n-1)(n+1)} = \dfrac{3}{4} - \dfrac{2n+1}{2n(n+1)} \]
+          <!--<li>Visa med induktion att för alla heltal \( n \geq 2 \) gäller \[ \dfrac{1}{1\cdot 3} + \dfrac{1}{2\cdot 4} + \dfrac{1}{3\cdot 5} + \ldots + \dfrac{1}{(n-1)(n+1)} = \dfrac{3}{4} - \dfrac{2n+1}{2n(n+1)} \]
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 2 \). Vi får \( \dfrac{1}{(2-1)(2+1)} = \dfrac{1}{3} \) och \( \dfrac{3}{4} - \dfrac{2\cdot 2+1}{2\cdot 2(2+1)} = \dfrac{1}{3} \).</p>
@@ -245,22 +271,61 @@
                 \dfrac{1}{1\cdot 3} + \dfrac{1}{2\cdot 4} + \ldots + \dfrac{1}{(k-1)(k+1)} + \dfrac{1}{(k+1-1)(k+1+1)} \\
                  =  \dfrac{3}{4} - ^{k+2)}\dfrac{2k+1}{2k(k+1)} + ^{2(k+1)}\dfrac{1}{k(k+2)} \\
                  = \dfrac{3}{4} - \dfrac{(k+2)(2k+1)+2(k+1)}{2k(k+1)(k+2)} \\
-                 <!--HÄR ÄR DU!!!-->
+                 HÄR ÄR DU!!!
               \end{array} \) </p>
               <p>Alltså stämmer formeln.</p>
               </div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa med hjälp av induktion att för alla \( n \in \mathbf{N} \) gäller att \( D x^n = nx^{n-1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10.5">
+              <div class="card card-body answer"> <p>Grundsteget: Vi testar med \( n = 0 \). Vi får \( Dx^0 = D 1 = 0 \) och \( 0 \cdot x^{n-0} = 0 \). </p>
+                <p>Formeln tycks stämma.</p>
+                <p>Induktionssteget: Vi jobbar med \( k +1 \).</p>
+                <p>Vi skall visa att \( D x^{k+1} = (k+1)x^k \).</p>
+                <p>Vi får </p>
+                <p>\( \begin{array}{rcl}
+                  D x^{k+1} & = & D(xx^k) \\
+                  & = & xDx^k + x^kDx \\
+                  & = & xkx^{k-1} + x^k \cdot 1 \\
+                  & = & kx^k + x^k \\
+                  & = & (k+1)x^k \\
+                  \end{array} \) </p>
+                <p>Vilket är vad vi skulle visa. Formeln stämmer.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet \( 2^{96} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Först märker vi att \( 2^5 = 32 \equiv 2 \quad (\mod 10) \).</p>
+                <p>Sedan får vi att </p>
+                <p>\( \begin{array}{rcll}
+                  2^{96} & = & 2^{5 \cdot 19} \cdot 2 \\
+                  & \equiv & 2^{19} \cdot 2 = 2^{5\cdot 4}\\
+                  & \equiv & 2\cdot 2^4 = 2^5 \\
+                  & \equiv & 2 \quad(\mod 10) \\
+                  \end{array} \) </p>
+                  <p>Den sista siffran är 2.</p>
+                </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm sista siffran i talet \( 3^{313} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi börjar med att märka att \( 3^4 = 81 \equiv 1 \quad(\mod 10) \).</p>
+                <p>Sedan får vi att </p>
+                <p>\( \begin{array}{rcll}
+                  3^{313} & = & 3^{4\cdot 78} \cdot 3 \\
+                  & \equiv & 3^{78} \cdot 3 = 3^{4 \cdot 19 + 2} \cdot 3 = 3^{4 \cdot 19} \cdot 3^3 \\
+                  & \equiv & 3^{19} \cdot 3^3 = 3^{4 \cdot 4 + 3} \cdot 3^3 = 3^{4 \cdot 4} \cdot 3^6 \\
+                  & \equiv & 3^4 \cdot 3^6  \\
+                  & \equiv & 1 \cdot 3^6  = 3^{4} \cdot 3^2 \\
+                  & \equiv & 1 \cdot 3^2  = 1 \cdot 9 \quad (\mod 10) \\
+                  \end{array} \) </p>
+                  <p>Den sista siffran är 9.</p>
+              </div></div>
           </li>
 
           <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
