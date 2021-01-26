@@ -122,7 +122,7 @@
               <li>64350 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4b">
               <div class="card card-body answer"><p>\( 64350 = 2 \cdot 3^2 \cdot 5^2 \cdot 11 \cdot 13 \).</p></div></div> </li>
-              <li>1536975 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>15369 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4c">
               <div class="card card-body answer"><p>\( 15369 = 3 \cdot 47 \cdot 109 \) </p></div></div> </li>
             </ol>
@@ -152,7 +152,7 @@
               <div class="card card-body answer"><p>\( -3 \equiv 19 (\mod 11) \) eftersom \( -3 - 19 = -22 = 11 \cdot (-2) \).</p></div></div> </li>
               <li>\( -3 \equiv 8 \equiv 19 (\mod 11) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6c">
-              <div class="card card-body answer"><p>\( -3 \equiv 8 \equiv 19 (\mod 11) \) eftersom \( -3 - 8 = -11 = 11(-1) \), \( 8 -19 = 11 \) och \( -3 - 19 = -22 = 11 \cdot (-2) \).</p></div></div> </li>
+              <div class="card card-body answer"><p>\( -3 \equiv 8 \equiv 19 (\mod 11) \) eftersom \( -3 - 8 = -11 = 11(-1) \), \( 8 -19 = -11 \) och \( -3 - 19 = -22 = 11 \cdot (-2) \).</p></div></div> </li>
             </ol>
           </li>
 
@@ -192,7 +192,12 @@
                   24 & = & 2 \cdot 12 \\
                   \end{array} \) </p>
                 <p>Alltså sgf(1332,1032)=12 och 12 är en faktor i \(3600 = 12 \cdot 300\).</p>
-                <p>Sedan går vi baklänges och börjar med \( 12 = 132 - 36 \cdot 3 \). Vi jobbar vidare och kommer till \( 1332 \cdot 31 + 1032 (-40) = 12 \). </p>
+                <p>Sedan går vi baklänges och börjar med </p>
+                  <p>\( \begin{array}{rcl}
+                    12 & = &  36 - 1 \cdot 24 \\
+                    & = & 36 - 1 (132 - 3\cdot 36) \\
+                    \end{array} \) </p>
+                <p>Vi jobbar vidare och kommer till att \( 12 = 1332 \cdot 31 + 1032 (-40) \). </p>
                 <p>Alltså är en lösning \( x = 300 \cdot 31 = 9300 \) och \( y = -40 \cdot 300 = -12000 \).</p>
                 <p>Kandidaterna är \( x = 9300 \pm 1032 n \) och \( y = -12000 \pm 1332n \).</p>
                 <p>Vi för lösningarna \( x = 9300 + 1032 n \) och \( y = -12000 - 1332n \).</p>
