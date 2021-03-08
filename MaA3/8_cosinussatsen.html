@@ -111,7 +111,7 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
               <div class="card card-body answer"> <p>Längden av den tredje sidan: Cosinussatsen ger \( x^2=8,5^2+6,4^2-2\cdot8,5\cdot6,4\cos46^{\circ} \Leftrightarrow x=6,134 = 6,1 \) cm.</p>
-                <p>Vinkeln mot sidan 6,4 cm: Sinussatsen ger \( \frac{6,4}{\sin\alpha}=\frac{6,13}{\sin46^{\circ}} \Leftrightarrow \alpha=48,679 = 48,7^{\circ} \).</p>
+                <p>Vinkeln mot sidan 6,4 cm: Sinussatsen ger \( \dfrac{6,4}{\sin\alpha}=\dfrac{6,13}{\sin46^{\circ}} \Leftrightarrow \alpha=48,679 = 48,7^{\circ} \).</p>
                 <p>Vinkeln mot sidan 8,5 cm: \( 180-(46+48,679\ldots)=85,32\ldots=85,3^{\circ} \).</p> </div></div>
           </li>
 
@@ -120,8 +120,8 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
               <div class="card card-body answer"> <p>Cosinussatsen ger \( 11,2^2=8,3^2+x^2-2\cdot 8,3 \cdot x \cos 88^{\circ} \) ger \( x=-7,236 \) och \( x=7,815 \).</p>
-                <p>Längden är alltså 19,5 cm .</p>
-                <p>Sinussatsen, \( \frac{\sin\alpha}{8,3}=\frac{\sin 88^{\circ}}{11,2} \) ger \( \alpha = 47,78 = 47,8^{\circ} \).</p>
+                <p>Längden är alltså 7,8 cm .</p>
+                <p>Sinussatsen, \( \dfrac{\sin\alpha}{8,3}=\dfrac{\sin 88^{\circ}}{11,2} \) ger \( \alpha = 47,78 = 47,8^{\circ} \).</p>
                 <p>Storleken av den tredje vinkeln är \( 180^{\circ}-(88^{\circ}+47,78^{\circ})=44,22^{\circ}=44,2^{\circ} \).</p> </div></div>
           </li>
 
@@ -206,14 +206,22 @@
             <p><img src="pics/8_5.png" alt="" class="responsivepic400" /></p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Cosinussatsen ger, \( a^2=2^2+3^2-2\cdot2\cdot3 \cos 30^{\circ} = 4+9-12\cdot\frac{\sqrt{3}}{2}= 13-6\sqrt{3} \).</p>
+              <div class="card card-body answer"> <p>Cosinussatsen ger, \( a^2=2^2+3^2-2\cdot2\cdot3 \cos 30^{\circ} = 4+9-12\cdot\dfrac{\sqrt{3}}{2}= 13-6\sqrt{3} \).</p>
                 <p>\( x=\sqrt{13-6\sqrt{3}}\approx 1,61 \).</p> </div></div>
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Härled cosinussatsen då \( \alpha \) är spetsig.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> Lösningen </div></div>
+              <div class="card card-body answer"> <p>Vi börjar med att rita en bild.</p>
+              <p><img src="pics/7_11.png" class="responsivepic400" /></p>
+              <p>Vi bildar uttrycken \( h^2 + (a-u)^2 = c^2 \) och \(h^2 + u^2 = b^2 \).</p>
+              <p>Eftersom bägge uttryck innehåller \( h^2 \) får vi \( c^2 -(a-u)^2 = b^2-u^2 \). Vi förenklar och kommer till \( c^2 = a^2+b^2 -2au \).</p>
+              <p>Vi bildar \( \cos \gamma = \dfrac{u}{b} \), alltså \( u = b\cos \gamma \).</p>
+              <p>Vi sätter in det i uttrycket \( c^2 = a^2+b^2 -2au \).</p>
+              <p>Vi får \( c^2 = a^2+b^2 -2ab\cos\gamma \).</p>
+
+              </div></div>
           </li>
 
           <!--<li>Uppgift
