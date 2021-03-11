@@ -116,20 +116,6 @@
              </div></div>
           </li>
 
-          <!--<li>Uppgift
-            <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
-            </ol>
-          </li>-->
-
           <li>Kombinera rätt derivering med rätt resultat.
             <p>Välj mellan
               <div class="grid-container">
@@ -160,8 +146,8 @@
                 <tr><td></td><td>\( = 12x(2x^2-1)^2\)</td></tr>
               </table>
             </p>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="3">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
               <div class="card card-body answer">
                 <p>
                   <table>
@@ -181,64 +167,154 @@
                </div></div>
           </li>
 
-          <li> Bestäm \( D(2x-1)^3 \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4">
-              <div class="card card-body answer"> \( D(2x-1)^3 = 3(2x-1)^2 \cdot 2 = 6(2x-1)^2 \) </div></div>
+          <li>Identifiera funktionerna. Vilken funktion är den inre- och vilken är den yttre funktionen?
+            <ol>
+              <li>\( (4x^2-3)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\( x^3 \) är yttre, \( 4x^2-3 \) är inre funktion.</p> </div></div> </li>
+              <li>\( (2x-1)^8 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( x^8 \) är yttre, \( 2x-1 \) är inre funktion.</p> </div></div> </li>
+              <li>\( \sqrt{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\(  \sqrt{x} \) är yttre, \( x^2-1 \) är inre funktion.</p> </div></div> </li>
+            </ol>
           </li>
 
-          <li>Bestäm \( D(3x+4)^5 \)
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>\( D(3x+4)^5 = 5(3x+4)^4 \cdot 3 = 15(3x+4)^4 \)</p> </div></div>
+          <li>Bestäm följade derivator.
+            <ol>
+              <li>Bestäm \( D(2x-1)^3 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"> <p>Yttre funktionen är \( f = x^2 \), \( f'=3x^2 \).</p>
+                <p>Intre funktionen är \( g = 2x-1 \), \( g'= 2 \).</p>
+                <p>Vi får </p>
+                <p>\( D(2x-1)^3 = 3(2x-1)^2 \cdot 2 = 6(2x-1)^2 \) </p></div></div>
+              </li>
+              <li>Bestäm \( D(3x+4)^5 \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"> <p>Yttre funktionen är \( f = x^5 \), \( f'=5x^4 \).</p>
+                <p>Intre funktionen är \( g = 3x+4 \), \( g'= 3 \).</p>
+                <p>Vi får </p>
+                <p>\( D(3x+4)^5 = 5(3x+4)^4 \cdot 3 = 15(3x+4)^4 \)</p> </div></div>
+              </li>
+              <li>Bestäm \( D(-2x-4)^8 \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"> <p>Yttre funktionen är \( f = x^8 \), \( f'=8x^7 \).</p>
+                <p>Intre funktionen är \( g = -2x-4 \), \( g'= -2 \).</p>
+                <p>Vi får </p>
+                <p>\( D(3x+4)^5 = 8(-2x-4)^7 \cdot (-2) = -16(-2x-4)^7 \)</p> </div></div>
+              </li>
+            </ol>
           </li>
 
-          <li>Bestäm \( D(x^2-2)^7 \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
+          <li>Bestäm följade derivator.
+            <ol>
+              <li>Bestäm \( D(x^2-2)^7 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
               <div class="card card-body answer"> <p>\( D(x^2-2)^7 = 7(x^2-2)^6 \cdot 2x = 14x(x^2-2)^6 \)</p> </div></div>
+              </li>
+              <li>Bestäm \( D(x^3-2x)^4 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"> <p>\( D(x^3-2x)^4 = 4(x^3-2x)^3 \cdot (3x^2-2) = 4(3x^2-2)(x^3-2x)^3 \)</p> </div></div>
+              </li>
+              <li>Bestäm \( D(2x^2+8x)^3 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"> <p>\( D(2x^2+8x)^3 = 3(2x^2+8x)^2 \cdot (4x+8) = 3(4x+8)(2x^2+8x)^2 \)</p> </div></div>
+              </li>
+            </ol>
           </li>
 
-          <li>Bestäm \( D(x^3-2x)^4 \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>\( D(x^3-2x)^4 = 4(x^3-2x)^3 \cdot (3x^2-2) = 4(3x^2-2)(x^3-2x)^3 \)</p> </div></div>
-          </li>
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+            </ol>
+          </li>-->
 
           <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x)=(3x^2-1)^4 \). Bestäm de punkter där \( f'(x)=0 \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Eftersom \( f(x)=(3x^2-1)^4 \) så är \( f'(x)=4(3x^2-1)^3\cdot 6x = 24x(3x^2-1)^3 \).\( f'(x)=0 \) då \( 24x(3x^2-1)^3 =0 \). Alltså då \( 24x=0 \) eller då \( (3x^2-1)^3 =0 \)</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Eftersom \( f(x)=(3x^2-1)^4 \) så är \( f'(x)=4(3x^2-1)^3\cdot 6x = 24x(3x^2-1)^3 \). </p>
+              <p>\( f'(x)=0 \) då \( 24x(3x^2-1)^3 =0 \). Alltså då \( 24x=0 \) eller då \( (3x^2-1)^3 =0 \)</p>
               <p>\( 24x=0 \Leftrightarrow x=0 \) och</p>
               <p>\( (3x^2-1)^3=0 \) då \( 3x^2-1=0 \Leftrightarrow x^2=\dfrac{1}{3} \Leftrightarrow x=\pm\dfrac{\sqrt{3}}{3}=\pm\dfrac{1}{\sqrt{3}} \).</p>
-              <p>Punkternas x-koordinater är</p>
+              <p>Punkternas \( x \)-koordinater är</p>
               <p>\( f(-\dfrac{1}{\sqrt{3}}) = 0 \),</p>
               <p>\( f(0) =1 \) och</p>
               <p>\( f(\dfrac{1}{\sqrt{3}})=0 \).</p>
               <p>Punkterna är \( (-\dfrac{1}{\sqrt{3}},0) \), \( (0,1) \) och \( (\dfrac{1}{\sqrt{3}},0) \).</p> </div></div>
           </li>
 
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x)=(-2x^2+x)^8 \). Bestäm de \( x \)-koordinater där \( f \) byter riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Eftersom \( f(x)=(-2x^2+x)^8 \) så är \( f'(x)=8(-2x^2+x)^7\cdot (-4x+1) \). </p>
+              <p>\( f'(x)=0 \) då \( (-2x+1)^7=0 \) eller då \( -4x+1 =0 \)</p>
+              <p>\( -4x+1=0 \Leftrightarrow x=\dfrac{1}{4} \) och</p>
+              <p>\( (-2x^2+x)^7=0 \) då \( -2x^2+x=0 \Leftrightarrow x(-2x+1)=0 \) Vi får att \( x = 0 \) och \( x=\dfrac{1}{2} \).</p>
+              <p>\( x \)-koordinaterna är \( 0 \), \( \dfrac{1}{4} \) och \( \dfrac{1}{2} \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x)=(3x^3-x)^3 \). Bestäm de \( x \)-koordinater där \( f \) byter riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Eftersom \( f(x)=(3x^3-x)^3 \) så är \( f'(x)=3(3x^3-x)^2\cdot (9x^2-1). \( f'(x)=0 \) då \( (3x^3-x)^2=0 \) eller då \( 9x^2-1 =0 \)</p>
+              <p>Vi får att</p>
+              <p>\( (3x^3-x)^2=0 \) då \( 3x^3-x=0 \Leftrightarrow x(3x^2-1)=0 \). Alltså då \( x = 0 \) eller då \( x = \pm\sqrt{\dfrac{1}{3}} = \pm\dfrac{1}{\sqrt{3}} \).</p>
+              <p>\( 9x^2-1=0 \Leftrightarrow x=\pm \sqrt{\dfrac{1}{9}} = \pm \dfrac{1}{3} \).</p>
+              <p>\( x \)-koordinaterna är \( 0 \), \( \pm\dfrac{1}{\sqrt{3}} \) och \( \pm \dfrac{1}{3} \).</p>
+              </div></div>
+          </li>
+
           <li><i class="fas fa-cogs fa-2x level"></i>\( \sqrt{a} \) kan vi skriva och behandla som \( a^{\frac{1}{2}} \). Bestäm
             <ol>
-                <li>\( D\sqrt{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="9a">
+                <li>\( D\sqrt{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10a">
                 <div class="card card-body answer"><p>\( D\sqrt{x^2-1} = (x^2-1)^{\frac{1}{2}} = \dfrac{1}{2}(x^2-1)^{\frac{1}{2}-1} \cdot 2x = x(x^2-1)^{-\frac{1}{2}} =\dfrac{x}{(x^2-1)^{\frac{1}{2}}} = \dfrac{x}{\sqrt{x^2-1}} \).</p> </div></div> </li>
-                <li>\( D\sqrt{3x^3-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="9b">
+                <li>\( D\sqrt{3x^3-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10b">
                 <div class="card card-body answer"><p>\( D\sqrt{3x^3-x} = D(3x^3-x)^{\frac{1}{2}} = \dfrac{1}{2}(3x^3-x)^{\frac{1}{2}-1} \cdot (9x^2-1) = \dfrac{1}{2}\cdot(9x^2-1)(3x^3-x)^{-\frac{1}{2}} \\ = \dfrac{9x^2-1}{2(3x^3-x)^{\frac{1}{2}}} = \dfrac{9x^2-1}{2\sqrt{3x^3-x}} \).</p> </div></div> </li>
-                <li>\( D\sqrt[3]{x^2-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-                <div class="collapse" id="9c">
-                <div class="card card-body answer"><p>\( D\sqrt[3]{x^2-x} = D(x^2-x)^{\frac{1}{3}}  = \dfrac{1}{3} (x^2-x)^{\frac{1}{3}-1} \cdot (2x-1) = \dfrac{1}{3}(x^2-x)^{-\frac{2}{3}} \cdot (2x-1) = \\ \dfrac{2x-1}{3(x^2-x)^{\frac{2}{3}}} = \dfrac{2x-1}{3{\sqrt[3]{(x^2-x)^2}}} \).</p> </div></div> </li>
+                <li>\( D\sqrt[3]{x^2-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10c">
+                <div class="card card-body answer"><p>\( D\sqrt[3]{x^2-x} = D(x^2-x)^{\frac{1}{3}}  = \dfrac{1}{3} (x^2-x)^{\frac{1}{3}-1} \cdot (2x-1) = \dfrac{1}{3}(x^2-x)^{-\frac{2}{3}} \cdot (2x-1) = \\ \dfrac{2x-1}{3(x^2-x)^{\frac{2}{3}}} = \dfrac{2x-1}{3{\sqrt[3]{(x^2-x)^2}}} \)</p> </div></div> </li>
               </ol>
           </li>
 
-          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x) = \sqrt{4-x^2} \).
+            <ol>
+              <li>Bestäm definitionsmängden för \( f\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11a">
+              <div class="card card-body answer"><p>\( f \) är definierad då \( 4-x^2 \geq 0 \). Alltså då \( -2 \leq x \leq 2 \).</p> </div></div> </li>
+              <li>Bestäm de punkter där funktionen byter riktning. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11b">
+              <div class="card card-body answer"><p>Eftersom \( f(x)=(4-x^2)^{\frac{1}{2}} \) är \( f'(x)=\dfrac{1}{2}(4-x^2)^{-\frac{1}{2}}\cdot (-2x) = -\dfrac{x}{\sqrt{4-x^2}} \).</p>
+              <p>Derivatans nollställe, \( f'(x)=0 \) får vi då täljaren får värdet 0. Alltså gäller att \( x = 0 \).</p>
+              </div></div> </li>
+              <li>Bestäm ekvationen för tangenten då \( x = -1 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11c">
+              <div class="card card-body answer"><p>Då \( x = -1 \) är \( f(-1) = \sqrt{3} \)</p>
+              <p>Riktningskoefficienten för linjen i \( x = -1 \) är \( f'(-1) = \dfrac{1}{\sqrt{3}} \).</p>
+              <p>Linjens ekvation är \( y - y_0 = k(x-x_0) \).</p>
+              <p>Alltså \( y - \sqrt{3} = \dfrac{1}{\sqrt{3}}(x-(-1)) \). Linjens ekvation är \( y = \dfrac{1}{\sqrt{3}}x + \dfrac{4}{\sqrt{3}} \).</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5a">
