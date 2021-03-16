@@ -121,7 +121,7 @@
               <div class="card card-body answer"><p>\( D(\cos 3x) = 3(-\sin 3x)=-3\sin 3x \)</p> </div></div> </li>
               <li>\( D(\cos 3x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>\( D(\cos 3x^2) = -\sin 3x^2) \cdot 6x=-6x\sin 3x^2 \)</p> </div></div> </li>
+              <div class="card card-body answer"><p>\( D(\cos 3x^2) = -\sin 3x^2 \cdot 6x=-6x\sin 3x^2 \)</p> </div></div> </li>
               <li>\( D(\cos (4x-\pi)) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
               <div class="card card-body answer"><p>\( D(\cos (4x-\pi)) = -\sin (4x-\pi) \cdot 4=-4\sin (4x-\pi) \)</p> </div></div> </li>
@@ -142,25 +142,42 @@
             </ol>
           </li>
 
-          <li>Derivera \( \dfrac{1}{\sin x} \)
+          <li><i class="fas fa-shapes fa-2x level"></i>Derivera \( \dfrac{1}{\sin x} \)
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>\( D\dfrac{1}{\sin x}=D(\sin x)^{-1} = -(\sin x)^{-2}\cdot \cos x = -\dfrac{\cos x}{\sin^2 x} \).</p> </div></div>
+              <div class="card card-body answer"> <p>Vi kan derivera den som en allmän potens eller som en kvot.</p>
+                <p>Som en allmän potens, \( D\dfrac{1}{\sin x}=D(\sin x)^{-1} = -(\sin x)^{-2}\cdot \cos x = -\dfrac{\cos x}{\sin^2 x} \).</p>
+              <p>Eller som en kvot, \( D\dfrac{1}{\sin x} = \dfrac{0\cdot \sin x - 1\cdot \cos x}{\sin^2 x} = -\dfrac{\cos x}{\sin^2 x} \).</p>
+              </div></div>
           </li>
 
-          <li>Derivera \( \dfrac{1}{\cos^2 x} \).
+          <li><i class="fas fa-shapes fa-2x level"></i>Derivera \( \dfrac{1}{\cos^2 x} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>\( D\dfrac{1}{\cos^2 x} = D(\cos^2 x)^{-1}=-1(\cos^2 x)^{-2}\cdot D(\cos^2 x) = -\dfrac{1}{\cos^4 x} \cdot 2\cos x \cdot (-\sin x) = \dfrac{2\cos x \cdot \sin x}{\cos^4 x} = \dfrac{2\sin x}{\cos^3 x} \) eller som \( D\dfrac{1}{\cos^2 x} = D(\cos x)^{-2}=-2(\cos x)^{-3}\cdot D(-\sin x ) = \dfrac{2\sin x}{\cos^3 x} \).</p> </div></div>
+              <div class="card card-body answer"> <p>Vi kan derivera den som en allmän potens eller som en kvot.</p>
+                <p>\( \begin{array}{rcl}
+                D\dfrac{1}{\cos^2 x} & = & D(\cos^2 x)^{-1} \\
+                & = & -1(\cos^2 x)^{-2}\cdot D(\cos^2 x) \\
+                & = & -\dfrac{1}{\cos^4 x} \cdot 2\cos x \cdot (-\sin x) \\
+                & = & \dfrac{2\cos x \cdot \sin x}{\cos^4 x} \\
+                & = & \dfrac{2\sin x}{\cos^3 x} \\
+                \end{array} \) </p>
+                <p>eller som </p>
+                <p>\( \begin{array}{rcl}
+                  D\dfrac{1}{\cos^2 x} & = & D(\cos x)^{-2} \\
+                  & = & -2(\cos x)^{-3}\cdot (-\sin x ) \\
+                  & = & \dfrac{2\sin x}{\cos^3 x} \\
+                \end{array} \) </p>
+                </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm riktningskoefficeinten för tangenten för funktionen \( f(x)=\sqrt{2}\sin x + 5\sqrt{2}\cos x \) i punkten \( \dfrac{\pi}{4} \).
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm riktningskoefficeinten för tangenten för funktionen \( f(x)=\sqrt{2}\sin x + 5\sqrt{2}\cos x \) i punkten \( \dfrac{\pi}{4} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>\( f'(x)=\sqrt{2}\cos x + 5 \sqrt{2}(-\sin x)=\sqrt{2}\cos x -5\sqrt{2}\sin x \).</p><p>\( f'(\dfrac{\pi}{4}) = \sqrt{2}\cos \dfrac{\pi}{4} -5\sqrt{2}\sin \dfrac{\pi}{4} = \sqrt{2}\cdot \dfrac{1}{\sqrt{2}}-5\sqrt{2}\cdot \dfrac{1}{\sqrt{2}}= 1-5=-4 \).</p> </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för funktionen \( \sin (2x) \) i origo.
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm tangenten för funktionen \( \sin (2x) \) i origo.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>\( f(x)=\sin (2x) \) och \( f'(x)= 2\cos(2x) \).</p>
