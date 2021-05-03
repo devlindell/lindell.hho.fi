@@ -62,13 +62,20 @@
         <p>När vi löser exponentialekvationer av typen \(  k^x=a \)  utnyttjar vi oss av logaritmer med basen 10. Lösningarna till ekvationen \(  k^x=a \)  är \(  x=\dfrac {\lg a}{\lg k} \) .</p>
         <p>Om vi inte vill arbeta med logaritmer som har basen 10 så får vi att \(  \log_a x = \dfrac {\lg x}{\lg a} \) .</p>
         <div class="exercise box">
-          <p><strong>Exempel 1</strong> Exempel med musikstyrka och intensitet.</p>
+          <p><strong>Exempel 1</strong> Vilket tal av \( 2^{4151} \) och \( 3^{2621} \) är större? Hur många siffror består det störret talet av?</p>
+          <h4>Lösning</h4>
+          <p>Talen är såpass stora att en "normal" räknare eller dator klarar inte av att bestämma talen. För att bestämma storleken av talen utnyttjar vi logaritmen med basen 10.</p>
+          <p>Vi har \( \lg 2^{4151} = 4151 \lg 2 \approx 1249,6 \).</p>
+          <p>Och \( \lg 3^{2621} = 2621 \lg 3 \approx 1250,5 \).</p>
+          <p>Logaritmen i basen 10 av talet \( 3^{2621} \) är större än av talet \(2^{4151} \). Talen av logaritmen i basen 10 växer då talen växer. Det betyder att \( 3^{2621} \) är det större talet.</p>
+          <p>Eftersom \( \lg 3^{2621} \approx 1250,5 \) gäller att \( 3^{2621} \approx 10^{1250,5} \), vi jobbar med definitionen av logaritmer.</p>
+          <p>Alltså gäller att \( 10^{1250} < 3^{2621} < 10^{1251} \). Alltså består talet \( 3^{2621} \) av lika många siffror som talet \( 10^{1250} \), alltså 1251 siffror.</p>
         </div>
-        <div class="exercise box">
+        <!--<div class="exercise box">
           <p><strong>Exempel 2</strong> med Richterskala och energi i jordbävning.</p>
-        </div>
+        </div>-->
         <div class="exercise box">
-          <p><strong>Exempel 3</strong> På ett bankkonto sätter man in 1500 €. Banken ger en räntesats om 1,0 % per år. Efter hur många år är har summan stigit till över 2000 € då vi varje år betalar en kapitalinkomst skatt på 30 % av räntan?</p>
+          <p><strong>Exempel 2</strong> På ett bankkonto sätter man in 1500 €. Banken ger en räntesats om 1,0 % per år. Efter hur många år är har summan stigit till över 2000 € då vi varje år betalar en kapitalinkomst skatt på 30 % av räntan?</p>
           <h4>Lösning</h4>
           <p>Eftersom vi varje år betalar 30 % skatt av räntan som bildas av 1,0 % så har vi en verklig ränta om \(  0,70 \cdot 0,01 a = 0,007a \) . Den verkliga räntan är 0,7 %.</p>
           <p>Vi får en ekvation</p>
@@ -179,17 +186,61 @@
               <div class="card card-body answer"> <p>Allt är bra ända till rad (4.). Där är \(  \dfrac {\lg 12}{\lg 4} \)  förkortat till \(  \lg 3 \) .</p> </div></div>
           </li>
 
-          <li>Vi placerar 1500 € så att den årliga av kastningen är 7,0 %. Efter hur många år har kapitalet ökat till 2500 € då vi varje år betalar en skatt på kapitalinkomster om 30 %?
+          <li><i class="fas fa-shapes fa-2x level"></i>Vilket av talen \( 6^{3002} \) och \( 3^{4902} \) är större? Hur många siffror består det större talet av?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5">
+              <div class="card card-body answer"> <p>Vi har \( \lg 6^{3002} = 3002 \lg 6 \approx 2336,0 \).</p>
+              <p>Och \( \lg 3^{4902} = 4902 \lg 3 \approx 2338,8 \).</p>
+              <p>Det större talet är \(3^{4902} \).</p>
+              <p>Vi får att \( 3^{4902} \approx 10^{2338,8} \).</p>
+              <p>Alltså \( 10^{2338} < 3^{4902} < 10^{2339} \). Alltså 2338 siffror.</p>
+             </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vilket av talen \( 5^{2239} \) och \( 10^{1565} \) är större? Hur många siffror består det större talet av?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.75">
+              <div class="card card-body answer"> <p>Vi har \( \lg 5^{2239} = 2239 \lg 5 \approx 1564,99 \).</p>
+              <p>Och \( \lg 10^{1565} = 1565 \lg 10 \approx 1565 \).</p>
+              <p>Det större talet är \(10^{1565} \).</p>
+              <p>Alltså 1565 siffror.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Hur många siffror består talet \( 5^{5^5} \) av?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.8">
+              <div class="card card-body answer"> <p>\( 5^{5^5} = 5^25 \)</p>
+                <p>Alltså \( \lg 5^{25} = 25\lg 5 \approx 17,47\ldots \).</p>
+                <p>Vi får att \( 5^{25} = \approx 10^{17,47} \).</p>
+                <p>Alltså \( 10^{17} < 2^{25} < 10^{18} \). Alltså 6 st siffror.</p>
+              </div></div>
+          </li>-->
+
+          <li>På ett bankkonto placeras 5000 €. Den verkliga räntan efter källskatten är 0,95 % och betalas in på kontot. Efter hur många år överstiger summan på kontot 8000 €?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p><p>Den verkliga räntan är \(  0,07 \cdot 0,70 \) . Vi får ekvationen \(  (1+0,07\cdot 0,70)^n \cdot 1500 = 2500 \)  som har lösningen \(  n=10,68 \) . Alltså 11 år.</p></p> </div></div>
+              <div class="card card-body answer"> <p>Vi får ekvationen \(  (1+0,095)^n \cdot 5000 = 8000 \)  som har lösningen \(  n = 5,18 \) . Alltså 6 år.</p> </div></div>
+          </li>
+
+          <li>Vi placerar 1500 € så att den årliga av kastningen är 7,0 %. Efter hur många år har kapitalet ökat till 2500 € då vi varje år betalar en skatt på räntan på kapitalinkomster om 30 %?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5">
+              <div class="card card-body answer"> <p>Den verkliga räntan är \(  0,07 \cdot 0,70 \).
+              <p>Vi får ekvationen \(  (1+0,07\cdot 0,70)^n \cdot 1500 = 2500 \)  som har lösningen \(  n=10,68 \) . Alltså 11 år.</p> </div></div>
+          </li>
+
+          <li>På ett bankkonto placeras 4500 € så att den årliga räntan är 1,1 %. Efter hur många år har kapitalet ökat till 8500 € då vi varje år betalar en skatt på räntan om 30 %?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.75">
+              <div class="card card-body answer"> <p>Den verkliga räntan är \(  0,011 \cdot 0,70 \).</p>
+              <p> Vi får ekvationen \(  (1+0,011\cdot 0,70)^n \cdot 4500 = 8500 \)  som har lösningen \(  n=82,91 \) . Alltså 83 år.</p> </div></div>
           </li>
 
           <li>Befolkningsökningen var som störst i Finland efter andra världskriget. 1950 var befolkningsmängden 4,03 miljoner och befolkningstillväxten var 1,0 %. Om befolkningstillväxten skulle ha varit konstant 1,0 % efter 1950, vilket år skulle befolkningsmängden överskrida dagens (år 2015) mängd på 5,47 miljoner?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p><p>Vi har ekvationen \(  1,01^x \cdot 4,03 = 5,47 \)  som vi skriver som \(  x=\dfrac {\lg\dfrac {5,47}{4,03}}{\lg 1,01} \approx 30,70 \)  år.</p>
-                <p>År 1950 + 30 = 1980.</p></p> </div></div>
+              <div class="card card-body answer"> <p>Vi har ekvationen \(  1,01^x \cdot 4,03 = 5,47 \)  som vi skriver som \(  x=\dfrac {\lg\dfrac {5,47}{4,03}}{\lg 1,01} \approx 30,70 \)  år.</p>
+                <p>År 1950 + 30 = 1980.</p> </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Ett företag strävar till att öka omsättningen med 60 % under 10 år.
