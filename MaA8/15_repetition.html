@@ -57,6 +57,24 @@
         <ol>
           <!--<li>Uppgift för Quizlet</li>-->
 
+          <li>Bestäm definitionsmängd för följande funktioner.
+            <ol>
+              <li>\( \sqrt{-5-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5a">
+              <div class="card card-body answer"><p>Roten är definierad då radikanden, det som är under roten är positivt. Alltså \( x \leq -5 \).</p></div></div> </li>
+              <li>\( \dfrac{\sqrt{3-x}}{\sqrt{-5-x}} \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5b">
+              <div class="card card-body answer"><p>Täljaren är definierad då \( x \leq 3 \).</p>
+                <p>Nämnaren får inte ha värdet noll och är definierad då \( x < -5 \).</p>
+                <p>Alltså är definitionsmängden \( x < -5 \).</p>
+              </div></div> </li>
+              <li>\( \sqrt[3]{-5-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5c">
+              <div class="card card-body answer"><p>En udda rot är alltid definierad. Alltså är definitionsmängden alla reella tal, \( \mathbf{R} \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
           <li>Förenkla följande uttryck utan räknare. Kontrollera svaret genom att lösa den på räknare.
             <ol>
               <li>\( 2\log_6 3 +\log_6 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -65,9 +83,19 @@
               <li>\( \lg x -\lg\dfrac{x}{y^2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
               <div class="card card-body answer"><p>\( \lg x -\lg\dfrac{x}{y^2} = \lg x - (\lg x - \lg y^2)=\lg x -\lg x +\lg y^2 = 2\lg y \)</p></div></div> </li>
-              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( \log_3 (\sqrt{10}-1) + \log_3 (\sqrt{10}+1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                  \log_3 (\sqrt{10}-1) + \log_3 (\sqrt{10}+1) & = & \log_3 [(\sqrt{10}-1)(\sqrt{10}+1)] \\
+                  & = & \log_3 (\sqrt{10})^2 -1^2 \\
+                  & = & \log_3 9 \\
+                  & = & \log_3 3^2 \\
+                  & = & 2\log_3 3 \\
+                  & = & 2 \cdot 1 \\
+                  & = & 2 \\
+                  \end{array} \)</p>
+              </div></div> </li>
             </ol>
           </li>
 
@@ -129,11 +157,16 @@
               <div class="card card-body answer"> <p>\( f'(x)=\dfrac{x}{\sqrt{x^2+a}} \). Tangent i punkten 3 som har riktningskoefficienten 1 betyder att \( f'(3)=1 \Leftrightarrow \dfrac{3}{\sqrt{3^2+a}}=1 \). \( a=0 \).</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( x \ln x + 1 \geq x \) då \( x > 0 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>\( x \ln x + 1 \geq x \) är samma som \( x \ln x + 1 -x \geq 0 \) som är samma som \( \ln x + 1 \geq 0 \).</p>
+              <p>Vi visar att funktionen \( f(x) = \ln x + 1 \geq 0 \).</p>
+              <p>Derivatafunktionen är \( f'(x) =\dfrac{1}{x} \).</p>
+              <p>Eftersom \( x > 0 \), gäller att derivatafunktionen alltid är positiv och funktionen är strängt växande.</p>
+              <p>\( \ln x + 1 \geq 0 \) är samma som \( \ln x \geq -1 \). Eftersom \( \ln \) alltid är positiv och \( f \) är strängt växande så gäller olikheten i början, \( x \ln x + 1 \geq x \).</p>
+              </div></div>
+          </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Ge exempel på en växande funktion \( f \) som uppfyller följande villkor
             <ol>
