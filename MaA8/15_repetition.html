@@ -113,6 +113,25 @@
             </ol>
           </li>
 
+          <li>Bestäm nollstället för derivatafunktionen för följande funktioner.
+            <ol>
+              <li>\( f(x) = x^4 \ln x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( f'(x) = 4x^3 \ln x +x^3 \).</p>
+              <p>Derivatans nollställe, \( f'(x)=0 \), är \( x = \dfrac{1}{\sqrt[4]{e}} \).</p>
+              </div></div> </li>
+              <li>\( g(x)=\dfrac{\ln x}{x^4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( g'(x) = \dfrac{-4\ln x +1}{x^5} \).</p>
+              <p>Derivatans nollställe, \( g'(x)=0 \), är \( x = \sqrt[4]{e} \).</p>
+              </div></div> </li>
+              <li>\( h(x) = \dfrac{1}{e^{4x}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( h'(x) = -\dfrac{4}{e^{4x}} \).</p>
+              <p>Derivatans nollställe, \( h'(x)=0 \), saknas.</p></div></div> </li>
+            </ol>
+          </li>
+
           <li>Bestäm de reella rötter som uppfyller ekvationen \( \sqrt{2-x}=x+2 \). [H08, 7]
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
@@ -145,11 +164,26 @@
                 <p>\( \log_{1,07}(\dfrac{100}{3})=51,82 \approx 52 \) år.</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>I ett gassampel finns den radioaktiva gasen radon. Massan för radon minskar för varje dygn med 17 %. Som bäst är massan för radonen 75 \(\mu\)g. Bilda en funktion, \( m(t) \), som anger massan för radonen när \( t \) dygn har gått.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Då massan minskar med 17 % har vi kvar \( 1-0,17 = 0,83 \).</p>
+                <p>I börjar har vi 75 \(\mu\)g. Vi får formeln \( m(t) = 75 \cdot 0,83^t \).</p>
+                <p>Med hjälp av basen \( e \) får vi \( m(t)= 75 \cdot e^{-0,186t} \).</p>
+              </div></div>
+              Bestäm med vilken hastighet massan minskar vid tiden
+              <ol>
+                <li>\( t = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7a">
+                <div class="card card-body answer"><p>Derivatafunktionen är \( m'(t) = 75 \cdot 0,83^t \cdot \ln 0,83 \).</p>
+                  <p>Eller \( m'(t) = -\dfrac{279}{20}e^{-0,186t} \).</p>
+                  <p>\( f'(2) = -9,63 \). Alltså minskar med 9,6 \(\mu\)g.</p>
+                </div></div> </li>
+                <li>\( t = 10 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7b">
+                <div class="card card-body answer"><p>\( f'(10) = -2,17 \). Alltså minskar med 2,2 \(\mu\)g.</p></div></div> </li>
+              </ol>
+          </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de värden för \( a \) så att funktionen \( f(x)=\sqrt{x^2+a} \) tangent i punkten 3 har riktningskoefficienten 1.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
