@@ -271,17 +271,32 @@
               <p>Integrera på räknare, eller för hand.</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm följande integraler.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="8t">
+            <div class="card card-body hint"><p>Försök inte slå huvudet i väggen. Använd huvudet och förenkla först.</p></div></div>
+            <ol>
+              <li>\( \displaystyle\int_1^e (\dfrac{\ln x}{x} - \dfrac{1}{x}) \textrm{ d}x -  \displaystyle\int_1^e (\dfrac{\ln x}{x} + \dfrac{1}{x}) \textrm{ d}x \).<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5a">
+              <div class="card card-body answer"><p>\( \displaystyle\int_1^e (\dfrac{\ln x}{x} - \dfrac{1}{x}) \textrm{ d}x -  \displaystyle\int_1^e (\dfrac{\ln x}{x} + \dfrac{1}{x}) \textrm{ d}x = -2\displaystyle\int_1^e \dfrac{1}{x} = -2 \)</p></div></div> </li>
+              <li>\( \displaystyle\int_{-2}^3 \sin^2 x \textrm{ d}x - \displaystyle\int_{3}^{-2} (\cos^2 x + 5) \textrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5b">
+              <div class="card card-body answer"><p>\( \displaystyle\int_{-2}^3 \sin^2 x \textrm{ d}x - \displaystyle\int_{3}^{-2} (\cos^2 x + 5) \textrm{ d}x = \displaystyle\int_{-2}^3 \sin^2 x + \cos^2 x +5 \textrm{ d}x = \displaystyle\int_{-2}^3 1+5 \textrm{ d}x = 30 \)</p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_{a}^{a+1} (2x-3) \textrm{ d}x = 6 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi får ekvationen </p>
+                <p>\( \begin{array}{rcl}
+                  \displaystyle\bigg/_{a}^{a+1} x^2 -3x & = & 6 \\
+                  (a+1)^2 -3a -(a^2-3a) & = & 6 \\
+                  \vdots \\
+                  a & = & 4 \\
+                  \end{array} \)</p>
+              </div></div>
+          </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_0^a \sin 2x\mathrm{\, d}x = 1 \)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -339,7 +354,7 @@
                   \end{array} \) </p>
                   <p>Vi söker minsta värdet för uttrycket. \( f'(a) = 2a+2 \). Derivatans nollställen är \( f'(a) = 0\) då \( 2a+2 = 0 \), alltså \( a = -1 \).</p>
                   <p>Då \( f'(0) = 2 > 0 \) och \( f'(-2) = -2 < 0 \) har vi ett minsta värde i \( a = -1 \).</p>
-                  <p>Då \( a = -1 \).</p> 
+                  <p>Då \( a = -1 \).</p>
               </div></div>
           </li>
 
