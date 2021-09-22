@@ -133,7 +133,7 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2.5c">
               <div class="card card-body answer"><p>\( F(x) = \sin (x) + C \).</p>
-              <p>Genom punkten \( (\pi,1) \) betyder att \( \sin (\pi) + C = 1 \), alltså \( C = 1 \). Alltså \( F(x) = \cos (x) + 1 \).</p></div></div> </li>
+              <p>Genom punkten \( (\pi,1) \) betyder att \( \sin (\pi) + C = 1 \), alltså \( C = 1 \). Alltså \( F(x) = \sin (x) + 1 \).</p></div></div> </li>
             </ol>
           </li>
 
@@ -175,10 +175,29 @@
               <p>Arean är \( \displaystyle\int_{-3}^1 2x+3-(x^2+4x) \mathrm{ d} x =\displaystyle\int_{-3}^1 -x^2 -2x+3 \mathrm{ d} x = \bigg/_{-3}^1 -\dfrac{1}{3}x^3-x^2+3x = 10\dfrac{2}{3} \).</p></div></div>
           </li>
 
+          <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \( f(x) = 3x^2 +ax \) har en primitiv funktion vars nollställen är -2 och 1. Bestäm värdet för konstanten \( a \) och den primitiva funktionen för \( f \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5">
+              <div class="card card-body answer"> <p>\( a = 6 \), den primitiva funktionen är \( F(x) = x^3+3x^2-4 \).</p>
+              <p>Den primitiva funktionen för \( f \) är av typ \( F(x) = x^3+\dfrac{1}{2}ax^2 +C \).</p>
+              <p>Från villkoret \( F(-2) = 0 \) och \( F(1) = 0 \) får vi ekvationerna \( -8+2a+C =0 \) och \( 1 + \dfrac{1}{2}a+C =0 \). Vi får \( a = 6 \) och \( C = -4 \).</p> 
+              </div></div>
+          </li>
+
           <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \( f(x)=3x^2+1 \) då \( 0\leq x \leq 1 \) roterar kring \( x \)-axeln. Bestäm storleken av volymen som bildas för kroppen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Volymen är \( \pi \displaystyle\int_0^1 (3x^2+1)^2 \mathrm{ d} x = \pi\displaystyle\int_0^1 9x^4+6x^2+1 \mathrm{ d} x = \pi \bigg/_0^1 \dfrac{9}{5}x^5 + 2x^3+x = \dfrac{24\pi}{5} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För en polynomfunktion av tredje grad vet vi att derivatafunktionen har endast ett nollställe. Nollstället är i 2. Om funktionen \( f \) vet vi dessutom att \( f(1) = 0 \) och att \( f''(0) = 4 \). Bestäm funktionsvärdet \( f(-1) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5">
+              <div class="card card-body answer"> <p>Funktionsvärdet \( f(-1) = 8\dfrac{2}{3} \).</p>
+              <p>Vi vet att \( f'(x) = a(x-2)^2\), alltså \( f''(x) = 2a(x-2) \) och att \( f(x) = \dfrac{1}{3}a(x-2)^3+C \).</p>
+              <p>Villkoret \( f''(0) = 4 \) ger oss att \( a = -1 \) och villkoret \( f(1) = 0 \) ger oss att \( C=-\dfrac{1}{3} \).</p>
+              <p>Alltså är \( f(x) = -\dfrac{1}{3}(x-2)^3 -\dfrac{1}{3} \).</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Funktionen av \( f(x)=\cos x+2 \) roterar kring \( y=1 \) då \( x=\in [-\pi,\pi] \). Bestäm volymen av den kropp som uppstår.
