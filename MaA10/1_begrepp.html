@@ -60,7 +60,7 @@
           <p>Vi märker att summan av sannolikheterna är ett, \( 0,40 + 0,60 =1,00 \). Sannolikheten för en händelse rör sig mellan noll och ett. Är sannolikheten lika med noll kommer den inte att ske och är sannolikheten ett kommer den med säkerhet att ske.</p>
           <p>Vi talar om att sannolikheten och komplementet för sannolikheten alltid har summan 1.</p>
           <div class="summary box">
-            <p>Sannolikheten för händelsen A är \( P(A) \dfrac{\text{antalet gynsamma fall}}{\text{totala antalet utfall}} \).</p>
+            <p>Sannolikheten för händelsen A är \( P(A) = \dfrac{\text{antalet gynsamma fall}}{\text{totala antalet utfall}} \).</p>
             <p>För det motsatta talar vi om komplementet, \( \overline{A} \). Sannolikheten för komplementet är \( 1 - P(A) = P(\overline{A}) \).</p>
             <p>Med andra ord gäller att \( P(A) + P(\overline{A}) = 1 \).</p>
           </div>
@@ -129,6 +129,24 @@
               </p></div></div>
           </li>
 
+          <li>Från en kortpacke dras ett kort. Bestäm sannolikheten att kortet är
+            <ol>
+              <li>ett ess. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5a">
+              <div class="card card-body answer"><p>Vi har \( P = \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{4}{52} = \dfrac{1}{13} = 0,0769\ldots \approx 0,077  \).</p></div></div> </li>
+              <li>färgen spader. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5b">
+              <div class="card card-body answer"><p>Vi har \( P= \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{13}{52} = \dfrac{1}{4} = 0,25 \).</p></div></div> </li>
+              <li>ett ess eller färgen spader. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5c">
+              <div class="card card-body answer"><p>Vi måste beakta att vi har spader ess som vi inte får räkna dubbelt.</p>
+              <p>Vi har \( P = \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{4 + 13 - 1}{52} = \dfrac{4}{13} = 0,3076\ldots \approx 0,308 \).</p></div></div> </li>
+              <li>spader ess. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5d">
+              <div class="card card-body answer"><p><p>Vi har \( P = \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{1}{52} = 0,0192\ldots \approx 0,019 \).</p></div></div> </li>
+            </ol>
+          </li>
+
           <li>I en urna finns 10 klot. 4 är svarta, 2 är vita och resten är röda. Bestäm sannolikheten, som decimaltal, för att vi slumpmässigt drar en kula som är
             <ol>
               <li>svart <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -169,6 +187,20 @@
             </ol>
           </li>
 
+          <li>Cecilia har dragit fyra kort från en kortlek. Hon har fått hjärter 5, hjärter 6, hjärter 7 och spader 7. Bestäm sannolikheten att följade kort är
+            <ol>
+              <li>hjärter. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Vi får \( P(\text{hjärter}) = \dfrac{\text{gynsamma}}{\text{totala}} = \dfrac{13-3}{52-4} = \dfrac{10}{48} = \dfrac{5}{24} = 0,20833\ldots \approx 0,208 \).</p></div></div> </li>
+              <li>valören 7. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Vi får \( P(\text{valören 7}) = \dfrac{\text{gynsamma}}{\text{totala}} = \dfrac{4-2}{52-4} = \dfrac{2}{48} = \dfrac{1}{24} = 0,04166\ldots \approx 0,042 \).</p></div></div> </li>
+              <li>valören 5 eller 6. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{valören 5 eller 6}) = \dfrac{\text{gynsamma}}{\text{totala}} = \dfrac{3 + 3}{52-4} = \dfrac{6}{48} = \dfrac{1}{8} = 0,125 \).</p></div></div> </li>
+            </ol>
+          </li>
+
           <li>Vi singlar slant en gång. Vilken är sannolikheten att vi får krona? Vilka av följande påståenden gäller?
             <table>
               <tr class="MaA10"><th>Påstående</th><th>Sant</th><th>Falskt</th></tr>
@@ -193,7 +225,7 @@
           <li><p>Från statistik kan vi bilda sannolikheter. Då måste statistiken vara tillräckligt bred av sig, den skall ha tillräkligt mycket data i sig.</p>
             <p>I tabellen nedan ser du statistik över barn födda mellan 1998-2004. Bestäm sannolikheten att det föddes en pojke och bestäm sannolikheten att det föddes en flicka.</p>
             <table>
-              <caption>stat.fi</caption>
+              <caption class="source">Källa: stat.fi</caption>
               <tr class="MaA10"><th>år</th><th>antalet födda</th><th>antal pojkar</th></tr>
               <tr><td>1998</td><td>57 039</td><td>29 085</td></tr>
               <tr><td>1999</td><td>57 658</td><td>29 451</td></tr>
@@ -210,6 +242,44 @@
                 <p>Antingen föds det en pojke, eller en flicka. Vi får \( P(\text{flicka}) = 1 - P(\text{pojke}) = 1- 0,5123 = 0,4877 \).</p>
                 <p>Alltså 0,488.</p>
               </div></div>
+          </li>
+
+          <li>Cecilia och Daniel är del av ett sällskap om 4 som är ute och tältar. De har ett lite för litet tält där endst 2 personer får plats. Dessa 2 väljs slumpmässigt. Namnge de två andra i sällskapet och bilda alla kombinatier som kan bildas. Har alla par samma sannolikhet? Bestäm vidare följande sannolikheter.
+            <ol>
+              <li>Cecilia får plats i tältet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25a">
+              <div class="card card-body answer"><p>De två andra namnger vi med E, Elsa, och F, Frans.</p>
+              <p>Alla kombinationer är CD, CE, CF, DE, DF och EF. Alla kombinationer har samma sannolikhet.</p>
+              <p>Vi får \( P(\text{Cecilia får plats}) = \dfrac{3}{6} = \dfrac{1}{2} = 0,500 \).</p>
+              </div></div> </li>
+              <li>Cecilia får plats i tältet och Daniel blir utan plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25b">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Cecilia får platso och Daniel utan plats}) = \dfrac{2}{6} = \dfrac{1}{3} = 0,333\ldots \approx 0,333 \).</p></p></div></div> </li>
+              <li>Cecila och Daniel får båda plats i tältet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Cecilia får platso och Daniel får plats}) = \dfrac{1}{6} = 0,166\ldots \approx 0,167 \).</p></div></div> </li>
+              <li>Vad är komplementet, det motsatta, till c)? Bestäm sannolikheten för komplementet.  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25d">
+              <div class="card card-body answer"><p>Komplementet är att varken Elsa eller Frans får plats i tältet.</p>
+              <p>Vi får \( P(\text{Varken Elsa eller Frans får plats}) = 1 - \dfrac{1}{6} = \dfrac{5}{6} = 0,833\ldots \approx 0,833 \).
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Av 5 stycken som väntar på överloppsplatser på ett flygplan får 3 plats. De 3 som får plats väljs slumpmässigt. Anna och Bertil är bland de som väntar på en överloppsplats. Bestäm sannolikheten att
+            <ol>
+              <li>Anna får plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5a">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Anna får plats}) = \dfrac{3}{5} = 0,600 \).</p></div></div> </li>
+              <li>Anna och Bertil får plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5b">
+              <div class="card card-body answer"><p>Vi betecknar de andra resenärerna med C, D och E.</p>
+              <p>Alla grupper är 10 st, ABC, ABD, ABE, ACD, ACE, ADE, BCD, BCE, BDE och CDE. Av dessa har alla grupper samma sannolikhet.</p>
+              <p>Vi får \( P(\text{Anna och Bertil får plats}) = \dfrac{3}{10} = 0,300 \).</p></div></div> </li>
+              <li>Anna får plats men Bertil får inte plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Anna får plats, Bertil ingen plats}) = \dfrac{3}{10} = 0,300 \).</p></div></div> </li>
+            </ol>
           </li>
 
           <li>I en undersökning om vad de gör på sin fritid svarade 299 gymnaster som följande: 102 idrottar, 89 musicerar och 108 idrottar och musicerar.
