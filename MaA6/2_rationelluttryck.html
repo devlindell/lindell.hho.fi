@@ -182,19 +182,20 @@
                 \dfrac{x+1}{x-1} - \dfrac{x+1}{x^2-x} & = & ^{x)}\dfrac{x+1}{x-1} - \dfrac{x+1}{x(x-1)} \\
                 & = & \dfrac{x(x+1)}{x(x-1)} - \dfrac{x+1}{x(x-1)} \\
                 & = & \dfrac{x(x+1)-(x+1)}{x(x-1)} \\
-                & \vdots & \\
+                & = & \dfrac{(x+1)(x-1)}{x(x-1)} \\
                 & = & \dfrac{x+1}{x} \\
                 \end{array} \) </p>
                 </div></div> </li>
                 <li>\( \dfrac{s}{s-1} - \dfrac{2s}{s^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="5.5b">
                 <div class="card card-body answer"><p>Vi får</p>
-                <p>\( \begin{array}{rcl}
+                <p>\( \begin{array}{rcll}
                 \dfrac{s}{s-1} - \dfrac{2s}{s^2-1} & = & ^{s+1)}\dfrac{s}{s-1} - \dfrac{2s}{(s+1)(s-1)} \\
                 & = & \dfrac{(s+1)s}{(s+1)(s-1)} - \dfrac{2s}{(s+1)(s-1)} \\
                 & = & \dfrac{s(s+1)-2s}{(s+1)(s-1)} \\
-                & \vdots & \\
-                & = & \dfrac{s}{s+1} \\
+                & = & \dfrac{-s}{s-1} & \text{ detta är ett bra svar}\\
+                & = & \dfrac{-s}{-(-s+1)} \\
+                & = & \dfrac{s}{-s+1} \\
                 \end{array} \) </p></div></div> </li>
                 <li>\( \dfrac{x-1}{x+1} - \dfrac{x^2+1}{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="5.5c">
@@ -229,14 +230,14 @@
               <div class="card card-body answer">\(\dfrac{1}{a^2+2ab+b^2}\big/\dfrac{1}{a^2-b^2} = \\ \dfrac{1}{a^2+2ab+b^2}\cdot \dfrac{a^2-b^2}{1} = \\ \dfrac{(a+b)(a-b)}{(a+b)^2} = \dfrac{a-b}{a+b}\) </div></div> </li>
               <li>\(\dfrac{(3-a)(3-a)}{9-a^2} - \dfrac{3+a}{3-a}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7b">
-              <div class="card card-body answer"><p>\( \begin{array}{l}
+              <div class="card card-body answer"><p>\( \begin{array}{ll}
                 \dfrac{(3-a)(3-a)}{9-a^2} - \dfrac{3+a}{3-a} = \\
-                = \dfrac{(3-a)(3-a)}{(3+a)(3-a)} - {\dfrac{3+a}{3-a}} \\
-                = \dfrac{(3-a)}{(3+a)} - ^{3+a)}{\dfrac{3+a}{3-a}} \\
-                = \dfrac{(3-a)-(3+a)^2}{(3-a)(3+a)} \\
-                = \dfrac{(3-a)-(9+6a+9)}{(3-a)(3+a)} \\
-                = \dfrac{3-a-9-6a-9}{(3-a)(3+a)} \\
-                = \dfrac{-7a-15}{9-a^2} \\
+                = \dfrac{(3-a)(3-a)}{(3+a)(3-a)} - ^{3+a)}\dfrac{3+a}{3-a} \\
+                = \dfrac{(3-a)^2-(3+a)^2}{(3-a)(3+a)} & \text{ Konjugatregeln, } a^2-b^2 = (a+b)(a-b) \\
+                = \dfrac{[(3-a)+(3+a)][(3-a)-(3+a)]}{(3-a)(3+a)} \\
+                = \dfrac{6(-2a)}{9-a^2} \\
+                = \dfrac{-12a}{9-a^2} & \text{ Detta är ett bra svar.} \\
+                = \dfrac{12a}{a^2-9}
               \end{array} \) </p>
               </div></div> </li>
               <li>\(\dfrac{a+b}{a-b}-\dfrac{a-b}{a+b}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -264,7 +265,7 @@
               <div class="collapse" id="9a">
               <div class="card card-body answer"><p>För att kunna förkorta skall täljaren bestå av samma faktorer som nämnaren, alltså \( x+3 \).</p>
                 <p>Då \( a = 9 \) får vi \( x^2-9 = (x+3)(x-3) \).</p>
-                <p>Alltså \( \dfrac{x^2-9}{x+3} = \dfrac{(x-3)(x+3)}{x+3} = x-3 \), \( x \not=-3 \).
+                <p>Alltså \( \dfrac{x^2-9}{x+3} = \dfrac{(x-3)(x+3)}{x+3} = x-3 \) där \( x \not=-3 \).
                 </div></div> </li>
               <li>\( \dfrac{x^2+x+a}{x+2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9b">
@@ -272,7 +273,7 @@
                 <p>\( x + 2 = 0 \) då \( x = -2 \).</p>
                 <p>Då \( x = -2 \) skall täljaren ha värdet 0. Alltså  \( (-2)^2+(-2)+a = 0 \), vi får \( a = -2 \).</p>
                 <p>Täljaren är \( x^2+x-2 \). Vi faktoriserar \( x^2+x-2=0 \Leftrightarrow (x+2)(x-1)=0 \).</p>
-                <p>Alltså \( \dfrac{(x+2)(x-1)}{x+2} = x-1 \), \( x \not=-2 \).</p>
+                <p>Alltså \( \dfrac{(x+2)(x-1)}{x+2} = x-1 \) där \( x \not=-2 \).</p>
               </div></div> </li>
               <li>\( \dfrac{2x^2+ax -24}{x-3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9c">
@@ -280,7 +281,7 @@
                 <p>\( x-3 = 0 \) då \( x = 3 \).</p>
                 <p>Då \( x = 3 \) skall täljaren ha värdet 0. Alltså \( 2\cdot 3^2 +a\cdot 3 -24 = 0 \), vi får \( a = 2 \).</p>
                 <p>Täljaren är \( 2x^2+2x-24 \). Den kan faktoriseras till \( 2(x-3)(x+4) \).</p>
-                <p>Vi får \( \dfrac{2(x-3)(x+4)}{x-3} = 2(x+4) = 2x+8 \), \( x \not=3 \).</p>
+                <p>Vi får \( \dfrac{2(x-3)(x+4)}{x-3} = 2(x+4) = 2x+8 \) där \( x \not=3 \).</p>
               </div></div> </li>
             </ol>
           </li>
