@@ -282,7 +282,7 @@ nav ul li a {
 .kurs h4 {
   font-size: 1.25rem;
   color: black;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 
 .kurs:hover {
@@ -381,7 +381,7 @@ nav ul li a {
   margin: 3px 3px;
 }
 
-.Fysik {
+.Fysik, .Fysik2021 {
   /*background-color: #FF9671;*/
   background-color: #99DEFF;
 }
