@@ -182,6 +182,14 @@
 
         </ol>
       </li>
+
+      <li><i class="fas fa-shapes fa-2x level"></i>Vi antar att hemmalaget vinner i fotboll med sannolikheten 47 %. Bestäm sannolikheten att i styktipset, där vi spelar på 13 matcher, har exakt 7 matcher som slutar i hemmaseger.
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="4">
+          <div class="card card-body answer"> <p>Sannolikheten för jämt eller bortaseger är \( 1 - 0,47 = 0,53 \).</p>
+            <p>Vi får \( \displaystyle\binom{13}{7} 0,47^{7} \cdot 0,53^6 = 0,19269 \approx 0,193 \).</p></div></div>
+      </li>
+
           <li><i class="fas fa-shapes fa-2x level"></i>HC Hakkila och Martsarin Myrsky Hockey möts åter igen i finalserien. För att vinna mästerskapet krävs 4 segrar. Under denna säsong har Martsarin Myrsky Hockey vunnit 5 matcher av 6 som lagen möts i. Bestäm sannolikheten att Martsarin Myrsky Hockey vinner mästerskapet. Bilda binomialfördelningen på över antalet matcher som krävs i finalserien. Hur många matcher kommer det högst sannolikt att behövas spela?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
@@ -203,12 +211,30 @@
               </div></div>
           </li>
 
+          <li><i class="fas fa-shapes fa-2x level"></i>Cecilia ordnar större middagsbjudningar och vet att en inbjuden gäst deltar med sannolikheten 0,90. Bestäm sannolikheten att 42 tallrikar räcker för en fest då 45 personer har fått en inbjudan.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.6">
+              <div class="card card-body answer"> <p>Sannolikheten att personen inte deltar är 0,10.</p>
+              <p>Vi får sannolikheten \( P(\text{max 42 personer dyker upp}) =  \\ 1 - [P(\text{43 personer dyker upp}) + P(\text{44 personer dyker upp}) + P(\text{45 personer dyker upp})] \).</p>
+              <p>Vi får \( 1 -[\displaystyle\binom{45}{43}0,90^{43}\cdot 0,10^{2} + \displaystyle\binom{45}{44}0,90^{44}\cdot 0,10^{1} + \displaystyle\binom{45}{45}0,90^{45}\cdot 0,10^{0}] = 0,94763 \approx 0,948 \).</p>
+              </div></div>
+              <ol>
+                <li>Utnyttja dig av GeoGebra och bestäm hur många personer som hon kan förvänta sig att dyker upp. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6.6a">
+                <div class="card card-body answer"><p>På GeoGebra får vi följande bild</p>
+                  <p><img src="pics/12-10.png" class="responsivepic600" /></p>
+                  <p>Vi ser att största sannolikheten har 41 personer.</p>
+                </div></div> </li>
+              </ol>
+
+          </li>
+
           <li><i class="fas fa-shapes fa-2x level"></i>En handelsman vet av erfarenhet att sannolikheten att en kund som kommer till hans souvenirbutik köper en T-skjorta är 90 %. En dag kommer en charterbuss med 48 personer till butiken. Vilken är sannolikheten att den mängd på 45 T-skjortor som finns i lagret inte skall ta slut om varje kund köper högst en tröja?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6.7">
               <div class="card card-body answer"> <p>Mängden T-skjortor räcker om högst 45 personer köper en.</p>
               <p>Vi får sannolikheten \( P(\text{Högst 45 personer köper}) = 1 - P(\text{Minst 46 personer köper}) =  \\ 1 - P(\text{46 eller 47 eller 48 köper}) = 1 - (P(46) + P(47) + P(48)) = \\
-                1 - (\displaystyle{48 \choose 46} \cdot 0,90^46 \cdot 0,10^2 + \displaystyle{48 \choose 47} \cdot 0,90^47 \cdot 0,10^1 + \displaystyle{48 \choose 48} \cdot 0,90^48 \cdot 0,10^0) = 0,87109\ldots  \) </p>
+                1 - (\displaystyle{48 \choose 46} \cdot 0,90^{46} \cdot 0,10^2 + \displaystyle{48 \choose 47} \cdot 0,90^{47} \cdot 0,10^1 + \displaystyle{48 \choose 48} \cdot 0,90^{48} \cdot 0,10^0) = 0,87109\ldots  \) </p>
               <p>Alltså 0,87.</p>
             </div></div>
           </li>

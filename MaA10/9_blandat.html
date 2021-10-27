@@ -134,9 +134,9 @@
 
           <li><i class="fas fa-shapes fa-2x level"></i>I Barnlotto ska en deltagare kryssa för tre rutor i rutfältet nedan. Den rätta rad som erhålls vid dragningen består av tre siffror.
             <table>
-               
+
                 <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
-               
+
             </table>
             <p>Beräkna sannolikheterna för att en deltagare skall få</p>
             <ol>
@@ -168,21 +168,27 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Under processen av massproducerade tallrikar från 12 % ett litet färgfel och 7 % ett litet formfel. Hurdant fel tallrikarna får är oberoende av varandra. Tallrikar som har ett fel säljs som B-kvalitet. Sådana med bägge fel kasseras, förstörs. För en felfri tallrik får man 10 € vinst och för en tallrik med B-kvalitet 6 € vinst. En kasserad tallrik orsakar en förlust om 15 €. Bestäm väntevärdet för en tallrik.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Sannolikheten att en tallrik är felfri är \( 1 - (0,12 + 0,07 ) = 0,81 \).</p>
+              <p>Sannolikheten att vi har en tallrik som klassas som B-kvalitet är \( 0,12 + 0,07 - 0,12\cdot 0,07 = 0,1816 \).</p>
+              <p>Sannolikheten att vi har en tallrik som kasseras är \( 0,12 \cdot 0,07 = 0,0084 \).</p>
+              <p>Adderar vi ihop sannolikheterna får vi 1.</p>
+              <p>Väntevärdet är \( E(X) = 0,81 \cdot 10 \text{ € } + 0,1816 \cdot 6 \text{ € } - 0,0084 \cdot 15 \text{ €} = 9,0636 \) €.</p>
+              <p>Alltså 9,06 € per tallrik.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bland två identiska mynt är det ena balanserat så då man singlar myntet ger det krona med sannoliheten 0,60. En spelare tar en av mynten och singar det 3 gånger. Bestäm sannolikheten att hen får 3 gånger krona på raden.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får \( 0,50 \cdot 0,50^3 + 0,50 \cdot 0,60^3 = 0,1705 \approx 0,17 \).</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
