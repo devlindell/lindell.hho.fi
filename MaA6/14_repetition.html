@@ -287,16 +287,32 @@
             <p>Ballongens area är \( A = 4\pi r^2 \), där \( r \) är radien.
           </li>
 
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Längderna för en rektangelformad pappskiva är 15 cm och 24 cm. Från varje hörn klipper man bort en lika stor kvadratisk bit och sedan viken man upp kanterna så att man får en låda. Bestäm storleken av kvadraterna som vi klipper bort då vi vill att volymen för lådan är så stor som möjligt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi betecknar sidan av kvadraten med \( x \).</p>
+              <p>Eftersom vi klipper bort vid varje hörn, kommer bottnet för lådan ha längderna \( 15 - 2x \) och \( 24-2x \).</p>
+              <p>Höjden får lådan är \( x \).</p>
+              <p>Funktionen som ger volymen är \( V(x) = x(15-2x)(24-2x) \).</p>
+              <p>Maximalt kan vi klippa bort 7,5 cm, som minst 0 cm. Vi får intervallet \( 0 < x < 7,5 \)</p>
+              <p>Derivera och sök derivatans nollställe. Kom fram till \( x = 3 \) och \( x = 10 \). Varför duger inte \( x = 10 )?</p>
+              <p>Vi söker största värdet genom att jämföra värdena i intervallets änpunkter och derivatans nollställen.</p>
+              <p>Kom fram till att \( x = 3 \) ger det största värdet.</p>
+              <p>Alltså skall sidorna på kvadraterna vara 3 cm långa.</p>
+              </div></div>
+          </li>
+
           <li><i class="fas fa-cogs fa-2x level"></i>Ge exempel på en växande funktion \( f \) som uppfyller följande villkor
             <ol>
-              <li>\( f(0)=1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9a">
+              <li>\( f(0)=1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.1a">
               <div class="card card-body answer"><p>Vilken funktion som helst som går genom punkten \( (0,1) \) duger, tex \( f(x)=x+1 \).</p></div></div> </li>
-              <li>\( f'(1)=2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9b">
+              <li>\( f'(1)=2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.1b">
               <div class="card card-body answer"><p>Vilken funktion som hellst vars derivata har värdet 2 i då \( x=1 \). Tex \( f(x)=x^2-1 \).</p></div></div> </li>
-              <li>\( f''(2)=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9c">
+              <li>\( f''(2)=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.1c">
               <div class="card card-body answer"><p>Andra derivatan, eller derivatans derivatafunktion skall undersökas. Då den skall ha värdet 0 så gäller att \( f''(x)=C \), där \( C \) är någon konstant och \( f(x)=Dx \) där \( D \) är någon konstant. Tex \( f(x)=x \).</p></div></div> </li>
             </ol>
           </li>
@@ -352,6 +368,17 @@
                 <p>Vi har ett lokalt minimum i \( x=0 \), funktionens värde är då 4.</p></div></div>
           </li>
 
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att talföljden \( a_n=\dfrac{1}{1+n^2}, n=0,1,2,3,\ldots \) är strängt avtangande?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13.5">
+              <div class="card card-body answer"> <p>Vi undersöker \( f(x)=\dfrac{1}{1+x^2}, \mathbb{R}_+\to\mathbb{R} \).</p>
+                <p>\( f'(x)=\dfrac{-2x}{(1+x^2)^2} \).</p>
+                <p>Om talföljden skall vara strängt avtangande gäller att \( f'(x) < 0 \). Eftersom nämnaren är positiv så skall täljaren vara negativ.</p>
+                <p>Täljaren \( -2x \) har ett nollställe, \( x = 0\). Då \( x > 0 \) gäller att täljaren, och hela derivatafunktionen är negativ.</p>
+                <p>Alltså är \( f \) strängt avtagande och talföljden \( a_n \) strängt avtagande.</p>
+                </div></div>
+          </li>
+
           <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x)=\left\{  \begin{array}{rl}  -x^2+1 & , x \geq 0 \\  2x+1 & , x  < 0 \\  \end{array}\right. \) är kontinuerlig i den reella talmängden.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
@@ -360,6 +387,16 @@
                 <p>\( \lim_{x \to 0+} -x^2+1 = -0^2 + 1 = 1 \) </p>
                 <p>\( f(0)=-0^2+1=1 \)</p>
                 <p>Eftersom \( \lim_{x \to 0-} = \lim_{x \to 0+} = f(0) \) är funktionen kontinuerlig i punkten 0.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x)=\left\{  \begin{array}{rl}  2x^2-3 & , x \leq 2 \\  -\dfrac{1}{2}x+5 & , x  > 2 \\  \end{array}\right. \) inte är kontinuerlig i den reella talmängden.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14.5">
+              <div class="card card-body answer"> <p>Funktionen består av polynomfunktioner som är kontinuerliga. Det som vi måste undersöka är om funktionen är diskontinuerlig i punkten 2. Vi gör det via gränsvärden och funktionsvärden.</p>
+                <p>\( \lim_{x \to 2-} 2x^2-3 = 2\cdot 2^2 -3 = 5 \)</p>
+                <p>\( \lim_{x \to 2+} -\dfrac{1}{2}x+5 = -\dfrac{1}{2}\cdot 2 + 5 = 4 \) </p>
+                <p>Eftersom \( \lim_{x \to 2-} \not= \lim_{x \to 2+} \) är funktionen inte kontinuerlig i punkten 2.</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( b \) är talföljden \( a_n=\dfrac{bn-2}{n+6}, n=0,1,2,3,\ldots \) strängt växande?
