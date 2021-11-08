@@ -99,6 +99,13 @@
               </div></div>
           </li>
 
+          <li>I en urna finns 15 vita och 12 svarta kulor. Vi lyfter slumpmässigt 5 st kulor. Bestäm sannolikheten att vi får 3 st vita och 2 st svarta kulor.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5">
+              <div class="card card-body answer"> <p>Totalt har vi 27 kulor. Vi får sannolikheten \( \dfrac{\binom{15}{3}\binom{12}{2}}{\binom{27}{5}} = 0,37198\ldots \approx 0,372 \).</p>
+              </div></div>
+          </li>
+
           <li>På lunchrestaurangen på Bertils arbetsplats har varje dag samma menu som består av 7 st olika maträtter. Bertil äter varje dag lunch på restaurangen och han väljer slumpmässigt en maträtt. Bestäm sannolikheten att Bertil äter under en arbetsvecka 5 st olika maträtter.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
@@ -148,6 +155,25 @@
               <li>i alla fall en gång. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9b">
               <div class="card card-body answer"><p>Vi går via komplementet, \( P(\text{i alla fall en gång}) = 1-P(\text{ingen gång}) = 1- 0,30 \cdot 0,45 \cdot 0,60 = 0,92 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I Stryktipset (Vakioveikkaus) spelar man på 13 matcher och försöker gissa om matchen slutar i seger för hemmalaget 1, jämt X eller seger för bortalaget 2. Vinst betalas ut om man får mera än 10 st rätt.
+            <ol>
+              <li>Bestäm sannolikheten att vi har 10 st rätt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5a">
+              <div class="card card-body answer"><p>Vi har upprepat försök. Vi får \( \displaystyle\binom{13}{10}0,33^{10}\cdot 0,66^{3} = 0,0013 \approx 0,001 \).</p>
+              </p></div></div> </li>
+              <li>Bestäm sannolikheten att vi vinner pengar. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5b">
+              <div class="card card-body answer"><p>Vi skall ha 13, 12, 11 eller 10 rätt.</p>
+                <p>Vi får \( \displaystyle\binom{13}{13}0,33^{13}\cdot 0,66^{0} + \displaystyle\binom{13}{12}0,33^{12}\cdot 0,66^{1} + \\ \displaystyle\binom{13}{11}0,33^{11}\cdot 0,66^{2} + \displaystyle\binom{13}{10}0,33^{10}\cdot 0,66^{3} = 0,00150 \approx 0,002 \).</p></div></div> </li>
+              <li>Rita upp fördelningen på GeoGebra. Hur många rätt har den största sannolikheten? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p><img src="pics/19-10.png" class="responsivepic600" /></p>
+                <p>Vi ser att största sannolikheten har 4 gånger rätt.</p>
+              </div></div> </li>
             </ol>
           </li>
 

@@ -53,7 +53,7 @@
           <div class="intro box">
             <p>Låt oss ta funktionerna \( f \) och \( g \). Derivatan av produkten är \( D(fg) = f'g+g'f \).</p>
             <h4>Bevis</h4>
-            <p>Vi tar funktionen \( h(x) \) som är produkten av \( f(x) \) och \( g(x) \), alltså \( h(x)= f(x)g(x) \). Vi skall visa att \( h'(x)=f'(x)g'(x) \).</p>
+            <p>Vi tar funktionen \( h(x) \) som är produkten av \( f(x) \) och \( g(x) \), alltså \( h(x)= f(x)g(x) \). Vi skall visa att \( h'(x)=f'(x)g(x) + f(x)g'(x) \).</p>
             <p>\( \begin{array}{rl} h'(x)= & \lim_{h \to 0} \dfrac{h(x+h)-h(x)}{h} \\ = & \lim_{h \to 0} \dfrac{f(x+h)g(x+h)-f(x)g(x)}{h} \\ = & \lim_{h \to 0} \dfrac{f(x+h)g(x+h)-f(x)g(x+h)+f(x)g(x+h)-f(x)g(x)}{h} \\ = & \lim_{h \to 0} \dfrac{[f(x+h)-f(x)]g(x+h)+f(x)[g(x+h)-g(x)]}{h} \\ = & \lim_{h \to 0} \dfrac{f(x+h)-f(x)}{h} \cdot \lim_{h\to 0} g(x+h)+ \lim_{h\to 0}f(x)\cdot \lim_{h\to 0}\dfrac{g(x+h)-g(x)}{h} \\ = &f'(x)g(x)+f(x)g'(x)\\ \end{array} \)</p>
             <p>Alltså \( Df(x)g(x)=f'(x)g(x)+g'(x)f(x) \)</p>
           </div>
@@ -138,10 +138,10 @@
             <p>Vad kan du berätta om funktionen \( f \)?</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5.2">
-              <div class="card card-body answer"> <p>Derivatafunktionen har nollställena \( x = -2 \) och \( x = 0 \). Vid \( x = -2 \) går derivatafunktionen från positiv till negativ, där byter funktionen \( f \) riktning. Vid \( x = 0 \) är \( f' \) negativ, där har vi en trasspunkt.</p>
+              <div class="card card-body answer"> <p>Derivatafunktionen har nollställena \( x = -2 \) och \( x = 0 \). Vid \( x = -2 \) går derivatafunktionen från positiv till negativ, där byter funktionen \( f \) riktning. Vid \( x = 0 \) är \( f' \) negativ, där har vi en trasspunkt. Vi har ett dubbelnollställe.</p>
               <p>Då \( x < -2 \) är \( f' \) positiv, då är \( f \) växande.</p>
               <p>I intervallet \( -2 < x < 0 \) och \( x > 0 \) är \( f' \) negativ, då är \( f \) avtagande.</p>
-              <p>Eftersom \( f' \) är av tredje grad är \( f \) en fjärdegradsfunktion.</p>
+              <p>Eftersom \( f' \) är av tredje grad och har en dubbelderivata är \( f \) minst en femtegradsfunktion.</p>
               </div></div>
           </li>
 
@@ -150,10 +150,10 @@
             <p>Vad kan du berätta om funktionen \( f \)?</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5.3">
-              <div class="card card-body answer"> <p>Eftersom derivatafunktionen har nollstället \( x = 1 \) men alltid är positiv har vi en terasspunkt där.</p>
+              <div class="card card-body answer"> <p>Eftersom derivatafunktionen har nollstället \( x = 1 \) men alltid är positiv har vi en terasspunkt där. Vi har ett dubbelnollställe.</p>
               <p>\( f' \) är positiv i alla punkter utom i \( x = 1 \). Alltså är \( f \) växande.</p>
               <p>Med andra ord så har vi en strängt växande funktion som har en terasspunkt i \( x = 1 \).
-              <p>Eftersom \( f' \) är en parabel är \( f \) en tredjegradsfunktion.</p>
+              <p>Eftersom \( f' \) är en parabel och har en dubbelderivata är \( f \) minst en fjärdeegradsfunktion.</p>
               </div></div>
           </li>
 
