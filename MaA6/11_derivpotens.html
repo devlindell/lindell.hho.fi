@@ -57,6 +57,7 @@
           </div>
           <div class="summary box">
             <p>När vi har potensfunktioner som är upphöjt till något kan vi derivera dem som \( D f(x)^n = nf(x)^{n-1}\cdot f'(x) \).</p>
+            <p>Denna regel går också under namnet kedjeregeln.</p>
           </div>
           <div class="exercise box">
             <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
@@ -134,14 +135,27 @@
           </li>-->
 
           <li><i class="fas fa-shapes fa-2x level"></i>Grafen av derivatafunktionen \( f'(x) \) ser du i bilden nedan.
+            <p><img src="pics/11_3.png" class="responsivepic400" /></p>
+            <p>Vad kan du berätta om funktionen \( f \)?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.01" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.01">
+              <div class="card card-body answer"> <p>Derivatafunktionen har nollstället \( x = 1 \).</p>
+              <p>I intervallen \( x < 1 \) är \( f' \) negativ, då är \( f \) avtagande.</p>
+              <p>I intervallet \( x > 1 \)  är \( f' \) positiv, då är \( f \) växande.</p>
+              <p>Vi vet att funktionen är avtagande och vid \( x = 1 \) byter funktionen riktning och är växande.</p>
+              <p>Eftersom \( f' \) är av tredje grad, är \( f \) minst av fjärde grad. </p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Grafen av derivatafunktionen \( f'(x) \) ser du i bilden nedan.
             <p><img src="pics/11_4.png" class="responsivepic400" /></p>
             <p>Vad kan du berätta om funktionen \( f \)?</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5.1">
               <div class="card card-body answer"> <p>Derivatafunktionen har nollställena \( x = 0 \), \( x = 1 \) och \( x = 2 \). Dessutom är punkterna \( x = 0 \) och \( x = 2 \) punkter där vi har ett dubbelnollställe.</p>
-              <p>I intervallen \( x < 0 \) och \( 0 < x 1 \) är \( f' \) negativ, då är \( f \) avtagande.</p>
+              <p>I intervallen \( x < 0 \) och \( 0 < x < 1 \) är \( f' \) negativ, då är \( f \) avtagande.</p>
               <p>I intervallet \( 1 < x < 2 \) och \( x > 2 \)  är \( f' \) positiv, då är \( f \) växande.</p>
-              <p>Vi vet att funktionen är avtagande, vid \( x = 0 \) har vi en tresspunkt och sedan fortsätter funktionen som avtagande. Vid \( x = 1 \) byter funktionen riktning, är växande, och vid \( x = 2 \) har vi en tresspunkt.</p>
+              <p>Vi vet att funktionen är avtagande, vid \( x = 0 \) har vi en terasspunkt och sedan fortsätter funktionen som avtagande. Vid \( x = 1 \) byter funktionen riktning, är växande, och vid \( x = 2 \) har vi en tresspunkt.</p>
               <p>Eftersom \( f' \) är av tredje grad, har 2 st dubbelnollställen är \( f \) minst av sjätte grad. </p>
               </div></div>
           </li>
@@ -302,8 +316,9 @@
                 <p>Derivatans nollställe, \( f'(x) = 0\), alltså \( x^{m-1}(1-x)^{n-1}(m-xm-xn) = 0 \). Vi får \( x^{m-1}=0 \Leftrightarrow x = 0 \), \( (1-x)^{n-1} = 0 \Leftrightarrow 1-x = 0 \Leftrightarrow x=1 \) och \( m-xm-xn = 0 \Leftrightarrow x = \dfrac{m}{m+n} \). Eftersom \( m \) och \( n \) är positiva heltal har den sista lösningen ett värde mellan 0 och 1.</p>
                 <p>Eftersom funktionen är definierad i ett intervall hittar vi dess största och minsta värden i intervallets ändpunkter eller i de punkter där derivatan får värdet noll.</p>
                 <p>\( f(0) = 0^m(1-0)^n = 0 \).</p>
-                <p>\( f(0) = (\dfrac{m}{m+n})^m(1-\dfrac{m}{m+n})^n = \dfrac{m^m n^n}{(m+n)^{m+n}} \).</p>
+                <p>\( f(\dfrac{m}{m+n}) = (\dfrac{m}{m+n})^m(1-\dfrac{m}{m+n})^n = \dfrac{m^m n^n}{(m+n)^{m+n}} \).</p>
                 <p>\( f(1) = 1^m(1-1)^n = 0 \).</p>
+                <p>Strösta värdet är \( \dfrac{m^m n^n}{(m+n)^{m+n}} \).</p>
               </div></div>
           </li>
 
