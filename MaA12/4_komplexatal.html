@@ -29,6 +29,7 @@
             <a class="dropdown-item" href="5_iteration.html">5. Iteration och rekursivt definierad talföljd</a>
             <a class="dropdown-item" href="6_newton-raphson.html">6. Newton-Raphsons metod</a>
             <a class="dropdown-item" href="7_newton-cotes.html">7. Newton-Cotes metoder för integrering</a>
+            <a class="dropdown-item" href="8_repetition.html">8. Repetition</a>
           </div>
         </div>
       </nav>
@@ -47,16 +48,16 @@
             <p>Då vi löser den märker vi att</p>
             <p>\(
             \begin{array}{rcll}
-            x^2 &=& -16 &\mid \sqrt{\quad} \\
-            x &=& \pm\sqrt{-16} \\
+            x^2 & = & -16 &\mid \sqrt{\quad} \\
+            x & = & \pm\sqrt{-16} \\
             \end{array}
             \)</p>
             <p>För att komma vidare inför vi \( \sqrt{-1} = i \). Då kommer vi vidare.</p>
             <p>\(
             \begin{array}{rcll}
-            x &=& \pm\sqrt{-1 \cdot 16} \\
-            x &=& \pm\sqrt{-1} \cdot \sqrt{16} \\
-            x &=& \pm4i \\
+            x & = & \pm\sqrt{-1 \cdot 16} \\
+            x & = & \pm\sqrt{-1} \cdot \sqrt{16} \\
+            x & = & \pm4i \\
             \end{array}
             \)
           </p>
@@ -85,9 +86,9 @@
           <p>Vi får följande:</p>
           <p>\(
           \begin{array}{rcl}
-          (2-3i)+(-3+5i) &=& 2-3i-3+5i \\
-          &=& (2-3)+(-3i+5i) \\
-          &=& -1+2i \\
+          (2-3i)+(-3+5i) & = & 2-3i-3+5i \\
+          & = & (2-3)+(-3i+5i) \\
+          & = & -1+2i \\
           \end{array}
           \) </p>
           </div>
@@ -98,10 +99,10 @@
           <p>Vi får följande:</p>
           <p>\(
           \begin{array}{rcll}
-          (2-3i)\cdot(-3+5i) &=& 2(-3)+2\cdot5i -3i(-3) -3i\cdot 5i \\
-          &=& -6+10i+9i-15i^2 &\text{OBS! } \sqrt{-1}=i \Leftrightarrow -1=i^2 \\
-          &=& -6+19i-15(-1) \\
-          &=& 9+19i \\
+          (2-3i)\cdot(-3+5i) & = & 2(-3)+2\cdot5i -3i(-3) -3i\cdot 5i \\
+          & = & -6+10i+9i-15i^2 &\text{OBS! } \sqrt{-1}=i \Leftrightarrow -1=i^2 \\
+          & = & -6+19i-15(-1) \\
+          & = & 9+19i \\
           \end{array}
           \) </p>
           </div>
@@ -113,11 +114,11 @@
 
           <p>\(
           \begin{array}{rcll}
-          \dfrac{2-3i}{-3+5i} &=& \dfrac{(2-3i)(3+5i)}{(-3+5i)(3+5i)} \\ \\
-          &=& \dfrac{6+10i-9i-15i^2}{-9+25i^2} &\text{OBS! } \sqrt{-1}=i \Leftrightarrow -1=i^2 \\ \\
-          &=& \dfrac{6+10i-9i-15(-1)}{-9+25(-1)} \\ \\
-          &=& \dfrac{21+i}{-34} \\ \\
-          &=& -\dfrac{21}{34} -\dfrac{i}{34} \\ \\
+          \dfrac{2-3i}{-3+5i} & = & \dfrac{(2-3i)(3+5i)}{(-3+5i)(3+5i)} \\ \\
+          & = & \dfrac{6+10i-9i-15i^2}{-9+25i^2} &\text{OBS! } \sqrt{-1}=i \Leftrightarrow -1=i^2 \\ \\
+          & = & \dfrac{6+10i-9i-15(-1)}{-9+25(-1)} \\ \\
+          & = & \dfrac{21+i}{-34} \\ \\
+          & = & -\dfrac{21}{34} -\dfrac{i}{34} \\ \\
           \end{array}
           \) </p>
           </div>
@@ -130,10 +131,10 @@
           <p>Rotformeln ger oss att</p>
           <p>\(
           \begin{array}{rcll}
-          \dfrac{-2\pm\sqrt{2^2-4\cdot 1 \cdot 5}}{2\cdot 1} &=& \dfrac{-2\pm\sqrt{-16}}{2} \\ \\
-          &=& \dfrac{-2\pm 4i}{2} \\
-          &=& \dfrac{2(-1\pm 2i)}{2} \\
-          &=& -1\pm 2i \\
+          \dfrac{-2\pm\sqrt{2^2-4\cdot 1 \cdot 5}}{2\cdot 1} & = & \dfrac{-2\pm\sqrt{-16}}{2} \\ \\
+          & = & \dfrac{-2\pm 4i}{2} \\
+          & = & \dfrac{2(-1\pm 2i)}{2} \\
+          & = & -1\pm 2i \\
           \end{array}
           \) </p>
           </div>
@@ -227,7 +228,7 @@
             <ol>
               <li>\( (2+3i)\cdot(1+2i) \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7a">
-              <div class="card card-body answer"><p>Vi får att \( (2+3i)\cdot(1+2i) =  2+4i+3i+6i^2 = 2+6i-6 = -4+6i \).</p> </div></div> </li>
+              <div class="card card-body answer"><p>Vi får att \( (2+3i)\cdot(1+2i) =  2+4i+3i+6i^2 = 2+7i-6 = -4+7i \).</p> </div></div> </li>
               <li>\( (-3-2i)\cdot(4+2i) \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7b">
               <div class="card card-body answer"><p>Vi får att \( (-3-2i)\cdot(4+2i) =  -12-6i-8i-4i^2 = -12-14i+4 = -8-14i \).</p> </div></div> </li>
@@ -243,29 +244,29 @@
               <div class="collapse" id="8a">
               <div class="card card-body answer"><p>Vi får att</p>
                 <p>\( \begin{array}{rcl}
-                \dfrac{1+2i}{3+i} &=&  \dfrac{(1+2i)\cdot (3-i)}{(3+i)\cdot (3-i)} \\
-                &=&  \dfrac{3-i+6i-2i^2}{9-i^2} \\
-                &=&  \dfrac{3+5i+2}{9+1} \\
-                &=&  \dfrac{5+5i}{10} \\
-                &=&  \dfrac{1+i}{2} \\
+                \dfrac{1+2i}{3+i} & = &  \dfrac{(1+2i)\cdot (3-i)}{(3+i)\cdot (3-i)} \\
+                & = &  \dfrac{3-i+6i-2i^2}{9-i^2} \\
+                & = &  \dfrac{3+5i+2}{9+1} \\
+                & = &  \dfrac{5+5i}{10} \\
+                & = &  \dfrac{1+i}{2} \\
                 \end{array} \)</p> </div></div> </li>
               <li>\( \dfrac{2+3i}{-2-i} \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8b">
               <div class="card card-body answer"><p>Vi får att</p>
                 <p>\( \begin{array}{rcl}
-                \dfrac{2+3i}{-2-i} &=&  \dfrac{(2+3i)\cdot (-2+i)}{(-2-i)\cdot (-2+i)} \\
-                &=&  \dfrac{-4+2i+6i+3i^2}{4-i^2} \\
-                &=&  \dfrac{-4+8i-3}{4+1} \\
-                &=&  \dfrac{-7+8i}{5} \\
+                \dfrac{2+3i}{-2-i} & = &  \dfrac{(2+3i)\cdot (-2+i)}{(-2-i)\cdot (-2+i)} \\
+                & = &  \dfrac{-4+2i-6i+3i^2}{4-i^2} \\
+                & = &  \dfrac{-4-4i-3}{4+1} \\
+                & = &  \dfrac{-7-4i}{5} \\
                 \end{array} \)</p> </div></div> </li>
               <li>\( \dfrac{-1+i}{2-3i} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8c">
               <div class="card card-body answer"><p>Vi får att</p>
                 <p>\( \begin{array}{rcl}
-                \dfrac{-1+i}{2-3i} &=&  \dfrac{(-1+i)\cdot (2+3i)}{(2-3i)\cdot (2+3i)} \\
-                &=&  \dfrac{-2-3i+2i+3i^2}{4-9i^2} \\
-                &=&  \dfrac{-2-i-3}{4+9} \\
-                &=&  \dfrac{-5-i}{13} \\
+                \dfrac{-1+i}{2-3i} & = &  \dfrac{(-1+i)\cdot (2+3i)}{(2-3i)\cdot (2+3i)} \\
+                & = &  \dfrac{-2-3i+2i+3i^2}{4-9i^2} \\
+                & = &  \dfrac{-2-i-3}{4+9} \\
+                & = &  \dfrac{-5-i}{13} \\
                 \end{array} \)</p> </div></div> </li>
             </ol>
           </li>

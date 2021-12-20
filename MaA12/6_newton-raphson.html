@@ -29,6 +29,7 @@
             <a class="dropdown-item" href="5_iteration.html">5. Iteration och rekursivt definierad talföljd</a>
             <a class="dropdown-item" href="6_newton-raphson.html">6. Newton-Raphsons metod</a>
             <a class="dropdown-item" href="7_newton-cotes.html">7. Newton-Cotes metoder för integrering</a>
+            <a class="dropdown-item" href="8_repetition.html">8. Repetition</a>
           </div>
         </div>
       </nav>
@@ -45,11 +46,11 @@
           <p>Newton-Raphsons metod är en numerisk metod med vars hjälp vi får rötterna, lösningarna. Den har fått sitt namn efter <a href="https://en.wikipedia.org/wiki/Isaac_Newton" target="_blank">Isaac Newton</a> och <a href="https://en.wikipedia.org/wiki/Joseph_Raphson" target="_blank">Joseph Raphson</a>. Ibland kallar man den endast för Newtons metod.</p>
           <div class="intro box">
             <p>Bestäm närmevärdet av \( \sqrt{21} \).</p>
-            <p>Vi vet att \( < \sqrt{21} < 5\). </p>
+            <p>Vi vet att \( 4 < \sqrt{21} < 5\). </p>
             <p>Vi skall lösa \( x^2 = 21\), \( x>0\), alltså \(x^2-21=0\), alltså nollstället för \(f(x)=x^2-21\).</p>
             <p>Vi löser det med hjälp av några tangeter. </p>
             <p>Vi utnyttjar oss av tangenter och itererar oss fram till närmevärdet. Tanken är följande:</p>
-            <p>Rita bild.</p>
+            <p><img src="pics/6_intro.png" alt="" class="responsivepic600"></p>
             <p>Vi behöver ett startvärde, \(x_1\).</p>
             <p>Tangentens ekvation är \( y - f(x_1) = f'(x_1)(x-x_1) \).</p>
             <p>Skärningspunkten har \( y=0 \). Alltså </p>
@@ -116,6 +117,33 @@
               <p>Med startvärdet \( 7 \) får vi </p>
               <p><img src="pics/6_1c.png" alt="" class="responsivepic600"></p>
               <p>Alltså \( 6,48074069840786023097 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm närmevärdet för följande rötter med hjälp av Newtons metod.
+            <ol>
+              <li>\( \sqrt[3]{14} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5a">
+              <div class="card card-body answer"><p>Eftersom \( 2 < \sqrt[3]{14} < 3 \) är 2 eller 3 bra startvärden.<p>
+              <p>\( f(x) = x^3-14\) och \( f'(x)=3x^2 \).</p>
+              <p>Med startvärdet \( 2 \) får vi </p>
+              <p><img src="pics/6_1.5a.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 2,41014226417522998613 \).</p>
+              </div></div> </li>
+              <li>\( \sqrt[3]{7} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5b">
+              <div class="card card-body answer"><p>Eftersom \( 1 < \sqrt[3]{7} < 2 \) är 1 eller 2 bra startvärden.<p>
+              <p>\( f(x) = x^3-7\) och \( f'(x)=3x^2 \).</p>
+              <p>Med startvärdet \( 1 \) får vi </p>
+              <p><img src="pics/6_1.5b.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 1,91293 \). För att få noggrannare värde måste vi iterera mera.</p> </div></div> </li>
+              <li>\( \sqrt[4]{17} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5c">
+              <div class="card card-body answer"><p>Eftersom \( 2 < \sqrt[4]{17} < 3 \) är 2 eller 3 bra startvärden.<p>
+              <p>\( f(x) = x^4-17\) och \( f'(x)=4x^3 \).</p>
+              <p>Med startvärdet \( 1 \) får vi </p>
+              <p><img src="pics/6_1.5c.png" alt="" class="responsivepic600"></p>
+              <p>Med tillräkligt många iterationer får vi \( 2,03054318486893071787 \).</p> </div></div> </li>
             </ol>
           </li>
 
