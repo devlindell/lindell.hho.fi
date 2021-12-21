@@ -101,7 +101,7 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Isaac Newton lade år 1669 fram den metod för beräkning av funktioners nollställen som uppkallas efter honom. För att demonstrera metodens användbarhet använde han bland annat polynomet \( f(x)= x^3 -2x -5 \).
+          <li><i class="fas fa-shapes fa-2x level"></i>[SE H11] Isaac Newton lade år 1669 fram den metod för beräkning av funktioners nollställen som uppkallas efter honom. För att demonstrera metodens användbarhet använde han bland annat polynomet \( f(x)= x^3 -2x -5 \).
             <ol>
               <li>Beräkna \( f'(x) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7a">
@@ -119,22 +119,38 @@
                 <p>Alltså 2,0946.</p>
               </div></div> </li>
             </ol>
-            [SE H11]
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-              [SE H14]
+          <li><i class="fas fa-shapes fa-2x level"></i>[SE H14] Vi undersöker ekvationen \( x^5 - x = 1 \).
+            <ol>
+              <li>Visa att ekvationen har exakt en lösning i intervallet \( 1 \leq x \leq 2 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer">
+              <p>\( f'(x) = 5x^4-1 \). Derivatans nollställe är i \( x = \pm \dfrac{1}{\sqrt[4]{5}} \approx \pm 0,67 \). Derivatans nollställe är utanför intervallet. I intervallet \( 1 \leq x \leq 2 \) är \( f'(1) = 4 \), alltså är \( f \) växande.</p>
+              <p>Eftersom \( f(1) = -1 \) och \( f(2)= 29 \). Betyder det att \( f \) skär \( x \)-axlen en gång.</p>
+              <p>Alltså har ekvationen en lösing i intervallet \( 1 \leq x \leq 2 \).</p>
+              </div></div> </li>
+              <li>Bestäm genom att använda Newtons metod och startvärdet \( x_0 = 1 \) närmevärdet \( x_4 \) till lösningen i deluppgift a. Ange svaret med tre decimalers noggrannhet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"><p>Vi får </p>
+                <p><img src="pics/8_8.png" alt="" class="responsivepic600"></p>
+                <p>Alltså 1,167.</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>[SE V09] Bestäm med hjälp av Newtons metod en rot till ekvationen \( x^3 = x+2 \) med två decimalers noggrannhet. Visa att ekvationen har exakt en rot i intervallet \( [1,\infty[ \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-              [SE V09]
-          </li>-->
+              <div class="card card-body answer"> <p>Ekvationen \( x^3 = x + 2 \) är samma som \( f(x) = x^3 - x -2 = 0 \).</p>
+              <p>Vi visar att \( f \) har ett nollställe och bestämmer nollstället.</p>
+              <p>\( f'(x) = 3x^2-1 \). Derivatans nollställe är \( x = \pm \dfrac{\sqrt{3}}{3} \approx \pm 0,58 \). Eftersom vi jobbar i intervallet \( [1,\infty[ \) gäller att \( f'(1) = 2 \) och \( f \) är strängt växande.</p>
+              <p>Då \( f(1) = -2 \) och  \( f(2) = 4 \) betyder det att vi har ett nollställe i \( 1 \leq x \leq 2 \).</p>
+              <p>Vi får </p>
+              <p><img src="pics/8_9.png" alt="" class="responsivepic600"></p>
+              <p>Alltså 1,52.</p>
+              </div></div>            
+          </li>
 
           <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
