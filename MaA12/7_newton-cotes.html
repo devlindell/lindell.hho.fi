@@ -46,33 +46,49 @@
           <div class="intro box">
             <p>Vi bestämmer arean mellan funktionen \( f(x) = x^3 + x^2 +4\) och \(x\)-axeln i intervallet -2 till 1 utan att integrera.</p>
             <p>Vi använder oss av tre numeriska metoder, rektangelformeln, trapetsformeln och Simpson formel. Gemensamt för alla tre är att vi delar in arean i mindre delar. </p>
-            <p>För att kunna jämföra de numeriska metoderna med det exakta värdet så bestämmer vi det, \[ \displaystyle\int_{-2}^0 x^3+x^2+4 = 11\dfrac{1}{4}. \]</p>
+            <p>För att kunna jämföra de numeriska metoderna med det exakta värdet så bestämmer vi det, \[ \displaystyle\int_{-2}^0 x^3+x^2+4 \text{ d}x = 11\dfrac{1}{4}. \]</p>
             <p>Vi börjar med rektangelformeln.</p>
             <h3>Rektangelformeln</h3>
-            <p>Tanken är att vi bildar rektanglar. Det studerar vi med hjälp av GeoGebra.</p>
+            <p>Tanken är att vi bildar rektanglar där höjde bestäms från mittpunkten av intervallet. Det studerar vi med hjälp av GeoGebra.</p>
             <div class="geogebra">
-              GeoGebra app
+              <iframe scrolling="no" title="Newton-Cotes, rektanglar" src="https://www.geogebra.org/material/iframe/id/q8xb4pgh/width/692/height/469/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="692px" height="469px" style="border:0px;"> </iframe>
             </div>
-            <p>Vi märker att vi kommer närmare det exakta värdet destu mera intervall som vi delar in arean i.</p>
+            <p>Vi märker att vi kommer närmare det exakta värdet destu mera intervall som vi delar in arean i. Desstuom påverkas arean av hur vi bildar arean för rektanglarna. Beaktar vi intervallets vänstra eller högra del, mittpunkten eller någon annan punkt i intervallet.</p>
             <h3>Traptesformeln</h3>
             <p>Här bildar vi trapeter. Fördelen är att trapetsernas area är beroende av två längder. Vi studerar arean med hjälp av GeoGebra.</p>
             <div class="geogebra">
-              GeoGebra app
+              <iframe scrolling="no" title="Newton-Cotes, trapetser" src="https://www.geogebra.org/material/iframe/id/mwptvywp/width/678/height/462/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="678px" height="462px" style="border:0px;"> </iframe>
             </div>
-            <p>Vi märker att med Trapetsformeln kommer vi närmare det exakta värdet än med rektangelmetoden. </p>
+            <p>Vi märker att med Trapetsformeln kommer vi med färre antal intervall snabbare närmare det exakta värdet än med rektangelmetoden. </p>
             <h3>Simpsons formel</h3>
-            <p>Med Sipsons formel utnyttjar vi intervall där vi har vägda medelvärden för arean.</p>
-            <div class="geogebra">
-              GeoGebra app
-            </div>
-            <p>Närmast sanningen kommer vi med Simpsons metod.</p>
+            <p>Med Sipsons formel utnyttjar vi intervall där vi approximerar en parabel för varje arean. Med två intervall får vi följande situation.</p>
+            <p><img src="pics/7_intro3.png" class="responsivepic600"></p>
+            <p>Eftersom vi har något som dynamiskt följer den ursprungliga funktionens värden så kommer vi att komma närmast sanningen med Simpsons metod.</p>
+          </div>
 
             <div class="summary box">
+              <p>När vi numeriskt bestämmer \( \displaystyle\int_a^b f(x) \textrm{ d} x \) får vi följande:</p>
+              <ul>
+                <li>Rektangelformeln: Vi bildar rektanglar som alla är lika breda. Höjden för rektangeln får vi tex genom att ta mittpunkten av intervallet.</li>
+                <li>Trapetsformeln: \( \approx h (\dfrac{1}{2}f(x_0) + f(x_1) + \ldots + f(x_{n-1}) + \dfrac{1}{2}f(x_n)) \) där \( x_0 = a \), \( x_n = b\) och \( h\) är intervallets bredd.</li>
+                <li>Simpsons formel: \( \approx \dfrac{1}{3} \cdot h (f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) \ldots + 4f(x_{n-1}) + \dfrac{1}{2}f(x_n)) \) där \( x_0 = a \), \( x_n = b\), \( n \) är ett jämt tal och \( h \) är intervallets bredd.
+                <p>Märk att koefficienterna framför termerna är \( 1, 4, 2, 4, 2, \ldots 4, 1 \).</li>
+              </ul>
 
             </div>
             <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm storleken av arean som bildas mellan \( f(x) = \) och \( x \)-axeln då vi delar upp intervallet i XX delar.</p>
+            <p><strong>Exempel 1</strong> Bestäm storleken av arean som bildas mellan \( f(x) = -x^3 -x^2 + 2 \) och \( x \)-axeln i intervallet \( [-3,1] \) då vi delar upp intervallet i 4 st delar.</p>
             <h4>Lösning</h4>
+            <p>Vi bestämmer arean på följande sätt:</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>Exakt: \( A = \displaystyle\int_{-3}^1 -x^3-x^2+2 \textrm{ d}x =  \dfrac{56}{3} = 18,66\).</li>
+              <li>Rektangelmetoden: Bredden på intervallet är 1. Vi får \(A = 1 (f(-1,5) + f(-0,5) + f(0,5) + f(1,5)) = 18 \) </li>
+              <li>Trapetsmetoden: Vi får \( A = 1 (\dfrac{1}{2}f(-3)+f(-2)+f(-1)+ f(0) + \dfrac{1}{2}f(1)) = 20 \)</li>
+              <li>Simpsons formel: Vi får \( A = \dfrac{1}{3} \cdot 1 (f(-3) + 4f(-2) + 2f(-1) + 4f(0) + f(1)) = \dfrac{56}{3} = 18,66 \).</li>
+            </ol>
+            <p>Grafen ser ut som följande:</p>
+            <p><img src="pics/7_intro4.png" class="responsivepic600"></p>
+            <p>I detta fall ger Simpsons metod det bästa värdet.</p>
             </div>
 
           </div>
@@ -80,25 +96,26 @@
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Bestäm arean som bildas mellan \( f(x) = x^3 -2x +4 \) och \(x\)-axeln i intervallet \(-2\) och \(1\). Använd dig av 3 intervall.
+          <li>Bestäm arean som bildas mellan \( f(x) = x^3 -2x +4 \) och \(x\)-axeln i intervallet \(-2\) och \(2 \). Använd dig av 4 intervall.
             <ol>
               <li>Med rektangelmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Bredden på intervallet är 1. Vi får \(A = 1 (f(-1,5) + f(-0,5) + f(0,5)) = 11,625 \).</p>  </div></div> </li>
+              <div class="card card-body answer"><p>Bredden på intervallet är 1. Vi får \(A = 1 (f(-1,5) + f(-0,5) + f(0,5) + f(1,5)) = 16 \).</p>  </div></div> </li>
               <li>Med trapetsmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Vi får \( A = 1 (\dfrac{1}{2}f(-2)+f(-1)+f(0)+\dfrac{1}{2}f(1)) = 10,5 \).</p> </div></div> </li>
+              <div class="card card-body answer"><p>Vi får \( A = 1 (\dfrac{1}{2}f(-2)+f(-1)+f(0)+ f(1) + \dfrac{1}{2}f(2)) = 16 \).</p> </div></div> </li>
               <li>Med Simpsons metod <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Vi får \( A = \dfrac{1}{3} \cdot 1 (f(-2) + 4f(-1) + 2f(0) + f(1)) = 10\dfrac{1}{3} \). </p> </div></div> </li>
+              <div class="card card-body answer"><p>Vi får \( A = \dfrac{1}{3} \cdot 1 (f(-2) + 4f(-1) + 2f(0) + 4f(1) + f(2)) = 16 \). </p> </div></div> </li>
               <li>Exakt på räknare eller för hand <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1d">
-              <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-2}^1 x^3-2x+4 \mathrm{ d}x = 11\dfrac{1}{4} \).</p> </div></div> </li>
-              <!---
-              <li>Varför ger rektangelmetoden det värde som är närmast exaktvärde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-2}^2 x^3-2x+4 \mathrm{ d}x = 16 \).</p> </div></div> </li>
+              <li>Varför ger alla metoder samma värde som det exakta värdet? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1e">
-              <div class="card card-body answer"><p></p> </div></div> </li>
-              -->
+              <div class="card card-body answer"><p>Grafen ser ut som följande:</p>
+              <p><img src="pics/7_1.png" class="responsivepic600"></p>
+              <p>Vi har en tredje grads funktion. Alla tre metoder ger ett mycket bra värde.</p>
+              </div></div> </li>
             </ol>
           </li>
 
@@ -117,11 +134,63 @@
               <li>Exakt på räknare eller för hand <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2d">
               <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-1}^5 -x^2+4x+5 \mathrm{ d}x = 36 \).</p> </div></div> </li>
-              <!---
-              <li>Varför ger Simpsons metod det värde som är närmast exaktvärde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="1e">
-              <div class="card card-body answer"><p></p> </div></div> </li>
-              -->
+              <li>Varför ger Simpsons metod det värde som är närmast exaktvärde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2e">
+              <div class="card card-body answer"><p>Grafen ser ut som följande:</p>
+              <p><img src="pics/7_2.png" class="responsivepic600"></p>
+              <p>Vi har en funktion som är en parabel. Då ger en approximation av parabler bästa värde.</p>
+              <p>Därför ger Simpsons metod närmast värde.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm arean som bildas mellan \( f(x) = x^4 -3x^2 + 4 \) och \(x\)-axeln i intervallet \( [-2,2] \). Använd dig av 4 intervall.
+            <ol>
+              <li>Med rektangelmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Bredden på intervallet är 1. Vi har 4 st intervall.</p>
+                <p>Vi får \(A = 1 (f(-1,5) + f(-0,5) + f(0,5) + f(1,5)) = \dfrac{45}{4} = 11,25 \).</p>  </div></div> </li>
+              <li>Med trapetsmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi får \( A = 1 (\dfrac{1}{2}f(-2)+f(-1)+f(0)+f(1)+\dfrac{1}{2}f(2)) = 16 \).</p> </div></div> </li>
+              <li>Med Simpsons metod <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Vi får \( A = \dfrac{1}{3} \cdot 1 ( f(-1) + 4f(0) + 2f(1) + 4f(2) + 2f(3) + 4f(4) + f(5) ) = \dfrac{40}{3} = 13,33 \). </p> </div></div> </li>
+              <li>Exakt på räknare eller för hand <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3d">
+              <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-2}^2 x^4-3x^2+4 \mathrm{ d}x = \dfrac{64}{5} = 12,8 \).</p> </div></div> </li>
+              <li>Vilken metod ger närmaste värde och varför? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3e">
+              <div class="card card-body answer"><p>Grafen ser ut som följande:</p>
+              <p><img src="pics/7_3.png" class="responsivepic600"></p>
+              <p>Vi har en funktion som är av fjärde grad. När vi approximerar med parablar får vi något som är ganska nära. För att komma riktigt nära behöver vi flera intervall.</p>
+              <p>Därför ger Simpsons metod närmast värde.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm arean som bildas mellan \( f(x) = -x^2 - 2x \) och \(x\)-axeln. Använd dig av 4 intervall.
+            <ol>
+              <li>Med rektangelmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Skärningspunkterna är \(-2\) och \(0 \). Bestäm dessa! Vi har 4 st intervall, bredden på ett intervall är 0,5.</p>
+                <p>Vi får \(A = 0,5 (f(-1,75) + f(-1,25) + f(-0,75) + f(-0,25)) = \dfrac{11}{8} = 1,375 \).</p>  </div></div> </li>
+              <li>Med trapetsmetoden <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Vi får \( A = 0,5 (\dfrac{1}{2}f(-2)+f(-1,5)+f(-1)+f(-0,5)+\dfrac{1}{2}f(0)) = \dfrac{5}{4} = 1,25 \).</p> </div></div> </li>
+              <li>Med Simpsons metod <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Vi får \( A = \dfrac{1}{3} \cdot \dfrac{1}{2} ( f(-2) + 4f(-1,5) + 2f(-1) + 4f(-0,5) + f(0) ) = \dfrac{4}{3} = 1,33 \). </p> </div></div> </li>
+              <li>Exakt på räknare eller för hand <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer"><p>Vi får \( A = \displaystyle\int_{-2}^0 -x^2-2x \mathrm{ d}x = \dfrac{4}{3} \).</p> </div></div> </li>
+              <li>Vilken metod ger närmaste värde och varför? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4e">
+              <div class="card card-body answer"><p>Grafen ser ut som följande:</p>
+              <p><img src="pics/7_4.png" class="responsivepic600"></p>
+              <p>Vi har en funktion som är en parabel. Då ger en approximation av parabler bästa värde.</p>
+              <p>Därför ger Simpsons metod närmast värde.</p>
+              </div></div> </li>
             </ol>
           </li>
 
