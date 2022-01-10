@@ -42,7 +42,8 @@
     <article>
       <h1>8. Repetition</h1>
       <section>
-        <p>Här hittar du sådant som fungear som repetionsuppgifter.
+        <p>Här hittar du sådant som fungear som repetionsuppgifter.</p>
+        <p>För att kunna programmera med Python på egen dator behöver du ha Python installerat på den. Följ instruktionerna på <a href="https://tie.koodariksi.fi/alkeet/asennus" target="_blank"/>tie.koodariksi.fi</a> för att installera Python eller så jobbar du på <a href="https://replit.com/" target="_blank"/>Replit.com</a>.
       </section>
       <section>
         <h2>Uppgifter</h2>
@@ -86,6 +87,12 @@
               <div class="card card-body answer"><p>Vi får</p>
               <p><img src="pics/8_1f.png" class="responsivepic300"></p>
               <p>Alltså \( \dfrac{x^4+x^3+4x-8}{x^2-x} = x^2+2x + \dfrac{6x-4}{x^2-x} \).</p>
+              </div></div> </li>
+              <li>\( \dfrac{x^3+x^2-6x}{x+1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1g" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1g">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p><img src="pics/8_1g.png" class="responsivepic300"></p>
+              <p>Alltså \( \dfrac{x^3+x^2-6x}{x+1} = x^2 -6 + \dfrac{6}{x+1} \).</p>
               </div></div> </li>
             </ol>
           </li>
@@ -251,13 +258,28 @@
           </ol>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-cogs fa-2x level"></i>[SE V21] Punkterna \( (x,y) \) i planmängden \( A \) bestäms av olikheterna \( 0 \le x \le 2 \), \( 0 \le y \le 4 \) och \( y \ge x^2 \). I den här uppgiften är målet att bedöma arean av mängden \( A \) med hjälp av en simulering genom att använda teorin att sannolikheten är direkt proportionell mot arean. Vi lottar fram punkter \( (x,y) \) ur rektangeln \( B \), som definieras av olikheterna \( 0\le x\le 2 \) och \( 0\le y\le 4 \).
+            <ol>
+              <li>Gör med lämplig programvara en kod som lottar fram 1 000 punkter ur rektangeln \( B \) och som svar skriver ut antalet punkter som tillhör mängden \( A \). Beskriv i ord och med hjälp av lämpliga skärmdumpar hur du skapade din kod. (Ledtråd: Du kan exempelvis använda slumptalsgeneratorn i kalkylprogrammet.)
+              <p>(Sista parentesen är direkt från Studentprovet, du löser uppgiften i Python. (: Eller hur?) </p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12a">
+              <div class="card card-body answer"><p>Följande är skrivet i replit.com</p>
+              <p><img src="pics/8_12.png" alt="" class="responsivepic800"></p>
+              </div></div> </li>
+              <li>Hillevi körde sin egen kod i deluppgift 1 tio gånger och fick talen nedan. Beräkna resultatens medelvärde och bedöm utifrån detta arean av mängden A.
+              <p> Utskrifter av Hillevis kod: 673, 664, 672, 679, 667, 650, 640, 678, 660, 667</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12b">
+              <div class="card card-body answer"><p>Medeltalet är 665.</p>
+              <p>Sannolikheten \( p = 0,665 \). Men sannolikheten är också \( p = \dfrac{A_A}{A_B} \) där \( A_A \) och \( A_B \) är areorna för mängderna.</p>
+              <p>Vi får ekvationen \( 0,665 = \dfrac{A_A}{A_B} \). Vi vet att \( A_B = 2 \cdot 4 = 8 \).</p>
+              <p>Vi får alltså \( 0,665 = \dfrac{A_A}{8} \) och \( A_A = 5,32 \).</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -275,9 +297,7 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>-->
 
-          <li><i class="fab fa-python fa-2x level"></i>För att kunna programmera med Python på egen dator behöver du ha Python installerat på den. Följ instruktionerna på <a href="https://tie.koodariksi.fi/alkeet/asennus" target="_blank"/>tie.koodariksi.fi</a> för att installera Python.
-            <p>Lös sedan följande uppgift.</p>
-            <p>Skapa ett program som löser följande uppgift:</p>
+          <li><i class="fab fa-python fa-2x level"></i>Skapa ett program som löser följande uppgift:
             <p>Vi söker ögontal för tre tärningar.</p>
             <p>Om du adderar ögontalet är svaret 6.</p>
             <p>Inga ögontal intill varandra har samma ögontal.</p>

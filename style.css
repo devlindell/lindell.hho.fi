@@ -145,6 +145,12 @@ nav ul li a {
   position:absolute;
 }
 
+.responsivepic800 {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
 .responsivepic600 {
   width: 100%;
   max-width: 600px;
