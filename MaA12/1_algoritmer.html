@@ -227,6 +227,35 @@
             </div></div>
           </li>
 
+          <li><i class="fas fa-cogs fa-2x level"></i>[SE H20] Det går att framställa en månghörning i planet som en ordnad lista \( [(x_1,y_1),\ldots,(x_n,y_n)] \) av hörnpunkter, så att man får månghörningens rand genom att förena efter varandra följande hörnpunkter samt den första och den sista hörnpunkten med sträckor. Vi antar att månghörningens rand inte skär sig själv. En metod som beräknar arean av en given triangel finns till vårt förfogande, och vi vill generalisera metoden för en månghörning.
+          <ol>
+            <li>Rita en noggrann figur av en månghörning som motsvarar listan \([(2,2),(3,−1),(5,2),(7,3),(4,6)] \). (2 p.) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="15a">
+            <div class="card card-body answer"><p>Noggrann bild.</p></div></div> </li>
+            <li>Terje föreslår följande algoritm för att bestämma arean av månghörningen:
+              <ul>
+                <li>Vi väljer en slumpmässig hörnpunkt.</li>
+                <li>Från den ritar vi sträckor till alla övriga hörnpunkter, så att en mängd av trianglar bildas.</li>
+                <li>Vi adderar dessa trianglars areor.</li>
+              </ul>
+              <p>Ge ett exempel på en månghörning för vilken algoritmen ger en felaktig area och ett annat exempel på en månghörning vars area algoritmen beräknar korrekt. (5 p.) </p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="15b">
+            <div class="card card-body answer"><p>Algoritmen ger ett korrekt värde för till exempel en enhetskvadrat. ELLER Algoritmen fungerar för en rektangel. (2 poäng) </p>
+            <p>Exempel: Algoritmen fungerar inte för en fyrhöring som har formen av en "pilspets".</p>
+            <p>Algoritmen fungerar inte korrekt för månghöningar som inte är konvexa, dvs. till exempel för en sådan fyrhörning, vars hörn ligger i punkterna (1, − 1), (0,0), (−1, − 1) och (0,1). (3 poäng)</p></div></div> </li>
+            <li>Alf föreslår följande instruktioner för att bestämma arean av en månghörning:
+              <ul>
+                <li>Vi delar in en månghörning i trianglar genom att förena hörnpunkter på ett lämpligt sätt.</li>
+                <li>Vi adderar dessa trianglars areor.</li>
+              </ul>
+              <p>Vilka brister finns det i Alfs förslag, dvs. varför är detta inte en algoritm? (5 p.)</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="15c">
+            <div class="card card-body answer"><p>Den här algoritmen kan inte användas som sådan, eftersom det inte anges på vilket sätt de hörn som ska förbindas ska väljas. (5 poäng)</p></div></div> </li>
+          </ol>
+          </li>
+
           <li><i class="fab fa-python fa-2x level"></i>En del av kursen är att lära sig programmera. Gå till <a href="https://tie.koodariksi.fi" target="_blank"/>tie.koodariksi.fi</a>, registrera dig och börja jobba på Ohjelmoinnin alkeet. Uppe till höger kan du byta språk.
             <p>Kom ihåg att be gruppkoden av Kristoffer!</p>
             <p>Jobba ca en timme med materialet, eller med kapitlen 1-3.</p>
