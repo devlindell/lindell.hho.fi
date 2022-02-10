@@ -153,6 +153,26 @@
             Använd dig av enhetscirkeln, eller av tabellen för exakta värden för att bestämma värdena av sinus och cosinus.
           </li>
 
+          <li>Vi vet att \( \sin x = -\dfrac{1}{\sqrt{5}} \) och att \( 180^{\circ} < x < 270^{\circ} \). Bestäm de exakta värdena för \( \cos x \) och \( \tan x \). [V05, 2]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.4">
+              <div class="card card-body answer"> <p>Eftersom vi är i tredje kvadraten är sinus och cosinus negativa.</p>
+              <p>Vi får \( \cos x = -\sqrt{1-\sin^2 x} = -\sqrt{1-(-\dfrac{1}{\sqrt{5}})^2} = -\dfrac{2}{\sqrt{5}} \).</p>
+              <p>Vidare \( \tan x = \dfrac{\sin x}{\cos x} = \dfrac{1}{2} \).</p>
+              </div></div>
+          </li>
+
+          <li>Förenkla följande uttryck \( \dfrac{1-\cos^2 \alpha}{\sin\alpha \cdot \cos \alpha} \).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.45" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="2.45">
+          <div class="card card-body answer"><p>Vi får</p>
+          <p>\( \begin{array}{rcll}
+          \dfrac{1-\cos^2 \alpha}{\sin\alpha \cdot \cos \alpha} & = & \dfrac{\sin^2 \alpha}{\sin\alpha \cdot \cos \alpha} \\
+          & = & \dfrac{\sin \alpha}{\cos \alpha} \\
+          & = & \tan \alpha \\
+          \end{array} \) </p>
+          </div></div> </li>
+
           <li>Lös följande ekvationer. Räkna i radianer.
             <ol>
               <li>\( \sin(2x - \dfrac{\pi}{2}) = \sin x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -279,11 +299,16 @@
             </ol>
           </li>
 
-          <!--<li>Uppgift
+          <li>Låt \( f(x) = 5-3\cos x \). Bestäm största och minsta värde för funktionen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>För cosinus gäller att \( -1 \leq \cos x \leq 1 \).</p>
+              <p>Då gäller att \( -3 \leq 3\cos x \leq 3 \).</p>
+              <p>Och att \( -3 \leq -3\cos x \leq 3 \).</p>
+              <p>Alltså gäller att \( 2 \leq 5-3\cos x \leq 8 \).</p>
+              <p>Minsta värdet är 2 och största värdet är 8.</p>
+              </div></div>
+          </li>
 
           <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
