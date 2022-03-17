@@ -348,7 +348,40 @@
             </ol>
           </li>
 
-          <li>Låt \( f(x) = 5-3\cos x \). Bestäm största och minsta värde för funktionen.
+          <li>Bestäm \( f^{(21)}(x) \) då
+            <ol>
+              <li>\( f(x) = \sin x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.9a">
+              <div class="card card-body answer"><p>Vi märker att</p>
+              <p>\( \begin{array}{rcl}
+              f'(x) & = & \cos x \\
+              f''(x) & = & -\sin x \\
+              f^{(3)}(x) & = & -\cos x \\
+              f^{(4)}(x) & = & \sin x \\
+              f^{(5)}(x) & = & \cos x \\
+              f^{(6)}(x) & = & -\sin x \\
+              \vdots \\
+              \end{array} \) </p>
+              <p>Alltså är \( f'^{(21)}(x) = \cos x \).</p>
+              </div></div> </li>
+              <li>\( f(x) = \cos x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.9b">
+              <div class="card card-body answer"><p>Vi märker att</p>
+              <p>\( \begin{array}{rcl}
+              f'(x) & = & -\sin x \\
+              f''(x) & = & -\cos x \\
+              f^{(3)}(x) & = & \sin x \\
+              f^{(4)}(x) & = & \cos x \\
+              f^{(5)}(x) & = & -\sin x \\
+              f^{(6)}(x) & = & -\cos x \\
+              \vdots \\
+              \end{array} \) </p>
+              <p>Alltså är \( f'^{(21)}(x) = -\sin x \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 5-3\cos x \). Bestäm största och minsta värde för funktionen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
               <div class="card card-body answer"> <p>För cosinus gäller att \( -1 \leq \cos x \leq 1 \).</p>
@@ -359,17 +392,24 @@
               </div></div>
           </li>
 
-          <!--<li>Uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 3+2\sin \dfrac{x}{2} \). Bestäm största och minsta värde för funktionen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+              <div class="card card-body answer"> <p>För sinus gäller att \( -1 \leq \sin x \leq 1 \).</p>
+              <p>Då gäller att \( -1 \leq \sin \dfrac{x}{2} \leq 1 \).</p>
+              <p>Och att \( -2 \leq 2\sin \dfrac{x}{2} \leq 2 \).</p>
+              <p>Alltså gäller att \( 1 \leq 3+2\sin \dfrac{x}{2} \leq 5 \).</p>
+              <p>Minsta värdet är 1 och största värdet är 5.</p>
+            </div></div>
           </li>
 
-          <li>Uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = -1+3\tan 2x \). Bestäm största och minsta värde för funktionen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>För tangens gäller att värdemängden är alla reella tal. Då är det ingen skillnad om vi multiplicerar med 3 eller subraherar med 1.</p>
+              <p>Största värdet är (plus) oändligheten, \( \infty \), minsta värdet är minus oändligheten, \( -\infty \).
+              </div></div>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Temperaturen i celciusgrader på en semesterort under en dag följer funktionen \[ f(t) = 9,5\sin(0,262t-1,703) + 28,5 \] där \( t \) är antalet timmar som förflutit efter midnatt.
             <ol>
