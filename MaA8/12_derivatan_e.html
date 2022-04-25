@@ -137,6 +137,35 @@
               <div class="card card-body answer"> <p>\( f(x)=e^{\sin (x)} \), \(  f'(x)=e^{\sin (x)} \cdot (\cos (x)) \).</p> <p>\( f'(x)=0 \) då \( \cos x \cdot e^{\sin x}=0 \). En exponentialfunktion får aldrig värdet noll. Alltså \(  \cos x = 0 \Leftrightarrow x = \dfrac{\pi}{2} + n\pi \).</p><p>I dessa punkter byter \( f \) riktning.</p></div></div>
           </li>
 
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter där \( f(x)=x^2e^{x} \) byter riktning och funktionens extremvärden.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.5">
+              <div class="card card-body answer"> <p>\( f(x)=x^2e^{2} \), \(  f'(x)=(2x+x^2)e^{x} \).</p>
+              <p>\( f'(x)=0 \) då \( (2x+x^2)e^{x}=0 \). En exponentialfunktion får aldrig värdet noll. Alltså \(  2x+x^2 = 0 \) ger oss \( x = 0 \) eller \( x =-2 \).</p>
+              <p>Teckenschemat följer parabeln \( 2x+x^2 \).</p>
+              <p> \( \begin{array}{l|ccccc}
+                & & -2 & & 0 & \\
+                \hline f'(x) & + & 0 & - & 0 & + \\
+                f(x) & \nearrow & & \searrow & & \nearrow \\
+                \end{array} \) </p>
+              <p>Vi har ett lokalt maximum i -2, \( f(-2) = 4e^{-2} \approx 0,54 \).</p>
+              <p>Vi har ett lokalt minimum i 0, \( f(0) = 0 \).</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm det minsta värde som \( f(x)=e^x -3x \) får i intervallet \( [1,2] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.75">
+              <div class="card card-body answer"> <p>\( f(x)=e^x-3x \), \(  f'(x)=e^x-3 \).</p>
+              <p>\( f'(x)=0 \) då \( e^x-3=0 \). Vi får \( x = \ln 3 \approx 1,10 \).</p>
+              <p>Eftersom vi har ett intervall testar vi oss fram.</p>
+              <p>\( f(1) = e-3 \approx -0,28 \).</p>
+              <p>\( f(\ln 3) = 3-3\ln 3 \approx -0,30 \).</p>
+              <p>\( f(2) = e^2-6 \approx 1,39 \).</p>
+              <p>Alltså är det minsta värdet \( 3 - 3\ln 3 \).</p>
+            </div></div>
+          </li>
+
           <!--<li><i class="fas fa-cogs fa-2x level"></i>Bestäm ekvationen för tangenten vars riktningskoefficent är XX för funktionen \( f(x)= e^{} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
