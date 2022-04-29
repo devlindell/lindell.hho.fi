@@ -150,6 +150,28 @@
             </ol>
           </li>
 
+          <li>Lös följande ekvationer.
+            <ol>
+              <li>\( e^x = 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Vi manipulerar med \( \ln \) eller använder oss av definitionen.</p>
+              <p>\( x = \ln 4 \).</p>
+              </div></div> </li>
+              <li>\( e^x + 4 = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer">
+              <p>Först får vi \( e^x = -4 \).</p>
+              <p>En logaritm kan inte ha ett negativt värde, alltså saknar ekvationen lösningar.</p>
+              </div></div> </li>
+              <li>\( 4e^x - 3 =0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Först får vi \( e^x = -\dfrac{3}{4} \).</p>
+              <p>Vi manipulerar med \( \ln \) eller använder oss av definitionen.</p>
+              <p>Vi får \( x = \ln \dfrac{1}{4} = -\ln 4 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
           <li>För vilket värdet på \( x \) gäller att \( e^x -5=0 \)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
@@ -201,13 +223,33 @@
                 <p>Beroende på räknare så förenklar de olika.</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm skärningspunkterna för \( y = (x^2+2x-1)e^x \) och \( y = -e^x \). Visa att i den ena skärningspunkten skär funktionerna varandra vinkelrätt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Derivatafunktionerna är \( f'(x) = e^x(1+4x+x^2) \) och \( g(x)= -e^x \).</p>
+              <p>Skärningspunkterna är \( x = -2 \) och \( x = 0 \).</p>
+              <p>Att funktionerna skär varandra vinkelrätt betyder att produkten av tangeterna är -1.</p>
+              <p>\( f'(-2) \cdot g'(-2) = \dfrac{3}{e^4} \) och \( f'(0) \cdot g'(0) = -1 \).</p>
+              <p>Alltså skär funktionerna varandra vinkelrätt i \( x = 0 \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionerna \( f(x)=e^x \) och \( g(x) = \sqrt{3-2x} \) har en gemensam punkt och att i denna punkt skär funktionerna varandra vinkelrätt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Här fungerar det inte att söka gemensamma skärningspunkter. Du får tyvärr inget vettigt.</p>
+              <p>Skärningspunkterna är nollställena av \( h(x)=e^x - \sqrt{3-2x} \).</p>
+              <p>Eftersom derivatafunktionen \( h'(x) = e^x + \dfrac{1}{\sqrt{3-2x}} \) är positiv i definitionsmängden \( ]-\infty , \dfrac{3}{2} ] \), är funktionen \( h \) strängt växande.</p>
+              <p>Nollställen finns högst 1 st.</p>
+              <p>Eftersom \( h(0) = 1-\sqrt{3} < 0 \) och \( h(1)=e-1 > 0 \), har vi ett nollställe i \( ]0,1[ \).</p>
+              <p>Då har vi ett nollställe, en skärningspunkt.</p>
+              <p>Vi låter \( x_0 \) var skärningspunkten. Då gäller att \( f(x_0) = g(x_0) \).</p>
+              <p>Eftersom \( f'(x) = e^x \) och \( g(x)= -\dfrac{1}{\sqrt{3-2x}} \) får vi att \( f'(x_0)g(x_0) = e^{x_0} \cdot -\dfrac{1}{\sqrt{3-2x_0}} = -\dfrac{e^{x_0}}{\sqrt{3-2x_0}} = -\dfrac{f(x_0)}{g(x_0)} = -1 \).</p>
+              <p>Alltså skär funktionerna varandra vinkelrätt.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
