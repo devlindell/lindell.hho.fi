@@ -187,6 +187,15 @@
             </ol>
           </li>
 
+          <li><i class="fas fa-shapes fa-2x level"></i>Sex kort numreras från 1 till 6 och blandas. Man lyfter tre stycken kort utan återläggning så att man får ett tresiffrigt tal. Bestäm sannolikheten att man får en talföld som består av tre tal som är växande.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5">
+              <div class="card card-body answer"> <p>Av sex kort kan vi bilda tresiffriga tal på \( 6 \cdot 5 \cdot 4 = 120 \) olika sätt.</p>
+              <p>Växande talföljder med tre siffror är 123, 124, 125, 126, 134, 135, 136, 145, 146, 156, 234, 235, 236, 245, 246, 256, 345, 346, 356 och 456. Totalt är de 20 stycken.</p>
+              <p>Den eftersökta sannolikheten är \( \dfrac{20}{120} = \dfrac{1}{6} \approx 0,167 \).</p>
+              </div></div>
+          </li>
+
           <li><i class="fas fa-cogs fa-2x level"></i>Åt en spelare delas 5 st spelkort. Bestäm sannolikheten att i alla fall 2 st kort har samma valör.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
@@ -201,13 +210,46 @@
               </div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>FC Haxböle deltog i en fotbollsturnering där de spelade fyra matcher och gjorde tre mål. Totalt gjorde motståndarna två mål mot FC Haxböle. För seger får man tre poäng, för jämt spel ett poäng och för förlust blir man utan poäng. Hur många poäng kan FC Haxböle ha i slutet av turneringen?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>FC Haxblöle har kunna göra sina mål i en, två, tre eller fyra matcher. Motståndarnas mål kan vara gjorda i en eller två matcher. Vi får följande alternativ:</p>
+              <p>Resultaten 3-2, 0-0, 0-0, 0-0. Poängen är \( 3+1+1+1=6 \).</p>
+              <p>Resultaten 3-0, 0-2, 0-0, 0-0. Poängen är \( 3+0+1+1=5 \).</p>
+              <p>Resultaten 3-2, 0-1, 0-1, 0-0. Poängen är \( 3+0+0+1=4 \).</p>
+              <p>Resultaten 3-1, 0-1, 0-0, 0-0. Poängen är \( 3+0+1+1=5 \).</p>
+              <p>Resultaten 2-2, 1-0, 0-0, 0-0. Poängen är \( 1+3+1+1=6 \).</p>
+              <p>Resultaten 2-0, 1-2, 0-0, 0-0. Poängen är \( 3+0+1+1=5 \).</p>
+              <p>Resultaten 2-0, 1-0, 0-2, 0-0. Poängen är \( 3+3+0+1=7 \).</p>
+              <p>Resultaten 2-1, 1-1, 0-0, 0-0. Poängen är \( 3+1+1+1=6 \).</p>
+              <p>Resultaten 2-1, 1-0, 0-1, 0-0. Poängen är \( 3+3+0+1=7 \).</p>
+              <p>Resultaten 2-0, 1-1, 0-1, 0-0. Poängen är \( 3+1+0+1=5 \).</p>
+              <p>Resultaten 2-0, 1-0, 0-1, 0-1. Poängen är \( 3+3+0+0=6 \).</p>
+              <p>Resultaten 1-2, 1-0, 1-0, 0-0. Poängen är \( 0+3+3+1=7 \).</p>
+              <p>Resultaten 1-0, 1-0, 1-0, 0-2. Poängen är \( 3+3+3+0=9 \).</p>
+              <p>Resultaten 1-1, 1-1, 1-0, 0-0. Poängen är \( 1+1+3+1=6 \).</p>
+              <p>Resultaten 1-1, 1-0, 1-0, 0-1. Poängen är \( 1+3+3+0=7 \).</p>
+              <p>Möjliga poäng i slutet är 4,5,6,7 eller 9 poäng.</p>
+              </div></div>
+              <ol>
+                <li>Bestäm sannolikheterna för de olika poängmängderna. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11a">
+                <div class="card card-body answer"><p>Vi får</p>
+                <p>För 4 poäng, \( \dfrac{1}{15} \).</p>
+                <p>För 5 poäng, \( \dfrac{4}{15} \).</p>
+                <p>För 6 poäng, \( \dfrac{5}{15} \).</p>
+                <p>För 7 poäng, \( \dfrac{4}{15} \).</p>
+                <p>För 9 poäng, \( \dfrac{1}{15} \).</p>
+                </div></div> </li>
+                <li>Bestäm väntevärdet för hur många poäng FC Haxböle samlar i turneringen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11b">
+                <div class="card card-body answer"><p>Vi får \( 4\cdot \dfrac{1}{15} + 5\cdot \dfrac{4}{15} + 6\cdot \dfrac{5}{15} + 7\cdot \dfrac{4}{15} + 9\cdot \dfrac{1}{15} \approx 6,07 \).</p>
+                <p>Alltså 6 poäng.</p>
+                </div></div> </li>
+              </ol>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>

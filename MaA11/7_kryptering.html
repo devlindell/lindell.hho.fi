@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../style.css">
 
 
-    <title>6. Kryptering</title>
+    <title>7. Kryptering</title>
 
   </head>
   <body>
@@ -27,8 +27,8 @@
             <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
             <a class="dropdown-item" href="4_euklides.html">4. Delningsekvation och Euklides algoritm</a>
             <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
-            <a class="dropdown-item" href="6_kryptering.html">6. Kryptering</a>
-            <a class="dropdown-item" href="7_diofantisk.html">7. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="6_diofantisk.html">6. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="7_kryptering.html">7. Kryptering</a>
             <a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
             <a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
             <a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
@@ -36,14 +36,14 @@
           </div>
         </div>
       </nav>
-      <a href="5_kongruens.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_diofantisk.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
       <h3 class="mobile">MaA 11 Talteori och bevis</h3>
-      <a href="7_diofantisk.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="8_konnektiv.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
       <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
     </header>
 
     <article>
-      <h1>6. Kryptering</h1>
+      <h1>7. Kryptering</h1>
       <section>
         <div class="theory">
           <p>Då Anna skickar ett meddelande till Bertil vill hon inte att Cecilia skall kunna läsa meddelanet. För att Cecilia inte skall kunna läsa det krypterar Anna meddelandet så att Bertil vet vad han skall göra för att kunna tyda meddelandet.</p>
@@ -114,7 +114,22 @@
           </ol>
           <p>För att kryptera en text behöver man känna till värdena \( e \) och \( n \). Dessa tal är den offentliga nyckeln. Den hemliga nyckeln består av talet \( d \) och av primtalen \( p \) och \( d \).</p>
           <div class="exercise box">
-            <p><strong>Exempel 2</strong> Vi tar och krypterar MUGG med RSA-kryptering. Låt \( p = 3 \) och \( q = 11 \).</p>
+          <p><strong>Exempel 2</strong> Vi tar och krypterar och dekrypterar talet 7 med RSA-kryptering. Låt \( p = 5 \) och \( q = 7 \).</p>
+          <h4>Lösning</h4>
+          <p>Vi har \( n = pq = 5\cdot 7 = 35 \) och \( z = (5-1)(7-1) = 24 \).</p>
+          <p>Vi väljer \( e = 11 \).</p>
+          <p>Det krypterade meddelandet får i genom att räkna ut modulo \( n \) av meddelandet upphöjt till \( e \). Alltså:</p>
+          <p><img src="pics/7_1.png" class="responsivepic400"></p>
+          <p>Vi skickar iväg meddelandet 28.</p>
+          <p>För att dekryptera behöver vi talet \( d \). Talet \( d \) uppfyller villkoret \( 11d \equiv 1 \quad (\mod 24) \). För att komma åt \( d \) löser vi den diofantiska ekvationen \( 11d - 24k = 1 \).</p>
+          <p>Då vi löser ekvationen får vi att \( d = 11 + 24m \) och \( k = 5 + 11m \), där \( m \) är ett heltal.</p>
+          <p>Då \( m = 1 \) får vi \( d = 11 + 24 = 35 \).</p>
+          <p>För att dekryptera meddelandet, 28, tar vi och höjer det i potensen \( d \) och räknar modulo  \( n \). Alltså</p>
+          <p><img src="pics/7_2.png" class="responsivepic400"></p>
+          <p>Vi får fram det ursprungliga meddelandet 7.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Vi tar och krypterar MUGG med RSA-kryptering. Låt \( p = 3 \) och \( q = 11 \).</p>
             <h4>Lösning</h4>
             <p>Vi har inte stora primtal, men vi jobbar med dem.</p>
             <p>Eftersom \( p = 3 \) och \( q = 11 \) får vi \( n = pq = 33 \) och \( z = (p-1)(q-1) = 20 \).</p>
@@ -178,13 +193,29 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>-->
 
-          <li>Antag att \( p = 43 \) och \( q = 37 \). Antag vidare att \( d = 5 \). Bestäm de följande parametrarna i RSA-kryptering.
+          <li>Antag att \( p = 3 \) och \( q = 11 \). Antag vidare att \( e = 7 \). Kryptera och dekryptera talet 9 i RSA.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>\( n = pq = 1591 \)</p>
-                <p>\( z = (p-1)(q-1) = 1512 \).</p>
-                <p>\( d = 7 \)</p>
-                <p>\( e = \)</p>
+              <div class="card card-body answer"> <p>\( n = pq = 33 \)</p>
+                <p>\( z = (p-1)(q-1) =  20 \).</p>
+                <p>\( e = 7 \)</p>
+                <p>Vi krypterar, bestäm \( 11^7 ( \mod 33 ) \) och får 15. Det är det krypterade meddelandet.</p>
+                <p>Vi löser den diofantiska ekvationen \( 7d - 20 k = 1 \). Vi får \( d = 3 + 20m \) och \( k = 1 + 7m \).</p>
+                <p>Då \( m = 0 \) får vi \( d =  3 \).</p>
+                <p>Vi dekrypterar, bestäm \( 15^{3} ( \mod 33 ) \). Vi får 9.</p>
+              </div></div>
+          </li>
+
+          <li>Antag att \( p =  11 \) och \( q =  13 \). Antag vidare att \( e =  11 \). Kryptera och dekryptera talet 42 i RSA.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5">
+              <div class="card card-body answer"> <p>\( n = pq = 143 \)</p>
+                <p>\( z = (p-1)(q-1) =  120 \).</p>
+                <p>\( e = 11 \)</p>
+                <p>Vi krypterar, bestäm \( 42^11 ( \mod 143 ) \) och får 9. Det är det krypterade meddelandet.</p>
+                <p>Vi löser den diofantiska ekvationen \( 11d - 120 k = 1 \). Vi får \( d = 11 + 120m \) och \( k = 1 + 11m \).</p>
+                <p>Då \( m = 0 \) får vi \( d =  11 \).</p>
+                <p>Vi dekrypterar, bestäm \( 9^{11} ( \mod 143 ) \). Vi får 42.</p>
               </div></div>
           </li>
 
@@ -197,13 +228,25 @@
               </div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Kryptera meddelandet 444 807 genom att använda dig av primtalen 1 249 och 1 049. Låt \( e = 1013 \).
+            <p>För större uträckningar som inte fungerar på GeoGebra eller Speedcrunch så lönar det sig att använda sig av <a href="https://www.wolframalpha.com" target="_blank">WolframAlpha</a>.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi får \( n = 1 310 201 \) och \( z = 1 307 904 \).</p>
+              <p>Bestäm \( 444 807^{1 013} (\mod 1 310 201) \). Det krypterade meddelandet är 503 328.</p>
+              </div></div>
+              <ol>
+                <li>Använd dig av samma värden och tag och dekryptera meddelandet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer">
+                <p>Lös den diofantiska ekvationen \( 1013d - 1307904k = 1 \) och kom fram till \( d = -464803 + 1307904n \) och \( k = -360 + 1013n \).</p>
+                <p>Då \( n = 1 \) får vi \( d = 843101 \).</p>
+                <p>För att dekryptera räknar vi \( 503328^{843 101} (\mod 1 310 201) \) som är 444 807.</p>
+                </div></div> </li>
+              </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -304,7 +347,8 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Cecilia har gett ut sina offentliga nycklar i form av talen \( n = 55 \) och \( e = 3 \). Hon får ett meddelande som är kodat enligt dessa nycklar, och meddelandet är talet 2017. Cecilia känner till primtalsparametrarna \( p = 5 \) och \( q = 11 \). Hur lyder meddelandet i klartext? Meddelandet 2017 bildas av en teckensträng på två bokstäver, och dessa bokstäver har kodats till tal enligt systemet a = 00, b = 01, c = 02 osv. Koden måste alltså brytas ner i två delar: först tolkas talet 20 och sedan tolkas talet 17.
+          <li><i class="fas fa-jedi fa-2x level"></i>Cecilia har gett ut sina offentliga nycklar i form av talen \( n = 55 \) och \( e = 3 \). Hon får ett meddelande som är kodat enligt dessa nycklar, och meddelandet är talet 2017. Cecilia känner till primtalsparametrarna \( p = 5 \) och \( q = 11 \). Hur lyder meddelandet i klartext?
+          <p>Meddelandet 2017 bildas av en teckensträng på två bokstäver, och dessa bokstäver har kodats till tal enligt systemet a = 00, b = 01, c = 02 osv. Koden måste alltså brytas ner i två delar: först tolkas talet 20 och sedan tolkas talet 17.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
               <div class="card card-body answer"> <p>Det ursprungliga meddelandet är "pi".</p></div></div>
@@ -338,8 +382,8 @@
     </article>
 
     <footer class="MaA11">
-      <a href="5_kongruens.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
-      <a href="7_diofantisk.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="6_diofantisk.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_konnektiv.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
     </footer>
 
 
