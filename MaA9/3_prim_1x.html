@@ -50,6 +50,7 @@
         <div class="theory">
           <p>Från differentialkalkylen har vi att \( D\ln \mid x \mid=\dfrac{1}{x} \). Då vi opererar med integralen på bägge led får vi att\( \begin{array}{rcll} \displaystyle \int D \ln \mid x \mid \mathrm{ d}x & = & \displaystyle \int \dfrac{1}{x} \mathrm{ d}x  & \text{Integrering och derivering tar ut varandra.}\\ \\ \ln \mid x \mid  & = &  \displaystyle \int \dfrac{1}{x} \mathrm{ d}x\\ \end{array} \)
           </p>
+          <p>Vi har en formel för att bestämma den primitiva funktionen för \( \dfrac{1}{x} \).</p>
           <div class="exercise box">
             <p><strong>Exempel 1</strong> Bestäm \( \displaystyle \int \dfrac{1}{4x} \mathrm{ d}x \).</p>
             <h4>Lösning</h4>
@@ -136,11 +137,21 @@
             </ol>
           </li>
 
-          <!--<li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den primitiva funktion för \( \dfrac{1}{x}, x > 0 \) som för i punkten \( \dfrac{1}{e} \) har vädet 3.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5">
+              <div class="card card-body answer"> <p>Då \( f(x)=\dfrac{1}{x} \) är \( F(x)=\ln \mid x \mid +C \). Eftersom \( x > 0 \) är \( F(x) = \ln x + C \).</p>
+              <p>Eftersom \( F(\dfrac{1}{e})=3 \) så får vi att \( \ln \dfrac{1}{e} + C = 3 \Leftrightarrow C= 4 \).</p>
+              <p>Alltså \( F(x)=\ln  x  + 4 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den primitiva funktion för \( \dfrac{1}{x}, x < 0 \) vars nollställe är \( -e^2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75">
+              <div class="card card-body answer"> <p>Då \( f(x)=\dfrac{1}{x} \) är \( F(x)=\ln \mid x \mid +C \). Eftersom \( x < 0 \) är \( F(x) = \ln (-x) + C \).</p>
+              <p>Eftersom \( F(-e^2)=0 \) så får vi att \( \ln (-(-e^2)) + C = 0 \Leftrightarrow C= -2 \).</p>
+              <p>Alltså \( F(x)= \ln (-x)  -2 \).</p></div></div>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm den primitiva funktion för \( \dfrac{1}{2x} \) som går genom punkten (1,3).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
