@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>10. Relationer</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkande och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföljder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+            <a class="dropdown-item" href="22_repetition.html">22. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="9_funktionsvarden.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="11_potensekvationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>Extra: 10. Relationer</h1>
+      <section>
+        <div class="theory">
+        <p>Vi kan även se funktioner som något abstraktare än vad vi gjorde i de två senaste kapitlen.</p>
+        <div class="intro box">
+          <p>Tänk dig en grupp personer går förbi en person. Den stillastående personen delar in gruppen i kvinnor och män. Här fungerar personen som delar in gruppen som en funktion.</p>
+        </div>
+        <p>I exemplet ovan är hela gruppen definitionsmängden. Värdemängden består av två kategorier, kvinnor och män.</p>
+        <p>Matematiskt beskriver vi det som nedan.</p>
+        <p><img src="pics/funktion_def.png" class="responsivepic250" /></p>
+        <p>Om du känner för att läsa mera om funktioner är <a href="https://sv.wikipedia.org/wiki/Funktion" target="_blank">artikeln på Wikipedia</a> riktigt bra.</p>
+        <p>I matematiken talar vi om att olika funktioner har olika egenskaper. Vi talar om injektivitet, surjektivitet och bijektivitet. Vi kallar nedan definitionsmängden för \(X\) och värdemängden för \(Y\).</p>
+        <h3>Injektivitet</h3>
+        <p>En injektiv funktion är en funktion där varje element i definitionsmängden får ett unikt par i värdemängden.</p>
+        <table>
+          <tr><td><img src="pics/Injektiv-surjektiv.png" class="responsivepic250" /></td><td><img src="pics/Icke-injektiv-surjektiv.png" class="responsivepic250" /></td><td><img src="pics/Injektiv-icke-surjektiv.png" class="responsivepic250" /></td></tr>
+            <tr><td>Injektiv</td><td>Inte injektiv</td><td>Injektiv</td></tr>
+          </table>
+        <p>Matematiskt skriver vi det som \[\forall x_1,x_2 \in X, \quad f(x_1) = f(x_2) \Rightarrow x_1=x_2.\]</p>
+        <h3>Surjektivitet</h3>
+        <p>En surjektiv funktion är en funktion där alla element i värdemängden används.</p>
+        <table>
+            <tr><td><img src="pics/Injektiv-surjektiv.png" class="respinsivepic250" /></td><td><img src="pics/Icke-injektiv-surjektiv.png"  class="respinsivepic250" /></td><td><img src="pics/Injektiv-icke-surjektiv.png" class="responsivepic250" /></td></tr>
+            <tr><td>Surjektiv</td><td>Surjektiv</td><td>Inte surjektiv</td></tr>
+          </table>
+        <p>Matematiskt skriver vi det som \[\forall y \in Y, \exists x \in X, \quad f(x)=y.\]</p>
+        <h3>Bijektivitet</h3>
+        <p>Om en funktion är injektiv och surjektiv säger vi att den är bijektiv. Bijektiva funktioner har inversa funktioner, mera om detta kommer i senare kurser. Inversa funktioner och inversa tal har samma egenskaper.</p>
+        <table>
+          <tr><td><img src="pics/Injektiv-surjektiv.png" class="respinsivepic250" /></td><td><img src="pics/Icke-injektiv-surjektiv.png"  class="responsivepic250" /></td><td><img src="pics/Injektiv-icke-surjektiv.png" class="respinsivepic250" /></td></tr>
+            <tr><td>Bijektiv</td><td>Inte bijektiv</td><td>Inte bijektiv</td></tr>
+          </table>
+      </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Kombinera så att det blir rätt.</p>
+            <p>Välj bland följande påståenden:
+              <div class="grid-container">
+                <div class="grid-item">Bijektivitet</div>
+                <div class="grid-item">Injektivitet</div>
+                <div class="grid-item">Surjektivitet</div>
+              </div>
+            </p>
+            <table>
+              <tr class="MaG"><th>Benämning</th><th>Definition</th></tr>
+              <tr><td></td><td>Varje element i definitionsmängden får ett eget par i värdemängden.</td></tr>
+              <tr><td></td><td>Alla element i värdemängden används.</td></tr>
+              <tr><td></td><td>Alla element i definitionsmängden och värdemängden används och de bildar unika par.</td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+              <table>
+                <tr class="MaG"><th>Benämning</th><th>Definition</th></tr>
+                <tr><td>Injektivitet</td><td>Varje element i definitionsmängden får ett eget par i värdemängden.</td></tr>
+                <tr><td>Surjektivitet</td><td>Alla element i värdemängden används.</td></tr>
+                <tr><td>Bijektivitet</td><td>Alla element i definitionsmängden och värdemängden används och de bildar unika par.</td></tr>
+              </table>
+            </div></div> </li>
+
+          <li>Beskriver grafen en funktion? Om ja, är funktionen injektiv, surjektiv eller bijektiv?
+            <table>
+              <tr class="MaG"><th>Påstående</th><th>Injektiv</th><th>Surjektiv</th><th>Bijektiv</th><th>Inte injektiv eller surjektiv</th><th>Ingen funktion</th></tr>
+              <tr><td><img src="pics/uppg3_1.png" class="responsivepic250" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><img src="pics/funktion_3_7.png" class="responsivepic250" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><img src="pics/uppg3_2.png" class="responsivepic250" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><img src="pics/uppg3_4.png" class="responsivepic250" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><img src="pics/uppg3_5.png" class="responsivepic250" /></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+              <table>
+                <tr class="MaG"><th>Påstående</th><th>Injektiv</th><th>Surjektiv</th><th>Bijektiv</th><th>Inte injektiv eller surjektiv</th><th>Ingen funktion</th></tr>
+                <tr><td><img src="pics/uppg3_1.png" class="responsivepic250" /></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                <tr><td><img src="pics/funktion_3_7.png" class="responsivepic250" /></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td><img src="pics/uppg3_2.png" class="responsivepic250" /></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td><img src="pics/uppg3_4.png" class="responsivepic250" /></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td><img src="pics/uppg3_5.png" class="responsivepic250" /></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              </table>
+            </div></div> </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="9_funktionsvarden.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="11_potensekvationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

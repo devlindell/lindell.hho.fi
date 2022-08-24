@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Potenser</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="2_negaexp.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Potenser</h1>
+      <section>
+        <div class="theory">
+          <p>Vi börjar resan mot kvadratrötter, logaritmer och exponentialfunktioner genom att repetera potenser.</p>
+          <div class="intro box">
+            <p>Vi bestämmer tillsammans</p>
+            <ol style="list-style-type:lower-alpha">
+              <li>\( (-4)^2 \)</li>
+              <li>\( -4^2 \).</li>
+            </ol>
+            <div class="video">
+            <iframe src="https://player.vimeo.com/video/699330492" width="640" height="564" frameborder="0" allow="fullscreen"></iframe>
+            </div>
+          </div>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Förenkla</p>
+              <ol style="list-style-type:lower-alpha">
+                <li>\( (3a)^3  \)</li>
+                <li>\( \left(\dfrac{2}{a}\right)^2  \)</li>
+                <li>\( a^2 \cdot a^4  \)</li>
+                <li>\( \dfrac{y}{y^3}  \)</li>
+                <li>\( \left(a^2\right)^3  \).</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol style="list-style-type:lower-alpha">
+                <li>\( (3a)^3 =(3a)(3a)(3a)=3^3a^3 = 27a^3 \)</li>
+                <li>\( (\dfrac{2}{a})^2 =\dfrac{2}{a}\cdot \dfrac{2}{a}=\dfrac{4}{a^2} \)</li>
+                <li>\( a^2 \cdot a^4 = a\cdot a\cdot a\cdot a\cdot a\cdot a =a^6 \)</li>
+                <li>\( \dfrac{y}{y^3} =\dfrac{1}{y^2} \)</li>
+                <li>\( (a^2)^3 = (a^2)(a^2)(a^2)=a^6 \)</li>
+              </ol>
+            </div>
+            <p>När vi förenklar potenser brukar vi inte skriva ut alla mellansteg, utan vi använder oss av följande formler:</p>
+            <div class="summary box">
+              <p>\( \begin{array}{ll}   & \textrm{exempel} \\  (ab)^n = a^n b^n & 3^2\cdot 4^2 = (3\cdot 4)^2 = 12^2 \\  (\dfrac{a}{b})^n = \dfrac{a^n}{b^n} & (\dfrac{1}{2})^2=\dfrac{1^2}{2^2}=\dfrac{1}{4}\\  a^m a^n = a^{m+n} & 3^2\cdot 3^4 = 3^6 \\  \dfrac{a^m}{a^n} = a^{m-n}, a\not=0 & \dfrac{4^5}{4^2}=4^{5-2}=4^3 \\  (a^m)^n=a^{mn} =(a^n)^m & (2^3)^2=2^{3\cdot 2} = 2^6 \\  \end{array} \)</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Förenkla</p>
+              <ol style="list-style-type:lower-alpha">
+                <li>\( (-3a)^4  \)</li>
+                <li>\( 2^2 \cdot 4^3 \).</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol>
+                <li>\( (-3a)^4 =(-3)^4\cdot a^4=81a^4 \)</li>
+                <li>\( 2^2 \cdot 4^3= 2^2\cdot (2^2)^3 = 2^2 \cdot 2^6 = 2^8 \)</li>
+              </ol> </div>
+              <!--<div class="exercise box">
+              <p><strong>Exempel 3</strong> Sidan i en kub ökar med 30 %. Med hur många procent ökar volymen?</p>
+              <h4>Lösning</h4>
+              <p>Längden av sidan är före ökningen \( a \). Efter ökningen har sidan längden \( 1,3a \). Den större volymen är \( (1,3a)^3 \). Förhållandet mellan gamla och nya är \( \dfrac{(1,3a)^3}{a^3} = 1,3^3=2,197 \). Den procentuella ökningen är 2,197 -1 = 1,197. Alltså 120 %.</p>  </div>-->
+            </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm
+            <ol>
+              <li>\( -1^{2014} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( -1^{2014}=-1 \), vi har ingen parentes. Jämför med \( (-1)^{2014}=-1 \).</p></div></div> </li>
+              <li>\( -2014^1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( -2014^1=-2014 \)</p></div></div> </li>
+              <li>\( (-1)^{2014} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( (-1)^{2014}=1 \), vi har en jämn exponent.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm värdet av uttrycket
+            <ol>
+              <li>\( (-3-7)^2  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\( (-3-7)^2 =(-10)^2=100 \)</p></div></div> </li>
+              <li>\( (-3)^2-7^2  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( (-3)^2-7^2 =9-49=-40 \)</p></div></div> </li>
+              <li>\( -3^2-7^2  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\( -3^2-7^2 =-9-49=-58 \)</p></div></div> </li>
+              <li>\( (-3)^2 \cdot (-7)^2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3d">
+              <div class="card card-body answer"><p>\( (-3)^2 \cdot (-7)^2=9\cdot 49=441 \)</p></div></div> </li>
+              <li>\( (-3)^2-(-7)^2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3e">
+              <div class="card card-body answer"><p>\( (-3)^2-(-7)^2=9-49=-40 \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Skriv som potenser och förenkla
+            <ol>
+              <li>\( a \cdot aaa \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>\( a \cdot aaa=a \cdot a^3 = a^4 \)</p></div></div> </li>
+              <li>\( \dfrac{xxxxx}{xx} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( \dfrac{xxxxx}{xx}=\dfrac{x^5}{x^2} = x^3 \) \)</p></div></div> </li>
+              <li>\( \dfrac{bb}{bbbbbb} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>\( \dfrac{bb}{bbbbbb}=\dfrac{b^2}{b^6} = \dfrac{1}{b^4} = b^{-4} \)</p></div></div> </li>
+              <li>\( nnnnnn \cdot \dfrac{1}{nnn} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer"><p>\( nnnnnn \cdot \dfrac{1}{nnn}=n^6 \cdot \dfrac{1}{n^3} = n^3 \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm
+            <ol>
+            <li>\( \left(-1 \dfrac{2}{3}\right)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5a">
+            <div class="card card-body answer"><p>\( \left(-1 \dfrac{2}{3}\right)^3=(-\dfrac{5}{3})^3=-\dfrac{125}{27} \)</p></div></div> </li>
+            <li>\( 3\cdot \left(\dfrac{2}{3}\right)^4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5b">
+            <div class="card card-body answer"><p>\( 3\cdot \left(\dfrac{2}{3}\right)^4=3\cdot\dfrac{2^4}{3^4}=\dfrac{3\cdot 2^4}{3^4}=\dfrac{2^4}{3^3}=\dfrac{16}{27} \)</p></div></div> </li>
+            <li>\( 3 \cdot \dfrac{2}{3^4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5c">
+            <div class="card card-body answer"><p>\( 3 \cdot \dfrac{2}{3^4}=\dfrac{2}{3^3}=\dfrac{2}{27} \)</p></div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Om \( x^3 \) har värdet 12. Vilket värde har
+            <ol>
+              <li>\( x^6 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5a">
+              <div class="card card-body answer"><p>Vi får \( x^6 = (x^3)^2 = 12^2 = 144 \).</p></div></div> </li>
+              <li>\( x^{12} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5b">
+              <div class="card card-body answer"><p>Vi får \( x^{12} = (x^3)^4 = 12^4 = 20 736 \).</p></div></div> </li>
+              <li>\( x^{15} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5c">
+              <div class="card card-body answer"><p>Vi får \( x^{15} = (x^3)^5 = 12^5 = 248 832 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Om \( a^{10} = 32768 \) och \( a^2 = 8\). Vilket värde har
+            <ol>
+              <li>\( a^8 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75a">
+              <div class="card card-body answer"><p>Vi får \( a^8 = (a^2)^4 = 8^4 = 4 096 \).</p></div></div> </li>
+              <li>\( a^{4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75b">
+              <div class="card card-body answer"><p>Vi får \( a^{4} = (a^2)^2 = 8^2 = 64 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm värdet av
+            <ol>
+            <li>\( 2 \cdot \left(\dfrac{3}{4}\right)^2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8a">
+            <div class="card card-body answer"><p>\( 2 \cdot \left(\dfrac{3}{4}\right)^2=2\cdot \dfrac{9}{16}=\dfrac{9}{8} \)</p></div></div> </li>
+            <li>\( 8^{10} \cdot 32^7 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8b">
+            <div class="card card-body answer"><p>\( 8^{10} \cdot 32^7=2^{30}\cdot 2^{35}=2^{65} \)</p></div></div> </li>
+            <li>\( \dfrac{100^{14}}{10^{27}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="8c">
+            <div class="card card-body answer"><p>\( \dfrac{100^{14}}{10^{27}}=\dfrac{10^{28}}{10^{27}}=10 \)</p></div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Förenkla
+            <ol>
+              <li>\( a^n \cdot a^n \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9a">
+              <div class="card card-body answer"><p>\( a^n \cdot a^n=(a^n)^2=a^{2n} \)</p></div></div> </li>
+              <li>\( \dfrac{a^{2n+1}}{a^n a^n} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9b">
+              <div class="card card-body answer"><p>\( \dfrac{a^{2n+1}}{a^n a^n}=\dfrac{a^{2n+1}}{a^{2n}}=a^{(2n+1)-2n}=a \)</p></div></div> </li>
+              <li>\( \dfrac{a^n a^n}{a^n + a^n} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9c">
+              <div class="card card-body answer"><p>\( \dfrac{a^n a^n}{a^n + a^n} = \dfrac{a^{2n}}{2a^n} = \dfrac{1}{2}\cdot \dfrac{a^{2n}}{a^n} = \dfrac{1}{2}a^{2n-n} = \dfrac{1}{2}a^n \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_negaexp.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

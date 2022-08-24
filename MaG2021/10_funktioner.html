@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>7. Funktioner</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkande och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföljder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+            <a class="dropdown-item" href="22_repetition.html">22. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="6_procentforandring.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="8_grafen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>7. Funktioner</h1>
+      <section>
+        <div class="theory">
+          <p>En funktion är en regel som ser till att varje värde, invärde, som sätt in i funktionen får ett eget utvärde.</p>
+          <p>Tänk dig en samling av människor som alla har sin favoritfärg bland röd, oragne, gul, grön, blå och viloett. Invärdet, det som vi sätter i funktionen är människan, och utvärdet är favoritfärgen. Funktionen sorterar människorna i sex stycken olika grupper. Tex kan Anna ha favortifärgen röd medan Bertil kan ha favoritfärgen violett. Det är helt möjligt att flera personer har samma favoritfärg. Däremot kan inte en person ha två favoritfärger.</p>
+          <p>Vi talar om att vi har ett invärde som sätts in i en funktion och vi får ett utvärde. Matematiskt beskriver vi det som nedan.</p>
+          <p><img src="pics/funktion_def.png" class="responsivepic250" /></p>
+          <p>Mera matematiska egenskaper för funktioner hittar du i kapitel <a href="10_relationer.html" target="_blank">10. Extra: Relationer</a>.</p>
+          <div class="discussion box">
+            <p><img  src="pics/funktion_1.png" class="responsivepic600" /></p>
+            <p>Fundera med din bänkkamrat vilka av bilderna A, B och C representerar en funktion. Tänk er personer och deras favoritfärger om ni har svårt att komma igång.</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#i1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="i1">
+            <div class="card card-body answer"><p>Vi har följande motiveringar.</p>
+              <ul>
+                <li>A. är inte en funktion eftersom talet 4 inte har ett entydit par. Ibland får 4:an värdet c och ibland värdet d.</li>
+                <li>B. är en funktion. Alla invärden, talen i grön bollen, blir valda. Det gör inget fastän alla tal i den röda fyrhörningen inte blir valda.</li>
+                <li>C. är inte en funktion eftersom alla tal i den gröna bollen blir valda. 2:an blir inte vald.</li>
+              </ol>
+            </div></div>
+          </div>
+          <p>För att en funktion skall var en funktion behöver vi en variabel, bokstav. Oftast är variabeln \(x\). Sedan behöver vi en regel, ett utryck. Till sist namnger vi funktionen, tex \(f\), \(g\) osv.</p>
+          <table>
+
+              <tr class="MaG"><th>Funktion</th><th>Variabel</th><th>Uttryck</th><th>Namn</th></tr>
+              <tr><td>\(f(x)=x+3\)</td><td>\(x\)</td><td>\(x+3\)</td><td>f</td></tr>
+              <tr><td>\(g(a)=a^2-1\)</td><td>\(a\)</td><td>\(a^2-1\)</td><td>g</td></tr>
+              <tr><td>\(h(a,b) = a+b\)</td><td>\(a\) och \(b\)</td><td>\(a+b\)</td><td>h</td></tr>
+
+          </table>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm regeln som sammanbinder följande värden och funktionsvärden samman då</p>
+            <p>\(0 \mapsto -2\)</p>
+            <p>\(1 \mapsto 0\)</p>
+            <p>\(2 \mapsto 2\)</p>
+            <h4>Lösning</h4>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/367828166" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm ekvationen för funktionen där \(1 \to -1\), \(3 \to -3\) och \(4 \to -4\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="1t">
+              <div class="card card-body answer"> Fundera vad som händer med talen. Se vid behov på exempel 1. </div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer"> <p>Vi märker att talen som vi sätter in i funktionen blir det motsatta.</p>
+                <p>Det kan vi beskriva som \(f(x)=-x\).</p> </div></div> </li>
+
+          <li>Bestäm utrycket för funktionen \(f\) då talen 0, 1 och 2 avbildas på följande sätt \(0 \mapsto 4\), \(1\mapsto 5\) och \(2 \mapsto 6\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="2t">
+            <div class="card card-body answer"> Fundera på vad som du måste göra åt talen 0, 1 och 2 för att få värden 4, 5 och 6. Till ditt förfogande har du alla fyra räknesätt. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>\(f(0)=4=0+4\)</p>
+                <p>\(f(1)=5= 6-1= 5\cdot 1 = 1 +4\)</p>
+                <p>\(f(2)=6=3\cdot 2=8-2=2+4\)</p>
+                <p>Visst märker du att i alla fall får vi det värde som vi söker genom att adderat till talet 4, alltså: \(f(x) = x+4\).</p> </div></div> </li>
+
+          <li>Bestäm ekvationen för funktionen där \(1 \to 1\), \(2 \to \dfrac{1}{2}\), \(3\to \dfrac{1}{3}\) och \(4 \to \dfrac{1}{4}\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="3t">
+            <div class="card card-body answer"> Vad händer med invärdena? Se vid behov på exempel 1. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi märker att vi får det inverterade talet.</p>    <p>Funktionen är \(f(x)=\dfrac{1}{x}\).</p> </div></div> </li>
+
+          <li>Bestäm utrycket för \(g\) då</p>
+            <p>\(g(0) = 2\)</p>
+            <p>\(g(1) = 3\)</p>
+            <p>\(g(2) = 6\)</p>
+            <p>\(g(3) = 11\)?</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="4t">
+            <div class="card card-body answer"> Fundra på vad som måste hända med värden som du sätter in i funktionen för att få funktionsvärdena. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\(g(0)=0^2+2=2\)</p>
+                <p>\(g(1)=1^2+2=3\)</p>
+                <p>\(g(2)=2^2+2=6\)</p>
+                <p>\(g(3)=3^2+2=11\)</p>
+                <p>Alltså: \(g(x) = x^2 + 2\).</p> </div></div> </li>
+
+          <li><p>Bestäm om följande relationer är funktioner.</p>
+            <table>
+              <tr class="MaG"><th>Påstående</th><th>Funktion</th><th>Inte funktion</th></tr>
+              <tr><td><img src="pics/funktion_3_1.png" class="responsivepic100" /></td><td></td><td></td></tr>
+              <tr><td><img src="pics/funktion_3_2.png" class="responsivepic100" /></td><td></td><td></td></tr>
+              <tr><td><img src="pics/funktion_3_3.png" class="responsivepic100" /></td><td></td><td></td></tr>
+              <tr><td><img src="pics/funktion_3_4.png" class="responsivepic100" /></td><td></td><td></td></tr>
+              <tr><td><img src="pics/funktion_3_5.png" class="responsivepic100" /></td><td></td><td></td></tr>
+              <tr><td><img src="pics/funktion_3_6.png" class="responsivepic100" /></td><td></td><td></td></tr>
+            </table>
+
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer">
+                <table>
+                <tr class="MaG"><th>Påstående</th><th>Funktion</th><th>Inte funktion</th></tr>
+                <tr><td><img src="pics/funktion_3_1.png" class="responsivepic100" /></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td><img src="pics/funktion_3_2.png" class="responsivepic100" /></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td><img src="pics/funktion_3_3.png" class="responsivepic100" /></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td><img src="pics/funktion_3_4.png" class="responsivepic100" /></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td><img src="pics/funktion_3_5.png" class="responsivepic100" /></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td><img src="pics/funktion_3_6.png" class="responsivepic100" /></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              </table>
+              <ol start="1" style="list-style-type:lower-alpha">
+                <li>Ja. Alla invärden blir valda. Här är inget konstigt.</li>
+                <li>Nej, 4:an avbildas på flera olika värden i värdemängden.</li>
+                <li>Ja. Alla invärden blir valda, det gör inget fastän några får samma värde, tex 2 och 4 får båda värdet 5.</li>
+                <li>Nej, c:et avbildas på flera olika värden i värdemängden.</li>
+                <li>Ja. Alla invärden blir valda. Det gör ingenting fastän alla utvärden inte har ett par.</li>
+                <li>Nej, alla invärden blir inte valda.</li>
+              </ol> </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv ner regeln för funktionen då:
+            <ol>
+              <li>Invärdet blir tre gånger större och till produkten adderas åtta. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>\(f(x)=3x+8\)</p> </div></div> </li>
+              <li>Invärdet kvadreras och produkten blir tre gånger större, till sist adderar man 5 till produkten. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>\(g(x)=3x^2+5\)</p> </div></div> </li>
+            </ol></li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm regeln för följande funktioner och fyll i det som saknas.
+              <ol>
+                <li>
+                  <table>
+
+                    <tr class="MaG"><th>\(x\)</th><th>\(f(x)\)</th></tr>
+                    <tr><td>-1</td><td>-3</td></tr>
+                    <tr><td>0</td><td>-1</td></tr>
+                    <tr><td>1</td><td>1</td></tr>
+                    <tr><td>2</td><td>3</td></tr>
+                    <tr><td>3</td><td></td></tr>
+                    <tr><td></td><td>9</td></tr>
+                    <tr><td></td><td>17</td></tr>
+                    <tr><td>\(x\)</td><td></td></tr>
+                  </table>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7a">
+                <div class="card card-body answer">
+                <table>
+                    <tr class="MaG"><th>\(x\)</th><th>\(f(x)\)</th></tr>
+                    <tr><td>-1</td><td>-3</td></tr>
+                    <tr><td>0</td><td>-1</td></tr>
+                    <tr><td>1</td><td>1</td></tr>
+                    <tr><td>2</td><td>3</td></tr>
+                    <tr><td>3</td><td>5 </td></tr>
+                    <tr><td>5</td><td>9</td></tr>
+                    <tr><td>9</td><td>17</td></tr>
+                    <tr><td>\(x\)</td><td>2x-1</td></tr>
+                  </table>
+                </div></div> </li>
+                <li><table>
+                    <tr class="MaG"><th>\(x\)</th><th>\(f(x)\)</th></tr>
+                    <tr><td>apa</td><td>2</td></tr>
+                    <tr><td>björn</td><td>1</td></tr>
+                    <tr><td>krokodil</td><td>3</td></tr>
+                    <tr><td>katt</td><td>1</td></tr>
+                    <tr><td>hund</td><td></td></tr>
+                    <tr><td>lejon</td><td></td></tr>
+                    <tr><td>elefant</td><td></td></tr>
+                    <tr><td>\(x\)</td><td></td></tr>
+                  </table>
+                  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7b">
+                <div class="card card-body answer">
+                  <table>
+                      <tr class="MaG"><th>\(x\)</th><th>\(f(x)\)</th></tr>
+                      <tr><td>apa</td><td>2</td></tr>
+                      <tr><td>björn</td><td>1</td></tr>
+                      <tr><td>krokodil</td><td>3</td></tr>
+                      <tr><td>katt</td><td>1</td></tr>
+                      <tr><td>hund</td><td>1</td></tr>
+                      <tr><td>lejon</td><td>2</td></tr>
+                      <tr><td>elefant</td><td>3</td></tr>
+                      <tr><td>\(x\)</td><td>antal stavelser i djurets egennamn, antal stavelser</td></tr>
+                    </table>
+                </div></div> </li>
+              </ol>
+
+        <li><i class="fas fa-shapes fa-2x level"></i>Kombinera rätt funktion med uttryck.
+          <p>Välj bland följande funktioner: \(\sqrt{a}\), \(a-b\), \(b-1\), \(x-a\) och \(x-1\).</p>
+          <table>
+            <tr class="MaG"><th></th><th>Uttryck</th></tr>
+            <tr><td>\(f(x)=\)</td><td></td></tr>
+            <tr><td>\(h(a)=\)</td><td></td></tr>
+            <tr><td>\(i(b)=\)</td><td></td></tr>
+            <tr><td>\(j(a,b)=\)</td><td></td></tr>
+            <tr><td>\(k(x,a)=\)</td><td></td></tr>
+          </table>
+
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="8">
+          <div class="card card-body answer">
+            <table>
+              <tr class="MaG"><th></th><th>Uttryck</th></tr>
+              <tr><td>\(f(x)=\)</td><td>\(x-1\)</td></tr>
+              <tr><td>\(h(a)=\)</td><td>\(\sqrt{a}\)</td></tr>
+              <tr><td>\(i(b)=\)</td><td>\(b-1\)</td></tr>
+              <tr><td>\(j(a,b)=\)</td><td>\(a-b\)</td></tr>
+              <tr><td>\(k(x,a)=\)</td><td>\(x-a\)</td></tr>
+            </table>
+           </div></div> </li>
+
+
+            </ol>
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="6_procentforandring.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_grafen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Procentuell förädring</title>
+
+  </head>
+  <body>
+    <header class="MaG">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_talochrakne.html">1. Repetition: Tal och räkneoperationer</a>
+            <a class="dropdown-item" href="2_algebra.html">2. Repetition: Algebra</a>
+            <a class="dropdown-item" href="3_matematiktank.html">3. Repetition: Matematiskt tänkande och matematiska metoder</a>
+            <a class="dropdown-item" href="4_repfunktioner.html">4. Repetition: Funktioner</a>
+            <a class="dropdown-item" href="5_procent.html">5. Procent</a>
+            <a class="dropdown-item" href="6_procentforandring.html">6. Procentuell förändring</a>
+            <a class="dropdown-item" href="7_funktioner.html">7. Funktioner</a>
+            <a class="dropdown-item" href="8_grafen.html">8. Grafen av en funktion</a>
+            <a class="dropdown-item" href="9_funktionsvarden.html">9. Funktionsvärden</a>
+            <a class="dropdown-item" href="10_relationer.html">10. Extra: Relationer</a>
+            <a class="dropdown-item" href="11_potensekvationer.html">11. Potensekvationer</a>
+            <a class="dropdown-item" href="12_logaritmer.html">12. Logaritmer</a>
+            <a class="dropdown-item" href="13_log_berakning.html">13. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="14_log_tillampning.html">14. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="15_talfoljder.html">15. Talföljder</a>
+            <a class="dropdown-item" href="16_talfoljder_egenskaper.html">16. Egenskaper för talföljder</a>
+            <a class="dropdown-item" href="17_aritmetisk.html">17. Aritmetisk talföljd</a>
+            <a class="dropdown-item" href="18_geometrisk.html">18. Geometrisk talföljd</a>
+            <a class="dropdown-item" href="19_aritmetisk_summa.html">19. Aritmetisk summa</a>
+            <a class="dropdown-item" href="20_geometrisk_summa.html">20. Geometrisk summa</a>
+            <a class="dropdown-item" href="21_talfoljd_rekursiv.html">21. Rekursivt definierad talföljd</a>
+            <a class="dropdown-item" href="22_repetition.html">22. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_procent.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaG Tal och talföljder</h3>
+      <a href="7_funktioner.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Procentuell förädring</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>För att stöda ungdomar att studera betalar staten ut studiestöd i form av bostadsbidrag och studiepenning. Studiepenningen är 250,28 € per månad. Regeringen beslutar sig att höja studiepenningen med först 1,0 % och sedan med 0,8 %. Hur stor är studiepenningen efter den första höjningen? Hur stor är den efter båda höjningarna?</p>
+            <h4>Lösning</h4>
+            <p>Studiestödet efter första höjningen är \((1+0,01)250,28 = 252,78\).</p>
+            <p>Efter andra höjningen är den \((1+0,008)252,78 = 254,80\) €.</p>
+          </div>
+          <div class="discussion box">
+            <p>Diskutera med din bänkkamrat eller fundera för dig själv: Varför kan vi inte addera ihop procenterna i introduktionen för att få den totala höjningsprocenten?</p>
+            <h4>Lösning</h4>
+            <p>Vi testar. Om ökningen är 1,8 % är slutsumman \((1+0,018)250,28 = 254,79\) €.</p>
+            <p>Med ökningarna 1 % och 0,8 % är den totala procentuella förändringen \(\dfrac{254,80}{250,28}=1,01805977\).</p>
+          </div>
+          <div class="summary box">
+            <p>OBS! Summorna är nästan samma men ändå inte. När vi har procentuell förändring måste vi beakta förändringarna skilt för sig.&nbsp;</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Anna deponerar 5 000 € på ett konto. Hur mycket finns på kontot efter 10 år om räntesatsen är</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>\(0,5\;\%\) </li>
+              <li>\(6\;\%\)?</li>
+            </ol>
+            <h4>Lösning</h4>
+              <ol start="1" style="list-style-type:lower-alpha">
+                <li><p>År 1 har vi \(5000 (1+0,005) = 5000\cdot 1,005\)€.</p>
+                    <p>År 2 har vi \(5000\cdot 1,005 (1 +0,005) = 5000\cdot 1,005^2 \) €.</p>
+                    <p>År 3 har vi \(5000\cdot 1,005^2\cdot 1,005 = 5000\cdot 1,005^3\) €.</p>
+                    <p>Efter n år har vi \(5000\cdot 1,005^n \).</p>
+                    <p>Efter 10 år har vi alltså \(5000\cdot 1,005^{10}=5255,70\) €.</p></li>
+                    <li><p>Ändrar vi räntan till 6 % och följer samma logik som ovan får vi att efter \(n\) år har vi \(5000\cdot 1,06^n \). Efter 10 år har vi \(5000\cdot 1,06^{10}= 8954,24 \).</p></li>
+              </ol>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Priset på en vara höjdes före jul. Efter jul sänktes priset för varan med 40 % så att priset blev lika stort som det ursprungliga före jul. Med hur många procent hade man höjt priset före jul?</p>
+            <h4>Lösning</h4>
+            <p>Vi betecknar varas pris i början med \(a\). Efter prishöjningen, \(p\) %, har varan priset \(a(1+\dfrac{p}{100})\). Detta pris sänks 40 % och landar på det ursprungliga priset \(a\).</p>
+            <p>Vi får alltså</p>
+            <p>\(\begin{array}{rcll} a(1+\dfrac{p}{100})(1-0,4) & = & a &\mid /a \\
+              (1+\dfrac{p}{100})\cdot 0,6  & = &1 &\mid /0,6 \\
+              1 + \dfrac{p}{100} & = & \dfrac{1}{0,6} \\
+              \dfrac{p}{100}  &=& \dfrac{1}{0,6} -1 & \mid \cdot 100 \\
+              p & = & 100(\dfrac{1}{0,6}-1) = 66,66 \% \end{array}\) </p>
+              <p>Svar: Priset skall höjas med 66,7 %.</p>
+            </div>
+
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Hur mycket 9-procentig saltlösning bör man tillföra 2 liter 3-procentig saltlösning så att man får en lösning vars salthalt är 6 %?</p>
+              <h4>Lösning</h4>
+              <p>Vi ställer upp en ekvation. Vi har nu \(0,03\cdot 2\) liter salt och sätter till \(0,09\cdot x\) liter salt. Totalt har vi då \((2+x)\cdot 0,06\) liter salt i lösningen.</p>
+              <p>Alltså</p>
+              <p>\(\begin{array}{rcl} 0,03\cdot 2 +0,09 \cdot x&=&(2+x)\cdot 0,06 \\ 0,06 +0,09x &=&0,12 + 0,06x \\ 0,03x&=&0,06 \\ x&=&\dfrac{0,06}{0,03}=2\\ \end{array}\)</p>
+              <p>Svar: 2 liter 9 % saltlösning bör tillsättas.</p>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Ett lager från ett luftfilter avlägsnar 25 % av luftburna partiklar.
+            <ol>
+              <li>Hur många procent av partiklarna avlägsnar 5 st lager? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Ett lager avlägsnar 25 %, då är det kvar 75 %.</p>
+              <p>Då vi har \( a \) st partiklar i början är det efter varje lager kvar \( 0,75a \) st partiklar. Efter 5 lager har vi kvar \( 0,75a \cdot 0,75 \cdot 0,75 \cdot 0,75 \cdot 0,75 = 0,75^5 a = 0,2373a \). </p>
+              <p>Procentuella andelen som har avlägsnats är \( a - 0,2373a = 0,7627a \). Alltså 76,3 %.</p>
+              </div></div> </li>
+              <li>Hur många procent av partiklarna avlägsnas av 25 st lager? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Motsvarande som ovan. Per lager har vi kvar \( 0,75a \) st partiklar. Efter 25 lager är mängden \( 0,75^{25}a = 0,0007525a \).</p>
+              <p>Andelen som har avlägsnats är \( a - 0,0007525a = 0,9992475a \). Alltså 99,92 %.</p>
+              </div></div> </li>
+              <li><i class="fas fa-jedi fa-2x level"></i>Hur många lager skall vi ha för att bygga ett filter som avlägsnar i alla fall 98 % av partiklarna? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi inser att det får finnas kvar 2 %, alltså \( 0,02a \) av partiklarna i början.</p>
+              <p>Från föregående uppgifterna fick vi fram en formel. Nu vet vi inte bara hur många lager som vi har. Vi betecknar antalet med \( n \). Vi får ekvationen \( 0,75^n a = 0,02a \). </p>
+              <p>I bägge led har vi \( a \), de kan vi förkorta bort. Ekvationen blir \( 0,75^n = 0,02 \). För att lösa denna ekvation exakt behöver vi logaritmer. För att nu hitta en lösning gafflar vi fram en lösning (vi testar).</p>
+              <p>\( 0,75^{10} = 0,0563 \), för stort värde.</p>
+              <p>\( 0,75^{15} = 0,0133 \), för litet värde.</p>
+              <p>\( 0,75^{12} = 0,0316 \), för stort värde.</p>
+              <p>\( 0,75^{13} = 0,0237 \), för stort värde.</p>
+              <p>\( 0,75^{14} = 0,0178 \), för litet värde.</p>
+              <p>Vi skall alltså ha 14 lager för att avlägsna 98 % av partiklarna.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Ett vattenfilter består av flera tunna hinnor som var för sig filtrerar vattnet. Ett filterlager tar bort 1,5 % av smutspartiklarna i vattnet. Hur många procent tar 10 lager bort?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"><p>I början har vi \(a\) st partiklar.</p> <p>Ett lager tar bort 1,5 %, då är det kvar \((1-0,015)\cdot a = 0,985a\) partiklar efter första filtreringen. Efter 10 st filer är det kvar \(0,985^{10} a = 0,8597\ldots\) partiklar.</p><p>Den procentuella minskningen är \(1-0,8597\ldots = 0,14026\ldots = 14,0\) %.</p> </div></div>
+            <ol>
+              <li>Hur många procent avlägsnar 100 lager? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Efter 100 st filer är det kvar \(0,985^{100} a = 0,2206\ldots a\) partiklar.</p><p>Den procentuella minskningen är \(1-0,2206\ldots = 0,77939\ldots = 77,9\) %.</p> </div></div> </li>
+              <li><i class="fas fa-cogs fa-2x level"></i>Hur många lager behöver vi för att vattnet skall renas så att 98 % av smutspartiklarna är borta?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>På LibreOffice får vi något i stil med</p><p><img src="pics/6-2.png" class="responsivepic600" /></p><p>Eller lös ekvatonen \(1- 0,985^n =0,98\).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Priset för mjölk sänktes med 20 %. Med hur många procent borde försäljningen öka för att värdet av försäljningen skall hållas konstant?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3">
+            <div class="card card-body answer"> <p>Från \((1+\dfrac{p}{100})\cdot 0,80a = a\) får vi att \(p=0,25\)</p><p>Försälningen borde öka med 25 %. </p></div></div>
+          </li>
+
+          <li>Värdet på en bil sjunker med 10 % per år. Vad är bilen värd efter 8 år då den som ny var värd 25 000 €?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="4t">
+            <div class="card card-body hint"> Bilda en tabell där det framkommer hur mycket bilen är värd vid varje år. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Eftersom bilen förlorar 10 % av sitt värde varje år är värdet \(0,9 \cdot 25 000\) efter första året. År 2 är värdet \(0,90^2 \cdot 25000\). Efter 8 år är värdet \(0,9^8 \cdot 25000 = 10761,68 \approx 10 800 \approx 11000\) €.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För att få större skatteintäkter beslutar sig en regering för att höja mervärdeskatten för sötsaker på 20 % med 3 procentenheter. Det som händer är att försäljningen minskar med 1,5 %. Går det som regeringen hoppades och hur många procent högre intäkter får de?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="6t">
+            <div class="card card-body hint"> <p>Gör en tabell</p>
+              <p><table>
+                  <tr><td>procent</td><td>försäljning</td><td>statens inkomst</td></tr>
+                  <tr><td>20 %</td><td></td><td></td></tr>
+                  <tr><td>23 %</td><td></td><td></td></tr>
+                </tbody>
+              </table> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi gör följande tabell</p>
+                <p>
+                  <table>
+
+                      <tr><td>procent</td><td>försäljning</td><td>statens inkomst</td></tr>
+                      <tr><td>20 %</td><td>\(a\)</td><td>\(0,20a\)</td></tr>
+                      <tr><td>23 %</td><td>\((1-0,015)a\)</td><td>\(0,23 \cdot 0,985a\)</td></tr>
+                    </tbody>
+                  </table></p>
+                  <p>Det procentuella förhållandet är \(\dfrac{0,23\cdot 0,985a}{0,20a} = 1,13275\).</p>    <p>Vi har en ökning på 13 % eller 13,3 %.</p> </div></div>
+          </li>
+
+          <li>Jämför hur mycket pengar du kommer att ha på kontont när du fyller 60 år då du som 20, 30 eller 40 åring deponerar 1000 € med den årliga avkastningen 5%.
+            <ol>
+              <li>Som 20-åring är summan <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>\(1,05^{40}\cdot 1000 = 7039,99\) €.</p> </div></div> </li>
+              <li>Som 30-åring är summan <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>\(1,05^{30}\cdot 1000 = 4321,94\) €.</p> </div></div> </li>
+              <li>Som 40-åring är summan <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\(1,05^{20}\cdot 1000 = 2653,30\) €.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Torv innehåller 90 % vatten. Hur många procent av vattnet måste avdunsta för att torven skall innehålla 45 % vatten efter torkningsprocessen?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="8t">
+            <div class="card card-body hint"> <table><tr><th>massa</th><td>a</td><td>b</td></tr><tr><th>vatten</th><td>0,9a</td><td>0,45b</td></tr><tr><th>annat</th><td>0,1a</td><td>0,55b</td></tr>  	</tbody>  </table>    <p>"Annat" är konstant! Arbeta utgående från detta.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <div class="answer"><p>\(p = \dfrac{0,1 \cdot 0,45}{0,55 \cdot 0,9} = 0,09090\ldots\). Eftersom mängden minskar får vi den eftersökta procenten som \(1 - \dfrac{0,1 \cdot 0,45}{0,55 \cdot 0,9} = 0,9090\ldots\), vilket ger 91 %.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Äpple består av 70 % vatten och 4 % socker. Äpple torkas så att andelen vatten sjunker till 10 %. Bestäm andelen socker i äpplena efter torkningen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer">
+                <table>
+                 <tr><td></td><th>då</th><th>nu</th></tr>
+                 <tr><th>total massa</th><td>a</td><td>b</td></tr>
+                 <tr><th>vatten</th><td>0,7a</td><td>0,1b</td></tr>
+                 <tr><th>socker</th><td>0,04a</td><td>pb</td></tr>
+                 <tr><th>inte vatten</th><td>0,3a</td><td>0,9b</td></tr>
+               </table>
+                <p>Kombinera raderna med socker och inte vatten. \(0,04a = pb\) och \(0,3a=0,9b\).</p>
+                <p>Lös ut \(b\) ur dessa: \(b=\dfrac{0,04a}{p}\) och \(b=\dfrac{0,3a}{0,9}\).</p>
+                <p>Kombination av dessa ger \(p=\dfrac{0,04\cdot0,9}{0,3} = 0,12\). Alltså 12 %.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>I ett bostadshus är hyresintäkterna 12 % lägre än kostnaderna för underhållet. Med hur många procent borde hyrorna höjas, för att de skall bli 10 % högre än underhållskostnaderna, när dessa samtidigt stiger med 4 %?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Tabellen ser ut som:</p>
+                <table>
+                  <tr><td></td><th>då</th><th>nu</th></tr>
+                  <tr><th>hyresintäkter</th><td>\(0,88a\)</td><td>\(0,88a \cdot p = 1,1 \cdot 1,04 a\)</td></tr>
+                  <tr><th>underhållet</th><td>\(a\)</td><td>\(1,04a\)</td></tr>
+                </tbody>
+              </table>
+                <p>Då vi löser ut \(p\) från \(0,88a\cdot p = 1,1\cdot 1,04a\) får vi \(p=1,30\).</p>
+                <p>Hyrorna borde höjas med 30 %.</p> </div></div>
+          </li>
+
+
+        </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaG">
+      <a href="5_procent.html"><i class="fa fa-arrow-alt-circle-left fa-2x "></i></a>
+      <a href="7_funktioner.html"><i class="fa fa-arrow-alt-circle-right fa-2x "></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
