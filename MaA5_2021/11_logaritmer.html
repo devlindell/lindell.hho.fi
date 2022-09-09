@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. Logaritmer</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_till_rotfunkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="9_ber_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. Logaritmer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Tag och beskriv talen \( 2 \), \( 4 \), \( 5 \), \( \sqrt{2} \) och \( \dfrac{1}{8} \) som potenser med basen 2.</p>
+          </div>
+          <p>Logaritmen för talet \( a \) är den exponent \( x \) som basen \( b \) måste upphöjas i för att ha samma värde som \( a \). </p>
+          <p>\( a=b^x \)</p>
+          <p>För talet 1000 gäller att logaritmen är 3 i basen 10 eftersom \( 1000=10^3 \).</p>
+          <p>Vi kan skriva det som \( y=b^x \Leftrightarrow x=\log_b(y) \). Där \( b \) och \( y \) är positiva och \( b\not=1 \).</p>
+          <p>Till exempel är \( 4^3 = 64 \), det betyder att för talet 64 är logaritmen 3 i basen 4. Det kan vi skriva som \( 3=\log_4 (64) \).</p>
+          <p>Logaritmer introducerades av John Napier för att göra uträkningar simplare. I dagens läge med datorer så är nyttan inte lika stor som på tidigt 1600-tal men ännu används logaritmer då vi bestämmer pH hos ämnen eller då vi bestämmer ljudstyrkan.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm logaritmen med basen 6 då </p>
+            <ul>
+              <li>\( 6^9 \). Eftersom vi höjer talet 6 i 9 är basen 6 och exponenten 9. Logaritmen med basen 6 är 9.</li>
+              <li>\( 216 \). Talet \( 216 = 6^3 \). Logaritmen med basen 6 av talet 216 är 3.</li>
+              <li>\( 1 \). 1 kan vi skriva som \( 1=6^0 \). Logaritmen med basen 6 av talet 1 är 0.</li>
+              <li>\( \dfrac{1}{\sqrt{6}} \). \( \dfrac{1}{\sqrt{6}}=6^{-\dfrac{1}{2}} \). Logaritmen med basen 6 av talet \( \dfrac{1}{\sqrt{6}} \) är \( - \dfrac{1}{2} \).</li>
+            </ul>
+          </div>
+          <p>När vi har logaritmer har vi vissa baser som används mera än andra. De baserna är \( 2 \), \( e \) och \( 10 \).</p>
+          <table>
+            <tr class="MaA8"><th>Basen</th><th>Kallas för</th><th>Logaritmen betecknas</th><th>Används i</th></tr>
+              <tr><td>2</td><td>Binär logaritm</td><td>\( \textrm{lb} \)</td><td>Dataveteskaper, informationsteknologi, fotografering, musikteori</td> 		</tr>
+              <tr><td>e</td><td>Naturlig logaritm</td><td>\( \ln \)</td><td>Naturvetenskaper (matematik, fysik, kemi), statistik, ekonomi, informationsteknologi</td></tr>
+              <tr><td>10</td><td>Allmän logaritm</td><td>\( \lg \)</td><td>Logaritmiska tabeller, decibelskalan, Richterskalan, spektroskopi</td></tr>
+            </table>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Bestäm \( \lg 2x-1=0 \).</p>
+              <h4>Lösning</h4>
+              <p>Logaritmen är definierad då \( 2x > 0 \Leftrightarrow x > 0 \).</p>
+              <p>\( \lg 2x - 1=0 \Leftrightarrow \lg 2x = 1 \Leftrightarrow \lg 2x = \lg 10^1 \) som ger oss att \( 2x=10 \Leftrightarrow x=5 \).</p>
+              <div class="video">
+              <iframe width="640" height="564" src="https://player.vimeo.com/video/328468690" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+            </div>
+            </div>
+            <div class="summary box">
+              <p>Sambandet mellan potenser och logaritmer är följande</p>
+              <p>\( y=b^x \Leftrightarrow x=\log_b(y) \), där \( b \) och \( x \) är positiva och \( b\not=1 \).</p>
+              <p>För logaritmer gäller följande specialfall:</p>
+              <ul>
+                <li>\( \log_a 1 =0 \) eftersom \( a^0=1 \)</li>
+                <li>\( \log_a a =1 \) eftersom \( a^1=a \)</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><p>Välj rätt alternativ så att logaritmen med basen 3 stämmer då</p>
+            <p>Kom ihåg att \( 81=3^4 \). Logaritmen i basen 3 av talet 81 är 4.</p>
+            <table>
+              <tr class="MaA8"><th>Påstående</th><th>\( -7 \)</th><th>\( -3 \)</th><th>\( -1 \)</th><th>\( 0 \)</th><th>\( 5 \)</th><th>\( 6 \)</th></tr>
+              <tr><td>\( 3^5 \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 729 \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 1 \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{3}  \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{27}  \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{3^7}  \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table>
+                <tr class="MaA8"><th>Påstående</th><th>\( -7 \)</th><th>\( -3 \)</th><th>\( -1 \)</th><th>\( 0 \)</th><th>\( 5 \)</th><th>\( 6 \)</th></tr>
+                <tr><td>\( 3^5 \) </td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\( 729 \) </td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\( 1 \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>\( \dfrac{1}{3}  \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \dfrac{1}{27}  \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( \dfrac{1}{3^7}  \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+              </table>
+
+              <ul>
+                <li>\( 3^5 \), 5</li>
+                <li>\( 729=3^6 \), 6</li>
+                <li>\( 1=3^0 \), 0</li>
+                <li>\( \dfrac{1}{3} =3^{-1} \), \( -1 \)</li>
+                <li>\( \dfrac{1}{27} =3^{-3} \), \( -3 \) </li>
+                <li>\( \dfrac{1}{3^7} =3^{-7} \), \( -7 \) </li>
+              </ul> </div></div>
+          </li>
+
+          <li><p>Kombinera så att logaritmen med basen 5 blir rätt då</p>
+            <p>Tex \( 3125 = 5^5 \). Logaritmen av talet 3125 i basen 5 är 5.</p>
+            <table>
+              <tr class="MaA8"><th>Påstående</th><th>\( -2 \)</th><th>\( -1 \)</th><th>\( 0 \)</th><th>\( \dfrac{1}{2} \)</th><th>\( 3 \)</th><th>\( 4 \)</th></tr>
+              <tr><td>\( 625 \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \sqrt{5} \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{25} \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{5} \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 125 \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( 1 \) </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA8"><th>Påstående</th><th>\( -2 \)</th><th>\( -1 \)</th><th>\( 0 \)</th><th>\( \dfrac{1}{2} \)</th><th>\( 3 \)</th><th>\( 4 \)</th></tr>
+                  <tr><td>\( 625 \) </td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \sqrt{5} \) </td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\( \dfrac{1}{25} \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>\( \dfrac{1}{5} \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>\( 125 \) </td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( 1 \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                </table>
+
+                <ul>
+                  <li>\( 625=5^4 \), 4</li>
+                  <li>\( 125=5^3 \), 3</li>
+                  <li>\( 1=5^0 \), 0</li>
+                  <li>\( \dfrac{1}{5}=5^{-1} \), \( -1 \) </li>
+                  <li>\( \dfrac{1}{25}=5^{-2} \), \( -2 \)</li>
+                  <li>\( \sqrt{5}=5^{\frac{1}{2}} \), \( \dfrac{1}{2} \)</li>
+                </ul>
+             </div></div>
+          </li>
+
+          <li>Bestäm värdet av följande uttryck.
+          <ol>
+            <li>\( \log_2 2^{11} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2.5a">
+            <div class="card card-body answer"><p>\( \log_2 2^{11} = 11 \) eftersom vi söker exponenten som 2 höjs upp i för att ha värdet \( 2^{11} \).</p></div></div> </li>
+            <li>\( \log_2 32 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2.5b">
+            <div class="card card-body answer"><p>\( \log_2 32 = \log_2^5 = 5 \) eftersom vi söker exponenten som 2 höjs upp i för att ha värdet 32.</p></div></div> </li>
+            <li>\( \log_2 \dfrac{1}{16} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2.5c">
+            <div class="card card-body answer"><p>\( \log_2 \dfrac{1}{16} = \log_2 2^{-4} = -4 \) eftersom vi söker exponenten som 2 höjs upp i för att ha värdet \( \dfrac{1}{16} \).</p></div></div> </li>
+            <li>\( \log_2 \dfrac{1}{2^{14}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2.5d">
+            <div class="card card-body answer"><p>\( \log_2 \dfrac{1}{2^{14}} = \log_2 2^{-14} = -14 \) eftersom vi söker exponenten som 2 höjs upp i för att ha värdet \( \dfrac{1}{2^{14}} \).</p></div></div> </li>
+          </ol>
+        </li>
+
+          <li>Bestäm \( x \) då
+            <ol>
+              <li>\( \log_3 x+4=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\( \log_3 x+4=0 \Leftrightarrow \log_3 x = -4 \Leftrightarrow x=3^{-4} = \dfrac{1}{81} \)</p> </div></div> </li>
+              <li>\( \log_6 x=1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( \log_6 x=1 \Leftrightarrow x=6^1 = 6 \)</p></div></div> </li>
+              <li>\( 2\log_2 x-1=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\( 2\log_2 x-1=0 \Leftrightarrow 2\log_2 x = 1 \Leftrightarrow \log_2 x=\dfrac{1}{2} \Leftrightarrow 2^{\frac{1}{2}}=\sqrt{2} \)</p></div></div> </li>
+              <li>\( 3\log_3 x=-2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3d">
+              <div class="card card-body answer"><p>\( 3\log_3 x=-2 \Leftrightarrow \log_3 x = -\dfrac{2}{3} \Leftrightarrow 3^{-\dfrac{2}{3}}=\dfrac{1}{\sqrt[3]{3^2}} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><p>Bestäm definitionsmängden för följande logaritmer.</p>
+            <table>
+              <tr class="MaA8"><th>Påstående</th><th>\( x > -1 \)</th><th>\( x > 0 \)</th><th>\( x > 1 \)</th></tr>
+              <tr><td>\( \log_3 (x+1) \)</td><td></td><td></td><td></td></tr>
+              <tr><td>\( \log_7 (x+1) \)</td><td></td><td></td><td></td></tr>
+              <tr><td>\( \ln (x-1) \)</td><td></td><td></td><td></td></tr>
+              <tr><td>\( \text{lb } x \) </td><td></td><td></td><td></td></tr>
+              <tr><td>\( \lg (x-1) \) </td><td></td><td></td><td></td></tr>
+              <tr><td>\( \ln x \) </td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>
+                <table>
+                  <tr class="MaA8"><th>Påstående</th><th>\( x > -1 \)</th><th>\( x > 0 \)</th><th>\( x > 1 \)</th></tr>
+                  <tr><td>\( \log_3 (x+1) \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\( \log_7 (x+1) \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\( \ln (x-1) \)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \text{lb } x \) </td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \lg (x-1) \) </td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \ln x \) </td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm basen då
+            <ol>
+            <li>\( \log_a 625 = 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6a">
+            <div class="card card-body answer"><p>\( a=5 \) eftersom \( 625 = 5^4 \)</p></div></div> </li>
+            <li>\( \log_a 81 = 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6b">
+            <div class="card card-body answer"><p>\( a=3 \) eftersom \( 81 = 3^4 \)</p></div></div> </li>
+            <li>\( \log_a 1024 = 5 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6c">
+            <div class="card card-body answer"><p>\( a=4 \) eftersom \( 1024 = 4^5 \)</p></div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm basen då
+            <ol>
+            <li>\( \log_a 16 = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6.5a">
+            <div class="card card-body answer"><p>\( a=4 \) eftersom \( 16 = 4^2 \)</p></div></div> </li>
+            <li>\( \log_a 3 = \dfrac{1}{2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6.5b">
+            <div class="card card-body answer"><p>\( a=9 \) eftersom \( 3 = 9^{\frac{1}{2}} \)</p></div></div> </li>
+            <li>\( \log_a 216 = 3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6.5c">
+            <div class="card card-body answer"><p>\( a=6 \) eftersom \( 216 = 6^3 \)</p></div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm
+          <ol>
+            <li>\( \log_5 5^{12} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7a">
+            <div class="card card-body answer"><p>\( \log_5 5^{12} = 12 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{12} \).</p></div></div> </li>
+            <li>\( \log_5 5^{4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7b">
+            <div class="card card-body answer"><p>\( \log_5 5^{4} = 4 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{4} \).</p></div></div> </li>
+            <li>\( \log_5 (5^{12} \cdot 5^4 ) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7c">
+            <div class="card card-body answer"><p>\( \log_5 (5^{12} \cdot 5^4 = \log_5 (5^{16} = 16 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{16} \).</p></div></div> </li>
+            <li>\( \log_5 \dfrac{5^{12}}{5^4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7d">
+            <div class="card card-body answer"><p>\( \log_5 \dfrac{5^{12}}{5^4} = \log_5 5^{8} = 8 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{8} \).</p></div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm
+            <ol>
+              <li>\( \log_5 5^9 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\( \log_5 5^9 = 9 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{9} \).</p></div></div> </li>
+              <li>\( \log_5 (5^9)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\( \log_5 (5^9)^3 = \log_5 5^{27} = 27 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{27} \).</p></div></div> </li>
+              <li>\( \log_5 (5^9)^8 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\( \log_5 (5^9)^8 = \log_5 5^{72} = 72 \) eftersom vi söker exponenten som 5 höjs upp i för att ha värdet \( 5^{72} \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+        -->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="7_till_rotfunkt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_ber_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

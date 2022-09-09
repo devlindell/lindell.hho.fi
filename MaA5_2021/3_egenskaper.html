@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>3. Egenskaper för sinus och cosinus</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="2_enhetscirkeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="4_ekvationer_sinus.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>3. Egenskaper för sinus och cosinus</h1>
+      <section>
+        <div class="theory">
+          <p>Du kanske märkte från föregående kapitel att det finns en hel del symmetri med sinus och cosinus.</p>
+          <p>Då vi speglar vinklarna genom x-axeln och y-axeln får vi följande symmetri. Då vi speglar vinkeln \( \alpha  \) genom x-axeln får vi vinkeln \(  -\alpha \). X-koordinaterna för punkten på enhetscirkeln är samma, för y-koordinaterna gäller det att de är motsatta. Vi får följande samband</p>
+          <ul>
+            <li>\(  \cos \alpha = \cos(-\alpha)  \)</li>
+            <li>\(  \sin \alpha = -\sin(-\alpha)  \)</li>
+          </ul>
+          <p><img class="responsivepic400" src="pics/sincos_1.png" alt="" /></p>
+          <p>Då vi speglar mot y-axeln får vi vinklarna \(  \alpha  \) och\(  180^{\circ} - \alpha = \pi-\alpha \). Ny hålls y-koordinaterna samma medan x-koordinaterna blir motsatta. Vi får följande samband</p>
+          <ul>
+            <li>\(  \cos \alpha = -\cos(\pi - \alpha)  \)</li>
+            <li>\(  \sin \alpha = \sin(\pi- \alpha)  \)</li>
+          </ul>
+          <p><img class="responsivepic400" src="pics/sincos_2.png" alt="" /></p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm de vinklar som uppfyller villkoret \(  \cos \alpha = 0,75 \).
+            <h4>Lösning</h4>
+            <p>Räknaren ger oss att en vinkel är \(  41,4^{\circ} \). Förutom den ena vinkeln på \(  41,4^{\circ} \) har vi en ny varje varv, \(  360^{\circ}  \), senare och en ny ett varv efter det. Vi kan skriva dessa lösningar som \(  41,4^{\circ} + n \cdot 360^{\circ} \) där n är ett heltal, \(  n \in \mathbb{Z} \).</p>
+            <p>Dessutom har vi vinkeln som uppstår då vi speglar mot x-axeln, \(  -41,4^{\circ}  \). För dessa vinklar gäller samma, det finns oändligt många som kommer varje helt varv \(  360^{\circ} \). Dessa lösningar kan vi skriva som \(  -41,4^{\circ} + n \cdot 360^{\circ}  \) där n är ett heltal, \( = \in \mathbb{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Bestäm de vinklar som uppfyller villkoret \(  \sin \alpha = 0,65 \).
+            <h4>Lösning</h4>
+            <p>Räknaren ger oss att en vinkel är \(  40,5^{\circ} \). Förutom att vid vinkeln som är \( 40,5^{\circ} \) så har vi oändligt många lösningar som kommer varje helt varv. Vi skriver lösningarna som \(  40,5^{\circ} + n\cdot 360^{\circ}  \) där n är ett heltal.</p>
+            <p>Dessutom har vi vinklar som får värdet 0,65 då vi speglar genom y-axeln. De är av storleken \(  180^{\circ} - 40,5^{\circ} = 139,5^{\circ} \). Även dessa vinklar uppkommer varje varv, \( 360^{\circ} \). Dessa lösningar skriver vi som \(  139,5^{\circ}+n\cdot 360^{\circ} \) där n är ett heltal.</p>
+          </div>
+          <p>Eftersom vi behandlar \( \cos \alpha \) och \(  \sin \alpha  \) som koordinater i en rätvinklig triangel får vi följande samband.</p>
+          <p><img class="responsivepic400" src="pics/sincos_3.png" alt="" /></p>
+          <p>Längden på kateterna i triangeln är \(  \mid \cos\alpha \mid \) och \(  \mid \sin\alpha \mid  \). Hypotenusans längd är 1. Vi utnyttjar Pythagoras sats. \( \mid \cos\alpha \mid^2 + \mid \sin\alpha \mid^2 = 1^2 \). \( (\cos\alpha)^2 \) skriver vi som \(  \cos^2\alpha \).</p>
+          <p>Vi får alltså att \(  \sin^2\alpha+\cos^2\alpha =1 \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Låt \(  \sin \alpha = \dfrac{2}{3} \). Bestäm \(  \cos \alpha  \) då \(  0 \lt \alpha \lt \dfrac{\pi}{2} \).</p>
+            <h4>Lösning</h4>
+            <p>Vi utgår från \(  \sin^2 \alpha + \cos^2 \alpha = 1 \) och skriver den som \(  \cos \alpha = \pm\sqrt{1-\sin^2 \alpha} \).</p>
+            <p>Eftersom \(  0 \lt \alpha \lt \dfrac{\pi}{2} \) så är \(  \cos \gt 0 \).</p>
+            <p>Vi får att \(  \cos \alpha = \sqrt{1-\sin^2 \alpha} = \sqrt{1-(\dfrac{2}{3})^2} = \sqrt{\dfrac{5}{9}} = \dfrac{\sqrt{5}}{3}  \).</p>
+          </div>
+          <div class="summary box">
+            <h4>Egenskaper för sinus och cosinus är följande:</h4>
+            <p>\(  \cos \alpha = \cos(-\alpha) = -\cos(\pi - \alpha) \)</p>
+            <p>\(  \sin \alpha = -\sin(-\alpha) = \sin(\pi- \alpha) \)</p>
+            <p>Dessutom har vi följande samband \(  \sin^2\alpha+\cos^2\alpha =1  \).</p>
+          </div>
+          <p>Vidare får vi följande samband mellan sinus och cosinus.</p>
+          <p>I en rätvinklig triangel gäller det att den tredje vinkeln, \( \beta \), är \( 90^{\circ} - \alpha \), eller \(\dfrac{\pi}{2} - \alpha \).</p>
+          <p><img src="pics/trig_1.png" class="responsivepic400" /></p>
+          <p>Vi får att \( \sin \alpha = \dfrac{a}{c} \) och att \( \cos (\dfrac{\pi}{2}-\alpha) = \dfrac{a}{c} \). </p>
+          <p>Alltså är \( \sin \alpha = \cos (\dfrac{\pi}{2}-\alpha) \).</p>
+          <p>Då vi jobbar med cosinus får vi först att \( \cos \alpha = \dfrac{b}{c}\) och att \( \sin(\dfrac{\pi}{2}-\alpha) = \dfrac{b}{c} \). </p>
+          <p>Alltså är \( \cos \alpha = \sin(\dfrac{\pi}{2}-\alpha) \).</p>
+          <div class="summary box">
+            <h4>Sambandet mellan sinus och cosinus är</h4>
+            <p>\( \sin \alpha = \cos (\dfrac{\pi}{2}-\alpha) \)</p>
+            <p>\( \cos \alpha = \sin(\dfrac{\pi}{2}-\alpha) \)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Förenkla följande uttryck.</p>
+            <ol style="list-style-type: lower-alpha;">
+              <li>\( \dfrac{\cos 75^{\circ}}{\sin 165^{\circ}} \)</li>
+              <li>\( \sin \dfrac{11\pi}{14} -\cos \dfrac{2\pi}{7} \)</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol style="list-style-type: lower-alpha;">
+              <li><p>Vi får </p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\cos 75^{\circ}}{\sin 165^{\circ}} & & & \mid \cos \alpha = \sin (90^{\circ} - \alpha) \\
+                  & = & \dfrac{\sin (90^{\circ}-75^{\circ})}{\sin 165^{\circ}}  \\
+                  & = & \dfrac{\sin 15^{\circ}}{\sin (180^{\circ}-15^{\circ})} & \mid \sin (180^{\circ} -\alpha) = \sin \alpha \\
+                  & = & \dfrac{\sin 15^{\circ}}{\sin 15^{\circ}} \\
+                  & = & 1 \\
+                  \end{array} \) </p></li>
+              <li><p>Vi får </p>
+                <p>\( \begin{array}{rcll}
+                  \sin \dfrac{11\pi}{14} -\cos \dfrac{2\pi}{7} & = & & \mid \sin \alpha = \cos(\dfrac{\pi}{2} - \alpha) \\
+                  & = & \cos(\dfrac{\pi}{2} - \dfrac{11\pi}{14}) - \cos \dfrac{2\pi}{7} \\
+                  & = & \cos \dfrac{7\pi -11\pi}{14} - \cos \dfrac{2\pi}{7} \\
+                  & = & \cos (-\dfrac{4\pi}{14}) - \cos \dfrac{2\pi}{7} & \mid \cos \alpha = \cos(-\alpha) \\
+                  & = & \cos \dfrac{2\pi}{7} - \cos \dfrac{2\pi}{7} \\
+                  & = & 0 \\
+                  \end{array} \) </p></li>
+            </ol>
+
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Skriv av tabellen i ditt häfte och välj rätt värde för sinus och cosinus för vinklarna.
+            <table>
+                <tr class="MaA7"><th>Påstående</th><th>-1</th><th>0</th><th>1</th></tr>
+                <tr><td>\(  \sin 0  \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos 0  \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \sin \dfrac{\pi}{2} \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \cos \dfrac{\pi}{2}  \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \sin \pi \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \cos \pi \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \sin \dfrac{3\pi}{2} \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \cos \dfrac{3\pi}{2} \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\(  \sin 2\pi \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos 2\pi \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\( \sin 3\pi \)</td><td></td><td></td><td></td></tr>
+                <tr><td>\( \cos 3\pi \)</td><td></td><td></td><td></td></tr>
+
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table>
+
+                  <tr class="MaA7"><th>Påstående</th><th>-1</th><th>0</th><th>1</th></tr>
+                  <tr><td>\(  \sin 0  \)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \cos 0  \)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\(  \sin \dfrac{\pi}{2} \)</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\(  \cos \dfrac{\pi}{2}  \)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\(  \sin \pi \)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\(  \cos \pi \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(  \sin \dfrac{3\pi}{2} \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\(  \cos \dfrac{3\pi}{2} \)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\(  \sin 2\pi \)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \cos 2\pi \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\( \sin 3\pi \)</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \cos 3\pi \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+
+              </table>
+             </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bestäm vinkeln för följande periferipunkter (0,1), (-1,0) och \(  (\dfrac{1}{\sqrt{2}},\dfrac{1}{\sqrt{2}}) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\(  \dfrac{\pi}{2} \) plus perioden \(  2\pi \), \(  \pi \) plus perioden \( 2\pi \) och \(  \dfrac{\pi}{4} + n\cdot 2\pi \).</p> </div></div>
+          </li>
+
+          <li>För vilka värden på \(  \alpha \) gäller att \(  \sin \alpha = 1 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Tabellbok, eller räknare, ger oss att \(  \alpha = \dfrac{\pi}{2} \). Dessa lösningar uppstår varje helt varv i enhetscirkeln. Alltså \(  \alpha = \dfrac{\pi}{2} +n \cdot 2\pi, n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li>Bestäm de vinklar som uppfyller ekvationen \(  \cos \alpha +1=0 \) då \(  0 \lt \alpha \lt 2\pi \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi har att \(  \cos \alpha = -1 \). En av de vinklar som uppfyller villkoret är \(  \alpha = \pi \). Eftersom vi är i intervallet \( 0 \lt \alpha \lt 2\pi \) så är den enda lösningen \( \pi \).</p> </div></div>
+          </li>
+
+          <li>Bestäm de vinklar i intervallet \( [0^{\circ},360^{\circ}] \) som har samma periferipunkt som vinkeln
+            <ol>
+              <li>\( 2017^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.25a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.25a">
+              <div class="card card-body answer"><p>Vi märker att \( 2017^{\circ} = 5 \cdot 360^{\circ} + 217^{\circ} \). </p>
+              <p>Alltså \( 217^{\circ} \).</p>
+              </div></div> </li>
+              <li>\( -890^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.25b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.25b">
+              <div class="card card-body answer"><p>Vi märker att \( -890^{\circ} = -2 \cdot 360^{\circ} -170^{\circ} \).</p>
+              <p>Den vinkel som vi söker är \( 360^{\circ} - 170^{\circ} = 190^{\circ} \). Rita upp en enhetscirkel!</p>
+              <p>Alltså \( 190^{\circ} \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm en så liten positiv vinkel som möjligt som har samma periferipunkt som vinkeln
+            <ol>
+              <li>\( 1234^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.3a">
+              <div class="card card-body answer"><p>Vi märker att \( 1234^{\circ} = 3 \cdot 360^{\circ} + 154^{\circ} \). </p>
+              <p>Alltså \( 154^{\circ} \).</p>
+              </div></div> </li>
+              <li>\( 18 180^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.3b">
+              <div class="card card-body answer"><p>Vi märker att \( 18 180^{\circ} = 50 \cdot 360^{\circ} +180^{\circ} \).</p>
+              <p>Alltså \( 180^{\circ} \).</p> </div></div> </li>
+              <li>\( -5840^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.3c">
+              <div class="card card-body answer"><p>Vi märker att \( -5840^{\circ} = -16 \cdot 360^{\circ} -80^{\circ} \).</p>
+              <p>Den vinkel som vi söker är \( 360^{\circ} - 80^{\circ} = 280^{\circ} \). Rita upp en enhetscirkel!</p>
+              <p>Alltså \( 280^{\circ} \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Förenkla följande uträkningar utan räknare.
+            <ol>
+              <li>\( \dfrac{\cos \dfrac{\pi}{6}}{\cos \dfrac{5\pi}{6}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\cos \dfrac{\pi}{6}}{\cos \dfrac{5\pi}{6}} & = & \dfrac{-\cos (\pi-\dfrac{\pi}{6})}{\cos \dfrac{5\pi}{6}} & \mid \cos \alpha = -\cos(\pi-\alpha) \\
+                  & = & \dfrac{-\cos \dfrac{5\pi}{6}}{\cos \dfrac{5\pi}{6}} \\
+                  & = & -1 \\
+                  \end{array} \) </p>
+              </div></div> </li>
+              <li>\( \dfrac{\sin \dfrac{\pi}{3}}{\sin (-\dfrac{\pi}{3})} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\sin \dfrac{\pi}{3}}{\sin (-\dfrac{\pi}{3})} & = &  \dfrac{\sin \dfrac{\pi}{3}}{-\sin \dfrac{\pi}{3}} & \mid \sin(-\alpha) = -\sin \alpha \\
+                  & = & -1 \\
+                  \end{array} \) </p>
+                </div></div> </li>
+              <li>\( \dfrac{\sin 10^{\circ}}{\cos 80^{\circ}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\sin 10^{\circ}}{\cos 80^{\circ}} & = & \dfrac{\cos (90^{\circ}-10^{\circ})}{\cos 80^{\circ}} & \mid \sin \alpha = \cos (90^{\circ}-\alpha) \\
+                  & = & \dfrac{\cos 80^{\circ}}{\cos 80^{\circ}} \\
+                  & = & 1 \\
+                  \end{array} \) </p>
+                  <p>Vi kan också utnyttja att \( \cos \alpha = \sin (90^{\circ}-\alpha) \). Vi får lite andra uträkningar, men samma resultat.</p>
+                 </div></div> </li>
+              <li>\( \dfrac{2\sin \dfrac{3\pi}{5}}{\cos \dfrac{\pi}{10}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5d">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{2\sin \dfrac{3\pi}{5}}{\cos \dfrac{\pi}{10}} & = & \dfrac{2\sin \dfrac{3\pi}{5}}{\sin (\dfrac{\pi}{2}-\dfrac{\pi}{10})} & \mid \cos \alpha = \sin (90^{\circ}-\alpha) \\
+                  & = & \dfrac{2\sin \dfrac{3\pi}{5}}{\sin \dfrac{2\pi}{5}} & \mid \sin \alpha = \sin(\pi -\alpha)\\
+                  & = & \dfrac{2\sin \dfrac{3\pi}{5}}{\sin (\pi - \dfrac{2\pi}{5})} \\
+                  & = & \dfrac{2\sin \dfrac{3\pi}{5}}{\sin (- \dfrac{3\pi}{5})} & \mid \sin(-\alpha) = -\sin \alpha \\
+                  & = & \dfrac{2\sin \dfrac{3\pi}{5}}{-\sin \dfrac{3\pi}{5}} \\
+                  & = & \dfrac{2}{-1} = -2 \\
+                  \end{array} \) </p>
+                  <p>Vi kan också utnyttja att \( \sin \alpha = \cos (90^{\circ}-\alpha) \). Vi får lite andra uträkningar, men samma resultat.</p>
+                 </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Förenkla följande uträkningar utan räknare.
+            <ol>
+              <li>\( \dfrac{\sin 125^{\circ}}{\cos 35^{\circ}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\sin 125^{\circ}}{\cos 35^{\circ}} & = & \dfrac{\cos (90^{\circ}-125^{\circ})}{\cos 35^{\circ}} & \mid \sin \alpha = \cos(90^{\circ}-\alpha)\\
+                  & = & \dfrac{\cos (-35^{\circ})}{\cos 35^{\circ}} & \mid \cos(-\alpha) = -\cos \alpha \\
+                  & = & -\dfrac{\cos 35^{\circ}}{\cos 35^{\circ}} \\
+                  & = & -1 \\
+                \end{array} \) </p>
+                <p>Vi kan också utnyttja att \( \cos \alpha = \sin (90^{\circ}-\alpha) \). Vi får lite andra uträkningar, men samma resultat.</p>
+               </div></div> </li>
+              <li>\( \dfrac{\sin \dfrac{7\pi}{3}}{\cos \dfrac{\pi}{6}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\sin \dfrac{7\pi}{3}}{\cos \dfrac{\pi}{6}} & = & \dfrac{\sin \dfrac{6\pi + \pi }{3}}{\cos \dfrac{\pi}{6}} = \dfrac{\sin 2\pi + \dfrac{\pi}{3}}{\cos \dfrac{\pi}{6}}  \\
+                  & = & \dfrac{\sin \dfrac{\pi}{3}}{\cos \dfrac{\pi}{6}} & \mid \sin(2\pi \alpha) = \sin \alpha \\
+                  & = & \dfrac{\sin \dfrac{\pi}{3}}{\sin (\dfrac{\pi}{2}-\dfrac{\pi}{6})} & \mid \cos \alpha = \sin(\dfrac{\pi}{2}-\alpha) \\
+                  & = & \dfrac{\sin \dfrac{\pi}{3}}{\sin \dfrac{\pi}{3}} \\
+                  & = & 1 \\
+                \end{array} \) </p>
+                <p>Vi kan också utnyttja att \( \sin \alpha = \cos (90^{\circ}-\alpha) \). Vi får lite andra uträkningar, men samma resultat.</p>
+              </div></div> </li>
+              <li>\( \dfrac{\cos(5\pi) -\sin \dfrac{17\pi}{2}}{\cos 19\pi} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \dfrac{\cos(5\pi) -\sin \dfrac{17\pi}{2}}{\cos 19\pi} & = & \dfrac{\cos(5\pi) -\cos (\dfrac{\pi}{2}-\dfrac{17\pi}{2})}{\cos 19\pi} & \mid \sin \alpha = \cos (\dfrac{\pi}{2}-\alpha) \\
+                  & = & \dfrac{\cos(5\pi) -\cos \dfrac{-16\pi}{2}}{\cos 19\pi} \\
+                  & = & \dfrac{\cos(5\pi) -\cos (-8\pi)}{\cos 19\pi} & \mid \cos \alpha = \cos(2\pi\alpha) = \cos(4\pi\alpha) = \ldots  \\
+                  & = & \dfrac{\cos\pi -\cos 0}{\cos \pi} \\
+                  & = & \dfrac{\cos\pi}{\cos \pi} \\
+                  & = & 1 \\
+                \end{array} \) </p>
+              </div></div> </li>
+              <li>\( \sin(\dfrac{9\pi}{2}-\alpha) + 2\cos \alpha \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75d">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  \sin(\dfrac{9\pi}{2}-\alpha) + 2\cos \alpha & = & \cos(\dfrac{\pi}{2}-(\dfrac{9\pi}{2}-\alpha)) + 2\cos \alpha & \mid \sin \alpha = \cos (\dfrac{\pi}{2} - \alpha) \\
+                  & = & \cos(-4\pi +\alpha) + 2\cos \alpha & \mid \cos(4\pi +\alpha ) = \cos \alpha \\
+                  & = & \cos \alpha + 2\cos \alpha \\
+                  & = & 3\cos \alpha \\
+                \end{array} \) </p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm exakt värde av \(  \sin \alpha  \) då \(  \cos \alpha = -\dfrac{3}{4} \) och \( \dfrac{\pi}{2} \lt \alpha \lt \pi \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p> Vi har att \(  \sin \alpha = \pm\sqrt{1-\cos^2\alpha} \). Eftersom \( \dfrac{\pi}{2} \lt \alpha \lt \pi \) så är \(  \sin \alpha \gt 0  \). Alltså \( \sin \alpha = \sqrt{1-\cos^2\alpha} = \sqrt{1-(-\dfrac{3}{4})^2} = \sqrt{\dfrac{7}{16}} =\dfrac{\sqrt{7}}{4} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm exakt värde av \(  \cos \alpha \) då \(  \sin \alpha = \dfrac{2}{5} \) och \(  0 \lt \alpha \lt \dfrac{\pi}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer">  <p>Vi har att \(  \cos \alpha = \pm\sqrt{1-\sin^2\alpha} \). Eftersom \( 0 \lt \alpha \lt \dfrac{\pi}{2} \) så är \(  \cos \alpha \gt 0 \). Vi får att \( \cos \alpha = \sqrt{1-\sin^2\alpha} = \sqrt{1-(\dfrac{2}{5})^2} = \sqrt{\dfrac{21}{25}} =\dfrac{\sqrt{21}}{5} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm exakt värde av \( \sin \alpha \) då \(  \cos\alpha = \dfrac{1}{2} \) och \(  \dfrac{3\pi}{2} \lt \alpha \lt 2\pi \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi har att \( \sin \alpha = \pm\sqrt{1-\cos^2\alpha} \). Eftersom \( \dfrac{3\pi}{2} \lt \alpha \lt 2\pi \) så är \(  \sin \alpha \lt 0 \). Vi får att \( \sin \alpha = -\sqrt{1-\cos^2\alpha} = -\sqrt{1-(\dfrac{1}{2})^2} = -\sqrt{\dfrac{3}{4}} = -\dfrac{\sqrt{3}}{2} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm exakt värde av \(  \cos \alpha \) då \( \sin\alpha = -\dfrac{1}{\sqrt{2}} \) och \( \pi \lt \alpha \lt \dfrac{3\pi}{2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi har att \( \cos \alpha = \pm\sqrt{1-\sin^2\alpha} \). Eftersom \( \pi \lt \alpha \lt \dfrac{3\pi}{2} \) så är \( \cos \alpha \lt 0 \)Vi får att \(  \cos \alpha = -\sqrt{1-\sin^2\alpha} = -\sqrt{1-(-\dfrac{1}{\sqrt{2}})^2} = -\sqrt{\dfrac{1}{2}} = -\dfrac{1}{\sqrt{2}} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Förenkla följande uttryck.
+            <ol>
+              <li>\( \sin \alpha - \sin \alpha \cdot \cos^2 \alpha \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5a">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \begin{array}{rcll}
+              \sin \alpha - \sin \alpha \cdot \cos^2 \alpha & = & \sin \alpha ( 1 - \cos^2 \alpha) & \mid \sin^2 \alpha + \cos^2 \alpha = 1 \\
+              & = & \sin \alpha \cdot \sin^2 \alpha \\
+              & = & \sin^3 \alpha \\
+              \end{array} \) </p>
+              </div></div> </li>
+              <li>\( \dfrac{1}{1+\sin \alpha} + \dfrac{1}{1-\sin \alpha} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5c">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \begin{array}{rcll}
+              \dfrac{1}{1+\sin \alpha} + \dfrac{1}{1-\sin \alpha} & = & \dfrac{(1-\sin \alpha)+(1+\sin \alpha)}{(1-\sin \alpha)(1+\sin \alpha)} \\
+              & = & \dfrac{2}{1-\sin^2 \alpha} \\
+              & = & \dfrac{2}{\cos^2 \alpha} \\
+              \end{array} \) </p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \( \sin \alpha \cos \alpha =0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Nollregeln ger:</p><p>\( \begin{array}{rclcrcl}  \cos \alpha &amp;=&amp;0 &amp;\text{ eller } &amp;\sin \alpha &amp;=&amp;0 \\  \alpha &amp;=&amp; \dfrac{\pi}{2} + n \cdot \pi &amp; \text{ eller } &amp; \alpha &amp;=&amp; n\cdot \pi, n \in \mathbb{ Z} \\  \end{array} \)</p>
+              <p>Som vi kan skriva som \(  \alpha = n\cdot\dfrac{\pi}{2}, n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på konstanten n har vinkeln \(  \alpha + n\cdot\dfrac{\pi}{2} \) och \(  \alpha \) samma periferipunkt?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Ett av livets stora mysterier. Är det 42?</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="2_enhetscirkeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="4_ekvationer_sinus.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

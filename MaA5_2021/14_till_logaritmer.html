@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>10. Tillämpning av logaritmer</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="9_ber_logaritmer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="11_talet_e.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>10. Tillämpning av logaritmer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>För vilka värden på \(  x \)  gäller att \(  4^x = 7 \) ?</p>
+            <h4>Lösning</h4>
+            <p>Vi löser ekvationen genom att att vi utnyttjar logaritmen med basen 10.</p>
+            <p>\(  \begin{array}{rcl} \lg 4^x  &  = &   \lg 7 \\ x \lg 4  &  =  &  \lg 7 \\ x  &  = &  \dfrac {\lg 7}{\lg 4} \approx 1,40 \\ \end{array} \) </p>
+            <div class="video">
+            <iframe src="https://player.vimeo.com/video/335355911" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <p>När vi löser exponentialekvationer av typen \(  k^x=a \)  utnyttjar vi oss av logaritmer med basen 10. Lösningarna till ekvationen \(  k^x=a \)  är \(  x=\dfrac {\lg a}{\lg k} \) .</p>
+        <p>Om vi inte vill arbeta med logaritmer som har basen 10 så får vi att \(  \log_a x = \dfrac {\lg x}{\lg a} \) .</p>
+        <div class="exercise box">
+          <p><strong>Exempel 1</strong> Vilket tal av \( 2^{4151} \) och \( 3^{2621} \) är större? Hur många siffror består det störret talet av?</p>
+          <h4>Lösning</h4>
+          <p>Talen är såpass stora att en "normal" räknare eller dator klarar inte av att bestämma talen. För att bestämma storleken av talen utnyttjar vi logaritmen med basen 10.</p>
+          <p>Vi har \( \lg 2^{4151} = 4151 \lg 2 \approx 1249,6 \).</p>
+          <p>Och \( \lg 3^{2621} = 2621 \lg 3 \approx 1250,5 \).</p>
+          <p>Logaritmen i basen 10 av talet \( 3^{2621} \) är större än av talet \(2^{4151} \). Talen av logaritmen i basen 10 växer då talen växer. Det betyder att \( 3^{2621} \) är det större talet.</p>
+          <p>Eftersom \( \lg 3^{2621} \approx 1250,5 \) gäller att \( 3^{2621} \approx 10^{1250,5} \), vi jobbar med definitionen av logaritmer.</p>
+          <p>Alltså gäller att \( 10^{1250} < 3^{2621} < 10^{1251} \). Alltså består talet \( 3^{2621} \) av lika många siffror som talet \( 10^{1250} \), alltså 1251 siffror.</p>
+        </div>
+        <!--<div class="exercise box">
+          <p><strong>Exempel 2</strong> med Richterskala och energi i jordbävning.</p>
+        </div>-->
+        <div class="exercise box">
+          <p><strong>Exempel 2</strong> På ett bankkonto sätter man in 1500 €. Banken ger en räntesats om 1,0 % per år. Efter hur många år är har summan stigit till över 2000 € då vi varje år betalar en kapitalinkomst skatt på 30 % av räntan?</p>
+          <h4>Lösning</h4>
+          <p>Eftersom vi varje år betalar 30 % skatt av räntan som bildas av 1,0 % så har vi en verklig ränta om \(  0,70 \cdot 0,01 a = 0,007a \) . Den verkliga räntan är 0,7 %.</p>
+          <p>Vi får en ekvation</p>
+          <p>\(  \begin{array}{rcl} 1,007^x \cdot 1500  &   >   &   2000 \\ 1,007^x  &   >   &  \dfrac {2000}{1500}\\ \lg 1,007^x  &   >   &   \lg \dfrac {4}{3} \\ x \lg 1,007  &   >   &   \lg \dfrac {4}{3} \\ x  &   >   &   \dfrac {\lg \dfrac {4}{3}}{\lg 1,007} \approx 41,24 \text{ år} \\ \end{array} \) </p>
+          <p>Efter 42 år.</p>
+        </div>
+      </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>För vilka värden på \(  x \)  gäller följande. Svar med två decimalers noggrannhet.
+            <ol>
+              <li>\(  2^x=5 \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\(  2^x=5 \Leftrightarrow x =\dfrac {\lg 5}{\lg 2} \approx 2,32 \) .</p> </div></div> </li>
+              <li>\(  7^x=14 \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\(  7^x=14 \Leftrightarrow x =\dfrac {\lg 14}{\lg 7} \approx 1,36 \) .</p> </div></div> </li>
+              <li>\(  3^x=21 \)  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\(  3^x=21 \Leftrightarrow x =\dfrac {\lg 21}{\lg 3} \approx 2,77 \) </p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Ordna uträkningarna i rätt ordning så att lösningen är korrekt och logisk.
+            <ol>
+              <li><p>Välj bland följande uttryck:
+                <div class="grid-container">
+                  <div class="grid-item">\(  3^x=12 \)</div>
+                  <div class="grid-item">\(  x=\dfrac {\lg 12}{\lg 3} \)</div>
+                  <div class="grid-item">\(  \lg 3^x=\lg 12 \)</div>
+                  <div class="grid-item">\(  x\lg 3=\lg 12 \)</div>
+                </div>
+                 </p>
+
+                <table>
+                  <tr><td> </td><td>(1.)</td></tr>
+                  <tr><td> </td><td>(2.)</td></tr>
+                  <tr><td> </td><td>(3.)</td></tr>
+                  <tr><td> </td><td>(4.)</td></tr>
+                </table> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>
+                <table>
+                  <tr><td>\(  3^x=12 \)  </td><td>(1.)</td></tr>
+                  <tr><td>\(  \lg 3^x=\lg 12 \)  </td><td>(2.)</td></tr>
+                  <tr><td>\(  x\lg 3=\lg 12 \)  </td><td>(3.)</td></tr>
+                  <tr><td>\(  x=\dfrac {\lg 12}{\lg 3} \)  </td><td>(4.)</td></tr>
+                </table>
+              </p> </div></div> </li>
+              <li><p>Välj bland följande uttryck:
+                <div class="grid-container">
+                  <div class="grid-item">\(  x\lg 2=\lg 6 \)</div>
+                  <div class="grid-item">\(  \lg 2^x=\lg 6 \)</div>
+                  <div class="grid-item">\(  2^x=6 \)</div>
+                  <div class="grid-item">\(  x=\dfrac {\lg 6}{\lg 2} \)</div>
+                </div>
+                 </p>
+
+                <table>
+                  <tr><td> </td><td>(1.)</td></tr>
+                  <tr><td> </td><td>(2.) </td></tr>
+                  <tr><td> </td><td>(3.)</td></tr>
+                  <tr><td> </td><td>(4.)</td></tr>
+                </table> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>
+                <table>
+                  <tr><td>\(  2^x=6 \)  </td><td>(1.)</td></tr>
+                  <tr><td>\(  \lg 2^x=\lg 6 \)  </td><td>(2.) </td></tr>
+                  <tr><td>\(  x\lg 2=\lg 6 \)  </td><td>(3.)</td></tr>
+                  <tr><td>\(  x=\dfrac {\lg 6}{\lg 2} \)  </td><td>(4.)</td></tr>
+                </table>
+              </p> </div></div> </li>
+              <li><p>Välj bland följande uttryck:
+                <div class="grid-container">
+                  <div class="grid-item">\(  5^x=4 \)</div>
+                  <div class="grid-item">\(  \lg 5^x=\lg 4 \)</div>
+                  <div class="grid-item">\(  x=\dfrac {\lg 4}{\lg 5} \)</div>
+                  <div class="grid-item">\(  x\lg 5=\lg 4 \)</div>
+                </div>
+                 </p>
+                <table>
+                  <tr><td> </td><td>(1.)</td></tr>
+                  <tr><td> </td><td>(2.)</td></tr>
+                  <tr><td> </td><td>(3.)</td></tr>
+                  <tr><td> </td><td>(4.)</td></tr>
+                </table><p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>
+                <table>
+                  <tr><td>\(  5^x=4 \)  </td><td>(1.)</td></tr>
+                  <tr><td>\(  \lg 5^x=\lg 4 \)  </td><td>(2.)</td></tr>
+                  <tr><td>\(  x\lg 5=\lg 4 \)  </td><td>(3.)</td></tr>
+                  <tr><td>\(  x=\dfrac {\lg 4}{\lg 5} \)  </td><td>(4.)</td></tr>
+                </table>
+              </p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><p>Korrigera följande uträkning. Var gick det fel och varför?</p>
+            <p>\(  \begin{array}{rcll} 4^x  &  = &  12  &   \quad \text{(1.)}\\ \lg 4^x  &  = &  \lg 12  &   \quad \text{(2.)}\\ x  &  = &  \dfrac {\lg 12}{\lg 4}  &   \quad \text{(3.)}\\ x  &  = &  \lg 3  &   \quad \text{(4.)}\\ \end{array} \) </p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Allt är bra ända till rad (4.). Där är \(  \dfrac {\lg 12}{\lg 4} \)  förkortat till \(  \lg 3 \) .</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vilket av talen \( 5^{2239} \) och \( 10^{1565} \) är större? Hur många siffror består det större talet av?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.75">
+              <div class="card card-body answer"> <p>Vi har \( \lg 5^{2239} = 2239 \lg 5 \approx 1564,99 \).</p>
+              <p>Och \( \lg 10^{1565} = 1565 \lg 10 \approx 1565 \).</p>
+              <p>Det större talet är \(10^{1565} \).</p>
+              <p>Alltså 1566 siffror.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vilket av talen \( 6^{3002} \) och \( 3^{4902} \) är större? Hur många siffror består det större talet av?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5">
+              <div class="card card-body answer"> <p>Vi har \( \lg 6^{3002} = 3002 \lg 6 \approx 2336,0 \).</p>
+              <p>Och \( \lg 3^{4902} = 4902 \lg 3 \approx 2338,8 \).</p>
+              <p>Det större talet är \(3^{4902} \).</p>
+              <p>Vi får att \( 3^{4902} \approx 10^{2338,8} \).</p>
+              <p>Alltså \( 10^{2338} < 3^{4902} < 10^{2339} \). Alltså 2339 siffror.</p>
+             </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Hur många siffror består talet \( 5^{5^5} \) av?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.8">
+              <div class="card card-body answer"> <p>\( 5^{5^5} = 5^{3125} \)</p>
+                <p>Alltså \( \lg 5^{3125} = 3125\lg 5 \approx 2184,28\ldots \).</p>
+                <p>Vi får att \( 5^{3125} \approx 10^{2184,28} \).</p>
+                <p>Alltså \( 10^{2184} < 5^{3125} < 10^{2185} \). Alltså 2185 st siffror.</p>
+              </div></div>
+          </li>
+
+          <li>På ett bankkonto placeras 5000 €. Den verkliga räntan efter källskatten är 0,95 % och betalas in på kontot. Efter hur många år överstiger summan på kontot 8000 €?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi får ekvationen \(  (1+0,0095)^n \cdot 5000 = 8000 \)  som har lösningen \(  n = 49,71 \) . Alltså 50 år.</p> </div></div>
+          </li>
+
+          <li>Vi placerar 1500 € så att den årliga av kastningen är 7,0 %. Efter hur många år har kapitalet ökat till 2500 € då vi varje år betalar en skatt på räntan på kapitalinkomster om 30 %?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5">
+              <div class="card card-body answer"> <p>Den verkliga räntan är \(  0,07 \cdot 0,70 \).
+              <p>Vi får ekvationen \(  (1+0,07\cdot 0,70)^n \cdot 1500 = 2500 \)  som har lösningen \(  n=10,68 \) . Alltså 11 år.</p> </div></div>
+          </li>
+
+          <li>På ett bankkonto placeras 4500 € så att den årliga räntan är 1,1 %. Efter hur många år har kapitalet ökat till 8500 € då vi varje år betalar en skatt på räntan om 30 %?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.75">
+              <div class="card card-body answer"> <p>Den verkliga räntan är \(  0,011 \cdot 0,70 \).</p>
+              <p> Vi får ekvationen \(  (1+0,011\cdot 0,70)^n \cdot 4500 = 8500 \)  som har lösningen \(  n=82,91 \) . Alltså 83 år.</p> </div></div>
+          </li>
+
+          <li>Befolkningsökningen var som störst i Finland efter andra världskriget. 1950 var befolkningsmängden 4,03 miljoner och befolkningstillväxten var 1,0 %. Om befolkningstillväxten skulle ha varit konstant 1,0 % efter 1950, vilket år skulle befolkningsmängden överskrida dagens (år 2015) mängd på 5,47 miljoner?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi har ekvationen \(  1,01^x \cdot 4,03 = 5,47 \)  som vi skriver som \(  x=\dfrac {\lg\dfrac {5,47}{4,03}}{\lg 1,01} \approx 30,70 \)  år.</p>
+                <p>År 1950 + 30 = 1980.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Ett företag strävar till att öka omsättningen med 60 % under 10 år.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="6t">
+            <div class="card card-body hint"><p>Beteckna omsättningen med \(  a \) . Om omsättningen skall öka med 60 % är den nya omsättningen 1,6\(  a \) .</p> </div></div>
+            <ol>
+              <li>Hur många procent skall omsättningen öka varje år? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Omsättningen i början är \(  a \)  och den procentuella ökningen betecknar vi \(  p \) . Vi får ekvationen \(  p^{10}\cdot a = 1,6 a \)  som har lösningen \(  p=\sqrt[10]{1,6} \approx 1,04812 \)  som betyder att den årliga ökningen skall vara \(  1,04812-1 = 0,04812 \) , som är 4,81 %.</p> </div></div> </li>
+              <li>Om hur många år har omsättningen fördubblats? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi betecknar omsättningen med \(  a \) , \(  n \)  antal år och får ekvationen \(  1,0481^n \cdot a = 2a \)  som har lösningen \(  n = \dfrac {\lg 2}{\lg 1,0481} \approx 14,75 \) .</p>
+                <p>Alltså 15 år.</p> </div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Varje år fördubblas antalet råttor i en storstad. Hur lång tid tar det för antalet råttor att bli 100 gånger så stort?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi betecknar antal råttor med \(  a \) . Vi får ekvationen \(  2^n\cdot a=100 a \)  som har lösningen \(  n=\dfrac {\lg 100}{\lg 2} \approx 6,64 \) .</p>
+                <p>Alltså 7 år.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Radioaktiva material har en naturligt sönderfall som kallas för halveringstid. Halveringstiden betyder att antalet aktiva, radioaktiva kärnor minskar med hälften. Halveringstiden för kol 11 som används i <a href="http://sv.wikipedia.org/wiki/Positronemissionstomografi" target="_blank">PET skanning</a> har en halveringstid på 20,5 minuter. Efter hur många minuter har aktiviteten sjunkit till en 100-del av vad den var i början?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi betecknar antalet radioaktiva kärnor med \(  a \) . Efter första halveringen har vi \(  0,50a \)  kvar, efter andra halveringen har vi \(  0,50^2\cdot a \)  kvar.</p>
+                <p>Vi söker antalet halveringar som behövs genom att lösa ekvationen \(  0,50^n \cdot a = \dfrac {a}{100} \)  som har lösningen \(  n=\dfrac {\lg\dfrac {1}{100}}{\lg 0,50} \approx 6,6438 \)  halveringar.</p>
+                <p>Varje halvering tar 20,5 minuter som betyder att den totala tiden blir \(  20,5 \text{ minuter } \cdot 6,6438 = 136,1979 \)  minuter.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>-->
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>I Finland har 94,6 % av befolkningen finska eller svenska som modersmål. En hur stor grupp måste man i alla fall samla om man vill att med sannolikheten 0,99 att i alla fall en person inte har finska eller svenska som modersmål?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>P(iaf 1) = 1 - P(ingen talar finska eller svenska) = 1 - 0,946.</p>
+                <p>Vi har \(  n \)  st händelser som är oberoende av varandra och vi får olikheten \(  1-0,946^n >  0,99 \)  som har lösningen \(  n >  \dfrac {\lg 0,01}{\lg 0,946} \approx 82,95 \) .</p>
+                <p>Alltså 83 personer.</p> </div></div>-->
+                <!--Flytta till MaA 10-->
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="9_ber_logaritmer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="11_talet_e.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
