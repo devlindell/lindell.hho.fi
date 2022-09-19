@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>15. Undersökning av rationella funktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="14_derivkvot.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="16_rotfunktionen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>15. Undersökning av rationella funktioner</h1>
+      <section>
+        <div class="theory">
+          <p>Sedan har vi kvar det svåraste. Att undersöka rationella funktioner. Egentligen är det inte svårt, det tar bara tid och det är några saker du måste komma ihåg att beakta.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm när funktionen \( f(x)=\dfrac{x}{x^2+1} \) avtar och växer.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292988200" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm extremvärden, största och minsta värden, för funktionen \( f(x)=\dfrac{2}{x^2-1} \).</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292991989" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="summary box">
+            <p>När vi undersöker rationella funktioner gör vi följande:</p>
+            <ol>
+              <li>Bestäm för vilka tal som funktionen inte är definierad.</li>
+              <li>Derivera funktionen.</li>
+              <li>Sök nollställen för derivatans täljare och nämnare.</li>
+              <li>Bilda ett teckenschema där du kombinerar tecknen för täljaren och nämnaren.</li>
+              <li>Svara på frågan.</li>
+            </ol>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Grafen av funktionen \( f \):s derivatafunktion \( f' \) är ritad på bilden.</p>
+            <p><img src="pics/13_2.png" alt="" class="responsivepic400" /></p>
+            <p>Bestäm utgående från bilden följande:</p>
+            <ol>
+              <li>Den punkt där funktionen \( f \) byter rikting. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>I \( x=0 \) (den punkt där derivatan har värdet 0).</p></div></div> </li>
+              <li>Funktionen \( f \) är avtagande då <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>derivatafunktionen är negativ, \( -\infty  <  x  < 0 \).</p></div></div> </li>
+              <li>Fuktionen \( f \) är växande då <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>derivatafunktionen är positiv, \( 0  <  x  < \infty \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Grafen av funktionen \( g \):s derivatafunktion \( g' \) är ritad på bilden.</p>
+            <p><img src="pics/13_3.png" alt="" class="responsivepic400" /></p>
+            <p>Bestäm utgående från bilden följande:</p>
+            <ol>
+              <li>Den punkt där funktionen \( g \) byter rikting. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>I de punkter som \( g'(x) \) får värdet 0. Alltså i \( x = -1 \) och \( x = 1 \).</p></div></div> </li>
+              <li>Funktionen \( g \) är avtagande då <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Funktionen \( g \) är avtagande då \( g'\) är negativ. </p>
+                <p>Alltså då \( x < -1 \) och då \( x > 1 \).</p>
+              </div></div> </li>
+              <li>Fuktionen \( g \) är växande då <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Funktionen \( g \) är växande då \( g'\) är positiv. </p>
+                <p>Alltså då \( -1 < x < 1 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>I bilden är grafen av funktionen \( f \) ritad.</p>
+            <p><img src="pics/13_2_a.png" alt="" class="responsivepic400" /></p>
+            <p>Berätta hur grafen av derivatafunktionen \( f' \) beter sig.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p><ul>
+                <li>\( f \) byter riktning då \( x=0 \) , alltså har \( f' \) ett nollställe i \( x=0 \).</li>
+                <li>\( f \) avtar då \( x < 0 \), alltså är \( f' \) negativ.</li>
+                <li>\( f \) växer då \( x > 0 \), alltså är \( f' \) positiv.</li>
+              </ul> </p>
+              <p>Grafen av \( f' \) ser ut som</p>
+              <p><img src="pics/13_2.png" alt="" class="responsivepic400" /></p></div></div>
+          </li>
+
+          <li>Grafen av funktionen \( f(x) \):s derivatafunktion \( f’(x) \) är uppritad på bilden.
+            <p><img src="pics/13_1.png" alt="" class="responsivepic400" /></p>
+            <p>Berätta om hur funktionen \( f(x) \) beter sig.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p><ul>
+                <li>\( f'(x) \) saknar nollställen, betyder att \( f \) inte byter riktning.</li>
+                <li>\( f'(x) \) är positiv, betyder att \( f \) är växande.</li>
+                <li>Alltså är \( f \) strängt växande.</li>
+                <li>Eftersom \( f'(x) \) inte är definerad då \( x=1 \) är \( f \) inte heller definierad då \( x=1 \).</li>
+              </ul> </p>
+              <p>Grafen av \( f \) kan vara följande:</p>
+              <p><img src="pics/13_1_a.png" alt="" class="responsivepic400" /></p></div></div>
+          </li>
+
+          <li>Bestäm extremvärden för funktionen \( f(x)=\dfrac{-1}{x^2-1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Funktionen \( f \) är definierad då \( x\not=\pm1 \).</p>
+                <p>Derivatafunktionen ser ut som \( f'(x)= \dfrac{2x}{(x^2-1)^2} \). För att kunna bestämma extremvärden måste vi veta täljaren och nämnarens nollställen och bilda ett teckenschema.</p>
+                <p>Täljaren \( 2x=0 \) har nollstället \( x=0 \) och nämnaren \( (x^2-1)^2=0 \Leftrightarrow x^2-1=0 \Leftrightarrow x=\pm1 \).</p>
+                <p>Vi bildar ett teckenschema:</p>
+                <p>\( \begin{array}{l|cccccccc} &  & -1 &  &  0 &  &  1 &  \\ \hline \textrm{täljaren, } 2x &  - &  - &  - &  0 &  + &  + &  + \\ \textrm{nämnaren, } (x^2-1)^2 &  + &  0 &  + &  + &  +&  0 &  + \\ \textrm{kvoten, } f'(x) &  - &  | &  - &  0 &  + &  | &  + \\ f(x) &  \searrow &  | &  \searrow &  &  \nearrow &  | & \nearrow \\ \end{array} \)</p>
+                <p>Vi har ett lokalt minsta värde i \( x=0 \), \( f(0)=\dfrac{-1}{0^2-1}=1 \). Funktionen saknar andra lokala extremvärden.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Av rostfritt stål tillverkas ett cirkelformat cylinderformat mått utan lock vars volym är 1 liter. Planera dimensionerna, höjden och diametern för bottnet, så att det behövs så lite material som möjligt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi betecknar höjden med \( h \) och radien för bottnet med \( r \). Den totala arean för materialet är \( A = \pi r^2 + 2\pi rh \).</p>
+              <p>Eftersom volymen skall vara 1 liter gäller att \( 1 = \pi r^2 h \), där 1 är dm<sup>3</sup>. Då får vi längden i dm. Vi får att \( h = \dfrac{1}{\pi r^2} \).</p>
+              <p>Alltså gäller att \( A(r) = \pi r^2 + 2\pi r\cdot \dfrac{1}{\pi r^2} = \pi r^2 + \dfrac{2}{r} \).</p>
+              <p>Derivera och sök derivatans nollställe. Kom fram till \( r = \sqrt[3]{\dfrac{1}{\pi}} \).</p>
+              <p>Visa med hjälp av teckenschema att vi har ett minsta värde.</p>
+              <p>Alltså är diametern 13,7 cm och höjden 6,8 cm.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangentens ekvation för \( y=\dfrac{1}{x} \) då \( x=1 \).
+            <p>För att ha en linje behöver du en punkt på linjen och en riktningskoefficient. Hur bestämmer du en punkt som är gemensam för tangenten och kurvan?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=\dfrac{-1}{x^2} \). Koordinaterna för tangenten är \( x=1 \) och \( y=f(1)=1 \). Tangentens riktningskoefficient är \( f'(1)=-1 \).</p>
+                <p>En linjes ekvation genom två punkter är \( y-y_0=k(x-x_0) \) som i detta fall är \( y+1=-1(x-1) \). Tangentens ekvation är \( y=-x \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm största och minsta värdet för funktionen \( f(x)=-\dfrac{3}{x^2-9} \) i intervallet \( [-1,2] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>\( f’(x)=\dfrac{-6x}{(x^2-9)^2} \).</p>
+                <p> \( f'(x)=0 \) då täljaren får värdet noll, alltså då \( -6x=0 \) som är då \( x=0 \).</p>
+                <p>Största och minsta värdet i ett intervall får vi då \( f'(x)=0 \) eller i intervallers ändpunkter.</p>
+                <p>\( f(-1)=\dfrac{-3}{(-1)^2-9} = \dfrac{3}{8} \).</p>
+                <p>\( f(0)=\dfrac{-3}{(0)^2-9} = \dfrac{1}{3} \).</p>
+                <p>\( f(2)=\dfrac{-3}{2^2-9} = \dfrac{3}{5} \).</p>
+                <p>Minsta värdet är \( \dfrac{1}{3} \) och största värdet \( \dfrac{3}{5} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm extremvärden för funktionen \( f(x)=\dfrac{x-1}{x^2+2} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Funktionen är definierad då \( x^2+2\not=0 \Leftrightarrow x^2\not=-2 \) som aldrig uppfylls i de reella talens mängd.</p>
+                <p>\( f'(x)= \dfrac{-x^2+2x+2}{(2x^2+2)^2} \).</p>
+                <p>Täljaren har nollställena \( 1\pm \sqrt{3} \) och nämnarens nollställen får vi som \( (2x^2+2)^2=0 \) som saknar lösningar.</p>
+                <p>Vi gör ett teckenschema:</p>
+                <p>\( \begin{array}{l|ccccc} &  & 1-\sqrt{3} &  &  1+\sqrt{3} &  \\ \hline \textrm{täljaren, } -x^2+2x+2 &  - &  0 &  + &  0 &  - \\ \textrm{nämnaren, } (x^2+2)^2 &  + &  + &  + &  + &  + \\ \textrm{kvoten, } f'(x) &  - &  0 &  + &  0 &  - \\ f(x) &  \searrow &  &  \nearrow &  &  \searrow \\ \end{array} \)</p>
+                <p>Största värdet får då \( x=1+\sqrt{3} \) och minsta värdet då \( x=1-\sqrt{3} \).</p>
+                <p>Största värdet är \( \dfrac{1}{4}(\sqrt{3}-1) \) och minsta värdet är \( \dfrac{1}{4}(-\sqrt{3}-1) \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm extremvärdena för \( f(x)=\dfrac{x^2}{x^2-1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Funktionen är definierad då \( x^2-1\not=0 \), alltså då \( x\not=\pm1 \).</p>
+                <p>Derivatafunktionen är \( f'(x)=\dfrac{-2x}{(x^2-1)^2} \). Täljarens nollställe är \( -2x=0 \Leftrightarrow x=0 \) och nämnarens nollställe är \( (x^2-1)^2=0 \Leftrightarrow x^2-1=0 \Leftrightarrow x=\pm 1 \).</p>
+                <p>Vi gör ett teckenschema:</p>
+                <p>\( \begin{array}{l|ccccccc} &  &  -1&  &  0 &  & 1 &  \\ \hline \textrm{täljaren, } -2x &  + &  + &  + &  0 &  - &  - & - \\ \textrm{nämnaren, } (x^2-1)^2 &  + &  0 &  + &  + &  + &  0 &  + \\ \textrm{kvoten, } f'(x) &  + &  | &  + &  0 &  - &  | &  + \\ f(x) &  \nearrow &  |&  \nearrow &  &  \searrow & | &  \searrow \\ \end{array} \)</p>
+                <p>Vi har ett lokalt största värde då \( x=0 \), \( f(0)= \dfrac{0^2}{0^2-1} =0 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm för funktionerna \( f(x) = \dfrac{2x}{x+1} \) och \( g(x) = \dfrac{2}{x} -1 \) deras skärningspunkter och visa att i ena skärningspunkten skär funktionerna varandra vinkelrätt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Funktionernas gemensamma punkt är \( x_1 = -\dfrac{2}{3} \) och \( x_1 = 1 \).</p>
+              <p>Derivatafunktionerna är \( f'(x) = \dfrac{2}{(x+1)^2} \) och \( g'(x) = -\dfrac{2}{x^2} \).</p>
+              <p>Om funktionerna är vinkelräta så skall produkten av tangenternas riktningskoefficienter ha värdet -1.</p>
+              <p>I \( x = -\dfrac{2}{3} \) får vi \( f'(-\dfrac{2}{3}) \cdot g'(-\dfrac{2}{3}) = -81 \).</p>
+              <p>I \( x = 1 \) får vi \( f'(1) \cdot g'(1) = -1 \). I denna punkt skär funktionerna varandra vinkelrätt.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Hur beter sig funktionen \( f(x)=\dfrac{x}{x^2-x} \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Funktionen är inte definierad då \( x^2-x=0 \), alltså då \( x\not=0 \) eller \( x\not=1 \).</p>
+                <p>\( f'(x)=\dfrac{-x^2}{(x^2+x)^2} \). För att bestämma hur funktionen beter sig söker vi nollställen för täljaren och nämnaren och bildar ett teckenschema.</p>
+                <p>Täljaren: \( -x^2=0 \) då \( x=0 \) och nämnaren: \( (x^2+x)^2=0 \) då \( x=0 \) eller \( x=1 \). Eftersom nämnaren är i kvadrat så är den alltid positiv.</p>
+                <p>Teckenschema</p>
+                <p>\( \begin{array}{l|ccccc} &  &  0 &  &  1 \\ \hline \textrm{täljare, }-x^2 &  - & 0& - & - & -\\ \textrm{nämnare, } (x^2+x)^2 &  + &  0 &  + &  0 &  + \\ \textrm{kvot, }f'(x) &  -&  | &  - &  | &  - \\ f(x) &  \searrow &  &  \searrow &  &  \searrow \\ \end{array} \) </p>
+                <p>Funktionen är hela tiden avtagande.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x)=\dfrac{2}{x-2} \) är avtagande.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Funktionen \( f \) är definierad i alla punkter utom då \( x-2=0 \Leftrightarrow x=2 \).</p>
+                <p>Derivatafunktionen är \( f'(x)=\dfrac{-2}{(x-2)^2} \). För att veta hur funktionen beter sig undersöker vi täljaren och nämnaren skilt. Täljaren: -2 saknar nollställe. För nämnaren \( (x-2)^2 \) så har den värdet noll då \( x-2=0 \) alltså \( x=2 \). Eftersom täljaren är i kvadrat är den annars positiv.</p>
+                <p>Vi bildar ett teckenschema:</p>
+                <p>\( \begin{array}{l|ccc} &  &  2 &  \\ \hline \textrm{täljaren, } -2 &  - &  - &  - \\ \textrm{nämnaren, } (x-2)^2 &  + &  0 &  + \\ \textrm{kvoten, } f'(x) &  - &  | &  - \\ f(x) &  \searrow &  &  \searrow\\ \end{array} \)</p>
+                <p>Funktionen är alltså avtagande.</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="14_derivkvot.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="16_rotfunktionen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

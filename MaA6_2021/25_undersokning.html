@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>25. Undersökning av trigonometriska funktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="24_harledning.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="26_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>25. Undersökning av trigonometriska funktioner</h1>
+      <section>
+        <div class="theory">
+          <p>Sedan är det dags att börja undersöka hur trigonometriska funktioner beter sig.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> I vilka punkter får funktionen \( f(x)=2\sin(\pi +x) \) sina största och minsta värden? Vilket är detta värde?</p>
+            <h4>Lösning</h4>
+            <p>För sinus gäller att \( -1\leq \sin x \leq 1 \). För \( 2\sin x \) gäller då att \( -2 \leq 2\sin x \leq 2 \). Största värdet är \( 2 \) och minsta värdet är \( -2 \).</p>
+            <p>Nu bestämmer vi bara de punkter där dessa värden uppnås.</p>
+            <p>\( f'(x)=2\cos(\pi+x)\cdot 1 = 2\cos(\pi +x) \). Till nästa söker vi de punkter där tangenterna för funktioner har riktingskoefficienten 0. Eftersom \( 2\sin(\pi +x) \) har perioden \( 2\pi \) så räcker det att vi undersöker \( f \) i detta intervall. </p>
+            <p>\( \begin{array}{rcl}  f'(x) & = & 0 \\  2\cos(\pi +x) & = & 0 \\  \cos(\pi + x)=  & = &  0 \\   \pi + x  & = &  \dfrac{\pi}{2}+n\cdot \pi , n\in \mathbb{Z} \\   x  &  =  &  \dfrac{\pi}{2}- \pi +n\cdot \pi \\   x  & = &  -\dfrac{\pi}{2} +n\cdot \pi \\  x  & = &  \dfrac{\pi}{2} +n\cdot \pi , n \in \mathbb{Z}\\  \end{array} \)</p>
+            <p>Våra rötter är alltså \( \dfrac{\pi}{2} \) och \( \dfrac{3\pi}{2} \). Eftersom vi undersöker funktionen i ett intervall testar vi även med intervallets ändpunkter.</p>
+            <p>\( f(\dfrac{\pi}{2})=2\sin(\pi + \dfrac{\pi}{2})=2\sin(\dfrac{3\pi}{2})=2\cdot (-1) = -2 \) och </p>
+            <p>\( f(\dfrac{3\pi}{2})=2\sin(\pi + \dfrac{3\pi}{2})=2\sin(\dfrac{5\pi}{2})=2\cdot 1 = 2 \) </p>
+            <p>\( f(0)=f(2\pi)=2\sin(\pi +0)=2\cdot 0 = 0 \).</p>
+            <p>Minsta värden får funktionen i punkterna \( \dfrac{\pi}{2} + n\cdot 2\pi \) och största värdena i \( \dfrac{3\pi}{2} + n\cdot 2\pi \) där \( n \in \mathbb{Z} \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm de gemensamma punkterna för \( f(x)=\sin 2x  \) och \( g(x)=3\cos x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi har \( f(x)=g(x) \), alltså \( \sin 2x = 3\cos x \).</p>
+            <p>Vi får</p>
+            <p>\( \begin{array}{rcll}  \sin 2x  & = &  3\cos x   & | \quad \sin 2x = 2\sin x \cos x \\  2 \sin x \cos x  & = &  3\cos x \\  2 \sin x \cos x - 3\cos x  & = & 0\\  \cos x (2\sin x - 3)  & = &  0 \\  \end{array} \)</p>
+            <p>Alltså \( \cos x = 0 \) då \( x=\dfrac{\pi}{2} + n\pi , n \in \mathbb{Z} \) eller \( 2\sin x -3 = 0 \Leftrightarrow \sin x = \dfrac{3}{2} \) som saknar lösningar eftersom \( -1\leq \sin x \leq 1 \).</p>
+            <p>De gemensamma punkterna är \( x=\dfrac{\pi}{2} + n\pi , n \in \mathbb{Z} \).</p>
+          </div>
+          <p>I MaA 8 löser vi följande upppgift genom att bilda en funktion med en rot. Nu tittar vi på hur vi löser den genom att utnyttja en vinkel.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Från en ö som befinner sig 2,5 km från kusten skall man dra en elkabel till närmaste transformator i elnätet. Närmaste transformator befinner sig 7,0 km från ön då man följer strandlinjen. Att dra kabel genom havet kostar 35 €/m och att dra på land kostar 10 €/m. Bestäm hur man borde dra kabeln så att det kostar så litet som möjligt? Vad kostar det då?</p>
+            <div class="video">
+              <iframe width="640" height="564" src="https://player.vimeo.com/video/322049269" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+            </div>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><p>Välj för funktionerna rätt värdemängd och period.</p>
+            <table>
+              <tr class="MaA7"><th>Påstående</th><th>Värdemängden \(  [-1,1] \) </th><th>Värdemängden \(  [0,2] \) </th><th>Värdemängden \(  [-2,2] \) </th><th>Perioden \(  \pi \) </th><th>Perioden \(  2\pi \) </th></tr>
+              <tr><td>\(  2\sin x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  \sin x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  2\sin 2x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  1+\cos 2x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  \sin 2x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  2\cos x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  \cos x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  2\cos 2x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  1+\sin x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  1+\sin 2x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  \cos 2x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\(  1+\cos x \) </td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table><tr class="MaA7"><th>Påstående</th><th>Värdemängden \(  [-1,1] \) </th><th>Värdemängden \(  [0,2] \) </th><th>Värdemängden \(  [-2,2] \) </th><th>Perioden \(  \pi \) </th><th>Perioden \(  2\pi \) </th></tr>
+                <tr><td>\(  2\sin x \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\(  \sin x \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\(  2\sin 2x \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(  1+\cos 2x \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(  \sin 2x \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(  2\cos x \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\(  \cos x \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\(  2\cos 2x \) </td><td></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(  1+\sin x \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\(  1+\sin 2x \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(  \cos 2x \) </td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\(  1+\cos x \) </td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              </table>
+             </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li><p>Kombinera så att följden för algoritmen är sann för hur vi undersöker en trigonometrisk funktion.</p>
+            <p>Välj bland följande:
+              <div class="grid-container">
+                <div class="grid-item">Beakta periodiciteten eller intervallet som du arbetar med.</div>
+                <div class="grid-item">Derivera funktionen.</div>
+                <div class="grid-item">Från teckenschemat vet du hur funktionen beter sig och var du hittar största och minsta värden.</div>
+                <div class="grid-item">Svara på uppgiften.</div>
+                <div class="grid-item">Sök derivatans nollställen, lös alltså ekvationen \(  f'(x)=0 \).</div>
+                <div class="grid-item">Utgå från derivatans nollställen och bilda ett teckenschema.</div>
+              </div>
+              </p>
+            <table>
+              <tr class="MaA7"><th>Vad vi skall göra</th><th>Ordning </th></tr>
+              <tr><td></td><td>1. </td></tr>
+              <tr><td></td><td>2. </td></tr>
+              <tr><td></td><td>3. </td></tr>
+              <tr><td></td><td>4. </td></tr>
+              <tr><td></td><td>5. </td></tr>
+              <tr><td></td><td>6. </td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA7"><th>Vad vi skall göra</th><th>Ordning </th></tr>
+                  <tr><td>Derivera funktionen.</td><td>1. </td></tr>
+                  <tr><td>Sök derivatans nollställen, lös alltså ekvationen \( f'(x)=0 \).</td><td>2. </td></tr>
+                  <tr><td>Utgå från derivatans nollställen och bilda ett teckenschema.</td><td>3. </td></tr>
+                  <tr><td>Från teckenschemat vet du hur funktionen beter sig och var du hittar största och minsta värden.</td><td>4. </td></tr>
+                  <tr><td>Beakta periodiciteten eller intervallet som du arbetar med.</td><td>5. </td></tr>
+                  <tr><td>Svara på uppgiften.</td><td>6. </td></tr>
+                </table>
+               </div></div>
+          </li>
+
+          <li>Bestäm största och minsta värde för funktionen \(  f(x)=2\sin x  \). I vilka punkter får funktionen sina största och minsta värden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\(  f'(x)=2\cos x \). \(  f'(x)=0 \) då \(  x=\dfrac{\pi}{2}+n \cdot \pi, n \in \mathbb{Z} \). Då vi undersöker funktionen i intervallet \(  [0, 2\pi] \) finner vi största och minsta värdena. Våra punkter är \(  0, \dfrac{\pi}{2} \) och \(  \dfrac{3\pi}{2} \).</p>
+                <p>\(  f(0)=f(2 \pi) = 2 \sin 0 = 0 \)</p>
+                <p>\(  f(\dfrac{\pi}{2}) = 2 \sin (\dfrac{\pi}{2}) = 2\cdot 1 = 2 \)</p>
+                <p>\(  f(\dfrac{3\pi}{2}) = 2 \sin (\dfrac{3\pi}{2}) = 2\cdot (-1) = -2 \)</p>
+                <p>Största värde är \(  2 \), det uppnås i punkterna \(  \dfrac{\pi}{2} + n\cdot 2\pi \) och minsta värdet är \(  -2 \) som uppnås i punkterna \(  \dfrac{3\pi}{2} + n\cdot 2\pi \) där \(  n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li>Bestäm största och minsta värde för funktionen \(  f(x)=3\sin 2x  \). I vilka punkter får funktionen sina största och minsta värden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5">
+              <div class="card card-body answer"> <p>\(  f'(x) = 6\cos 2x \). \(  f'(x)=0 \) då \(  x=\dfrac{\pi}{4}+n \cdot \dfrac{\pi}{2}, n \in \mathbb{Z} \). </p>
+              <p>Funktionen uppreprar sig med intervallet \( \pi \).</p>
+              <p>Då vi undersöker funktionen i intervallet \(  [0, \pi] \) finner vi största och minsta värdena. Våra punkter är \( \dfrac{\pi}{4} \) och \(  \dfrac{3\pi}{4} \).</p>
+              <p>\(  f(0)=f( \pi) = 3 \sin 2\cdot 0 = 0 \)</p>
+              <p>\(  f(\dfrac{\pi}{4}) = 3 \sin (2\cdot\dfrac{\pi}{4}) = 3\cdot 1 = 3 \)</p>
+              <p>\(  f(\dfrac{3\pi}{4}) = 3 \sin (2\cdot\dfrac{3\pi}{4}) = 3\cdot (-1) = -3 \)</p>
+              <p>Största värde är \(  3 \), det uppnås i punkterna \(  \dfrac{\pi}{4} + n\cdot \pi \) och minsta värdet är \(  -3 \) som uppnås i punkterna \(  \dfrac{3\pi}{4} + n\cdot \pi \) där \(  n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li>Bestäm största och minsta värde för funktionen \(  f(x)=2\cos(x-\pi)  \). I vilka punkter får funktionen sina största och minsta värden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Eftersom \( \cos(x-\pi) = -\cos x \) kan vi alternativt undersöka den funktionen.</p>
+              <p>\(  f'(x)=2\sin x \). \(  f'(x)=0 \) då \(  x=n \cdot \pi, n \in \mathbb{Z} \). Då vi undersöker funktionen i intervallet \(  [0, 2\pi] \) finner vi största och minsta värdena. Våra punkter är \(  0, \pi \) och \(  2\pi \).</p>
+              <p>\(  f(0)=f(2 \pi) = 2 \cos(0-\pi) = 2(-1) = -2 \)</p>
+              <p>\(  f(\pi) = 2 \cos (\pi-\pi) = 2\cdot \cos 0 = 2\cdot 1 = 2 \).</p>
+              <p>Största värde är \(  2 \), det uppnås i punkterna \(  \pi + n\cdot 2\pi \) och minsta värdet är \(  -2 \) som uppnås i punkterna \(  2\pi + n\cdot 2\pi \) där \(  n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li>Bestäm största och minsta värde för funktionen \(  f(x)=-\cos(2x)+1  \). I vilka punkter får funktionen sina största och minsta värden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5">
+              <div class="card card-body answer">
+              <p>\(  f'(x)=2\sin 2x \). \(  f'(x)=0 \) då \(  x=n \cdot \dfrac{\pi}{2}, n \in \mathbb{Z} \).
+              <p>Funktionen uppreprar sig med intervallet \( \pi \).</p>
+              <p>Då vi undersöker funktionen i intervallet \(  [0, \pi] \) finner vi största och minsta värdena. Våra punkter är \(  0, \dfrac{\pi}{2} \) och \( \pi \).</p>
+              <p>\(  f(0)=f(\pi) = -\cos(2\cdot 0)+1 = -1 +1 = 0 \)</p>
+              <p>\(  f(\dfrac{\pi}{2}) = -\cos (2\dfrac{\pi}{2})+1 = 1 + 1 = 2 \).</p>
+              <p>Största värde är \(  2 \), det uppnås i punkterna \(  \dfrac{\pi}{2} + n\cdot \pi \) och minsta värdet är \(  0 \) som uppnås i punkterna \(  \pi + n\cdot \pi \) där \(  n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm största och minsta värde för funktionen \( f(x)=\sin x - \cos x \). I vilka punkter får funktionen sina största och minsta värden?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Eftersom \(  f \) är periodisk räcker det att undersöka den i intervallet \(  [0,2\pi] \).</p>
+                <p>\(  f'(x)=\cos x +\sin x \).</p>
+                <p>Nollställena för derivatan är</p>
+                <p>\(  \begin{array}{rcll} \cos x +\sin x  & = & 0 \\ \sin x  & = & -\cos x  & \mid \cos x \\ \dfrac{\sin x}{\cos x}  & = &  -1 \\ \tan x  & = &  -1\\ x  & = &  \dfrac{3\pi}{4} + n\cdot \pi, n \in \mathbb{Z} \\ \end{array} \)</p>
+                <p>Nollställena i intervallet \(  [ 0,2\pi ] \) är \(  \dfrac{3\pi}{4} \) och \(  \dfrac{7\pi}{4} \). Eftersom vi undersöker funktionen i ett intervall sätter vi även i intervallets ändpunkter då vi söker största och minsta värde.</p>
+                <p>\(  f(0)=f(2\pi)= \sin 0 - \cos 0 = 0 -1 = -1 \).</p>
+                <p>\(  f(\dfrac{3\pi}{4})=\sin \dfrac{3\pi}{4} - \cos \dfrac{3\pi}{4} = \dfrac{1}{\sqrt{2}} - (-\dfrac{1}{\sqrt{2}}) = \dfrac{1}{\sqrt{2}} + \dfrac{1}{\sqrt{2}} = \dfrac{2}{\sqrt{2}} = \sqrt{2} \).</p>
+                <p>\(  f(\dfrac{7\pi}{4})=\sin \dfrac{7\pi}{4} - \cos \dfrac{7\pi}{4} = -\dfrac{1}{\sqrt{2}} - \dfrac{1}{\sqrt{2}} = -\dfrac{2}{\sqrt{2}} = -\sqrt{2} \).</p>
+                <p>Största värdet är \(  \sqrt{2} \) som fås i punkterna \(  \dfrac{3\pi}{4} + n\cdot 2\pi \) och minsta värdet är \(  -\sqrt{2} \) som fås i punkterna \(  \dfrac{7\pi}{4} + n\cdot 2\pi \) där \(  n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 2\tan \dfrac{x}{2} \).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.5a">
+              <div class="card card-body answer"><p>Vi får alla reella tal förutom:</p>
+              <p>\( \begin{array}{rcl}
+              \dfrac{x}{2} & \not= & \dfrac{\pi}{2} + n\pi \\
+              x & \not= & \pi + n2\pi \\
+              \end{array} \) </p>
+              </div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.5b">
+              <div class="card card-body answer"><p>Värdemängden för tangens är alla reella tal. Då är det ingen skillnad om vi multiplicerar med 2. Värdemängden är ändå alla rella tal.</p>
+              </div></div> </li>
+              <li>Bestäm tangenten för funktionen i \( x = \dfrac{\pi}{2} \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\( f'(x) = 2(1+\tan^2 \dfrac{x}{2})\cdot \dfrac{1}{2} = 1+\tan^2 \dfrac{x}{2} \).</p>
+              <p>Riktningskoefficienten, \( f'(\dfrac{\pi}{2}) = 1+1^2 = 2 \).</p>
+              <p>\( y \)-koordinaten, \( f(\dfrac{\pi}{2}) = 2 \).</p>
+              <p>Tangentens ekvation, \( y - y_0 = k(x-x_0) \). Vi får \( y - 2 = 2(x-\dfrac{\pi}{2}) \), alltså \( y = 2x -\pi +2 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \(  y=\sin 2x \) och \(  y=\sin x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får ekvationen</p>
+                <p>\(  \begin{array}{rclcrcl} \sin 2x  & = &  \sin x \\ 2x  & = &  x +n\cdot 2 \pi &  \text{ eller } &  2x  & = & \pi-x +n\cdot 2 \pi, n \in \mathbb{Z} \\ x  & = &  n\cdot 2\pi  &   &  3x  & = & \pi + n\cdot 2\pi \\  &   &   &   &  x  & = & \dfrac{\pi}{3} + n\cdot \dfrac{2\pi}{3}, n\in \mathbb{Z} \\ \end{array} \)</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de intervall där funktionen \(  f(x)=\sin \dfrac{x}{\pi} \) är avtagande.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="8t">
+              <div class="card card-body hint"> <p>Perioden för \(  f \) är \(  [-\pi^2,\pi^2] \), varför? </p></div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\(  f'(x)=\dfrac{1}{\pi}\cos\dfrac{x}{\pi} \). Derivatans nollställe är \(  x=\dfrac{\pi^2}{2}+n\cdot \pi^2, n \in \mathbb{Z} \).</p>
+                <p>Den intressanta punkten är \(  -\dfrac{\pi^2}{2} \) och \(  \dfrac{\pi^2}{2} \) i intervallet \(  [-\pi^2,\pi^2] \).</p>
+                <p>Vi gör ett teckenschema:</p>
+                <p>\(  f'(-2\pi) = \dfrac{1}{\pi}\cos\dfrac{-2\pi}{\pi}= -0,13 < 0 \).</p>
+                <p>\(  f'(0) = \dfrac{1}{\pi}\cos\dfrac{0\pi}{\pi}= 0,32 > 0 \).</p>
+                <p>\(  f'(2\pi)= \dfrac{1}{\pi}\cos\dfrac{2\pi}{\pi}= -0,13 < 0 \) .</p>
+                <p>\(  \begin{array}{r|ccccc}  &   &  -\dfrac{\pi^2}{2}  &   &  \dfrac{\pi^2}{2} \\ \hline f'(x)  &  -  &  0  &  +  &  0  &  - \\ f(x)  &  \searrow  &   &  \nearrow  &   &  \searrow \\ \end{array} \)</p>
+                <p>\(  f \) är avtagande i intervallet \(  [\dfrac{\pi^2}{2},\dfrac{3\pi^2}{2}] \). Dessa intervall återkommer med perioden \(  2\pi^2 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de gemensamma punkterna för \(  f(x)=\sin 2x \) och \(  g(x)=3\cos x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi löser ekvationen \(  f(x)=g(x) \Leftrightarrow \sin 2x = 3\cos x \). \(  3\cos x \) kan vi ersätta med \(  3\sin (\dfrac{\pi}{2}-x) \). Ekvationerna är då \(  \sin 2x = 3\sin (\dfrac{\pi}{2}-x) \) som har lösningarna \(  \pm \dfrac{\pi}{2}+n\cdot 2\pi, n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \(  \cos^2 x +\sin x -1 =0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Då vi utgår från \(  \sin^2x + \cos^2 x = 1 \Leftrightarrow \cos^2 x = 1-\sin^2x \).</p>
+                <p>Vi får att \(  1-\sin^2 x + \sin x -1 =0 \Leftrightarrow \sin^2 x +\sin x = 0 \Leftrightarrow \sin x(\sin x +1)=0 \).</p>
+                <p>Vi tillämpar nollregeln och får att \(  \sin x = 0 \) då \(  x = n\pi \) och att \(  \sin x +1 = 0  \) då \(  x=\dfrac{\pi}{2} +n\cdot 2\pi \) där \(  n \in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationen \(  \sin^2 x -\cos x =-1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Då vi utgår från \(  \sin^2x + \cos^2 x = 1 \Leftrightarrow \sin^2 x = 1-\cos^2x \).</p>
+                <p>Då får vi att \(  1-\cos^2 x -\cos x =-1 \Leftrightarrow -\cos^2 x -\cos x +2 =0 \Leftrightarrow \cos^2 x +\cos x -2 =0 \).</p>
+                <p>Vi utför substitueringen \(  \cos x = t \) och får \(  t^2+t-2=0 \) som har lösningarna \(  t=\dfrac{-1\pm3}{2} \), \(  t=-2 \) och \(  t=1 \).</p>
+                <p>Då vi substituterar tillbaka får vi att \(  \cos x = -2 \) som saknar lösningar och att \(  \cos x = 1 \Leftrightarrow x = n\cdot 2\pi, n\in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm tangenterna för funktionen \(  f(x)=2\cos x \) som har lutningen 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Eftersom \(  \cos x \) har perioden \(  2\pi \) undersöker vi funktionen i intervallet \(  [0, 2\pi] \).</p>
+              <p>\(  f'(x)=2(-\sin x)=-2\sin x \).</p>
+              <p>Vi söker \(  f'(1)=-2\sin x = -1 \Leftrightarrow \sin x = \dfrac{1}{2} \). Tabell bok ger \(  x = \dfrac{\pi}{6} + n\cdot 2\pi, n\in \mathbb{Z} \). I intervallet \(  [0,2\pi] \) är lösningen \(  \dfrac{\pi}{6} \).</p>
+              <p>Tangentens \(  y \)-koordinat är \(  f(\dfrac{\pi}{6})=2\cos \dfrac{\pi}{6} = 2\cdot \dfrac{\sqrt{3}}{2} = \sqrt{3} \).</p>
+              <p>Tangentens ekvation är \(  y-y_0 = k(x-x_0) \Leftrightarrow y-\sqrt{3}=1(x-\dfrac{\pi}{6}) \Leftrightarrow y= x -\dfrac{\pi}{6}+\sqrt{3} \). Dessa återkommer då vart \(  2\pi \).</p>
+              <p>Alla tangenter är \(  y= x -\dfrac{\pi}{6}+\sqrt{3} + n\cdot 2\pi, n\in \mathbb{Z} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Radien för en halvcirkel är 1. I halvcirkeln är ritat en rektangel så att ena kanten av rektangeln är på halvcirkelns diameter. Vilka dimensioner, längd och bredd, har den rektangel som har den största arean. Arbeta utifrån en vinkel.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="13t">
+                <div class="card card-body answer"> <p><img src="pics/trigunder_1.png" alt="" class="responsivepic400" /></p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Längden av höjden är \(  x=\sin \alpha \) och halva längden är \(  y=\cos \alpha \), \(  \alpha \in ]0, \dfrac{\pi}{2}[ \).</p>
+                <p>Arean är \(  A(\alpha)=\sin \alpha \cdot 2\cos\alpha = 2\sin \alpha \cos \alpha = \sin 2\alpha \).</p>
+                <p>\(  A'(\alpha)=2\cos2\alpha \). \(  A'(\alpha)=0 \) då \(  \alpha = \dfrac{\pi}{4}+n\dfrac{\pi}{4}, n\in \mathbb{Z} \).</p>
+                <p>I intervallet finns punkten \(  \dfrac{\pi}{4} \).</p>
+                <p>Höjden är \(  \sin \dfrac{\pi}{4} = \dfrac{1}{\sqrt{2}} \) och längden är \(  2\cos \dfrac{\pi}{4} = 2\dfrac{1}{\sqrt{2}}=\sqrt{2} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Annas morfar som bor i en stuga mitt i skogen. Till stugan kommer man längs en 4,5 km lång rak skogsstig. Från korsningen av skogsstigen och landsvägen finns en transformator på avståndet 12,5 km. Annas morfar vill ha el till stugan och behöver din hjälp så att det är så billigt för honom som möjligt. Det lokala elbolaget erbjuder att dra el genom skogen och längs med landsvägen. Att dra elkabel genom skogen kostar 20 €/m och att dra längs med landsvägen kostar 8 €/m. Vad kostar det som billigast? Lös uppgiften genom att utnyttja en vinkel.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Då vi kallar sträckan som det skall dras kabel i skogen för \(  x \) är sträckan \(  x=\dfrac{4500}{\cos \alpha} \) och sträckan längs med landsvägen är \(  12500 -4500\tan \alpha \).</p>
+                <p>Funktionen är \(  f(\alpha)=20\cdot \dfrac{4500}{\cos \alpha} + 8(12500-4500\tan \alpha) \). För \(  \alpha \) gäller \(  [0, \dfrac{\pi}{2}[ \) .Härifrån lönar det sig att utnyttja räknare.</p>
+                <p>Nollställena är: 0,41 och 2,73 radianer. Av dessa duger endast 0,41 radianer.</p>
+                <p>Priset är \(  f(0,41)= 182486,48 \text{ €} \approx 182 000 \) euro.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Annas farmor bor på en ö som är 1,5 km väst från fastlandet. Rakt norrut längs med fastlandet finns ett postkontor på avståndet 6,0 km. Annas farmor ror med hastigheten 1,0 km/h och går med hastigheten 2,0 km/h. Bestäm den kortaste tid det tar för henne att föra post till postkontoret. Lös uppgiften genom att utnyttja en vinkel.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="15t">
+                <div class="card card-body answer"> <p>Tiden kan vi uttrycka som \( t=\dfrac{s}{v} \).</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Sträckan som hon ror, \(  x \) är \(  x=\dfrac{1,5}{\cos \alpha} \) och sträckan som hon går är \(  6-1,5\tan \alpha \).</p>
+                <p>Funktionen som ger tiden är \(  t(\alpha)=\dfrac{\dfrac{1,5 \text{ km }}{\cos \alpha}}{1,0 \text{ km/h}} + \dfrac{6-1,5\tan\alpha \text{ km}}{2,0 \text{ km/h}} \) där \(  t \in [0,\dfrac{\pi}{2}[ \).</p>
+                <p>Derivering och sökandet av derivatans nollställen ger ett minimi då \(  \alpha = 0,52 \). \(  t(0,52)= 4,3  \) timmar.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-lightbulb fa-2x level"></i>Fundera på följande tillsammans med en kurskamrat.
+            <ol>
+              <li>Vad är plagiat?</li>
+              <li>Är "plagierande" samma som att "lunta"?</li>
+              <li>Om jag apar efter någons underskrift, plagierar jag då hens underskrift?</li>
+              <li>Om jag delar en idé med någon och hen använder sig av min idé, plagierar hen?</li>
+              <li>Kan en person ha en idé fastän hen inte berättar den vidare?</li>
+              <li>Kan en idé existera fastän man inte berättar den vidare?</li>
+              <li>Tillhör idéer alla eller endast dem som tänker dem?</li>
+              <li>Om jag plagierar en idé av en annan studerade, men hen märker inte det, kan man ändå tala om plagiat?</li>
+              <li>Om jag luntar i ett prov och ingen märker det, är det fråga om plagiat?</li>
+              <li>Är det möjligt att kända vetenskapspersoner har plagierat?</li>
+              <li>Är en vetenskapsperson som blivit fast för plagiat fortfarande en bra vetenskapsperson?</li>
+              <li>Kan en vetenskapsperson ha goda orsaker att plagiera?</li>
+              <li>Är plagiat alltid en allvarlig förseelse?</li>
+            </ol>
+            <p class="source">Källa: Filosofoidaan matematiikasta ja luonnontieteistä; Daniel, Lafourtune, Pallascio, Sykes</p>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="24_harledning.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="26_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

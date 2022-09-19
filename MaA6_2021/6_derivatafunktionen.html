@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Derivatafunktionen</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_forandring.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="7_tangent.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Derivatafunktionen</h1>
+      <section>
+        <div class="theory">
+          <p>Efter att ha undersökt vad som krävs att funktioner är kontinuerliga och bestämt riktingskoefficienter för tangenter till funktioner är vi färdiga att på ett allmänt och teoretiskt sätt fortsätta vår färd mot derivering.
+          <p>Vi tar och börjar se på derivatan och derivatafunktioner.</p>
+          <div class="intro box">
+          <p>Vi tar och undersöker lutningen för tangenten i punkten \(x=1\) för \(f(x)=x^2-1\).</p> </div>
+          <p>Då vi gör som i uppgiften i förra kapitlet anpassar vi in en linje. Det som vi kan göra i appletten nedan är att göra intervallet kortare genom att ändra på värdet för h genom att dra i glidaren.</p>
+          <p>Vad märker du?</p>
+          <h2>Motivering</h2>
+          <p>Då punkterna A och B är tillräckligt nära varandra får vi tangenten för funktionen \(f\) i punkten \(x=1\). Tangentens riktningskoefficient är 2.</p>
+          <div class="geogebra">
+            <iframe height="465px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/2763889/width/536/height/465/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="536px"></iframe>
+          </div>
+          <p>Det som vi nu gör är att se på det på ett allmänt sätt. Det betyder att riktningskoefficienten \(k\) får vi som \(\dfrac{\Delta y}{\Delta x}\).</p>
+          <p>Vi tar nu och gör det helt allmänt och bestämmer ett uttryck för tangentens riktningskoefficent i punkten \(x_0\) för funktionen \(f\). För att bilda en triangel tar vi en punkt på avståndet \(h\) med koordinaterna \((x_0+h,f(h))\).</p>
+          <p><img src="pics/deriv_f_1.png" class=responsivepic400 /></p>
+          <p>Vår triangel har höjden \(f(x_0+h)-f(x_0)\) och bredden \(x_0+h-x_0 = h\).</p>
+          <p>Vi får att \(k=\dfrac{\Delta y}{\Delta x} = \dfrac{f(x_0+h)-f(x_0)}{h}\). När vi gör intervallet kortare och kortare får vi att \(\lim_{h \to 0} \dfrac{f(x_0+h)-f(x_0)}{h}\) som ger oss riktningskoefficienten för tangenten i punkten \(x_0\). Vi talar om att vi har derivatans värde i punkten \(x_0\). Vi betecknar derivatans värde i punkten \(x_0\) som \(f'(x_0)\).</p>
+          <div class="exercise box">
+          <p><strong>Exempel 1</strong> Vi bestämmer derivatans värde i punkten \(x=1\) för funktionen \(f(x)=x^2-1\).</p>
+           <h4>Lösning</h4>
+          <p>Vi får</p> <p>\(\begin{array}{rcl}f'(1) & = & \lim_{h \to 0} \dfrac{f(x_0+h)-f(x)}{h} \\ & = & \lim_{h \to 0} \dfrac{((1+h)^2-1)-(1^2-1)}{h}\\ & = & \lim_{h \to 0} \dfrac{1+2h+h^2-1-0}{h} \\ & = & \lim_{h \to 0} \dfrac{h(2+h)}{h} \\ & = & \lim_{h \to 0} 2+h \\ & = & 2\end{array}\).</p>
+          <p>Derivatans värde i punkten 1 är 2.</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/296477505" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          </div>
+          <div class="exercise box">
+          <p><strong>Exempel 2</strong> Bestäm derivatafunktionen för \(f(x)=x^2-1\) med hjälp av differentialkvoten.</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/296479149" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          </div>
+          <p>Det som vi gjort ovan är att undersöka funktioners derivata med hjälp av definitionen för derivatan. När vi undersöker funktioner är det inte alltid vettigt att varje gång bilda derivatafunktioner via gränsvärde. Det som vi utnyttjar är räkneregler.</p>
+          <div class="summary box">
+          <p>Derivatan av \(x^n\), \(D x^n = n \cdot x^{n-1}\).</p>
+          <p>Beteckningen \(D\) betyder att funktionen skall deriveras. En annan beteckning är \(\dfrac{d}{dx}\). Här får vi reda på mot vilken variabel som vi skall derivera.</p> </div>
+          <p>För att bevisa det behöver i exponentialfunktioner, som kommer i kurs 8.</p>
+          <div class="exercise box">
+          <p><strong>Exempel 3</strong> Derivera \(x^3-2x^2-\dfrac{1}{2}x-4\).</p>
+          <h4>Lösning</h4>
+          <p>Vi får </p>
+          <p> \( \begin{array}{rcl}
+            D x^3-2x^2-\dfrac{1}{2}x-4 & = & 3 \cdot x^{3-1} -2\cdot 2\cdot x^{2-1} -\dfrac{1}{2}\cdot 1 \cdot x^{1-1} - 0 \\
+            & = & 3x^2 -4x -\dfrac{1}{2} \\
+            \end{array} \) </p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/296479684" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Kombinera rätt funktion med rätt derivatafunktion. Välj mellan
+            <div class="grid-container">
+              <div class="grid-item">\(x-1\)</div>
+              <div class="grid-item">\(x^2-1\)</div>
+              <div class="grid-item">\(x^3-1\)</div>
+            </div>
+
+            <table><tr class="MaA6"><th>Funktion</th><th>Derivatafunktion</th></tr>
+              <tr><td></td><td>\(1\)</td></tr>
+              <tr><td></td><td>\(2x\) </td></tr>
+              <tr><td></td><td>\(3x^2\)</td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer"> <table><tr class="MaA6"><th>Funktion</th><th>Derivatafunktion</th></tr>
+                <tr><td>\(x-1\)</td><td>\(1\)</td></tr>
+                <tr><td>\(x^2-1\)</td><td>\(2x\) </td></tr>
+                <tr><td>\(x^3-1\)</td><td>\(3x^2\)</td></tr>
+              </table> </div></div> </li>
+
+          <li>Bestäm derivatans värde i punkten 3 för funktionen \(f(x)=x^2-1\) genom att derivera via formel.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"> <p>\(f&#039;(x)=2x\) och \(f&#039;(3)=2\cdot 3 =6\).</p> </div></div> </li>
+
+          <li>Bestäm derivatans värde i punkten 2 för funktionen \(f(x)=3x^2-x\) genom att derivera via formel.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> \(f&#039;(x)=6x-1\)<p>\(f&#039;(2)=6\cdot 2-1=11\). </div></div> </li>
+
+          <li>Bestäm derivatans värde i punkten 0 för funktionen \(f(x)=x^2-x\) genom att derivera via formel.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\(f&#039;(x)=2x-1\).<p>\(f&#039;(0)=2\cdot 0 -1 =-1\).</p> </div></div> </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\(D(3x^2-1)\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\(D(3x^2-1) = 3\cdot 2 x^{2-1}-0 = 6x\). </p></div></div> </li>
+              <li>\(D(-2x^3+x)\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\(D(-2x^3+x) = -2\cdot 3 x^{3-1}+1x^{1-1} = -6x^2+1\)</p></div></div> </li>
+              <li>\(D(\dfrac{1}{4}x^4-x^2+2)\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5c">
+                  <div class="card card-body answer"><p>\(D(\dfrac{1}{4}x^4-x^2+2) = \dfrac{1}{4}\cdot 4 x^{4-1}-2x^{2-1}+0 = x^3-2x\)</p> </div></div> </li>
+            </ol>
+            </li>
+
+            <li>Bestäm
+              <ol>
+                <li>\( x^3 -3x^2 +6x +9 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"><p>\( D x^3 -3x^2 +6x +9  =  3x^{3-1} -3\cdot 2x^{2-1} +6x^{1-1} = 3x^2-6x+6\)</p></div></div> </li>
+                <li>\( \dfrac{2}{3}(4x^6-6x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6b">
+                <div class="card card-body answer"><p>\( D \dfrac{2}{3}(4x^6-6x) = D\dfrac{8}{3}x^6 - 4x = \dfrac{8}{3}\cdot 6 x^{6-1} - 4\cdot 1 x^{1-1} = 16x^5-4 \)</p>
+                  <p>Eller så kan du derivera som \( D \dfrac{2}{3}(4x^6-6x) = \dfrac{2}{3}D(4x^6-6x) = \dfrac{2}{3}(24x^5-6) = 16x^5-4\).</p>
+                </div></div> </li>
+                <li>\( \dfrac{t-2t^2}{6} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6c">
+                <div class="card card-body answer"><p>\( D\dfrac{t-2t^2}{6} = D (\dfrac{t}{6}-\dfrac{2t^2}{6}) =  \dfrac{1}{6}\cdot 1 t^{1-1} -\dfrac{1}{3}\cdot 2 t^{2-1} = \dfrac{1}{6}-\dfrac{2}{3}t = \dfrac{1-4t}{6} \)</p>
+                <p>Eller så kan du derivera som \( D\dfrac{1}{6}(t-2t^2) = \dfrac{1}{6}D(t-2t^2) = \dfrac{1}{6}(1-4t) \).</p>
+                </div></div> </li>
+              </ol>
+            </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Bestäm derivatans värde i punkten 3 för funktionen \(f(x)=x^2-1\) genom att bilda ett gränsvärde.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="7t">
+              <div class="card card-body answer"> <p>Bilda kvoten \(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h}\) och förenkla. Du skall få samma värde som i uppgiften ovan.</p></div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h} = \\ \lim_{h \to 0} \dfrac{h^2+6h}{h} = \lim_{h \to 0} \dfrac{h(h+6)}{h} = \\ \lim_{h\to 0}h+6 = 6\)</p> </div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Bestäm derivatans värde i punkten 0 för funktionen \(f(x)=x^2-x\) genom att bilda ett gränsvärde.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="8t">
+              <div class="card card-body answer"> <p>Bilda kvoten \(\lim_{h \to 0} \dfrac{(3+h)^2-1-(3^2-1)}{h}\) och förenkla. Du skall få samma värde som i uppgiften ovan.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> \(\lim_{h \to 0 } \dfrac{(0+h)^2-(0+h)-(0^2-0)}{h} = \\ \lim_{h \to 0} \dfrac{h^2-h}{h} = \lim_{h \to 0} \dfrac{h(h-1)}{h} = \\ \lim_{h \to 0}h-1 =-1\) </div></div> </li>
+
+            <li>Kryssa för de rätta alternativen för funktionens derivatafunktion.
+              <table><tr class="MaA6"><th>Påstående</th><th>\(f(x)=x-2\) </th><th>\(f(x)=x-3\)</th><th>\(f(x)=x^2-2\)</th><th>\(f(x)=x^2-3\)</th><th>\(f(x)=x^3-2\)</th><th>\(f(x)=x^3-3\)</th></tr>
+                <tr><td>\(f'(x)=1\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\(f'(x)=2x\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\(f'(x)=3x^2\)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              </table>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9">
+                <div class="card card-body answer">
+                  <table><tr class="MaA6"><th>Påstående</th><th>\(f(x)=x-2\) </th><th>\(f(x)=x-3\)</th><th>\(f(x)=x^2-2\)</th><th>\(f(x)=x^2-3\)</th><th>\(f(x)=x^3-2\)</th><th>\(f(x)=x^3-3\)</th></tr>
+                    <tr><td>\(f'(x)=1\)</td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>\(f'(x)=2x\)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                    <tr><td>\(f'(x)=3x^2\)</td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td><i class="fas fa-check"></i></td></tr>
+                  </table>
+                 </div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Inom fysiken utnyttjar man aktivt derivator. Bestäm följande derivator.
+              <ol>
+                <li>\(\dfrac{d}{dt}(x_0+v_0t +\dfrac{1}{2}at^2)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10a">
+                <div class="card card-body answer">\(\dfrac{d}{dt}(x_0+v_0t +\dfrac{1}{2}at^2) = v_0 +\dfrac{1}{2}2at = v_0 + at\) </div></div> </li>
+                <li>\(\dfrac{d}{dt}(Fv)\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10b">
+                <div class="card card-body answer">\(\dfrac{d}{dt}(Fv) = \dfrac{d}{dt}(\dfrac{Fs}{t}) = \dfrac{d}{dt}(Fst^{-1}) = Fs(-1)t^{-2} = \dfrac{-Fs}{t^2}\) </div></div> </li>
+             </ol></li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>I vilken punkt har derivatan för funktionen \(f(x)=\dfrac{1}{2}x^2-2x\) värdet 2?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="11t">
+              <div class="card card-body answer"> Derivera och undersök när derivatan har värdet 2. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"><p> \(f'(x)=x-2\). Vi löser ekvationen \(f'(x)=2\), alltså \(x-2=2\) som har lösningen \(x=4\)</p> </div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>I vilken \(x\)-koordinat har derivatan för funktionen \(f(x)=\dfrac{1}{3}x^3-2x^2-4\) värdet 0?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="12t">
+              <div class="card card-body answer"> Derivera och undersök när derivatan har värdet 0. </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"><p>\(f’(x)=x^2-4x\). Vi löser ekvationen \(x^2-4x=0\), som har rötterna \(x=0\) och \(x=4\).</p></div></div> </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="5_forandring.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_tangent.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

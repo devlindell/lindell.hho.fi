@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>17. Derivatan av rotfunktionen</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="16_rotfunktionen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="18_till_rotfunkt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>17. Derivatan av rotfunktionen</h1>
+      <section>
+        <div class="theory">
+          <p>Derivering av rotfunktionen baserar sig på användningen av <a href=“#” target="_blank">rationella exponenter</a> och <a href=“#” target="_blank">derivering av potensen av en funktion</a>.</p>
+          <p>Rationella exponenter handlade om att vi kan uttrycka</p>
+          <ul>
+            <li>\( \sqrt[n]{x} \) som \( x^{\frac{1}{n}} \),</li>
+            <li>\( \sqrt[n]{x^m} \) som \( x^{\frac{m}{n}} \) och</li>
+            <li>\( (\sqrt[n]{x})^m \) som \( x^{\frac{m}{n}} \).</li>
+          </ul>
+          <p>Vidare har vi från algebran att \( x^{-n} =\dfrac{1}{x^n} \).</p>
+          <p>När vi deriverade potensfunktioner fick vi att \( Df^n = n \cdot f^{n-1}\cdot f' \).</p>
+          <p>När vi Deriverar rotfunktioner använder vi oss av allt detta.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Derivera \( \sqrt{2x} \).</p>
+            <h4>Lösning</h4>
+            <p>Vi skriver \( \sqrt{2x} \) som \( (2x)^{\frac{1}{2}} \).</p>
+            <p>\( D(2x)^{\frac{1}{2}} = \dfrac{1}{2} \cdot (2x)^{\frac{1}{2}-1}\cdot 2 = 1\cdot (2x)^{-\frac{1}{2}} = \dfrac{1}{\sqrt{2x}} \).</p>
+            <div class="video">
+            <iframe width="640" height="564" src="https://player.vimeo.com/video/327660331" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+          </div>
+        </div>
+        <div class="exercise box">
+          <p><strong>Exempel 2</strong> Derivera funktionen \( x\sqrt{x} \).</p>
+          <h4>Lösning</h4>
+          <p>Vi skriver \( x\sqrt{x}=x\cdot x^{\frac{1}{2}}=x^{1+\frac{1}{2}}=x^{\frac{3}{2}} \).</p>
+          <p>Vi får att \( Dx^{\frac{3}{2}} = \dfrac{3}{2}\cdot x^{\frac{3}{2}-1}\cdot 1 = \dfrac{3}{2} x^{\frac{1}{2}} = \dfrac{3}{2} \sqrt{x} \).</p>
+          <div class="video">
+          <iframe width="640" height="564" src="https://player.vimeo.com/video/327660660" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+        </div>
+      </div>
+      <div class="exercise box">
+        <p><strong>Exempel 3</strong> Derivera funktionen \( \dfrac{1}{2x\sqrt{x}} \).</p>
+        <h4>Lösning</h4>
+        <p>Vi skriver \( \dfrac{1}{2x\sqrt{x}} \) som \( \dfrac{1}{2}\cdot \dfrac{1}{x\sqrt{x}} =\dfrac{1}{2}\cdot \dfrac{1}{x\cdot x^{\frac{1}{2}}} =\dfrac{1}{2}\cdot \dfrac{1}{x^{\frac{3}{2}}}=\dfrac{1}{2}x^{-\frac{3}{2}} \).</p>
+        <p>Vi får att \( D\dfrac{1}{2}x^{-\frac{3}{2}} = \dfrac{1}{2}(-\dfrac{3}{2})x^{-\frac{3}{2}-1}\cdot 1 = -\dfrac{3}{4}x^{-\frac{5}{2}} = -\dfrac{3}{4x^{\frac{5}{2}}} = -\dfrac{3}{4\sqrt{x^5}} = -\dfrac{3}{4x^2\sqrt{x}} \).</p>
+      </div>
+      <div class="exercise box">
+        <p><strong>Exempel 4</strong> Derivera funktionen \( \sqrt{5-x^2} \).</p>
+        <h4>Lösning</h4>
+        <p>Vi skall bestämma \( D\sqrt{5-x^2} = D(5-x^2)^{\frac{1}{2}}=\dfrac{1}{2}(5-x^2)^{\frac{1}{2}-1}\cdot(-2x) = -x(5-x^2)^{-\frac{1}{2}}=-\dfrac{x}{\sqrt{5-x^2}} \).</p>
+      </div>
+      <div class="exercise box">
+        <p><strong>Exempel 5</strong> Bestäm för funktionen \( f(x)=\sqrt{x+1} \) tangenten då \( x=1 \).</p>
+        <h4>Lösning</h4>
+        <p>Vi börjar med att derivera, \( D\sqrt{x+1} = D(x+1)^{\frac{1}{2}} = \dfrac{1}{2}(x+1)^{\frac{1}{2}-1}\cdot 1 = \dfrac{1}{2\sqrt{x+1}} \).</p>
+        <p>Riktningskoefficienten har värdet, \( f'(1)=\dfrac{1}{2\sqrt{1+1}}=\dfrac{1}{2\sqrt{2}} \).</p>
+        <p>Tangenten går genom punkten \( 1 \) och \( f(1)=\sqrt{1+1}=\sqrt{2} \).</p>
+        <p>Ekvationen för en linje är, \( y-y_0=k(x-x_0) \). Tangentens ekvation är</p>
+        <p> \( \begin{array}{rll} y-\sqrt{2}= & \dfrac{1}{2\sqrt{2}}(x-1)\\ \\ y= & \dfrac{1}{2\sqrt{2}}x-\dfrac{1}{2\sqrt{2}}+^{2\sqrt{2})}\sqrt{2} \\ \\ = &  \dfrac{1}{2\sqrt{2}}x+\dfrac{-1+4}{2\sqrt{2}} \\ \\ = &  \dfrac{x}{2\sqrt{2}}+\dfrac{3}{2\sqrt{2}}  & \text{ eller som }\\ \\ = &  \dfrac{1}{2\sqrt{2}}(x+3).\\ \end{array} \)</p>
+        <p>Tangentens ekvation är \( y=\dfrac{1}{2\sqrt{2}}(x+3) \).</p>
+      </div>
+      <div class="exercise box">
+        <p><strong>Exempel 6</strong> Bestäm största och minsta värde för funktionen \( f(x)=\sqrt{4-x^2}+x \).</p>
+        <h4>Lösning</h4>
+        <p>Vi börjar med att bestämma då \( f \) är definierad då \( 4-x^2\geq 0 \Leftrightarrow x^2 \leq 4 \Leftrightarrow -2\leq x \leq 2 \).</p>
+        <p>Sedan tar vi och skriver om \( f(x)=\sqrt{4-x^2}+x=(4-x^2)^{\frac{1}{2}}+x \).</p>
+        <p>Derivatafunktionen är \( f'(x)=\dfrac{1}{2}(4-x^2)^{\frac{1}{2}-1}(-2x)+1=\dfrac{-x}{\sqrt{4-x^2}}+1 \).</p>
+        <p>Extremvärden hittar vi då \( f'(x)=0 \):</p>
+        <p>\( \begin{array}{rcll} \dfrac{-x}{\sqrt{4-x^2}}+1  & = &  0 \\ \dfrac{-x}{\sqrt{4-x^2}} & = & -1  & \mid \cdot \sqrt{4-x^2}\\ -x  &  =  &  -\sqrt{4-x^2} \\ x  &  =  &  \sqrt{4-x^2}  & \mid (\quad)^2 \\ x^2  & = &  4-x^2 \\ 2x^2  &  =  &  4 \\ x^2  & = &  2 \\ x  & = &  \pm\sqrt{2}\\ \end{array} \)</p>
+        <p>Eftersom vi har kvadrerat, testar vi rötterna: \( \dfrac{-\sqrt{2}}{\sqrt{4-(\sqrt{2})^2}}+1 = \dfrac{-\sqrt{2}}{\sqrt{2}}+1 = 0 \) och \( \dfrac{-(-\sqrt{2})}{\sqrt{4-(-\sqrt{2})^2}}+1 = \dfrac{\sqrt{2}}{\sqrt{2}}+1 =2 \not=0 \).</p>
+        <p>Alltså \( f'(x)=0 \) då \( x=\sqrt{2} \).</p>
+        <p>Vi finner största och minsta värdet för funktionen då \( f'(x)=0 \) eller i intervallets ändpunkter.</p>
+        <p>\( f(-2)= \sqrt{4-(-2)^2}-2 = -2 \) </p>
+        <p>\( f(\sqrt{2})= \sqrt{4-(\sqrt{2})^2}+\sqrt{2} = \sqrt{2}+\sqrt{2}=2\sqrt{2} \)</p>
+        <p>\( f(2)= \sqrt{4-2^2}+2 = 2 \).</p>
+        <p>Största värdet är \( 2\sqrt{2} \).</p>
+      </div>
+    </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><p>Kombinera rätt rot med rätt sätt att skriva som allmän potens.</p>
+            <p>Välj bland följande rötter:
+              <div class="grid-container">
+                <div class="grid-item">\( \sqrt{x} \)</div>
+                <div class="grid-item">\( \sqrt[2]{x^3} \)</div>
+                <div class="grid-item">\( \sqrt[3]{x} \)</div>
+                <div class="grid-item">\( \sqrt[3]{x^2} \)</div>
+                <div class="grid-item">\( (\sqrt[3]{x})^4 \)</div>
+                <div class="grid-item">\( \sqrt[4]{x} \)</div>
+                <div class="grid-item">\( \sqrt[4]{x^3} \)</div>
+              </div>
+              </p>
+
+            <table>
+              <tr class="MaA8"><th>Rotuttryck</th><th>Allmän potens</th></tr>
+              <tr><td></td><td>\( =x^{\frac{1}{2}} \)</td></tr>
+              <tr><td></td><td>\( =x^{\frac{1}{3}} \)</td></tr>
+              <tr><td></td><td>\( =x^{\frac{1}{4}} \)</td></tr>
+              <tr><td></td><td>\( =x^{\frac{3}{2}} \)</td></tr>
+              <tr><td></td><td>\( =x^{\frac{2}{3}} \)</td></tr>
+              <tr><td> </td><td>\( =x^{\frac{3}{4}} \)</td></tr>
+              <tr><td> </td><td>\( =x^{\frac{4}{3}} \)</td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <table>
+              <tr class="MaA8"><th>Rotuttryck</th><th>Allmän potens</th></tr>
+              <tr><td>\( \sqrt{x} \)</td><td>\( =x^{\frac{1}{2}} \)</td></tr>
+              <tr><td>\( \sqrt[3]{x} \)</td><td>\( =x^{\frac{1}{3}} \)</td></tr>
+              <tr><td>\( \sqrt[4]{x} \)</td><td>\( =x^{\frac{1}{4}} \)</td></tr>
+              <tr><td>\( \sqrt[2]{x^3} \)</td><td>\( =x^{\frac{3}{2}} \)</td></tr>
+              <tr><td>\( \sqrt[3]{x^2} \)</td><td>\( =x^{\frac{2}{3}} \)</td></tr>
+              <tr><td>\( \sqrt[4]{x^3} \) </td><td>\( =x^{\frac{3}{4}} \)</td></tr>
+              <tr><td>\( (\sqrt[3]{x})^4 \) </td><td>\( =x^{\frac{4}{3}} \)</td></tr>
+            </table> </div></div>
+          </li>
+
+          <li>Derivera \( \sqrt{5x} \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"> <p>\( D\sqrt{5x}=D(5x)^{\frac{1}{2}}=\dfrac{1}{2}(5x)^{\frac{1}{2}-1}\cdot 5 = \dfrac{5}{2\sqrt{5x}} = \dfrac{\sqrt{5}}{2\sqrt{x}} \).</p> </div></div>
+          </li>
+
+
+
+          <li>Derivera \( \sqrt{x^2-3} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>\( D\sqrt{x^2-3}=D(x^2-3)^{\frac{1}{2}}=\dfrac{1}{2}(x^2-3)^{\frac{1}{2}-1}(2x) = x(x^2-3)^{-\frac{1}{2}} = \dfrac{x}{\sqrt{x^2-3}} \).</p> </div></div>
+          </li>
+
+          <li>Derivera \( \sqrt{2x^2-1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( D\sqrt{2x^2-1}=D(2x^2-1)^{\frac{1}{2}}=\dfrac{1}{2}(2x^2-1)^{\frac{1}{2}-1}(4x) = 2x(2x^2-1)^{-\frac{1}{2}} = \dfrac{2x}{\sqrt{2x^2-1}} \).</p> </div></div>
+          </li>
+
+          <li>Derivera \( \sqrt{3x^3+x^2-1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( D\sqrt{3x^3+x^2-1}=D(3x^3+x^2-1)^{\frac{1}{2}}=\dfrac{1}{2}(3x^3+x^2-1)^{-\frac{1}{2}}(9x^2+2x) = \dfrac{9x^2+2x}{2\sqrt{3x^3+x^2-1}} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Derivera \( x\sqrt{2x} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\( Dx\sqrt{2x}=D(x\cdot (2x)^{\frac{1}{2}}) =D(x\cdot 2^{\frac{1}{2}}\cdot x^{\frac{1}{2}} )= D(2^{\frac{1}{2}}\cdot x^{\frac{3}{2}})= 2^{\frac{1}{2}}Dx^{\frac{3}{2}} = 2^{\frac{1}{2}}\cdot\dfrac{3}{2}x^{\frac{3}{2}-1}\cdot 1 = \dfrac{3\sqrt{2}\sqrt{x}}{2}=\dfrac{3\sqrt{x}}{\sqrt{2}}=3\sqrt{\dfrac{x}{2}} \).</p>
+                <p>Eller som</p>
+                <p>\( Dx\sqrt{2x} = D(x(2x)^{\frac{1}{2}}) \) som produkten av två funktioner.</p>
+                <p>\( \begin{array}{rcl} D(x(2x)^{\frac{1}{2}})  &  =  &  xD(2x)^{\frac{1}{2}}+(2x)^{\frac{1}{2}}Dx \\  &  =  &  x \cdot \dfrac{1}{2}(2x)^{-\frac{1}{2}}\cdot 2 + (2x)^{\frac{1}{2}} \cdot 1 \\  & = &  x (2x)^{-\frac{1}{2}}+(2x)^{\frac{1}{2}} \\  & = &  \dfrac{x}{\sqrt{2x}}+\sqrt{2x} \\  & = &  \dfrac{x}{\sqrt{2x}}+\dfrac{2x}{\sqrt{2x}} \\  & = &  \dfrac{3x}{\sqrt{2x}} \\  & = &  \dfrac{3\sqrt{x}}{\sqrt{2}} \\  & = &  3\sqrt{\dfrac{x}{2}} \end{array} \)</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Derivera \( \dfrac{1}{2x\sqrt{x}} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\( D\dfrac{1}{2x\sqrt{x}} = D(\dfrac{1}{2}\cdot\dfrac{1}{x\sqrt{x}})=\dfrac{1}{2}D\dfrac{1}{x\cdot x^{\frac{1}{2}}} = \dfrac{1}{2}D\dfrac{1}{x^{\frac{3}{2}}} = \dfrac{1}{2}Dx^{-\frac{3}{2}} = \dfrac{1}{2}(-\dfrac{3}{2})x^{-\frac{3}{2}-1}\cdot 1 =-\dfrac{3}{4}x^{-\frac{5}{2}} = -\dfrac{3}{4x^2\sqrt{x}} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för funktionen \( f(x)=\sqrt{x-1} \) då \( x=5 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\( f \) är definierad då \( x-1\geq 0 \Leftrightarrow x\geq 1 \).</p>
+                <p>\( f(x)=\sqrt{x-1}=(x-1)^{\frac{1}{2}} \) och \( f'(x)=\dfrac{1}{2}(x-1)^{-\frac{1}{2}}\cdot1 = \dfrac{1}{2\sqrt{x-1}} \).</p>
+                <p>Tangentens riktningskoefficent har värdet \( f'(5)= \dfrac{1}{2\sqrt{5-1}}=\dfrac{1}{4} \).</p>
+                <p>Linjen som går genom \( 5 \), \( f(5)=\sqrt{5-1}=2 \) och vars riktningskoefficent är \( \dfrac{1}{4} \) har ekvationen \( y-2=\dfrac{1}{4}(x-5) \Leftrightarrow y=\dfrac{1}{4}x+\dfrac{3}{4} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för funktionen \( f(x)=x\sqrt{x} \) som har riktningskoefficienten \( 1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Funktionen \( f \) är definierad då \( x\geq 0 \).</p>
+                <p>\( f(x)=x\sqrt{x}=x\cdot x^{\frac{1}{2}}=x^{\frac{3}{2}} \).</p>
+                <p>\( f'(x)=\dfrac{3}{2}x^{\frac{3}{2}-1}\cdot 1 = \dfrac{3\sqrt{x}}{2} \).</p>
+                <p>Den \( x \)-koordinat där tangenten har riktningskoefficienten 1 får vi genom att lösa ekvationen \( f'(x)=1 \).</p>
+                <p>\( \begin{array}{rcll} \dfrac{3\sqrt{x}}{2}  &  =  &  1  &  \mid \cdot \dfrac{2}{3}\\ \sqrt{x}  &  =  &  \dfrac{2}{3}  &  \mid (\quad)^2\\ \\ x  &  =  &  \dfrac{4}{9}.\\ \end{array} \)</p>
+                <p>\( x \)-koordinaten är \( \dfrac{4}{9} \), \( y \)-koordinaten är \( f(\dfrac{4}{9})= \dfrac{8}{27} \) och riktningskoefficienten har värdet 1.</p>
+                <p>Ekvationen för tangenten är \( y-\dfrac{8}{27}=1(x-\dfrac{4}{9}) \) som vi skriver som \( y=x-\dfrac{4}{27} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i><p>Placera uträkningarna i rätt ordning så att uträkningen är logisk och korrekt.</p>
+            <p>Bestäm största och minsta värde för \( f(x)=\sqrt{4-x^2} \).</p>
+            <p>Välj bland följande uträkningar:
+              <div class="grid-container">
+                <div class="grid-item"><p>Definitionsmängden är \( 4-x^2\geq 0 \).</p> <p>Alltså \( -2\leq x \leq 2 \).</p></div>
+                <div class="grid-item">Derivatafunktionen är \( f’(x)=\dfrac{-x}{\sqrt{4-x^2}} \).</div>
+                <div class="grid-item">En funktion får sina största och minsta värden då \( f’(x)=0 \) eller i intervallets ändpunkter.</div>
+                <div class="grid-item"><p>\( f(-2)=0 \)</p> <p>\( f(0)=2 \)</p> <p>\( f(2)=0 \)</p></div>
+                <div class="grid-item">\( f’(x)=0 \) då \( x=0 \).</div>
+                <div class="grid-item">\( f’(x)=0 \) då täljaren får värdet noll.</div>
+                <div class="grid-item"><p>Största värdet är 2.</p> <p>Minsta värdet är 0.</p></div>
+              </div>
+
+            </p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA8"><th>Uträkning</th><th>Ordning</th></tr>
+                  <tr><td><p>Definitionsmängden är \( 4-x^2\geq 0 \).</p> <p>Alltså \( -2\leq x \leq 2 \).</p> </td><td>(1.)</td></tr>
+                  <tr><td>Derivatafunktionen är \( f’(x)=\dfrac{-x}{\sqrt{4-x^2}} \).</td><td>(2.)</td></tr>
+                  <tr><td>\( f’(x)=0 \) då täljaren får värdet noll.</td><td>(3.)</td></tr>
+                  <tr><td>\( f’(x)=0 \) då \( x=0 \).</td><td>(4.)</td></tr>
+                  <tr><td>En funktion får sina största och minsta värden då \( f’(x)=0 \) eller i intervallets ändpunkter.</td><td>(5.)</td></tr>
+                  <tr><td><p>\( f(-2)=0 \)</p> <p>\( f(0)=2 \)</p> <p>\( f(2)=0 \)</p> </td><td>(6.)</td></tr>
+                  <tr><td><p>Största värdet är 2.</p> <p>Minsta värdet är 0.</p> </td><td>(7.)</td></tr>
+                </table>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Derivera funktionen \( f(x)=\sqrt[4]{x^2-x} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>\( D\sqrt[4]{x^2-x} = (x^2-x)^{\frac{1}{4}} = \dfrac{1}{4}(x^2-x)^{\frac{1}{4}-1}(2x-1) = \dfrac{1}{4}(x^2-x)^{-\frac{3}{4}}(2x-1) = \dfrac{2x-1}{4\sqrt[4]{(x^2-x)^3}} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x)=\sqrt{-x^2-2x} \). För vilka värden på \( x \) byter \( f \) riktning?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>\( f(x)=\sqrt{-x^2-2x} = (-x^2-2x)^{\frac{1}{2}} \).</p>
+                <p>\( f'(x)=\dfrac{1}{2}(-x^2-2x)^{-\frac{1}{2}}\cdot (-2x-2) = \dfrac{-2x-2}{2\sqrt{-2x^2-2x}} \).</p>
+                <p>\( f'(x)=0 \) då täljaren får värdet noll, alltså \( -2x-2 =0 \Leftrightarrow x=-1 \).</p>
+                <p>Funktionen byter riktning då \( x=-1 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm tangenten för funktionen \( f(x)=\sqrt{1-x^2} \) som har riktningsvinkeln \( 60^{\circ} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Funktionen \( f \) är definierad då \( 1-x^2\geq 0 \Leftrightarrow x^2 \leq 1 \Leftrightarrow -1\leq x \leq 1 \).</p>
+                <p>Att riktningsvinken har värdet \( 60^{\circ} \) betyder att riktningskoefficienten har värdet \( \tan 60^{\circ} = \sqrt{3} \).</p>
+                <p>Funktionen \( f \) kan vi skriva som \( f(x)=(1-x^2)^{\frac{1}{2}} \). Derivatafunktioen är \( f'(x)=\dfrac{1}{2}(1-x^2)^{\frac{1}{2}-1}(-2x) = \dfrac{-x}{\sqrt{1-x^2}} \).</p>
+                <p>Vi söker den \( x \)-koordinat där riktningskoefficienten har värdet \( \sqrt{3} \) genom att lösa ekvationen \( f'(x)=\sqrt{3} \).</p>
+                <p>\( \begin{array}{rcll} \dfrac{-x}{\sqrt{1-x^2}}  &  =  &  \sqrt{3}  & \mid (\quad)^2\\\ \dfrac{x^2}{1-x^2}  &  =  &  3  &  \mid \cdot (1-x^2) \\ x^2  &  =  &  3(1-x^2) \\ x^2  &  =  &  3-3x^2 \\ 4x^2  &  =  &  3 \\ x^2  &  =  &  \dfrac{3}{4} \\ x  & = &  \pm\sqrt{\dfrac{3}{4}} = \pm\dfrac{\sqrt{3}}{2}.\\ \end{array} \)</p>
+                <p>Eftersom vi har kvadrerat rötter måste vi testa rötterna, vi märker då att den enda roten som duger är \( x=-\dfrac{\sqrt{3}}{2} \).</p>
+                <p>\( x \)-koordinaten är \( -\dfrac{\sqrt{3}}{2} \), \( y \)-koordinaten är \( f(-\dfrac{\sqrt{3}}{2})= \dfrac{1}{2} \) och riktningskoefficienten är \( \sqrt{3} \). Tangenten har ekvationen \( y-\dfrac{1}{2}=\sqrt{3}(x+\dfrac{\sqrt{3}}{2}) \) som vi skriver som \( y=\sqrt{3}x+2 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm största och minsta värdet för funktionen \( f(x)=\dfrac{x}{\sqrt{x-2}} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Funktionen är definierad då \( x-2 >  0 \Leftrightarrow x >  2 \).</p>
+                <p>Vi skriver \( f \) som \( x(x-2)^{-\frac{1}{2}} \) och deriverar \( f'(x)= 1(x-2)^{-\frac{1}{2}}-\dfrac{1}{2}(x-2)^{-\frac{3}{2}}\cdot 1 \cdot x = \dfrac{x-4}{2(x-2)^{\frac{3}{2}}} \).</p>
+                <p>Vi undersöker täljaren och nämnaren skilt. För nämnaren gäller \( x-4=0 \Leftrightarrow x=4 \) och för nämnaren \( 2(x-2)^{\frac{3}{2}}=0 \), som sker då \( x-2=0 \Leftrightarrow x=2 \).</p>
+                <p>För nämnaren gäller att \( 2(x-2)^{\frac{3}{2}} > 0 \) då \( x > 2 \).</p>
+                <p>Vi gör ett teckenschema:</p>
+                <p>\( \begin{array}{l|cccc}  & 2 &   &  4  &  \\ \hline \textrm{täljaren: } x-4  &  -  &  - &  0  &  + \\ \textrm{nämnaren: } 2(x-2)^{\frac{3}{2}}  &  0  &  +  &  +  &  + \\ \textrm{kvoten: } f'(x)  &  | &  -  &  0  &  + \\ f(x)  & | &  \searrow  &   &  \nearrow \\  &   &   &  \textrm{minimi} \\ \end{array} \)</p>
+                <p>Vi har ett minsta värde i \( x=4 \), det minsta värdet för funktionen är \( f(4)= 2\sqrt{2} \). Funktionen saknar ett lokalt största värde.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x)=\sqrt{x}-\sqrt{x-1} \) är strängt avtagande.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Funktionen \( f \) är definierad då \( x-1 \geq 0 \Leftrightarrow x\geq \).</p>
+                <p>Vi skriver \( f \) som \( x^{\frac{1}{2}}-(x-1)^{\frac{1}{2}} \) och deriverar, \( f'(x)=\dfrac{1}{2}x^{-\frac{1}{2}}-\dfrac{1}{2}(x-1)^{-\frac{1}{2}}\cdot 1 = \dfrac{1}{2\sqrt{x}}-\dfrac{1}{2\sqrt{x-1}} \).</p>
+                <p>Vi söker punkter där funktionen byter riktning genom att lösa ekvationen \( f'(x)=0 \).</p>
+                <p>\( \begin{array}{rcll} \dfrac{1}{2\sqrt{x}}-\dfrac{1}{2\sqrt{x-1}}  & = &  0\\ \dfrac{1}{2\sqrt{x}} & = & \dfrac{1}{2\sqrt{x-1}} \\ 2\sqrt{x-1}  &  =  &  2\sqrt{x}  &  \textrm{ som betyder att, }\\ x-1  & = &  x \\ 0x  & = &  1  & \textrm{ som aldrig uppfylls.}\\ \end{array} \)</p>
+                <p>\( f'(x) \) saknar nollsälle och \( f'(2)=\dfrac{1}{2\sqrt{2}}-\dfrac{1}{2\sqrt{2-1}}=\dfrac{1}{4}(\sqrt{2}-2)  <  0 \). Eftersom derivatafunktionen alltid är negativ är funktionen alltid strängt avtagande.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att \( \sqrt{1 + x} \geq 1 + \dfrac{x}{2} - \dfrac{x^2}{8} \) i intervallet \( [0, \infty [ \). För vilket värde på variabeln gäller likheten?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="16t">
+              <div class="card card-body hint"> <p>Skapa ett förhållande till noll, inför en funktion och visa att funktionen alltid är positiv. Likheten kommer du åt via en ekvation.</p>
+              <p>Eller så deriverar du två gånger och visar att andra derivatan är positiv i intervallet.</p>
+              </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16">
+              <div class="card card-body answer"> <p>Vi bildar förhållandet \( \sqrt{1 + x} - 1 - \dfrac{x}{2} + \dfrac{x^2}{8} \geq 0 \).</p>
+                <p>Vi visar att funktionen \( f(x) = \sqrt{1 + x} - 1 - \dfrac{x}{2} + \dfrac{x^2}{8} \) är positiv.</p>
+                <p>Derivatafunktionen \( f'(x) = \dfrac{1}{2\sqrt{1+x}} - \dfrac{1}{2} + \dfrac{1}{4}x  = \dfrac{1}{4} \cdot \dfrac{x \sqrt{x + 1} - 2 \sqrt{x + 1} + 2}{\sqrt{x + 1}} \). (Förläng med den gemensamma nämnaren.)</p>
+                <p>Derivatans nollställe, \( f'(x) = 0 \) är \( x = 0 \). Se till att du löser ekvationen.</p>
+                <p>Då \( f'(1) = \dfrac{1}{4}(\sqrt{2}-1) \approx 0,1035\ldots \). Betyder det det att \( f(x) \) är strängt växande i intervallet.</p>
+                <p>Eller via andra derivatan, \( f''(x) = \dfrac{1}{4} \cdot \dfrac{\sqrt{x + 1} (x + 1) - 1}{\sqrt{x + 1} (x + 1 )} \). Tecknet för andra derivatan är \( f''(1) = \dfrac{1}{16}(-\sqrt{2} + 4 ) \approx 0,1616\ldots \). Eftersom andra derivatan är positiv i intervallet är \( f(x) \) strängt växande.</p>
+                <p>Likheten får du via ekvationen \( \sqrt{1 + x} = 1 + \dfrac{x}{2} - \dfrac{x^2}{8} \). Då \( x = 0 \).</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="16_rotfunktionen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="18_till_rotfunkt.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

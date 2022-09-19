@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>13. Derivatan av potensen av en funktion</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="12_derivprod.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="14_derivkvot.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>13. Derivatan av potensen av en funktion</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi undersöker hur kvadraten och kubiken för funktionen \( f \):s derivata ser ut.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292996533" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="summary box">
+            <p>När vi har potensfunktioner som är upphöjt till något kan vi derivera dem som \( D f(x)^n = nf(x)^{n-1}\cdot f'(x) \).</p>
+            <p>Denna regel går också under namnet kedjeregeln.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
+            <div class="video"><iframe src="https://player.vimeo.com/video/292989938" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Låt \( f(x)= x^2(2x-1)^4 \). Bestäm \( f'(1) \) och de punkter där funktionen byter riktning.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292989785" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm
+            <ol>
+              <li>\( D(x^2-1 )^{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( D(x^2-1 )^{10} = 10(x^2-1)^9 \cdot 2x = 20x(x^2-1)^9 \)</p></div></div> </li>
+              <li>\( D(2x+4 )^{13} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( D(2x+4 )^{13}=13(2x+4)^{12} \cdot 2 = 26(2x+4)^{12} \)</p></div></div> </li>
+              <li>\( D(3x-1)^4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( D(3x-1)^4 =4(3x-1)^3 \cdot 3 = 12(3x-1)^3\)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>\( D(x-1 )^{2015} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( 2015(x-1)^{2014} \cdot 1= 2015(x-1)^{2014} \)</p></div></div> </li>
+              <li>\( D( x^2-1)^{2015} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( 2015(x^2-1)^{2014} \cdot 2x = 4030x(x^2-1)^{2014} \)</p></div></div> </li>
+              <li>\( D( -x^2+1)^{2015} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( 2015(-x^2+1)^{2014} \cdot -2x = -4030x(-x^2+1)^{2014} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Låt \( f(x) = (x^2-3x)^4 \).
+            <ol>
+              <li>Bestäm nollställena för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Nollställena är de punkter då \( f(x)=0 \).</p>
+                <p>Alltså \( (x^2-3x)^4 = 0 \). Det räcker att undersöka \( x^2-3x=0 \), alltså \( x(x-3)=0 \).</p>
+                <p>Det sker då \( x = 0 \) eller då \(x-3 = 0 \), alltså då \( x=3 \). </p>
+              </div></div> </li>
+              <li>Bestäm derivatans nollställen <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( f'(x) = 4(x^2-3x)^3(2x-3) \).</p>
+                <p>Derivatans nollställen, \( 4(x^2-3x)^3(2x-3) = 0 \). Vi utnyttjar nollregeln, \( x^2-3x=0 \) eller \( 2x-3=0 \).</p>
+                <p>Derivatans nollställen är \( x_1 = 0\), \( x_2 = \dfrac{3}{2} \) och \( x_3 = 3\).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Grafen av derivatafunktionen \( f'(x) \) ser du i bilden nedan.
+            <p><img src="pics/11_3.png" class="responsivepic400" /></p>
+            <p>Vad kan du berätta om funktionen \( f \)?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.01" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.01">
+              <div class="card card-body answer"> <p>Derivatafunktionen har nollstället \( x = 1 \).</p>
+              <p>I intervallen \( x < 1 \) är \( f' \) negativ, då är \( f \) avtagande.</p>
+              <p>I intervallet \( x > 1 \)  är \( f' \) positiv, då är \( f \) växande.</p>
+              <p>Vi vet att funktionen är avtagande och vid \( x = 1 \) byter funktionen riktning och är växande.</p>
+              <p>Eftersom \( f' \) är av tredje grad, är \( f \) minst av fjärde grad. </p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Grafen av derivatafunktionen \( f'(x) \) ser du i bilden nedan.
+            <p><img src="pics/11_4.png" class="responsivepic400" /></p>
+            <p>Vad kan du berätta om funktionen \( f \)?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.1">
+              <div class="card card-body answer"> <p>Derivatafunktionen har nollställena \( x = 0 \), \( x = 1 \) och \( x = 2 \). Dessutom är punkterna \( x = 0 \) och \( x = 2 \) punkter där vi har ett dubbelnollställe.</p>
+              <p>I intervallen \( x < 0 \) och \( 0 < x < 1 \) är \( f' \) negativ, då är \( f \) avtagande.</p>
+              <p>I intervallet \( 1 < x < 2 \) och \( x > 2 \)  är \( f' \) positiv, då är \( f \) växande.</p>
+              <p>Vi vet att funktionen är avtagande, vid \( x = 0 \) har vi en terasspunkt och sedan fortsätter funktionen som avtagande. Vid \( x = 1 \) byter funktionen riktning, är växande, och vid \( x = 2 \) har vi en tresspunkt.</p>
+              <p>Eftersom \( f' \) är av tredje grad, har 2 st dubbelnollställen är \( f \) minst av sjätte grad. </p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Grafen av derivatafunktionen \( f'(x) \) ser du i bilden nedan.
+            <p><img src="pics/11_5.png" class="responsivepic400" /></p>
+            <p>Vad kan du berätta om funktionen \( f \)?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.2">
+              <div class="card card-body answer"> <p>Eftersom derivatafunktionen har nollställena \( x = 0 \), \( x = \dfrac{3}{2} \) och \( x = 3 \) och går från positiv till negativ eller negativ till positiv byter funktionen \( f \) riktning där.</p>
+              <p>Då \( x < 0 \) och \( \dfrac{3}{2} < x < 3 \)  är \( f' \) negativ, då är \( f \) avtagande.</p>
+              <p>I intervallet \( 0 < x < \dfrac{3}{2} \) och \( x > 3 \) är \( f' \) positiv, då är \( f \) växande.</p>
+              <p>Eftersom \( f' \) är av tredje grad är \( f \) minst av fjärde grad. </p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Grafen av derivatafunktionen \( f'(x) \) ser du i bilden nedan.
+            <p><img src="pics/11_6.png" class="responsivepic400" /></p>
+            <p>Vad kan du berätta om funktionen \( f \)?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.3">
+              <div class="card card-body answer"> <p>Derivatafunktionen har nollstället \( x = 1 \).</p>
+              <p>Men \( f' \) är negativ i alla punkter utom i \( x = 1 \). Alltså är \( f \) avtagande.</p>
+              <p>Med andra ord så har vi en strängt avtagande funktion som har en terasspunkt i \( x = 1 \).
+              <p>Eftersom \( f' \) är en parabel är \( f \) minst en tredjegradsfunktion.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vi undersöker funktionen \( f(x)=x^3(2x-1)^5 \).
+            <ol>
+              <li>Bestäm \( f'(1) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>För att derivera använder vi oss av produktregeln \( Dfg = f'g+g'f \) och potensregeln \( Df^n = nf^{n-1}f' \).</p>
+                <p>Derivatafunktionen är \( f'(x)=3x^2(2x-1)^5 + x^3\cdot 5(2x-1)^4\cdot 2 =3x^2(2x-1)^5+10x^3(2x-1)^4 \).</p>
+                <p>Då är \( f'(1)=13 \).</p></div></div> </li>
+              <li>Bestäm de punkter där funktionen \( f \) byter riktning. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi löser ekvationen \( f'(x)=0 \). För att lätt göra det använder vi oss av faktorisering.</p>
+                <p>Vi får \( f'(x) = 3x^2(2x-1)^5+10x^3(2x-1)^4  = x^2(2x-1)^4[3(2x-1)+10x] \\
+                  = x^2(2x-1)^4(16x-3) \)</p>
+                <p>Vi utnyttjar nollregeln, och får rötterna.</p>
+                <p>Vi får \( x=0, x=\dfrac{1}{2} \) och \( x=\dfrac{3}{16} \).</p></div></div> </li>
+              <li>Bestäm den punkt där funktionen får sitt minsta värde. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Vi bildar ett teckenschema.</p>
+                <p>\( \begin{array}{c|ccccccc}
+                  & & 0 & & \dfrac{1}{2} & & \dfrac{3}{16} & & \\
+                  \hline
+                  x^2 & + & 0 & + & + & + & + & + \\
+                  (2x-1)^4 & + & + & + & 0 & + & + & + \\
+                  16 x -3 & - & - & - & - & - & 0 & + \\
+                  \hline
+                  f'(x) & - & 0 & - & 0 & - & 0 & + \\
+                  f(x) & \searrow & & \searrow & & \searrow & & \nearrow \\
+                  \end{array} \) </p>
+                <p>Vi har ett minsta värdet i punkten \( x=\dfrac{3}{16} \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm det största värdet för funktionen \( f(x) = (x-1)(x-2)^2 \) i intervallet \( [1,2] \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x) = 1 \cdot (x-2)^2 + (x-1)2(x-2) = (x-2)(x-2+2(x-1))= (x-2)(3x-4) \).</p>
+                <p>Derivatans nollställe \( f'(x)=0 \), alltså \( (x-2)(3x-4)=0 \). Vi delar upp \( x-2 =0 \) och \( 3x-4 = 0\).</p>
+                <p>Vi får nollställena \( x=\dfrac{4}{3} \) och \( x=2 \).</p>
+                <p>Då vi söker största och minsta värden i ett intervall hittar vi dem i intervallets änpunkter eller där derivatan får värdet noll.</p>
+                <p>Alltså:</p>
+                <p>\( f(1) = 0\)</p>
+                <p>\( f(\dfrac{4}{3}) = \dfrac{4}{27}\). Här har vi största värdet.</p>
+                <p>\( f(2) = 0 \)</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm för funktionen \( f(x) = (x^2-3x+2)^4 \) funktionens och derivatafunktionens nollställen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Funktionens nollställen är \( (x^2-3x+2)^4 = 0 \Leftrightarrow x^2-3x+2 = 0 \). Andragradsekvationen har rötterna \( x_1 = 1 \) och \( x_2 = 2\). Dessa är funktionens nollställen.</p>
+                <p>Derivatafunktionen är \( f'(x)=4(x^2-3x+2)^3(2x-3) \).</p>
+                <p>Derivatafunktionens nollställen får vi med hjälp av nollregeln. Nollställena är \( x^2-3x+2 = 0 \) som har rötterna \( x_1 = 1 \) och \( x_2 = 2\), \( 2x-3 = 0 \Leftrightarrow x=\dfrac{3}{2} \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm för funktionen \( f(x) = (x+1)^2(x-1) \) och dess derivatafunktion deras gemensamma punkter.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x) = 2(x+1)\cdot 1(x-1)+(x+1)^2\cdot 1 = (x+1)[2(x-1)+(x+1)] = (x+1)(3x-1) = 3x^2+2x-1\).</p>
+              <p>De gemensamma punkterna </p>
+              <p>\( \begin{array}{rcl}
+                f(x) & = & f'(x) \\
+                (x+1)^2(x-1) & = & 3x^2+2x-1 \\
+                x^3 +x^2-x-1 & = & 3x^2+2x-1 \\
+                x^3 -2x^2-3x & = & 0 \\
+                x(x^2 -2x-3) & = & 0 \\
+                \end{array} \) </p>
+              <p>Alltså \( x =0 \) eller \( x^2-2x-3 = 0 \) som har rötterna \( x_2 = -1 \) och \( x_3 = 3 \).
+              <p>Eller som
+                <p>\( \begin{array}{rcl}
+                  f(x) & = & f'(x) \\
+                  (x+1)^2(x-1) & = & (x+1)(3x-1) \\
+                  (x+1)^2(x-1) - (x+1)(3x-1) & = & 0 \\
+                  (x+1)[(x+1)(x-1)-(3x-1)] & = & 0 \\
+                  (x+1)(x^2-1-3x+1) & = & 0 \\
+                  (x+1)(x^2-3x) & = & 0 \\
+                  \end{array} \) </p>
+                  <p>Alltså \( x+1 = 0 \Leftrightarrow x_1 = -1 \) eller \( x^2-3x = 0 \) som har rötterna \( x_2 = 0 \) och \( x_3 = 3 \).
+                </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm för funktionen \( g(x) = (x+1)^3(2x-1)^2 \) de punkter där funktionen byter riktning och extremvärdena. Är det frågan om lokala eller globala? Utmana dig själv genom att derivera funktionen för hand. Kontrollera deriveringen på räkneprogram.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>\( g'(x) = 3(x+1)^2(2x-1)^2 + (x+1)^3\cdot 2(2x-1)\cdot 2 = \\
+                (x+1)^2[3(2x-1)^2+4(x+1)(2x-1)] = (x+1)^2(2x-1)(6x-3+4x+4) = \\
+                (x+1)^2(2x-1)(10x+1)\)</p>
+                <p>Derivatans nollställen: \( g'(x) = 0 \) då \( x+1 = 0 \Leftrightarrow x=-1 \), \( 2x-1 =0 \Leftrightarrow x = \dfrac{1}{2}\), eller \( 10x+1 = 0 \Leftrightarrow x = -\dfrac{1}{10} \).</p>
+                <p>Vi gör ett teckenschema:</p>
+                <p>\( \begin{array}{c|cccccc}
+                  & & -1 & & -\dfrac{1}{10} & & \dfrac{1}{2} \\
+                  \hline
+                  (x+1)^2 & + & 0 & + & + & + & + & + \\
+                  2x-1 & - & - & - & - & - & 0 & + \\
+                  10x+1 & - & - & - & 0 & + & + & + \\
+                  \hline
+                  g'(x) & + & 0 & + & 0 & - & 0 & + \\
+                  g(x) & \nearrow &  & \nearrow &  & \searrow &  & \nearrow \\
+                  \end{array} \)</p>
+                  <p>I \( x = -1 \) har vi en terasspunkt.</p>
+                  <p>I \( x = -\dfrac{1}{10} \) har vi ett lokalt maximum. Värdet är \( g(-\dfrac{1}{10}) = \dfrac{6561}{6250} \).</p>
+                  <p>I \( x = \dfrac{1}{2} \) har vi ett lokalt minimum. Värdet är \( g(\dfrac{1}{2}) = 0\).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Talen \( m \) och \( n \) är positiva heltal. Vi vilken punkt i intervallet \( [0,1] \) är funktionsvärdet för funktionen \( f(x) = x^m(1-x)^n \) som störst? Vilket är det största värdet?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="14t">
+              <div class="card card-body hint"> <p>Derivera modigt och jobba sedan vidare.</p></div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x) = mx^{m-1}(1-x)^n + x^m\cdot n(1-x)^{n-1}(-1) = \\
+                x^{m-1}(1-x)^{n-1} [m(1-x)-xn] = x^{m-1}(1-x)^{n-1}(m-xm-xn) \)</p>
+                <p>Derivatans nollställe, \( f'(x) = 0\), alltså \( x^{m-1}(1-x)^{n-1}(m-xm-xn) = 0 \). Vi får \( x^{m-1}=0 \Leftrightarrow x = 0 \), \( (1-x)^{n-1} = 0 \Leftrightarrow 1-x = 0 \Leftrightarrow x=1 \) och \( m-xm-xn = 0 \Leftrightarrow x = \dfrac{m}{m+n} \). Eftersom \( m \) och \( n \) är positiva heltal har den sista lösningen ett värde mellan 0 och 1.</p>
+                <p>Eftersom funktionen är definierad i ett intervall hittar vi dess största och minsta värden i intervallets ändpunkter eller i de punkter där derivatan får värdet noll.</p>
+                <p>\( f(0) = 0^m(1-0)^n = 0 \).</p>
+                <p>\( f(\dfrac{m}{m+n}) = (\dfrac{m}{m+n})^m(1-\dfrac{m}{m+n})^n = \dfrac{m^m n^n}{(m+n)^{m+n}} \).</p>
+                <p>\( f(1) = 1^m(1-1)^n = 0 \).</p>
+                <p>Strösta värdet är \( \dfrac{m^m n^n}{(m+n)^{m+n}} \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm derivatafunktionen för \( f(x) = \dfrac{1}{\sqrt{1+x^2}} \).</p>
+            <p>Vid vilka punkter byter funktionen riktning?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="15t">
+              <div class="card card-body hint"> <p>Hur kan du skriva en rot med hjälp av en potens? Hur påverkar det att potensen är nere i nämnaren?</p>
+              <p>Med andra ord, hur kan du skriva \( \dfrac{1}{27} \) som \( 3^{\text{?}} \)?</div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Vi skriver \( f(x) = \dfrac{1}{\sqrt{1+x^2}} = \dfrac{1}{(1+x^2)^{\frac{1}{2}}} = (1+x^2)^{-\frac{1}{2}} \).</p>
+                <p>Eftersom vi har ett rationellt uttryck måste vi undersöka definitionsmängden. Nämnaren, \( 1+x^2 \) är alltid \( \geq 0 \).</p>
+                <p>Derivatafunktionen är \( f'(x) = -\dfrac{1}{2}(1+x^2)^{-\frac{1}{2}-1}\cdot 2x = -x(1+x^2)^{-\frac{3}{2}} = \\
+                  -\dfrac{x}{(1+x^2)^{-\frac{3}{2}}} = -\dfrac{x}{\sqrt{(1+x^2)^3}} = -\dfrac{x}{(1+x^2)\sqrt{1+x^2}} \)</p>
+                  <p>En kvot får värdet 0 då täljaren får värdet noll. Derivatans nollställe är \( x = 0 \).</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="12_derivprod.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="14_derivkvot.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>22. Derivatan av logaritmfunktioner</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="21_derivatan_exp.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="23_derivatan_trig.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>22. Derivatan av logaritmfunktioner</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi tar och härleder en deriveringsformel för logaritmfunktionen med basen \( e \), \( \ln x \), då \( x\in ]0, \infty[ \).</p>
+            <h4>Härledning</h4>
+            <p>Då \( x > 0 \) gäller att \( e^{\ln x} =x \). Funktionerna \( e^{\ln x} \) och \( x \) har samma derivatafunktioner, eftersom det är fråga om samma funktion. Vi deriverar bägge.</p>
+            <p> \( \begin{array}{rcll} e^{\ln x}  & = &  x  & \text{Derivatan av bägge led.}\\ De^{\ln x}  & = &  Dx  & De^{f(x)}=e^{f(x)}\cdot f'(x)\\ e^{\ln x}D\ln x  & = &  1  &  e^{\ln x}= x\\ x D\ln x  & = & 1 \\ D \ln x  & = & \dfrac{1}{x}\\ \end{array} \)</p>
+            <p>Derivatan av funktionen \( \ln x \) är \( \dfrac{1}{x} \) där \( x > 0 \).</p>
+          </div>
+          <div class="summary box">
+            <p>Derivatan av funktionen \( \ln x \) är \( \dfrac{1}{x} \) där \( x > 0 \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Derivera \( 4\ln x \). Har derivatafunktionen nollställen?</p>
+            <h4>Lösning</h4>
+            <p>Funktionen är definierad då \( x > 0 \).</p>
+            <p>Derivatan är \( D4\ln x = 4\cdot\dfrac{1}{x} =\dfrac{4}{x} \).</p>
+            <p>Vi söker nollställen för derivatafunktionen, \( f'(x)=\dfrac{4}{x} \). \( \dfrac{4}{x} \) kan aldrig få värdet noll eftersom täljaren alltid har värdet 4. Derivatan saknar nollställen som betyder att funktionen aldrig byter riktning.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/335357380" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <h4>Egenskaper för funktionen \( \ln x \)</h4>
+          <ul>
+            <li>Funktionen \( \ln x \) är strängt växande i sin definitionsmängd \( ]0,\infty[ \).</li>
+            <li>Funktionens värdemängd är alla reella tal.</li></ul>
+            <p><img src="pics/14-1.png" alt="" class="responsivepic600" /></p>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Bestäm tangenten för funktionen \( f(x)=\ln x \) i punkten \( x=2 \).</p>
+              <h4>Lösning</h4>
+              <p>Tangenten går genom punkten \( x=2 \) och \( y=\ln 2 \). Riktningskoefficienten får vi genom derivatans värde i punkten 2.</p>
+              <p>\( f'(x)= \dfrac{1}{x} \) och \( f'(2)=\dfrac{1}{2} \).</p>
+              <p>En linjes ekvation ser ut som \( y-y_0=k(x-x_0) \), vi får \( y-\ln2 =\dfrac{1}{2}(x-2) \Leftrightarrow y=\dfrac{x}{2}-1+\ln2 \).</p>
+            </div>
+            <p>Vi tar och härleder en deriveringsformel för funktioner som är av typen \( \ln f(x) \) där \( f(x) > 0 \).</p>
+            <p>Vi har en sammansatt funktion där den yttre funktionen är \( \ln x \) och den inre är \( f(x) \). För sammansatta funktioner gäller \( Df(g) = f'(g)g' \).</p>
+            <p>Vi får att \( D\ln(f(x))=\dfrac{1}{f(x)} \cdot f'(x) = \dfrac{f'(x)}{f(x)} \).</p>
+            <p>Alltså då \( f(x) > 0 \) och deriverbar gäller att \( D\ln f(x)=\dfrac{1}{f(x)} \cdot f'(x) = \dfrac{f'(x)}{f(x)} \).</p>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Bestäm definitionsmängd och derivera funktionen \( \ln(e^x-2) \).</p>
+              <h4>Lösning</h4>
+              <p>Funktionen är definierad då \( e^x-2  >  0 \Leftrightarrow e^x  >  2 \) som betyder att \( x >  \ln 2 \).</p>
+              <p>\( D\ln(e^x-2) = \dfrac{e^x}{e^x-2} \).</p>
+            </div>
+
+          </div>
+
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Derivera
+            <ol>
+              <li>\( 3\ln (x) \) då \( x > 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( D3\ln x =\dfrac{3}{x} \)</p></div></div> </li>
+              <li>\( 3\ln (x) -1 \) då \( x > 0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( D(3\ln x-1) =\dfrac{3}{x} \)</p></div></div> </li>
+              <li>\( 3\ln (x-1) \) då \( x > 1 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion. \( D3\ln(x-1)=3\cdot \dfrac{1}{x-1}\cdot 1 = \dfrac{3}{x-1} \).</p></div></div> </li>
+              <li>\( \ln(1-x^2) \) då \( -1 < x < 1 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>\( D\ln(1-x^2)=\dfrac{1}{1-x^2}\cdot(-2x) = \dfrac{-2x}{1-x^2} \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm definitionsmängderna för
+            <ol>
+              <li>\( \ln(e^x-1) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Funktionen är definierad då \( e^x-1 > 0 \Leftrightarrow e^x > 1 \Leftrightarrow x > \ln 1 = 0 \).</p></div></div> </li>
+              <li>\( \ln(2x^2-1) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Funktionen är definierad då \( 2x^2-1  >  0 \Leftrightarrow 2x^2 > 1 \Leftrightarrow x^2  > \dfrac{1}{2} \) som betyder att \( x < -\sqrt{\dfrac{1}{2}} \) och \( x > \sqrt{\dfrac{1}{2}} \) som vi skriver som \( x < -\dfrac{1}{\sqrt{2}} \) och \( x > \dfrac{1}{\sqrt{2}} \).</p></div></div> </li>
+              <li>\( \dfrac{1}{\ln x} \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( \ln x \) är definierad då \( x > 0 \).</p>
+              <p>Divisionen är definierad då nämnaren inte får värdet 0. \( ln x = 0 \) då \( x = 1 \). Alltså är definitionsmängden \( x > 0 \) så att \( x \not= 1 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm nollställena för fuktionernas derivatafunktioner.
+            <ol>
+              <li>\( f(x) = x^2 \ln x \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( f'(x) = 2x \ln (x) + x \)</p>
+                <p>Derivatafunktionens nollställe är \( x = \dfrac{1}{\sqrt{e}} \). Märk att eftersom \( x > 0 \) så har vi endast en rot.</p>
+                <p>Se till att du kan lösa dessa för hand och inte bara på dator.</p>
+              </div></div> </li>
+              <li>\( g(x) = \dfrac{\ln x}{x^2} \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( g'(x) = \dfrac{-2 \ln ( x ) + 1}{x^{3}} \)</p>
+                <p>Derivatafunktionens nollställe är \( x = \sqrt{e} \).</p>
+                <p>Se till att du kan lösa dessa för hand och inte bara på dator.</p>
+              </div></div> </li>
+              <li>\( h(x) = x + x \ln x \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( h'(x) = \ln (x) + 2 \)</p>
+                <p>Derivatafunktionens nollställe är \( x = \dfrac{1}{e^2} \).</p>
+                <p>Se till att du kan lösa dessa för hand och inte bara på dator.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm minsta värde för \( \ln(e^x-x) \) då \( x\in\mathbf{R} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=\dfrac{1}{e^x-x} \cdot (e^x-1) = \dfrac{e^x-1}{e^x-x} \).</p>
+                <p>Funktionen byter riktning i de punkter där \( f'(x)=0 \), \( \dfrac{e^x-1}{e^x-x}=0 \Leftrightarrow e^x-1 =0 \) eftersom en kvot kan endast få värdet 0 då täljaren har värdet 0. Vi får att \( e^x=1 \Leftrightarrow x=\ln 1 =0 \).</p>
+                <p>Vi gör ett teckenschema,</p>
+                <p>\( f(-1)=\dfrac{e^{(-1)}-1}{e^{(-1)}-(-1)}  < 0 \).</p>
+                <p>\( f(1)=\dfrac{e^1-1}{e^1-1} = 1 > 0 \).</p>
+                <p>\( \begin{array}{r|ccc}  &   &  0  &  \\ \hline f'(x)  &  -  &  0  &  + \\ f(x)  &  \searrow  &   &  \nearrow \\ \end{array} \)</p>
+                <p>Vi har ett minsta värde i \( x=0 \), funktionens minsta värde är \( f(0)=\ln(e^0+0) = \ln (1+0) =0 \).</p>
+                <p>Funktionens minsta värde är 0.</p></p></div></div>
+          </li>
+
+          <!--<li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm minsta värde för \( \ln(e^2+x) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Funktionen är definierad då \( e^2+x  >  0 \Leftrightarrow x  > -e^2 \).</p>
+                <p>Derivatafunktionen är \( f'(x)=\dfrac{1}{e^2+x}\cdot (1) = \dfrac{1}{e^2+x} \).</p>
+                <p>Nollställen för derivatan är: \( f'(x)=0 \Leftrightarrow \dfrac{1}{e^2+x}=0 \). Eftersom en kvot endast kan få värdet 0 då täljaren har värdet noll saknar derivatafunktionen nollställen.</p>
+                <p>Vi tar en punkt i definitionsmängden och testar hur funktionen beter sig. \( f'(1)=\dfrac{1}{e^2+1}  > 0 \). Funktionen \( f \) är då växande.</p>
+                <p>Eftersom derivatafunktionen saknar nollställen och funktionen är växande saknar funktionen ett entydigt minsta värde. Vi talar om att funktionens minsta värde är minus oändligheten, \( -\infty \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm största värde för funktionen \( f(x) = \ln x + \ln(3 - x) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( \ln x \) är definierad då \( x > 0 \). \( \ln (3-x) \) är definierad då \( 3-x > 0 \), alltså \( x < 3 \). När vi kombinerar dessa får vi definitionsmängden för \( f \), \( 0 < x < 3 \).</p>
+              <p>Derivatafunktionen är \( f'(x) = \dfrac{2x - 3}{x^{2} - 3 x} \). Se till att du bestämmer den!</p>
+              <p>Derivatans nollställe är \( f'(x) = 0 \) då \( x = \dfrac{3}{2} \).</p>
+              <p>Tecknet för derivatafunktionen är</p>
+              <p>\( f'(1) = \dfrac{1}{2} > 0 \). \( f \) växande.</p>
+              <p>\( f'(2) = -\dfrac{1}{2} < 0 \). \( f \) avtagande.</p>
+              <p>Alltså har vi ett största värde i \( x = \dfrac{3}{2} \).</p>
+              <p>Största värdet är \( f(\dfrac{3}{2}) = 2\ln(\dfrac{3}{2}) \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm tangenten för funktionen \( f(x)=\ln (x+1) \) i punkten \( x=0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=\dfrac{1}{x+1} \). Tangentens riktningskoefficient har värdet \( f'(0)=\dfrac{1}{0+1}=1 \). Tangenten går genom punkten \( x=0 \) och \( y=\ln (0+1) = 0 \).</p>
+              <p>Tangentens ekvation är, \( y-y_0 =k(x-x_0) \) alltså \( y-0=1(x-0) \Leftrightarrow y=x \).</p></p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm tangenten för funktionen \( f(x)=\ln x^2 \) i punkten \( x=1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=\dfrac{2}{x} \). Tangentens riktningskoefficient har värdet \( f'(1)=\dfrac{2}{1}=2 \). Tangenten går genom punkten \( x=1 \) och \( y=\ln 1^2 = 0 \).</p>
+              <p>Tangentens ekvation är, \( y-y_0 =k(x-x_0) \) alltså \( y-0=2(x-1) \Leftrightarrow y=2x-2 \).</p></p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Hur många rötter har ekvationen \( \ln (x-1) = 3\ln x -3 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"><p>Tanken är att vi inför en funktion, undersöker hur den växer och avtar och hur många gånger den skär x-axeln.</p>
+              <p>Vi inför en funktion \( f(x) = \ln (x-1) - 3\ln x +3 \).</p>
+              <p>Definitionsmängden är \( x > 1 \). Se till att du bestämmer den!</p>
+              <p>Derivatafunktionen är \( f'(x) = \dfrac{-2 x + 3}{x^{2} - x} \). Se till att du bestämmer denna!</p>
+              <p>Derivatans nollställe är \(f'(x) = 0 \) då \( x = \dfrac{3}{2} \). Se till att du bestämmer denna!</p>
+              <p>Tecknet för derivatafunktionen </p>
+              <p>\( f'(1.1) = \dfrac{80}{11} \). \( f \) är växande. (1,1 för att funktionen inte är definierad i \( x = 1 \).)</p>
+              <p>\( f'(2) = -\dfrac{1}{2} \). \( f \) är avtagande.</p>
+              <p>Största värdet är \( f(\dfrac{3}{2}) = -\ln 2 - 3 \ln ( \dfrac{3}{2}) + 3 \approx 1,09\ldots \) . OBS! Positivt värde.</p>
+              <p>Detta betyder att funktionen växer fram till \( x = \dfrac{3}{2} \). Sedan avtar den. För att ännu veta om funktionen skär \( x \)-axlen. sätter vi in värden i funktionen och undersöker om värdena är negativa.</p>
+              <p>\( f(1,01) = -1,64 \).</p>
+              <p>\( f(5) = -0,44 \).</p>
+              <p>Då vet vi att funktien skär \( x \)-axeln 2 gånger. Alltså har ekvationen 2 rötter.</p>
+              <p>Vill vi närmare intervallet för rötterna så får söka närmare intervall.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Hur många rötter har ekvationen \( 5x +\ln (x-2) = 0 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Tanken är att vi inför en funktion, undersöker hur den växer och avtar och hur många gånger den skär x-axeln.</p>
+              <p>Vi inför en funktion \( f(x) = 5x + \ln (x-2) \).</p>
+              <p>Definitionsmängden är \( x > 2 \). Se till att du bestämmer den!</p>
+              <p>Derivatafunktionen är \( f'(x) = 5 + \dfrac{1}{x-2} = \dfrac{5x -9}{x - 2} \). Se till att du bestämmer denna!</p>
+              <p>Derivatans nollställe är \(f'(x) = 0 \) då \( x = \dfrac{9}{5} \). Se till att du bestämmer denna! Men eftersom definitionsmängden är \( x > 2 \) är \( f \) strängt monotom.</p>
+              <p>Tecknet för derivatafunktionen </p>
+              <p>\( f'(3) = 6 \). \( f \) är växande.</p>
+              <p>\( f(2,00001) = -1,5128\ldots \).</p>
+              <p>\( f(3) = 15 \).</p>
+              <p>Då vet vi att funktionen är strängt monotom och skär \( x\)-axlen en gång mellan \( ]2,3[ \).</p>
+              <p>Alltså har ekvationen 1 rot, roten är i intervallet \( ]2,3[ \).</p>
+              <p>Vill vi närmare intervallet för rötterna så får söka närmare intervall.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att funktionerna \( f(x) = -\dfrac{1}{2}x^2 \) och \( g(x) = \ln x \) skär varandra vinkelrätt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>\( g(x) \) är definierad då \( x > 0 \).</p>
+                <p>Den gemensamma \( x \)-koordinaten är \( x=0,75308 \). Lös denna, men inse att du klarar endast av att lösa den numeriskt.</p>
+                <p>Derivatafunktionerna är \( f'(x) = -x \) och \( g'(x) = \dfrac{1}{x} \).</p>
+                <p>Då två linjer är vinkelräta gäller att \( k_1 \cdot k_2 = -1 \).</p>
+                <p>Då vi bildar riktningskoefficienten för tangenterna får vi att produkten har värdet -1.</p>
+                <p>Alternativ märker vi följande. För derivatafunktionerna gäller att \( f'(x) \cdot g'(x) = -x \cdot \dfrac{1}{x} = -1 \). Det betyder att alla tanger som vi bildar för funktionerna \( f \) och \( g \) är ortogonala, vinkelräta. </p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm definitionsmängden för funktionen \( f(x)= \ln \dfrac{4-x^2}{4+x^2} \). Derivera \( f \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Logaritmen är definierad då \( \dfrac{4-x^2}{4+x^2} \). Eftersom nämnaren alltid är positiv gäller att \( 4-x^2 > 0 \), alltså då \( -2 < x < 2 \).</p>
+              <p>\( f(x)= \ln \dfrac{4-x^2}{4+x^2} = \ln(4-x^2) - \ln (4+x^2) \).</p>
+              <p>\( f'(x) = \dfrac{-2x}{4-x^2} - \dfrac{2x}{4+x^2} \)</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bilda deriveringsformeln för funktionerna av typ \( \log_a x \) då \( a > 0 \) och \( a\not=1 \).
+            <p>Följ det så som vi deriverade \( \ln x \) genom att uttrycka \( \log_a \) som en exponent.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Vi kan skriva \( x=a^{\log_a x} \). Derivatan av \( x \) är 1.</p>
+                <p>Då vi deriverar</p>
+                <p>\( \begin{array}{rl} D \log_a x = &  Da^{\log_a x} \\ = & a^{\log_a x} \ln a D\log_a x \\ = & x\cdot \ln a D\log_a x =1 \\ \end{array} \)</p>
+                <p>Vi får att \( D\log_a x = \dfrac{1}{x\ln a} \).</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="21_derivatan_exp.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="23_derivatan_trig.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>15. Repetition</title>
+
+  </head>
+  <body>
+    <header class="MaA8">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_potenser.html">1. Potenser</a>
+            <a class="dropdown-item" href="2_negaexp.html">2. Negativ exponent och exponenten noll</a>
+            <a class="dropdown-item" href="3_tiopotenser.html">3. Tiopotenser</a>
+            <a class="dropdown-item" href="4_potensekvationer.html">4. Potensekvationer</a>
+            <a class="dropdown-item" href="5_rotfunktionen.html">5. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="6_deri_rotfunkt.html">6. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="7_till_rotfunkt.html">7. Tillämpningar</a>
+            <a class="dropdown-item" href="8_logaritmer.html">8. Logaritmer</a>
+            <a class="dropdown-item" href="9_ber_logaritmer.html">9. Beräkning med logaritmer</a>
+            <a class="dropdown-item" href="10_till_logaritmer.html">10. Tillämpning av logaritmer</a>
+            <a class="dropdown-item" href="11_talet_e.html">11. Talet e</a>
+            <a class="dropdown-item" href="12_derivatan_e.html">12. Derivatan av e^x</a>
+            <a class="dropdown-item" href="13_derivatan_exp.html">13. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="14_derivatan_log.html">14. Derivatan av logaritmfunktionen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="14_derivatan_log.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Rot- och logaritmfunktioner</h3>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>15. Repetition</h1>
+      <section>
+        <div class="theory">
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm definitionsmängd för följande funktioner.
+            <ol>
+              <li>\( \sqrt{-5-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5a">
+              <div class="card card-body answer"><p>Roten är definierad då radikanden, det som är under roten är positivt. Alltså \( x \leq -5 \).</p></div></div> </li>
+              <li>\( \dfrac{\sqrt{3-x}}{\sqrt{-5-x}} \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5b">
+              <div class="card card-body answer"><p>Täljaren är definierad då \( x \leq 3 \).</p>
+                <p>Nämnaren får inte ha värdet noll och är definierad då \( x < -5 \).</p>
+                <p>Alltså är definitionsmängden \( x < -5 \).</p>
+              </div></div> </li>
+              <li>\( \sqrt[3]{-5-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5c">
+              <div class="card card-body answer"><p>En udda rot är alltid definierad. Alltså är definitionsmängden alla reella tal, \( \mathbf{R} \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Förenkla följande uttryck utan räknare. Kontrollera svaret genom att lösa den på räknare.
+            <ol>
+              <li>\( 2\log_6 3 +\log_6 4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( 2\log_6 3 +\log_6 4 = \log_6 3^2 + \log_6 4 = \log_6 (3^2 \cdot 4) = \log_6 36 = \log_6 6^2 = 2\log_6 6 =2\cdot 1 =2 \)</p></div></div> </li>
+              <li>\( \lg x -\lg\dfrac{x}{y^2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( \lg x -\lg\dfrac{x}{y^2} = \lg x - (\lg x - \lg y^2)=\lg x -\lg x +\lg y^2 = 2\lg y \)</p></div></div> </li>
+              <li>\( \log_3 (\sqrt{10}-1) + \log_3 (\sqrt{10}+1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                  \log_3 (\sqrt{10}-1) + \log_3 (\sqrt{10}+1) & = & \log_3 [(\sqrt{10}-1)(\sqrt{10}+1)] \\
+                  & = & \log_3 (\sqrt{10})^2 -1^2 \\
+                  & = & \log_3 9 \\
+                  & = & \log_3 3^2 \\
+                  & = & 2\log_3 3 \\
+                  & = & 2 \cdot 1 \\
+                  & = & 2 \\
+                  \end{array} \)</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Derivera följande funktioner utan räknare. Kontrollera svaret genom att derivera på räknare.
+            <ol>
+              <li>\( \sqrt{2x-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( D\sqrt{2x-1} = D(2x-1)^{\frac{1}{2}}=\dfrac{1}{2}(2x-1)^{-\dfrac{1}{2}}\cdot 2 = \dfrac{1}{\sqrt{2x-1}} \)</p></div></div> </li>
+              <li>\( \ln (x^2-1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( D\ln(x^2-1) = \dfrac{1}{x^2-1}\cdot 2x =\dfrac{2x}{x^2-1} \)</p></div></div> </li>
+              <li>\( e^{x^3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( De^{x^3} = e^{x^3}\cdot 3x^2 = 3x^2e^{x^3} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm nollstället för derivatafunktionen för följande funktioner.
+            <ol>
+              <li>\( f(x) = x^4 \ln x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( f'(x) = 4x^3 \ln x +x^3 \).</p>
+              <p>Derivatans nollställe, \( f'(x)=0 \), är \( x = \dfrac{1}{\sqrt[4]{e}} \).</p>
+              </div></div> </li>
+              <li>\( g(x)=\dfrac{\ln x}{x^4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( g'(x) = \dfrac{-4\ln x +1}{x^5} \).</p>
+              <p>Derivatans nollställe, \( g'(x)=0 \), är \( x = \sqrt[4]{e} \).</p>
+              </div></div> </li>
+              <li>\( h(x) = \dfrac{1}{e^{4x}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( h'(x) = -\dfrac{4}{e^{4x}} \).</p>
+              <p>Derivatans nollställe, \( h'(x)=0 \), saknas.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm de reella rötter som uppfyller ekvationen \( \sqrt{2-x}=x+2 \). [H08, 7]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Definitionsmängden</p>
+                <p>För kvadratroten gäller att definitionsmängden är \( 2-x\geq 0 \Leftrightarrow x\leq 2 \).</p>
+                <p>Eftersom roten är positiv måste \( x+2 \geq 0 \Leftrightarrow x \geq -2 \).</p>
+                <p>Då bägge gäller samtidigt får vi definitionsmängden till \( -2\leq x \leq 2 \).</p>
+                <p>Kvadrering och rotformel ger: \( x=\dfrac{-5\pm\sqrt{17}}{2} \).</p>
+                <p>Av dessa duger endast \( x=\dfrac{-5 +\sqrt{17}}{2} \) pga definitionsmängden.</p></p></div></div>
+          </li>
+
+          <li>Lös ekvationen \( \dfrac{1}{2} \log_3 (8-x) = \log_3 x +1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Definitionsmängden är \( 8-x > 0 \), alltså \( x < 8 \) och \( x > 0 \). Vi jobbar i intervallet \( 0 < x < 8 \).</p>
+                <p>\( \begin{array}{rcl}
+                  \dfrac{1}{2} \log_3 (8-x) & = & \log_3 x +1 \\
+                  \log_3 (8-x)^{\frac{1}{2}}  - \log_3 x & = & 1 \\
+                  \log_3 \dfrac{(8-x)^{\frac{1}{2}}}{x} & = & 1 \\
+                  \dfrac{(8-x)^{\frac{1}{2}}}{x} & = & 3^1 \\
+                  \end{array} \) </p>
+                  <p>Lös vidare. Roten får du bort genom att kvadrera.</p>
+                  <p>Kom fram till \( x = \dfrac{8}{9} \). Kontrollera med definitionsmängden och godkänn roten.</p>
+              </div></div>
+          </li>
+
+          <li>Bestäm största och minsta värde för funktionen \( f(x)=\sqrt{-x^2+2x+1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\( f'(x)=\dfrac{-x+1}{\sqrt{-x^2+2x+1}} \).</p>
+                <p>\( f'(x)=0 \) i \( x=1 \). Största och minsta värde i intervallets ändpunkter eller där \( f'(x)=0 \).</p>
+                <p>Största värdet är \( \sqrt{2} \) och minsta värdet är 0.</p></div></div>
+          </li>
+
+          <li>Låt \( f(x) = 3x - 2\sqrt{1-x} \).
+            <ol>
+              <li>För vilket värde på \( x \) är funktionsvärdet 2? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Definitionsmängden är \( 1-x \geq 0 \). Alltså \( x \leq 1 \).</p>
+              <p>Vi skall lösa ekvationen \( 2 = 3x - 2\sqrt{1-x} \). Flytta över \( 3x \) och kvadrera.</p>
+              <p>Lösningen är \( x = \dfrac{8}{9} \).</p>
+            </div></div> </li>
+              <li>Bestäm derivatafunktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\( f'(x) = 3 + \dfrac{1}{\sqrt{1-x}} \), eller som \( \dfrac{3 \sqrt{1-x} + 1}{\sqrt{1-x}} \).</p></div></div> </li>
+              <li>Bestäm den punkt där tangentens riktningskoefficient har värdet 5. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Vi skall hitta den punkt där derivatan har värdet 5. Alltså skall vi lösa ekvationen \( f'(x)=5 \). Punkten är \( x = \dfrac{3}{4} \). </p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Tänk dig att du som 20-årig placerar 3000 € så att du har en årlig avkastning om 7 %. Räntan på kapitalet placerar du på samma sätt. Hur mycket kapital har din placering genererat efter 15 år? Hur många hela år tar det för kapitalet att genera 100 000 €?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( 3000 \cdot 1,07^{15} \approx 8277,09\) € och </p>
+                <p>\( \log_{1,07}(\dfrac{100}{3})=51,82 \approx 52 \) år.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I ett gassampel finns den radioaktiva gasen radon. Massan för radon minskar för varje dygn med 17 %. Som bäst är massan för radonen 75 \(\mu\)g. Bilda en funktion, \( m(t) \), som anger massan för radonen när \( t \) dygn har gått.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Då massan minskar med 17 % har vi kvar \( 1-0,17 = 0,83 \).</p>
+                <p>I börjar har vi 75 \(\mu\)g. Vi får formeln \( m(t) = 75 \cdot 0,83^t \).</p>
+                <p>Med hjälp av basen \( e \) får vi \( m(t)= 75 \cdot e^{-0,186t} \).</p>
+              </div></div>
+              Bestäm med vilken hastighet massan minskar vid tiden
+              <ol>
+                <li>\( t = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7a">
+                <div class="card card-body answer"><p>Derivatafunktionen är \( m'(t) = 75 \cdot 0,83^t \cdot \ln 0,83 \).</p>
+                  <p>Eller \( m'(t) = -\dfrac{279}{20}e^{-0,186t} \).</p>
+                  <p>\( f'(2) = -9,63 \). Alltså minskar med 9,6 \(\mu\)g.</p>
+                </div></div> </li>
+                <li>\( t = 10 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7b">
+                <div class="card card-body answer"><p>\( f'(10) = -2,17 \). Alltså minskar med 2,2 \(\mu\)g.</p></div></div> </li>
+              </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i> Låt \( f(x) = \sqrt{10-x^2} \).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.1a">
+              <div class="card card-body answer"><p>Då \( 10-x^2 \geq 0 \).</p>
+                <p>Definitionsmängden är \( -\sqrt{10} \leq x \leq \sqrt{10} \).</p></div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.1b">
+              <div class="card card-body answer"><p>Vi behöver största och minsta värdet för funktionen.</p>
+              <p>Derivatan är \( f'(x) = -\dfrac{x}{\sqrt{10-x^2}} \). Vi får fram att derivatan har ett nollställe i \( x = 0 \).</p>
+              <p>Använd dig av derivatans nollställe och intervallets ändpunkter för att bestämma största och minsta värde.</p>
+              <p>Värdemängden är \( 0 \leq x \leq \sqrt{10} \).</p>
+              </div></div> </li>
+              <li>Bestäm ekvationen för tangenten i \( x = 3 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.1c">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = f'(3) = -3 \).</p>
+              <p>\( y \)-koordinaten är \( f(3) = 1 \).</p>
+              <p>Tangenten är \( y - 1 = -3(x-3) \), alltså \( y = -3x +10 \).</p>
+              </div></div> </li>
+              <li>Bestäm ekvationen för normalen i \( x = 1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.1d">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = f'(1) = -\dfrac{1}{3} \). Normalens riktningskoefficient är då \( 3 \).</p>
+              <p>\( y \)-koordinaten är \( f(1) = 3 \).</p>
+              <p>Normalen är \( y - 3 = 3(x-1) \), alltså \( y = 3x \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i> Låt \( g(x) = e^{2x}\).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.2a">
+              <div class="card card-body answer"><p>Eftersom vi har en exponentialfunktion är definitionsmängden alla reella tal.</p></div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.2b">
+              <div class="card card-body answer"><p>För en exponentialfunktion gäller att värdemängden är alla positiva reella tal.</p></div></div> </li>
+              <li>Bestäm ekvationen för tangenten i \( x = 1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.2c">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = g'(1) = 2e^2 \).</p>
+              <p>\( y \)-koordinaten är \( g(1) = e^2 \).</p>
+              <p>Tangenten är \( y -e^2 = 2e^2(x-1) \), alltså \( y = 2e^2x -e^2 \).</p></div></div> </li>
+              <li>Bestäm ekvationen för normalen i \( x = 0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.2d">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = g'(0) = 2 \). Normalens riktningskoefficient är då \( -\dfrac{1}{2} \).</p>
+              <p>\( y \)-koordinaten är \( g(0) = 1 \).</p>
+              <p>Normalen är \( y - 1 = -\dfrac{1}{2}(x-0) \), alltså \( y = -\dfrac{1}{2}x+1 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i> Låt \( h(x) = x\ln x \).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.3a">
+              <div class="card card-body answer"><p>\( h(x) \) är definierad då \( x \geq 0 \).</p></div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.3b">
+              <div class="card card-body answer"><p>Vi behöver största och minsta värdet för funktionen.</p>
+              <p>Derivatan är \( h'(x) = \ln(x) + 1 \). Vi får fram att derivatan har ett nollställe i \( x = \dfrac{1}{e} \).</p>
+              <p>Vi skissar upp ett teckenschema och kommer fram till att \( -\dfrac{1}{e} \) är minsta värde och oändligheten är största värde.</p>
+              <p>Värdemängden är \( [-\dfrac{1}{e}, \infty [ \).</p></div></div> </li>
+              <li>Bestäm ekvationen för tangenten i \( x = 1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.3c">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = h'(1) = 1 \).</p>
+              <p>\( y \)-koordinaten är \( h(1) = 0 \).</p>
+              <p>Tangenten är \( y - 0 = 1(x-1) \), alltså \( y = x-1 \).</p></div></div> </li>
+              <li>Bestäm ekvationen för normalen i \( x = 5\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.3d">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = h'(5) = \ln (5) + 1 \). Normalens riktningskoefficient är då \( -\dfrac{1}{\ln(5)+1} \).</p>
+              <p>\( y \)-koordinaten är \( h(5) = 8 \).</p>
+              <p>Normalen är \( y - 8 = -\dfrac{1}{\ln(5)+1}(x-5) \), alltså \( y = -\dfrac{1}{\ln(5)+1}x +\dfrac{5}{\ln(5)+1} + 8 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = \sqrt{x+1} \). Bestäm tangenten för funktionen då \( x = 3\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.35" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.35">
+              <div class="card card-body answer"> <p>Definitionsmängden är \( x \geq -1 \).</p>
+                <p>\( f'(x)=\dfrac{1}{2\sqrt{x+1}} \).</p>
+                <p>\( k=f'(3)= \dfrac{1}{4} \) och \( y = f(3) = 2 \).</p>
+                <p>Tangentens ekvation är \( y - 2 = \dfrac{1}{4}(x-3) \) som är \( y = \dfrac{1}{4}x + \dfrac{5}{4} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) =  e^{x+1}\). Bestäm normalen för funktionen i \( x = -1\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.4">
+              <div class="card card-body answer"> <p>\( f'(x)= e^{x+1} \).</p>
+                <p>\( f'(-1) =  1\). Då är normalens riktningskoefficient \( -1 \).</p>
+                <p>\( y \)-koordinaten för normalen, \( f(-1) = 1 \).</p>
+                <p>Normalens ekvation är \( y - 1 = -1(x+1) \) som är \( y = -x \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att linjen \( y = -2x +3 \) är normal för funktionen \( f(x) = \sqrt{4x+18} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.5">
+              <div class="card card-body answer"> <p>\( f \) är definierad då \( x \geq -4\dfrac{1}{2} \).</p>
+                <p>Skärningspunkten för linjen och funktionen är \( x = -\dfrac{1}{2} \).</p>
+                <p>Derivatafunktionen är \( f'(x) = \dfrac{2}{\sqrt{4x+18}}\).</p>
+                <p>Eftersom \( f'(-\dfrac{1}{2}) = \dfrac{1}{2} \) och \( -2 \cdot \dfrac{1}{2} = -1 \) gäller att linjen \( y = -2x+3 \) är vinkelrät mot funktionen \( f \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( 2\log_2 (1+\sqrt{3}) = \log_2 (2 + \sqrt{3}) + 1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.75">
+              <div class="card card-body answer"> <p>Vi förenklar</p>
+                <p>\( \begin{array}{rcl}
+                  2\log_2 (1+\sqrt{3}) & = & \log_2 (2 + \sqrt{3}) + 1 \\
+                  \log_2 (1+\sqrt{3})^2 - \log_2 (2 + \sqrt{3}) & = & 1 \\
+                  \end{array} \) </p>
+                  <p>Detta tar vi och räknar</p>
+                  <p>\( \begin{array}{rcl}
+                  \log_2 \dfrac{(1+\sqrt{3})^2}{2 + \sqrt{3}} & = & \log_2 \dfrac{1+2\sqrt{3} + 3}{2 + \sqrt{3}} \\
+                  & = & \log_2 \dfrac{2(2+\sqrt{3})}{2 + \sqrt{3}} \\
+                  & = & \log_2 2 \\
+                  & = & 1 \\
+                  \end{array} \) </p>
+                  <p>Vilket är det vi skulle visa.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de värden för \( a \) så att funktionen \( f(x)=\sqrt{x^2+a} \) tangent i punkten 3 har riktningskoefficienten 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>\( f'(x)=\dfrac{x}{\sqrt{x^2+a}} \). Tangent i punkten 3 som har riktningskoefficienten 1 betyder att \( f'(3)=1 \Leftrightarrow \dfrac{3}{\sqrt{3^2+a}}=1 \). \( a=0 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>En badvakt på en simstrand befinner sig vid en kiosk för att köpa glass när hen plötsligt hör ett nödrop från en simmare. Badvakten springer till stranden simmar ut till den nödställda. Vid vilket ställe på stranden skall badvakten hoppa i och börja simma så att hen tar sig så snabbt som möjligt ut till simmaren? Hur länge tar det? Badvakten springer med hastigheten 7,0 m/s och simmar med hastigheten 2,0 m/s.
+              <p><img src="pics/15-8.png" class="responsivepic600" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.25" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.25">
+              <div class="card card-body answer"><p>Eftersom \( v = \dfrac{s}{t} \) så är \( t = \dfrac{s}{v} \). Vi skapar en funktion och söker den minsta tiden.</p>
+              <p>Vi betecknar med \( x \) den punkt vinkelrät från simmaren där badvakten skall simma mot simmaren. Sträckan på land är \( \sqrt{20^2 + (70-x)^2} \). Sträckan i vattnet är \( \sqrt{30^2-x^2} \).</p>
+              <p>Funktionen är \( t(x) = \dfrac{\sqrt{20^2 + (70-x)^2}}{7} + \dfrac{\sqrt{30^2 + x^2}}{2} \). Vi jobbar i intervallet \( 0 \leq x \leq 70 \).</p>
+              <p>Derivera och lös ut nollstället, \( x = 8,47 \).</p>
+              <p>Visa att det minsta värdet får vi då badvakten börjar simma vid 8,5 m.
+              <p>Tiden är 25 sekunder.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ett kärl har formen av en upp och nedvänd cirkulär kon som står så att spetsen är nedåt. Kärlet är lika högt som halva diametern. Kärlet fylls med vatten så att flödeshastigheten är 10 liter/s. Bestäm hastigheten som vatten stiger vid 1 och 10 sekunder.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5">
+              <div class="card card-body answer"> <p>Volymen för kärlet är \( V = \dfrac{1}{3}\pi h^3 \). Alltså \( h = \sqrt[3]{\dfrac{3V}{\pi}} \).</p>
+              <p>Vid tiden \( t \) är vattenmängden i kärlet \( 10t \) dm<sup>3</sup>. Alltså får vi \( h(t) = \sqrt[3]{\dfrac{3\cdot 10 t}{\pi}} = \sqrt[3]{\dfrac{30t}{\pi}} = \sqrt[3]{\dfrac{30}{\pi}} \cdot \sqrt[3]{t} \).</p>
+              <p>Derivatafunktionen är \( h'(t) = \sqrt[3]{\dfrac{30}{\pi}} \cdot \dfrac{1}{3} \cdot t^{-\frac{2}{3}} \).</p>
+              <p>\( h'(1) = 7,1 \) cm/s</p>
+              <p>\( h'(10) = 1,5 \) cm/s</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( x \ln x + 1 \geq x \) då \( x > 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>\( x \ln x + 1 \geq x \) är samma som \( x \ln x + 1 -x \geq 0 \) som är samma som \( \ln x + 1 \geq 0 \).</p>
+              <p>Vi visar att funktionen \( f(x) = \ln x + 1 \geq 0 \).</p>
+              <p>Derivatafunktionen är \( f'(x) =\dfrac{1}{x} \).</p>
+              <p>Eftersom \( x > 0 \), gäller att derivatafunktionen alltid är positiv och funktionen är strängt växande.</p>
+              <p>\( \ln x + 1 \geq 0 \) är samma som \( \ln x \geq -1 \). Eftersom \( \ln \) alltid är positiv och \( f \) är strängt växande så gäller olikheten i början, \( x \ln x + 1 \geq x \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( \sqrt{x} > \ln (x + 1) \) för alla värden då \( x > 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5">
+              <div class="card card-body answer"> <p>Vi skall visa att \( \sqrt{x} - \ln (x+1) > 0 \).</p>
+                <p>Vi visar att funktionen \( f(x) = \sqrt{x} - \ln (x+1) \) där \( x \geq 0 \) alltid är positiv.</p>
+                <p>Derivatafunktionen är \( f'(x) = \dfrac{1}{2\sqrt{x}} - \dfrac{1}{x+1} = \dfrac{x+1-2\sqrt{x}}{2(x+1)\sqrt{x}} \).</p>
+                <p>Derivatan har ett nollställe i \( x = 1 \), annars är den positiv. Se till att du löser det, undersök täljaren.</p>
+                <p>Alltså är \( f \) strängt växande i intervallet \( [0,\infty [ \).</p>
+                <p>Eftersom \( f(0) = 0 \) gäller det att \( f(x) > 0 \) när \( x > 0 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Ge exempel på en växande funktion \( f \) som uppfyller följande villkor
+            <ol>
+              <li>\( f(0)=1 \)</li>
+              <li>\( f'(1)=2 \)</li>
+              <li>\( f''(2)=0 \)</li>
+            </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"><ol>
+                <li>Tex \( f(x)= 2x+1 \) eller \( g(x) = e^x \).</li>
+                <li>Tex \( f(x)= 2x+1 \), \( f'(x)=2x \).</li>
+                <li>Tex \( f(x)= 2x \), \( f''(x) = 0 \).</li>
+              </ol><p>En möjlig kandidat är \( f(x) = 2x+1 \).</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA8">
+      <a href="14_derivatan_log.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

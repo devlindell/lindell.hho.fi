@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>15. Repetition</title>
+
+  </head>
+  <body>
+    <header class="MaA7">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+            <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+            <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+            <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+            <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+            <a class="dropdown-item" href="6_tangens.html">6. Tangens och dess egenskaper</a>
+            <a class="dropdown-item" href="7_ekvationer_tangens.html">7. Ekvationer med tangens</a>
+            <a class="dropdown-item" href="8_trig_funktioner.html">8. De trigonometriska funktionerna</a>
+            <a class="dropdown-item" href="9_sammansatt_funktion.html">9. Sammansatt funktion</a>
+            <a class="dropdown-item" href="10_derivatan_sammansatt.html">10. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_trig.html">11. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="12_harledning.html">12. Härledning</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersökning av trigonmetriska funktioner</a>
+            <a class="dropdown-item" href="14_periodiskafenomen.html">14. Periodiska fenomen</a>
+            <a class="dropdown-item" href="15_repetition.html">15. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="14_periodiskafenomen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 7 Trigonometriska funktioner</h3>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>15. Repetition</h1>
+      <section>
+        <div class="theory">
+          <p>Sedan är det bara att repetera.</p>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Längden av bågen i en sektor är 8,0 m och radien är 2,0 m. Hur stor är sektorvinkeln i radianer och grader?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.25" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.25">
+              <div class="card card-body answer"><p>Som radianer: \( \alpha = \dfrac{8 \text{ m}}{2 \text{ m}} = 4 \) radianer.</p>
+              <p>Som grader: \( \dfrac{x}{180^{\circ}} = \dfrac{4 \text{ rad}}{\pi \text{ rad}} \) ger \( \alpha = 229,2^{\circ} \).</p>
+              </div></div>
+          </li>
+
+          <li>Storleken av en sektorvinkel är \( \dfrac{5\pi}{4} \) och längden av bågen är \( 75\pi \). Bestäm längden av radien.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5">
+              <div class="card card-body answer"><p>Eftersom \( \alpha =\dfrac{b}{r} \) får vi \( \dfrac{5\pi}{4} = \dfrac{75\pi}}{r} \).</p>
+              <p>Alltså \( r = 60 \).</p>
+              </div></div>
+          </li>
+
+          <li>Förenkla följande uttryck utan räknare.
+            <ol>
+              <li>\( \dfrac{\sin 20^{\circ}}{\cos 70^{\circ}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                \dfrac{\sin 20^{\circ}}{\cos 70^{\circ}} & = & \dfrac{\cos(90^{\circ} - 20^{\circ})}{\cos 70^{\circ}} \\
+                & = & \dfrac{\cos 70^{\circ}}{\cos 70^{\circ}} \\
+                & = & 1 \\
+                \end{array} \) </p>
+              </div></div> </li>
+              <!--<li>\( Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>-->
+              <li>\( \dfrac{\cos \frac{\pi}{5}}{\sin \frac{13\pi}{10}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \begin{array}{rcl}
+                \dfrac{\cos \frac{\pi}{5}}{\sin \frac{13\pi}{10}} & = & \dfrac{\cos \frac{\pi}{5}}{\sin \frac{10\pi + 3\pi}{10}} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{\sin (\pi +\frac{3\pi}{10})} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{\sin (\pi -(-\frac{3\pi}{10}))} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{\sin (-\frac{3\pi}{10})} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{-\sin \frac{3\pi}{10}} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{-\cos(\frac{\pi}{2} - \frac{3\pi}{10})} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{-\cos \frac{2\pi}{10}} \\
+                & = & \dfrac{\cos \frac{\pi}{5}}{-\cos \frac{\pi}{5}} \\
+                & = & -1 \\
+              \end{array} \) </p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös följande ekvationer. Svara som grader.
+            <ol>
+              <li>\( \sin x = 0,43 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Räknaren ger oss en lösning, \( 25,5^{\circ} \).</p>Alltså \( 25,5^{\circ} + n\cdot 360^{\circ} \).</p>
+              <p>Eftersom sinus är y-koordinaten i enhetscikeln får vi den andra vinkeln som.</p>
+              <p>Den andra är \( 180^{\circ} - 25,5^{\circ} = 154,5^{\circ} + n \cdot 360^{\circ} \).</p>
+              </div></div> </li>
+              <li>\( \cos x = 0,76 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Räknaren ger oss en lösning, \( 40,5^{\circ} \).</p>
+              <p>Eftersom cosiuns är x-koordinaten i enhetscirkeln får vi den andra vinkeln som.</p>
+              <p>Alla vinklar är \( \pm 40,5^{\circ} + n\cdot 360^{\circ} \).</p>
+              </div></div> </li>
+              <li>\( \tan x = 0,11 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Räknaren ger oss en lösning, \( 6,3^{\circ} \).</p>
+              <p>Alla vinklar är \( 6,3^{\circ} + n \cdot 180^{\circ} \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm värdet av \( \sin 3\alpha + \cos 2 \alpha \) då
+            <ol>
+              <li>\( \alpha = 90^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.25a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.25a">
+              <div class="card card-body answer"><p>Vi har \( \sin 3\alpha + \cos 2 \alpha = \sin 270^{\circ} + \cos 180^{\circ} = -1 -1 = -2 \).</p> </div></div> </li>
+              <li>\( \alpha = -90^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.25b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.25b">
+              <div class="card card-body answer"><p>Vi har \( \sin 3\alpha + \cos 2 \alpha = \sin (-270^{\circ}) + \cos (-180^{\circ}) = 1 -1 = 0   \).</p> </div></div> </li>
+            </ol>
+            Använd dig av enhetscirkeln för att bestämma värdena av sinus och cosinus.
+          </li>
+
+          <li>Bestäm värdet av \( \sin 3\alpha + 3\cos \alpha \) då
+            <ol>
+              <li>\( \alpha = 45^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.3a">
+              <div class="card card-body answer"><p>Vi har \( \sin 3\alpha + 3\cos \alpha = \sin 135^{\circ} + 3\cos 45^{\circ} = \dfrac{1}{\sqrt{2}} +3\cdot\dfrac{1}{\sqrt{2}} = 2\sqrt{2} \).</p> </div></div> </li>
+              <li>\( \alpha = 135^{\circ} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.3b">
+              <div class="card card-body answer"><p>Vi har \( \sin 3\alpha + 3\cos \alpha = \sin 405^{\circ} + 3\cos 135^{\circ} = \sin 45^{\circ} + 3\cos 135^{\circ} = \dfrac{1}{\sqrt{2}} +3(-\dfrac{1}{\sqrt{2}}) = -\sqrt{2} \).</p> </div></div> </li>
+            </ol>
+            Använd dig av enhetscirkeln, eller av tabellen för exakta värden för att bestämma värdena av sinus och cosinus.
+          </li>
+
+          <li>Vi vet att \( \cos x = \dfrac{4}{5} \) och att \( 270^{\circ} < x < 360^{\circ} \). Bestäm de exakta värdena för \( \sin x \) och \( \tan x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.35" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.35">
+              <div class="card card-body answer"> <p>Eftersom vi är i fjärde kvadraten är sinus och tangens negativa.</p>
+              <p>Vi får \( \sin x = -\sqrt{1-\cos^2 x} = -\sqrt{1-(\dfrac{4}{5})^2} = -\dfrac{3}{5} \).</p>
+              <p>Vidare \( \tan x = \dfrac{\sin x}{\cos x} = -\dfrac{3}{4} \).</p>
+              <p>Eller så utnyttjar vi Pythagoras. Längden av motstående katet är \( \sqrt{5^2-4^2} = 3 \). Den längden utnyttjar vi för att bilda sinus och tangens.</p>
+              </div></div>
+          </li>
+
+          <li>Vi vet att \( \sin x = -\dfrac{1}{\sqrt{5}} \) och att \( 180^{\circ} < x < 270^{\circ} \). Bestäm de exakta värdena för \( \cos x \) och \( \tan x \). [V05, 2]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.4">
+              <div class="card card-body answer"> <p>Eftersom vi är i tredje kvadraten är sinus och cosinus negativa.</p>
+              <p>Vi får \( \cos x = -\sqrt{1-\sin^2 x} = -\sqrt{1-(-\dfrac{1}{\sqrt{5}})^2} = -\dfrac{2}{\sqrt{5}} \).</p>
+              <p>Vidare \( \tan x = \dfrac{\sin x}{\cos x} = \dfrac{1}{2} \).</p>
+              </div></div>
+          </li>
+
+          <li>Förenkla följande uttryck \( \dfrac{1-\cos^2 \alpha}{\sin\alpha \cdot \cos \alpha} \).
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.45" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="2.45">
+          <div class="card card-body answer"><p>Vi får</p>
+          <p>\( \begin{array}{rcll}
+          \dfrac{1-\cos^2 \alpha}{\sin\alpha \cdot \cos \alpha} & = & \dfrac{\sin^2 \alpha}{\sin\alpha \cdot \cos \alpha} \\
+          & = & \dfrac{\sin \alpha}{\cos \alpha} \\
+          & = & \tan \alpha \\
+          \end{array} \) </p>
+          </div></div> </li>
+
+          <li>Lös följande ekvationer. Räkna i radianer.
+            <ol>
+              <li>\( 2\sin(\dfrac{\pi}{3}-x) + \sqrt{3} = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.6a">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \begin{array}{rcl}
+                2\sin(\dfrac{\pi}{3}-x) + \sqrt{3} & = & 0 \\
+                2\sin(\dfrac{\pi}{3}-x) & = & - \sqrt{3} \\
+                \sin(\dfrac{\pi}{3}-x) & = & - \dfrac{\sqrt{3}}{2} \\
+                \dfrac{\pi}{3}-x & = & \dfrac{4\pi}{3} + n\cdot 2\pi \\
+                x & = & \pi + n\cdot 2\pi \\
+                \end{array} \) </p>
+                <p>och</p>
+                <p>\( \begin{array}{rcl}
+                  \dfrac{\pi}{3}-x & = & \pi - \dfrac{4\pi}{3} + n\cdot 2\pi \\
+                  x & = & \dfrac{2\pi}{3} + n\cdot 2\pi \\
+                \end{array} \) </p>
+              </div></div> </li>
+              <!--<li>\( 2\sin(\dfrac{\pi}{3}-x) + \sqrt{3} = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.6b">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \begin{array}{rcl}
+                2\sin(\dfrac{\pi}{3}-x) + \sqrt{3} & = & 0 \\
+                2\sin(\dfrac{\pi}{3}-x) & = & - \sqrt{3} \\
+                \sin(\dfrac{\pi}{3}-x) & = & - \dfrac{\sqrt{3}}{2} \\
+                \dfrac{\pi}{3}-x & = & \dfrac{4\pi}{3} + n\cdot 2\pi \\
+                x & = & \pi + n\cdot 2\pi \\
+                \end{array} \) </p>
+                <p>och</p>
+                <p>\( \begin{array}{rcl}
+                  \dfrac{\pi}{3}-x & = & \pi - \dfrac{4\pi}{3} + n\cdot 2\pi \\
+                  x & = & \dfrac{2\pi}{3} + n\cdot 2\pi \\
+                \end{array} \) </p>
+              </div></div> </li>-->
+              <li>\( \tan(2x-\dfrac{\pi}{6}) = -1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.6c">
+              <div class="card card-body answer">
+                <p>Definitionsmängden: \( 2x -\dfrac{\pi}{6} \not= \dfrac{\pi}{2} +n\pi \). Alltså då \( x \not= \dfrac{\pi}{3} +n\dfrac{\pi}{2} \)
+                <p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                2x-\dfrac{\pi}{6} & = & \dfrac{3\pi}{4} +n\pi \\
+                2x & = & \dfrac{11\pi}{12} +n\pi \\
+                x & = & \dfrac{11\pi}{24} +n\dfrac{\pi}{2} \\
+                \end{array} \) </p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös följande ekvationer. Räkna i radianer.
+            <ol>
+              <li>\( \sin(2x - \dfrac{\pi}{2}) = \sin x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \begin{array}{rcl}
+                2x - \dfrac{\pi}{2} & = & x + n\cdot 2\pi \\
+                x & = & \dfrac{\pi}{2} + n\cdot 2\pi \\
+                \end{array} \) </p>
+                <p>och</p>
+                <p>\( \begin{array}{rcl}
+                  2x - \dfrac{\pi}{2} & = & \pi - x + n\cdot 2\pi \\
+                  3x & = & \dfrac{3\pi}{2} + n\cdot 2\pi \\
+                  x & = & \dfrac{\pi}{2} + n\cdot \dfrac{2\pi}{3} \\
+                \end{array} \) </p>
+              </div></div> </li>
+
+              <li>\( \tan 2x = \tan (\dfrac{\pi}{2}-x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Först måste vi undersöka definitionsmängden.</p>
+                <p>\( \begin{array}{rcl}
+                  2x & \not= & \dfrac{\pi}{2} + n \cdot \pi \\
+                  x & \not= & \dfrac{\pi}{4} + n \cdot \dfrac{\pi}{2} \\
+                  \end{array} \) </p>
+                  <p>och</p>
+                  <p>\( \begin{array}{rcl}
+                  \dfrac{\pi}{2}-x & \not= & \dfrac{\pi}{2} + n \cdot \pi \\
+                  -x & \not= & + n \cdot \pi \\
+                  x & \not= & + n \cdot \pi \\
+                  \end{array} \) </p>
+                <p>Vi får</p>
+              <p>\( \begin{array}{rcl}
+                2x & = & \dfrac{\pi}{2}-x + n\cdot \pi \\
+                3x & = & \dfrac{\pi}{2} + n\cdot \pi \\
+                x & = & \dfrac{\pi}{6} + n\cdot \dfrac{\pi}{3} \\
+                \end{array} \) </p>
+              </div></div> </li>
+              <li>\( \sin x \cos x + \cos x = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                  \sin x \cos x + \cos x & = & 0 \\
+                  \cos x (\sin x + 1) & = & 0 \\
+                  \end{array} \) </p>
+                <p>Alltså \( cos x = 0 \). Det sker då \( x = \dfrac{\pi}{2} + n\pi \).</p>
+                <p>Och \( \sin x + 1 = 0\). Alltså \( \sin x = -1 \). Det sker då \( x = \dfrac{\pi}{2} + n\cdot 2\pi \).</p>
+                </div></div> </li>
+              <li>\( 2\cos^2 x + 3\cos x + 1 = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5d">
+              <div class="card card-body answer"><p>Vi substituerar \( \cos x = t \).</p>
+                <p>Då är vår ekvation \( 2t^2+3t+1 = 0 \). Ekvationen har lösningarna \( t_1 = -\dfrac{1}{2} \) och \( t_2 = -1 \).</p>
+                <p>Vi substituerar tillbaka, \( \cos x = -\dfrac{1}{2} \) har lösningarna \( \dfrac{2\pi}{3} + n \cdot 2\pi \) och \( \dfrac{4\pi}{3} + n \cdot 2\pi \).</p>
+                <p>Dessutom får vi \( \cos x = -1 \) som har lösningarna \( \pi +n \cdot 2\pi \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Derivera följande funktioner.
+            <ol>
+              <li>\( f(x) = (-3x^2+x)^4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( x^4 \). Derivatan är \( 4x^3 \).</p>
+              <p>Den inre funktionen är \( -3x^2+x \). Derivatan är \( -6x+1 \)</p>
+              <p>Vi får \( f'(x) = 4(-3x^2+x)^3 \cdot (-6x+1) \).</p>
+              </div></div> </li>
+              <li>\( g(x) = \sin(3x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( \sin x \). Derivatan är \( \cos x \).</p>
+              <p>Den inre funktionen är \( 3x^2 \). Derivatan är \( 6x \)</p>
+              <p>Vi får \( g'(x) = \cos(3x^2)\cdot 6x = 6x\cos(3x^2) \).</p> </div></div> </li>
+              <li>\( h(x) = \cos^4 x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( x^4 \). Derivatan är \( 4x^3 \).</p>
+              <p>Den inre funktionen är \( \cos x \). Derivatan är \( -\sin x \)</p>
+              <p>Vi får \( h'(x) = 4 \cos^3 x).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Derivera följande funktioner.
+            <ol>
+              <li>\( f(x) = 2x^4(x^2+2)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5a">
+              <div class="card card-body answer"><p>Vi har en produkt av två funktioner där den ena är en sammansatt funktion.</p>
+              <p>Vi får först \( f'(x) = D2x^4 \cdot (x^2+2)^3 + 2x^4 \cdot D(x^2+2)^3 \).</p>
+              <p>Den andra delen är en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( x^3 \). Derivatan är \( 3x^2 \).</p>
+              <p>Den inre funktionen är \( x^2+2 \). Derivatan är \( 2x \)</p>
+              <p>Vi får </p>
+              <p> \( \begin{array}{rcl}
+                f'(x) & = & 8x \cdot (x^2+2)^3 + 2x^4 \cdot 3(x^2+2)^2 \cdot 2x \\
+                & = & 8x(x^2+2)^3 + 24x^5 (x^2+2)^2 \\
+                & = & 8x[(x^2+2)^3 + 3x^4 (x^2+2)^2] \\
+                & = & 8x(x^2+2)^2[(x^2+2) + 3x^4] \\
+                & = & 8x(x^2+2)^2(3x^4 + x^2+2) \\
+                \end{array} \) </p>
+                </div></div> </li>
+              <li>\( g(x) = \dfrac{(2x+1)^6}{x^2+1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5b">
+              <div class="card card-body answer"><p>Vi har en rationell funktion där täljaren är en sammansatt funktion.</p>
+              <p>Vi får först \( g'(x) = \dfrac{D(2x+1)^6(x^2+1)-(2x+1)^6\cdot D(x^2+1)}{(x^2+1)^2} \). </p>
+              <p>Det vi ursprungligen har i täljaren är en sammanstatt funktion.</p>
+              <p>Den yttre funktionen är \( x^6 \). Derivatan är \( 6x^5 \).</p>
+              <p>Den inre funktionen är \( 2x+1 \). Derivatan är \( 2 \)</p>
+              <p>Vi får </p>
+              <p> \( \begin{array}{rcl}
+                g'(x) & = & \dfrac{6(2x+1)^5\cdot 2 \cdot (x^2+1)-(2x+1)^6\cdot (2x)}{(x^2+1)^2} \\
+                & = & \dfrac{(2x+1)^5[ 12 \cdot (x^2+1)-(2x+1)\cdot (2x)]}{(x^2+1)^2} \\
+                & = & \dfrac{(2x+1)^5( 8x^2 -2x +12)}{(x^2+1)^2} \\
+              \end{array} \) </p>
+              <p>Man kan också derivera funktionen genom att tänka den som \( g(x) = (2x+1)^6(x^2+1)^{-1} \).</p>
+              </div></div> </li>
+              <li>\( h(x) = \cos^2 (\sin x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5c">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Vi får </p>
+              <p> \( \begin{array}{rcl}
+              h'(x) & = & 2\cos(\sin x) \cdot D (\cos (\sin x)) \\
+              & = & 2\cos(\sin x) \cdot  (-\sin (\sin x)) \cdot \cos x \\
+              & = & -2\cos(\sin x) \cdot  \sin (\sin x) \cdot \cos x \\
+              \end{array} \) </p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm \( f^{(21)}(x) \) då
+            <ol>
+              <li>\( f(x) = \sin x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.9a">
+              <div class="card card-body answer"><p>Vi märker att</p>
+              <p>\( \begin{array}{rcl}
+              f'(x) & = & \cos x \\
+              f''(x) & = & -\sin x \\
+              f^{(3)}(x) & = & -\cos x \\
+              f^{(4)}(x) & = & \sin x \\
+              f^{(5)}(x) & = & \cos x \\
+              f^{(6)}(x) & = & -\sin x \\
+              \vdots \\
+              \end{array} \) </p>
+              <p>Alltså är \( f'^{(21)}(x) = \cos x \).</p>
+              </div></div> </li>
+              <li>\( f(x) = \cos x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.9b">
+              <div class="card card-body answer"><p>Vi märker att</p>
+              <p>\( \begin{array}{rcl}
+              f'(x) & = & -\sin x \\
+              f''(x) & = & -\cos x \\
+              f^{(3)}(x) & = & \sin x \\
+              f^{(4)}(x) & = & \cos x \\
+              f^{(5)}(x) & = & -\sin x \\
+              f^{(6)}(x) & = & -\cos x \\
+              \vdots \\
+              \end{array} \) </p>
+              <p>Alltså är \( f'^{(21)}(x) = -\sin x \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 5-3\cos x \). Bestäm största och minsta värde för funktionen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>För cosinus gäller att \( -1 \leq \cos x \leq 1 \).</p>
+              <p>Då gäller att \( -3 \leq 3\cos x \leq 3 \).</p>
+              <p>Och att \( -3 \leq -3\cos x \leq 3 \).</p>
+              <p>Alltså gäller att \( 2 \leq 5-3\cos x \leq 8 \).</p>
+              <p>Minsta värdet är 2 och största värdet är 8.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 3+2\sin \dfrac{x}{2} \). Bestäm största och minsta värde för funktionen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>För sinus gäller att \( -1 \leq \sin x \leq 1 \).</p>
+              <p>Då gäller att \( -1 \leq \sin \dfrac{x}{2} \leq 1 \).</p>
+              <p>Och att \( -2 \leq 2\sin \dfrac{x}{2} \leq 2 \).</p>
+              <p>Alltså gäller att \( 1 \leq 3+2\sin \dfrac{x}{2} \leq 5 \).</p>
+              <p>Minsta värdet är 1 och största värdet är 5.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = -1+3\tan 2x \). Bestäm största och minsta värde för funktionen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>För tangens gäller att värdemängden är alla reella tal. Då är det ingen skillnad om vi multiplicerar med 3 eller subraherar med 1.</p>
+              <p>Största värdet är (plus) oändligheten, \( \infty \), minsta värdet är minus oändligheten, \( -\infty \).
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Temperaturen i celciusgrader på en semesterort under en dag följer funktionen \[ f(t) = 9,5\sin(0,262t-1,703) + 28,5 \] där \( t \) är antalet timmar som förflutit efter midnatt.
+            <ol>
+              <li>Med vilken hastighet förändrades temperaturen kl 9.30? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Vi behöver derivatan, och i derivatafunktionen sätter vi in 9,5.</p>
+              <p><img src="pics/15_6a.png" class="responsivepic600" /></p>
+              <p>Alltså 1,8<sup>o</sup>/h.</p>
+              <p>Märk att rad 2, derivatafunktionen behöver vi inte skriva ut.</p>
+              </div></div> </li>
+              <li>Vilken var temperaturens största förändringshastighet? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi undersöker andra derivatans nollställen. Dessa nollställen sätter vi in i derivatafunktionen.</p>
+              <p><img src="pics/15_6b.png" class="responsivepic600" /></p>
+              <p>Alltså 2,5<sup>o</sup>/h.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm ekvationen till tangenten för funktionen \( f(x) = 3\tan 2x -2\sin \dfrac{x}{2} \) i den punkt där \( x = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\(y\)-koordinaten är \( f(0) = 0\).</p>
+              <p>Riktningskoefficienten är derivatans värde i \( x=0 \), \( f'(0) = 5 \).</p>
+              <p>Linjens ekvation är av typ \( y-y_0 = k(x-x_0) \).</p>
+              <p>Vi får \( y - 0 = 5(x-0) \), alltså \( y = 5x \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm vinkeln mellan grafen till funktionen \( f(x) = 5\cos(7-2x) + 13 \) och \( y \)-axeln med en decimals noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.5">
+              <div class="card card-body answer"> <p>Eftersom \( k = \tan \alpha \), alltså tangensvärdet av vinkeln mellan en linje och \( x \)-axeln är samma som värdet för riktningskoefficienten. Vi vill ha derivatans värde i \( x = 0 \).</p>
+              <p>\( f'(0) = 10 \sin (7) \).</p>
+              <p>Vinkeln är 50,6<sup>o</sup>.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Vi ritar tangenter till två på varandra följande skärningspunkter mellan kurvan \( f(x) = \sin x \) och \( x \)-axeln. Visa att tangenterna är vinkelräta mot varandra.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Skärningspunkterna är \( sin x =0 \), alltså \( x = n\cdot \pi \). Två punkter för oss är 0 och \( \pi \).</p>
+              <p>Riktningskoefficienterna är \( f'(0) = 1 \) och \( f'(\pi) = -1 \).</p>
+              <p>För att två linjer skall vara vinkelräta, ortogonala, gäller att produkten av riktningskoefficienterna har värdet -1, \( k_1\cdot k_2 = -1 \).</p>
+              <p>Vi har \( 1 \cdot (-1) = -1 \).</p>
+              <p>Alltså är våra tangenter vinkelräta mot varandra.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lös följande ekvationer
+            <ol>
+              <li>\( \sin x \cos x -\cos^2 x = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20a">
+              <div class="card card-body answer"><p>Vi får:</p>
+              <p>\( \begin{array}{rcl}
+              \sin x \cos x -\cos^2 x & = & 0 \\
+              \cos x (\sin x -\cos x) & = & 0 \\
+              \end{array} \) </p>
+              <p>Alltså \( \cos x = 0 \). Sker då \( x = \dfrac{\pi}{2} + n\pi \).</p>
+              <p>Och </p>
+              <p>\( \begin{array}{rcl}
+              \sin x - \cos x & = & 0 \\
+              \sin x & = & \cos x \\
+              \dfrac{\sin x}{\cos x} & = & 1 \\
+              \tan x & = & 1 \\
+              \end{array} \) </p>
+              <p>Vi har förbjudna punkter då \( x = \dfrac{\pi}{2} + n\pi \).</p>
+              <p>Ekvationen \( \tan x = 1 \) har lösningarna \( x = \dfrac{\pi}{4} +n\pi \).</p>
+              </div></div> </li>
+              <li>\( \sin^2 x -3\cos^2 x = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20b">
+              <div class="card card-body answer"><p><p>Vi får:</p>
+              <p>\( \begin{array}{rcl}
+              \sin^2 x -3\cos^2 x & = & 0 \\
+              \sin^2 x & = & 3\cos^2 x  \\
+              \dfrac{\sin^2 x}{\cos^2 x} & = & 3  \\
+              \tan^2 x & = & 3  \\
+              \tan x & = & \pm\sqrt{3}  \\
+              \end{array} \) </p>
+              <p>\( \tan x = \sqrt{3} \) då \( x = \dfrac{\pi}{3} +n\pi \).</p>
+              <p>\( \tan x = -\sqrt{3} \) då \( x = \dfrac{2\pi}{3} +n\pi \)</p>
+              </div></div> </li>
+              <!--<li>\( \tan x \cos x = \sin 5x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>-->
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p> </div></div>
+          </li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p> </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA7">
+      <a href="14_periodiskafenomen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

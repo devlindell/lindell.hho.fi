@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>21. Derivatan av exponentialfunktionen</title>
+
+  </head>
+  <body>
+    <header class="MaA62021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärde för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_sammansatt_funktion.html">10. Sammansatt funktion</a>
+            <a class="dropdown-item" href="11_derivatan_sammansatt.html">11. Derivatan av en sammansatt funktion</a>
+            <a class="dropdown-item" href="12_derivprod.html">12. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_derivpotens.html">13. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="14_derivkvot.html">14. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="15_undersokning.html">15. Undersökning av rationella funktioner</a>
+            <a class="dropdown-item" href="16_rotfunktionen.html">16. Rotfunktionen och ekvationer med rötter</a>
+            <a class="dropdown-item" href="17_deri_rotfunkt.html">17. Derivatan av rotfunktionen</a>
+            <a class="dropdown-item" href="18_till_rotfunkt.html">18. Tillämpningar av rotfunktionen</a>
+            <a class="dropdown-item" href="19_talet_e.html">19. Talet e</a>
+            <a class="dropdown-item" href="20_derivatan_e.html">20. Derivatan av \( e^x \)</a>
+            <a class="dropdown-item" href="21_derivatan_exp.html">21. Derivatan av exponentialfunktionen</a>
+            <a class="dropdown-item" href="22_derivatan_log.html">22. Derivatan av logaritmfunktioner</a>
+            <a class="dropdown-item" href="23_derivatan_trig.html">23. Derivatan av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="24_harledning.html">24. Härledning av deriverinsformel för sinus och cosinus</a>
+            <a class="dropdown-item" href="25_undersokning.html">25. Undersökning av trigonometriska funktioner</a>
+            <a class="dropdown-item" href="26_repetition.html">26. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="20_derivatan_e.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivata</h3>
+      <a href="22_derivatan_log.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>21. Derivatan av exponentialfunktionen</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Derivera \( 5^x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi börjar med att uttrycka \( 5^x \) med hjälp av basen \( e \), \( 5=e^{\ln 5} \).</p>
+            <p>Då är \( 5^x= (e^{\ln 5 })^x = e^{x\ln 5} \).</p>
+            <p>Vi får att</p>
+            <p>\( \begin{array}{rcll} D5^x  & = &  De^{x\ln 5}  & \mid De^{f(x)}=e^x{f(x)}\cdot f'(x) \\  & = &  e^{x\ln 5} Dx\ln 5 \\  & = &  e^{x\ln 5} \ln5  &  \mid 5^x=e^{x\ln5}\\  & = &  5^x \ln 5 \\ \end{array} \)</p>
+          </div>
+          <p>Då vi gör det allmänt får vi att derivatan av \( k^x=k^x \ln k \) </p>
+          <p>Motivering:</p>
+          <p>För \( k^x \) uttrycker vi \( k \) som \( e^{\ln k} \) och då är \( k^x=(e^{\ln k})^x = e^{x\ln k} \).</p>
+          <p>\( Dk^x=De^{x\ln k} = e^{x\ln k}D(x\ln k) = e^{x\ln k} \ln k = k^x \ln k \).</p>
+          <p>Alltså \( Dk^x=k^x \ln k \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> För radioaktiva isotoper gäller att under samma tid sönderfaller det en lika stor procentuell andel till andra isotoper. Kalium, \( ^{11}C \), är en av isotoperna som används vid PET-scanning. Under 20 minuter minskar radioaktiviteten med 50 %. Vi antar att en patient har fått en dos på 3,6 mg.</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>Bilda en funktion som beskriver mängden radioaktiva isotoper som finns kvar i kroppen.</li>
+              <li>Bestäm hastigheten som isotopen sönderfaller vid 30 minuter efter att den injucerats.</li>
+            </ol>
+            <h4>Lösning</h4>
+            <p>För att bilda en funktion börjar vi med att göra en tabell.</p>
+            <table>
+                <tr class="MaA8"><th>Tid</th><th>Mängd kvar</th></tr>
+                <tr><td>0</td><td>\( 3,6 \)</td></tr>
+                <tr><td>20</td><td>\( 3,6 \cdot 0,5 \)</td></tr>
+                <tr><td>40</td><td>\( 3,6 \cdot 0,5^2 \)</td></tr>
+                <tr><td>60</td><td>\( 3,6 \cdot 0,5^3 \)</td></tr>
+                <tr><td>\( t \)</td><td>\( 3,6 \cdot 0,5^{\frac{t}{20}} \)</td></tr>
+              </table>
+            <p>Inom naturvetenskaper brukar man uttrycka exponentiella förlopp med funktioner som har basen \( e \), \( 0,5=e^{\ln 0,5} \). Vår funktion är \( 3,6 \cdot (e^{\ln 0,5})^{\frac{t}{20}} = 3,6e^{\frac{t}{20}\ln 0,5} \). Eftersom vi har en tillämpad uppgift kan vi skriva det som \( 3,6e^{-0,0347t} \).</p>
+            <p>Funktionen är \( m(t)=3,6e^{\frac{t}{20}\ln 0,5} \) där \( t \) är tiden i minuter efter att isotoperna injicerats.</p>
+            <p>För att bestämma hastigheten för sönderfallet deriverar vi funktionen, \( m'(t)=3,6e^{\frac{t}{20}\ln 0,5} \cdot \dfrac{1}{20}\ln 0,5 \).</p>
+            <p>Hastigheten för sönderfallet vid 30 min är \( m'(30)=3,6e^{\frac{30}{20}\ln 0,5} \cdot \dfrac{1}{20}\ln 0,5 = -0,044 \) (mg/min).</p>
+            <p>Isotoperna sönderfaller efter 30 min med hastigheten 0,044 mg/min.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Visa att \( e^{3x}  >  x \).</p>
+            <h4>Lösning</h4>
+            <p>Vi visar att \( e^{3x}  >  x \) genom att undersöka funktionen \( f(x)=e^{3x}-x \) och visa att för funktionen gäller att \( e^{3x} -x  >  0 \).</p>
+            <p>Vi visar att vi har en funktion som alltid är positiv genom att derivera den och visa att den alltid är positiv.</p>
+            <p>Derivatafunktionen är \( f'(x)=e^{3x}\cdot 3 -1 = 3e^{3x}-1 \).</p>
+            <p>Derivatans nollställen finner vi genom att lösa ekvationen \( 3e^{3x}-1 = 0 \).</p>
+            <p>\( \begin{array}{rcl} 3e^{3x} -1  & = &  0 \\ 3e^{3x}  & = &  1 \\ e^{3x}  & = &  \dfrac{1}{3} \\ 3x  & = &  \ln \dfrac{1}{3} = \ln 1 -\ln 3 = -\ln 3 \\ x  & = &  \dfrac{1}{3} (-\ln 3) = -\ln \sqrt[3]{3} \approx -0,37 \\ \end{array} \)</p> <p>Vi bildar ett teckenschema:</p>
+            <p>\( f'(-1)= 3e^{3(-1)}-1 = \dfrac{3}{e^3} -1  <  0 \).</p>
+            <p>\( f'(0)= 3e^{3\cdot 0}-1 = 3e^0 -1 = 3-1 = 2  >  0 \).</p>
+            <p>\( \begin{array}{r|ccc}  &   &  -\ln \sqrt[3]{3}  &  \\ \hline f'(x)  &  -  &  0  &  + \\ f(x)  &  \searrow  &  0  &  \nearrow \\ \end{array} \) </p>
+            <p>Funktionen får sitt minsta värde i punkten \( -\ln \sqrt[3]{3} \). Funktionens minsta värde är \( f(-\ln \sqrt[3]{3}) = e^{3(-\ln \sqrt[3]{3})}-(-\ln \sqrt[3]{3}) \approx 0,70 \).</p>
+            <p>Eftersom funktionens minsta värde är positivt är resten av värdena positiva. Vi har visat att \( e^{3x}  >  x \).</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Derivera
+            <ol>
+              <li>\( 2^x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( D2^x=\ln2 \cdot 2^x = 2^x \ln 2 \)</p></div></div> </li>
+              <li>\( 4^x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( D4^x = \ln 4 \cdot 4^x = 4^x\ln4 \)</p></div></div> </li>
+              <li>\( (\dfrac{1}{2})^x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( D(\dfrac{1}{2})^x=\ln \dfrac{1}{2}\cdot(\dfrac{1}{2})^x=(\ln 1 -\ln 2)(\dfrac{1}{2})^x = -\ln 2\dfrac{1^x}{2^x} = -\dfrac{\ln 2}{2^x} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm nollställena för derivatafunktionen för följande funktioner.
+            <ol>
+              <li>\( f(x) = 2x + e^{-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( f'(x) = 2 -e^{-x} \).</p>
+                <p>Derivatafunktionens nollställe, \( f'(x) = 0 \), är \( x = -\ln 2 \).</p>
+              </div></div> </li>
+              <li>\( g(x) = x^2e^{-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( g'(x) = 2xe^{-x}-x^2e^{-x} \).</p>
+                <p>Derivatafunktionens nollställe, \( g'(x) = 0 \), är \( x = 0 \) och \( x = 2 \).</p>
+              </div></div> </li>
+              <li>\( h(x) = \dfrac{e^{-x}}{x^2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( h'(x) = \dfrac{-2e^{-x}-xe^{-x}}{x^3} \).</p>
+                <p>Derivatafunktionens nollställe, \( h'(x) = 0 \), är \( x = -2 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i><p>Halveringstiden för den radioaktiva isotopen polonium 210 är ca 140 dagar (exakt är det 138,4 dagar). Polonium 210 är ett relativt allmänt ämne att mörda personer med. Tex <a href="http://sv.wikipedia.org/wiki/Aleksandr_Litvinenko" target="_blank">Alexander Litvinenko</a> och <a href="http://sv.wikipedia.org/wiki/Yassir_Arafat" target="_blank">Yasser Arafat</a> har högst antagligen blivit förgiftade och mördade med polonium.</p>
+            <p>En dödlig dos för en vuxen person vars massa är 75 kg är ungefär 650 ng (nanogram) polonium.</p>
+            <ol>
+              <li>Bilda en funktion som beskriver mängd polonium kvar i kroppen som funktion av tiden i dagar för en vuxen person på 75 kg. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>\( m(t)=650\cdot 0,5^{\frac{t}{140}} \) eller \( m(t)=650\cdot e^{\frac{t}{140}\cdot \ln0,5} \) eller \( m(t)=650\cdot e^{-0,00495t} \).</p>
+              <p>I stället för 140 kan du bra ha exakta värdet 134,8.</p></div></div> </li>
+              <li>Efter en dödlig dos med polonium tar det ca 44 dagar före man dör. Hur många ng polonium finns det kvar i kroppen? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( m(44)=522,79 \) ng \( = 522,8 \) ng</p></div></div> </li>
+              <li>Hur länge tar det förrän mängden aktiv polonium har sjunkit till 30 % av vad den var i början? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Lös ekvationen \( 650e^{-0,00495t} = 0,3\cdot 650 \), \( t=243,2 \) dagar.</p></div></div> </li>
+              <li>Hur snabb är sönderfallet 30 dagar efter injicering? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer"><p>\( m'(t)=-3,2175e^{-0,00495t} \). \( m'(30)=-2,77348 \) ng/dag.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangeten för funktionen \( f(x)=(\dfrac{1}{2})^x \) då \( x = -1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>\( f'(x)=-\ln 2 \cdot (\dfrac{1}{2})^x \).</p>
+                <p>Tangentens riktingskoefficient då \( x=-1 \) är \( f'(-1) = -2\ln2 \).</p>
+                <p>\( y \)-koordinaten är \( f(-1)=2 \).</p>
+                <p>Tangentens ekvation är \( y-y_0 = k(x-x_0) \), alltså</p>
+                <p>\( y-2 = -2\ln 2(x+1) \Leftrightarrow y = -2\ln 2 \cdot x +2-2\ln 2 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangeten för funktionen \( f(x)=3^x \) då \( x=1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5">
+              <div class="card card-body answer"> <p>\( f'(x)=\ln 3 \cdot 3^x \).</p>
+                <p>Tangentens riktingskoefficient då \( x=1 \) är \( f'(1)=\ln 3 \cdot 3^1 = 3\ln3 \).</p>
+                <p>\( y \)-koordinaten är \( f(1)=3^1 =3 \).</p>
+                <p>Tangentens ekvation är \( y-y_0 = k(x-x_0) \), alltså</p>
+                <p>\( y-3 = 3\ln 3(x-1) \Leftrightarrow y = 3\ln 3 \cdot x +3-3\ln 3 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för funktionen \( f(x)=4^x \) som har riktningskoefficienten \( \ln 4 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=4^x \cdot \ln 4 \).</p>
+                <p>Vi söker den punkt som har riktingskoefficienten \( \ln 4 \). Den \( x \)-koordinaten hittar vi via</p>
+                <p>\( f'(x)=\ln 4 \), alltså \( 4^x \cdot \ln 4 = \ln 4 \Leftrightarrow 4^x = 1 \Leftrightarrow x=0 \).</p>
+                <p>Då \( x=0 \) är \( y \)-koordinaten \( f(0)=4^0=1 \).</p>
+                <p>Tangentens ekvation är \( y-y_0 =k(x-x_0) \), alltså \( y-1 =\ln 4(x-0) \Leftrightarrow y = \ln (4)\cdot x +1 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm minsta värde för funktionen \( f(x)=e^{2x}-x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>\( e^{2x} \) är en sammansatt funktion där den yttre funktionen är \( e^x \) och den inre är \( 2x \).</p>
+                <p>Derivatafunktionen är \( f'(x)=e^{2x} \cdot 2-1 = 2\cdot e^{2x}-1 \).</p>
+                <p>De punkter där funktionen byter riktning är de punkter där \( f'(x)=0 \). Alltså</p>
+                <p>\( \begin{array}{rcll} 2\cdot e^{2x}-1  & = & 0 \\ 2\cdot e^{2x}  & = & 1 \\ e^{2x}  & = & \dfrac{1}{2} \\ 2x  & = &  \ln \dfrac{1}{2}  & \mid \cdot\dfrac{1}{2}\\ x  & = &  \dfrac{1}{2}\cdot\ln \dfrac{1}{2} \\ x  & = &  \dfrac{1}{2}(\ln 1 -\ln 2) = \dfrac{1}{2}(0-\ln 2) \\  & = &  -\ln 2^{\frac{1}{2}} = -\ln \sqrt{2} \approx -0,35\\ \end{array} \) </p>
+                <p>Vi skissar upp ett teckenschema för funktionen.</p>
+                <p>\( '(-1) = 2\cdot e^{2(-1)}-1  <  0 \).</p>
+                <p>\( f-(0) = 2\cdot e^{2\cdot0}-1  > 0 \).</p>
+                <p>\( \begin{array}{l|ccc}  &   &  -\ln \sqrt{2}  &  \\ f'(x)  &  -  &  0  &  + \\ f(x)  &  \searrow  &  0  &  \nearrow \\ \end{array} \)</p>
+                <p>Vi har ett minsta värde då \( x=-\ln \sqrt{2} \), funktionens värde är \( f(-\ln \sqrt{2})= e^{2(-\ln \sqrt{2})}-(-\ln \sqrt{2}) \approx 0,87 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För funktionen \( e^{-x} \) ritas tangenten i den punkt där funktionen skär \( y \)-axeln. Bestäm ekvationen för tangenten.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=-e^{-x} \). Den punkt där funktionen skär \( y \)-axeln är den punkt där \( x=0 \). Riktningskoefficenten för tangenten är \( f'(0)=-e^0 = -1 \). \( y \)-koordinaten är \( e^{-0}=1 \).</p>
+                <p>Tangentens ekvation är \( y-y_0=k(x-x_0) \): \( y-1=-1(x+0) \Leftrightarrow y=-x+1 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm värdemängden för funktionen \( f(x)=xe^x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>För att bestämma värdemängden ritar vi först upp funktionen på räknarprogram. Då märker vi att funktionen avtar och sedan växer. Då vi bestämmer det minsta värdet så har vi sedan värdemängden för funktionen.</p>
+              <p>Derivatafunktionen är \( f'(x)=xe^x +e^x \). Derivatans nollställe är \( x=-1 \). Då \( f'(-2) = 2e^{-2}+e^{-2}  < 0 \) och \( f'(0)=0e^0+e^0  > 0 \). Vi har alltså ett minimi i \( x=-1 \).</p>
+                <p>Funktionens minsta värde är \( f(-1)=-1e^{-1} = -\dfrac{1}{e} \approx -0,37 \).</p>
+                <p>Värdemängden för funktionen är \( [-\dfrac{1}{e}, \infty[ \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att \( e^{5x}  >  15e^x-20 \) för alla värden på \( x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p><p>Vi bildar funktionen \( f(x)=e^{5x}-15e^x+20 \) och visar att den alltid är positiv.</p>
+                <p>Derivatafunktionen är \( f'(x)=5e^{5x}-15e^x \). Derivatans nollställe hittar vi i \( x=\dfrac{\ln 3}{4} \approx 0,27 \).</p>
+                <p>\( f'(0)=5e^{5\cdot 0}-15e^0 = 5-15 < 0 \) och \( f'(1)= 5e^{5\cdot 1}-15e^1 = 5e^5-15e > 0 \). Vi har ett minsta värde då \( x=\dfrac{\ln3}{4} \). Funktionens minsta värde är \( f(\dfrac{\ln3}{4}) \approx 4,21 \).</p>
+                <p>Eftersom funktionens minsta värde är \( 4,21 \) så är \( f > 0 \). Alltså är \( e^{5x}  >  15e^x-20 \) för alla värden på \( x \).</p></p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA62021">
+      <a href="20_derivatan_e.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="22_derivatan_log.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
