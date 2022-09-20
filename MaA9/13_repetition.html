@@ -118,6 +118,19 @@
             </ol>
           </li>
 
+          <li>Bestäm följande integraler för hand. Kontrollera din lösning med CAS.
+            <ol>
+              <li>\( \displaystyle\int (3e^{2x} + e^{-x}) \text{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.25a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.25a">
+              <div class="card card-body answer"><p>Kom ihåg att ha den inre funktionens derivata framför!</p>
+              <p>\( \displaystyle\int (3e^{2x} + e^{-x}) \text{ d}x = \displaystyle\int (3\cdot\dfrac{1}{2}\cdot 2e^{2x} + (-1)(-1)e^{-x}) \text{ d}x = \dfrac{3}{2}e^{2x}-e^{-x} + C \).</p></div></div> </li>
+              <li>\( \displaystyle\int (\sin 2x -2 \cos\dfrac{x}{2}) \text{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.25b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.25b">
+              <div class="card card-body answer"><p>Kom ihåg att ha den inre funktionens derivata framför!</p>
+              <p>\( \displaystyle\int (\sin 2x -2 \cos\dfrac{x}{2}) \text{ d}x = \displaystyle\int (\dfrac{1}{2}\cdot 2\sin 2x -2\cdot2\cdot\dfrac{1}{2}\cos\dfrac{x}{2}) \text{ d}x = \dfrac{1}{2}(-\cos 2x) -4\sin\dfrac{x}{2} + C \)</p></div></div> </li>
+            </ol>
+          </li>
+
           <li>Bestäm de primitiva funktionerna så att de går genom en bestämd punkt.
             <ol>
               <li>\( f(x) = 3x^2 + 5 \) så att den primitiva funktionen går genom \( (1,3) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -186,6 +199,26 @@
               <p>Arean är \( \displaystyle\int_{-3}^1 2x+3-(x^2+4x) \mathrm{ d} x =\displaystyle\int_{-3}^1 -x^2 -2x+3 \mathrm{ d} x = \bigg/_{-3}^1 -\dfrac{1}{3}x^3-x^2+3x = 10\dfrac{2}{3} \).</p></div></div>
           </li>
 
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm storleken av det ändliga området som bildas mellan koordinataxlarna och kurvorna \( y = 2 \ln x \) och \( y = 2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.1">
+              <div class="card card-body answer"> <p>Rita upp funktionerna på dator och konstatera att du behöver den inversa funktionen för \( y = 2 \ln x \).</p>
+              <p>Den inversa funktionen är \( x = e^{\frac{y}{2}} \), alltså \( f^{-1}(x)= e^{\frac{y}{2}} \).</p>
+              <p>Gränserna för integreringen är \( x=0 \) och \( x=2 \). Försäkra dig över dessa gränser!</p>
+              <p>Arean är \( \displaystyle\int_0^2 e^{\frac{y}{2}} \text{ d}x = 2e-2 \) a.e.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( a \) gäller att arean som bildas mellan funktionen \( f(x) = \dfrac{1}{3x+a} \), \( x \)-axeln och linjerna \( x = 0 \) och \( x = 1 \) har storleken \( \ln 2 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.25" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.25">
+              <div class="card card-body answer"> <p>Vi får ekvationen \( \displaystyle\int_0^1 \dfrac{1}{3x+a} \text{ d}x = \ln 2 \).</p>
+              <p>Se till att du kan lösa ekvationen för hand, och på dator. Du har en sammansatt funktion!</p>
+              <p>Vi får \( \dfrac{1}{3} \bigg/_0^1 \ln (3x+a) = \ln 2 \). Kom ihåg att \( 3 \ln 2 = \ln 2^3 \).</p>
+              <p>Sätt in gränserna och få \( a = \dfrac{3}{7} \).</p>
+              <p></p></div></div>
+          </li>
+
           <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \( f(x) = 3x^2 +ax \) har en primitiv funktion vars nollställen är -2 och 1. Bestäm värdet för konstanten \( a \) och den primitiva funktionen för \( f \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8.5">
@@ -218,6 +251,16 @@
               <p>Volymen är \( \pi \displaystyle\int_{-\pi}^{\pi} (\cos x +1)^2 =3\pi^2 \).</p></div></div>
           </li>
 
+          <li><i class="fas fa-cogs fa-2x level"></i>Området mellan kurvan \( y = \dfrac{1}{x} \) och linjerna \( y = 2 \) och \( x = 2 \) roterar kring linjen \( y = 2 \). Bestäm volymen av kroppen som uppstår.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10.5">
+              <div class="card card-body answer"> <p>Kurvan \( y = \dfrac{1}{x} \) skär linjen \( y = 2 \) i \( x = \dfrac{1}{2} \). </p>
+              <p>Då kurvan roterar kring linjen \( y = 2 \) har tvärsnittsareorna värdet  \( \pi (2-\dfrac{1}{x})^2 \) vid variablen \( x \).</p>
+              <p>Volymen för kroppen är \( V = \pi \displaystyle\int_{\frac{1}{2}}^2 (2-\dfrac{1}{x})^2 \text{ d}x = \pi(\dfrac{15}{2}-8\ln2) \approx 6,14 \).</p>
+              <p>Se till att du kan integera för hand och med hjälp av dator.</p>
+            </div></div>
+          </li>
+
           <li><i class="fas fa-cogs fa-2x level"></i>Bottenarean för en kropp är en cirkel, vars radie är 4. När man bildar tvärsnittsareor får man liksidiga trianglar. Bestäm volymen av kroppen.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
@@ -231,14 +274,21 @@
           <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( a \) får arean som bildas mellan \( f(x)=\sin^2 x \cos x \) och \( x \)-axeln i intervallet \( [0,a] \) värdet \( \dfrac{1}{24} \)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
-              <div class="card card-body answer"> <p>För vilket värde på \( a \) får arean som bildas mellan \( f(x)=\sin^2 x \cos x \) och \( x \)-axeln i intervallet \( [0,a] \) värdet \( \dfrac{1}{24} \)?</p></div></div>
+              <div class="card card-body answer"> <p>Du skall lösa ekvationen \( \displaystyle\int_0^a \sin^2x \cos x \text{ d}x = \dfrac{1}{24} \).</p>
+              <p>Ritar du upp funktionen märker du att den har en viss symmetri. Integralen från 0 till \( \dfrac{\pi}{2} \) har värdet \( \dfrac{1}{3} \). Det betyder att det värde på \( a \) som vi söker är mindre än \( \dfrac{\pi}{2} \).</p>
+              <p>Integrera och lös ekvationen. Du kommer fram till \( a = \dfrac{\pi}{6} \).</p>
+              <p>Löser du ekvationen på CAS så tag och stäng in lösningarna i ett intervall, det gör saken lättare.</p>
+              </div></div>
           </li>
 
-          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bottnet för en kropp är en halvcirkel vars radie är 4. Tvärsnittsareorna för kroppen är kvadrater som är vinkelräta mot diagonalen. Bestäm volymen för kroppen.
+            <p><img src="pics/rep_20.jpg" class="responsivepic250" /></p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Placera mitten av diagonalen i origo. Då är längden av sidan för tvärsnittskvadraterna \( \sqrt{16-x^2} \).</p>
+              <p>Volymen är \( V = \displaystyle\int_{-4}^4 \sqrt{16-x^2}^2 \text{ d}x = \dfrac{256}{3} = 85\dfrac{1}{3} \).</p>
+              </div></div>
+          </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Bestäm storleken av det område som bildas mellan \( y \)-axeln och \( f(x)=\sqrt{x-1} \) då \( 1\leq x \leq 5 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
