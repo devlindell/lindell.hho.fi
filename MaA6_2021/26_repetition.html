@@ -107,6 +107,24 @@
             </ol>
           </li>
 
+          <li>Bestäm definitionsmängd för följande funktioner.
+            <ol>
+              <li>\( \sqrt{-5-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Roten är definierad då radikanden, det som är under roten är positivt. Alltså \( x \leq -5 \).</p></div></div> </li>
+              <li>\( \dfrac{\sqrt{3-x}}{\sqrt{-5-x}} \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Täljaren är definierad då \( x \leq 3 \).</p>
+                <p>Nämnaren får inte ha värdet noll och är definierad då \( x < -5 \).</p>
+                <p>Alltså är definitionsmängden \( x < -5 \).</p>
+              </div></div> </li>
+              <li>\( \sqrt[3]{-5-x} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>En udda rot är alltid definierad. Alltså är definitionsmängden alla reella tal, \( \mathbf{R} \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
           <li>Kombinera rätt funktion med rätt derivatafunktion.
             <p>Välj bland följande funktioner:</p>
             <div class ="grid-container">
@@ -142,6 +160,50 @@
               </p></div></div>
           </li>
 
+          <li>Derivera följande funktioner utan räknare. Kontrollera svaret genom att derivera på räknare.
+            <ol>
+              <li>\( \sqrt{2x-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>\( D\sqrt{2x-1} = D(2x-1)^{\frac{1}{2}}=\dfrac{1}{2}(2x-1)^{-\dfrac{1}{2}}\cdot 2 = \dfrac{1}{\sqrt{2x-1}} \)</p></div></div> </li>
+              <li>\( \ln (x^2-1) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( D\ln(x^2-1) = \dfrac{1}{x^2-1}\cdot 2x =\dfrac{2x}{x^2-1} \)</p></div></div> </li>
+              <li>\( e^{x^3} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>\( De^{x^3} = e^{x^3}\cdot 3x^2 = 3x^2e^{x^3} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm nollstället för derivatafunktionen för följande funktioner.
+            <ol>
+              <li>\( f(x) = x^4 \ln x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5a">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( f'(x) = 4x^3 \ln x +x^3 \).</p>
+              <p>Derivatans nollställe, \( f'(x)=0 \), är \( x = \dfrac{1}{\sqrt[4]{e}} \).</p>
+              </div></div> </li>
+              <li>\( g(x)=\dfrac{\ln x}{x^4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5b">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( g'(x) = \dfrac{-4\ln x +1}{x^5} \).</p>
+              <p>Derivatans nollställe, \( g'(x)=0 \), är \( x = \sqrt[4]{e} \).</p>
+              </div></div> </li>
+              <li>\( h(x) = \dfrac{1}{e^{4x}} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5c">
+              <div class="card card-body answer"><p>Derivatafunktionen är \( h'(x) = -\dfrac{4}{e^{4x}} \).</p>
+              <p>Derivatans nollställe, \( h'(x)=0 \), saknas.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm de reella rötter som uppfyller ekvationen \( \sqrt{2-x}=x+2 \). [H08, 7]
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Definitionsmängden</p>
+                <p>För kvadratroten gäller att definitionsmängden är \( 2-x\geq 0 \Leftrightarrow x\leq 2 \).</p>
+                <p>Eftersom roten är positiv måste \( x+2 \geq 0 \Leftrightarrow x \geq -2 \).</p>
+                <p>Då bägge gäller samtidigt får vi definitionsmängden till \( -2\leq x \leq 2 \).</p>
+                <p>Kvadrering och rotformel ger: \( x=\dfrac{-5\pm\sqrt{17}}{2} \).</p>
+                <p>Av dessa duger endast \( x=\dfrac{-5 +\sqrt{17}}{2} \) pga definitionsmängden.</p></p></div></div>
+          </li>
+
           <li>Välj rätt derivatafunktion för funktionen i fråga.
             <table>
               <tr class="MaA62021"><th></th><th><img src="pics/rep_deriv_1.png" alt="" class="responsivepic250" /></th><th><img src="pics/rep_deriv_2.png" alt="" class="responsivepic250" /></th><th><img src="pics/rep_deriv_3.png" alt="" class="responsivepic250" /></th></tr>
@@ -153,8 +215,8 @@
               <tr><td>\( k(x)=x^3-1 \) </td><td></td><td></td><td></td></tr>
             </table>
             <p>Tag antingen och derivera, eller fundera och kom ihåg vad sambandet är mellan en funktion och dess derivatafunktion.</p>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
               <div class="card card-body answer"> <p><table>
                 <tr class="MaA62021"><th></th><th><img src="pics/rep_deriv_1.png" alt="" class="responsivepic250" /></th><th><img src="pics/rep_deriv_2.png" alt="" class="responsivepic250" /></th><th><img src="pics/rep_deriv_3.png" alt="" class="responsivepic250" /></th></tr>
                 <tr><td>\( f(x)=x-1 \)</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
@@ -180,8 +242,8 @@
               <tr><td></td><td>3.</td></tr>
               <tr><td></td><td>4.</td></tr>
             </table>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
               <div class="card card-body answer"> <p>
                 <table>
                   <tr class="MaA62021"><th>Instruktion</th><th>Ordning</th></tr>
@@ -196,14 +258,14 @@
           <li><i class="fas fa-shapes fa-2x level"></i>I figuren nedan visas grafen av derivatafunktionen \( f'(x) \) till en viss funktion \( f(x) \) i intervallet \( -2 < x < 3 \).
             <p><img src="pics/rep_analys_2.png" alt="" class="responsivepic400" /></p>
             <ol>
-              <li>Bestäm utgående från grafen nollställena till derivatafunktionen \( f'(x) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6a">
+              <li>Bestäm utgående från grafen nollställena till derivatafunktionen \( f'(x) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
               <div class="card card-body answer"><p>Nollställena är \( x= -1, x= 0 \) och \( x=2 \).</p></div></div> </li>
-              <li>Bestäm det intervall då funktionen \( f \) är avtagande. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6b">
+              <li>Bestäm det intervall då funktionen \( f \) är avtagande. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
               <div class="card card-body answer"><p>\( f \) är avtagande då \( -2 \leq x \leq -1 \)  och då \( 0 \leq x \leq 2 \).</p></div></div> </li>
-              <li>Bestäm utgående från grafen de lokala extremställena för funktionen \( f(x) \) och vilka typer av extremställen är det frågan om? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6c">
+              <li>Bestäm utgående från grafen de lokala extremställena för funktionen \( f(x) \) och vilka typer av extremställen är det frågan om? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8c">
               <div class="card card-body answer"><p>I \( x=-1 \) har vi ett minimivärde eftersom funktionen avtar och sedan växer den.</p>
                 <p>I \( x=0 \) har vi ett maximivärde eftersom funktionen växer för att sedan avta.</p>
                 <p>I \( x=2 \) har vi ett minimivärde eftersom funktionen avtar och sedan växer den.</p>
@@ -211,26 +273,75 @@
             </ol>
           </li>
 
+          <li>Bestäm största och minsta värde för funktionen \( f(x)=\sqrt{-x^2+2x+1} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>\( f'(x)=\dfrac{-x+1}{\sqrt{-x^2+2x+1}} \).</p>
+                <p>\( f'(x)=0 \) i \( x=1 \). Största och minsta värde i intervallets ändpunkter eller där \( f'(x)=0 \).</p>
+                <p>Största värdet är \( \sqrt{2} \) och minsta värdet är 0.</p></div></div>
+          </li>
+
+          <li>Låt \( f(x) = 3x - 2\sqrt{1-x} \).
+            <ol>
+              <li>För vilket värde på \( x \) är funktionsvärdet 2? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Definitionsmängden är \( 1-x \geq 0 \). Alltså \( x \leq 1 \).</p>
+              <p>Vi skall lösa ekvationen \( 2 = 3x - 2\sqrt{1-x} \). Flytta över \( 3x \) och kvadrera.</p>
+              <p>Lösningen är \( x = \dfrac{8}{9} \).</p>
+            </div></div> </li>
+              <li>Bestäm derivatafunktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>\( f'(x) = 3 + \dfrac{1}{\sqrt{1-x}} \), eller som \( \dfrac{3 \sqrt{1-x} + 1}{\sqrt{1-x}} \).</p></div></div> </li>
+              <li>Bestäm den punkt där tangentens riktningskoefficient har värdet 5. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>Vi skall hitta den punkt där derivatan har värdet 5. Alltså skall vi lösa ekvationen \( f'(x)=5 \). Punkten är \( x = \dfrac{3}{4} \). </p></div></div> </li>
+            </ol>
+          </li>
+
           <li>Bestäm
             <ol>
-              <li>\( D(x^2-1)(x+2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7a">
+              <li>\( D(x^2-1)(x+2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11a">
               <div class="card card-body answer"><p>\( D(x^2-1)(x+2)= (x^2-1)\cdot 1 + (x+2)2x = 3x^2+4x-1 \)</p></div></div> </li>
-              <li>\( D\dfrac{x^2-1}{x+2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7b">
+              <li>\( D\dfrac{x^2-1}{x+2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11b">
               <div class="card card-body answer"><p>\( D\dfrac{x^2-1}{x+2}=\dfrac{(x+2)\cdot 2x-(x^2-1)\cdot 1}{(x+2)^2} =\dfrac{x^2+4x+1}{(x+2)^2} \)</p></div></div> </li>
-              <li>\( D(2x^2-1)^{14} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7c">
+              <li>\( D(2x^2-1)^{14} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11c">
               <div class="card card-body answer"><p>\( D(2x^2-1)^{14}=14(2x^2-1)^{13}\cdot 4x = 56x(2x^2-1)^{13} \)</p></div></div> </li>
-              <li>\( D[x(x^2-1)^6] \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7d">
+              <li>\( D[x(x^2-1)^6] \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11d">
               <div class="card card-body answer"><p>\( D[x(x^2-1)^6]=x\cdot 6(x^2-1)^5\cdot 2x +(x^2-1)^6\cdot 1 = 12x^2(x^2-1)^5+(x^2-1)^6 \)</p></div></div> </li>
             </ol>
           </li>
 
+          <li>Derivera följande funktioner.
+            <ol>
+              <li>\( f(x) = (-3x^2+x)^4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12a">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( x^4 \). Derivatan är \( 4x^3 \).</p>
+              <p>Den inre funktionen är \( -3x^2+x \). Derivatan är \( -6x+1 \)</p>
+              <p>Vi får \( f'(x) = 4(-3x^2+x)^3 \cdot (-6x+1) \).</p>
+              </div></div> </li>
+              <li>\( g(x) = \sin(3x^2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12b">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( \sin x \). Derivatan är \( \cos x \).</p>
+              <p>Den inre funktionen är \( 3x^2 \). Derivatan är \( 6x \)</p>
+              <p>Vi får \( g'(x) = \cos(3x^2)\cdot 6x = 6x\cos(3x^2) \).</p> </div></div> </li>
+              <li>\( h(x) = \cos^4 x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12c">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( x^4 \). Derivatan är \( 4x^3 \).</p>
+              <p>Den inre funktionen är \( \cos x \). Derivatan är \( -\sin x \)</p>
+              <p>Vi får \( h'(x) = 4 \cos^3 x).</p> </div></div> </li>
+            </ol>
+          </li>
+
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( f(-1) \) och \( f'(-1) \) då \( f(x) = x^{1999} - x^{1996} \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
               <div class="card card-body answer"> <p>\( f(-1) = (-1)^{1999} - (-1)^{1996} = -1-1 = -2 \).</p>
               <p>Derivatafunktionen är \( f'(x) = 1999x^{1998} -1996x^{1995} \).</p>
               <p>\( f'(-1) = 1999(-1)^{1998} -1996(-1)^{1995} = 1999\cdot 1 -1996(-1) = 3995 \).</p>
@@ -238,10 +349,247 @@
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>K Orvar tillverkar konserverad prinskorv. Han vill packa prinskorvarna i konservburkar med volymen 2,0 dl. Hans konservburksmaskin kan tillverka konservburkar som har diametern mellan 4,5 och 8,5 cm. Bestäm diameter och höjd för den burk som har den minsta materialåtgång.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
               <div class="card card-body answer"> <p>Volymen är \( V=0,2 =\pi r^2\cdot h \) och totala arean är \( 2\pi r^2+2\pi r\cdot h \).</p>
                 <p>Vår funktion är \( A(r)=2\pi r^2 + \dfrac{2\pi \cdot r \cdot 0,2}{\pi r^2} = 2\pi r^2+0,4r^{-1} \).</p>    <p>Derivatafunktioen är \( A'(r)= 4\pi r-0,4r^{-2} \). Nollstället för derivatafunktionen är \( r=3,17 \). Eftersom \(  r \in [2,25 ; 4,25] \) så räcker det med att sätta in intervallets ändpunkter eller derivatans nollställe i funktionen och jämföra värdena.</p><p>A(2,25)= 31,99 cm<sup>2</sup></p>    <p>A(3,17)=63,27 cm<sup>2</sup></p>    <p>A(4,25)=113,58 cm<sup>2</sup></p>  <p>Åtgången är minst då radien är 2,25 cm.</p><p>Diametern är 4,5 cm och höjden är 12,6 cm.</p></div></div>
+          </li>
+
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Derivera följande funktioner.
+            <ol>
+              <li>\( f(x) = 2x^4(x^2+2)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15a">
+              <div class="card card-body answer"><p>Vi har en produkt av två funktioner där den ena är en sammansatt funktion.</p>
+              <p>Vi får först \( f'(x) = D2x^4 \cdot (x^2+2)^3 + 2x^4 \cdot D(x^2+2)^3 \).</p>
+              <p>Den andra delen är en sammansatt funktion.</p>
+              <p>Den yttre funktionen är \( x^3 \). Derivatan är \( 3x^2 \).</p>
+              <p>Den inre funktionen är \( x^2+2 \). Derivatan är \( 2x \)</p>
+              <p>Vi får </p>
+              <p> \( \begin{array}{rcl}
+                f'(x) & = & 8x \cdot (x^2+2)^3 + 2x^4 \cdot 3(x^2+2)^2 \cdot 2x \\
+                & = & 8x(x^2+2)^3 + 24x^5 (x^2+2)^2 \\
+                & = & 8x[(x^2+2)^3 + 3x^4 (x^2+2)^2] \\
+                & = & 8x(x^2+2)^2[(x^2+2) + 3x^4] \\
+                & = & 8x(x^2+2)^2(3x^4 + x^2+2) \\
+                \end{array} \) </p>
+                </div></div> </li>
+              <li>\( g(x) = \dfrac{(2x+1)^6}{x^2+1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15b">
+              <div class="card card-body answer"><p>Vi har en rationell funktion där täljaren är en sammansatt funktion.</p>
+              <p>Vi får först \( g'(x) = \dfrac{D(2x+1)^6(x^2+1)-(2x+1)^6\cdot D(x^2+1)}{(x^2+1)^2} \). </p>
+              <p>Det vi ursprungligen har i täljaren är en sammanstatt funktion.</p>
+              <p>Den yttre funktionen är \( x^6 \). Derivatan är \( 6x^5 \).</p>
+              <p>Den inre funktionen är \( 2x+1 \). Derivatan är \( 2 \)</p>
+              <p>Vi får </p>
+              <p> \( \begin{array}{rcl}
+                g'(x) & = & \dfrac{6(2x+1)^5\cdot 2 \cdot (x^2+1)-(2x+1)^6\cdot (2x)}{(x^2+1)^2} \\
+                & = & \dfrac{(2x+1)^5[ 12 \cdot (x^2+1)-(2x+1)\cdot (2x)]}{(x^2+1)^2} \\
+                & = & \dfrac{(2x+1)^5( 8x^2 -2x +12)}{(x^2+1)^2} \\
+              \end{array} \) </p>
+              <p>Man kan också derivera funktionen genom att tänka den som \( g(x) = (2x+1)^6(x^2+1)^{-1} \).</p>
+              </div></div> </li>
+              <li>\( h(x) = \cos^2 (\sin x) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15c">
+              <div class="card card-body answer"><p>Vi har en sammansatt funktion.</p>
+              <p>Vi får </p>
+              <p> \( \begin{array}{rcl}
+              h'(x) & = & 2\cos(\sin x) \cdot D (\cos (\sin x)) \\
+              & = & 2\cos(\sin x) \cdot  (-\sin (\sin x)) \cdot \cos x \\
+              & = & -2\cos(\sin x) \cdot  \sin (\sin x) \cdot \cos x \\
+              \end{array} \) </p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm \( f^{(21)}(x) \) då
+            <ol>
+              <li>\( f(x) = \sin x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16a">
+              <div class="card card-body answer"><p>Vi märker att</p>
+              <p>\( \begin{array}{rcl}
+              f'(x) & = & \cos x \\
+              f''(x) & = & -\sin x \\
+              f^{(3)}(x) & = & -\cos x \\
+              f^{(4)}(x) & = & \sin x \\
+              f^{(5)}(x) & = & \cos x \\
+              f^{(6)}(x) & = & -\sin x \\
+              \vdots \\
+              \end{array} \) </p>
+              <p>Alltså är \( f'^{(21)}(x) = \cos x \).</p>
+              </div></div> </li>
+              <li>\( f(x) = \cos x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16b">
+              <div class="card card-body answer"><p>Vi märker att</p>
+              <p>\( \begin{array}{rcl}
+              f'(x) & = & -\sin x \\
+              f''(x) & = & -\cos x \\
+              f^{(3)}(x) & = & \sin x \\
+              f^{(4)}(x) & = & \cos x \\
+              f^{(5)}(x) & = & -\sin x \\
+              f^{(6)}(x) & = & -\cos x \\
+              \vdots \\
+              \end{array} \) </p>
+              <p>Alltså är \( f'^{(21)}(x) = -\sin x \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 5-3\cos x \). Bestäm största och minsta värde för funktionen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#17" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="17">
+              <div class="card card-body answer"> <p>För cosinus gäller att \( -1 \leq \cos x \leq 1 \).</p>
+              <p>Då gäller att \( -3 \leq 3\cos x \leq 3 \).</p>
+              <p>Och att \( -3 \leq -3\cos x \leq 3 \).</p>
+              <p>Alltså gäller att \( 2 \leq 5-3\cos x \leq 8 \).</p>
+              <p>Minsta värdet är 2 och största värdet är 8.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = 3+2\sin \dfrac{x}{2} \). Bestäm största och minsta värde för funktionen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#18" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="18">
+              <div class="card card-body answer"> <p>För sinus gäller att \( -1 \leq \sin x \leq 1 \).</p>
+              <p>Då gäller att \( -1 \leq \sin \dfrac{x}{2} \leq 1 \).</p>
+              <p>Och att \( -2 \leq 2\sin \dfrac{x}{2} \leq 2 \).</p>
+              <p>Alltså gäller att \( 1 \leq 3+2\sin \dfrac{x}{2} \leq 5 \).</p>
+              <p>Minsta värdet är 1 och största värdet är 5.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = -1+3\tan 2x \). Bestäm största och minsta värde för funktionen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#19" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="19">
+              <div class="card card-body answer"> <p>För tangens gäller att värdemängden är alla reella tal. Då är det ingen skillnad om vi multiplicerar med 3 eller subraherar med 1.</p>
+              <p>Största värdet är (plus) oändligheten, \( \infty \), minsta värdet är minus oändligheten, \( -\infty \).
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i> Låt \( f(x) = \sqrt{10-x^2} \).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20a">
+              <div class="card card-body answer"><p>Då \( 10-x^2 \geq 0 \).</p>
+                <p>Definitionsmängden är \( -\sqrt{10} \leq x \leq \sqrt{10} \).</p></div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20b">
+              <div class="card card-body answer"><p>Vi behöver största och minsta värdet för funktionen.</p>
+              <p>Derivatan är \( f'(x) = -\dfrac{x}{\sqrt{10-x^2}} \). Vi får fram att derivatan har ett nollställe i \( x = 0 \).</p>
+              <p>Använd dig av derivatans nollställe och intervallets ändpunkter för att bestämma största och minsta värde.</p>
+              <p>Värdemängden är \( 0 \leq x \leq \sqrt{10} \).</p>
+              </div></div> </li>
+              <li>Bestäm ekvationen för tangenten i \( x = 3 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20c">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = f'(3) = -3 \).</p>
+              <p>\( y \)-koordinaten är \( f(3) = 1 \).</p>
+              <p>Tangenten är \( y - 1 = -3(x-3) \), alltså \( y = -3x +10 \).</p>
+              </div></div> </li>
+              <li>Bestäm ekvationen för normalen i \( x = 1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20d">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = f'(1) = -\dfrac{1}{3} \). Normalens riktningskoefficient är då \( 3 \).</p>
+              <p>\( y \)-koordinaten är \( f(1) = 3 \).</p>
+              <p>Normalen är \( y - 3 = 3(x-1) \), alltså \( y = 3x \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i> Låt \( g(x) = e^{2x}\).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#21a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="21a">
+              <div class="card card-body answer"><p>Eftersom vi har en exponentialfunktion är definitionsmängden alla reella tal.</p></div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#21b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="21b">
+              <div class="card card-body answer"><p>För en exponentialfunktion gäller att värdemängden är alla positiva reella tal.</p></div></div> </li>
+              <li>Bestäm ekvationen för tangenten i \( x = 1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#21c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="21c">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = g'(1) = 2e^2 \).</p>
+              <p>\( y \)-koordinaten är \( g(1) = e^2 \).</p>
+              <p>Tangenten är \( y -e^2 = 2e^2(x-1) \), alltså \( y = 2e^2x -e^2 \).</p></div></div> </li>
+              <li>Bestäm ekvationen för normalen i \( x = 0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#21d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="21d">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = g'(0) = 2 \). Normalens riktningskoefficient är då \( -\dfrac{1}{2} \).</p>
+              <p>\( y \)-koordinaten är \( g(0) = 1 \).</p>
+              <p>Normalen är \( y - 1 = -\dfrac{1}{2}(x-0) \), alltså \( y = -\dfrac{1}{2}x+1 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i> Låt \( h(x) = x\ln x \).
+            <ol>
+              <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="22a">
+              <div class="card card-body answer"><p>\( h(x) \) är definierad då \( x \geq 0 \).</p></div></div> </li>
+              <li>Bestäm värdemängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="22b">
+              <div class="card card-body answer"><p>Vi behöver största och minsta värdet för funktionen.</p>
+              <p>Derivatan är \( h'(x) = \ln(x) + 1 \). Vi får fram att derivatan har ett nollställe i \( x = \dfrac{1}{e} \).</p>
+              <p>Vi skissar upp ett teckenschema och kommer fram till att \( -\dfrac{1}{e} \) är minsta värde och oändligheten är största värde.</p>
+              <p>Värdemängden är \( [-\dfrac{1}{e}, \infty [ \).</p></div></div> </li>
+              <li>Bestäm ekvationen för tangenten i \( x = 1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="22c">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = h'(1) = 1 \).</p>
+              <p>\( y \)-koordinaten är \( h(1) = 0 \).</p>
+              <p>Tangenten är \( y - 0 = 1(x-1) \), alltså \( y = x-1 \).</p></div></div> </li>
+              <li>Bestäm ekvationen för normalen i \( x = 5\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="22d">
+              <div class="card card-body answer"><p>Riktningskoefficienten \( k = h'(5) = \ln (5) + 1 \). Normalens riktningskoefficient är då \( -\dfrac{1}{\ln(5)+1} \).</p>
+              <p>\( y \)-koordinaten är \( h(5) = 8 \).</p>
+              <p>Normalen är \( y - 8 = -\dfrac{1}{\ln(5)+1}(x-5) \), alltså \( y = -\dfrac{1}{\ln(5)+1}x +\dfrac{5}{\ln(5)+1} + 8 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = \sqrt{x+1} \). Bestäm tangenten för funktionen då \( x = 3\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#23" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="23">
+              <div class="card card-body answer"> <p>Definitionsmängden är \( x \geq -1 \).</p>
+                <p>\( f'(x)=\dfrac{1}{2\sqrt{x+1}} \).</p>
+                <p>\( k=f'(3)= \dfrac{1}{4} \) och \( y = f(3) = 2 \).</p>
+                <p>Tangentens ekvation är \( y - 2 = \dfrac{1}{4}(x-3) \) som är \( y = \dfrac{1}{4}x + \dfrac{5}{4} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) =  e^{x+1}\). Bestäm normalen för funktionen i \( x = -1\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#24" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="24">
+              <div class="card card-body answer"> <p>\( f'(x)= e^{x+1} \).</p>
+                <p>\( f'(-1) =  1\). Då är normalens riktningskoefficient \( -1 \).</p>
+                <p>\( y \)-koordinaten för normalen, \( f(-1) = 1 \).</p>
+                <p>Normalens ekvation är \( y - 1 = -1(x+1) \) som är \( y = -x \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Temperaturen i celciusgrader på en semesterort under en dag följer funktionen \[ f(t) = 9,5\sin(0,262t-1,703) + 28,5 \] där \( t \) är antalet timmar som förflutit efter midnatt.
+            <ol>
+              <li>Med vilken hastighet förändrades temperaturen kl 9.30? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#25a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="25a">
+              <div class="card card-body answer"><p>Vi behöver derivatan, och i derivatafunktionen sätter vi in 9,5.</p>
+              <p><img src="pics/15_6a.png" class="responsivepic600" /></p>
+              <p>Alltså 1,8<sup>o</sup>/h.</p>
+              <p>Märk att rad 2, derivatafunktionen behöver vi inte skriva ut.</p>
+              </div></div> </li>
+              <li>Vilken var temperaturens största förändringshastighet? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#25b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="25b">
+              <div class="card card-body answer"><p>Vi undersöker andra derivatans nollställen. Dessa nollställen sätter vi in i derivatafunktionen.</p>
+              <p><img src="pics/15_6b.png" class="responsivepic600" /></p>
+              <p>Alltså 2,5<sup>o</sup>/h.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm ekvationen till tangenten för funktionen \( f(x) = 3\tan 2x -2\sin \dfrac{x}{2} \) i den punkt där \( x = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#26" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="26">
+              <div class="card card-body answer"> <p>\(y\)-koordinaten är \( f(0) = 0\).</p>
+              <p>Riktningskoefficienten är derivatans värde i \( x=0 \), \( f'(0) = 5 \).</p>
+              <p>Linjens ekvation är av typ \( y-y_0 = k(x-x_0) \).</p>
+              <p>Vi får \( y - 0 = 5(x-0) \), alltså \( y = 5x \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm vinkeln mellan grafen till funktionen \( f(x) = 5\cos(7-2x) + 13 \) och \( y \)-axeln med en decimals noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#27" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="27">
+              <div class="card card-body answer"> <p>Eftersom \( k = \tan \alpha \), alltså tangensvärdet av vinkeln mellan en linje och \( x \)-axeln är samma som värdet för riktningskoefficienten. Vi vill ha derivatans värde i \( x = 0 \).</p>
+              <p>\( f'(0) = 10 \sin (7) \).</p>
+              <p>Vinkeln är 50,6<sup>o</sup>.</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Teckenschemat för en funktion är följande.
@@ -250,8 +598,8 @@
               \hline f'(x) & - & 0 & + & 0 & - \\
               \end{array} \) </p>
               <p>Beskriv hur funktionen beter sig.</p>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#28" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="28">
               <div class="card card-body answer"> <p>Vi kan fylla ut teckenschemat till följande</p>
                 <p>\( \begin{array}{c|ccccc}
                   & & -1 & & 3 & \\
@@ -270,8 +618,8 @@
               \hline f'(x) & - & 0 & - \\
               \end{array} \) </p>
               <p>Beskriv hur funktionen beter sig.</p>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8.8">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#29" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="29">
               <div class="card card-body answer"> <p>Vi kan fylla ut teckenschemat till följande</p>
                 <p>\( \begin{array}{c|ccc}
                   & & 2 & & \\
@@ -286,23 +634,116 @@
 
           <li><i class="fas fa-shapes fa-2x level"></i>En ballong växer med 1 cm per sekund. Vi antar att ballongens radie är i början 0. Bestäm hastigheten som ballongen växer vid
             <ol>
-              <li>5 sekunder <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8.9a">
+              <li>5 sekunder <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#30a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="30a">
               <div class="card card-body answer"><p>Vi har \( A(r) = 4\pi r^2\). Funktionen som ger arean som funktion av tiden är \( A(t) = 4\pi t^2\).</p>
               <p>Derivatafunktionen är \( A'(t)=8\pi t \).</p>
               <p>\( A'(5) = 40\pi = 125,66\ldots \approx 130 \) cm/s.</p>
               </div></div> </li>
-              <li>15 sekunder. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="8.9b">
+              <li>15 sekunder. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#30b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="30b">
               <div class="card card-body answer"><p>\( A'(15) = 120\pi = 376,99\ldots \approx 380 \) cm/s.</p></div></div> </li>
             </ol>
             <p>Ballongens area är \( A = 4\pi r^2 \), där \( r \) är radien.
           </li>
 
 
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att linjen \( y = -2x +3 \) är normal för funktionen \( f(x) = \sqrt{4x+18} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#31" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="31">
+              <div class="card card-body answer"> <p>\( f \) är definierad då \( x \geq -4\dfrac{1}{2} \).</p>
+                <p>Skärningspunkten för linjen och funktionen är \( x = -\dfrac{1}{2} \).</p>
+                <p>Derivatafunktionen är \( f'(x) = \dfrac{2}{\sqrt{4x+18}}\).</p>
+                <p>Eftersom \( f'(-\dfrac{1}{2}) = \dfrac{1}{2} \) och \( -2 \cdot \dfrac{1}{2} = -1 \) gäller att linjen \( y = -2x+3 \) är vinkelrät mot funktionen \( f \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de värden för \( a \) så att funktionen \( f(x)=\sqrt{x^2+a} \) tangent i punkten 3 har riktningskoefficienten 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#32" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="32">
+              <div class="card card-body answer"> <p>\( f'(x)=\dfrac{x}{\sqrt{x^2+a}} \). Tangent i punkten 3 som har riktningskoefficienten 1 betyder att \( f'(3)=1 \Leftrightarrow \dfrac{3}{\sqrt{3^2+a}}=1 \). \( a=0 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>En badvakt på en simstrand befinner sig vid en kiosk för att köpa glass när hen plötsligt hör ett nödrop från en simmare. Badvakten springer till stranden simmar ut till den nödställda. Vid vilket ställe på stranden skall badvakten hoppa i och börja simma så att hen tar sig så snabbt som möjligt ut till simmaren? Hur länge tar det? Badvakten springer med hastigheten 7,0 m/s och simmar med hastigheten 2,0 m/s.
+              <p><img src="pics/15-8.png" class="responsivepic600" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#33" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="33">
+              <div class="card card-body answer"><p>Eftersom \( v = \dfrac{s}{t} \) så är \( t = \dfrac{s}{v} \). Vi skapar en funktion och söker den minsta tiden.</p>
+              <p>Vi betecknar med \( x \) den punkt vinkelrät från simmaren där badvakten skall simma mot simmaren. Sträckan på land är \( \sqrt{20^2 + (70-x)^2} \). Sträckan i vattnet är \( \sqrt{30^2-x^2} \).</p>
+              <p>Funktionen är \( t(x) = \dfrac{\sqrt{20^2 + (70-x)^2}}{7} + \dfrac{\sqrt{30^2 + x^2}}{2} \). Vi jobbar i intervallet \( 0 \leq x \leq 70 \).</p>
+              <p>Derivera och lös ut nollstället, \( x = 8,47 \).</p>
+              <p>Visa att det minsta värdet får vi då badvakten börjar simma vid 8,5 m.
+              <p>Tiden är 25 sekunder.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ett kärl har formen av en upp och nedvänd cirkulär kon som står så att spetsen är nedåt. Kärlet är lika högt som halva diametern. Kärlet fylls med vatten så att flödeshastigheten är 10 liter/s. Bestäm hastigheten som vatten stiger vid 1 och 10 sekunder.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#34" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="34">
+              <div class="card card-body answer"> <p>Volymen för kärlet är \( V = \dfrac{1}{3}\pi h^3 \). Alltså \( h = \sqrt[3]{\dfrac{3V}{\pi}} \).</p>
+              <p>Vid tiden \( t \) är vattenmängden i kärlet \( 10t \) dm<sup>3</sup>. Alltså får vi \( h(t) = \sqrt[3]{\dfrac{3\cdot 10 t}{\pi}} = \sqrt[3]{\dfrac{30t}{\pi}} = \sqrt[3]{\dfrac{30}{\pi}} \cdot \sqrt[3]{t} \).</p>
+              <p>Derivatafunktionen är \( h'(t) = \sqrt[3]{\dfrac{30}{\pi}} \cdot \dfrac{1}{3} \cdot t^{-\frac{2}{3}} \).</p>
+              <p>\( h'(1) = 7,1 \) cm/s</p>
+              <p>\( h'(10) = 1,5 \) cm/s</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( x \ln x + 1 \geq x \) då \( x > 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#35" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="35">
+              <div class="card card-body answer"> <p>\( x \ln x + 1 \geq x \) är samma som \( x \ln x + 1 -x \geq 0 \) som är samma som \( \ln x + 1 \geq 0 \).</p>
+              <p>Vi visar att funktionen \( f(x) = \ln x + 1 \geq 0 \).</p>
+              <p>Derivatafunktionen är \( f'(x) =\dfrac{1}{x} \).</p>
+              <p>Eftersom \( x > 0 \), gäller att derivatafunktionen alltid är positiv och funktionen är strängt växande.</p>
+              <p>\( \ln x + 1 \geq 0 \) är samma som \( \ln x \geq -1 \). Eftersom \( \ln \) alltid är positiv och \( f \) är strängt växande så gäller olikheten i början, \( x \ln x + 1 \geq x \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att \( \sqrt{x} > \ln (x + 1) \) för alla värden då \( x > 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#36" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="36">
+              <div class="card card-body answer"> <p>Vi skall visa att \( \sqrt{x} - \ln (x+1) > 0 \).</p>
+                <p>Vi visar att funktionen \( f(x) = \sqrt{x} - \ln (x+1) \) där \( x \geq 0 \) alltid är positiv.</p>
+                <p>Derivatafunktionen är \( f'(x) = \dfrac{1}{2\sqrt{x}} - \dfrac{1}{x+1} = \dfrac{x+1-2\sqrt{x}}{2(x+1)\sqrt{x}} \).</p>
+                <p>Derivatan har ett nollställe i \( x = 1 \), annars är den positiv. Se till att du löser det, undersök täljaren.</p>
+                <p>Alltså är \( f \) strängt växande i intervallet \( [0,\infty [ \).</p>
+                <p>Eftersom \( f(0) = 0 \) gäller det att \( f(x) > 0 \) när \( x > 0 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Ge exempel på en växande funktion \( f \) som uppfyller följande villkor
+            <ol>
+              <li>\( f(0)=1 \)</li>
+              <li>\( f'(1)=2 \)</li>
+              <li>\( f''(2)=0 \)</li>
+            </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#37" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="37">
+              <div class="card card-body answer"><ol>
+                <li>Tex \( f(x)= 2x+1 \) eller \( g(x) = e^x \).</li>
+                <li>Tex \( f(x)= 2x+1 \), \( f'(x)=2x \).</li>
+                <li>Tex \( f(x)= 2x \), \( f''(x) = 0 \).</li>
+              </ol><p>En möjlig kandidat är \( f(x) = 2x+1 \).</p></div></div>
+          </li>
+
+
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Vi ritar tangenter till två på varandra följande skärningspunkter mellan kurvan \( f(x) = \sin x \) och \( x \)-axeln. Visa att tangenterna är vinkelräta mot varandra.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#38" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="38">
+              <div class="card card-body answer"> <p>Skärningspunkterna är \( sin x =0 \), alltså \( x = n\cdot \pi \). Två punkter för oss är 0 och \( \pi \).</p>
+              <p>Riktningskoefficienterna är \( f'(0) = 1 \) och \( f'(\pi) = -1 \).</p>
+              <p>För att två linjer skall vara vinkelräta, ortogonala, gäller att produkten av riktningskoefficienterna har värdet -1, \( k_1\cdot k_2 = -1 \).</p>
+              <p>Vi har \( 1 \cdot (-1) = -1 \).</p>
+              <p>Alltså är våra tangenter vinkelräta mot varandra.</p>
+              </div></div>
+          </li>
+
+
           <li><i class="fas fa-cogs fa-2x level"></i>Längderna för en rektangelformad pappskiva är 15 cm och 24 cm. Från varje hörn klipper man bort en lika stor kvadratisk bit och sedan viken man upp kanterna så att man får en låda. Bestäm storleken av kvadraterna som vi klipper bort då vi vill att volymen för lådan är så stor som möjligt.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#39" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="39">
               <div class="card card-body answer"> <p>Vi betecknar sidan av kvadraten med \( x \).</p>
               <p>Eftersom vi klipper bort vid varje hörn, kommer bottnet för lådan ha längderna \( 15 - 2x \) och \( 24-2x \).</p>
               <p>Höjden får lådan är \( x \).</p>
@@ -317,21 +758,21 @@
 
           <li><i class="fas fa-cogs fa-2x level"></i>Ge exempel på en växande funktion \( f \) som uppfyller följande villkor
             <ol>
-              <li>\( f(0)=1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9.1a">
+              <li>\( f(0)=1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#41a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="41a">
               <div class="card card-body answer"><p>Vilken funktion som helst som går genom punkten \( (0,1) \) duger, tex \( f(x)=x+1 \).</p></div></div> </li>
-              <li>\( f'(1)=2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9.1b">
+              <li>\( f'(1)=2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#41b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="41b">
               <div class="card card-body answer"><p>Vilken funktion som hellst vars derivata har värdet 2 i då \( x=1 \). Tex \( f(x)=x^2-1 \).</p></div></div> </li>
-              <li>\( f''(2)=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9.1c">
+              <li>\( f''(2)=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#41c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="41c">
               <div class="card card-body answer"><p>Andra derivatan, eller derivatans derivatafunktion skall undersökas. Då den skall ha värdet 0 så gäller att \( f''(x)=C \), där \( C \) är någon konstant och \( f(x)=Dx \) där \( D \) är någon konstant. Tex \( f(x)=x \).</p></div></div> </li>
             </ol>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Visa att för alla värden på \( x \) gäller att \( (x+1)^4 \geq \dfrac{1}{2}x + \dfrac{5}{16} \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="9.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#42" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="42">
               <div class="card card-body answer"> <p>Skall vi visa att \( (x+1)^4 \geq \dfrac{1}{2}x + \dfrac{5}{16} \) så gäller att \( (x+1)^4  -\dfrac{1}{2}x - \dfrac{5}{16} \geq 0 \).</p>
               <p>Vi skapar en funktion och visar att dess minsta värde är större än eller lika med 0.</p>
               <p>Derivatafunktionens nollställe är i \( x = -\dfrac{1}{2} \). Se till att du deriverar och löser derivatans nollställe.</p>
@@ -342,35 +783,35 @@
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \( \lim_{x \to 3} \dfrac{4x-12}{x^2-9} \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#43" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="43">
               <div class="card card-body answer"> <p>\( \lim_{x \to 3} \dfrac{4x-12}{x^2-9} = \lim_{x \to 3} \dfrac{4(x-3)}{(x+3)(x-3)} \lim_{x \to 3} \dfrac{4}{x+3} = \dfrac{4}{3+3} = \dfrac{2}{3} \).</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm \( \lim_{x \to -2} \dfrac{3x^2-12}{3x^2+6x} \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="10.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#44" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="44">
               <div class="card card-body answer"> <p>\( \lim_{x \to -2} \dfrac{3x^2-12}{3x^2+6x} = \lim_{x \to -2} \dfrac{3(x-2)(x+2)}{3x(x+2)} \lim_{x \to -2} \dfrac{x-2}{x} = \dfrac{-4}{-2} = 2 \).</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm för funktionen \( f(x)=x^2-4x \) ekvationen för tangenten i \( x=1 \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="11">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#45" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="45">
               <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=2x-4 \). Tangentens riktningskoefficient har värdet \( f'(1)=2\cdot 1 -4=-2 \). Då \( x=1 \) har \( y \) värdet \( f(1)=1^2-4\cdot 1 = -3 \).</p>
                 <p>Tangentens ekvation fås via \( y-y_0 = k(x-x_0) \Leftrightarrow y+3=-2(x-1) \Leftrightarrow y=-2x-1 \).</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de tangenter för funktionen \( f(x)=\dfrac{1}{3}x^3+\dfrac{1}{2}x^2 \) som har riktningskoefficienten 2.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="12">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#46" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="46">
               <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)= x^2+x \). De punkter där tangenten har riktningskoefficienten 2 får vi genom att lösa ekvationen \( f'(x)=2 \) alltså \( x^2+x=2 \) som har rötterna \( x_1=1 \) och \( x_2=-2 \).</p>
                 <p>Då \( x=1 \) är \( y=\dfrac{5}{6} \) och tangenten är \( y-\dfrac{5}{6}=2(x-1) \Leftrightarrow y=2x-\dfrac{7}{6} \).</p>
                 <p>Då \( x=-2 \) är \( y=-\dfrac{2}{3} \) och tangenten är \( y+\dfrac{2}{3}=2(x+2) \Leftrightarrow y=2x+\dfrac{10}{3} \).</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Berätta hur funktionen \( f(x)=\dfrac{2x^2-4}{x^2-1} \) beter sig. När är den växande och avtagande. Hurdana extremvärden har den?
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="13">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#47" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="47">
               <div class="card card-body answer"> <p>Funktionen \( f \) är definierad då \( x^2-1\not=0 \Leftrightarrow x=\pm1 \).</p>
                 <p>\( f'(x)=\dfrac{(x^2-1)\cdot 4x - (2x^2-4)\cdot 2x}{(x^2-1)^2} = \dfrac{4x}{(x^2-1)^2} \). Vi söker nollställen för täljare och nämnare och bildar ett teckenschema.</p>
                 <p>För täljaren gäller \( 4x=0 \Leftrightarrow x=0 \) och för nämnaren gäller att den alltid är positiv.</p>
@@ -381,8 +822,8 @@
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Visa att talföljden \( a_n=\dfrac{1}{1+n^2}, n=0,1,2,3,\ldots \) är strängt avtangande?
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="13.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#48" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="48">
               <div class="card card-body answer"> <p>Vi undersöker \( f(x)=\dfrac{1}{1+x^2}, \mathbb{R}_+\to\mathbb{R} \).</p>
                 <p>\( f'(x)=\dfrac{-2x}{(1+x^2)^2} \).</p>
                 <p>Om talföljden skall vara strängt avtangande gäller att \( f'(x) < 0 \). Eftersom nämnaren är positiv så skall täljaren vara negativ.</p>
@@ -392,8 +833,8 @@
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x)=\left\{  \begin{array}{rl}  -x^2+1 & , x \geq 0 \\  2x+1 & , x  < 0 \\  \end{array}\right. \) är kontinuerlig i den reella talmängden.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="14">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#49" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="49">
               <div class="card card-body answer"> <p>Funktionen består av polynomfunktioner som är kontinuerliga. Det som vi måste undersöka är om funktionen är kontinuerlig i punkten 0. Vi gör det via gränsvärden och funktionsvärden.</p>
                 <p>\( \lim_{x \to 0-} 2x+1 = 2\cdot 0 + 1 = 1 \)</p>
                 <p>\( \lim_{x \to 0+} -x^2+1 = -0^2 + 1 = 1 \) </p>
@@ -402,8 +843,8 @@
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x)=\left\{  \begin{array}{rl}  2x^2-3 & , x \leq 2 \\  -\dfrac{1}{2}x+5 & , x  > 2 \\  \end{array}\right. \) inte är kontinuerlig i den reella talmängden.
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="14.5">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#50" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="50">
               <div class="card card-body answer"> <p>Funktionen består av polynomfunktioner som är kontinuerliga. Det som vi måste undersöka är om funktionen är diskontinuerlig i punkten 2. Vi gör det via gränsvärden och funktionsvärden.</p>
                 <p>\( \lim_{x \to 2-} 2x^2-3 = 2\cdot 2^2 -3 = 5 \)</p>
                 <p>\( \lim_{x \to 2+} -\dfrac{1}{2}x+5 = -\dfrac{1}{2}\cdot 2 + 5 = 4 \) </p>
@@ -412,8 +853,8 @@
           </li>
 
           <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( b \) är talföljden \( a_n=\dfrac{bn-2}{n+6}, n=0,1,2,3,\ldots \) strängt växande?
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="15">
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#51" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="51">
               <div class="card card-body answer"> <p>Vi undersöker \( f(x)=\dfrac{bx-2}{x+6}, \mathbb{R}_+\to\mathbb{R} \).</p>
                 <p>\( f'(x)=\dfrac{(x+6)b-(bx-2)\cdot 1}{(x+6)^2} = \dfrac{xb+6b-bx+2}{(x+6)^2}=\dfrac{6b+2}{(x+6)^2} \).</p>
                 <p>Om talföljden skall vara strängt växande gäller att \( f'(x) > 0 \). Eftersom nämnaren är positiv så skall täljaren vara positiv.</p>
