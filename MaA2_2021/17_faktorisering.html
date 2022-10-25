@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Faktorisering av ett polynom</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar med rotformeln</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_parabeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="12_olikheter_andra.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Faktorisering av polynom</h1>
+      <section>
+        <div class="theory">
+          <p>Vi kan faktorisera polynom med hjälp av rötterna som löser nollställena för polynomet.</p>
+          <p>Betyder i klartext att andragradsuttrycket \(ax^2+bx+c\) kan vi skriva som \(a(x-x_1)(x-x_2)\) där \(x_1\) och \(x_2\) är rötterna för ekvationen \(ax^2+bx+c=0\).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Faktorisera \(x^2-5x+4\).</p>
+            <h4>Lösning</h4>
+            <p>Vi söker nollställen för:</p>
+            <p>\(\begin{array}{rcll} x^2-5x+4 & =  & 0  &  \textrm{ }\\
+              x & =  &  \dfrac{5 \pm \sqrt{(-5)^2-4 \cdot 1\cdot 4}}{2 \cdot 1}  &  \\
+              x & =  & \dfrac{5 \pm \sqrt{9}}{2} = \dfrac{5 \pm 3}{2}\\
+              x=\dfrac{5 - 3}{2}=1 & \textrm{ eller }  &
+              x=\dfrac{5 + 3}{2}=4  & \\
+              \end{array}\)</p>
+            <p>Vi kan faktorisera \(x^2-5x+4\) som \((x-1)(x-4)\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Faktorisera \(2x^2-4\).</p>
+            <h4>Lösning</h4>
+            <p>Vi söker nollställena för:</p>
+            <p>\(\begin{array}{rcll} 2x^2-4 & =  & 0  &  \mid /2 \textrm{ }\\
+              x^2-2 & =  & 0  &  \textrm{ }\\
+              x^2 & =  & 2  &  \mid \sqrt{\quad} \textrm{ }\\
+              x & =  & \pm\sqrt{2}  &  \textrm{ }\\
+              \end{array}\)</p>
+            <p>Vi har en 2 framför \(x^2\). Alltså är \(2x^2-4 = 2(x-\sqrt{2})(x+\sqrt{2})\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Faktorisera \(3x^2+6x+3\).</p>
+            <h4>Lösning</h4>
+            <p>Vi söker nollställena för</p>
+            <p>\(\begin{array}{rcll} 3x^2+6x+3 & =  & 0  &  \mid /3 \textrm{ }\\
+              x^2+2x+1 & =  & 0  &  \textrm{Antingen löser vi den med rotformel, }\\
+              (x+1)^2 & =  & 0  &  \textrm{eller så via att skriva } x^2+2x+1 \textrm{ som en kvadrat.}\\
+             \textrm{Blir 0 då } x+1 & =  & 0  &  \textrm{Vi har en så kallad dubbelrot.}\\
+            &  &  & \text{Betyder att grafen tangerar x-axeln. Ingen panik.}\\ x  &  =  & -1 \\ \end{array}\)</p>
+            <p>Vi får \(3x^2+6x+3 = 3(x+1)(x+1)=3(x+1)^2\)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Förenkla \(\dfrac{x^2+x-6}{x^2-4x+4}\).</p>
+            <h4>Lösning</h4>
+            <p>Vi tar och faktoriserar täljaren och nämnaren skillt för sig.</p>
+            <p>Täljaren: \(\dfrac{-1 \pm \sqrt{1^2 -4\cdot 1 \cdot (-6)}}{2\cdot 1} = \dfrac{-1 \pm \sqrt{25}}{2}= \dfrac{-1\pm 5}{2}\).</p>
+            <p>Rötterna är \(x_1 = \dfrac{-1-5}{2}=-3\) och \(x_2=\dfrac{-1+5}{2}=2\)</p>
+            <p>Täljaren kan faktoriseras till \((x+3)(x-2)\).</p>
+            <p>Nämnaren: \(x^2-4x+4 = (x-2)^2\), eller via rotformeln.</p>
+            <p>Betyder att \(\dfrac{x^2+x-6}{x^2-4x+4} = \dfrac{(x+3)(x-2)}{(x-2)^2} = \dfrac{x+3}{x-2}\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 5</strong> Faktorisera \( 2x^2-4x-6 \) med hjälp av Geogebra.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/470229485" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          <ul>
+            <li>Öppna CAS på GeoGebra.</li>
+            <li>Använd dig av kommandot Faktorisera(UTTRYCKET IN HÄR).</li>
+            <li>Tryck Enter.</li>
+          </ul>
+        </div>
+
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+
+        <ol>
+        <li>Faktorisera följande uttryck för hand.
+        <ol>
+          <li>\(x^2-4x-5\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1a">
+            <div class="card card-body answer"><p>Nollställena är \(x=-1\) och \(x=5\)</p>
+              <p>\(x^2-4x-5 = (x+1)(x-5)\)</div></div></li>
+            <li>\(x^2+3x+2\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1b">
+            <div class="card card-body answer"><p>Nollställena är \(x=-1\) och \(x=-2\).</p>
+              <p>\(x^2+3x+2 = (x+1)(x+2)\).</p></div></div></li>
+            <li>\(2x^2+6x+4\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1c">
+            <div class="card card-body answer"><p>Nollställena är \(x=-1\) och \(x=-2\). Vi har en 2:a framför \(x^2\).</p>
+              <p>\(2x^2+6x+4 =2(x+1)(x+2)\).</p></div></div></li>
+        </ol>
+        </li>
+
+        <li>Faktorisera följande uttryck för hand.
+          <ol>
+            <li>\(x^2+x-12\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2a">
+            <div class="card card-body answer"><p>Nollställena är \(x=3\) och \(x=-4\).</p>
+            <p>\(x^2+x-12=(x-3)(x+4)\).</p></div></div></li>
+            <li>\(3x^2+9x+6\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2b">
+            <div class="card card-body answer"><p>Nollställena är \(x=-2\) och \(x=-1\). Vi har en 3:a framför \(x^2\).</p>
+            <p>\(3x^2+9x+6 =3(x+2)(x+1)\).</p></div></div></li>
+            <li>\(5x^2+15x-20\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2c">
+            <div class="card card-body answer"><p>Nollställena är \(x=1\) och \(x=-4\). Vi har en 5:a framför \(x^2\).</p>
+              <p>\(5x^2+15x-20=5(x-1)(x+4)\).</p></div></div></li>
+          </ol>
+        </li>
+
+        <li>Faktorisera följande uttryck på Geogebra.
+          <ol>
+            <li>\(2x^2+2x-40\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3a">
+            <div class="card card-body answer"><img src="pics/11_3a.png" alt="" width="450" height="110"  /></div></div></li>
+            <li>\(x^2-x\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3b">
+            <div class="card card-body answer"><img src="pics/11_3b.png" alt="" width="450" height="72"  /></div></div></li>
+            <li>\(-x^3+x^2+6x\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3c">
+            <div class="card card-body answer"><img src="pics/11_3c.png" alt="" width="450" height="72"  /></div></div></li>
+            <li>\(\dfrac{x^2-x-6}{x+2}\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3d">
+            <div class="card card-body answer"><img src="pics/11_3d.png" alt="" width="450" height="72"  /></div></div></li>
+            <li>\(\dfrac{4x^2+24x+32}{2x^2+4x-16}\)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3e">
+            <div class="card card-body answer"><img src="pics/11_3e.png" alt="" width="450" height="90"  /></div></div></li>
+          </ol>
+        </li>
+
+        <li>Faktorisera följande uttryck för hand. Kontrollera din faktorisering med hjälp av GeoGebra.
+          <ol>
+            <li>\(\dfrac{1}{2}x^2+3x+4\)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Nollställena är \(x=-2\) och \(x=-4\).</p>
+              <p>\(\dfrac{1}{2}x^2+3x+4=\dfrac{1}{2}(x+2)(x+4)\).</p></div></div></li>
+              <li>\(3x^2-19x+6\)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Nollställena är \(x=\dfrac{1}{3}\) och \(x=6\).</p>
+                <p>\(3x^2-19x+6=3(x-\dfrac{1}{3})(x-6)\).</p></div></div></li>
+              <li>\(2x^2-4x+2\)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Vi har ett dubbelnollställe som är \(x=1\).</p>
+              <p>\(2x^2-4x+2=2(x-1)(x-1)=2(x-1)^2\).</p></div></div></li>
+            </ol>
+          </li>
+
+
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Förenkla följande uttryck genom att först faktorisera.
+            <ol>
+              <li>\(\dfrac{x^2-3x+2}{x^2-1}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\(\dfrac{x^2-3x+2}{x^2-1}=\dfrac{(x-2)(x-1)}{(x+1)(x-1)}=\dfrac{x-2}{x+1}\)</p></div></div></li>
+              <li>\(\dfrac{x^2-2x-3}{x^2-6x+9}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\(\dfrac{x^2-2x-3}{x^2-6x+9} = \dfrac{(x+1)(x-3)}{(x-3)(x-3)}=\dfrac{x+1}{x-3}\)</p></div></div></li>
+              <li>\(\dfrac{x^2+x-2}{1-x}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>\(\dfrac{x^2+x-2}{1-x} = \dfrac{(x-1)(x+2)}{1-x} \)</p>
+                <p>För att komma vidare bryter vi ut \( -1 \) från \( x-1 \). Alltså \( x-1 = -(-x+1) = -(1-x) \).</p>
+                <p>Vi får \( \dfrac{-(1-x)(x+2)}{1-x} = -(x+2) = -x-2\).</p></div></div></li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm de andragrads ekvationer som har följande rötter.
+            <ol>
+              <li>Rötterna \( 1 \) och \( 4 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Eftersom ekvationen skall ha lösningarna \( 1 \) och \( 4 \) betyder det att ekvationen ser ut som \( (x-1)(x-4)=0 \)</p>
+              <p>Alltså \( x^2-5x +4 =0 \).</p>
+              </div></div> </li>
+              <li>Rötterna \( -2 \) och \( 0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Eftersom ekvationen skall ha lösningarna \( -2 \) och \( 0 \) betyder det att ekvationen ser ut som \( (x-(-2))(x-0)=0 \)</p>
+              <p>Alltså \( x^2+2x = 0 \).</p></div></div> </li>
+              <li>Dubbelroten \( -5 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Eftersom ekvationen skall ha dubbelroten \( -5 \) betyder det att ekvationen ser ut som \( (x-(-5))^2=0 \)</p>
+              <p>Alltså \( x^2+10x +25 =0 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+        <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \(a\) kan uttrycket \(\dfrac{x^2-a}{x+3}\) förkortas?
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+          <div class="collapse" id="7t">
+          <div class="hint">Vad gäller för täljaren om vi skall kunna förkorta?</div></div>
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="7">
+          <div class="card card-body answer"><p>Eftersom nämnaren är \(x+3\) så måste täljaren bestå av samma faktor.</p>
+            <p>Då \(a=9\) är täljaren \(x^2-9 = (x+3)(x-3)\), och då kan vi förkorta.</p></div></div></li>
+        </ol>
+
+
+      </section>
+
+      </article>
+
+    <footer class="MaA2">
+      <a href="10_parabeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_olikheter_andra.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

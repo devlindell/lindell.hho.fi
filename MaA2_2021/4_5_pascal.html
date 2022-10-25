@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Pascals triangel</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar med rotformeln</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_konjugat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="6_blandat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Pascals triangel</h1>
+      <section>
+        <p>Följande är något som vi kan använda då vi förenklar binom, parenteser med två termer, som är högre än andra grad.</p>
+        <div class="theory box">
+          <div class="intro box">
+            <p>Vi undersöker följande binom</p>
+            <ol style="list-style-type: lower-alpha;">
+              <li>\((a+1)^1\)</li>
+              <li>\((a+1)^2\)</li>
+              <li>\((a+1)^3\)</li>
+              <li>\((a+1)^4\).</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol style="list-style-type: lower-alpha;">
+              <li><p>Vi får att</p> <p>\((a+1)^1 = a+1\)</p></li>
+              <li><p>Vi får att</p> <p>\((a+1)^2 = a^2+2a+1\)</p></li>
+              <li><p>Vi får att</p> <p>\(\begin{array}{rcl} (a+1)^3 & = & (a+1)(a+1)^2 \\
+                & = & (a+1)(a^2+2a+1) \\
+                & = &a^3+2a^2+a+1+a^2+2a+1 \\
+                & = & a^3+3a^2+3a+1 \\
+                \end{array}\)</p>
+              </li>
+              <li><p>Vi får att</p>
+                <p>\(\begin{array}{rcl}
+                  (a+1)^4 & = & (a+1)(a+1)^3 \\
+                  & = & (a+1)(a^3+3a^2+3a+1)\\
+                  & = &a^4 +3a^3+3a^2+1 + a^3+3a^2+3a+1 \\
+                  & = & a^4 + 3a^3+6a^2+3a+1 \\
+                  \end{array}\)</p>
+                </li>
+            </ol>
+          </div>
+          <p>Koefficienterna, talen framför bokstäverna, följer ett visst mönster. Samma mönster hittar vi i Pascals triangel. Hur Pascals triagnel byggs upp framkommer i videon.</p>
+          <h2>Pascals triangel</h2>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/304287212" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <p>När vi höjer upp binom i tredje, fjärde eller högre grad än det lönar det sig att utnyttja Pascals triangel, eftersom den ger koefficienterna för termerna.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Förenkla \((2x-1)^3\).</p>
+            <h4>Lösning</h4>
+            <p>Termerna är \(2x\) och \(-1\). Eftersom vi upphöjer till 3 är koefficienterna 1, 3, 3 och 1.</p>
+            <p>Vi får att</p>
+            <p>\(\begin{array}{rcl} (2x-1)^3 & = & 1\cdot (2x)^3(-1)^0 + 3\cdot(2x)^2(-1)^1+3\cdot(2x)^1(-1)^2+1\cdot(2x)^0(-1)^3 \\ & = & 8x^3 -12x^2+6x-1\\ \end{array}\)</p>
+            <p>För varje term, \(1\cdot (2x)^3(-1)^0\), märker vi att summan av exponenterna alltid är 3.</p> </div>
+            <div class="summary box">
+              <p>När du förenklar och utvecklar binom som är upphöjt till ett gradtal högre än två lönar det sig att utnyttja Pascals triangel.</p> </div>
+
+            </div>
+        </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Vad är fördelen med binomialformeln och Pascals triangel? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">Vi kan på ett lätt sätt utveckla binom upphöjt till något heltal, tex \((4-a)^5\), utan att räkna det som många parenteser gånger varandra.</div></div></li>
+
+          <li>Bestäm koefficienterna för
+            <ol>
+              <li>4:e raden, \((\quad)^3\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Koefficienterna är 1, 3, 3 och 1.</div></div></li>
+              <li>5:e raden, \((\quad)^4\).  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Koefficienterna är 1, 4, 6, 4 och 1.</div></div></li>
+              <li>6:e raden, \((\quad)^5\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Koefficienterna är 1, 5, 10, 10, 5 och 1.</div></div></li>
+              <li>7:e raden, \((\quad)^6\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer">Koefficienterna är 1, 6, 15, 20, 15, 6 och 1.</div></div></li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm
+            <ol>
+              <li>\((2+a)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="3a">
+                  <div class="card card-body answer">\((2+a)^3 = 2^3+3\cdot 2^2\cdot a^1 +3\cdot 2\cdot a^2 +a^3 = a^3+6a^2+12a+8 \)</div></div></li>
+                  <li>\((a+2)^4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                  <div class="collapse" id="3b">
+                  <div class="card card-body answer">\((a+2)^4 = a^4 +4\cdot a^3 \cdot 2 + 6 a^2 \cdot 2^2 + 4a\cdot 2^3 + 2^4 = a^4 +8a^3+24a^2+32a+16 \)</div></div></li>
+                  <li>\((2+a)^5 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                  <div class="collapse" id="3c">
+                  <div class="card card-body answer">\(\begin{array}{rcl}  (2+a)^5 & = & 1\cdot 2^5\cdot a^0 +5\cdot 2^4\cdot a^1+10\cdot 2^3\cdot a^2+10\cdot 2^2\cdot a^3+5\cdot 2^1\cdot a^4+1\cdot 2^0\cdot a^5 \\   & = & 32+80a+80a^2+40a^3+10a^4+a^5\\  \end{array}\)</div></div></li>
+                  <li>\((a+2)^6 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                  <div class="collapse" id="3d">
+                  <div class="card card-body answer">\(\begin{array}{rcl}  (a+2)^6 & = & 1\cdot a^6 \cdot 2^0 +6 \cdot a^5 \cdot 2^1 +15 \cdot a^4 \cdot 2^2 +20 \cdot a^3 \cdot 2^3 +15 \cdot a^2 \cdot 2^4 +6 \cdot a^1 \cdot 2^5 + 1 \cdot a^0 \cdot 2^6 \\
+                  & = & a^6 +12a^5+60a^4 +160a^3 +240a^2+192a+64\\  \end{array} \)</div></div></li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm
+            <ol>
+              <li>\((3-b)^3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer">\((3-b)^3 = 3^3 +3\cdot 3^2 \cdot (-b) + 3\cdot 3 \cdot (-b)^2 +(-b)^3 = -b^3 + 9b^2 -27b+27 \)</div></div></li>
+              <li>\((b-3)^4 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer">\(\begin{array}{rcl}  (b-3)^4 & = & 1 \cdot b^4 (-3)^0 + 4\cdot b^3 (-3)^1 +6\cdot b^2 (-3)^2 + 4\cdot b^1 (-3)^3 +1 \cdot b^0 (-3)^5 \\  & = & b^4 -12b^3+54b^2-108b-243  \end{array} \)</div></div></li>
+              <li>\((3-b)^5 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer">\(\begin{array}{rcl}  (3-b)^5 & = & 1 \cdot 3^5(-b)^0 +5 \cdot 3^4(-b)^1 +10\cdot 3^3(-b)^2+10\cdot 3^2(-b)^3 +5\cdot 3^1(-b)^4 +1 \cdot 3^0(-b)^5 \\  & = & 243-405b+270b^2-90b^3+15b^4-b^5\\  \end{array} \)</div></div></li>
+              <li>\((b-3)^6 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer">\(\begin{array}{rcl}  (b-3)^6 & = & 1 \cdot b^6(-3)^0 +6\cdot b^5(-3)^1+15 \cdot b^4(-3)^2 +20 \cdot b^3(-3)^3 +15\cdot b^2(-3)^4+6\cdot b^1(-3)^5 + 1 \cdot b^0(-3)^6 \\  & = &b^6-18b^5+153b^4-540b^3+1215b^2-1458b+729\\  \end{array} \)</div></div></li>
+            </ol></li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA2">
+      <a href="4_konjugat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_blandat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

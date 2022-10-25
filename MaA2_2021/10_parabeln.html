@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>10. Parabeln</title>
+
+  </head>
+  <body>
+    <header class="MaA2">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_polynom.html">1. Polynom</a>
+            <a class="dropdown-item" href="2_distributiva.html">2. Distributiva lagen</a>
+            <a class="dropdown-item" href="3_kvadrering.html">3. Kvadreringsregeln</a>
+            <a class="dropdown-item" href="4_konjugat.html">4. Konjugatregeln</a>
+            <a class="dropdown-item" href="5_pascal.html">5. Pascals triangel</a>
+            <a class="dropdown-item" href="6_blandat.html">6. Blandade uppgifter</a>
+            <a class="dropdown-item" href="7_olikheter_forsta.html">7. Olikheter av första grad</a>
+            <a class="dropdown-item" href="8_rotformeln.html">8. Rotformeln</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar med rotformeln</a>
+            <a class="dropdown-item" href="10_parabeln.html">10. Parabeln</a>
+            <a class="dropdown-item" href="11_faktorisering.html">11. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="12_olikheter_andra.html">12. Olikheter av andra grad</a>
+            <a class="dropdown-item" href="13_diskriminant.html">13. Diskriminant och antal rötter</a>
+            <a class="dropdown-item" href="14_ekvationer_hogre.html">14. Ekvationer av högre grad</a>
+            <a class="dropdown-item" href="15_olikheter_hogre.html">15. Olikheter av högre grad</a>
+            <a class="dropdown-item" href="16_repetition.html">16. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="9_tillampningar.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 2 Polynomekvationer och -funktioner</h3>
+      <a href="11_faktorisering.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>10. Parabeln - grafen av en andragradsfunktion</h1>
+      <section>
+        <div class="theory">
+          <p>Grundformen för en andragradsfunktion ser ut som \(f(x)= ax^2 +bx+c\). \(a\), \(b\) och \(c\) påverkar olika på hur funktionen ser ut. Vi kallar grafen av en andragradsfunktion för en parabel.</p>
+          <p>Testa själv genom att ändra på värdet för \(a\), \(b\) och \(c\). Vad märker du?</p>
+          <div class="geogebra">
+            <iframe style="border: 0px;" src="https://www.geogebra.org/material/iframe/id/55266/width/500/height/430/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="500px" height="430px" scrolling="no"></iframe>
+          </div>
+          <div class="summary box">
+            <ul>
+ 	            <li>\(a\) inverkar på hur brant funktionen öppnar sig. Är \(a > 0\) öppnar sig parabeln uppåt. Är \(a < 0\) öppnar sig parabeln nedåt.</li>
+ 	            <li>\(b\) flyttar parabeln i sidled och</li>
+ 	            <li>\(c\) flyttar parabeln i höjdled.</li>
+            </ul>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm funktionsvärdena \(f(-2)\) för funktionen \(f(x)=-2x^2-3x-1\).
+            <h4>Lösning</h4>
+            <p>Funktionsvärdet får vi genom att sätta in värdet i funktionen.</p>
+            <p>\(f(-2) = -2(-2)^2-3(-2)-1 = -3\).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Bestäm nollställena för \(f(x)= -x^2+6x-5\). Bestäm koordinaten för toppen för parabeln.
+            <h4>Lösning</h4>
+            <p>Vi löser nollställena: \(-x^2+6x-5 = 0\).</p>
+            <p>\(\begin{array}{rcll} x  & =  & \dfrac{-6 \pm \sqrt{6^2-4(-1)(-5)}}{2\cdot (-1)} \\
+              x & = &  \dfrac{-6 \pm \sqrt{16}}{-2} \\
+              x = \dfrac{-6-4}{-2}=5 &  \textrm{ eller } &  x=\dfrac{-6+4}{-2}=1 \\
+              \end{array} \)</p>
+            <p>Nollställena är i \(x_1=1\) och \(x_2=5\).</p>
+          <p>Toppen finner vi mitt emellan nollställena: \(\dfrac{5-1}{2} = 3\).</p>
+          <p>Y-koordinaten är: \(f(3) = -3^2+6\cdot 3-5 = 4\).</p>
+          <p>Toppens koordinater är \((3,4)\).</p>
+        </div>
+        <div class="summary box">
+          <p>Toppen är den punkt där parabeln byter riktning. Toppen för en parabel finns mitt mellan nollställena.</p>
+          <p>Vill du räkna ut \(x\)-koordinaten räknar du ut den via \(\dfrac{\dfrac{-b-\sqrt{b^2-4ac}}{2a} + \dfrac{-b+\sqrt{b^2-4ac}}{2a}}{2} = -\dfrac{b}{2a} \).</p>
+
+        </div>
+        <div class="exercise box">
+          <strong>Exempel 3</strong> Bestäm på Geogebra ekvationen för vajrarna som spänner upp Golden Gate bron från San Francisco till Marin County i Kalifornien, USA .
+          <a href="pics/10_GoldenGate.jpg" target="_blank"><img src="pics/10_GoldenGate.jpg" alt="" class="responsivepic600" /></a>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/470227972" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <p>För att bestämma funktionen gör du följande.</p>
+          <ul>
+            <li>Importera bilden i GeoGebra.</li>
+            <li>Markera några punkter på kurvan som du vill ha. Ingen panik, man kan alltid flytta på punkterna.</li>
+            <li>I Inmatningsfältet eller CAS använder du dig av RegressionPoly({A,B,C},2), eller FitPoly för att bestämma funktionen.</li>
+          </ul>
+        </div>
+
+      </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+
+        <ol>
+         	<li><p>Kombinera rätt funktion med rätt graf.</p>
+            <p>Försök att fundera dig fram till rätt lösning. Fundera hur koefficienterna \( a \), \( b \) och \( c \) påverkar grafen av parabeln, \( y = ax^2 +bx +c \).</p>
+            <p>Vilken koefficient ändrar på hur brett parabeln öppnar sig? Vilken koefficeint flyttar parabeln i sidled? Vilken koefficient flyttar på parabeln uppåt och nedåt?</p>
+        <p><img src="pics/andra_parabler.png" alt="" class="responsivepic600" /></p>
+
+        <p>Välj bland följande:
+          <div class="grid-container">
+            <div class="grid-item">\(f(x)\)</div>
+            <div class="grid-item">\(g(x)\)</div>
+            <div class="grid-item">\(h(x)\)</div>
+            <div class="grid-item">\(i(x)\)</div>
+          </div>
+          </p>
+        <table>
+          <tr class="MaA2"><th>Funktion</th><th>Uttryck</th></tr>
+          <tr><td></td><td>\(x^2+4x\)</td></tr>
+          <tr><td></td><td>\(-x^2+4\)</td></tr>
+          <tr><td></td><td>\(-\dfrac{1}{2}x^2+4\)</td></tr>
+          <tr><td></td><td>\(x^2-x-1\)</td></tr>
+        </table>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="1">
+        <div class="card card-body answer">
+        <table>
+          <tr class="MaA2"><th>Funktion</th><th>Uttryck</th></tr>
+          <tr><td>\(f(x)\)</td><td>\(x^2+4x\)</td></tr>
+          <tr><td>\(g(x)\)</td><td>\(-x^2+4\)</td></tr>
+          <tr><td>\(h(x)\)</td><td>\(-\dfrac{1}{2}x^2+4\)</td></tr>
+          <tr><td>\(i(x)\)</td><td>\(x^2-x-1\)</td></tr>
+        </table>
+        </div>
+        </div>
+        </li>
+
+         	<li>Bestäm funktionsvärdena \(f(-1)\) och \(f(2)\) för \(f(x)= -x^2-3x+1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="2">
+          <div class="card card-body answer"><p>Vi får \(f(-1)=-(-1)^2-3(-1) +1 = 3\) och \(f(2)=-2^2-3\cdot 2+1 = -9\).</p></div>
+          </div></li>
+
+          <li>Bestäm för följande funktioner om grafen är funktionen är en parabel. Om det är en parabel så bestäm om den öppnar sig uppåt eller nedåt.
+            <table>
+              <tr class="MaA2"><th>Funktion</th><th>Parabel</th><th>Inte parabel</th><th>Öppnar sig uppåt</th><th>Öppnar sig nedåt</th></tr>
+              <tr><td>\( f(x) = x^2-3x \)</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( f(x) = -3x^2 +2 \)</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( f(x) = x^3+x^2 \)</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( f(x) = x(x-1)+3 \)</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( f(x) = 3(4-x^2) \)</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( f(x) = x^2(x+2) \)</td><td></td><td></td><td></td><td></td></tr>
+            </table>
+
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi får följande</p>
+                <table>
+                  <tr class="MaA2"><th>Funktion</th><th>Parabel</th><th>Inte parabel</th><th>Öppnar sig uppåt</th><th>Öppnar sig nedåt</th></tr>
+                  <tr><td>\( f(x) = x^2-3x \)</td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( f(x) = -3x^2 +2 \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( f(x) = x^3+x^2 \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                  <tr><td>\( f(x) = x(x-1)+3 \)</td><td><i class="fas fa-check"></i></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( f(x) = 3(4-x^2) \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( f(x) = x^2(x+2) \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+              </table>
+            </div></div>
+          </li>
+
+          <!--<li>
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bestäm nollställen för följande funktioner.
+            <ol>
+         	    <li>\(f(x)= x^2-4x-5\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Ekvationen \(f(x)=x^2-4x-5=0\) ger \(x_1=-1\) och \(x_2=5\).</p></div></div>
+              </li>
+         	    <li>\(g(x)=x^2-4x\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Ekvationen \(g(x)=x^2-4x=0\) ger \(x_1=0\) och \(x_2=4\).<p>
+              </div></div></li>
+         	    <li>\(h(x)=x^2+4x+3\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Ekvationen \(h(x)=x^2+4x+3\) ger \(x_1=-3\) och \(x_2=-1\).</p></div></div></li>
+            </ol>
+          </li>
+
+         	<li>Bestäm
+            <ol>
+         	    <li><p>ekvationen för parabeln som beskriver vattenstrålen från dricksfontänen. <a href="pics/10_Dricksfontan.jpeg" target="_blank">Bild</a></p>
+              <p><img   src="pics/10_Dricksfontan.jpeg" alt="" class="responsivepic400" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Lite beroende på hur man väljer men något i stil med</p>
+              <p><img src="pics/10_4a.png" alt="" class="responsivepic600" /></p>
+              </div></div></li>
+              <li><p>ekvationen för parabeln som beskriver brospannet för Xiangxi bron i Xiangxizhen, Hubei, Kina.<a href="pics/10_XiangxiArch.jpg" target="_blank">Bild</a></p>
+              <p><img src="pics/10_XiangxiArch.jpg" alt="" class="responsivepic400"  /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Lite beroende på hur man väljer men något i stil med</p><p><img src="pics/10_4b.png" alt="" class="responsivepic600"  /></p></div></div></li>
+              <li><p>ekvationen för parabeln som beskriver Eero Saarinens konstverk Gateway Arch i Saint Louis, USA. <a href="pics/10_GatewayArchStLouis.jpg" target="_blank">Bild</a></p>
+              <img src="pics/10_GatewayArchStLouis.jpg" alt="" class="responsivepic400"  /></p>  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"> <p>Lite beroende på hur man väljer men något i stil med</p><p><img src="pics/10_4c.png" alt="" class="responsivepic600" /></p></div></div></li>
+              <li><p>ekvationen för parabeln som beskriver hålet i Doulbe O Arch i Arches National Pari, Utah, USA. <a href="pics/10_DoubleOArchArchesNationalPark.jpg" target="_blank">Bild</a>
+              </p>
+              <p><img src="pics/10_DoubleOArchArchesNationalPark.jpg" alt="" class="responsivepic400"  /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer"> <p>Lite beroende på hur man väljer men något i stil med</p>
+              <p><img src="pics/10_4d.png" alt="" class="responsivepic600"  /></p>
+              </div></div></li>
+            </ol>
+        </li>
+
+        <li>Bestäm toppens koordinat för
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5at" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+          <div class="collapse" id="5at">
+          <div class="hint">Toppen hittar du mitt mellan nollställena. Gå via nollställena eller så direkt med formel.</div></div>
+          <ol>
+            <li>\(f(x)= x^2-2x\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5a">
+            <div class="card card-body answer"> <p>Nollställena är \(x^2-2x=0 \Leftrightarrow x=0\)  och \(x=2\). Toppen finns mitt emellan dessa, alltså då \(x=1\).</p>
+            <p>\(y\)-koordinaten är \(f(1)=1^2-2\cdot1 = -1\).</p>
+            <p>Toppens koordinat är \((1,-1)\).</p></div></div></li>
+            <li>\(g(x)= x^2-2x-8\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5b">
+            <div class="card card-body answer"> <p>\(g(x)= x^2-2x-8 =0\) då \(x=-2\) och \(x=4\).</p>
+            <p>Toppens \(x\)-koordinat hittar vi mitt emellan \(\dfrac{-2+4}{2}=1\).</p>
+            <p>\(y\)-koordinaten är \(f(1)=1^2-2\cdot 1-8 = -9\).</p>
+            <p>Toppens koorinat är \((1,-9)\).</p></div></div></li>
+            <li>\(h(x)=-x^2 +6x+7\)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5c">
+            <div class="card card-body answer"> <p>\(h(x)=-x^2 +6x+7 =0\) då \(x=-1\) och \(x=7\).</p>
+            <p>Toppens \(x\)-koordinat hittar vi i \(\dfrac{-1+7}{2}=3\).</p>
+            <p>\(y\)-koordinaten är \(f(3)=-3^2+6\cdot 3+7 = 16\).</p>
+            <p>Toppen koordinat är i \((3,16)\).</p></div></div></li>
+          </ol>
+        </li>
+
+        <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på variablen \( t \) gäller att funktionsvärdena för \( f(t) = 4t^2-t-5 \) och \( g(t) = t^2-t+7 \) är samma. Vilka är dessa funktionsvärden?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5.5">
+            <div class="card card-body answer"> <p>Vi skall lösa ekvationen \( f(t) = g(t) \).</p>
+              <p>Alltså \( 4t^2 -t-5 = t^2-t+7 \). Vi löser med rotformlen och får lösningarna \( t_1 = -2 \) och \( t = 2 \).</p>
+              <p>Då \( t = -2 \) har bägge funktionerna funktionsvärdet \( f(-2) = 13 \), och då \( t = 2 \) har bägge funktionerna funktionsvärdet \( f(2) = 9 \).</p>
+            </div></div>
+        </li>
+
+        <li>I vilka punkter skär \(f(x)=-x^2-x+6\) \(x\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="6">
+        <div class="card card-body answer"> <p>\(x\)-koordinaterna för skärningspunkterna hittar vi genom att bestämma nollställena. Alltså \(-x^2-x+6=0\) som har lösningarna \(x=2\) och \(x=-3\).</p>
+        <p>För skärningspunkterna gäller att \(y\)-koordinaten har värdet 0.</p>
+        <p>Skärningspunkterna är \((2,0)\) och \((-3,0)\).</p>
+        </div></div></li>
+
+        <li>I vilka punkter skär \( f(x)=x^2+2x-3 \) \(x\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="6.5">
+        <div class="card card-body answer"> <p>\(x\)-koordinaterna för skärningspunkterna hittar vi genom att bestämma nollställena. Alltså \(x^2+2x-3=0\) som har lösningarna \(x_1 = -3 \) och \( x = 1 \).</p>
+        <p>För skärningspunkterna gäller att \(y\)-koordinaten har värdet 0.</p>
+        <p>Skärningspunkterna är \((-3,0)\) och \((1,0)\).</p>
+        </div></div></li>
+
+        <li><i class="fas fa-cogs fa-2x level"></i>I vilken punkt skär \(f(x)=x^2-4x-5\) \(y\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="7">
+        <div class="card card-body answer"> <p>Då funktionen skär \(y\)-axeln gäller det att \(x\)-koordinaten har värdet 0. Vi får att \(f(0)=-5\).</p>
+        <p>Punkten är \((0,-5)\).</p></div></div></li>
+
+        <li><i class="fas fa-cogs fa-2x level"></i>I vilken punkt skär \( f(x) = x^2-7x+6 \) \(y\)-axeln?
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="7.5">
+        <div class="card card-body answer"> <p>Då funktionen skär \(y\)-axeln gäller det att \(x\)-koordinaten har värdet 0. Vi får att \(f(0)=6\).</p>
+        <p>Punkten är \((0,6)\).</p></div></div>
+        </li>
+
+        <li><i class="fas fa-jedi fa-2x level"></i>En parabel går genom punkterna \((-1,0)\), \((0,-5)\) och \((2,-9)\). Bestäm uttrycket för funktionen.
+        <p>Lös uppgiften utan att använda dig av räknare eller räknarprogram. Du kan kolla lösningen på räknare eller räknarprogram. Ekvationssystemet kan du lösa på räknare om du vill.</p>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+        <div class="collapse" id="8t"><div class="hint">En andragradsfunktion ser ut som \(f(x)=ax^2+bx+c\). Bilda ett ekvationssystem och lös det.</div></div>
+        <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+        <div class="collapse" id="8">
+        <div class="card card-body answer"> <p>Vi får ekvationssystemet</p>
+        <p>\(\left\{ \begin{array}{rcl} a(-1)^2+b(-1)+c  & = & 0 \\
+          a\cdot 0 + b\cdot 0 + c  & = &  5 \\
+          a\cdot2^2+b\cdot 2+c  & = & -9 \\
+          \end{array} \right.\)</p>
+        <p>Som har lösningarna \(a=1\), \(b=-4\) och \(c=-5\).</p>
+        <p>Funktionen är \(f(x)=x^2-4x-5\).</p></div></div>
+        </li>
+
+      </ol>
+
+
+
+      </section>
+
+      </article>
+
+    <footer class="MaA2">
+      <a href="9_tillampningar.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="11_faktorisering.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Rationell funktion</title>
+
+  </head>
+  <body>
+    <header class="MaA6">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_rationellfunktion.html">1. Rationell funktion</a>
+            <a class="dropdown-item" href="2_rationelluttryck.html">2. Rationella uttryck</a>
+            <a class="dropdown-item" href="3_gransvarde.html">3. Gränsvärdet för en funktion</a>
+            <a class="dropdown-item" href="4_kontinuitet.html">4. Kontinuitet hos en funktion</a>
+            <a class="dropdown-item" href="5_forandring.html">5. Förändringen hos en funktion</a>
+            <a class="dropdown-item" href="6_derivatafunktionen.html">6. Derivatafunktionen</a>
+            <a class="dropdown-item" href="7_tangent.html">7. Tangent</a>
+            <a class="dropdown-item" href="8_hurfunktion.html">8. Hur en funktion beter sig</a>
+            <a class="dropdown-item" href="9_tillampningar.html">9. Tillämpningar</a>
+            <a class="dropdown-item" href="10_derivprod.html">10. Derivatan av produkten mellan två funktioner</a>
+            <a class="dropdown-item" href="11_derivpotens.html">11. Derivatan av potensen av en funktion</a>
+            <a class="dropdown-item" href="12_derivkvot.html">12. Derivatan av kvoten mellan två funktioner</a>
+            <a class="dropdown-item" href="13_undersokning.html">13. Undersöking av rationella funktioner</a>
+            <a class="dropdown-item" href="14_repetition.html">14. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 6 Derivatan</h3>
+      <a href="2_rationelluttryck.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Rationell funktion</h1>
+      <section>
+        <div class="theory">
+          <p>Vi börjar vårt äventyr med att undersöka rationella funktioner. Rationella funktioner är funktioner där vi i täljaren och nämnaren består av polynom. Eftersom vi har ett polynom i nämnaren betyder det att den rationella funktionen är definierad i alla punkter förutom nämnarens nollställen.</p>
+          <div class="intro box">
+            <p>Rita funktionen \(f(x)=\dfrac{1}{x^2-1}\) och bestäm \(f(2)\).</p>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/293304478" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>När vi ritar funktioner för hand så behöver vi ett par punkter på funktionen. Dessa punkter får du lättast genom att lista ett par \(x\)-koordinater och sedan räkna ut motsvarande \(y\)-koordinat.</p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm definitionsmängden för \(g(x)=\dfrac{x-2}{x^2-4x+4}\).
+            <h4>Lösning</h4>
+            <p>Funktionen är definierad då nämnaren inte har värdet noll.</p>
+            <p>Vi får att</p>
+            <p>\(\begin{array}{rcl} x^2-4x+4 & \not= &0 \\ (x-2)^2 &\not= & 0 \\ x-2 &\not= & 0 \\ x & \not=&2 \\ \end{array}\)</p>
+            <p>Definitionsmängden är alltså alla reella tal utom 2.</p>
+          </div>
+          <div class="summary box">
+            <p>Räknare, datorer, telefoner och webbsidor brukar inte klara av att rita grafen av funktioner där det finns hål. Funktionen \(f(x)=\dfrac{x^2-4}{x+2}\) ritas som \(g(x)=x-2\) fastän \(f(x)\) inte är definierad i punkten \(x=-2\). Det som händer är att räknare, datorer, telefoner och webbsidor förenklar och förkortar först om de kan och glömmer att bestämma punkter där funktionen inte är definierad.</p>
+            <p>Observera detta när du tar hjälp av räknare och räkneprogram!</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Svara på följande frågor utgående från grafen på bilden.</p>
+            <p><img src="pics/rationell_funktion_1.png" class="responsivepic400" /></p>
+            <ol>
+          <li>Bestäm definitionsmängden. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="1a">
+          <div class="card card-body answer"><p>\(-1\leq x \leq 3\).</p> </div></div> </li>
+          <li>Bestäm \(f(1)\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="1b">
+          <div class="card card-body answer">\(f(1)=1\) </div></div> </li>
+          <li>Bestäm funktionens största värde. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="1c">
+          <div class="card card-body answer">Största värdet är 3. </div></div> </li>
+          <li>Bestäm de punkter som ger funktionsvärdet 3. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="1d">
+          <div class="card card-body answer">Punkterna -1 och 2 ger funktionsvärdet 3. </div></div> </li>
+        </ol>
+        </li>
+
+        <li>Bestäm definitionsmängerna för funktionerna
+          <ol>
+            <li>\(f(x)=\dfrac{1}{x+1}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2a">
+            <div class="card card-body answer"><p>Lös ekvationen \( x +1 =0 \). Vi kommer fram till alla reella tal förutom \(x=-1\).</p> </div></div> </li>
+            <li>\(f(x)=\dfrac{2}{x^2-9}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2b">
+            <div class="card card-body answer"><p>Funktionen är definierad för alla reella tal förutom de tal som uppfyller villkoret \( x^2 - 9 = 0\).</p>
+            <p>Vi får att definitionsmängden är alla reella tal förutom \(x=\pm3\).</p></div></div> </li>
+            <li>\(f(x)=\dfrac{2-x}{4-x^2}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2c">
+            <div class="card card-body answer"><p>Funktionen är definierad för alla reella tal förutom de som uppfyller villkoret \( 4-x^2 = 0\).</p>
+              <p>Vi kommer fram till att definitionsmängden är alla reella tal förutom \(x=\pm2\).</p>
+            </div></div> </li>
+            <li>\(f(x)=\dfrac{3-x}{x^2-x-2}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2d">
+            <div class="card card-body answer"><p>Funktionen är definierad för alla reella tal för utom dem som uppfyller villkoret \( x^2-x-2 = 0 \). Då vi löser ekvationen kommer vi fram till att definitionsmängden är alla reella tal förutom \(x=-1\) och \(x=2\).</p> </div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \(f(x)=\dfrac{x}{x-3}\) är inte definierad i punkten \(x=3\). Hur ritar din räknare grafen av funktionen? Hur borde din räknare rita grafen?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Du borde få något i stil med</p>
+                <p><img src="pics/1-3.png" class="responsivepic600" /></p>
+                <p>Här är inget konstigt.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \(f(x)=\dfrac{x+3}{x^2-9}\) är inte definierad då \(x=\pm 3\). Hur ritar din räknare grafen av funktionen? Hur borde din räknare rita grafen?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"><p>Räknarna klarar inte av nollstället \(x=-3\) och därför ritar de som</p>
+                <p><img src="pics/1-4.png" class="responsivepic600" /></p>
+                <p>Observera att räknaren inte alltid vet exakt allt. Var smartare än den! </p></div></div>
+            </li>
+
+            <li><i class="fas fa-shapes fa-2x level"></i>Bestäm definitionsmängden för följande funktioner.
+              <ol>
+                <li>\( \dfrac{5c-7}{x(x+3)} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5a">
+                <div class="card card-body answer"><p>Nämnaren får inte ha värdet noll.</p>
+                <p>Alltså \( x \not= 0 \) eller \( x\not= -3 \).</p>
+                <p>Definitionsmängden är alla reella tal förutom 0 och -3.</p>
+                </div></div>
+                </li>
+                <li>\( \dfrac{3x}{x^2-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5b">
+                <div class="card card-body answer"><p>Nämnaren får inte ha värdet noll.</p>
+                <p>Alltså \( x \not= \pm 1 \).</p>
+                <p>Definitionsmängden är alla reella tal förutom \( \pm1 \).</p>
+                </div></div> </li>
+                <li>\( \dfrac{3x}{x^2+1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5c">
+                <div class="card card-body answer"><p>Nämnaren får inte ha värdet noll.</p>
+                <p>\( x^2 \geq 0\), alltså är nämnaren alltid positiv.</p>
+                <p>Definitionsmängden är alla reella tal.</p>
+                </div></div> </li>
+              </ol>
+            </li>
+
+            <li><i class="fas fa-shapes fa-2x level"></i>Bestäm definitionsmängden för följande funktioner.
+              <ol>
+                <li>\( \dfrac{x}{x+3} - \dfrac{2x-8}{4x+1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"><p>\( \dfrac{x}{x+3} \) är definierad i alla reella tal förutom då \( x+3 = 0 \), alltså \( x = -3 \).</p>
+                <p>\( - \dfrac{2x-8}{4x+1} \) är definierad i alla reella tal förutom då \( 4x+1=0 \), alltså då \( x = -\dfrac{1}{4} \).</p>
+                <p>Uttrycket är definierat i alla reella tal förutom då \( x = -3 \) eller då \( x =-\dfrac{1}{4} \).</p>
+                </div></div> </li>
+                <li>\( 17x - \dfrac{x+3}{6x} + \dfrac{x-3}{x^2-25} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6b">
+                <div class="card card-body answer"><p>\( 17x \) är definierad för alla reella tal.</p>
+                <p>\( - \dfrac{x+3}{6x} \) är definierad för alla reella tal utom de som uppfyller villkoret \( 6x = 0 \). Alltså \( x = 0 \).</p>
+                <p>\( \dfrac{x-3}{x^2-25} \) är definierad för alla reella tal förutom i nämnarens nollställe, \( x^2-25 = 0 \), alltså då \( x = \pm 5 \).</p>
+                <p>Uttrycket är definierat för alla reella tal förutom \( x = 0 \) och \( x = \pm 5 \).</p>
+                </div></div> </li>
+                <li>\( \dfrac{4x+7}{x^3+25x^2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6c">
+                <div class="card card-body answer"><p>Uttrycket är definierat för alla reella tal förutom de tal som är nämnarens nollställen. Vi löser ekvationen \( x^3 + 25x^2 = 0 \) och kommer fram till \( x = 0 \) och \( x = -25 \).</p>
+                </div></div> </li>
+              </ol>
+            </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Bestäm definitionsmängden för funktionen \( \dfrac{5x^2-10x}{x-2} \). Förenkla uttrycket. Bestäm definitionsmängden för den förenklade funktionen?
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="8">
+                <div class="card card-body answer"> <p>Definitionsmängden för den ursprungliga funktionen är alla reella tal förutom \( x = 2 \).</p>
+                <p>Den förenklade funktionen är \( \dfrac{5x(x-2)}{x-2} = 5x \). Dess definitionsmängd är alla reella tal.</p>
+                </div></div>
+            </li>
+
+            <li><i class="fas fa-lightbulb fa-2x level"></i>Fundera på följande tillsammans med en kurskamrat.
+              <ol>
+                <li>Kan man säga att grafen av dessa funktioner är vackra?</li>
+                <li>Vilken graf tycker du att är vackrast? Varför?</li>
+                <li>Kan man säga att någon matematisk funktion är ett konstverk?</li>
+              </ol>
+              <p><img src="pics/1-8.jpg" class="responsivepic400" /></p>
+              <p class="source">Källa: Filosofoidaan matematiikasta ja luonnontieteistä; Daniel, Lafourtune, Pallascio, Sykes</p>
+            </li>
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA6">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_rationelluttryck.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
