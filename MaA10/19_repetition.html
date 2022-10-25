@@ -141,7 +141,7 @@
               </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Biljettkontrollanter undersöker slumpmässigt cirka var 300:e passageres biljett. Bestäm sannolikheten att en person som åker till jobb och hem inte blir fast under ett år. Ett år har 220 arbetsdagar.
+          <li><i class="fas fa-shapes fa-2x level"></i>Biljettkontrollanter undersöker slumpmässigt cirka var 300:e passageres biljett. Bestäm sannolikheten att en person som åker till jobb och hem blir fast under ett år för att åka utan biljett. Ett år har 220 arbetsdagar.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Vi får \( P(\text{Blir fast}) = 1 - P(\text{blir inte fast}) = 1 - (\dfrac{299}{300})^{440} = 0,77 \).</p></div></div>
@@ -153,6 +153,14 @@
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Bestäm arean för varje område och jämför det med hela arean, 81 rutor, för att få sannolikheterna.</p>
               <p>Väntevärdet, \( E(x) = 2,04 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Sju stycken 20-åriga manliga vänner bestämmer sig att träffas 60 år senare. Med vilken sannolikhet kommer minst 2 personer att komma till träffen? Av 20-åriga män uppnår ca 30 % en ålder om 80 år.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5">
+              <div class="card card-body answer"> <p>Vi har upprepat försök. Sannolikheten att en person inte uppnår 80 år är 0,70.</p>
+              <p>\( P(\text{Minst 2 personer}) = 1 - (P(\text{Ingen}) + P(\text{En person})) = \\ 1 - (0,70^{7} + \displaystyle\binom{7}{1} 0,30 \cdot 0,70^6) \approx 0,67\)</p>
               </div></div>
           </li>
 
