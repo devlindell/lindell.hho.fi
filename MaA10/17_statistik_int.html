@@ -180,6 +180,44 @@
             </ol>
           </li>
 
+          <li><p><i class="fas fa-shapes fa-2x level"></i>Funktionen </p>
+            <p>\( f(x)=\left\{
+              \begin{array}{ll}
+              0, &  \text{ då } x < 0 \\
+              ax^2, &  \text{ då } 0 \leq x \leq 1 \\
+              0, &  \text{ då} x > 1 \\
+              \end{array} \right.  \)</p>
+              <p>är täthetsfunktionen för en stokastisk variabel X.</p>
+            <ol>
+              <li>Bestäm värdet på konstanten \( a \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Eftersom \( f \) skall vara en täthetsfunktion så skall kriterierna gälla.</p>
+                <p>\( ax^{2} \geq 0 \) då \( a\geq 0 \).</p>
+                <p>Det andra villkoret är att \( \displaystyle\int_0^1 ax^{2} \text{ d}x =1 \). Det sker då \( a = 3 \). (Försäkra dig över detta!)</p>
+                <p>Alltså \(
+                  f(x)=\left\{
+                    \begin{array}{ll}
+                    0, &  \text{ då } x < 0 \\
+                    3x^2, &  \text{ då } 0 \leq x \leq 1 \\
+                    0, &  \text{ då} x > 1 \\
+                    \end{array} \right.  \)</p></div></div> </li>
+              <li>Bestäm fördelningsfunktionen \( F(x) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Vi skall integrera \( f(x) \).</p>
+                <p>Vi får </p>
+                <p> \( f(x)=\left\{
+                  \begin{array}{ll}
+                  0, &  \text{ då } x < 0 \\
+                  x^3, &  \text{ då } 0 \leq x \leq 1 \\
+                  1, &  \text{ då} x > 1 \\
+                  \end{array} \right.  \)</p>
+              </div></div> </li>
+              <li>Bestäm sannolikheten \( P(X > 0,67) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi får \( P(X > 0,67) = 1 - P(X < 0,67) = 1 - F(0,67) = 1- 0,67^3 = 0,699237 \approx 70,0 \% \).</p></div></div> </li>
+            </ol>
+          </li>
+
           <li><p><i class="fas fa-shapes fa-2x level"></i>Fördelningsfunktionen för en stokastisk variabel är </p>
             <p>\(  F(x)=\left\{
               \begin{array}{ll}
