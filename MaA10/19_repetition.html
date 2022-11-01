@@ -129,8 +129,25 @@
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Vi söker \( \dfrac{\text{gynsamma}}{\text{totala}} \). Gynsamma fall är \( 6 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \) och totala fall är \( 6^5 \).</p>
               <p>Sannolikheten är 0,48.</p>
-              <p>Eftersom sannolikheten är mindre än ,50 så lönar det sig inte.</p>
+              <p>Eftersom sannolikheten är mindre än 0,50 så lönar det sig inte.</p>
             </div></div>
+          </li>
+
+          <li>I en låda finns 5 gula och 7 röda bollar. På hur många olika sätt kan vi dra fyra bollar ur lådan så att
+            <ol>
+              <li>två är gula och två är röda <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.1a">
+              <div class="card card-body answer"><p>Antal grupper med gula bollar är \( \displaystyle\binom{5}{2} \) och antal grupper med röda bollar är \( \displaystyle\binom{7}{2} \).</p>
+              <p>Totala antalet är \( \displaystyle\binom{5}{2} \cdot \displaystyle\binom{7}{2} = 210 \) olika sätt.</p>
+              </div></div> </li>
+              <li>det finns åtminstone en boll av vardera färgen? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.1b">
+              <div class="card card-body answer"><p>4 bollar av 12 kan vi välja på \( \displaystyle\binom{12}{4} = 495\) olika sätt.</p>
+              <p>Mänden där 4 gula bollar väljs av 5 är \( \displaystyle\binom{5}{4} = 5\) st.</p>
+              <p>Mänden där 4 gula bollar väljs av 7 är \( \displaystyle\binom{7}{4} = 35\) st.</p>
+              <p>Alltså är antalet där iaf en färg är representerad \( 495 - 5 - 35 = 455 \) olika sätt.</p>
+              </div></div> </li>
+            </ol>
           </li>
 
           <li>Av ringmarkerade duvhökar träffas senare 15 %. Hur många duvhökar skall man ringmarkera så att sannolikheten är minst 99 % att man i alla fall träffar en duvhök på nytt. Vi antar att händelsen att man träffar på ringmarkerade duvhökar är oberoende av varandra.
@@ -140,6 +157,26 @@
               <p>Vi får följande, \( P(\text{minst 1}) = 1 - P(\text{ingen}) = 1 - 0,85^n \).</p>
               <p>Vi vill att \( 1 - 0,85^n > 0,99 \). Då du löser olikheten (du kan tänka att du löser en ekvation) får vi \( n > 29 \).</p>
             </div></div>
+          </li>
+
+          <li>En tärning kastas tre gånger. Vilken är sannolikheten att man får ögontalet 6 åtminstone en gång?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.7">
+              <div class="card card-body answer"> <p>Totala antalet utfall är \( 6 \cdot 6 \cdot 6 = 216 \).</p>
+              <p>Vi jobbar via komplementet och söker kast som inte innehåller en 6:a. Dess är \( 5 \cdot 5 \cdot 5 =125\) st.</p>
+              <p>Vi får \( P(\text{åtminstone en 6:a}) = 1 - P(\text{ingen 6:a}) = 1 -\dfrac{125}{216} = 0,4212\ldots \approx 0,421 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En tärning kastas tre gånger. Vilken är sannolikheten att det erhållna ögontalet allid är större än ögontalet i föregående kast?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75">
+              <div class="card card-body answer"> <p>För det andra kastet gäller det att ögontalet är mindre mera än förra kastet.</p>
+              <p>Vi skapar följande tabell.</p>
+              <p><img src="pics/19-4.png" class="responsivepic400" /></p>
+              <p>Totala antal utfall är \( 6^3 = 216 \) gynsamma fall är 20 st.</p>
+              <p>Den sökta sannolikheten är \( P(\text{större ögontal med tre kast}) = \dfrac{20}{216} = \dfrac{5}{54} =  0,09259\ldots \approx 0,093 \).</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Lönar det sig att slå vad om att då två slantar singlas tre gånger, så får man i alla fall en gång två kronor.
