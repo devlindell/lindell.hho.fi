@@ -298,6 +298,96 @@
             </ol>
           </li>
 
+          <li>Repetera deriveringsreglerna genom att kombinera rätt.
+            <p>Välj mellan
+              <div class="grid-container">
+                <div class="grid-item">\( D x^n \)</div>
+                <div class="grid-item">\( D f(x) \cdot g(x) \)</div>
+                <div class="grid-item">\( Dk \)</div>
+                <div class="grid-item">\( D(f(x) + g(x)) \)</div>
+                <div class="grid-item">\( D\dfrac{f(x)}{g(x)} \)</div>
+                <div class="grid-item">\( D f(x)^n \)</div>
+              </div>
+              och kombinera dem med</p>
+            <p>
+              <table>
+                <tr class="MaA62021"><th>Formel</th><th>Resultat av derivering</th></tr>
+                <tr><td></td><td>\( nx^{n-1} \)</td></tr>
+                <tr><td></td><td>\( 0 \)</td></tr>
+                <tr><td></td><td>\( f'(x) + g'(x) \)</td></tr>
+                <tr><td></td><td>\( f'(x) \cdot g(x) + f(x) \cdot g'(x) \)</td></tr>
+                <tr><td></td><td>\( \dfrac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{g(x)^2} \)</td></tr>
+                <tr><td></td><td>\( n f(x)^{n-1} \cdot f'(x) \)</td></tr>
+              </table>
+            </p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10.1">
+            <div class="card card-body answer">
+              <p>
+                <table>
+                  <tr class="MaA62021"><th>Formel</th><th>Resultat av derivering</th></tr>
+                  <tr><td>\( Dx^n \)</td><td>\( nx^{n-1} \)</td></tr>
+                  <tr><td>\( Dk \)</td><td>\( 0 \)</td></tr>
+                  <tr><td>\( D(f(x) + g(x)) \)</td><td>\( f'(x) + g'(x) \)</td></tr>
+                  <tr><td>\( D f(x) \cdot g(x) \)</td><td>\( f'(x) \cdot g(x) + f(x) \cdot g'(x) \)</td></tr>
+                  <tr><td>\( D\dfrac{f(x)}{g(x)} \)</td><td>\( \dfrac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{g(x)^2} \)</td></tr>
+                  <tr><td>\( D f(x)^n \)</td><td>\( n f(x)^{n-1} \cdot f'(x) \)</td></tr>
+                </table>
+              </p>
+             </div></div>
+          </li>
+
+          <li>Kombinera rätt derivering med rätt resultat.
+            <p>Välj mellan
+              <div class="grid-container">
+                <div class="grid-item">\( D(3x^2-x) \)</div>
+                <div class="grid-item">\( D[(x-1)(x^2+1)] \)</div>
+                <div class="grid-item">\( D 2x^2 \)</div>
+                <div class="grid-item">\( D(2x^2-1)^3 \)</div>
+                <div class="grid-item">\( D(2x-1)^3 \)</div>
+                <div class="grid-item">\( D(3x^2-4) \)</div>
+                <div class="grid-item">\( D x(3x+1)\)</div>
+                <div class="grid-item">\( D x^2 \)</div>
+                <div class="grid-item">\( D\dfrac{x^2+2}{x-1} \)</div>
+                <div class="grid-item">\( D\dfrac{x^2-2}{x-1}\)</div>
+              </div>
+              och följande uträkningar:</p>
+            <p>
+              <table>
+                <tr class="MaA62021"><th>Uttryck att derivera</th><th>Derivatan</th></tr>
+                <tr><td></td><td>\( =2x \)</td></tr>
+                <tr><td></td><td>\( =4x \)</td></tr>
+                <tr><td></td><td>\( =6x-1 \)</td></tr>
+                <tr><td></td><td>\( =6x \)</td></tr>
+                <tr><td></td><td>\( =1(3x+1)+x\cdot (3-0) = 6x+1 \)</td></tr>
+                <tr><td></td><td>\( =1(x^2+1)+(x-1)\cdot 2x = 3x^2-2x+1 \)</td></tr>
+                <tr><td></td><td>\( =\dfrac{2x(x-1)-1(x^2-2)}{(x-1)^2} = \dfrac{x^2-2x+2)}{(x-1)^2} \)</td></tr>
+                <tr><td></td><td>\( = \dfrac{2x(x-1)-1(x^2+2)}{(x-1)^2} = \dfrac{x^2-2x-2)}{(x-1)^2} \)</td></tr>
+                <tr><td></td><td>\( = 6(2x-1)^2\)</td></tr>
+                <tr><td></td><td>\( = 12x(2x^2-1)^2\)</td></tr>
+              </table>
+            </p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10.2">
+              <div class="card card-body answer">
+                <p>
+                  <table>
+                    <tr class="MaA62021"><th>Uttryck att derivera</th><th>Derivatan</th></tr>
+                    <tr><td>\(D x^2 \)</td><td>\( =2x \)</td></tr>
+                    <tr><td>\(D 2x^2 \)</td><td>\( =4x \)</td></tr>
+                    <tr><td>\(D(3x^2-x) \)</td><td>\( =6x-1 \)</td></tr>
+                    <tr><td>\(D(3x^2-4) \)</td><td>\( =6x \)</td></tr>
+                    <tr><td>\(D x(3x+1) \)</td><td>\( =1(3x+1)+x\cdot (3-0) = 6x+1 \)</td></tr>
+                    <tr><td>\(D[(x-1)(x^2+1)] \)</td><td>\( =1(x^2+1)+(x-1)\cdot 2x = 3x^2-2x+1 \)</td></tr>
+                    <tr><td>\(D\dfrac{x^2-2}{x-1} \)</td><td>\( =\dfrac{2x(x-1)-1(x^2-2)}{(x-1)^2} = \dfrac{x^2-2x+2)}{(x-1)^2} \)</td></tr>
+                    <tr><td>\(D\dfrac{x^2+2}{x-1} \)</td><td>\( = \dfrac{2x(x-1)-1(x^2+2)}{(x-1)^2} = \dfrac{x^2-2x-2)}{(x-1)^2} \)</td></tr>
+                    <tr><td>\(D(2x-1)^3 \)</td><td>\( = 6(2x-1)^2\)</td></tr>
+                    <tr><td>\(D(2x^2-1)^3 \)</td><td>\( = 12x(2x^2-1)^2\)</td></tr>
+                  </table>
+                  </p>
+               </div></div>
+          </li>
+
           <li>Bestäm
             <ol>
               <li>\( D(x^2-1)(x+2) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
