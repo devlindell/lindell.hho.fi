@@ -123,6 +123,12 @@
               <div class="card card-body answer"> <p>\( D(1-\dfrac{1}{e^x})^2)= D((1-e^{-x})^2) = 2(1-e^{-x})^1(-e^{-x}\cdot(-1)) = 2e^{-x}(1-e^{-x}) = \dfrac{2}{e^x}(1-\dfrac{1}{e^x}) = \dfrac{2}{e^x}-\dfrac{2}{e^{2x}} \)</p></div></div>
           </li>
 
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( De^{\frac{1}{2}(3x-1)^4} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>\( De^{\frac{1}{2}(3x-1)^4} = e^{\frac{1}{2}(3x-1)^4} (4\dfrac{1}{2}(3x-1)^3\cdot3) = 6(3x-1)^3e^{\frac{1}{2}(3x-1)^4} \)</p></div></div>
+          </li>
+
           <li>Bestäm de punkter där \( f(x)=e^{4x^2-1} \) byter riktning.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
@@ -136,19 +142,51 @@
               <p>Tangentens ekvation är \(  y-y_0 = k(x-x_0) \Leftrightarrow y - (\dfrac{1}{e}-1) = \dfrac{3}{e}(x-(-1)) \Leftrightarrow y = \dfrac{3}{e}x +\dfrac{4}{e}-1  \) eller som \(  y = \dfrac{3x+4-e}{e}  \).</p></p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( De^{\frac{1}{2}(3x-1)^4} \).
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>\( De^{\frac{1}{2}(3x-1)^4} = e^{\frac{1}{2}(3x-1)^4} (4\dfrac{1}{2}(3x-1)^3\cdot3) = 6(3x-1)^3e^{\frac{1}{2}(3x-1)^4} \)</p></div></div>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = e^{x+2} \). Bestäm ekvationen för tangenten i \( x = -2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.1">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=e^{x+2} \). Bestäm denna!</p>
+              <p>Riktningskoefficienten för tangenten är \( k = f'(-2) = 1 \).</p>
+              <p>\( y \)-koordinaten är \( f(-2) = 1 \).</p>
+              <p>Tangentens ekvation är \( y - y_0 = k(x-x_0) \), alltså \( y-1 = 1(x+2) \).</p>
+              <p>Alltså \( y = x +3 \).</p></div></div>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7">
-              <div class="card card-body answer"> <p></p>
-              <p></p>
-              <p></p></div></div>
-          </li>-->
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = e^{2x-1} \). Bestäm ekvationen för tangenten i \( x = 1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.2">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=2e^{2x-1} \). Bestäm denna!</p>
+              <p>Riktningskoefficienten för tangenten är \( k = f'(1) = 2e \).</p>
+              <p>\( y \)-koordinaten är \( f(1) = e \).</p>
+              <p>Tangentens ekvation är \( y - y_0 = k(x-x_0) \), alltså \( y-e = 2e(x-1) \).</p>
+              <p>Alltså \( y = 2ex -e \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = e^{x^2-1} \). Bestäm skärningspunkten för tangenterna i punkterna \( x = -1 \) och \( x = 1 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.3">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=2xe^{x^2-1} \). Bestäm denna!</p>
+              <p>Först bestämmer vi ena tangenten.</p>
+              <p>Riktningskoefficienten för ena tangenten är \( k = f'(1) = 2 \).</p>
+              <p>\( y \)-koordinaten är \( f(1) = 1 \).</p>
+              <p>Tangentens ekvation är \( y - y_0 = k(x-x_0) \), alltså \( y-1 = 2(x-1) \).</p>
+              <p>Alltså \( y = 2x -1 \).</p>
+              <p>På motsvarande sätt får vi tangenten i \( x = -1 \). Den är \( y = -2x -1 \).</p>
+              <p>Då vi söker de gemensamma punkterna för tangeterna får vi att \( x = 0 \) och \( y = -1 \).</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x) = e^{x+4} \). Bestäm ekvationen för normalen i \( x = -3 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7.4">
+              <div class="card card-body answer"> <p>Derivatafunktionen är \( f'(x)=e^{x+4} \). Bestäm denna!</p>
+              <p>Riktningskoefficienten för tangenten är \( k = f'(-3) = e \).</p>
+              <p>Då är normalens riktningskoefficient \( -\dfrac{1}{e} \) eftersom \( e \cdot (-\dfrac{1}{e}) = -1 \).
+              <p>\( y \)-koordinaten är \( f(-3) = e \).</p>
+              <p>Normalens ekvation är \( y - y_0 = k(x-x_0) \), alltså \( y-e = -\dfrac{1}{e}(x+3) \).</p>
+              <p>Alltså \( y = -\dfrac{1}{e}x -\dfrac{3}{e} +e \) eller som \( y = -\dfrac{1}{e}x +\dfrac{e^2-3}{e} \).</p></div></div>
+          </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter där \( f(x)=x^2e^{x} \) byter riktning och funktionens extremvärden.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
