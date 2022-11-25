@@ -47,7 +47,7 @@
       <section>
         <div class="theory">
           <p>Inom matematiken talar vi emellan om mängder. Vissa saker kan var lättare att förstå genom att rita upp mängderna. Exempel på en mängd är: äppel, päron, banan, apelsin och kiwi. Ur en mängd framkommer inte mängden element, enskilda saker, som finns i mängden. Mängerna äppel, päron, banan, banan, apelsin och kiwi och äppel, äppel, äppel, päron, banan, apelsin och kiwi representeras av samma mängd: äppel, päron, banan, apelsin och kiwi.</p>
-          <p>Mängden som består av äppel, päron, banan, apelsin och kiwi betecknas {äppel, päron, banan, apelsin, kiwi}.</p>
+          <p>Mängden som består av äppel, päron, banan, apelsin och kiwi betecknas {äppel, päron, banan, apelsin, kiwi}. För ett enstaka element gäller att det tillhör en mängd, tex \( \text{äppel} \in \{\text{äppel, päron, banan, apelsin, kiwi}\} \). Är en mängd tom på element talar vi om den tomma mängden \( \varnothing \).</p>
           <p>För mängder finns räkneregler som gör att vi kan arbeta med mängderna. För att illustrera bättre vad vi har använder vi oss av Venn diagram, uppkallade efter <a href="http://en.wikipedia.org/wiki/John_Venn" target="_blank">John Venn</a>.</p>
           <p>Vi tar två mängder: A = {äppel, päron, banan, apelsin}, B = {päron, apelsin, kiwi}.</p>
           <p>Unionen av A och B, \( A \cup B \) är alla deras element: {äppel, päron, banan, apelsin, kiwi}.</p>
@@ -95,6 +95,7 @@
             </div>
 
           <div class="summary box">
+            <p>Ett element ur en mängd betcknas med \( a \in A \). En tom mängd betecknas med \( \varnothing \).</p>
             <p>För mängder gäller följande räkneregler:
               <ul>
                 <li>Unionen: då har vi alla element i A och B. Betecknas \( A \cup B \).</li>
@@ -172,6 +173,53 @@
               <li>\( C \cap (A \setminus C) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2f">
               <div class="card card-body answer"><p>Vi får \( C \cap (A \setminus C) = C \cap \{2,4,6,8\} = \{ \varnothing \} \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Vilka av följande påståenden är sanna om \( A = \{2,3,5\} \) och grundmängden är \( \mathbf{Z}_+ = \{1,2,3,\ldots\} \).
+            <ol>
+              <li>\( 3 \in A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Sant, eftersom \( A = \{2,3,5\} \).</p></div></div> </li>
+              <li>\( 4 \in A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Falskt, eftersom \( A = \{2,3,5\} \).</p></div></div> </li>
+              <li>\(5 \not\in A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Falskt, 5 är ett element i A.</p></div></div> </li>
+              <li>\(6 \not\in A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5d">
+              <div class="card card-body answer"><p>Sant, 6 är inte ett element i A.</p></div></div> </li>
+              <li>\( \{3 \} \subset A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5e">
+              <div class="card card-body answer"><p>Sant, eftersom \( A = \{2,3,5\} \)</p></div></div> </li>
+              <li>\( \{4 \} \subset A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5f">
+              <div class="card card-body answer"><p>Falskt, eftersom \( A = \{2,3,5\} \)</p></div></div> </li>
+              <li>\( 3 \subset A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5g" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5g">
+              <div class="card card-body answer"><p>Falskt, eftersom 3 inte är en mängd.</p></div></div> </li>
+              <li>\( 4  \subset A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5h" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5h">
+              <div class="card card-body answer"><p>Falskt, eftersom 4 inte är en mängd.</p></div></div> </li>
+              <li>\( \{ 5 \} \in A \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5i" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5i">
+              <div class="card card-body answer"><p>Falskt, eftersom \( \{ 5 \} \) är en mängd, inte ett element.</p></div></div> </li>
+              <li>\( \{ 5 \} \in A \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5j" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5j">
+              <div class="card card-body answer"><p>Falskt, eftersom \( \{ 6 \} \) är en mängd, inte ett element.</p></div></div> </li>
+              <li>\( \{2,3,5 \} \subset A\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5k" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5k">
+              <div class="card card-body answer"><p>Sant. Egentligen borde vi beteckna med \( \subseteq \) då vi har exakta mängden.</p></div></div> </li>
+              <li>\( \varnothing \subset A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5l" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5l">
+              <div class="card card-body answer"><p>Sant, eftersom tomma mängden alltid är en mängd i en annan mängd.</p></div></div> </li>
+              <li>\( A \in \mathbf{Z}_+ \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5m" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5m">
+              <div class="card card-body answer"><p>Falskt eftersom A är en mängd.</p></div></div> </li>
+              <li>\( A \subset \mathbf{Z}_+ \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5n" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5n">
+              <div class="card card-body answer"><p>Sant, eftersom A är en delmängd av heltalen.</p></div></div> </li>
             </ol>
           </li>
 
