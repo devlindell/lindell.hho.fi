@@ -255,22 +255,11 @@
               </div></div>
           </li>
 
-          <!-- HÄR ÄR DU!!!
-          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet \( 7^{2018} \).
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11.5">
               <div class="card card-body answer"> <p>Vi börjar med att märka att \( 7^2 = 49 \equiv -1 \quad(\mod 10) \).</p>
                 <p>Sedan har vi att \( 7^4 = 2401 \equiv 1 \quad(\mod 10) \).</p>
-                <p>Sedan får vi att </p>
-                <p>\( \begin{array}{rcll}
-                  7^{2018} & = & 7^{2\cdot 1009} = 7^{2 \cdot 1008} \cdot 7 \\
-                  & \equiv & (-1) \cdot 7^{1008} \cdot 7 = (-1) \cdot 7^{16 \cdot 63} \cdot 7 = (-1)\cdot (7^{4})^4 \cdot 7^{63} \cdot 7 \\
-                  & \equiv & (-1) \cdot 1^4 \cdot 7^{64} \\
-                  & \equiv & (-1) \cdot 1 \cdot 7^{64} = (-1)\cdot 7^{4 \cdot 16} = (-1)\cdot 7^4 \cdot 7^{16} \\
-                  & \equiv & (-1) \cdot 1 \cdot 7^{16} = (-1) \cdot 7^{4 \cdot 4}\\
-                  & \equiv & 1 \quad (\mod 10) \\
-                  \end{array} \) </p>
-                  <p>Den sista siffran är 9.</p>
               </div></div>
           </li>-->
 
@@ -305,15 +294,26 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm sista siffran i talet \( 7^{2018} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Här använder vi oss av olika tals kongruens.</p>
+              <p>\( 7 \equiv 3 \quad (\mod 10) \)</p>
+              <p>\( 9 \equiv -1 \quad (\mod 10) \)</p>
+              <p>Sedan får vi att </p>
+              <p>\( \begin{array}{rcll}
+                7^{2018} & \equiv & (-3)^{2018} \\
+                & \equiv & ((-3)^2)^{1009} = 9^{1009} \\
+                & \equiv & (-1)^{1009} = -1 \\
+                & \equiv & 9 \quad (\mod 10) \\
+                \end{array} \) </p>
+                <p>Den sista siffran är 9.</p>
+              </div></div>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5a">
