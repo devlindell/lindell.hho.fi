@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. Allmänna volymer</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_3d_koord.html">1. 3D koordinatystem</a>
+            <a class="dropdown-item" href="2_linjen.html">2. Linjen</a>
+            <a class="dropdown-item" href="3_skalar_produkt.html">3. Skalär produkt i 3 dimensioner</a>
+            <a class="dropdown-item" href="4_kryss.html">4. Kryssprodukt av vektorer</a>
+            <a class="dropdown-item" href="5_plan_i_rymden.html">5. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="6_avstand.html">6. Avståndet mellan punkt och linje i rymden</a>
+            <a class="dropdown-item" href="7_rotationskroppar.html">7. Rotationskroppar</a>
+            <a class="dropdown-item" href="8_allm_volymer.html">8. Allmänna volymer</a>
+            <a class="dropdown-item" href="9_tva_variabler.html">9. Funktioner i 3 dimensioner</a>
+            <a class="dropdown-item" href="10_partiell.html">10. Partiell derivata</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_rotationskroppar.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 10 3D geometri</h3>
+      <a href="9_tva_variabler.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. Allmänna volymer</h1>
+      <section>
+        <div class="theory">
+          <p>Som det sista behandlar vi ännu volymer där tvärsnittsarean bildas av en funktion. Denna funktion integrerar vi över ett intervall för att få volymen för kroppen.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Ett museum ser uppifrån ut som en cirkel med diametern 100 m. Tvärsnitten för muséet är rektanglar som är dubbelt så breda som höga. Bestäm volymen för museet.</p>
+            <h4>Lösning</h4>
+            <p>Från sidan ser det ut som</p>
+            <p><img src="pics/8_2.png" alt="" class="responsivepic400" /></p>
+            <p>och uppifrån som</p>
+            <p><img src="pics/8_3.png" alt="" class="responsivepic400" /></p>
+            <p>Arean för ett tvärsnitt är \( A(x)= \sqrt{50^2-x^2}\cdot 2\sqrt{50^2-x^2} = 2(50^2-x^2) \).</p>
+            <p>Volymen är</p>
+            <p>\( \begin{array}{rcl} \displaystyle\int_{-50}^{50} A(x) \mathrm{ d} x  & = &  2\displaystyle\int_0^{50} A(x) \mathrm{ d} x \\  & = &  2\displaystyle\int_0^{50} 2(50^2-x^2) \\  & = &  4\displaystyle\int_0^{50} 50^2-x^2 \\  & = &  4\bigg/_0^{50} 2500x-\dfrac{1}{3}x^3 \\  & = &  4 [(2500\cdot 50-\dfrac{1}{3}\cdot 50^3)-(2500\cdot 0-\dfrac{1}{3}\cdot 0^3)]\\  & = &  333333,33 \text{ m}^3 \\  & \approx  &  330000 \text{ m}^3\\ \end{array} \)</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm volymen för en pyramid med bottensidan \( a \) och höjden \( h \) .</p>
+            <h4>Lösning</h4>
+            <p>Vi tar och tänker oss pyramiden i ett koordinatsystem, där toppen är i origo och bottenarean är på avståndet \( a \). Pyramidens volym består av oändligt många kvadratiska skivor, där den nedersta har arean \( a^2 \).</p>
+            <p><img src="pics/8_1.png" alt="" class="responsivepic400" /></p>
+            <p>Vi kan addera ihop dessa kvadratiska sidor med hjälp av integrering från \( 0 \) till \( h \).</p>
+            <p>På ett visst avstånd \( x \) gäller att höjden \( y \) är likformig med \( a \) och \( h \). Vi får att \( \dfrac{A(x)}{a^2}=\dfrac{x^2}{h^2} \Leftrightarrow A(x)=\dfrac{x^2a^2}{h^2} \).</p>
+            <p>Volymen är \( \displaystyle\int_0^h A(x) \mathrm{ d} x = \displaystyle\int_0^h \dfrac{a^2}{h^2} x^2 \mathrm{ d} x = \dfrac{a^2}{h^2} \bigg/_0^h \dfrac{a^2}{h^2} \dfrac{1}{3}x^3 =\dfrac{a^2}{h^2}(\dfrac{1}{3}\cdot h^3 -\dfrac{1}{3}\cdot 0^2) = \dfrac{1}{3}ha^2 \).</p>
+          </div>
+          <div class="summary box">
+            <p>För att bestämma volymer med hjälp av integraler behöver vi en funktion som anger arean vid en bestämd punkt. Sedan är det bara att integrera. Volymen får vi som</p>
+            <p>\( \displaystyle\int_a^b A(x)\mathrm{ d}x \). </p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Tvärsnittsarean i cm<sup>2</sup> för en batong följer på ett ungefär funktionen \( A(x) = 11x-0,35x^2 \), var \( 0 \leq x \leq 30 \). Bestäm volymen för batongen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \( V = \displaystyle\int_{0}^{30} 11x-0,35x^2 \textrm{ d}x = 1800 \) cm<sup>3</sup>.</p>
+              <p>Alltså 1,8 dm<sup>3</sup> eller 1,8 l.</p>
+              </div></div>
+          </li>
+
+          <li>Höjden för en förpackning är 0,5 m och tvärsnittsarean som följer bottnet är kvadratisk av sig. På höjden \( x \) är längden för sidan \( 2x+1 \) meter. Bestäm volymen av förpackningen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Funktionen som ger tvärsnittsarean är \( A(x) = (2x+1)^2 \).</p>
+              <p>\( V = \displaystyle\int_0^{0,5} (2x+1)^2 \textrm{ d}x = 1,166\ldots \) m<sup>3</sup></p>.
+              <p>Alltså 1,2 m<sup>3</sup></p>
+            </div></div>
+          </li>
+
+          <li>Tvärsnitten för en vas består av kvadratiska skivor där sidan har längden \( 3+\sqrt{x} \) på höjden \( x \) cm. Bestäm vasens volym då den är 25 cm hög.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Arean för en tvärsnittsarea är \( A(x)=(3+\sqrt{x})^2 \) där \( 0\leq x \leq 25 \).</p>
+              <p>Volymen är \( \displaystyle\int_0^{25} A(x) \mathrm{ d}x = \displaystyle\int_0^{25} (3+\sqrt{x})^2 \mathrm{ d} x = \displaystyle\int_0^{25} 9+6\sqrt{x} +x \mathrm{ d} x = \bigg/_0^{25} 9x + 6\cdot \dfrac{2}{3}\cdot x \sqrt{x} +\dfrac{1}{2}x^2 = 1037,5 \text{ cm}^3 = 1,04 \text{ dm}^3 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Formen för en kropp följer kurvan \( \dfrac{4}{x} \) då \( 1\leq x \leq 4 \) så att tvärsnittsarean bildar liksidiga trianglar där höjden är \( \dfrac{4}{x} \). Bestäm volymen för kroppen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>På avståndet \( x \) är höjden för tvärsnittet \( \dfrac{4}{x} \).
+              <p>Antingen kan vi utnyttja likformighet eller Pythagoras för att få ett förhållande mellan basytan och höjden.</p>
+              <p>Då höjden är \( h = f(x) \) och basytans längd är \( b \) kan vi bilda förhållandet \( \dfrac{h}{b} \). Eftersom triangeln är liksidig kan vi arbeta med Typtriangel 2. Då gäller att \( \dfrac{h}{b} = \dfrac{\sqrt{3}}{2} \). Då \( h = f(x) \) får vi att basytan är \( \dfrac{4}{x}=\dfrac{b\sqrt{3}}{2} \Leftrightarrow b=\dfrac{8}{x\sqrt{3}} \).</p>
+              <p>Arean för tvärsnitten är \( A(x)=\dfrac{1}{2}\cdot \dfrac{8}{x\sqrt{3}} \cdot \dfrac{4}{x} = \dfrac{16}{x^2\sqrt{3}} \).</p>
+              <p>Volymen är \( \displaystyle\int_1^4 A(x)=\mathrm{ d} x = \displaystyle\int_1^4 \dfrac{16}{x^2\sqrt{3}} \mathrm{ d}x = \dfrac{16}{\sqrt{3}} \bigg/_1^4 -\dfrac{1}{x} = 4\sqrt{3} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bottnet för en idrottshall har formen av en cirkel vars diameter är 84 meter. Tvärsnittsarean för idrottshallen bildar kvadrater. Bestäm volymen för idrottshallen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi placerar \(x\)-axeln så att den går längs med diametern så att origo är i mitten av hallen. Vi punkten \( x \) har tvärsnittsareorna längden \( 2\sqrt{42^2-x^2} \) där \( -42 \leq x \leq 42 \). </p>
+              <p>Volymen är \( \displaystyle\int_{-42}^{42}(2\sqrt{42^2-x^2})^2 \textrm{ d}x \approx 395 100 \text{ m}^3 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Längderna i centimeter för sidorna för en matförpackning med kvadratiska tvärsnittsareor följer funktionen \( x+5 \). Bestäm höjden för förpackningen med en mm noggrannhet då man vill att den skall rymma 4,5 dl.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>4,5 dl motsvaras av 450 cm<sup>3</sup>.</p>
+                <p>Storleken av tvärsnittsarean är \( A(x)=(x+5)^2 \).</p>
+                <p>Vi får ekvationen \( \displaystyle\int_0^a (x+5)^2 = 450 \) som har lösningen \( a\approx 6,38 \) cm.</p>
+                <p>Alltså 6,4 cm.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Höjden för en kruka är 1,0 m. Tvärsnitten paralella med bottenytan bildar kvadrater. På höjden \( x \) meter är sidans längd \( e^x \). Bestäm volymen för krukan.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Funktionen som ger tvärsnittet är \( A(x) = (e^x)^2 = e^{2x} \).</p>
+                <p>Volymen är \( \displaystyle\int_0^{1} e^{2x} \textrm{ d}x = \dfrac{e^2-1}{2} \approx 3,1945 \) m<sup>3</sup>.</p>
+                <p>Alltså 3200 liter.</p>
+                </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Tvärsnittet av ett tält är en likbent triangel där basen är är en och en halv gånger så lång som höjden. Tältet är 3,0 m långt och gavlarna har höjden 1,0 m och 1,5 m. Takåsen i tältet har formen av en parabel med toppen i den lägre gavelns hörn.
+            <p><img src="pics/8_4.png" alt="" class="responsivepic400" /></p>
+            <p>Beräkna tältets volym i liter.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Arean för en triangel är \( A=\dfrac{1}{2}bh \). Då vi vet höjden \( h \) är basen \( 1,5h \). Alltså är \( A=\dfrac{1}{2}\cdot 1,5 h^2 = \dfrac{3}{4}h^2 \).
+                <p>Höjden för tältet följer en parabel. Vi flyttar parabeln så att toppen av parabeln går genom origo. Då går parabeln genom punkterna \( (0,0) \) och \( (3;0,5) \). Parabelns ekvation är \( f(x)=\dfrac{1}{18}x^2 \). Då vi lyfter upp den ett steg får vi \( f(x)=\dfrac{1}{18}x^2+1 \).</p>
+                <p>Funktionen som ger tvärsnittsarean är \( A(x)=\dfrac{3}{4} (\dfrac{1}{18}x^2+1)^2 \).</p>
+                <p>Volymen är \( \displaystyle\int_0^3 A(x) \mathrm{\, d} x = \displaystyle\int_0^3 \dfrac{3}{4} (\dfrac{1}{18}x^2+1)^2 \mathrm{\, d} x = 3,1125 \text{ m}^3 \).</p>
+                <p>Alltså 3 100 liter.</p></div></div>
+          </li>
+
+        <li><i class="fas fa-cogs fa-2x level"></i>Tvärsnittsytorna för en kropp är likformiga bottenarean. Bottenarean har ytan \( A \) och höjden för kroppen är \( h \). Bestäm volymen för kroppen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi får volymen \( \displaystyle\int_0^h A \textrm{ d}x= \bigg/_0^h Ax = Ah-A\cdot0 = Ah \).</p>
+              <p>Märk att du har härlett fram formeln för volymen för ett prisma.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Härled volymen för en rak cirkulär kon.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Vi placerar konen med spetsen i origo och höjden längs med \( x \)-axeln.</p>
+                <p>Vi höjden \( h \) är basarean \( \pi r^2 \), vid en höjd \( x \) är basarean \( A(x) \). Dessa är likformiga och vi får att \( \dfrac{A(x)}{\pi r^2}=(\dfrac{x}{h})^2 \). Vidre får vi att \( A(x)=\dfrac{\pi r^2 x^2}{h^2} \).</p>
+                <p>Volymen är \( \displaystyle\int_0^h A(x)\mathrm{ d}x = \displaystyle\int_0^h \dfrac{\pi r^2 x^2}{h^2} \mathrm{ d}x = \dfrac{\pi r^2}{h^2}\displaystyle\int_0^h x^2 \mathrm{ d}x = \dfrac{\pi r^2}{h^2} \bigg/_0^h \dfrac{1}{3}x^3 = \dfrac{\pi r^2}{3h^2}(h^3-0^3) = \dfrac{1}{3}\pi r^2 h \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="7_rotationskroppar.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_tva_variabler.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

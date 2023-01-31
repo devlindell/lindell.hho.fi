@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. 3 dimensionellt koordinatsystem</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_3d_koord.html">1. 3D koordinatystem</a>
+            <a class="dropdown-item" href="2_linjen.html">2. Linjen</a>
+            <a class="dropdown-item" href="3_skalar_produkt.html">3. Skalär produkt i 3 dimensioner</a>
+            <a class="dropdown-item" href="4_kryss.html">4. Kryssprodukt av vektorer</a>
+            <a class="dropdown-item" href="5_plan_i_rymden.html">5. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="6_avstand.html">6. Avståndet mellan punkt och linje i rymden</a>
+            <a class="dropdown-item" href="7_rotationskroppar.html">7. Rotationskroppar</a>
+            <a class="dropdown-item" href="8_allm_volymer.html">8. Allmänna volymer</a>
+            <a class="dropdown-item" href="9_tva_variabler.html">9. Funktioner i 3 dimensioner</a>
+            <a class="dropdown-item" href="10_partiell.html">10. Partiell derivata</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 10 3D geometri</h3>
+      <a href="2_linjen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. 3 dimensionellt koordinatsystem</h1>
+      <section>
+        <div class="theory">
+          <p>Ett tredimensionellt koordinatsystem får vi genom att lägga till \(x\) och \(y\)-axlarna en \(z\)-axeln. Har vi euklidisk, (normal) geometri så står axlarna 90\(^{\circ}\) mot varandra.</p>
+          <p><img src="pics/1-1.png" class="responsivepic400" /></p>
+          <p>När vi arbetar med vektorer i tredimensionellt koordinatsystem så introducerar vi \(\overline{k}\) som är parallell med \(z\)-axeln.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Rita triangeln \(A=(2,0,1)\), \(B=(0,4,0)\) och \(C=(2,0,4)\) i ett \(xyz\)-koordinatsystem.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/357506430" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Rita triangeln \(A=(2,0,1)\), \(B=(0,4,0)\) och \(C=(2,0,4)\) i ett \(xyz\)-koordinatsystem på GeoGebra.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/453711252" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Då vi arbetar i tre dimesioner får vektorerna en \(\overline{k}\) komponent till. Denna \(\overline{k}\)-komponent är parallell med \(z\)-axeln och har längden ett.</p>
+          <p>Längden av en vektor \(\overline{a}=x\overline{i}+y\overline{j} +z\overline{k}\) i tredimensioner får vi som \(\overline{a}= \sqrt{x^2+y^2+z^2}\).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Från punkten \(A=(-1,2,4)\) förflyttar vi oss 6 enheter i riktning av \(\overline{a}=-2\overline{i}-2\overline{j} +\overline{k}\). Till vilken punkt kommer vi?</p>
+            <h4>Lösning</h4>
+            <p>Vi kallar slutpunkten för P. Vi förflyttar oss längs med \(\overrightarrow{OP}=\overrightarrow{OA}+\overrightarrow{AP} = \overrightarrow{OA}+6\overline{a}^0\)</p>
+            <p>\(\overline{a}^0=\dfrac{1}{\mid\overline{a}\mid}\overline{a} = \dfrac{1}{\sqrt{(-2)^2+(-2)^2+1^2}}(-2\overline{i}-2\overline{j} +\overline{k}) =\dfrac{1}{3}(-2\overline{i}-2\overline{j} +\overline{k}) \).</p>
+            <p>Vektorn \(\overrightarrow{OA}=-\overline{i}+2\overline{j} +4\overline{k}\).</p>
+            <p>\(\overrightarrow{OA}+6\overline{a}^0\) blir då</p>
+            <p>\(\begin{array}{l}  -\overline{i}+2\overline{j} +4\overline{k}+6\cdot \dfrac{1}{3}(-2\overline{i}-2\overline{j} +\overline{k})  \\  = -\overline{i}+2\overline{j} +4\overline{k}-4\overline{i}-4\overline{j} +2\overline{k} \\  = -5\overline{i}-2\overline{j} +6\overline{k}.  \end{array}\)</p>
+            <p>Punkten \(P\) har koordinaterna \((-5,-2,6)\).</p>
+          </div>
+          <p>Vektorn \(\overrightarrow{AB}\) mellan punkterna \(A=(x_1,y_1,z_1)\) och \(B=(x_2,y_2,z_2)\) får vi via att flytta oss via origo. Vi får att \(\overrightarrow{AB}=\overrightarrow{AO}+\overrightarrow{OB} = -\overrightarrow{OA}+\overrightarrow{OB}\).</p>
+          <p><img src="pics/1-3.png" class="responsivepic250" /></p>
+          <p>Vektorerna \(\overrightarrow{OA}\) och \(\overrightarrow{OB}\) får vi som \(\overrightarrow{OA}=x_1\overline{i}+y_1\overline{j}+z_1\overline{k}\) och \(\overrightarrow{OB}=x_2\overline{i}+y_2\overline{j}z_2\overline{k}\).</p>
+          <p>Betyder att \(-\overrightarrow{OA}+\overrightarrow{OB} = -(x_1\overline{i}+y_1\overline{j}+z_1\overline{k})+x_2\overline{i}+y_2\overline{j} +z_2\overline{k}= (x_2-x_1)\overline{i}+(y_2-y_1)\overline{j}+(z_2-z_1)\overline{k}\).</p>
+          <p>Vi kan även bilda vekorn \(\overrightarrow{AB}\) mellan \(A=(x_1,y_1,z_1)\) och \(B=(x_2,y_2,z_2)\) som \(\overrightarrow{AB}=(x_2-x_1)\overline{i}+(y_2-y_1)\overline{j}+(z_2-z_1)\overline{k}\).</p>
+          <p>Längden av vektorn \(\overrightarrow{AB}\) mellan \(A=(x_1,y_1,z_1)\) och \(B=(x_2,y_2,z_2)\) får vi som avståndet mellan A och B.</p>
+          <p>\(\mid\overrightarrow{AB}\mid=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}.\)</p>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> En rymdraket färdas med konstant hastighet och riktning. Under en timme har den färdats från \(A=(-4,-3,-6)\) till \(B=(6,8,10)\). Vilken var raketens koordinat två timmar före den anlände till \(A\)?</p>
+            <h4>Lösning</h4>
+            <p>Vi ritar först en bild:</p>
+            <p><img src="pics/1-4.png" class="responsivepic250" /></p>
+            <p>Vi bildar vektorn \(\overline{v}\) mellan punkterna \(A\) och \(B\).</p>
+            <p>\(\begin{array}{rl}
+              \overline{v}=&(x_2-x_1)\overline{i}+(y_2-y_1)\overline{j}+(z_2-z_1)\overline{k} \\
+              = &(6-(-4))\overline{i}+(8-(-3))\overline{j}+(10-(-6))\overline{k}\\
+              =&10\overline{i}+11\overline{j}+16\overline{k}
+              \end{array}\)</p>
+            <p>Vektorn</p>
+            <p>\(\begin{array}{rl}
+              \overrightarrow{OP}=&\overrightarrow{OA}+\overrightarrow{AP} \\
+              =&\overrightarrow{OA}-2\overline{v} \\
+              =& -4\overline{i}-3\overline{j}-6\overline{k}-2(10\overline{i}+11\overline{j}+16\overline{k})\\
+              =& -4\overline{i}-3\overline{j}-6\overline{k}-20\overline{i}-22\overline{j}-32\overline{k} \\
+              =& -24\overline{i}-25\overline{j}-38\overline{k}\\
+              \end{array}\)</p>
+            <p>Punkten \(P\) har koordinaterna \((-24, -25,-38)\).</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Rita på papper ett \(xyz\)-koordinatsystem. Rita in triangeln vars ändpunkter är \(A=(1,3,0)\), \(B=(0,4,1)\) och \(C=(1,-1,4)\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer"> <p>Vi får något som påminner om</p>
+                <p><img src="pics/1-6.png" class="responsivepic400" /></p>
+              <p>Bilden är inte perfekt, men det är inte så lätt att rita 3 dimensionellt i två dimensioner. (; </p> </div></div> </li>
+
+          <li>Rita i ett \(xyz\)-koordinatsystem på GeoGebra triangeln vars ändpunkter är \(A=(1,3,0)\), \(B=(0,4,1)\) och \(C=(1,-1,4)\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer"> <p>Punkterna in med kommandot A=(1,3,0).</p>    <p>Triangeln med kommandot Polygon[A,B,C].</p><p>Vi får något i stil med</p>
+              <p><img src="pics/1-7.png" class="responsivepic600" /></p>
+            </div></div> </li>
+
+          <li>Låt \(\overline{a}=2\overline{i}-3\overline{j}+\overline{k}\) och \(\overline{b}=-3\overline{i}-\overline{j}-2\overline{k}\). Bilda vektorerna \(\overline{a}+\overline{b}\) och \(2\overline{a}-\overline{b}\) och bestäm längden av dem.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"><p>\(\overline{a}+\overline{b}=-\overline{i}-4\overline{j}-\overline{k}\).</p>
+                <p>Längden: \(\mid\overline{a}+\overline{b}\mid= \sqrt{(-1)^2+(-4)^2+(-1)^2} = \sqrt{18}=3\sqrt{2}\).</p>
+                <p>\(2\overline{a}-\overline{b}=7\overline{i}-5\overline{j}+4\overline{k}\).</p>
+                <p>Längden: \(\mid2\overline{a}-\overline{b}\mid=\sqrt{7^2+(-5)^2+4^2}=\sqrt{90}=3\sqrt{10}\).</p></div></div> </li>
+
+          <li>Visa att \(\overline{a}=\overline{i}+4\overline{j}-2\overline{k}\) och \(\overline{b}=-\dfrac{1}{2}\overline{i}-2\overline{j}+\overline{k}\) är parallella.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="4t">
+              <div class="card card-body hint"><p>Om två vektorer är parallella skall vi kunna skriva de som \(\overline{a} =r\cdot \overline{b}\) där \(r \in \mathbf{R}\).</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Om två vektorer är parallella skall vi kunna skriva de som \(\overline{a} =r\cdot \overline{b}\) där \(r \in \mathbf{R}\).</p>
+                <p>Vi tar och gör det.</p>
+                <p>\(\begin{array}{rcl}  \overline{a} &=& r\cdot \overline{b} \\  \overline{i}+4\overline{j}-2\overline{k} &=& r(-\dfrac{1}{2}\overline{i}-2\overline{j}+\overline{k}) \\  \end{array}\)</p>
+                <p>Väljer vi \(r=-2\) får vi att \(\overline{i}+4\overline{j}-2\overline{k} = -2(-\dfrac{1}{2}\overline{i}-2\overline{j}+\overline{k})\).</p>
+                <p>De är parallella eftersom \(\overline{a}=-2\overline{b}\).</p> </div></div> </li>
+
+          <li>Ett flygplan A som flyger på höjden 6 km observeras 3 km rakt norrut från ett flygfält. Ett annat flygplan B som flyger på höjden 10 km observeras 5 km österut och 1 km söderut får flygfältet. Bestäm avståndet i km mellan flygplanen då flygfältet är i origo.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="5t">
+              <div class="card card-body hint"> <p>Rita en bild. Låt norrut/söderut vara steg på \(x\)-axeln, österut/västerut steg på \(y\)-axeln och höjden steg på \(z\)-axeln.</p>
+                <p>Bilda vektorn mellan punkterna och bestäm avståndet.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>A:s koordinat \((-3,0,6)\) och B:s koordinat \((1,5,10)\).</p>
+                <p>Vektorn \(\overrightarrow{AB} = [1-(-3)]\overline{i}+(5-0)\overline{j}+(10-6)\overline{k} = 4\overline{i}+5\overline{j}+4\overline{k}\).</p>
+                <p>Längden \(\mid \overrightarrow{AB} \mid =\sqrt{4^2+5^2+4^2}=\sqrt{57}\) km.</p>  </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilka värden på \(r\) och \(s\) är vektorerna \(\overline{a}=r\overline{i}-\overline{j}+4\overline{k}\) och \(\overline{b}=-3\overline{i}-2\overline{j}+s\overline{k}\) parallella. Är de då lika- eller olika riktade?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Då \(\overline{a}\) och \(\overline{b}\) är parallella gäller att \(\overline{a} = t\cdot \overline{b}, t\in \mathbf{R}\). (Vi använder oss av \(t\) eftersom \(r\) finns i vektorerna.)</p>
+                <p>Alltså</p>
+                <p>\(\begin{array}{rcl}  \overline{a} &=& t\cdot \overline{b} \\  r\overline{i} -\overline{j}+4\overline{k} &=&t(-3\overline{i}-2\overline{j}+s\overline{k}) \\  r\overline{i} -\overline{j}+4\overline{k} &=&-3t\overline{i}-2t\overline{j}+st\overline{k}\\  \end{array}\)</p>
+                <p>Uppdelning i basen är entydig. Alltså gäller att</p>
+                <p>\(\left\{  \begin{array}{rcll}  r &=&-3t \\  -1 &=& -2t & \Leftrightarrow t =\dfrac{1}{2}\\  4 &=&st \\  \end{array}  \right.\)</p>
+                <p>Då \(t=\dfrac{1}{2}\) är \(\overline{a}\) och \(\overline{b}\) parallella. Eftersom \(t&gt;0\) är de lika riktade.</p>
+                <p>Vå får då att \(r=-\dfrac{3}{2}\) och \(s=8\).</p> </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Under en timme färdas en rymdraket från \(A=(7,4,10)\) till \(B=(3,5,3)\). Bestäm raketens koordinat efter 3 timmar då dem fortsätter att färdas med samma hastighet och riktning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vektor \(\overrightarrow{AB}=(3-7)\overline{i}+(5+4)\overline{j}+(3-10)\overline{k} = -4\overline{i}+\overline{j}-7\overline{k}\).</p>
+                <p>Punkten \(P\):s koordinater där det vi söker:</p>
+                <p>\(\begin{array}{rcl}  \overrightarrow{AP} &=& \overrightarrow{OA} +4\overrightarrow{AB} \\  &=& 7\overline{i}+4\overline{j}+10\overline{k}+4(-4\overline{i}+\overline{j}-7\overline{k}) \\  &=& -9\overline{i}+8\overline{j}-18\overline{k} \\  \end{array}\)</p>
+                <p>\(P\):s koordinater är \((-9,8,-18)\).</p> </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En triangels hörnpunkter är \(A=(0,2,1)\), \(B=(2,4,3)\) och \(C=(0,1,5)\). Bestäm
+            <ol>
+              <li>mittpunkten \(P\) för sidan BC.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8at" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="8at">
+              <div class="card card-body hint"><p>Så som alltid, kalla punkten för P och bilda \(\overrightarrow{OP}\).</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"><p>Vi bildar vekorn \( \overrightarrow{OP} \)</p>
+                <p>\( \begin{array}{rcl}
+                  \overrightarrow{OP} & = & \overrightarrow{OB} + \overrightarrow{BP}\\
+                  & = & \overrightarrow{OB} + \dfrac{1}{2}\overrightarrow{BC}\\
+                  \end{array} \)</p>
+                  <p>De vektorer som vi behöver:</p>
+                  <p>\( \overrightarrow{OB} = 2\overline{i} + 4\overline{j} + 3\overline{k} \).</p>
+                  <p>\( \overrightarrow{BC} = (0-2)\overline{i} + (1-4)\overline{j} + (5-3)\overline{k} = -2\overline{i} -3\overline{j} + 2\overline{k} \).</p>
+                  <p>Vi kommer fram till \( \overrightarrow{OP} = \overline{i} +\dfrac{5}{2}\overline{j} + 4\overline{k} \).</p>
+                <p>Koordinaten är \(P = (1,\dfrac{5}{2},4)\) . </div></div> </li>
+              <li>vekorn \(\overrightarrow{AP}\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"><p>Vektorn \( \overrightarrow{AP} = (1-0)\overline{i} + (\dfrac{5}{2}-1)\overline{j}+(4-1)\overline{k} =  \overline{i} + \dfrac{3}{2}\overline{j}+3\overline{k}\).</p> </div></div> </li>
+              <li>triangelns tyngdpunkt. Triangelns tyngdpunkt hittar du där medianerna skär varandra. Förhållandet är \(2:1\) .
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8ct" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+                <div class="collapse" id="8ct">
+                <div class="card card-body hint"><p> Kalla tyngpunkten för Q och bilda vektorn \(\overrightarrow{OQ}\).</p> </div></div>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="8c">
+                  <div class="card card-body answer"><p>Vi utnyttjar det som vi räknade i a) och b). Situationen är följande:</p>
+                    <p><img src="pics/1-8.png" class="responsivepic400" /></p>
+                    <p>Vi får \( \overrightarrow{OQ} = \overrightarrow{OA} + \overrightarrow{AQ} =  \overrightarrow{OA} + \dfrac{2}{3}\overrightarrow{AP} \).</p>
+                    <p>Vi får \( \overrightarrow{OQ} =  \dfrac{5}{3}\overline{i}+3\overline{j}+3\overline{k}\) </p>
+                    <p>Tyngdpunkten är \( (\dfrac{5}{3}, 3, 3) \).</p>
+                    </div></div> </li>
+            </ol></li>
+
+            <li><i class="fas fa-shapes fa-2x level"></i>Bestäm slutpunkten då vi startar från \(A=(-1,3,-1)\) och rör oss 15 längdenheter i riktning av \(\overline{a}=3\overline{i}+4\overline{k}\).
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9">
+                <div class="card card-body answer"><p>Vi betecknar slutpunkten med \( P \).</p>
+                <p>Vi skall bilda \( \overrightarrow{OP} = \overrightarrow{OA} + 15\overline{a}^0 \).</p>
+                <p>Vi bildar vektorerna </p>
+                <p>\( \overrightarrow{OA} = -\overline{i} +3\overline{j} - \overline{k} \).</p>
+                <p>\( \overline{a}^0 = \dfrac{1}{\mid \overline{a} \mid} \overline{a} = \dfrac{1}{\sqrt{3^2+4^2}}(3\overline{i} + 4\overline{k}) = \dfrac{1}{5}(3\overline{i} + 4\overline{k}) \).</p>
+                <p>Vi får \( \overrightarrow{OP} = 8\overline{i} +3\overline{j}+ 11\overline{k} \)</p>
+                <p>Slutpunkten är \( (8,3,11) \). </p></div></div> </li>
+
+            <li><i class="fas fa-shapes fa-2x level"></i>Vilken punkt på \(z\)-axeln är lika långt från punkterna \((1,2,3)\) och \((4,4,4)\) ?
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10">
+                <div class="card card-body answer"><p>Vi betecknar punkten på \( z \)-axeln som \( P =(0,0,z) \).</p>
+                <p>Vi bildar avstånden</p>
+                <p>\( d_1 = \sqrt{(1-0)^2+(2-0)^2+(3-z)^2} \) och </p>
+                <p>\( d_2 = \sqrt{(4-0)^2+(4-0)^2+(4-z)^2} \).</p>
+                <p>För avstånden gäller att de skall vara samma, alltså \( d_1 = d_2 \). Vi löser ekvationen och får \( z = 17 \).</p>
+                <p>Punkten har koordinaterna \( (0,0,17) \).</p></div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Ett klot har mittpunkten \((1,3,2)\) och radien \(5\) l.e. I vilken punkt skär klotet \(x\)-axeln?
+            <p>Formlen för klotets ekvation är \( (x-x_0)^2 + (y-y_0)^2 + (z-z_0)^2 = r^2 \) där klotets mittpunkt är \( (x_0,y_0,z_0) \) och radien är \( r \).</p>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11">
+                <div class="card card-body answer"> <p>Klotets ekvation är \( (x-1)^2 + (y-3)^2 + (z-2)^2 = 5^2 \).</p>
+                <p>De punkter som finns på \(x\)-axeln är av typ \( (x,0,0) \).</p>
+                <p>Då vi sätter in punkten i klotet ekvation får vi ekvationen \( (x-1)^2 + (0-3)^2 + (0-2)^2 = 5^2 \).</p>
+                <p>Vi får lösningarna \( x = \pm 2\sqrt{3}+1 \).</p>
+                <p>Skärningspunkterna är två:\( (\pm 2\sqrt{3}+1 ; 0 ; 0)\).</p> </div></div> </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>När ett klot skär ett plan blir formen som uppstår en cirkel. Ett klots mittpunkt är \((2,-3,1)\) och radien är \(4\) l.e. Bestäm mittpunkt och radie för cirkeln som uppstår då klotet skär.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="13t">
+              <div class="card card-body answer">Vad betyder det för koordinaterna att vi skär ett plan? Hurdana ekvationer blidar du? Hur så cirkelns ekvation ut? </div></div>
+              <ol>
+                <li>\(xy\)-planet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="13a">
+                <div class="card card-body answer"><p>Klotets ekvation är \( (x-2)^2+(y+3)^2+(z-1)^2 = 4^2 \).</p>
+                <p>De punkter som finns på \(xy\)-planet är av typ \( (x,y,0) \).</p>
+                <p>Vi sätter in punkten i klotet ekvation och får \( (x-2)^2+(y+3)^2+(0-1)^2 = 4^2 \). Cirklens ekvation är \((x-2)^2+(y+3)^2=15\).</p>
+                <p>Mittpunkt är \((2,-3,0)\) och radien är \(\sqrt{15}\). </p> </div></div> </li>
+                <li>\(xz\)-planet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="13b">
+                <div class="card card-body answer"><p>Tanken är samma som i a). De punkter som är i \( xz \)-planet är av typ \( (x,0,z) \).</p>
+                <p>Vi får cirkelns ekvation till \((x-2)^2+(z-1)^2=7\).</p>
+                <p>Mittpunkt är \((2,0,1)\) och radien är \(\sqrt{7}\) .</p> </div></div> </li>
+                <li>\(yz\)-planet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="13c">
+                <div class="card card-body answer"><p>Tanken är samma som i a) och b). De punkter som är i \( yz \)-planet är av typ \( (0,y,z) \).</p>
+                <p>Cirkelns ekvation är \((y+3)^2+(z-1)^2=12\).</p>
+                <p>Mittpunkt är \((0,-3,1)\) och radien är \(\sqrt{12} = 2\sqrt{3}\).</p> </div></div> </li>
+              </ol></li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_linjen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
