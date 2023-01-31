@@ -321,7 +321,7 @@ nav ul li a {
   /*background-image: url(pics/MaG_400.jpg); */
 }
 
-.kurs.MaA2:hover {
+.kurs.MaA2:hover, .kurs.MaA22021:hover {
   background-image: url(pics/MaA2_400.jpg);
 }
 
@@ -349,7 +349,7 @@ nav ul li a {
   background-image: url(pics/MaA8_400.jpg);
 }
 
-.kurs.MaA9:hover {
+.kurs.MaA9:hover, .kurs.MaA102021:hover{
   background-image: url(pics/MaA9_400.png);
 }
 
@@ -395,7 +395,7 @@ nav ul li a {
   background-color: #99DEFF;
 }
 
-.MaG, .MaG2021, .MaA2 {
+.MaG, .MaG2021, .MaA2, .MaA22021 {
   /*background-color: #CCBB2D;*/
   background-color: #D8E6F0;
 }
