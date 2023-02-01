@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Integral</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_prim_trig.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="7_areor.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Integral</h1>
+      <section>
+        <div class="theory">
+          <p>Efter att vi nu har lärt oss att bestämma primitiva funktioner för diverse funktioner är det dags att börja tillämpa vår kunskap.</p>
+          <p>Vi utnyttjar primitiva funktioner för att bestämma areor och volymer som funktioner bildar mellan sig själv och koordinataxlarna eller andra funktioner.</p>
+          <p>Ur ett historiskt perspektiv har man bestämt areor under funktioner som många rektanglar och trapetser som man har anpassat så att man har kommit åt arean. Tecknet för summa \( \displaystyle\sum \) har gradvis övergått till att bli tecknet för integral \( \displaystyle\int \).</p>
+          <p>För att bestämma arean under en funktion har man använt sig av intervall och bildat översummor och undersummor.</p>
+          <p>Översumma är den area som bildas då vi tar det största värdet i ett intervall och undersumma är den area som bildas då vi tar det minsta värdet i ett intervall. Du får träna på översumma och undersumma i uppgift 1.</p>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Ändra på antalet intervall för översumman och undersumman för arean. Hur många intervall behövs för att skillnaden skall vara mindre än
+            <div class="geogebra">
+              <iframe height="478px" scrolling="no" src="https://tube.geogebra.org/material/iframe/id/1854279/width/611/height/478/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="611px"></iframe>
+            </div>
+            <ol>
+              <li>ett halvt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>10 st intervall.</p></div></div> </li>
+              <li>en tiondel? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>48 st intervall.</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>Ändra på antalet intervall för översumman och undersumman för arean. Hur många intervall behövs för att skillnaden skall vara mindre än
+            <div class="geogebra">
+              <iframe height="480px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/D6zphWG4/width/512/height/480/border/888888/sri/true" style="border:0px;" width="512px"></iframe>
+            </div>
+            <ol>
+              <li>ett halvt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>25 st intervall.</p></div></div> </li>
+              <li>en tiondel? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>127 st intervall.</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="5_prim_trig.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_areor.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

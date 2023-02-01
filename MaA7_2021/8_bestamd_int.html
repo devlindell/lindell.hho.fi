@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. Bestämd integral</title>
+
+  </head>
+  <body>
+    <header class="MaA9">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_primitivfkt.html">1. Primitiv funktion</a>
+            <a class="dropdown-item" href="2_prim_poly.html">2. för polynomfunktioner</a>
+            <a class="dropdown-item" href="3_prim_1x.html">3. för 1/x</a>
+            <a class="dropdown-item" href="4_prim_exp.html">4. för exponentialfunktioner</a>
+            <a class="dropdown-item" href="5_prim_trig.html">5. för trigonometriska funktioner</a>
+            <a class="dropdown-item" href="6_integral.html">6. Integral</a>
+            <a class="dropdown-item" href="7_areor.html">7. Areor</a>
+            <a class="dropdown-item" href="8_bestamd_int.html">8. Bestämd integral</a>
+            <a class="dropdown-item" href="9_arean_fkt_axel.html">9. Arean mellan koordiataxlar och en funktion</a>
+            <a class="dropdown-item" href="10_arean_fkter.html">10. Arean mellan två funktioner</a>
+            <a class="dropdown-item" href="11_rotationskroppar.html">11. Rotationskroppar</a>
+            <a class="dropdown-item" href="12_allm_volymer.html">12. Allmänna volymer</a>
+            <a class="dropdown-item" href="13_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_areor.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 9 Integralkalkyl</h3>
+      <a href="9_arean_fkt_axel.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. Bestämd integral</h1>
+      <section>
+        <div class="theory">
+          <p>Från förra kapitlet fick vi bland annat att arean för ett område i intervallet \( [a,b] \) som begränsas av funktionen \( f \) och \( x \)-axeln beräknar vi som \( A = F(b)-F(a) \).</p>
+          <p><img src="pics/best_int_1.png" alt="" class="responsivepic400" /></p>
+          <p>Skillnaden som uppstår då vi bestämmer arean, \( F(b)-F(a) \), kallas för den bestämda integralen för funktionen \( f \) från \( a \) till \( b \). Den bestämda integralen betecknas \( \displaystyle\int_a^b f(x)\mathrm{ d}x. \) </p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm \( \displaystyle\int_1^4 (2x^3 - 4)\mathrm{ d}x \).</p>
+            <h4>Lösning</h4>
+            <p>\( \begin{array}{rcl} \displaystyle\int_1^4 (2x^3 - 4)\mathrm{ d}x  & = &  \bigg/_1^4 \; 2\cdot \dfrac{1}{4}x^4-4x \\ \\  & = &  \bigg/_1^4 \; \dfrac{1}{2}x^4-4x \\  & = &  (\dfrac{1}{2}\cdot4^4-4\cdot 4)- (\dfrac{1}{2}\cdot 1^4-4\cdot 1) \\  & = &  112 - (-3\dfrac{1}{2})= 115\dfrac{1}{2}\\ \end{array} \)</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/292183550" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Insättning av gränserna för den bestämda integralen betecknas med \( \bigg/_a^b \).</p>
+          <p>För en bestämd integral gäller alltså att \( \displaystyle\int_a^b f(x)\mathrm{ d}x = \bigg/_a^b \;F(x)=F(b)-F(a) \).</p>
+          <p>Den bestämda integralen har följande egenskaper:
+            <ul>
+              <li>\( \displaystyle\int_a^b (f(x)+g(x))\mathrm{ d} x = \displaystyle\int_a^b f(x)\mathrm{ d} x+\displaystyle\int_a^b g(x)\mathrm{ d} x  \). Vi intergrear termvis.</li>
+              <li>\( \displaystyle\int_a^b kf(x)\mathrm{ d}x = k\displaystyle\int_a^b f(x)\mathrm{ d}x \). Vi flyttar koefficienter utanför.</li>
+            </p>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Bestäm \( \displaystyle\int_0^1 (e^{-x}+1)^2 \mathrm{ d}x \).</p>
+              <h4>Lösning</h4>
+              <p>Vi har följande</p>
+              <p>\( \begin{array}{rcl} \displaystyle\int_0^1 (e^{-x}+1)^2 \mathrm{ d}x  & = &  \displaystyle\int_0^1 \;(e^{{-x}^2}+2e^{-x}+1)\mathrm{ d}x \\ \\  & = &  \displaystyle\int_0^1 e^{-2x}\mathrm{ d}x+\displaystyle\int_0^1 2e^{-x}\mathrm{ d}x+\displaystyle\int_0^1 1\mathrm{ d}x \\ \\  & = &  -\dfrac{1}{2}\displaystyle\int_0^1 -2e^{-2x}\mathrm{ d}x+2(-1)\displaystyle\int_0^1 -e^{-x}\mathrm{ d}x+\displaystyle\int_0^1 1\mathrm{ d}x \\ \\  & = &  -\dfrac{1}{2}\bigg/_0^1 \;e^{-2x} -2 \bigg/_0^1 \;e^{-x} + \bigg/_0^1 \; x \\ \\  & = &  -\dfrac{1}{2}(e^{-2\cdot1}-e^{-2\cdot 0})-2(e^{-1}-e^0)+(1-0) \\ \\  & = &  -\dfrac{1}{2}(e^{-2}-1)-2(e^{-1}-1)+1 \\ \\  & = &  -\dfrac{1}{2}e^{-2}+\dfrac{1}{2}-2e^{-1}+2+1 \\ \\  & = &  -\dfrac{1}{2}e^{-2}-2e^{-1}+3\dfrac{1}{2}\\ \end{array} \)</p>
+            </div>
+            <p>För en bestämd integral kan vi dela upp intervallet så att vi styckvis bildar den bestämda integralen \( \displaystyle\int_a^b f(x)\mathrm{ d}x= \displaystyle\int_a^c f(x)\mathrm{ d}x+\displaystyle\int_c^b f(x)\mathrm{ d}x \) där \( a < c < b \).</p>
+            <p>För en bestämd integral kan vi ändra ordningen på varifrån vart som vi integrerar. Det vi då får är den motsatta bestämda integralen.</p>
+            <p>\( \displaystyle\int_a^b f(x) \mathrm{ d}x = -\displaystyle\int_b^a f(x) \mathrm{ d}x. \)</p>
+            <p>Om det är så att övre och nedre gränsen har samma värde får den bestämda integralen värdet 0, \( \displaystyle\int_a^a f(x) \mathrm{ d}x = 0. \)</p>
+            <div class="exercise box">
+              <p><strong>Exempel 3</strong> Bestäm \( \displaystyle\int_0^\pi \sin x \mathrm{ d} x+ \displaystyle\int_\pi^0 \sin x \mathrm{ d} x \).</p>
+              <h4>Lösning</h4>
+              <p>Vi får att</p>
+              <p>\( \displaystyle\int_0^\pi \sin x \mathrm{\,d} x+ \displaystyle\int_\pi^0 \sin x \mathrm{\,d} x = \displaystyle\int_0^0 \sin x \mathrm{\,d} x =0 \).</p>
+            </div>
+            <div class="summary box">
+              <p>För en bestämd integral gäller att \( \displaystyle\int_a^b f(x)\mathrm{ d}x = \bigg/_a^b \;F(x)=F(b)-F(a). \)</p>
+              <p>En bestämd integal har följande egenskaper
+              <ul>
+                <li>vi kan dela upp den som summa\( \displaystyle\int_a^b (f(x)+g(x))\mathrm{ d} x = \displaystyle\int_a^b f(x)\mathrm{ d} x+\displaystyle\int_a^b g(x)\mathrm{ d} x  \)</li>
+                <li>flytta ut en konstant\( \displaystyle\int_a^b kf(x)\mathrm{ d}x = k\displaystyle\int_a^b f(x)\mathrm{ d}x \)</li>
+              </ul></p>
+              <p>Vi kan dela upp den styckevis \( \displaystyle\int_a^b f(x)\mathrm{ d}x= \displaystyle\int_a^c f(x)\mathrm{ d}x+\displaystyle\int_c^b f(x)\mathrm{ d}x \) där \( a < c < b \) och ändra på ordningen för ändpunkterna \( \displaystyle\int_a^b f(x) \mathrm{ d}x = -\displaystyle\int_b^a f(x) \mathrm{ d}x. \)</p>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm följade integraler
+            <ol>
+              <li>\( \displaystyle\int_{5}^8 \dfrac{1}{2}x-2\mathrm{\, d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Funktionen är ovan x-axlen.</p>
+              <p>\(\begin{array}{rcl}
+              A  & = & \displaystyle\int_{5}^8 \dfrac{1}{2}x-2\mathrm{ d}x \\
+              & = & \bigg/_{5}^8 \; \dfrac{1}{4}x^2-2x \\
+              & = & (\dfrac{1}{4}\cdot 8^2-2\cdot 8)-(\dfrac{1}{4}\cdot 5^2-2\cdot 5) \\
+              & = & 0-(-3\dfrac{3}{4})=3\dfrac{3}{4} \\
+              \end{array}\)</p></div></div> </li>
+              <li>\( \displaystyle\int_1^3 \dfrac{1}{3}x^2+2\mathrm{\, d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>I intervallet är funktionen ovanför x-axeln.</p>
+              <p>\( \begin{array}{rcl}
+              A & = & \displaystyle\int_1^3 \dfrac{1}{3}x^2+2\mathrm{ d}x \\
+              & = & \bigg/_1^3 \;\dfrac{1}{9}x^3+2x \\
+              & = & (\dfrac{1}{9}\cdot 3^3+2\cdot 3)-(\dfrac{1}{9}\cdot1^3+2\cdot 1) \\
+              & = & 9-\dfrac{19}{9}=6\dfrac{8}{9} \\
+              \end{array}\)</p></div></div> </li>
+              <li>\( \displaystyle\int_{-2}^0 -x^2 -2x \mathrm{\,d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>I intervallet är funktionen ovanför x-axeln.</p>
+              <p>\( \begin{array}{rcl}
+              A & = & \displaystyle\int_{-2}^0 -x^2 -2x \mathrm{\,d}x \\
+              & = & \bigg/_{-2}^0 -\dfrac{1}{3}x^3-2\dfrac{1}{2}x^2 \\
+              & = & \bigg/_{-2}^0 -\dfrac{1}{3}x^3-x^2 \\
+              & = & -\dfrac{1}{3}\cdot 0^3-0^2 -(-\dfrac{1}{3}(-2)^3-(-2)^2) \\
+              & = & \dfrac{4}{3} \\
+              \end{array}\)</p></div></div> </li>
+              <li>\( \displaystyle\int_{-1}^0 2x^3-4x+1 \mathrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>I intervallet är funktionen ovanför x-axeln.</p>
+              <p>\( \begin{array}{rcl}
+              A & = & \displaystyle\int_{-1}^0 2x^3-4x+1 \mathrm{ d}x \\
+              & = & \bigg/_{-1}^0 \;\dfrac{1}{2}x^4-2x^2+x \\
+              & = & [\dfrac{1}{2}\cdot0^4-2\cdot 0^2+0]-[\dfrac{1}{2}\cdot (-1)^4-2\cdot (-1)^2-1] \\
+              & = & 0-(-2\dfrac{1}{2})=2\dfrac{1}{2} \\
+              \end{array}\)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm följande integraler
+            <ol>
+              <li>\( \displaystyle\int_0^{\pi} 2\sin x \mathrm{\,d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vår funktion ser ut som</p>
+              <p><img src="pics/best_int_4a.png" class="responsivepic600" /></p>
+              <p>I intervallet är den ovanför x-axeln.</p>
+              <p>\(\begin{array}{rcl}
+              A & = & \displaystyle\int_0^{\pi} 2\sin x \mathrm{\,d}x \\
+              & = & \bigg/_0^{\pi} -2\cos x = -2\cos \pi -(-2\cos 0) \\
+              & = & -2(-1)+2\cdot 1 = 4 \\
+              \end{array}\)</p></div></div> </li>
+              <li>\( \displaystyle\int_0^{\frac{\pi}{2}} \cos \dfrac{x}{2}\mathrm{ \,d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vår funktion ser ut som</p>
+              <p><img src="pics/best_int_4b.png" class="responsivepic600"/></p>
+              <p>Funktionen är sammansatt och vi kompenserar.</p>
+              <p>\(\begin{array}{rcl}
+              A & = & 2\displaystyle\int_0^\frac{\pi}{2} \dfrac{1}{2}\cos \dfrac{x}{2}\mathrm{ d}x \\
+              & = & 2\bigg/_0^{\frac{\pi}{2}} \sin(\dfrac{x}{2}) \\
+              & = & 2[\sin(\dfrac{\pi}{2}\cdot\dfrac{1}{2})-\sin(\dfrac{0}{2})] \\
+              & = & 2(\dfrac{1}{\sqrt{2}}-0) = \sqrt{2} \\
+              \end{array}\)</p></div></div> </li>
+              <li>\( \displaystyle\int_0^{\pi} \sin 2x \textrm{ d}x \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Funktionen är ovan och under x-axeln.</p>
+                <p><img src="pics/best_int_4c.png" class="responsivepic600" /></p>
+                <p>Vi bestämmer arean genom att dela in den i två, \( 0 \) till \( \dfrac{\pi}{2} \) och \( \dfrac{\pi}{2} \) till \( \pi \). Vi kan göra det på grund av symmetrin hos sinus.</p>
+                <p>\( \begin{array}{rcll}
+                  A & = & 2\cdot \displaystyle\int_0^{\frac{\pi}{2}} \sin 2x \textrm{ d}x & \textrm{ Sammansatt funktion.}\\
+                  & = & 2\cdot \displaystyle\int_0^{\frac{\pi}{2}} \dfrac{1}{2}\cdot 2\sin 2x \textrm{ d}x \\
+                  & = & 2\cdot \bigg/_0^{\frac{\pi}{2}} -\dfrac{1}{2}\cos 2x \\
+                  & = & 2\cdot \bigg/_0^{\frac{\pi}{2}} -\dfrac{1}{2}\cos 2x \\
+                  & = & 2 [-\dfrac{1}{2}\cos 2\dfrac{\pi}{2} -(-\dfrac{1}{2}\cos 2\cdot 0)] \\
+                  & = & 2 [-\dfrac{1}{2}(-1) -(-\dfrac{1}{2}\cdot 1)] \\
+                  & = & 2 [-\dfrac{1}{2}(-1) -(-\dfrac{1}{2}\cdot 1)] \\
+                  & = & 2 (\dfrac{1}{2} + \dfrac{1}{2}) = 2 \\
+                  \end{array} \)</p>
+                </div></div> </li>
+                <li>\( \displaystyle\int_0^{2\pi} 2\cos 2x \textrm{ d}x \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2d">
+                <div class="card card-body answer"><p>Funktionen är ovan och under x-axeln.</p>
+                  <p><img src="pics/best_int_4d.png" class="responsivepic600" /></p>
+                  <p>Vi bestämmer arean genom att dela in den i mindre delar. För det behöver vi nollställen, \( f(x) = 0 \) då \( x = \dfrac{\pi}{4} + n\cdot\dfrac{\pi}{2} \).</p>
+                  <p>Antingen som 8 st områden eller som 4 st områden.</p>
+                  <p>\( \begin{array}{rcll}
+                    A & = & 8\cdot \displaystyle\int_0^{\frac{\pi}{4}} 2\cos 2x \textrm{ d}x & \textrm{ Sammansatt funktion.}\\
+                    & = & 8\cdot \bigg/_0^{\frac{\pi}{4}} \sin 2x \\
+                    & = & 8 [\sin(2\cdot \dfrac{\pi}{4}) - \sin (2\cdot 0)] \\
+                    & = & 8 [1 - 0] = 8 \\
+                    \end{array} \)</p>
+                  </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm \( \displaystyle\int_0^1 x^2\sin x^3 \mathrm{\,d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vår funktion ser ut som</p>
+              <p><img src="pics/best_int_3.png" class="responsivepic600" /></p>
+              <p>I intervallet är den ovan x-axeln. Vi får </p>
+              <p>\( \begin{array}{rcl}
+              A & = & \displaystyle\int_0^1 x^2\sin x^3 \mathrm{\,d}x \\
+              & = & \dfrac{1}{3}\displaystyle\int_0^1 3x^2\sin x^3 \mathrm{\,d}x \\
+              & = & \dfrac{1}{3}\bigg/_0^1 -\cos x^3 \\
+              & = & -\dfrac{1}{3}[\cos 1^3 - \cos 0^3] \approx 0,15323\ldots \\
+              \end{array}\)</p>
+            </div></div>
+          </li>
+
+          <li>Bestäm \( \displaystyle\int_{1}^e \dfrac{1}{x}+1\mathrm{ d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vår funktion är ovanför x-axeln.</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{rcl}
+              A & = & \displaystyle\int_{1}^e \dfrac{1}{x}+1\mathrm{ d}x \\
+              & = & \bigg/_{1}^e \ln \mid x \mid + x \\
+              & = & (\ln e+e) -(\ln 1 +1) \\
+              & = & (1+e)-1 = e \\
+              \end{array}\)</p>
+            </div></div>
+          </li>
+
+          <li>Bestäm \( \displaystyle\int_1^2 \dfrac{3}{5x} \mathrm{\,d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vår funktion är ovanför x-axeln.</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{rcl}
+              A & = & \displaystyle\int_1^2 \dfrac{3}{5x} \mathrm{\,d}x \\
+              & = & \bigg/_1^2 \dfrac{3}{5}\ln x \\
+              & = & \dfrac{3}{5}(\ln 2 - \ln 1) \\
+              & = & \dfrac{3}{5}\ln 2
+              \end{array} \)</p>
+            </div></div>
+          </li>
+
+          <li>Bestäm \( \displaystyle\int_1^3 \dfrac{1}{2x}+1 \mathrm{\,d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer">
+                <p>Vår funktion är ovanför x-axeln.</p>
+                <p>Vi får </p>
+                <p>\(\begin{array}{rcl}
+                A & = & \displaystyle\int_1^3 \dfrac{1}{2x}+1 \mathrm{\,d}x \\
+                & = & \bigg/_1^3 \dfrac{1}{2}\ln x +x \\
+                & = & \dfrac{1}{2}\ln 3 + 3 -(\dfrac{1}{2}\ln 1+1) \\
+                & = & \dfrac{1}{2}\ln 3 + 3 -(0+1) \\
+                & = & \dfrac{1}{2}\ln 3 + 2 \\
+                \end{array} \)</p>
+              </div></div>
+          </li>
+
+          <!--UPPG 159a), sid 73.-->
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( \displaystyle\int_{-\pi}^{2\pi} (3\sin x - \cos x)\textrm{ d}x \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi har en funktion som ser ut som</p>
+                <p><img src="pics/best_int_7.png" class="responsivepic600" /></p>
+                <p>Vi märker att funktionen är symmetrisk och att i intervallet \( -\pi \) till \( 2\pi \) 2 st hela områden, vid \( -\pi \) har vi ett mindre område och vid \( 2\pi \) ett lite större område. På grund av symmetrin har vi 3 st symmetriska områden. </p>
+                <p>Vi behöver veta bredden på ett område. Alltså \( f(x) = 0 \). Vi kommer fram till \( \tan x = \dfrac{1}{3} \), Ekvationen saknar exakta lösningar, vi använder oss av närmevärden. Alltså \( x = -2,82 \) och \( x=0,32 \).
+                <p>Alltså (observera att i första intervallet har vi funktionen under x-axeln.) </p>
+                <p>\( \begin{array}{rcl}
+                A & = & -3\displaystyle\int_{-2,82}^{0,32} (3\sin x - \cos x)\textrm{ d}x \\
+                & = & 18,97 \\
+                \end{array}\)</p>
+              <p>Integrera på räknare, eller för hand.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm följande integraler.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="8t">
+            <div class="card card-body hint"><p>Försök inte slå huvudet i väggen. Använd huvudet och förenkla först.</p></div></div>
+            <ol>
+              <li>\( \displaystyle\int_1^e (\dfrac{\ln x}{x} - \dfrac{1}{x}) \textrm{ d}x -  \displaystyle\int_1^e (\dfrac{\ln x}{x} + \dfrac{1}{x}) \textrm{ d}x \).<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5a">
+              <div class="card card-body answer"><p>\( \displaystyle\int_1^e (\dfrac{\ln x}{x} - \dfrac{1}{x}) \textrm{ d}x -  \displaystyle\int_1^e (\dfrac{\ln x}{x} + \dfrac{1}{x}) \textrm{ d}x = -2\displaystyle\int_1^e \dfrac{1}{x} = -2 \)</p></div></div> </li>
+              <li>\( \displaystyle\int_{-2}^3 \sin^2 x \textrm{ d}x - \displaystyle\int_{3}^{-2} (\cos^2 x + 5) \textrm{ d}x \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5b">
+              <div class="card card-body answer"><p>\( \displaystyle\int_{-2}^3 \sin^2 x \textrm{ d}x - \displaystyle\int_{3}^{-2} (\cos^2 x + 5) \textrm{ d}x = \displaystyle\int_{-2}^3 \sin^2 x + \cos^2 x +5 \textrm{ d}x = \displaystyle\int_{-2}^3 1+5 \textrm{ d}x = 30 \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_{a}^{a+1} (2x-3) \textrm{ d}x = 6 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi får ekvationen </p>
+                <p>\( \begin{array}{rcl}
+                  \displaystyle\bigg/_{a}^{a+1} x^2 -3x & = & 6 \\
+                  (a+1)^2 -3(a+1) -(a^2-3a) & = & 6 \\
+                  \vdots \\
+                  a & = & 4 \\
+                  \end{array} \)</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_0^a \sin 2x\mathrm{\, d}x = 1 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi får ekvationen</p>
+              <p>\( \begin{array}{rcl}  \displaystyle\int_0^a \sin (2x)\mathrm{ d}x  & = &  1 \\  \dfrac{1}{2}\displaystyle\int_0^a 2\sin (2x)\mathrm{ d}x  & = &  1 \\  \dfrac{1}{2}\bigg/_0^a -\cos 2x  & = &  =1 \\  -\cos (2a) -(-\cos (2\cdot 0))  & = &  2 \\  -\cos (2a) + 1  & = &  2 \\  \cos (2a)  & = &  -1 \\  \end{array} \)</p>
+              <p>som har lösningarna \( 2a=\pi +n\cdot 2\pi \Leftrightarrow a=\dfrac{\pi}{2} +n\cdot \pi \).</p>
+              <p>Alltså då \( a=\dfrac{\pi}{2} \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_{-4}^a -x^2-4x \text{ d}x = 9 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi får ekvationen</p>
+              <p>\( \begin{array}{rcl}  \displaystyle\int_{-4}^a -x^2-4x \mathrm{ d}x  & = &  9\\  \bigg/_{-4}^a -\dfrac{1}{3}x^3-2x^2   & = &  9\\    (-\dfrac{1}{3}a^3-2a^2)-(-\dfrac{1}{3}(-4)^3-2(-4)^2)  & = & 9 \\   -\dfrac{1}{3}a^3-2a^2+\dfrac{5}{3} & = & 0 \\   \end{array} \)</p>
+              <p>som har lösningarna \( a\approx -5,85 \), \( a=-1 \) och \( a\approx 0,85 \) (lös på räknare).</p>
+              <p>\( f(x)=-x^2-4x \) är positiv då \( -4\leq x \leq 0 \). Därför är \( a=-1 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( a \) gäller att \( \displaystyle\int_0^3 (a^2t^3 +a) \textrm{ d}t = 0 \)?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Vi får </p>
+                \( \begin{array}{rcl}
+                \displaystyle\int_0^3 (a^2t^3 +a) \textrm{ d}t & = & 0 \\
+                \bigg/_0^3 a^2\cdot \dfrac{1}{4}t^4 +at & = & 0 \\
+                a^2\cdot \dfrac{1}{4}\cdot 3^4 +a\cdot 3 - (a^2\cdot \dfrac{1}{4}0^4 +a\cdot 0) & = & 0 \\
+                \dfrac{81}{4}a^2 +3a & = & 0 \\
+                a(\dfrac{81}{4}a +3) & = & 0 \\
+                \end{array} \) </p>
+                <p>Alltså då \( a = 0 \) eller då \( \dfrac{81}{4}a +3 = 0 \), alltså \( a = -\dfrac{1}{3} \).</p>
+              </p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För vilket värde på \( a \) har den primitiva funktionen \( \displaystyle\int_{a}^{a+1} x^2 + x +1 \textrm{ d}x \) ett så litet värde som möjligt?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Vi börjar med att bestämma den primitiva funktionen.</p>
+                <p> \( \begin{array}{rcl}
+                  \displaystyle\int_{a}^{a+1} x^2 + x +1 \textrm{ d}x & = & \bigg/_{a}^{a+1} \dfrac{1}{3}x^3 + \dfrac{1}{2}x^2 + x \\
+                  & = & \dfrac{1}{3}\cdot (a+1)^3 + \dfrac{1}{2}\cdot (a+1)^2 + (a+1) -(\dfrac{1}{3}\cdot a^3 + \dfrac{1}{2}\cdot a^2 + a) \\
+                  & = & a^2 +2a + \dfrac{11}{6} \\
+                  \end{array} \) </p>
+                  <p>Vi söker minsta värdet för uttrycket. \( f'(a) = 2a+2 \). Derivatans nollställen är \( f'(a) = 0\) då \( 2a+2 = 0 \), alltså \( a = -1 \).</p>
+                  <p>Då \( f'(0) = 2 > 0 \) och \( f'(-2) = -2 < 0 \) har vi ett minsta värde i \( a = -1 \).</p>
+                  <p>Då \( a = -1 \).</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA9">
+      <a href="7_areor.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_arean_fkt_axel.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
