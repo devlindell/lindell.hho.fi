@@ -48,7 +48,7 @@
         <div class="theory">
             <p>Om man inte berättar åt browsern vilket typsnitt eller vilken färg något element skall ha på en webbsida så använder sig browern av de inställningar som användaren har. När vi formger element på en webbsida kan vi antingen göra det direkt i HTML koden eller så kan vi länka till ett CSS dokument. Att länka till ett CSS dokument är praxis i webbvärlen eftersom då laddas sidan snabbare och du har all formgivning för alla dina sidor på ett ställe.</p>
             <h3>Formgivning i HTML</h3>
-            <p>Vi tar och formger Hello HTML.
+            <p>Vi tar och formger Hello HTML.</p>
             <p><img src="pics/2-1.png" alt="" class="responsivepic400"></p>
             <p>För att formge så kommer kommandona i taggen, <code>&lt;body style="..." &gt;</code>. Färger kan vi ange med namn (tomato), färg (green) eller med hjälp av värdena för rött, grönt och blått (rgb()). Färdiga namn på färger hittar du tex på <a href="https://www.w3schools.com/htmL/html_colors.asp" target="_blank">w3schools.com</a>.</p>
             <p>Typsnittet ändar vi med <code>style="font-family:Verdana"</code>. <code>margin</code> juster avståndet till marginaler och <code>padding</code> avståndet mellan texten och ramen för <code>&lt;p&gt;</code> blocket. Som mått kan vi ha absoluta pixlar (<code>50px</code>), punkter (<code>50pt</code>) eller relativa avstånd (<code>15%</code>).</p>
@@ -56,46 +56,29 @@
             <p>Vår webbsida ser ut som följande.</p>
             <p><img src="pics/2-2.png" alt="" class="responsivepic600"></p>
             <h3>Formgivning med CSS</h3>
-
+            <p>Då vi jobbar med CSS har vi formgivningen i en skild fil. Då ser motsvarande HTML fil ut som</p>
+            <p><img src="pics/2-3.png" alt="" class="responsivepic400"></p>
+            <p>och CSS filen ser ut som</p>
+            <p><img src="pics/2-4.png" alt="" class="responsivepic400"></p>
+            <p>Märk att vi länkar till CSS filen med <code>&lt;link rel="styleheet" href="style.css"&gt;</code>. CSS filen kan heta vad som helst, men kutymen är style.css.</p>
+            <h3>Fromgivning av olika element på sidan</h3>
+            <p>Då vi har olika element, tex en meny, en brödtext eller en sidfot kan vi lätt definiera dem med <code>div</code> elementet. I <code>div</code> elementet kan vi ha flera andra element. Till exempel på följande sätt.</p>
+            <p><img src="pics/2-5.png" alt="" class="responsivepic600"></p>
+            <p>Då ser CSS filen ut som</p>
+            <p><img src="pics/2-6.png" alt="" class="responsivepic600"></p>
+            <p>Och webbsidan ser ut som</p>
+            <p><img src="pics/2-7.png" alt="" class="responsivepic800"></p>
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
-
-          <li>Uppgift
-            <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-            </ol>
+          <li>Fortsätt jobba på Two Sandals uppgiften. Uppgifen är samma, men formge med hjälp av CSS. Vad du skall komma fram till är <a href="./1_twosandals/TwoSandals.pdf" target="_blank">följande</a>. Detta är den sida som man kommer till. När man klickar på "Home" så skall man se <a href="./1_twosandals/TwoSandals_Home.pdf" target="_blank">följande</a> och listan under Menu leder vidare till motsvarande helhet. Skapa motsvarande webbsida.
+            <p>Bilderna för uppgiften hittar du <a href="./1_twosandals/images.zip" target="_blank">här</a>.</p>
           </li>
 
-          <li>Uppgift
-            <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-            </ol>
-          </li>
-
-          <li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>Titta på <a href="./2_broadway/broadway_redline.jpg" target="_blank">uppgiften</a> över sidan. Din uppgift är att skapa samma. Menyn under rubriken fungerar som interna länkar på sidan.
+            <p>Bilderna för uppgiften hittar du <a href="./2_broadway/Pictures.zip" target="_blank">här</a>.</p>
           </li>
 
           <li>Uppgift
