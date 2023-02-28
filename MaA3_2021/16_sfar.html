@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>18. Sfären</title>
+
+  </head>
+  <body>
+    <header class="MaA3">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_intro.html">1. Introduktion</a>
+            <a class="dropdown-item" href="2_likformighet.html">2. Likformighet</a>
+            <a class="dropdown-item" href="3_likformighet_areor.html">3. Likformighet och areor</a>
+            <a class="dropdown-item" href="4_triangeln.html">4. Triangeln</a>
+            <a class="dropdown-item" href="5_pythagoras.html">5. Pythagoras sats</a>
+            <a class="dropdown-item" href="6_trigonometri.html">6. Trigonometri i en rätvinklig triangel</a>
+            <a class="dropdown-item" href="7_sinussatsen.html">7. Sinussatsen</a>
+            <a class="dropdown-item" href="8_cosinussatsen.html">8. Cosinussatsen</a>
+            <a class="dropdown-item" href="9_fyrhorningen.html">9. Fyrhörningen</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_tangenten_cirkeln.html">11. Tangenter för cirkeln</a>
+            <a class="dropdown-item" href="12_bagvinkeln.html">12. Bågvinkeln</a>
+            <a class="dropdown-item" href="13_ratblock.html">13. Rätblock</a>
+            <a class="dropdown-item" href="14_kuben.html">14. Kuben</a>
+            <a class="dropdown-item" href="15_prismat.html">15. Prismat</a>
+            <a class="dropdown-item" href="16_pyramid.html">16. Pyramid</a>
+            <a class="dropdown-item" href="17_kon.html">17. Konen</a>
+            <a class="dropdown-item" href="18_sfar.html">18. Sfären</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="17_kon.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 3 Geometri</h3>
+      <a href="19_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>18. Sfären</h1>
+      <section>
+        <div class="theory">
+          <p>Volymen för sfären eller klotet är \( V=\dfrac{4\pi r^3}{3} \) och den totala arean för sfären är \( 4\pi r^2 \).</p>
+          <p><img src="pics/18_1.png" alt="" class="responsivepic400" /></p>
+          <p>Volymen av ett klotsegment fås via \( V=\pi h^2(r-\dfrac{h}{3}) \) och arean för kalotten är \( A=2\pi rh \) där \( h \) är höjden för kalotten.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> En hur lång sträcka skulle vi färdas runt jorden om vi skulle färdas längs den 65 breddgraden?</p>
+            <h4>Lösning</h4>
+            <p>Vi betecknar \( x \) radien vinkelrät mot jordens radie vid 65 breddgraden. För att får ett värde på \( x \) tillämpar vi trigonometri.</p>
+            <p><img src="pics/18_2.png" alt="" class="responsivepic400" /></p>
+            <p>\( \begin{array}{rl} \textrm{Vi får att } \sin 25^{\circ}  &  = \dfrac{x}{6370} \\ \\ x  &  = 6370 \sin25^{\circ} = 2692 \textrm{ km} \\ \textrm{Omretsen är } 2\pi \cdot x  & = 2\pi \cdot 2692 = 16914 \approx 17000 \textrm{ km} \\ \end{array} \) </p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm arean av den del av jorden som är norr om 60 breddgraden.</p>
+            <h4>Lösning</h4>
+            <p>Vi börjar på motsvarande sätt som ovan.</p>
+            <p><img src="pics/18_3.png" alt="" class="responsivepic400" /></p>
+            <p>Vi får att</p>
+            <p>\( \begin{array}{rl} \cos 30^{\circ}  & = \dfrac{x}{6370} \\ \\ x  &  = 6370 \cos 30^{\circ} \\ \textrm{Höjden för kalotten får vi som } h  &  = r-x = 6370 - 6370\cos 30^{\circ} \\ \textrm{Och hela arean som } A  & = 2\pi r h = 2 \pi \cdot 6370 (6370 - 6370\cos 30^{\circ}) \\  & = 34157116 \approx 34 200 000 \textrm{ km}^2 \\ \end{array} \)</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>En fotboll har radien 11 cm. Bestäm arean och volymen för bollen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5">
+              <div class="card card-body answer"> <p>Arean är \( A = 4\pi r^2 = 4\pi (11 \text{ cm})^2 = 484\pi \approx 1520 \text{ cm}^2 \).  </p>
+              <p>Volymen är \( V = \dfrac{4}{3}\pi r^3 = \dfrac{4}{3} \pi (11 \text{ cm}^3)^3 = 5575,27\ldots = 5600 \text{ cm}^3 \).</p>
+              </div></div>
+          </li>
+
+          <li>Beräkna radien för en strandboll om bollens
+            <ol>
+              <li>area är 4070 cm<sup>2</sup>. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.75a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.75a">
+              <div class="card card-body answer"><p>Vi har \( A = 4\pi r^2 \).</p>
+              <p>Vi får ekvationen \( 4070 = 4\pi r^2 \), alltså \( r = \sqrt{\dfrac{4070}{4\pi}} = 17,99\ldots \approx 18,0 \) cm.</p>
+              </div></div> </li>
+              <li>Volym är 74 liter. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.75b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.75b">
+              <div class="card card-body answer"><p>Vi har \( V = \dfrac{4}{3}\pi r^3 \).</p>
+              <p>1 liter motsvaras av 1 dm<sup>3</sup>. Vi räknar med det och får radien som dm.</p>
+              <p>Vi får ekvationen \( 74 = \dfrac{4}{3} \pi r^3 \), alltså \( r = \sqrt[3]{\dfrac{3\cdot 74}{4\pi}} = 2,6044\ldots \approx 2,60 \) dm. Alltså 26,0 cm.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><p>Hur många glasskulor med diametern 6,0 cm får man ur ett 1 liters paket om vi räknar med att vi kan utnyttja all glass?</p>
+            <p>Kom ihåg att 1 liter = 1 dm<sup>3</sup>.</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>Volymen för ett klot, \( V=\dfrac{4}{3}\pi r^3 = \dfrac{4}{3}\pi 0,3^3 = 0,1130\ldots dm^3 \).</p>
+              <p>Antal bollar \( \dfrac{1 \text{ dm}}{0,1130\ldots \text{ dm}^3} = 8,8 \) st.</p>
+              <p>Alltså 8 st hela.</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <!--<li> Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li>Diametern för en oskalad apelsin är 9,0 cm. Skalets tjocklek är 0,5 cm. Hur många procent av apelsinens volym är skal?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Hela apelsinens volym är \( V=\dfrac{4}{3}\pi 4,5^3 = 381,70\ldots \) cm<sup>3</sup>.</p>
+                <p>Volymen utan skal är \( V=V=\dfrac{4}{3}\pi 4^3 = 268,08\ldots \) cm<sup>3</sup>.</p>
+                <p>Den procentuella andelen skal är \( \dfrac{381,70\ldots - 268,08\ldots}{381,70\ldots} = 0,29766 \).</p> <p>Alltså 29,8 %.</p> </div></div>
+          </li>
+
+          <li>En tub för tennisbollar fylls med fyra tennisbollar. Hur många procent tomrum finns det i tuben?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Volymen för cylindern är \( \pi r^2 \cdot 8r \).</p>
+                <p>Volymen för en tennisboll är \( \dfrac{4}{3}\pi r^3 \).</p>
+                <p>Förhållandet mellan volymenrna är \( \dfrac{4\cdot\dfrac{4}{3}\pi r^3}{\pi r^2 \cdot 8r} = 0,666\ldots \).</p>
+                <p>Andelen tomrum är \( 1-0,666\ldots = 0,333 \). Alltså 33,3 %.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Totala arean för en fotboll är 15,6 dm<sup>2</sup>. Bestäm volymen av fotbollen.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi har att \( A=4\pi r^2 \), alltså \( r=\sqrt{\dfrac{A}{4\pi}} = \sqrt{\dfrac{15,6}{4\pi}} = 1,114\ldots \) dm.</p>
+                <p>Volymen är \( V=\dfrac{4}{3} \pi \cdot 1,114\ldots^3 = 5,793\ldots  \) dm<sup>3</sup>.</p>
+                <p>Alltså 5,8 dm<sup>3</sup></p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>En kub inskrivs i en sfär. Hur stor många procent utgör kubens volym av sfärens volym?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi betecknar radien med \( r \) och halva sidan för kuben med \( a \). Då får vi att \( a=\sqrt{r} \), alltså \( r=\dfrac{a}{\sqrt{2}} \).</p>
+                <p>Förhållandet är \( \dfrac{V_{\text{kub}}}{V_{\text{sfär}}} = \dfrac{(2a)^3}{\dfrac{4}{3}\pi (\dfrac{a}{\sqrt{2}})^3} = \dfrac{2}{\pi\sqrt{3}} = 0,36755 \).</p>
+                <p>Alltså 36,8 %.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>I en rak kon vars höjd är dubbelt så lång som diametern för bottenarean inskrivs största möjliga sfär. Bestäm förhållandet mellan sfärens och konens volymer med en tusendels decimals noggrannhet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"><p>0,476</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA3">
+      <a href="17_kon.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="19_repetition.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
