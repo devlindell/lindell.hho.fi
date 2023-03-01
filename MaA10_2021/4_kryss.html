@@ -47,10 +47,52 @@
       <section>
         <div class="theory">
           <p>Tidigare har vi multiplicerat reella tal med vektorer och bildat skalära produkten mellan två vektorer. Till nästa tar vi och jobbar med något som kallas för kryssprodukt. Du kan tänka det som att vi multiplicerar två vektorer med varandra. Kryssprodukten fungerar för vissa rum, 3 och 7 dimensionella. Här jobbar vi med kryssprodukten i 3 dimensioner.</p>
-          <p>När vi bildar kryssprodukten mellan två tredimensionella vektorer, \( \overline{a} \times \overline{b} \), får vi en ny tredimensionell vektor. Som alla vektorer har kryssproduktsvektorn längd och riktning och den är vinkelrät mot det plan som vektoerna \( \overline{a} \) och \( \overline{b} \) bildar.</p>
+          <p>När vi bildar kryssprodukten mellan två tredimensionella vektorer, \( \overline{a} \times \overline{b} \), får vi en ny tredimensionell vektor. Som alla vektorer har kryssproduktsvektorn längd och riktning, och den är vinkelrät mot det plan som vektoerna \( \overline{a} \) och \( \overline{b} \) bildar.</p>
           <p><img src="pics/4-1.png" alt="" class="responsivepic400"></p>
           <p>I bilden ovan ger kryssprodukten av \( \overline{a} \times \overline{b} \) storleken av arean för parallellogrammen som bildas.</p>
           <p>Kryssprodukten används bland annat i rörelsemängd- och vridmoment och då laddade partiklar färdas i magnetfält.</p>
+          <div class="summary box">
+          <p>Kryssprodukten mellan vektorerna \( \overline{a} = a_x\overline{i} + a_y\overline{j} + a_z\overline{j} \) och \( \overline{b} = b_x\overline{i} + b_y\overline{j} + b_z\overline{j} \) är vektors vars determinant är \( \begin{vmatrix}
+            \overline{i} & \overline{j} & \overline{j}  \\
+            a_x & a_y & a_z \\
+            b_x & b_y & b_z \\
+            \end{vmatrix} \). </p>
+          <p>Hur vi bestämmer determinanten kommer fram nedan och i MAOL.</p>
+          </div>
+          <p>En \( 3 \times 3 \)-determinant bottar sig i en \( 2 \times 2 \)-determinant. Vi börjar med att bestämma en \(2 \times 2\)-determinant. Determinanten för en tvårandig, \(2 \times 2\), är \( \begin{vmatrix}
+            a & b \\
+            c & d \\
+          \end{vmatrix} = ad - bc \).</p>
+          <p>För en trerandig determinant, \(3 \times 3 \), gäller följande: \( \begin{vmatrix}
+            a & b & c \\
+            d & e & f \\
+            g & h & i \\
+          \end{vmatrix} =
+          a \begin{vmatrix} e & f \\ h & i \end{vmatrix}
+          -b \begin{vmatrix} d & f \\ g & i \end{vmatrix}
+          +c \begin{vmatrix} d & e \\ g & h \end{vmatrix}
+          \).</p>
+          <p>Märk att här finns en logik hur vi väljer värdena. För \( a \) bildar vi determinanten av de värden som inte är under \( a \), motsvarande gäller för \( b \) och \( c \).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm kryssprodukten för vektorerna \( \overline{a} = \overline{i} + 3\overline{j} + 2\overline{j} \) och \( \overline{b} = -\overline{i} + 2\overline{j} + \overline{j} \).</p>
+            <h4>Lösning</h4>
+            <p>Vi får </p>
+            <p>\( \overline{a} \times \overline{b} = \begin{vmatrix}
+              \overline{i} & \overline{j} & \overline{k} \\
+              1 & 3 & 2 \\
+              -1 & 2 & 1 \\
+            \end{vmatrix} =
+            \overline{i} \begin{vmatrix} 3 & 2 \\ 2 & 1 \end{vmatrix}
+            -\overline{j} \begin{vmatrix} 1 & 2 \\ -1 & 1 \end{vmatrix}
+            +\overline{k} \begin{vmatrix} 1 & 3 \\ -1 & 2 \end{vmatrix} \\
+            = \overline{i}(3 \cdot 1 -2 \cdot 2) - \overline{j}(1 \cdot 1 -2 \cdot (-1)) + \overline{k}(1 \cdot 2 -3 \cdot (-1)) \\
+            = -1\overline{i} -3\overline{j} + 5\overline{k} \)</p>
+          </div>
+          <p>Bevis av kryssprodukten.
+          </p>
+
+
+          </div>
           <div class="intro box">
           <!--
           https://sv.wikipedia.org/wiki/Kryssprodukt
@@ -58,7 +100,7 @@
           http://www.linearalgebra.se/pdfs/kryssprodukt.pdf
 
           http://www.math.chalmers.se/Math/Grundutb/DUG/Kursen/Lectura/Lectura_4.2/ (?)
-          
+
           Se till att gör det teoretiskt och sedan mha CAS
           -->
             <div class="video">
@@ -81,13 +123,26 @@
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Bilda följande kryssprodukter.
+          <li>Bilda följande kryssprodukter för hand och kontrollera din lösning på CAS.
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>\( \overline{a} = 2\overline{i} -\overline{j} +2\overline{k} \) och \( \overline{b} = \overline{i} -2\overline{j} -3\overline{k} \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Vi får</p>
+              <p>\( \overline{a} \times \overline{b} = \begin{vmatrix}
+                \overline{i} & \overline{j} & \overline{k} \\
+                2 & -1 & 2 \\
+                1 & -2 & -3 \\
+              \end{vmatrix} =
+              \overline{i} \begin{vmatrix} -1 & 2 \\ -2 & -3 \end{vmatrix}
+              -\overline{j} \begin{vmatrix} 2 & 2 \\ 1 & -3 \end{vmatrix}
+              +\overline{k} \begin{vmatrix} 2 & -1 \\ 1 & -2 \end{vmatrix} \\
+              = \overline{i}(-1 \cdot (-3) -2 \cdot (-2)) - \overline{j}(2 \cdot (-3) -2 \cdot 1) + \overline{k}(2 \cdot (-2) -(-1) \cdot 1) \\
+              = 7\overline{i} +8\overline{j} -3\overline{k} \)</p>
+              <p>På GeoGebra</p>
+              <p><img src="pics/4-10-a.png" class="responsivepic600"/></p>
+              </div></div> </li>
               <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
@@ -97,7 +152,7 @@
             </ol>
           </li>
 
-          <li>Bilda följande kryssprodukter.
+          <li>Bilda följande kryssprodukter för hand och kontrollera din lösning på CAS.
             <ol>
               <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
