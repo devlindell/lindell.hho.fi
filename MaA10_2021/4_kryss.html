@@ -90,7 +90,7 @@
           </div>
           <div class="intro box">
           <p>Då vi bilar kryssprodukten mellan två vektor är den tredje vektorn som uppstår vinkelrät mot planet som vektorerna spänner upp.</p>
-          <p>Vi jobbar med ( \overline{a} = a_x\overline{i} + a_y\overline{j} + a_z\overline{j} \) och \( \overline{b} = b_x\overline{i} + b_y\overline{j} + b_z\overline{j} \). Kryssprodukten är </p>
+          <p>Vi jobbar med \( \overline{a} = a_x\overline{i} + a_y\overline{j} + a_z\overline{j} \) och \( \overline{b} = b_x\overline{i} + b_y\overline{j} + b_z\overline{j} \). Kryssprodukten är </p>
           <p>\( \overline{a} \times \overline{b} = \begin{vmatrix}
             \overline{i} & \overline{j} & \overline{k} \\
             a_x & a_y & a_z \\
@@ -109,9 +109,34 @@
           \end{array} \)</p>
           <p>Alltså är vektorerna vinkelräta mot varandra.</p>
           <p>Att \( \overline{a} \times \overline{b} \) är vinkelrät mot \( \overline{b} \) kan vi visa på motsvarande sätt.</p>
-
-
+        </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm en vektor som är vinkelrät mot vektorerna \( \overline{a} = -2\overline{i} - 3\overline{j} + \overline{j} \) och \( \overline{b} = -\overline{i} + \overline{j} +3\overline{j} \).</p>
+            <h4>Lösning</h4>
+            <p>Vi får </p>
+            <p>\( \overline{a} \times \overline{b} = \begin{vmatrix}
+              \overline{i} & \overline{j} & \overline{k} \\
+              -2 & -3 & 1 \\
+              -1 & 1 & 3 \\
+            \end{vmatrix} =
+            \overline{i} \begin{vmatrix} -3 & 1 \\ 1 & 3 \end{vmatrix}
+            -\overline{j} \begin{vmatrix} -2 & 1 \\ -1 & 3 \end{vmatrix}
+            +\overline{k} \begin{vmatrix} -2 & -3 \\ -1 & 1 \end{vmatrix} \\
+            = \overline{i}((-3) \cdot 3 -1 \cdot 1) - \overline{j}((-2) \cdot 3 -1 \cdot (-1)) + \overline{k}((-2) \cdot 1 -(-3) \cdot (-1)) \\
+            = -10\overline{i} +5\overline{j} - 5\overline{k} \)</p>
+            <p>En vektor är \( -10\overline{i} +5\overline{j} - 5\overline{k} \). Resten är multiplar av vektorn.</p>
           </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Vektorerna \( \overline{a} = 2\overline{i} + \overline{j} \) och \( \overline{b} = 3\overline{i} -\overline{j} \) utgör sidorna i en parallellogram. Bestäm arean av parallellogrammen med hjälp av kryssprodukten.</p>
+            <h4>Lösning</h4>
+            <p>Vi tar och ritar vektorerna på Geogebra.</p>
+            <p><img src="pics/4-4.png" alt="" class="responsivepic400"></p>
+            <p>Längden av kryssprodukten ger arean av parallellogrammen, \( \mid \overline{a} \times \overline{b} \mid \).</p>
+            <p>Kryssprodukten har värdet \( \overline{a} \times \overline{b} = -5\overline{k} \).</p>
+            <p>Storleken av arean är \( \mid \overline{a} \times \overline{b} \mid = \sqrt{(-5)^2} = 5 \) a.e.</p>
+          </div>
+
           <div class="intro box">
           <!--
           https://sv.wikipedia.org/wiki/Kryssprodukt
@@ -264,45 +289,86 @@
             </ol>
           </li>
 
-          <li>Area av parallellogram
+          <li>Bestäm en vektor som är vinkelrät till följande vektorer.
+            <ol>
+              <li>\( \overline{a} = \overline{i} -2\overline{j} -5\overline{k} \) och \( \overline{b} = \overline{i} +\overline{k} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{a} \times \overline{b} = -2\overline{i} -6\overline{j} +2\overline{k} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
+              <li>\( \overline{c} = -5\overline{j} -\overline{k} \) och \( \overline{d} = -3\overline{i} + 2\overline{j} -3\overline{k} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{c} \times \overline{d} = 17\overline{i} +3\overline{j} -15\overline{k} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
+              <li>\( \overline{u} = \overline{k} \) och \( \overline{v} = -2\overline{j} +3\overline{k} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{u} \times \overline{v} = 2\overline{i} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm arean av parallellorammen som bildas av vektorerna \( \overline{a} = 3\overline{i} -\overline{j} \) och \( \overline{b} = \overline{i} +2\overline{j} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Kryssprodukten \( \overline{a} \times \overline{b} = 7\overline{k} \). Arean för parallellogrammen är 7 a.e.</p></div></div>
           </li>
 
-          <li>Area av parallellogram
+          <li>Bestäm arean av parallellorammen som bildas av vektorerna \( \overline{a} = -\overline{i} -2\overline{j} -\overline{k} \) och \( \overline{b} = -3\overline{i} -\overline{j} +\overline{k} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Kryssprodukten \( \overline{a} \times \overline{b} = -3\overline{i} +4\overline{j} -5\overline{k} \).</p>
+              <p> Arean för parallellogrammen är \( \mid \overline{a} \times \overline{b} \mid = \sqrt{(-3)^2+4^2+(-5)^2} = 5\sqrt{2} \) a.e.</p></div></div>
           </li>
 
-          <li>Area av parallellogram
+          <li>Bestäm arean av parallellorammen som bildas av vektorerna \( \overline{a} = 2\overline{i} -2\overline{j} -3\overline{k} \) och \( \overline{b} = -\overline{i} +3\overline{j} -\overline{k} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Kryssprodukten \( \overline{a} \times \overline{b} = -11\overline{i} +5\overline{j} +4\overline{k} \).</p>
+              <p> Arean för parallellogrammen är \( \mid \overline{a} \times \overline{b} \mid = \sqrt{11^2+5^2+4^2} = 9\sqrt{2} \) a.e.</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med rörelsemängd
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="6">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li><i class="fas fa-shapes fa-2x level"></i>En triangel spänns upp av vektorerna \( \overline{a} = \overline{i} +3\overline{j} \) och \( \overline{b} = 2\overline{i} +\overline{j} \) och differensen av \( \overline{a} \) och \( \overline{b} \). Bestäm arean av triangeln.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="6t">
+            <div class="card card-body hint"> <p>Hur förhåller sig triangelns area till paralellogrammens area?</p></div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"> <p>Triangelns area är hälften av paralellogrammens area.</p>
+            <p>Kryssprodukten \( \overline{a} \times \overline{b} = -5\overline{k} \).</p>
+            <p> Arean för parallellogrammen är \( \mid \overline{a} \times \overline{b} \mid = \sqrt{(-5)^2} = 5 \) a.e.</p>
+            <p>Då är arean för triangeln \( \dfrac{5}{2} \) a.e.</p>
+            </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med rörelsemängd
+          <li><i class="fas fa-shapes fa-2x level"></i>En triangel bestäms av punkterna \( A=(3,1,4) \), \( B=(-1,2,1) \) och \( C = (-2,3,4) \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med laddad partikel
+          <li><i class="fas fa-shapes fa-2x level"></i>Area av triangel
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med laddad partikel
+          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med rörelsemängd
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med rörelsemängd
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med laddad partikel
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med laddad partikel
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
