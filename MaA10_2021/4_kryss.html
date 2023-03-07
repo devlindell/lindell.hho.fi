@@ -100,7 +100,7 @@
           -\overline{j} \begin{vmatrix} a_x & a_z \\ b_x & b_z \end{vmatrix}
           +\overline{k} \begin{vmatrix} a_x & a_y \\ b_x & b_y \end{vmatrix} \\
           = \overline{i}(a_y b_z -a_z b_y) - \overline{j}(a_x b_z -a_z b_x) + \overline{k}(a_x b_y -a_y b_x) \\ \)</p>
-          <p>Som är samma som \( \overline{i}(a_y b_z -a_z b_y) +\overline{j}(-a_x b_z +a_z b_x) + \overline{k}(a_x b_y -a_y b_x) \)</p>
+          <p>Det är samma som \( \overline{i}(a_y b_z -a_z b_y) +\overline{j}(-a_x b_z +a_z b_x) + \overline{k}(a_x b_y -a_y b_x) \)</p>
           <p>Sedan bildar vi skalära produkten för </p>
           <p>\( \begin{array}{rcl}
           (\overline{a} \times \overline{b}) \cdot \overline{a} & = & (a_y b_z -a_z b_y)a_x +(-a_x b_z +a_z b_x)a_y + (a_x b_y -a_y b_x)a_z \\
@@ -137,7 +137,6 @@
             <p>Storleken av arean är \( \mid \overline{a} \times \overline{b} \mid = \sqrt{(-5)^2} = 5 \) a.e.</p>
           </div>
 
-          <div class="intro box">
           <!--
           https://sv.wikipedia.org/wiki/Kryssprodukt
           https://fi.wikipedia.org/wiki/Ristitulo
@@ -147,20 +146,6 @@
 
           Se till att gör det teoretiskt och sedan mha CAS
           -->
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
-          </div>
-          <div class="summary box">
-
-          </div>
-          <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
 
           </div>
       </section>
@@ -336,19 +321,39 @@
             </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>En triangel bestäms av punkterna \( A=(3,1,4) \), \( B=(-1,2,1) \) och \( C = (-2,3,4) \).
+          <li><i class="fas fa-shapes fa-2x level"></i>En triangel bestäms av punkterna \( A=(3,1,4) \), \( B=(-1,2,1) \) och \( C = (-2,3,4) \). Bestäm arean för triangeln.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi jobbar med vektorerna \( \overline{AB} = -4\overline{i} +\overline{j} -3\overline{k} \) och \( \overline{AC} = -5\overline{i} +2\overline{j} \).</p>
+              <p>Vi får att \( \overline{AB} \times \overline{AC} = 6\overline{i} +15\overline{j} -3\overline{k} \).</p>
+              <p>Längden av \( \mid \overline{AB} \times \overline{AC} \mid = 3\sqrt{30} \).</p>
+              <p>Arean av triangeln \( ABC \) är \( \dfrac{3\sqrt{30}}{2} \) a.e.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Area av triangel
+          <li><i class="fas fa-shapes fa-2x level"></i>Hörnpunkterna av en triangel är \( (-3,4,5) \), \( (-1,4,-7) \) och \( (-4,0,3) \). Bestäm arean för triangeln.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Betecknar punkterna \( A=(-3,4,5) \), \( B=(-1,4,-7) \) och \( C=(-4,0,3) \)</p>
+              <p>Vi jobbar med vektorerna \( \overline{AB} = 2\overline{i}  +12\overline{k} \) och \( \overline{AC} = -\overline{i} -4\overline{j} -2\overline{k} \).</p>
+              <p>Vi får att \( \overline{AB} \times \overline{AC} = -48\overline{i} +16\overline{j} -8\overline{k} \).</p>
+              <p>Längden av \( \mid \overline{AB} \times \overline{AC} \mid = 8\sqrt{41} \).</p>
+              <p>Arean av triangeln \( ABC \) är \( 4\sqrt{41} \) a.e.</p>
+            </div></div>
+            <ol>
+              <li>Bestäm storleken av den största vinkeln i triangeln. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"><p>Den största vinkeln hittar vi mot den längsta sidan.</p>
+              <p>Vi får att \( \overline{AB} = 2\overline{i}  +12\overline{k} \). Längden är \( 2\sqrt{37} \approx 12,2 \) l.e.</p>
+              <p>\( \overline{AC} = -\overline{i} -4\overline{j} -2\overline{k} \). Längden är \( \sqrt{21} \approx 4,6 \) l.e.</p>
+              <p>\( \overline{BC} = -3\overline{i} -4\overline{j} +10\overline{k} \). Längden är \( 5\sqrt{5} \approx 11,2 \) l.e.</p>
+              <p>Alltså är den störsa vinkeln mot sidan \( AB \).</p>
+              <p>Storleken av vinkeln är 91,1<sup>o</sup>. (Använd dig av skalära produkten och vinklar mellan vektoer.)</p>
+              </div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med rörelsemängd
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Uppgift med rörelsemängd
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -388,7 +393,7 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-cogs fa-2x level"></i>I teoridelen visade vi att \( \overline{a} \times \overline{b} \) är vinkelrät mot \( \overline{a} \). Visa att \( \overline{a} \times \overline{b} \) är vinkelrät mot \( \overline{b} \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -396,7 +401,7 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -420,7 +425,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
