@@ -1,0 +1,44 @@
+body {
+  font-family: Courier New;
+  margin: 5%;
+  font-size: 14pt;
+  background-color: #b39cd0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+.element {
+  background-color: #fbeaff;
+  padding: 30pt;
+  margin: 20pt;
+}
+h3 {
+  font-size: 40pt;
+}
+li {
+  font-size: 20pt;
+  background-color: #fbeaff;
+  padding: 10pt;
+  margin: 5pt;
+  list-style-type: none;
+}
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+html {
+  font-size : 12pt;
+}
+.container {
+  display: none;
+}
+.menu {
+  display: inherit;
+}
+}

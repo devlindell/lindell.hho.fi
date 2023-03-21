@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>4. Ekvationssystem</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="7_xy-planet.html">6. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">7. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">9. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">10. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">11. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">12. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="3_reellttal.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="5_komponenter.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>4. Ekvationssystem</h1>
+      <section>
+        <div class="theory">
+          <p>Hittils har du lärt dig om grunderna för vektorer, vad en vektor är, hur vi adderar och subraherar dem och vad som händer då vi multiplicerar ett tal med en vektor.</p>
+          <p>Före vi kan fortsätta att dyka vidare måste vi lära oss att lösa ekvationssystem. Med hjälp av ekvationssystem kan vi bestämma gemensamma punkter för linjer och funktioner.</p>
+          <p>I kurs 2 arbetade vi med att söka skärningspunkter mellan två linjer. Då gjorde vi det endast på räknare. Till nästa repeterar vi lite gammalt och lär oss hur vi hittar skärningspunkter utan räknare.</p>
+          <div class="intro box">
+            <p>Bestäm de talpar som satisfierar ekvationen \(x+y=5\).</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/449739404" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Alla de talpar som satisfierar ekvationen är en lösning för ekvationen. När vi ritar ut de talpar i ett koordinatystem får vi grafen av funktionen. Eftersom evkationer som har två variabler, tex \(2x+y=1\) har oändligt många lösningar talar vi om diofantiska ekvationer.</p>
+          <div class="intro box">
+            <p>Hur är det då då vi söker gemensamma punkter för ekvationerna \(x+y=5\) och \(y-x=1\).</p>
+            <h4>Lösning</h4>
+            <p>Talpar som satisfierar \(x+y= 5\) var bland annat</p>
+            <table>
+              <tr class="MaA4"><th>x</th><th>y</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>4</td></tr>
+                <tr><td>2</td><td>3</td></tr>
+                <tr><td>3</td><td>2</td></tr>
+                <tr><td>4</td><td>1</td></tr>
+              </tbody>
+            </table>
+            <p>Talpar som satisfierar \(y-x=1\) är bland annat</p>
+            <table>
+              <tr class="MaA4"><th>x</th><th>y</th></tr></thead>
+              <tbody>
+                <tr><td>0</td><td>1</td></tr>
+                <tr><td>1</td><td>2</td></tr>
+                <tr><td>2</td><td>3</td></tr>
+                <tr><td>3</td><td>4</td></tr>
+              </tbody>
+            </table>
+            <p>Vi märker att ett gemensamt talpar är punkten \((2,3)\). Finns det andra? Det vet vi inte eftersom vi har tabellerat fram lösningarna.</p>
+            <p>För att visa att de är de enda måste vi lösa ekvationssytemet</p>
+            <p>\(\left\{  \begin{array}{rcl}
+              x+y& = & 5\\
+              y-x& = & 1\\
+              \end{array}  \right.\)</p>
+            <p>Det gör vi till nästa.</p>
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/449736688" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        </div>
+        <p>Börja med punkter på linje, gå vidare till gemensamma punkter, ekvationssystem.pdf.</p>
+        <div class="exercise box">
+          <p><strong>Exempel 1 </strong>Lös ekvationssystemet</p>
+          <p>\(\left\{  \begin{array}{rcl}
+            x+y& = & 5\\
+            -2x+y& = & -1\\
+            \end{array}  \right.\)</p>
+          <p>med hjälp av additionsmeteoden.</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/449742486" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <p>Alltid går det inte så lätt att eliminera bort en variabel. Då är det lättare att slå ihop ekvationerna.</p>
+        <div class="exercise box">
+          <p><strong>Exempel 2</strong> Lös ekvationssystemet</p>
+          <p>\(\left\{  \begin{array}{rcl}  -x+y & = & 2\\
+            -2x+y& = & -1\\
+            \end{array}  \right.\)</p>
+          <p>med substitutionsmetoden</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/449744349" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="exercise box">
+          <p><strong>Exempel 3 </strong> Lös ekvationen</p>
+            <p>\( \left\{ \begin{array}{rcl}
+              3x -2y +z & = & -13 \\
+              x + 4y -2z & = & 12 \\
+              2x - 2y -5z & = & -5 \\
+              \end{array} \right. \)
+            </p>
+            <h3>Löses på GeoGebra</h3>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/449728249" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <h3>Löses på TI-CAS</h3>
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/449730017" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div class="summary box">
+          <p>Då du löser ekvationssystem utan räknare använder du dig antingen av additionsmetoden eller substitutionsmetoden. I additionsmetoden skall du genom att addera ihop ekvationerna eliminera en variabel. I substitutionsmetoden skall du ersätta variabeln från den ena ekvationen i den andra ekvationen.</p>
+        </div>
+
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Satisfierar följande talpar ekvationen \(x-y=6\)?</p>
+            <table>
+              <tr class="MaA4"><th>Påstående</th><th>Ja</th><th>Nej</th></tr>
+              <tr><td>\((7,1)\)</td><td></td><td></td></tr>
+              <tr><td>\((6,2)\)</td><td></td><td></td></tr>
+              <tr><td>\((4,-2)\)</td><td></td><td></td></tr>
+              <tr><td>\((1,-4)\)</td><td></td><td></td></tr>
+              <tr><td>\((2,-5)\)</td><td></td><td></td></tr>
+              <tr><td>\((-1,-7)\)</td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer"> <table>
+                <tr class="MaA4"><th>Påstående</th><th>Ja</th><th>Nej</th></tr>
+                <tr><td>\((7,1)\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\((6,2)\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\((4,-2)\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\((1,-4)\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\((2,-5)\)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>\((-1,-7)\)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+              </table> </div></div> </li>
+
+          <li><p>Kombinera rätt ekvation med rätt graf av ekvationen.</p>
+            <p>Välj bland följande ekvationer:
+              <div class="grid-container">
+                <div class="grid-item">\(x-y=-1\)</div>
+                <div class="grid-item">\(x+y=-1\)</div>
+                <div class="grid-item">\(-2x+y=-2\)</div>
+                <div class="grid-item">\(-x+y=-2\)</div>
+                <div class="grid-item">\(x+y=3\)</div>
+                <div class="grid-item">\(2x+y=3\)</div>
+              </div>
+              </p>
+            <table>
+              <tr class="MaA3"><th>Ekvation</th><th>Graf</th></tr>
+              <tr><td></td><td><img src="pics/4_2a.png" class="responsivepic250" /></td></tr>
+              <tr><td></td><td><img src="pics/4_2b.png" class="responsivepic250" /></td></tr>
+              <tr><td></td><td><img src="pics/4_2c.png" class="responsivepic250" /></td></tr>
+              <tr><td></td><td><img src="pics/4_2d.png" class="responsivepic250" /></td></tr>
+              <tr><td></td><td><img src="pics/4_2e.png" class="responsivepic250" /></td></tr>
+              <tr><td></td><td><img src="pics/4_2f.png" class="responsivepic250" /></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA3"><th>Ekvation</th><th>Graf</th></tr>
+                  <tr><td>\(x-y=-1\)</td><td><img src="pics/4_2a.png" class="responsivepic250" /></td></tr>
+                  <tr><td>\(2x+y=3\)</td><td><img src="pics/4_2b.png" class="responsivepic250" /></td></tr>
+                  <tr><td>\(x+y=-1\)</td><td><img src="pics/4_2c.png" class="responsivepic250" /></td></tr>
+                  <tr><td>\(x+y=3\)</td><td><img src="pics/4_2d.png" class="responsivepic250" /></td></tr>
+                  <tr><td>\(-x+y=-2\)</td><td><img src="pics/4_2e.png" class="responsivepic250" /></td></tr>
+                  <tr><td>\(-2x+y=-2\)</td><td><img src="pics/4_2f.png" class="responsivepic250" /></td></tr>
+              </table>
+            </div></div> </li>
+
+          <li>Lös följande ekvationssystem med hjälp av additionsmetoden. Räkna för hand och kontrollera svaret med hjälp av räknarprogram.
+            <ol>
+              <li><p>\(\left\{  \begin{array}{rcl}  x-y & = & -1 \\  x+y & = & 3\\  \end{array}  \right.\)</p><p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <table>
+                  <tbody><tr><td style="text-align:right">\(\left\{  \begin{array}{rcl}  x-y & = & -1 \\  x+y & = & 3\\  \end{array}  \right.\)</td>  		</tr>
+                    <tr><td style="text-align:right">\(\begin{array}{rcl}  \hline 2x & = & 2 \\  x& = & 1  \end{array}\)</td>  		</tr>
+                  </tbody>
+                </table>
+                <p>\(y\) får vi genom insättning, \(1+y=3 \Leftrightarrow y=2\).</p>
+                <p>Skärningspunkten är \((1,2)\).</p> </div></div> </li>
+              <li><p>\(\left\{  \begin{array}{rcl}  -x+y & = & -2 \\  -2x+y& = & -2 \\  \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\(\left\{  \begin{array}{rclr}  -x+y & = & -2 &\mid \cdot(-1)\\  -2x+y& = & -2 \\  \end{array}  \right.\)</p>
+                <p>som är</p>
+                <table>
+                  <tbody>
+                    <tr><td style="text-align:right">\(\left\{  \begin{array}{rclr}  x-y & = & 2 \\  -2x+y& = & -2 \\  \end{array}  \right.\)</td>  		</tr>
+                    <tr><td style="text-align:right">\(\begin{array}{rcl}  \hline  -x & = &  0 \\  \end{array}\)</td>  		</tr>
+                  </tbody>
+                </table>
+                <p>\(x\)-koordinaten är 0, \(y\)-koordinaten är då \(0+y=-2\).</p>
+                <p>Skärningspunkten är \((0,-2)\).</p> </div></div> </li>
+              <li>\(\left\{  \begin{array}{rcl}  2x + y& = & 3 \\  x+y& = & -1\\  \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="3c">
+                  <div class="card card-body answer"><p>Vi får</p>
+                    <p>\(\left\{  \begin{array}{rclr}  2x + y& = & 3 \\  x+y& = & -1 &\mid \cdot(-1)\\  \end{array}  \right.\)</p>
+                    <p>Alltså</p>
+                    <table>  	<tbody>
+                      <tr><td style="text-align:right">\(\left\{  \begin{array}{rcl}  2x + y& = & 3 \\  -x-y& = & 1\\  \end{array}  \right.\)</td>  		</tr>
+                      <tr><td style="text-align:right; vertical-align:top">\(\begin{array}{rcl}  \hline x& = & 4  \end{array}\)</td>  		</tr>
+                    </tbody>
+                  </table>
+                  <p>Då \(x=4\) är \(y\)-koordinaten \(4+y=-1 \Leftrightarrow y=-5\).</p>
+                  <p>Skärningspunkten är \((4,-5)\).</p> </div></div> </li>
+            </ol></li>
+
+          <li>Lös följande ekvationssystem med hjälp av substitutionsmetoden. Räkna för hand och kontrollera svaret med hjälp av räknarprogram.
+            <ol>
+              <li>\(\left\{  \begin{array}{rcl}  2x  -3y & = & 4 \\  x+y & = & 2\\  \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Vi kan till exempel lösa uppgiften på följande sätt:</p>
+                <p>Ekvationen \(x+y=2\Leftrightarrow x=2-y\).</p>
+                <p>Den sätter vi in i \(2x-3y=4 \Leftrightarrow 2(2-y)-3y=4\) och löser ut att \(y=0\).</p>
+                <p>Då \(y=0\) får vi att \(x+0=2\), alltså \(x=2\).</p>
+                <p>Skärningspunkten är \((2,0)\).</p> </div></div> </li>
+              <li>\(\left\{  \begin{array}{rcl}  2x-y& = & -6 \\  x-y& = & -4 \\  \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Vi kan till exempel lösa ekvationssystemet på följande sätt:</p>
+                <p>\(x-y=-4 \Leftrightarrow x=y-4\) som vi substituerar in i \(2x-y=-6\).</p>
+                <p>Vi får \(2(y-4)-y=-6\) som har lösningen \(y=2\).</p>
+                <p>Då \(y=-2\) gäller att \(x-2=-4 \Leftrightarrow x=-2\).</p>
+                <p>Skärningspunkten är \((-2,2)\).</p> </div></div> </li>
+              <li>\(\left\{  \begin{array}{rcl}  3x-y & = & 8 \\  2x-2y & = & 4\\  \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="4c">
+                  <div class="card card-body answer"><p>Vi kan till exempel lösa ekvationssystemet på följande sätt:</p>
+                    <p>\(2x-2y=4 \Leftrightarrow y=x-2\).</p>
+                    <p>Alltså \(3x-(x-2)=8 \Leftrightarrow x=3\).</p>
+                    <p>Då \(x=3\) är \(y=3-2=1\).</p>
+                    <p>Skärningspunkten är \((3,1)\).</p> </div></div> </li>
+            </ol></li>
+
+          <li>Bestäm
+            <ol>
+              <li>den gemensamma punkten för \(20x+25y =860\) och \(-5x+16y=230\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Räknaren ger \((18,20)\). </div></div> </li>
+              <li>skärningspunkten för \(f(x)=-x+100\) och \(g(x)=-4x+220\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Vi löser ekvationssystemet</p>
+                <p>\(\left\{  \begin{array}{rcl}  y & = &  -x+100\\  y & = &  -4x +220  \end{array}  \right.\)</p>
+                <p>som har lösningen \((40,60)\). Denna punkt är skärningspunkten.</p> </div></div> </li>
+              <li>Skärningspunkterna för \(f(x)=x^2-6x+4\) och \(y=2x-3\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5c">
+                  <div class="card card-body answer"><p>Vi löser ekvationssystemet</p>
+                    <p>\(\left\{  \begin{array}{rcl}  y & = &  x^2-6x+4\\  y& = & 2x-3  \end{array}  \right.\)</p>
+                    <p>som har lösningarna \((1,-1)\) och \((7,11)\).</p> </div></div> </li>
+            </ol></li>
+
+            <li><i class="fas fa-shapes fa-2x level"></i>Bestäm
+              <ol>
+                <li><p>lösningen för</p>
+                  <p>\(\left\{  \begin{array}{rcl}  4 & = &  2r+2s+2t \\  -1 & = &  -3r+2s-t \\  7 & = &  2r +4s +3t \\   \end{array}  \right.\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"><p>Lättast går det genom att anväda dig av räknare. En blandning av additions- och substitutionsmetoden går även bra.</p>    <p>\(r=-2\), \(s=-1\) och \(t=5\).</p> </div></div> </li>
+                <li><p id="d1gvb8yujjn">den gemensamma punkten \((x,y,z)\) för</p>    <p>\(\left\{  \begin{array}{rcl}  3x +2y+z & = &  1 \\  -2x+2y & = &  -8 \\  -x -2y +z & = &  -3 \\  \end{array}  \right.\).</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6b">
+                <div class="card card-body answer"><p>Vi kan lösa ekvationssystemet</p>
+                  <p>\(\left\{  \begin{array}{rcl}  3x +2y+z & = &  1 \\  -2x+2y & = &  -8 \\  -x -2y +z & = &  -3 \\  \end{array}  \right.\)</p>
+                  <p>antingen med hjälp av en kombination av substitutions- och additionsmetoden eller på räknare.</p>
+                  <p>Punkten är \((2,5;-1,5;-3,5)\).</p> </div></div> </li>
+                </ol></li>
+
+                <li><p><i class="fas fa-shapes fa-2x level"></i>Placera uträkningarna i rätt ordning så att uträkningarna är logiska. </p>
+                  <div class="grid-container">
+                    <div class="grid-item">\(\left\{  \begin{array}{rcll}  4x +7y & = &  37 \\  -4x+2y & = & -10  \\  \end{array}  \right.\)</div>
+                    <div class="grid-item">Då \(y=3\) gäller att \(2x-3=5\)</div>
+                    <div class="grid-item">\(\begin{array}{rcll}  \hline 9y & = &  27 \\  \end{array}\)</div>
+                    <div class="grid-item">\(\left\{  \begin{array}{rcll}  4x +7y & = &  37 \\  2x-y & = & 5 &\mid \cdot (-2) \\  \end{array}  \right.\)</div>
+                    <div class="grid-item">\(\begin{array}{rcll}   y & = &  3 \\  \end{array}\)</div>
+                    <div class="grid-item">\(\left\{  \begin{array}{rcll}  4x +7y & = &  37 \\  2x-y & = & 5 \\  \end{array}  \right.\)</div>
+                    <div class="grid-item">Alltså \(x=4\).</div>
+                    <div class="grid-item">\(\Leftrightarrow 2x=8\)</div>
+                    <div class="grid-item">Punkten är \((4,3)\).</div>
+                  </div>
+                    </p>
+                  <table>
+                    <tr class="MaA3"><th>Uträkning</th><th>Ordning</th></tr>
+                    <tr><td></td><td>1.</td></tr>
+                    <tr><td></td><td>2.</td></tr>
+                    <tr><td></td><td>3.</td></tr>
+                    <tr><td></td><td>4.</td></tr>
+                    <tr><td></td><td>5.</td></tr>
+                    <tr><td></td><td>6.</td></tr>
+                    <tr><td></td><td>7.</td></tr>
+                    <tr><td></td><td>8.</td></tr>
+                    <tr><td></td><td>9.</td></tr>
+                  </table>
+                  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="7">
+                <div class="card card-body answer">
+                  <table>
+                    <tr class="MaA3"><th>Uträkning</th><th>Ordning</th></tr>
+                    <tr><td>\(\left\{  \begin{array}{rcll}  4x +7y & = &  37 \\  2x-y & = & 5 \\  \end{array}  \right.\)</td><td>1.</td></tr>
+                    <tr><td>\(\left\{  \begin{array}{rcll}  4x +7y & = &  37 \\  2x-y & = & 5 &\mid \cdot (-2) \\  \end{array}  \right.\)</td><td>2.</td></tr>
+                    <tr><td>\(\left\{  \begin{array}{rcll}  4x +7y & = &  37 \\  -4x+2y & = & -10  \\  \end{array}  \right.\)</td><td>3.</td></tr>
+                    <tr><td>\(\begin{array}{rcll}  \hline 9y & = &  27 \\  \end{array}\)</td><td>4.</td></tr>
+                    <tr><td>\(\begin{array}{rcll}   y & = &  3 \\  \end{array}\)</td><td>5.</td></tr>
+                    <tr><td>Då \(y=3\) gäller att \(2x-3=5\)  </td><td>6.</td></tr>
+                    <tr><td>\(\Leftrightarrow 2x=8\)</td><td>7.</td></tr>
+                    <tr><td>Alltså \(x=4\).</td><td>8.</td></tr>
+                    <tr><td>Punkten är \((4,3)\).</td><td>9.</td></tr>
+                </table>
+              </div></div> </li>
+
+                <li><p><i class="fas fa-shapes fa-2x level"></i>Placera uträkningarna i rätt ordning så att uträkningarna blir logiska. Välj bland följande:</p>
+                  <div class="grid-container">
+                    <div class="grid-item">Då \(x=-2\) gäller att \(y=-2(-2)-3=1\).</div>
+                    <div class="grid-item">\(\begin{array}{rcll}   -\dfrac{5}{2}x & = &  5 &\mid \cdot (-\dfrac{2}{5})\\  \end{array}\)</div>
+                    <div class="grid-item">\(\left\{  \begin{array}{rcll}  y & = &  -2x-3 \\  y & = &  \frac{1}{2}x+2\\  \end{array}  \right.\)</div>
+                    <div class="grid-item">\(\begin{array}{rcll}   x & = &  -2 \\  \end{array}\)</div>
+                    <div class="grid-item">Skärningspunkten är \((-2,1)\).</div>
+                    <div class="grid-item">Alltså \(\begin{array}{rcll}   -2x -3 & = &  \dfrac{1}{2}x+2\\  \end{array}\)</div>
+                  </div>
+                  </p>
+                  <table>
+                    <tr class="MaA3"><th>Uträkning</th><th>Ordning</th></tr>
+                    <tr><td></td><td>1.</td></tr>
+                    <tr><td></td><td>2.</td></tr>
+                    <tr><td></td><td>3.</td></tr>
+                    <tr><td></td><td>4.</td></tr>
+                    <tr><td></td><td>5.</td></tr>
+                    <tr><td></td><td>6.</td></tr>
+                  </table>
+                  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="8">
+                <div class="card card-body answer"><table>
+                  <tr class="MaA3"><th>Uträkning</th><th>Ordning</th></tr>
+                  <tr><td>\(\left\{  \begin{array}{rcll}  y & = &  -2x-3 \\  y & = &  \frac{1}{2}x+2\\  \end{array}  \right.\)</td><td>1.</td></tr>
+                  <tr><td><p>Alltså</p><p>\(\begin{array}{rcll}   -2x -3 & = &  \dfrac{1}{2}x+2\\  \end{array}\)</p>  </td><td>2.</td></tr>
+                  <tr><td>\(\begin{array}{rcll}   -\dfrac{5}{2}x & = &  5 &\mid \cdot (-\dfrac{2}{5})\\  \end{array}\)</td><td>3.</td></tr>
+                  <tr><td>\(\begin{array}{rcll}   x & = &  -2 \\  \end{array}\)</td><td>4.</td></tr>
+                  <tr><td>Då \(x=-2\) gäller att \(y=-2(-2)-3=1\).</td><td>5.</td></tr>
+                  <tr><td>Skärningspunkten är \((-2,1)\).</td><td>6.</td></tr>
+                </table> </div></div> </li>
+
+                <li><i class="fas fa-shapes fa-2x level"></i>Bestäm skärningspunkterna för \(f(x)=x^2-1\) och \(g(x)=x+1\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9">
+                <div class="card card-body answer"><p>Vi löser</p>
+                  <p>\(\left\{\begin{array}{rcl}  y & = &  x^2-1 \\  y & = &  x+1 \\  \end{array}  \right.\)</p><p>på räknarprogram eller med hjälp av substitutionsmetoden.</p>    <p>Lösningarna är \((-1,0)\) och \((2,3)\).</p> </div></div> </li>
+
+                <li><i class="fas fa-shapes fa-2x level"></i>Bestäm skärningspunkterna för \(f(x)=x^2-2x\) och \(g(x)=\dfrac{1}{2}x^2-x+\dfrac{3}{2}\). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10">
+                <div class="card card-body answer"><p>Vi löser ekvationssystemet</p>
+                  <p>\(\left\{  \begin{array}{rcl}  y& = & x^2-2x \\  y& = & \dfrac{1}{2}x^2-x+\dfrac{3}{2}\\  \end{array}  \right.\)</p>
+                  <p>med hjälp av räknarprogram eller genom substitutionsmetoden.</p>
+                  <p>Skärningspunkterna är \((-1,3)\) och \((3,3)\).</p> </div></div> </li>
+
+                <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \(a\) saknar ekvationssystemet</p>
+                  <p>\(\left\{  \begin{array}{rcl}  y& = & 2x-1 \\  y& = & ax+2  \end{array}  \right.\)</p>
+                  <p>lösningar?</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11">
+                <div class="card card-body answer"><p>Eftersom vi har två linjer gäller det att om ekvationssystemet skall sakna lösningar så skall linjerna vara parallella.</p>
+                  <p>Linjerna är parallella då linjerna har samma riktningskoefficient. Alltså då \(a=2\).</p> </div></div> </li>
+
+                <li><p><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \(a\) saknar ekvationssystemet</p>
+                  <p>\(\left\{  \begin{array}{rcl}  y& = & x^2-2x \\  y& = & ax-4  \end{array}  \right.\)</p>
+                  <p>lösningar?</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="12">
+                <div class="card card-body answer"><p>Vi får att \(x^2-2x=ax-4 \Leftrightarrow x^2 +(-2-a)x+4=0\).</p>
+                  <p>Eftersom ekvationssystemet skall sakna lösningar gäller det att diskriminanten \(D=b^2-4ac\) skall var negativ.</p>
+                  <p>Alltså \((-2-a)^2-4\cdot 1 \cdot 4 &lt; 0\).</p>
+                  <p>Vi får att \(a^2+4a-12&lt;0\). Som du kan lösa på räknare eller för hand.</p>
+                  <p>Ekvationen \(a^2+4a-12 =0\) har lösningarna \(a_1 =-6\) och \(a_2=2\).</p>
+                  <p>Eftersom vi har (\(a^2+4a-12 &lt; 0\), en parabeln som öppnar sig uppåt gäller det att den är negativ mellan nollställena.</p>
+                  <p>Alltså ekvationssystemet saknar lösningar då \(-6&lt;a&lt;2\).</p> </div></div> </li>
+
+                <li><i class="fas fa-cogs fa-2x level"></i>För vilket värde på \(a\) har \(f(x)=x^2+2x+2\) och \(g(x)=ax^2\) gemensamma punkter? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="13">
+                <div class="card card-body answer"><p>Vi skall lösa ekvationssytemet</p>
+                  <p>\(\left\{  \begin{array}{rcl}  y& = & x^2-2x+2 \\  y& = &  ax^2 \\  \end{array}  \right.\)</p>
+                  <p>Alltså \(x^2-2x+2 = ax^2 \Leftrightarrow (1-a)x^2-2x+2 =0\).</p>
+                  <p>Vi har en andragradsekvation som skall ha lösningar. Det betyder att diskriminanten \(D=b^2-4ac \geq 0\).</p>
+                  <p>Vi får</p>
+                  <p>\(\begin{array}{rcl}  (-2)^2-4(1-a)\cdot 2 &\geq & 0 \\  4-8+4a &\geq & 0 \\  8a &\geq & 4 \\  a &\geq & \frac{1}{2} \\   \end{array}\)</p>
+                  <p>Alltså då \(a \geq  \dfrac{1}{2}\).</p> </div></div> </li>
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="3_reellttal.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="5_komponenter.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
