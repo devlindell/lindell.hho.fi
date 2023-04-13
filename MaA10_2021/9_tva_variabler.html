@@ -111,7 +111,7 @@
             </ol>
           </li>
 
-          <li>Låt \( h(x,y) = \sqrt{x^2+y^2} ´\dfrac{1}{x+y} \).
+          <li>Låt \( h(x,y) = \sqrt{x^2+y^2} + \dfrac{1}{x+y} \).
             <ol>
               <li>Beräkna värdet av \( z \) koordinaten då \( x=2 \) och \( y=4 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2.5a">
@@ -128,10 +128,32 @@
             </ol>
           </li>
 
-          <li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>I tabellen nedan ser du värden för köldindex, hur varmt det känns, för några temperaturer och vindhastigheter.
+            <table>
+              <tr>
+                <th></th><th>10 <sup>o</sup>C</th><th>5 <sup>o</sup>C</th><th>0 <sup>o</sup>C</th><th>-5 <sup>o</sup>C</th><th>-10 <sup>o</sup>C</th><th>-15 <sup>o</sup>C</th><th>-20 <sup>o</sup>C</th><th>-25 <sup>o</sup>C</th><th>-30 <sup>o</sup>C</th>
+              </tr>
+              <tr><td>2 m/s</td><td>9</td><td>3</td><td>-2</td><td>-8</td><td>-14</td><td>-20</td><td>-26</td><td>-32</td><td>-37</td></tr>
+              <tr><td>5 m/s</td><td>8</td><td>1</td><td>-5</td><td>-11</td><td>-17</td><td>-24</td><td>-30</td><td>-36</td><td>-42</td></tr>
+              <tr><td>10 m/s</td><td>6</td><td>0</td><td>-7</td><td>-14</td><td>-20</td><td>-27</td><td>-34</td><td>-40</td><td>-47</td></tr>
+              <tr><td>15 m/s</td><td>5</td><td>-2</td><td>-8</td><td>-15</td><td>-22</td><td>-29</td><td>-36</td><td>-43</td><td>-50</td></tr>
+              <tr><td>20 m/s</td><td>5</td><td>-2</td><td>-9</td><td>-16</td><td>-23</td><td>-31</td><td>-38</td><td>-45</td><td>-52</td></tr>
+            <caption class="source">https://www.smhi.se/kunskapsbanken/meteorologi/vindens-kyleffekt-1.259</caption>
+            </table>
+            <p>Vi betecknar köldindex med \( \text{WCT} = f(v,T) \) där \( v \) är vindens hastighet och \( T \) är temperaturen. Använd dig av tabellen för att svara på följande frågor.</p>
+            <ol>
+              <li>Vilket av värden \( f(5,-5) \) eller \( f(2,-10) \) är större? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi har \( f(5,-5)=-11 \) och \( f(2,-10)=-14 \).</p>
+              <p>Alltså känns det varmare då det blåser 5 m/s och temperaturen är -5<sup>o</sup>C.</p>
+              </div></div> </li>
+              <li>Bestäm en lösning för ekvationen \( f(v,T) = -20 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Det finns två lösningar. Ena är \( f(2,-15) \) och den andra är \( f(10,-10) \).</p></div></div> </li>
+              <li>Bestäm i alla fall tre lösningar för olikheten \( -10 \leq f(v,T) \leq -20 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Tex \( f(5,-5) \), \( f(10,-5) \) och \( f(15,-5) \). </p></div></div> </li>
+            </ol>
           </li>
 
           <li>Uppgift
@@ -158,10 +180,20 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \( f(x,y) = 2-\sqrt{x^2+y^2} \) och \( g(x,y)=x^2+y^2 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi löser ekvationen</p>
+              <p> \( \begin{array}{rcll}
+                f(x,y) & = & g(x,y) \\
+                2-\sqrt{x^2+y^2} & = & x^2 + y^2 & \mid (\quad)^2 \\
+                4 - 4\sqrt{x^2+y^2} + x^2+y^2 & = & x^2 +y^2 \\
+                4\sqrt{x^2+y^2} & = & 4 \\
+                \sqrt{x^2+y^2} & = & 1 & \mid (\quad)^2 \\
+                x^2+y^2 & = & 1 & \\
+                \end{array} \)</p>
+                <p>De gemensamma punkterna är \( x^2+y^2 = 1 \), som är en origocentrerad cirkel med radien 1.</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
@@ -170,10 +202,14 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x,y) = x^2 +2y \) och \( g(t) = \sin t \). Bilda, om möjligt, de sammansatta funktionerna \( g(f(x,y)) \) och \( f(g(t)) \) och bestäm de punkter där den sammansatta funktionen får värdet noll.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>De sammansatta funktionerna:</p>
+              <p>\( g(f(x,y)) = \sin(x^2+2y) \) och \( f(g(t)) \) kan vi inte skapa.</p>
+              <p>\( g(f(x,y)) = 0 \) då \( \sin(x^2+2y) = 0 \). Alltså då \( x^2+2y = 0 + \pi \cdot n \).</p>
+              <p>Nollstället är \( y = -\dfrac{1}{2}x^2 + n\cdot \dfrac{\pi}{2}, n \in \mathbf{Z} \).</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
@@ -182,7 +218,8 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Köldindex (WCT), hur kall luften känns då det blåser, kan räknas med formeln \( WCT = 13,12 + 0,6215\cdot T_{\text{luft}} - 13,956\cdot V^{0,16} + 0,4867\cdot T_{\text{luft}}\cdot V^{0,16} \) där \( V \) är vindens hastighet i m/s och \( T \) är temperaturen i grader Celcius.
+            <p>Gör en tabell på kalkyleringsprogram varifrån man kan avläsa köldindex beroende på rådande temperatur och vind. Jobba med vindhastigheter mellan 2 m/s och 35 m/s och temperaturer mellan 10<sup>o</sup>C och -40<sup>o</sup>C.</p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
