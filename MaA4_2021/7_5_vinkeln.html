@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>15. Vinkeln mellan två linjer</title>
+
+  </head>
+  <body>
+    <header class="MaA5">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+            <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+            <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+            <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+            <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+            <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+            <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+            <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+            <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="14_ortogonalitet.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+      <a href="16_avstandpunktlinje.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>15. Vinkeln mellan två linjer</h1>
+      <section>
+        <div class="theory">
+          <p>Vinkeln mellan två linjer får vi som \( \tan\alpha =\mid\dfrac{k_1-k_2}{1+k_1\cdot k_2}\mid \).</p>
+          <p><img class="responsivepic400" src="pics/15-4.png" alt="" /></p>
+          <h4>Motivering</h4>
+          <p>I denna motivering används trigonmetri och egenskaper för tangens som behandlas i kurs MaA 7.</p>
+          <p>Vi utgår från två linjer, \( l_1 \) och \( l_2 \), som har riktingskoefficienterna \( k_1 \) och \( k_2 \). Riktningsvinkeln för \( l_1 \) är \( k_1 = \tan \beta_1 \) och för \( l_2 \) är \( k_2=\tan \beta_2 \).</p>
+          <p>Vinkeln mellan linjerna beteckar vi med \( \alpha \).</p>
+          <p><img class="responsivepic400" src="pics/15-7.png" alt="" /></p>
+          <p>Vi får att \( \alpha = \beta_1 - \beta_2 \). Det betyder att \( \tan \alpha = \tan(\beta_1 - \beta_2) \) . Från trigonometrin finns sambandet \( \tan( x \pm y)= \dfrac{\tan x \pm \tan y}{1 \mp \tan x \tan y} \). Tecknet väljs så att de övre motsvarar och de nedre motsvarar.</p>
+          <p>Vi får alltså \( \tan \alpha = \dfrac{\tan \beta_1 -\tan \beta_2}{1+\tan \beta_1 \tan \beta_2} \).</p>
+          <p>Eftersom \( \tan \beta_1 = k_1 \) och \( \tan \beta_2 = k_2 \) får vi \( \tan \alpha = \dfrac{k_1-k_2}{1+k_1 k_2} \).</p>
+          <p>För att få spetsiga vinklar omger vi kvoten med absolutbelopp.</p>
+          <p>Vinkeln mellan två linjer är \( \tan \beta_2 = k_2 \) får vi \( \tan \alpha = \mid\dfrac{k_1-k_2}{1+k_1 k_2}\mid \).</p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm vinkeln mellan \( y=2x-1 \) och \( y=-x+2 \).
+            <h4>Lösning</h4>
+            <p>Vi har \( k_1 = 2 \) och \( k_2=-1 \) och vinkeln får vi via \( \tan\alpha =\mid\dfrac{k_1-k_2}{1+k_1\cdot k_2}\mid \).</p>
+            <p>Vi får \( \tan \alpha = \mid\dfrac{2-(-1)}{1+2(-1)}\mid = \mid\dfrac{3}{-1}\mid = 3 \).</p>
+            <p>Vinkeln \( \alpha = 71,56\ldots^{\circ} \approx 71,6^{\circ} \).</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> För vilket värde på \( a \) är vinkeln mellan linjerna \( y=-2x+1 \) och \( y=ax+3 \) är 60<sup>o</sup>?
+            <h4>Lösning</h4>
+            <p>Vi har att \( k_1=-2 \), \( k_2=a \) och \( \alpha = 60^{\circ} \).</p>
+            <p>Vi får följande ekvation:</p>
+            <p>\( \begin{array}{rcl} \tan 60^{\circ}  & = &  \mid\dfrac{-2-a}{1+(-2)a}\mid \\ \sqrt{3} & = &  \mid\dfrac{-2-a}{1-2a}\mid \quad \mid (\quad)^2\\ (\sqrt{3})^2  & = &  \dfrac{(-2-a)^2}{(1-2a)^2}\\ 3(1-2a)^2  &  =  &  (-2-a)^2 \\ 3(1-4a+4a^2)  &  =  &  4+4a+a^2 \\ 3-12a+12a^2  &  =  &  4+4a+a^2 \\ 11a^2 -16a -1  & = &  0 \\ a  & = &  \dfrac{-(-16)\pm\sqrt{(-16)^2-4\cdot 11 \cdot -1}}{2\cdot 11}\\ \\  & = &  \dfrac{16\pm\sqrt{300}}{22} = \dfrac{16\pm10\sqrt{3}}{22}\\ \\  & = &  \dfrac{2(8\pm5\sqrt{3})}{22} = \dfrac{8\pm 5\sqrt{3}}{11}\\ \end{array} \)</p>
+            <p>Då \( a \) har värdet \( \dfrac{8- 5\sqrt{3}}{11} \) eller \( \dfrac{8+ 5\sqrt{3}}{11} \) är vinkeln mellan linjerna \( 60^{\circ} \).</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm vinkeln mellan \( y=-3x-1 \) och \( y=x+2 \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> <p>Vi får \( \tan \alpha = \mid \dfrac{-3-1}{1+(-3)\cdot 1} \mid \) som ger oss \( \alpha = 63,4^{\circ} \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bestäm vinkeln mellan \( -3x+y-2=0 \) och \( -4x+y-1=0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får att \( \tan \alpha = \mid \dfrac{3-4}{1+3\cdot 4}\mid \) som ger \( \alpha = 4,3987\ldots\approx 4,4^{\circ} \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \( a \) gäller det att vinkeln mellan \( y=2x-1 \) och \( y=ax+1\dfrac{2}{3} \) har storleken 45<sup>o</sup>?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi får ekvationen \( \tan 45^{\circ}=\mid\dfrac{2-a}{1+2a}\mid \) och \( \tan 45^{\circ}= 1 \). Ekvationen har lösningarna \( a=-3 \) och \( a=\dfrac{1}{3} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \( a \) gäller det att storleken för vinkeln mellan linjerna \( y=x-1 \) och \( y=ax-4 \) är 30<sup>o</sup>?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får ekvationen \( \tan 30^{\circ}=\mid\dfrac{x-a}{1+a}\mid \) som har lösningarna \( a=2\pm\sqrt{3} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm storleken av vinklarna, med en tiondel grads noggrannhet, i triangeln vars hörnpunkter är \( (-3,3) \), \( (1,5) \) och \( (2,1) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vinklarna är \( 48,3^{\circ}, 54,2^{\circ} \) och \(  77,5^{\circ} \).</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA5">
+      <a href="14_ortogonalitet.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="16_avstandpunktlinje.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

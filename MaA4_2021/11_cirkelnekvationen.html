@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>11. Cirkelns ekvation</title>
+
+  </head>
+  <body>
+    <header class="MaA5">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+            <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+            <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+            <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+            <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+            <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+            <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+            <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+            <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="10_cirkeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+      <a href="12_skarninglinjelinje.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>11. Cirkelns ekvation, \( x^2 + y^2 + Ax + By + C = 0 \)</h1>
+      <section>
+        <div class="theory">
+          <p>Till nästa tar vi och tittar på hur vi kan se om det är en cirkel eller inte som gömmer sig bakom en ekvation. Vi gör det genom att se på tre stycken exempel.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Ekvationen \( x^2 +y^2 +2x -4y -4 =0 \) beskriver en cirkel. Bestäm mittpunkt och radie för den.</p>
+            <h4>Lösning</h4>
+            <p>\( \begin{array}{rcl} x^2 +y^2 +2x -4y -4  & = & 0 \\ x^2 +2x + y^2 -4y  & = &  4 \\ \end{array} \) </p>
+            <p>För att kunna skriva det som två kvadrater kvadratkompeltterar vi.</p>
+            <p>\( \begin{array}{rcl} x^2+2x + 1 + y^2-4y+4  & = &  4+1+4\\ (x+1)^2 + (y-2)^2  & = &  3^2 \\ \end{array} \) </p>
+            <p>Mittpunkt är \( (-1,2) \) och radien är 3.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Vad beskriver ekvationen \( x^2+y^2-2x-4y+5=0 \)?</p>
+            <h4>Lösning</h4>
+            <p>\( \begin{array}{rcl} x^2+y^2-2x-4y+5  & = & 0 \\ x^2-2x +y^2-4y  &  =  &  -5 \quad\textrm{Vi kvadratkompletterar.}\\ x^2 -2x +1 +y^2-4y+4  &  =  &  -5+1+4 \\ (x-1)^2 + (y-2)^2  &  =  & 0 \\ \end{array} \)</p>
+            <p>Eftersom radien har värdet 0 beskriver ekvationen en punkt i (1,2).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Vad beskriver ekvationen \( x^2+y^2+2x+2y+4=0 \)?</p>
+            <h4>Lösning</h4>
+            <p>\( \begin{array}{rcl} x^2+y^2+2x+2y+4 & = & 0 \\ x^2+2x+y^2+2y  &  =  &  -4 \quad\text{Vi kvadratkompletterar.}\\ x^2+2x+1+y^2+2y+1  &  =  &  -4+1+1 \\ (x+1)^2 +(y+1)^2  &  =  & -2 \\ \end{array} \)</p>
+            <p>Radien för en cirkel kan inte vara negativ. Vi har ingenting reellt, verkligt i det talområde som vi arbetar i.</p>
+          </div>
+          <div class="summary box">
+            <p>Genom att kvadratkomplettera uttrycket \( x^2+y^2+Ax+By+C=0 \) kan vi alltid få det till \( (x-a)^2+(y-b)^2 = d \).</p>
+            <p>Beroende på \( d \) så har vi</p>
+            <ul>
+              <li>\( d > 0 \) cirkel med mittpunkten (a,b)</li>
+              <li>\( d=0 \) en punkt i (a,b)</li>
+                <li>\( d < 0 \) ingenting.</li>
+            </ul>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Fyll i så att det blir rätt
+            <ol>
+              <li>\( (x\underline{\qquad})^2=x^2+12x\underline{\qquad} \)</li>
+              <li>\( (x\underline{\qquad})^2=x^2-16x\underline{\qquad} \)</li>
+              <li>\( (x\underline{\qquad})^2=x^2+x \underline{\qquad} \)</li>
+            </ol>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer">
+              <ol>
+                <li>\( (x+6)^2 = x^2+12x+36 \)</li>
+                <li>\( (x-8)^2 = x^2 -16x+64 \)</li>
+                <li>\( (x+\dfrac{1}{2})^2 = x^2 +x+\dfrac{1}{4} \)</li>
+              </ol>
+             </div></div>
+          </li>
+
+          <li>Bestäm mittpunkt och radie för följande cirklar.
+            <ol>
+              <li>\( x^2+y^2+2x-2y-2=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( x^2+2x +y^2-2y = 2 \) kan vi skriva som \( (x+1)^2 + (y-1)^2 = 2 +1 +1 \Leftrightarrow (x+1)^2 + (y-1)^2 = 2^2 \). Mittpunkten är (-1,1) och radien är 2.</p></div></div> </li>
+              <li>\( x^2+y^2+6x-4y+4=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( x^2 +6x +y^2-4y = -4 \Leftrightarrow (x+3)^2+(y-2)^2 = -4 +9 +4 \Leftrightarrow (x+3)^2+(y-2)^2 = 3^2 \). Mittpunkten är (-3,2) och radien är 3.</p> </div></div> </li>
+              <li>\( x^2 + y^2 -2x -3 = 0 \)<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>\( x^2 + y^2 -2x -3 = 0 \) kan vi skriva som \( (x-1)^2 + y^2 = 3 + 1  \Leftrightarrow (x-1)^2 + y^2 = 4 \).</p><p>Mittpunkten är \( (1,0) \) och radien är 2.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm mittpunkt och radie för cirkeln som representeras av ekvationen
+            <ol>
+              <li>\( x^2+y^2+2x+4y+3=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>\( x^2+2x +y^2+4y = -3 \Leftrightarrow (x+1)^2 + (y+2)^2 = -3+1+4\Leftrightarrow (x+1)^2 + (y+2)^2 = 2 \). Mittpunkt är (-1,-2) och radien \( \sqrt{2} \).</p> </div></div> </li>
+              <li>\( x^2+y^2+4y+1=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>\( x^2 + y^2 +4y = -1 \Leftrightarrow x^2 +(y+2)^2 = -1+4 \Leftrightarrow x^2 +(y+2)^2 = 3 \). Mittpunkten är (0,-2) och radien är \( \sqrt{3} \).</p> </div></div> </li>
+              <li>\( x^2 + y^2 -6x +4y + 8 =0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\( x^2 + y^2 -6x +4y + 8 =0 \) skriver vi som \( (x-3)^2 + (y+2)^2 = -8 + 9 + 4 \Leftrightarrow (x-3)^2 + (y+2)^2 = 5 \)</p> <p>Mittpunkten är \( (3,-2) \) och radien är \( \sqrt{5} \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vad föreställer ekvationen \( x^2+y^2-4x-4y=-8 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"><p>\( x^2-4x+y^2-4y = -8 \Leftrightarrow (x-2)^2+(y-2)^2 = -8+4+4 \Leftrightarrow (x-2)^2+(y-2)^2 = 0 \). Vi har en punkt i (2,2).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm avståndet för cirkeln i \( x^2+y^2+4x+6y+9=0 \) och punkten \( (1,1) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi börjar med att bestämma mittpunkt och radie för cirklen. </p>
+                <p>\( x^2+4x+y^2+6y=-9 \Leftrightarrow (x+2)^2+(y+3)^2=-9+4+9 \Leftrightarrow (x+2)^2+(y+3)^2=2^2 \). Cirkeln har alltså mittpunkten \( (-2,-3) \) och radien \( 2 \).</p>
+                <p>Avståndet mellan \( (-2,-3) \) och \( (1,1) \): \( \sqrt{(-2-1)^2+(-3-1)^2}=5 \).</p> <p>Avståndet mellan cirkeln och punkten \( (1,1) \) blir \( 5-2=3 \) l.e.</p> </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> Lösningen </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm riktningskoefficienten för linjen som går genom mittpunkterna för cirklarna \( x^2+y^2+4x+6y+11=0 \) och \( x^2+y^2-4x-2y+2=0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi börjar med att bestämma cirklarnas mittpunkter,
+                <p>\( x^2+4x+y^2+6y=-11 \),</p>
+                <p>\( (x+2)^2+(y+3)^2 = -11+4+9 \),</p>
+                <p>\( (x+2)^2+(y+3)^2 = 3 \).</p>
+                <p>Och för den andra cirkeln gäller,</p>
+                <p>\( x^2-4x+y^2-2y=-2 \),</p>
+                <p>\( (x-2)^2+(y-1)^2=-2+4+1 \),</p>
+                <p>\( (x-2)^2+(y-1)^2=3 \).</p>
+                <p>Cirklarnas mittpunkter är \( (-2,-3) \), och \( (2,1) \). Riktningskoefficienten blir \( k=\dfrac{-3-1}{-2-2} = 1 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För vilka värden på \( a \) representerar \( x^2+y^2+ay+a=0 \) en cirkel?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>\( x^2 + (y +\dfrac{a}{2})^2 = -a +\dfrac{a^2}{4} \).</p>
+                <p>För att vi skall ha en cirkel så skall \( -a +\dfrac{a^2}{4}>0 \)</p>
+                <p>Vi löser olikheten \( -a +\dfrac{a^2}{4}>0 \) som har lösningarna \( a < 0 \) eller \( a>4 \).</p> </div></div>
+                </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA5">
+      <a href="10_cirkeln.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="12_skarninglinjelinje.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

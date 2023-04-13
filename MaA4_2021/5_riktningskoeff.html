@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>7. Riktningskoefficient</title>
+
+  </head>
+  <body>
+    <header class="MaA5">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+            <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+            <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+            <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+            <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+            <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+            <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+            <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+            <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="6_punktmangder.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+      <a href="8_linjen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>7. Riktningskoefficient</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vi studerar linjerna \( y=\dfrac{1}{2}x-2 \) och \( y=2x-2 \) i samma koordinatsytem. Vad kan vi säga om deras skärningspunkt med y-axeln och x-axeln? Vad kan vi säga om deras lutning?</p>
+            <p>Video</p>
+          </div>
+          <p>Riktingskoefficienten, k, bestäms som \( k=\dfrac{\Delta y}{\Delta x}=\dfrac{y_2-y_1}{x_2-x_1}. \)</p>
+          <p><img src="pics/7-1.png" alt="" class="responsivepic600" /></p>
+          <p>Är riktningskoefficienten, \( k \)</p>
+          <ul>
+            <li>\( k > 0 \) har vi en stigande, växande linje</li>
+            <li>\( k=0 \) har vi en kostant linje</li>
+            <li>\( k < 0 \) har vi en avtagande linje</li>
+            <li>är \( k \) odefinierat har vi en lodrät linje.</li>
+          </ul>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm riktningskoefficienten för linjen som går genom punkterna \( (-1,-3) \) och \( (1,4) \).</p>
+            <h4>Lösning</h4>
+            <p>Riktingskoefficienten får vi som \( k=\dfrac{\Delta y}{\Delta x} = \dfrac{4-(-3)}{1-(-1)} = \dfrac{7}{2} \).</p>
+          </div>
+          <p>Linjer som skär \( y \)-axlen har en viss lutning. Denna lutning kan vi ange som en riktningskoefficent eller som en vinkel. Sambandet mellan riktningskoefficienten och vinkeln är \( \tan \alpha = \dfrac{\Delta y}{\Delta x} =k \). Vi får lutningen för en linje genom att veta riktningskoefficienten.</p>
+          <p><img src="pics/7-2.png" alt="" class="responsivepic400" /></p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm vinkeln som flygplanet lyfter med från marken.</p>
+            <p><img src="pics/7-3.jpg" alt="" class="responsivepic600" /></p>
+            <div class="video">
+            <p><iframe src="https://player.vimeo.com/video/551792754" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+          </div>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Ligger punkterna \( (-2,-4) \), \( (0,-1) \) och \( (2,2) \) på samma linje?</p>
+            <h4>Lösning</h4>
+            <p>Vi bildar riktngningskoefficienterna får två linjer. Får vi samma värde i bägge fallen ligger punkterna på samma linje.</p>
+            <p>\( k_1 = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{-4-(-1)}{-2-0} = \dfrac{-3}{-2}= \dfrac{3}{2} \)</p>
+            <p>\( k_2 = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{-1-2}{0-2} = \dfrac{-3}{-2} =\dfrac{3}{2} \)</p>
+            <p>\( k_1 = k_2 \) så punkterna ligger på samma linje.</p>
+            <p>Sitationen ser ut som:</p>
+            <p><img src="pics/7-4.png" alt="" class="responsivepic600" /></p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Bestäm utgående från bilden riktningskoefficienterna för linjerna i bilden.
+            <p><img src="pics/7-5.png" alt="" class="responsivepic600" /></p>
+            <table>
+              <tr class="MaA5"><th>Påstående</th><th>\( k=-2 \)</th><th>\( k=-1 \)</th><th>\( k=0 \)</th><th>\( k=\dfrac{1}{3} \)</th><th>\( k=2 \)</th><th>Riktningskoefficienten är odefinierad.</th></tr>
+              <tr><td>\( l_1 \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( l_2 \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( l_3 \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( l_4 \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( l_5 \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>\( l_6 \)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"> Rätt lösning är
+              <table>
+                <tr class="MaA5"><th>Påstående</th><th>\( k=-2 \)</th><th>\( k=-1 \)</th><th>\( k=0 \)</th><th>\( k=\dfrac{1}{3} \)</th><th>\( k=2 \)</th><th>Riktningskoefficienten är odefinierad.</th></tr>
+                <tr><td>\( l_1 \)</td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>\( l_2 \)</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( l_3 \)</td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>\( l_4 \)</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>\( l_5 \)</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                <tr><td>\( l_6 \)</td><td></td><td></td><td></td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+              </table> </div></div>
+          </li>
+
+          <li>Bestäm riktningskoefficienten för linjerna som går genom \( (1,4) \) och punkten i uppgiften. Är linjerna växande, konstanta eller avtagande?
+            <ol>
+              <li>Punkten \( (0,1) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Riktningskoefficienten har värdet \( \dfrac{\Delta y}{\Delta x} = \dfrac{4-1}{1-0} = 3 \) och linjen är växande.</p> </div></div> </li>
+              <li>Punkten \( (3,4) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Riktningskoefficienten har värdet \( \dfrac{\Delta y}{\Delta x} = \dfrac{4-4}{1-3} = 0 \) och linjen är konstant.</p> </div></div> </li>
+              <li>Punkten \( (-1,6) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Riktningskoefficienten har värdet \( \dfrac{\Delta y}{\Delta x} = \dfrac{4-6}{1-(-1)} =  -1 \) och linjen är avtagande.</p> </div></div> </li>
+              <li>Punkten \( (2,0) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Riktningskoefficienten har värdet \( \dfrac{\Delta y}{\Delta x} = \dfrac{4-0}{1-2} = -4 \) och linjen är avtagande.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>En linje går genom punkten \( (-3,-4) \) och riktningskoefficienten är 2. Är följande punkter på linjen?
+            <table>
+              <tr class="MaA5"><th>Påstående</th><th>Ja</th><th>Nej</th></tr>
+              <tr><td>\( (1,4) \)</td><td></td><td></td></tr>
+              <tr><td>\( (5,11) \)</td><td></td><td></td></tr>
+              <tr><td>\( (3,8) \)</td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Rätt lösning</p>
+                <table>
+                  <tr class="MaA5"><th>Påstående</th><th>Ja</th><th>Nej</th></tr>
+                  <tr><td>\( (1,4) \)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( (5,11) \)</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( (3,8) \)</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table> </div></div>
+          </li>
+
+          <li><p>Bestäm lutningen för trapporna vid Persepolis. Svara med en tiondel grads noggrannhet.</p>
+            <p><img src="pics/The_Great_Double_Staircase_at_Persepolis.jpg" alt="" class="responsivepic400" /></p>
+            <p>Bilden hittar du <a href="pics/The_Great_Double_Staircase_at_Persepolis.jpg" target="_blank">här</a>.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+                <p><img src="pics/7-6.png" alt="" class="responsivepic600" /></p> </div></div>
+          </li>
+
+          <li>Bestäm lutning för högra sidan av toppen av Matterhorn. Svara med en tiondel grads noggrannhet.
+            <p><img src="pics/Matterhorn_from_mountain_side_between_Zermatt_and_Gornergrat,_Wallis,_Switzerland,_2012_August.jpg" alt="" class="responsivepic400" /></p>
+            <p>Bilden hittar du <a href="pics/Matterhorn_from_mountain_side_between_Zermatt_and_Gornergrat,_Wallis,_Switzerland,_2012_August.jpg" target="_blank">här</a>.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Något i stil med </p>
+                <p><img src="pics/7-7.png" alt="" class="responsivepic600" /></p> </div></div>
+          </li>
+
+          <li>Bestäm lutningen för trapporna från Plaza Lafayette till Henry Hudson Parkway i New York. Svara med en tiondels grads noggrannhet.
+            <p><img src="pics/Stairs_from_Plaza_Lafayette_to_Henry_Hudson_Parkway.jpg" alt="" class="responsivepic400" /></p>
+            <p>Bilden hittar du <a href="pics/Stairs_from_Plaza_Lafayette_to_Henry_Hudson_Parkway.jpg" target="_blank">här</a>.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Något i stil med</p>
+                <p><img src="pics/7-8.png" alt="" class="responsivepic600" /></p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( a \) så att punkterna \( (-4,-3) \), \( (a,-1) \) och \( (2,1) \) ligger på samma linje.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>För att punkterna skall ligga på samma linje skall riktningskoefficienten vara samma oberoende vilka punkter vi har.</p>
+                <p>Vi tar och bildar riktningskoefficienten, \( k=\dfrac{\Delta y}{\Delta x} = \dfrac{-3-(-1)}{-4-a} = \dfrac{-3-1}{-4-2} \).</p>
+                <p>Vi får att \( \dfrac{-2}{-4-a}=\dfrac{-4}{-6} \) som har lösningen \( a=-1 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm \( a \) så att punkterna \( (-3,2) \), \( (3,a) \) och \( (6,-4) \) ligger på samma linje.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>För att punkterna skall ligga på samma linje skall riktningskoefficienten vara samma oberoende vilka punkter vi har.</p>
+                <p>Vi tar och bildar riktningskoefficienten, \( k=\dfrac{\Delta y}{\Delta x} = \dfrac{2-a}{-3-3} = \dfrac{-4-2}{6-(-3)} \).</p>
+                <p>Vi får att \( \dfrac{2-a}{-6}=\dfrac{-6}{9} \) som har lösningen \( a=-2 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Hörnen för en fyrhörningen OABC är placerade så att O är i origo, A i \( (\dfrac{4}{3}, \dfrac{7}{12}) \), B i \( (1, \dfrac{7}{3}) \) och C i \( (-\dfrac{1}{3}, \dfrac{7}{4}) \). Är fyrhörningen OABC en parallellogram?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi bilar riktningskoefficenterna mellan punkterna och undersöker om linjerna är parallella, har samma riktningskoefficient.</p>
+              <p>\( k_{OA} = \dfrac{7}{16} \) och \( k_{BC} = \dfrac{7}{16} \). Dessa sidor är parallella.</p>
+              <p>\( k_{AB} = -\dfrac{21}{4} \) och \( k_{OC} = -\dfrac{21}{4} \). Dessa sidor är parallella.</p>
+              <p>Alltså är OABC en parallellogram.</p>
+              <p>Vi kan också visa att figuren är en parallellogram genom att studera längden och riktningskoefficenten för motstående sidor. En fyrhörning är en parallellogram endast om motstående sidor är lika långa och paralella.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För fyrhörningen ABCD gäller att hörnpunkten A är på \(y\)-axeln och resten hörnpunkter är på \( B = (-5,-11) \), \( C = (4,0) \) och \( D = (-7,12) \). Bestäm koordinaterna för A så att fyrhörningen ABCD är en paralleltrapets.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"><p>Eftersom A är på \( y \)-axeln gäller det att koordinaten är av typ \( (0,y) \).</p>
+              <p>Alternativen så att ABCD är en parallelltrapets är att AB och CD är parallella eller att AD är parallell med BC.</p>
+              <p>Vi får att \( A = (0,9) \) och \( A = (0,\dfrac{31}{9}) \), eller \( (0,3\dfrac{4}{9}) \).</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA5">
+      <a href="6_punktmangder.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_linjen.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

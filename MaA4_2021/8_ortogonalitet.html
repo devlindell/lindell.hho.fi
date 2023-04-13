@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>14. Ortogonalitet</title>
+
+ </head>
+ <body>
+  <header class="MaA5">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+      <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+      <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+      <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+      <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+      <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+      <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+      <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+      <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+      <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+      <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+      <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+      <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+      <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+      <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+      <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+      <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+      <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+     </div>
+    </div>
+   </nav>
+   <a href="13_skarningcirkellinje.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+   <a href="15_vinkeln.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>14. Ortogonalitet</h1>
+   <section>
+    <div class="theory">
+     <p>När vi talar om att två linjer är ortogonala bildas de en rät vinkel mellan linjerna</p>
+     <p>Om två linjer är ortogonala så gäller för deras riktningskoefficienter att \( k_1 \cdot k_2 =-1 \). Tag och ändra på värdet för a i Geogebra applikationen nedan. För vilket värde på a gäller att vinkeln mellan linjerna är rät, 90<sup>o</sup>?</p>
+     <div class="geogebra">
+      <iframe height="466px" scrolling="no" src="https://www.geogebra.org/material/iframe/id/vmFbeSud/width/543/height/466/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" style="border:0px;" width="543px"></iframe>
+     </div>
+     <p>Ortogonala linjer är varandras normaler.</p>
+     <div class="exercise box">
+      <p><strong>Exempel 1</strong> Är linjerna \( x+2y-6=0 \) och \( 2x-y-1=0 \) ortogonala?</p>
+      <h4>Lösning</h4>
+      <p>Sitationen ser ut som följande:</p>
+      <p><img src="pics/14-1.png" alt="" class="responsivepic400" /></p>
+      <p>Vi löser ekvationerna i standardform.</p>
+      <p> \( \begin{array}{rr} \textrm{Normalform} & \textrm{Standardform} \\ x+2y-6=0 & y=-\dfrac{1}{2}x+3 \\ 2x-y-1=0 & y=2x-1 \\ \end{array} \)</p>
+      <p>Om de är ortogonala så är \( k_1\cdot k_2 = -1 \).</p>
+      <p>\( -\dfrac{1}{2}\cdot 2=-1 \) så de är ortogonala, vinkelräta.</p>
+     </div>
+     <div class="exercise box">
+      <p><strong>Exempel 2</strong> Bestäm normalen för linjen \( y=2x-1 \) som går genom punkten \( (-2,4) \).</p>
+      <h4>Lösning</h4>
+      <p>Situationen ser ut som:</p>
+      <p><img src="pics/14-2.png" alt="" class="responsivepic400" /></p>
+      <p>Riktningskoefficienten för \( y=2x-1 \) är 2 så alla normaler har rikningskoefficienten \( -\dfrac{1}{2} (2\cdot-\dfrac{1}{2}=-1) \).</p>
+      <p>Vi söker den linje som går genom punkten \( (-2,4) \) och vars riktningskoefficient är \( -\dfrac{1}{2} \).</p>
+      <p>Vi använder oss av enpunktsformeln \( y-y_0=k(x-x_0) \) </p> <p> \( \begin{array}{rcl} y-y_0 & = & k(x-x_0) \\ y-4 & = & -\dfrac{1}{2}(x-(-2))\\ y & = & -\dfrac{1}{2}x -1+4 \\ y & = & -\dfrac{1}{2}x +3 \\ \end{array} \)</p>
+      <p>Tangentens ekvation är \( y = -\dfrac{1}{2}x +3 \).</p>
+     </div>
+     <div class="exercise box">
+      <p><strong>Exempel 3</strong> För cirkeln \( x^2+y^2=5 \) dras tangenten genom punkten \( (-1,2) \). Bestäm tangentens ekvation.</p>
+      <h4>Lösning</h4>
+      <p>Situationen ser ut som</p>
+      <p><img src="pics/14-3.png" alt="" class="responsivepic400" /></p>
+      <p>Vi börjar med att bestämma riktningskoefficienten för den linje som bilas mellan origo och \( (-1,2) \). \( k=\dfrac{2-0}{-1-0}=-2 \).</p>
+      <p>Normalen till den linjen, tangenten som vi söker, har riktningskoefficienten \( k_t= \dfrac{-1}{-2}=\dfrac{1}{2} \). Tangenten går genom punkten \( (-1,2) \), och tangentens ekvation får vi via</p>
+      <p> \( \begin{array}{rcl} y-y_0 & = & k(x-x_0) \\ y-2 & = & \dfrac{1}{2}(x-(-1))\\ y & = & \dfrac{1}{2}x+\dfrac{1}{2}+2 \\ y & = & \dfrac{1}{2}x+2\dfrac{1}{2} \\ \end{array} \)</p>
+      <p>Tangentens ekvation är \( y =\dfrac{1}{2}x+2\dfrac{1}{2} \).</p>
+     </div>
+
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <!--<li>Uppgift för Quizlet</li>-->
+
+     <li>Para ihop linjerna så att de är varandras normaler.
+       <p>Välj bland \( y= -3x-3 \), \( y=-2x-1 \), \( y=-\dfrac{1}{3}x+1 \), \( y=x+1 \) och \( y=3x+2 \) och \( y=7x \).</p>
+      <table>
+       <tr class="MaA5"><th>Linje 1</th><th>Linje 2</th></tr>
+       <tr><td></td><td>\( y=-x+4 \)</td></tr>
+       <tr><td></td><td>\( y=\dfrac{1}{2}x-5 \)</td></tr>
+       <tr><td></td><td>\( y=3x+1 \)</td></tr>
+       <tr><td></td><td>\( y=-\dfrac{1}{7}x-4 \)</td></tr>
+       <tr><td></td><td>\( y=\dfrac{1}{3}x \)</td></tr>
+       <tr><td></td><td>\( y=-\dfrac{1}{3}-1 \)</td></tr>
+      </table>
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="1">
+      <div class="card card-body answer">
+       <table>
+        <tr class="MaA5"><th>Linje 1</th><th>Linje 2</th></tr>
+        <tr><td>\( y=x+1 \)</td><td>\( y=-x+4 \)</td></tr>
+        <tr><td>\( y=-2x-1 \)</td><td>\( y=\dfrac{1}{2}x-5 \)</td></tr>
+        <tr><td>\( y=-\dfrac{1}{3}x+1 \)</td><td>\( y=3x+1 \)</td></tr>
+        <tr><td>\( y=7x \)</td><td>\( y=-\dfrac{1}{7}x-4 \)</td></tr>
+        <tr><td>\( y= -3x-3 \)</td><td>\( y=\dfrac{1}{3}x \)</td></tr>
+        <tr><td>\( y=3x+2 \)</td><td>\( y=-\dfrac{1}{3}-1 \)</td></tr>
+       </table>
+       </div></div>
+     </li>
+
+     <!--<li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2a">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2b">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2c">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+      </ol>
+     </li>-->
+
+     <li>Para ihop rätt linjer så att vinkeln mellan dem är rät.
+       <p>Välj bland \( -2x+y+1=0 \), \( -x+y-1=0 \), \( x-2y-2=0 \) och \( 2x-y=0 \).</p>
+      <table>
+       <tr class="MaA5"><th>Linje 1</th><th>Linje 2</th></tr>
+       <tr><td></td><td>\( x+y-3=0 \)</td></tr>
+       <tr><td></td><td>\( 2x+y-1=0 \)</td></tr>
+       <tr><td></td><td>\( x-2y+6=0 \)</td></tr>
+       <tr><td></td><td>\( x+2y=14 \)</td></tr>
+      </table>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer">
+        <table>
+         <tr class="MaA5"><th>Linje 1</th><th>Linje 2</th></tr>
+         <tr><td>\( -x+y-1=0 \)</td><td>\( x+y-3=0 \)</td></tr>
+         <tr><td>\( x-2y-2=0 \)</td><td>\( 2x+y-1=0 \)</td></tr>
+         <tr><td>\( -2x+y+1=0 \)</td><td>\( x-2y+6=0 \)</td></tr>
+         <tr><td>\( 2x-y=0 \)</td><td>\( x+2y=14 \)</td></tr>
+        </table>
+        </div></div>
+     </li>
+
+
+     <li>En linje går genom punkten \( (-1,2) \) och är vinkelrät mot följande linjer. Bestäm ekvationen för linjen.
+      <ol>
+       <li>\( 2x-6y+7=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3.5a">
+       <div class="card card-body answer"><p>Linjens ekvation är \( y = \dfrac{1}{3}x+\dfrac{7}{6} \).</p>
+         <p>Den sökta linjens riktningskoefficent är \( -3 \) och den går genom punkten \( (-1,2) \).</p>
+         <p>En linjens ekvation är \( y-y_0=k(x-x_0) \). Den sökta linjens ekvation är \( y = -3x -1 \).</p>
+       </div></div> </li>
+       <li>\( 2y-5=0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3.5b">
+       <div class="card card-body answer"><p>Linjens ekvation är \( y = +\dfrac{5}{2} \). Den här linjen är vågrät.</p>
+         <p>Den sökta är lodrät och går genom punkten \( (-1,2) \).</p>
+         <p>Den sökta linjens ekvation är \( x = -1 \).</p> 
+       </div></div> </li>
+      </ol>
+     </li>
+
+     <li>Bestäm ekvationen för normalen till linjen \( y=3x-5 \) som går genom punkten \( (-2,3) \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>Den linje som är vinkelrät mot \( y=3x-5 \) har riktningskoefficienten \( -\dfrac{1}{3} \). En linjens ekvation ser ut som \( y-y_0=k(x-x_0) \). Vilket ger oss normalen som \( y-3=-\dfrac{1}{3}(x+2) \) som vi skriver som \( y=-\dfrac{1}{3}x+2\dfrac{1}{3} \).</p> </div></div>
+     </li>
+
+     <!--<li>Uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5">
+       <div class="card card-body answer"> Lösningen </div></div>
+     </li>-->
+
+     <li><i class="fas fa-shapes fa-2x level"></i>Bestäm tangenten för cirkeln \( x^2+y^2=10 \) i punkten \( (3,1) \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>Cirkelns mittpunkt är \( (0,0) \). Linjen mellan \( (0,0) \) och \( (3,1) \) är \( y=\dfrac{1}{3}x \).</p>
+       <p>Betyder att tangentens riktningskoefficient har värdet \( -3 \) och den går genom punkten \( (3,1) \).</p>
+       <p>Linjens ekvaiton är \( y-y_0=k(x-x_0) \) och tangenten är \( y-1=-3(x-3) \) som är \( y=-3x+10 \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-shapes fa-2x level"></i>För vilka värden på \( k \) är linjerna \( x+ky=1 \) och \( (k+1)x-2y+4=0 \) ortogonala?
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer"> <p>Vi skriver linjerna som \( y=-\dfrac{x}{k}+\dfrac{1}{k} \) och \( y=\dfrac{(k+1)}{2}x+2 \). För att linjerna skall var vinkelräta så skall produkten av riktningskoefficienterna värdet \( -1 \).</p>
+        <p>Alltså \( \dfrac{-1}{k}\cdot\dfrac{k+1}{2}=-1 \) som har lösningen \( k=1 \).</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>En triangels hörnpunkter är \( (-4,1) \), \( (2,-1) \) och \( (3,2) \). Visa att triangeln är rätvinklig.
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8">
+       <div class="card card-body answer"> <p>Skissa triangeln. Bestäm linjerna för triangeln och visa att två av sidorna är ortogonala.</p> </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Visa att tangenterna för cirklen \( x^2 + y^2 +2x -4y -5 = 0 \) som går genom punkterna \( (-4,1) \) och \( (-2,5) \) är vinkelräta mot varandra.
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer"><p>Eftersom tangenterna är på cirkeln bildar vi tangenternas ekvation med hjälp av periferipunkten och cirkelns mittpunkt.</p>
+         <p>Linjerna från mittpunkten till periferipunkterna är \( y = \dfrac{1}{3}x + \dfrac{7}{3} \) och \( y = -3x-1 \).</p>
+         <p>Eftersom tangenterna är vinkelräta till dessa linjer får vi tangenternas riktningskoefficienter. Dessutom går tangenterna igenom periferipunkterna.</p>
+         <p>Tangenternas ekvationer är \( y = \dfrac{1}{3}x + \dfrac{17}{3} \) och \( y = -3x-11 \).</p>
+         <p>Eftersom produkten av tangenternas riktningskoefficienter har värdet \( -1 \) är tangenterna vinkelräta.</p>
+        </div></div>
+     </li>
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Bestäm tangenten för cirkeln \( x^2+y^2+4x+6y+8=0 \) som går genom punkten \( (-3,-5) \).
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
+       <div class="card card-body answer"> <p>Mittpunkten för cirkeln är \( (-2,-3) \). Vi ger tangeringspunkten koordinaterna \( (a,b) \). Det betyder att linjen genom mittpunkten och tangeringspunkten har ekvationen \( y+3=\dfrac{b+3}{a+2}(x+2) \).</p>
+       <p>Linjen som går genom \( (-3,-5) \) och \( (a,b) \) ser ut som \( y+5=\dfrac{b+5}{a+3}(x+3) \). Vi söker de gemensamma punkterna genom att lösa ekvationssystemet</p>
+       <p>\( \left\{ \begin{array}{l} y+3=\dfrac{b+3}{a+2}(x+2)\\ y+5=\dfrac{b+5}{a+3}(x+3)\\ \end{array} \right. \)</p>
+       <p>Från ekvationssystemet löser vi ut \( a \) och \( b \).</p>
+       <p>Insättning i \( y+5=\dfrac{b+5}{a+3}(x+3) \) ger tangenten \( y=-\dfrac{1}{2}x-6\dfrac{1}{2} \).</p> </div></div>
+     </li>
+
+
+
+     <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="11">
+       <div class="card card-body answer"> Lösningen </div></div>
+     </li>
+
+     <li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5a">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5b">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5c">
+       <div class="card card-body answer">Lösningen </div></div> </li>
+      </ol>
+     </li>
+    -->
+
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaA5">
+   <a href="13_skarningcirkellinje.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="15_vinkeln.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

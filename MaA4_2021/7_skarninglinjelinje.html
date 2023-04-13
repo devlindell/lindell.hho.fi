@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>12. Skärningspunkter för linje och linje</title>
+
+  </head>
+  <body>
+    <header class="MaA5">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatsystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_avstand.html">4. Avstånd i koordinatsystem</a>
+            <a class="dropdown-item" href="5_mittpunkt.html">5. Mittpunkt för linjer</a>
+            <a class="dropdown-item" href="6_punktmangder.html">6. Punktmängder</a>
+            <a class="dropdown-item" href="7_riktningskoeff.html">7. Riktningskoefficient för en linje</a>
+            <a class="dropdown-item" href="8_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="9_linjensekvation.html">9. Linjens ekvation</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="12_skarninglinjelinje.html">12. Skärningspunkt mellan två linjer</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunk mellan cirkel och linje</a>
+            <a class="dropdown-item" href="14_ortogonalitet.html">14. Ortogonalitet</a>
+            <a class="dropdown-item" href="15_vinkeln.html">15. Vinkeln mellan två linjer</a>
+            <a class="dropdown-item" href="16_avstandpunktlinje.html">16. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="17_parabeln.html">17. Parabeln</a>
+            <a class="dropdown-item" href="18_repetition.html">18. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="11_cirkelnekvationen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 5 Analytisk geometri</h3>
+      <a href="13_skarningcirkellinje.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>12. Skärningspunkter för linje och linje</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Bestäm skärningspunkterna för \( y=2x-1 \) och \( y=-x+5 \).</p>
+          <p>För att hitta skärningspunkten bildar vi ett ekvationssystem.</p>
+          <p>\( \left\{
+            \begin{array}{rcl}
+            y & = &  2x-1 \\
+            y & = & -x+5 \\
+            \end{array}
+            \right. \)</p>
+            <p>Vi löser ekvationssystem antingen genom additionsmetoden eller substitutionsmetoden.</p>
+            <table>
+               <tr class="MaA5"><th>Additionsmetoden</th><th>Substitutionsmetoden</th></tr>
+                <tr><td><img src="pics/12-1a.png" alt="" class="responsivepic300" /></td><td><img class="responsivepic300" src="pics/12-1b.png" alt="" /></td></tr>
+                <tr><td>\( y=-x+5 \) ger att \( x=-y+5 = -3+5 =2 \).</td>
+                <td>Och \( y \) får vi via \( y=-x+5 = -2+5= 3 \).</td>
+              </tr>
+             </table>
+          <p>Skärningspunkten är \( (2,3) \).</p>
+          </div>
+          <p>Det är ingen skillnad vilken metod man använder för att lösa ett ekvationssystem. Det som du skall se till är att du är bekant med bägge lösningsmetoder. Bägge har sina för och nackdelar och utgående från vad som man vill räkna lönar det sig att välja metod.</p>
+          <p>I fall där ekvationssystemet är en del av en större uppgift, tex inom fysik och kemi, lönar det sig att lösa ekvationssystemet på räknaren.</p>
+          <div class="exercise box">
+            <strong>Exempel 1</strong> Bestäm skärningspunkten för \( y=x-2 \) och \( y=x+1 \).
+            <h4>Lösning</h4>
+            <p>\( \left\{ \begin{array}{rcl} y  &  =  &  x-2 \\ y  &  =  &  x+1 \\ \end{array} \right. \)</p>
+            <p>\( \begin{array}{rcl} x-2  & = &  x+1 \\ 0x  &  =  &  3\\ \end{array} \)</p>
+            <p>\( 0x=3 \) uppfylls aldrig. Linjerna saknar gemensamma punkter. Tittar vi närmare på linjerna märker vi att de har samma riktningskoefficient, så de är parallella.</p>
+          </div>
+          <div class="exercise box">
+            <strong>Exempel 2</strong> Bestäm skärningspunkten för \( y=x-2 \) och \( 3y=3x-6 \).
+            <h4>Lösning</h4>
+            <p>\( \left\{ \begin{array}{rcll} y  & = & x-2 \\ 3y  & = & 3x-6  & \mid /3\\ \end{array} \right. \)</p>
+            <p>alltså</p>
+            <p>\( \left\{ \begin{array}{rcll} y  & = & x-2 \\ y  & = & x-2 \\ \end{array} \right. \)</p>
+            <p>som ger</p>
+            <p>\( \begin{array}{rcl} \hline 0  &  =  &  0 \\ \end{array} \)
+              \( 0=0 \) uppfylls alltid så \( x\in \mathbb{R} \) och \( y=x-2 \) uppfyller ekvationen.</p>
+            <p>Vi har oändligt med rötter.</p>
+            </div>
+            <div class="exercise box">
+              <strong>Exempel 3</strong> Lös ekvationssystemet
+              <p>\( \left\{ \begin{array}{rcll} 2a + b - c  &  =  &  -1 \\ a +5b+2c  &  =  &  0\\ a+b+c  &  =  & 2 \\ \end{array} \right. \)</p>
+              <h4>Lösning</h4>
+              <p>Vi börjar med att namnge raderna.</p>
+              <p>\( \left\{ \begin{array}{rcll} 2a + b - c  &  =  &  -1  &  (1.)\\ a +5b+2c  &  =  &  0  &  (2.)\\ a+b+c  &  =  & 2  & (3.)\\ \end{array} \right. \)</p>
+              <p>Vi kombinerar (1.) och (3.) och får:</p>
+              <p>\( \left\{ \begin{array}{rcl} 2a+b-c & = & -1 \\ a+b+c  &  =  &  2 \\ \end{array} \right. \)</p>
+              <p>som blir</p>
+              <p>\( \begin{array}{rcll} \hline 3a+2b  & = &  1  &  (4.) \\ \end{array} \)</p>
+              <p>När vi multiplicerar (3.) med -2 och kombinerar (2.) och (3.) får vi</p>
+              <p>\( \left\{ \begin{array}{rcl} a+5b+2c  &  =  &  0 \\ -2a-2b-2c  &  =  &  -4 \\ \end{array} \right. \)</p>
+              <p>\( \begin{array}{rcll} -a+3b=-4  &  (5.) \\ \end{array} \)</p>
+              <p>Vi kombinerar (4.) och (5.).</p>
+              <p>\( \left\{ \begin{array}{rcll} 3a+2b  &  =  & 1 \\ -a+3b  &  =  & -4  & \mid \cdot 3\\ \end{array} \right. \)</p>
+              <p>\( \left\{ \begin{array}{rcl} 3a+2b  &  =  & 1 \\ -3a+9b  &  =  & -12 \\ \end{array} \right. \)</p>
+              <p>\( \begin{array}{rcl} \hline 11b  & = & -11 \\ b  &  = &  -1 \\ \end{array} \)</p>
+              <p>Från raden där vi kombinerar (1.) och (2.) får vi att \( 3a=1-2b \) så att \( a=\dfrac{1-2b}{3}=\dfrac{1-2(-1)}{3}=1 \). Och \( c \) får vi lätt från \( a+b+c=2 \) så att \( c=2-a-b=2-1-(-1)=2 \).</p>
+              <p>Vi har alltså \( a=1 \), \( b=-1 \) och \( c=2 \).</p>
+            </div>
+            <div class="exercise box">
+              <strong>Exempel 4</strong> På en bondgård finns det kor och hönor. Totalt finns det 50 huvuden och 150 ben. Hur många djur finns det av varje sort?
+              <h4>Lösning</h4>
+              <p>Vi bildar ett ekvationssystem, \( k \) för kor, \( h \) för hönor. Vi vet att \( k+h=50 \) och att \( 4k+2h=150 \). Vi ställer upp det som ett ekvationssystem.</p>
+              <p>\( \left\{ \begin{array}{rcll} k+h  &  =  &  50  &  \mid \cdot (-2)\\
+                4k+2h  &  =  &  150 \\ \end{array} \right. \)</p>
+              <p>\( \begin{array}{rcl} \hline 2k &  =  & 50 \\
+                k  &  =  &  25 \\
+                \end{array} \)</p>
+              <p>Antalet hönor från vi via \( k+h=50 \), \( h=50-k = 50 - 25 = 25 \).</p>
+              <p>Antal kor är 25 st och hönor 25 st.</p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Hur skiljer sig additionsmetoden från substitutionsmetoden? Vilka fördelar har bägge lösningsmetoder?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+            <div class="card card-body answer"><p>Additionsmetoden grundar sig på att man adderar ihop ekvationerna så att man klarar av att eliminera en variabel.</p>
+            <p>I substitionsmetoden så sätter vi in den ena ekvationen in i den andra.</p>
+          <p>Subsitutionsmetoden är bra då man tex skall hitta skärningspunter för funktioner. Additionsmetoden används i de datorprogrammen som löser ekvationer.</p></div></div>
+          </li>
+
+          <li>Bestäm skärningspunkterna för linjerna genom att utnyttja dig av additionsmetoden eller substitutionsmetoden.
+            <ol>
+              <li>\( y=3x-1 \) och \( y=-x+3 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Eftersom vi har \( y = \ldots \) och \( y = \ldots \) lönar det sig att jobba med substitutionsmetoden.</p>
+                <p>Vi får att \(  3x-1=-x+3 \). Jobba vidare från det. </p>
+                <p>Skärningspunkten är (1,2).</p></div></div> </li>
+              <li>\( y=3x-1 \) och \( y=2x-2 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Eftersom vi har \( y = \ldots \) och \( y = \ldots \) lönar det sig att jobba med substitutionsmetoden.</p>
+                <p>Vi får att \(  3x-1=-2x-2 \). Jobba vidare från det.</p>
+                <p>Skärningspunkten är (-1,-4).</p></div></div> </li>
+              <li>\( 2y=x+4 \) och \( y=-x-1 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Här har vi \( x \) och \( -x \). Använder vi oss av additionsmetoden blir vi kvitt \( x \):na. </p>
+                <p>Vi får att \(  3y=3 \). Jobba vidare från det.</p>
+                <p>Skärningspunkten är (-2,1).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm skärningspunkterna för linjerna.
+            <ol>
+              <li>\( -3x+y+1 =0 \) och \( x+y+1=0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Genom att uttrycka bägge ekvationer som \( y=\ldots \) får vi \( y=3x-1 \) och \( y=-x-1 \). Via substitutionsmetoden kommer vi lätt åt skärningspunkten (0,-1). </p> </div></div> </li>
+              <li>\( y=-x+3 \) och \( 2x+2y -4= 0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Genom subsitution får vi \( 2x+2(-x+3)=0 \). Arbetar vi från det får vi att dessa ekvationer saknar skärningspunkt. Linjerna är parallella. (Samma kan vi konstatera genom att skriva bägge ekvationer som \( y=\ldots \).)</p> </div></div> </li>
+              <li>\( -2x+y+1=0 \) och \( y=5 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Substitutionsmetoden ger \( -2x+5+1=0 \). Då vi jobbar vidare från det får vi skärningspunkten (3,5).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Biljettpriset för en vuxen var 5 € för vuxna och 2 € för barn till en konsert. Totalt var det 68 personer på plats och biljettintäkterna var 226 €. Hur många barn och vuxna var det på konserten?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Då \( a \) är antal barn och \( b \) är antal vuxna får vi ekvationerna att se ut som \( a+b=68 \) och \( 2a+5b=226 \).</p> <p>Ekvationssystemet har lösningen \( a=38 \) och \( b=30 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>På en karta avgränsas en skog av \(x\)-axeln och linjerna \( y = \dfrac{4}{3}x + 8 \) och \( y = -2x+5 \). Bestäm arean av skogen då en ruta i koordinatsystemet motsvaras av 200 m. Svara som hektar.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Skärningsupunkten för linjerna är \( (-\dfrac{9}{10} , \dfrac{34}{5}) \). Se till att du löser detta.</p>
+              <p>Höjden av triangeln är \( \dfrac{34}{5} \).</p>
+              <p>Basens längd är avståndet mellan linjernas nollställen, \( -6 \) och \( \dfrac{5}{2} \). Längden är \( \dfrac{17}{2} \).</p>
+              <p>Eftersom \( 1 \text{ ha } = 100 \text{ m } \cdot 100 \text{ m } \) är arean direkt som ha \( A = \dfrac{1}{2}bh = \dfrac{1}{2} 2\cdot \dfrac{17}{2} \cdot 2 \cdot \dfrac{34}{5} = \dfrac{578}{5} = 115,6 \) ha.</p>
+              <p>Alltså 116 ha.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationssystemet<p>\( \left\{   \begin{array}{rcl}   \dfrac{a}{4} +\dfrac{b}{3}  &  =  &  1 \\   \dfrac{a}{8} -\dfrac{b}{2}  &  = 1 \\    \end{array}   \right. \)</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Då vi fixar bort nämnarna får vi</p>
+              <p>\( \left\{   \begin{array}{rcl}   3a +4b  &  =  &  12 \\   a  -4b  &  = 8 \\    \end{array}   \right. \). </p>
+              <p>Sedan får vi \( a= 5, b=-\dfrac{3}{4} \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm längden av sidorna för triangeln som bildas innanför linjerna \( y=-2x-2 \), \( y=\dfrac{1}{2}x+\dfrac{1}{2} \) och \( y=2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Situationen är följande</p><p><img src="pics/12_4.png" alt="" class="responsivepic400" /></p><p>Skärningspunkterna är \( (-2,2) \), \( (3,2) \) och \( (-1,0) \).</p><p>Då vi bestämmer avståndet mellan två punkter, \( \sqrt{(x_1-x_2)^2+(y_1-y_2)^2} \) så får vi avstånden \( \sqrt{5} \), \( 2\sqrt{5} \) och \( 5 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För två telefonabonnemang gäller följande:
+            <table>
+              <tr class="MaA5"><th></th><th>Abonnemang A</th><th>Abonnemang B</th></tr>
+              <tr><td>Grundpris per månad (€)</td><td>4,99</td><td>2,50</td></tr>
+              <tr><td>Pris per minut för samtal (€/min)</td><td>0,07</td><td>0,09</td></tr>
+            </table>
+            <ol>
+              <li>Bilda funktioner som beskriver det total priset för abonnemang A och B då man talar \( x \) minuter.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"> <p>För A: \( y=0,07x+4,99 \) och för B: \( y=0,09x+2,50 \).</p> </div></div></li>
+              <li>Vid vilken minutmängd är kostar det lika mycket att tala oberoende av abonnemang.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"> <p>Lös ekvationssystemet av bägge ekvationerna. Vid 124,5 minuter.</p> </div></div></li>
+              <li>Hur mycket kostar det då?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8c">
+              <div class="card card-body answer"> <p>13,70 €. Det värde som y får.</p> </div></div></li>
+              </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationssystemet<p>\( \left\{  \begin{array}{rcl}  4x+2y+z & = & 1 \\  \dfrac{1}{3}x -\dfrac{2}{3}y+z & = & 0\\  3x+2y+z & = & 0\\  \end{array}  \right. \).</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lös ut från någon av ekvationerna, tex \( z \) och ersätt i de två andra \( z \) med det uttrycket. Vi får \( x=1 \), \( y=-1 \) och \( z=-1 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lös ekvationssystemet<p>\( \left\{  \begin{array}{rcl}  3a  &  =  &  b+c \\  2a-3b  & = & -2-c \\  b-a  &  =  &  1 \\  \end{array}  \right. \)
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lös ut från någon av ekvationerna, tex \( b \) och ersätt i de två andra \( b \) med det uttrycket. Vi får \( a=2 \), \( b=3 \) och \( c=3 \).</p> </div></div>
+          </li>
+
+          <li>0<sup>o</sup> Celcius motsvaras på Fahrenheitskalan av temperaturen 32 och vattnets kokpunkt motsvaras av 212 Fahrenheit. För bägge temperaturskalor gäller att de är linjära.
+            <ol>
+              <li>Bilda en funktion som med vars hjälp förvandlar temperaturen i Fahrenheit till en temperatur i Celcius. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10.5a">
+              <div class="card card-body answer"><p>Eftersom sambande är linjärt skall linjen gå genom punkterna \( (32,0) \) och \( (212,100) \).</p>
+              <p>Vi får följande ekvationer, \( 0 = k \cdot 32 + b \) och  \( 100 = k \cdot 212 + b \).</p>
+                <p>Vi får lösningarna \( k = \dfrac{5}{9} \) och \( b = -\dfrac{160}{9} \).</p>
+                <p>Funktionen är \( f(x) = \dfrac{5}{9}x -\dfrac{160}{9} \).</p>
+              </div></div> </li>
+              <li>Ray Bradburys roman Fahrenheit 451 har fått sin titel efter pappers brännpunkt. Hur många grader Celcius är pappers brännpunkt?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10.5b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p> \( \dfrac{5}{9}\cdot 451 -\dfrac{160}{9} = 232,77\ldots \).</p>
+              <p>Alltså 233<sup>o</sup>C.</p>
+              </div></div> </li>
+              <li>Hur många Fahtenheit motsvaras av temperaturen -25<sup>o</sup>C? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10.5c">
+              <div class="card card-body answer"><p>Vi får ekvationen</p>
+                <p> \( \dfrac{5}{9}\cdot x -\dfrac{160}{9} = -25 \).</p>
+              <p>Alltså -13<sup>o</sup>F.</p>
+            </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För ett polynom av första grad, \( f(x)=ax+b \), vet vi att \( f(2)=-1 \) och att \( f(-1)=5 \). Bestäm värdena på \( a \) och \( b \) genom ett ekvationssystem.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Ekvationssystemet är<p>\( \left\{  \begin{array}{rl}  -1 =  &  a \cdot 2 +b \\  5 =  &  a (-1) +b \\  \end{array}  \right. \)</p><p>Ekvationerna har rötterna \( a=-2 \) och \( b=3 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För vilka värden på \( a \) saknar ekvationssystemet lösningar?
+            <p>\( \left\{  \begin{array}{rcl}  y  &  =  & x-1 \\  y  & =  & ax+a \\  \end{array}  \right. \)</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>För att ekvationssystemet skall sakna lösningar skall linjerna vara parallella. Eftersom den ena linjen har riktningskoefficienten \( 1 \) så måste den andra linjen ha samma riktningskoefficent så att linjerna är parallella.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>För en triangel gäller att mittpunkterna för sidorna har koordinaterna \( (0,5) \), \( (-1,1) \) och \( (2,2) \).Bestäm hörnpunkterna för triangeln.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Vi namnger hörpunkterna med \( (x_1, y_1) \), \( (x_2, y_2) \) och \( (x_3, y_3) \).</p>
+              <p>För mittpunkter gäller \( (\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}) \)</p><p>Vi får ekvationerna \( \dfrac{x_1+x_2}{2}=0, \dfrac{x_2+x_3}{2}=-1 \ldots \) (totalt 6 st ekvationer.)<p>Då vi löser ekvationssystemet med alla ekvationer får vi punkterna \( (-3,4) \), \( (3,6) \) och \( (1,-2) \).</p> </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA5">
+      <a href="11_cirkelnekvationen.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="13_skarningcirkellinje.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
