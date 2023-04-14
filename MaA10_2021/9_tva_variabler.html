@@ -156,7 +156,7 @@
             </ol>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="4">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -178,7 +178,7 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \( f(x,y) = 2-\sqrt{x^2+y^2} \) och \( g(x,y)=x^2+y^2 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -196,11 +196,11 @@
               </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-cogs fa-2x level"></i>Låt \( f(x,y) = x^2 +2y \) och \( g(t) = \sin t \). Bilda, om möjligt, de sammansatta funktionerna \( g(f(x,y)) \) och \( f(g(t)) \) och bestäm de punkter där den sammansatta funktionen får värdet noll.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
@@ -212,11 +212,11 @@
               </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-cogs fa-2x level"></i>Köldindex (WCT), hur kall luften känns då det blåser, kan räknas med formeln \( WCT = 13,12 + 0,6215\cdot T_{\text{luft}} - 13,956\cdot V^{0,16} + 0,4867\cdot T_{\text{luft}}\cdot V^{0,16} \) där \( V \) är vindens hastighet i m/s och \( T \) är temperaturen i grader Celcius.
             <p>Gör en tabell på kalkyleringsprogram varifrån man kan avläsa köldindex beroende på rådande temperatur och vind. Jobba med vindhastigheter mellan 2 m/s och 35 m/s och temperaturer mellan 10<sup>o</sup>C och -40<sup>o</sup>C.</p>
@@ -225,19 +225,33 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Grafen av funktionen \( f(x,y) = 5-3x^2-y^2 \) skärs med planet \( x = 1 \). Rita upp funktionen och planet på GeoGebra. Vilken form har snittytan? Bestäm ekvationen för snittytan.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Figuren ser ut som</p>
+              <p><img src="pics/9-13.png" alt="" class="responsivepic600"></p>
+              <p>Vi har en parabel.</p>
+              <p>Bilda ett ekvationssystem, och sätt in \( x =1 \) i \( f(x,y) \).</p>
+              <p>Kom fram till \( z = 2-y^2 \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <li><i class="fas fa-jedi fa-2x level"></i>Visa att funktionen \( f(x,y) = x^2-3xy+3y^2 \) där \( \mathbf{R} \to \mathbf{R} \) alltid är positiv. Visa också att funktionen får alla icke negativa reella tal.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi kvadratkompletterar funktionen.</p>
+              <p>\( \begin{array}{rcl}
+                 f(x,y) & = & x^2 -3xy +3y^2 \\
+                 & = & x^2 -3xy +(\dfrac{3}{2}y)^2 +3y^2 -(\dfrac{3}{2}y)^2 \\
+                 & = & (x-\dfrac{3}{2}y)^2  +3y^2 -\dfrac{9}{4}y^2 \\
+                 & = & (x-\dfrac{3}{2}y)^2  +\dfrac{3}{4}y^2 \\
+                 \end{array} \)</p>
+                 <p>Eftersom en kvadrat alltid är icke negativ (positiv) är \( f(x,y) \) alltid icke negativ.</p>
+                 <p>Då \( y = 0 \) gäller att \( f(x,y)=x^2 \). Funktionen \( x^2 \) får alla icke negativa reella tal, alltså får \( f(x,y) \) alla icke negativa reella tal.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -255,7 +269,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>
