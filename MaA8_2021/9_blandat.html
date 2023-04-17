@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>9. Blandat</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="8_addition.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="10_betingad.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>9. Blandat</h1>
+      <section>
+        <div class="theory">
+          <p>Sedan tar vi friskt och kombinerar.</p>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Två reella tal, \( x \) och \( y \), bestäms slumpmässigt ur intervallet [0,3].
+            <ol>
+              <li>Bestäm sannolikheten för att \( x+y > 2 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( P(x+y > 2) = 1-P(x+y \leq 2) =1 -\dfrac{\dfrac{1}{2}\cdot 2\cdot 2}{3\cdot 3} =\dfrac{7}{9} = 0,777 \).</p></div></div> </li>
+              <li>Bestäm sannolikheten för att \( x+y > 2 \) och att \( x > y \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( P(x+y > 2 \text{ och } x > y ) = P(x+y > 2) \cdot P(x > y)= \dfrac{7}{9} \cdot \dfrac{8}{16} =\dfrac{7}{18} =0,389 \).</p></div></div> </li>
+              <li>Bestäm sannolikheten för att \( x+y > 2 \) eller att \( x > y \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Den gemensamma arean är då \( x +y > 2 \) och då \( x > y \). \( P(x+y > 2 \text{ eller } x > y ) = P(x+y > 2) + P(x > y)= \dfrac{7}{9} + \dfrac{7}{18} - \dfrac{\dfrac{1}{2}\cdot 2 \cdot 3}{16} = 0,979\ldots \).</p></div></div> </li>
+              <li>Bestäm sannolikheten för att varken \( x+y > 2 \) eller att \( x > y \) gäller. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>Vi har det motsatta, komplementet till c).</p>
+                <p>\( P(\text{Varken }x+y > 2 \text{ eller } x > y ) = 1-(P(x+y > 2) +P(x > y))=  \\ 1-(\dfrac{7}{9} + \dfrac{7}{18}-\dfrac{3}{16}) = 1-0,979\ldots = 0,031\ldots \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm sannolikheten för följande pokerhänder. Vi drar 5 st kort utan att lägga tillbaka dem i packen.
+            <ol>
+              <li>fullt hus, 3 kort av samma valör och 2 av samma valör. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( \dfrac{52\cdot 3\cdot 2 \cdot 48\cdot 3}{52\cdot 51 \cdot 50 \cdot 49 \cdot 48} = 0,000144058 \)</p></div></div> </li>
+              <li>par, två kort av samma valör och resten skall inte vara lika. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>\( \dfrac{52\cdot 3 \cdot 48 \cdot 44 \cdot 40}{52\cdot 51 \cdot 50 \cdot 49 \cdot 48} = 0,042256903 \)</p></div></div> </li>
+              <li>triss, tre kort av samma valör och resten skall inte ha samma valör som de tre första.
+                <p>Observera att det fjärde och femte kortet måste ha olika valör. Annars får du Fullt hus.</p> <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Sannolikheten är \( \dfrac{52 \cdot 3 \cdot 2 \cdot 48 \cdot 44}{52 \cdot 51 \cdot 50 \cdot 49\cdot 48} = 0,002112845 \)</p></div></div> </li>
+              <li>varken fullt hus, par eller triss. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Vi arbetar via kompementet: \( 1-(0,000144058 +  0,042256903 + 0,002112845) = 0,955486194 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Vilka uträkningar beskriver "Ur en kortpacke dras ett kort som är hjärter och kortets valör är mindre än 7?"
+            <table><tr class="MaA10"><th>Påstående</th><th>Ja </th><th>Nej </th></tr>
+              <tr><td>\( \dfrac{1}{4}+ \dfrac{6}{13} \) </td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{4}\cdot \dfrac{6}{13} \) </td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{{4\choose 1}}{52} \) </td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{1}{4}\cdot \dfrac{6}{13} \) </td><td></td><td></td></tr>
+              <tr><td>\( \dfrac{6}{52} \) </td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>
+                <table><tr class="MaA10"><th>Påstående</th><th>Ja </th><th>Nej </th></tr>
+                  <tr><td>\( \dfrac{1}{4}+ \dfrac{6}{13} \) </td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \dfrac{1}{4}\cdot \dfrac{6}{13} \) </td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>\( \dfrac{{4\choose 1}}{52} \) </td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \dfrac{1}{4}\cdot \dfrac{6}{13} \) </td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>\( \dfrac{6}{52} \) </td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I Barnlotto ska en deltagare kryssa för tre rutor i rutfältet nedan. Den rätta rad som erhålls vid dragningen består av tre siffror.
+            <table>
+
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+
+            </table>
+            <p>Beräkna sannolikheterna för att en deltagare skall få</p>
+            <ol>
+              <li>noll, <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Vi får \( P(\text{noll})=\dfrac{{3 \choose 0}{7 \choose 3}}{{10\choose 3}}=\dfrac{7}{24} = 0,292 \).</p></div></div> </li>
+              <li>en, <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi får \( P(\text{en})=\dfrac{{3 \choose 1}{7 \choose 2}}{{10\choose 3}}=\dfrac{21}{40} = 0,525 \).</p></div></div> </li>
+              <li>två, <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{två})=\dfrac{{3 \choose 2}{7 \choose 1}}{{10\choose 3}}=\dfrac{7}{40} = 0,175 \).</p></div></div> </li>
+              <li>och tre rätt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6d">
+              <div class="card card-body answer"><p>Vi får \( P(\text{tre})=\dfrac{{3 \choose 3}{7 \choose 0}}{{10\choose 3}}=\dfrac{1}{120} = 0,008 \).</p></div></div> </li>
+              <li>Hur stor är summan av dessa sannolikheter? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6e">
+              <div class="card card-body answer"><p>Summan är \( \dfrac{7}{24} + \dfrac{21}{40}+\dfrac{7}{40}+\dfrac{1}{120}=1 \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Uppgift med namn. Kolla popnamn på personer födda på 00-talet.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Under processen av massproducerade tallrikar från 12 % ett litet färgfel och 7 % ett litet formfel. Hurdant fel tallrikarna får är oberoende av varandra. Tallrikar som har ett fel säljs som B-kvalitet. Sådana med bägge fel kasseras, förstörs. För en felfri tallrik får man 10 € vinst och för en tallrik med B-kvalitet 6 € vinst. En kasserad tallrik orsakar en förlust om 15 €. Bestäm väntevärdet för en tallrik.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Sannolikheten att en tallrik är felfri är \( 1 - (0,12 + 0,07 ) = 0,81 \).</p>
+              <p>Sannolikheten att vi har en tallrik som klassas som B-kvalitet är \( 0,12 + 0,07 - 0,12\cdot 0,07 = 0,1816 \).</p>
+              <p>Sannolikheten att vi har en tallrik som kasseras är \( 0,12 \cdot 0,07 = 0,0084 \).</p>
+              <p>Adderar vi ihop sannolikheterna får vi 1.</p>
+              <p>Väntevärdet är \( E(X) = 0,81 \cdot 10 \text{ € } + 0,1816 \cdot 6 \text{ € } - 0,0084 \cdot 15 \text{ €} = 9,0636 \) €.</p>
+              <p>Alltså 9,06 € per tallrik.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bland två identiska mynt är det ena balanserat så då man singlar myntet ger det krona med sannoliheten 0,60. En spelare tar en av mynten och singar det 3 gånger. Bestäm sannolikheten att hen får 3 gånger krona på raden.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi får \( 0,50 \cdot 0,50^3 + 0,50 \cdot 0,60^3 = 0,1705 \approx 0,17 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="8_addition.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="10_betingad.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

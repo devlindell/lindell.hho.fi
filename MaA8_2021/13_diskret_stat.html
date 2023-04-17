@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>13. Diskret statistik</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="12_upprepat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="14_kont_stat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>13. Diskret statistik</h1>
+      <section>
+        <div class="theory">
+          <p>Statistik delas in i diskret och kontinuerlig statistik. Diskret statistik är det som du är bekant med från högstadiet mellan kontinuerlig statistik behandlar bland annat normalfördelningen. Vi börjar med diskret statistik och fortsätter med kontinuerligt statistik.</p>
+          <div class="intro box">
+            <p>Anna och Bertil jämför sina vitord i långa matematiken.</p>
+            <table>
+                <tr class="MaA10"><th></th><th>MaG</th><th>MaA 2</th><th>MaA 3</th><th>MaA 4</th><th>MaA 5</th><th>MaA 6</th><th>MaA 7</th><th>MaA 8</th><th>MaA9</th><th>MaA10</td></tr>
+                <tr><th>Anna</th><td>9</td><td>9</td><td>8</td><td>8</td><td>7</td><td>8</td><td>8</td><td>9</td><td>7</td><td>7</td></tr>
+                <tr><th>Bertil</th><td>9</td><td>7</td><td>9</td><td>7</td><td>7</td><td>7</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            </table>
+              <p>Vi bestämmer medeltalet för deras vitsord på ett par olika sätt. Först gör vi det normalt genom att \( \dfrac{\textrm{totala summan}}{\textrm{totala antalet}} \).</p>
+              <p>För Anna gäller \( \dfrac{9+9+8+8+7+8+8+9+7+7}{10} = 8,0 \) och för Bertil gäller \( \dfrac{9+7+9+7+7+7+7+7+8+9+10}{10}=8,0 \).</p>
+              <p>Vi kan också bestämma medelvärden genom att först göra upp en tabell.</p>
+            </div>
+              <table>
+                  <tr class="MaA10"><th>Vitsord</th><th>Anna</th><th>Bertil</th></tr>
+                  <tr><td>10</td><td></td><td>1</td></tr>
+                  <tr><td>9</td><td>3</td><td>3</td></tr>
+                  <tr><td>8</td><td>4</td><td>1</td></tr>
+                  <tr><td>7</td><td>3</td><td>5</td></tr>
+              </table>
+              <p>Vill vi utgående från detta bestämma Annas medeltal går det nu lättare \( \dfrac{3\cdot 9+4\cdot 8 + 3\cdot 6}{10} = 8,0 \).</p>
+              <p>Från detta kan vi bilda en tabell över relativ frekvens. Den relativa frekvensen för Bertils 10:a är \( 1/10 = 0,10 = 10 \% \).</p>
+              <table>
+                  <tr class="MaA10"><th>Vitsord</th><th>Anna</th><th>Bertil</th></tr>
+                  <tr><td>10</td><td></td><td>10 %</td></tr>
+                  <tr><td>9</td><td>30 %</td><td>30 %</td></tr>
+                  <tr><td>8</td><td>40 %</td><td>10 %</td></tr>
+                  <tr><td>7</td><td>30 %</td><td>50 %</td></tr>
+              </table>
+              <p>Vill vi bestämma Annas medeltal utgående från den relativa frekvensen gör vi som följande \( \dfrac{30 \cdot 9+40\cdot 8 +30\cdot 7}{100} = 8,0 \).</p>
+              <p>Vill vi rita grafer över deras vitsord kan vi göra som följande.</p>
+              <div class="video">
+                <iframe src="https://player.vimeo.com/video/371195369" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+              <p>Anna och Bertil har bägge medeltalet 8,0 men när vi jämför typvärdet, det vitsord de har fått flest gånger, märker vi att Annas typvärde är 8 medan Betils är 7.</p>
+              <p>För att beakta spridningar av vitsord använder vi oss i statistiken av varians och standardavvikelse.</p>
+              <p>Vi börjar med att jämföra hur mycket kursvitsorden skiljer sig från medeltalet.</p>
+              <table>
+                  <tr class="MaA10"><td></th><th>MaG</th><th>MaA 2</th><th>MaA 3</th><th>MaA 4</th><th>MaA 5</th><th>MaA 6</th><th>MaA 7</th><th>MaA 8</th><th>MaA 9</th><th>MaG0</td></tr>
+                  <tr><th>Anna</th><td>1</td><td>1</td><td>0</td><td>0</td><td>-1</td><td>0</td><td>0</td><td>1</td><td>-1</td><td>-1</td></tr>
+                  <tr><th>Bertil</th><td>1</td><td>-1</td><td>1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>0</td><td>1</td><td>2</td></tr>
+              </table>
+              <p>Variansen är ett mått över medeltalet av kvadraten över mätvärdenas avstånd till medeltalet.</p>
+              <p>Vi bestämmer varianserna för Anna och Bertil.</p>
+              <p>Anna: \( \dfrac{1^2+1^2+0^2+(-1)^2+0^2+0^2+1^2+(-1)^2+(-1)^2}{10} = 0,60 \).</p>
+              <p>Bertil: \( \dfrac{1^2+(-1)^2+1^2+(-1)^2+(-1)^2+(-1)^2+(-1)^2+0^2+1^1+2^2}{10} = 1,20 \).</p>
+              <p>För att bestämma standardavvikelsen tar vi roten ur variansen.</p>
+              <p>Standardavvikelsen för Annas vitsord är \( \sqrt{0,60} = 0,77 \) och för Bertil \( \sqrt{1,20} = 1,10 \).</p>
+              <p>Eftersom Bertils vitsord har en större spridning har standardavvikelsen ett större värde. Något som vi märkte då vi ritade vitsorden som grafer.</p>
+              <div class="exercise box">
+                <p><strong>Exempel 1</strong> Rita och analysera vitsorden för Annas och Bertils vitsord på GeoGebra.</p>
+                <div class="video">
+                  <iframe src="https://player.vimeo.com/video/475521863" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Cecilias vitsord i matematiken ser ut som
+            <p><table>
+              <tr class="MaA10"><th>MaG</th><th>MaA 2</th><th>MaA 3</th><th>MaA 4</th><th>MaA 5</th><th>MaA 6</th><th>MaA 7</th><th>MaA 8</th><th>MaA 9</th><th>MaA 10</td></tr>
+              <tr><td>8</td><td>7</td><td>7</td><td>6</td><td>5</td><td>6</td><td>7</td><td>7</td><td>7</td><td>8</td></tr>
+            </table></p>
+            <ol>
+              <li>Bestäm medeltalet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>6,8</p></div></div> </li>
+              <li>Bestäm standardavvikelsen <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>0,87</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>När skostorlekarna undersöktes i en undervisningsgrupp fick man följande resultat:
+            <p>
+              <table>
+                <tr class="MaA10"><th>Storlek</th><th>Antal</th></tr>
+                <tr><td>37</td><td>5</td></tr>
+                <tr><td>38</td><td>7</td></tr>
+                <tr><td>39</td><td>7</td></tr>
+                <tr><td>40</td><td>3</td></tr>
+                <tr><td>41</td><td>4</td></tr>
+                <tr><td>42</td><td>8</td></tr>
+                <tr><td>43</td><td>5</td></tr>
+              </table>
+            </p>
+            <ol>
+              <li>Bestäm antalets relativa frekvens. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>
+                <table>
+                     		<tr class="MaA10"><th>Storlek</th><th>Relativ frekvens (som hela procent)</th></tr>
+                        <tr><td>37</td><td> 13   </td></tr>
+                        <tr><td>38</td><td> 18   </td></tr>
+                        <tr><td>39</td><td> 18   </td></tr>
+                        <tr><td>40</td><td> 8   </td></tr>
+                        <tr><td>41</td><td> 10   </td></tr>
+                        <tr><td>42</td><td> 21   </td></tr>
+                        <tr><td>43</td><td> 13   </td></tr>
+                </table></div></p>
+                <p>Totala procenten blir 101 %, det är inte så farligt.</p></div></div> </li>
+              <li>Bestäm typvärdet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>42</p></div></div> </li>
+              <li>Vilken storlek har man i medeltal i undervisningsgruppen? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>40</p></div></div> </li>
+              <li>Bestäm standardavvikelsen för skostorlekarna. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>2</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li>Bestäm medelvärdet och standardavvikelsen för dina vitsord i ett ämne där du har läst i alla fall fem kurser.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Jobba på LibreOffice eller på GeoGebra.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Cecilia och Daniel jämför sina vitsord i matematiken. Vitsorden ser du i tabellen nedan.
+            <table>
+                <tr class="MaA10"><th></th><th>MaG</th><th>MaA 2</th><th>MaA 3</th><th>MaA 4</th><th>MaA 5</th><th>MaA 6</th><th>MaA 7</th><th>MaA 8</th><th>MaA9</th><th>MaA10</td></tr>
+                <tr><th>Cecilia</th><td>8</td><td>7</td><td>7</td><td>6</td><td>5</td><td>6</td><td>7</td><td>7</td><td>7</td><td>8</td></tr>
+                <tr><th>Daniel</th><td>9</td><td>8</td><td>8</td><td>7</td><td>6</td><td>5</td><td>6</td><td>6</td><td>7</td><td>6</td></tr>
+            </table>
+            <p>Vem av Cecilia eller Daniel har jämnare prestationer för vitsorden?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+              <div class="collapse" id="6t">
+              <div class="card card-body hint"> <p>Bilda standardavvikelsen för vitsorden och jämför dem.</p></div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Bägge har samma medelvärde, 6.8</p>
+              <p>I GeoGebras Dataanalys får vi fram följande för Cecilias vitsord:</p>
+              <p><img src="pics/13-3-a.png" class="responsivepic400" /></p>
+              <p>I GeoGebras Dataanalys får vi fram följande för Daniels vitsord:</p>
+              <p><img src="pics/13-3-b.png" class="responsivepic400" /></p>
+              <p>Standardavvikelsen för Cecilas vitsord är 0,8718, och för Daniels vitsord är standardavvikelsen 1,1662.</p>
+              <p>Alltså har Cecilia jämnare prestationer för vitsorden.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För specialläkare som jobbade inom den kommunala sektorn gällde att medellönen för kvinnor var 5 444 € för år 2004. Medellönen för specialläkare var 5 814 €. Kvinnornas andel av specialläkarna var 55,4 %. Bestäm medellönen för de manliga läkarna.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Skapa en ekvation där du beaktar meddeltalet av lönerna, \( 0,554 \cdot 5444 + 0,446x = 5814 \).</p>
+              <p>Kom fram till 6 274 €.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För polices kandidat inom den privata sidan gällde 2004 att 57,4 % var män. Medellönen för männen var 5 324 € och medellönen för kvinnor var 4 337 €. Bestäm medellönen för polices kandidaterna.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi får \( 0,574 \cdot 5324 + 0,426 \cdot 4337 = 4904 \) €.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Den procentuella fördelningen för långa matematiken våren 2004 ser du i tabellen nedan.
+            <table>
+              <caption class="source">Aatos Lahtinen, Matematiikan ylioppilaskirjoitus keväällä 2004, Dimensio 6/2004</caption>
+              <tr class="MaA10"><th>L (7 poäng)</th><th>E (6 poäng)</th><th>M (5 poäng)</th><th>C (4 poäng)</th><th>B (3 poäng)</th><th>A (2 poäng)</th><th>I (0 poäng)</th></tr>
+              <tr><td>11 %</td><td>24 %</td><td>25 %</td><td>18 %</td><td>13 %</td><td>6 %</td><td>3 %</td></tr>
+            </table>
+            <p>Bestäm medelvädet av vitsordet och standardavvikelsen.</p>
+            <p>7 poäng vid Laudatur betyder att vitsordet motsvaras av 7 poäng.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Vi jobbar på LibreOffice och skapar följande tabell:</p>
+                <p><img src="pics/13-8.png" class="responsivepic600" /></p>
+                <p>Medeltalet är 4,7 och variansen är 1,6.</p>
+                <p>Tyvärr är denna typ av uppgift lättare att lösa på LibreOffice.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="12_upprepat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="14_kont_stat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

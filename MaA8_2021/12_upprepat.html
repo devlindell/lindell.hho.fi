@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>12. Upprepat försök</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="11_mangdlara.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="13_diskret_stat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>12. Upprepat försök</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Bertil sår blommor. På påsen står att fröna gror med sannolikheten 95 %. Han sår 10 st frön. Han funderar på sannolikheten för att minst 9 frön gror.</p>
+          <p>Sannolikheten att minst 9 frön gror betyder att 9 eller 10 frön gror.</p>
+          <p>Har vi 9 frön som skall gro skall 1 frö inte gro. Sannolikheten för att ett frö gror är 0,95 och att det inte gror är 1-0,95=0,05. Sannolikheten för att 9 frön gror och 1 inte gror är \( 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,95 \cdot 0,05 = 0,95^9 \cdot 0,05 \).</p>
+          <p>Dessa kombinationer kan vi bilda på \( \displaystyle\displaystyle{10 \choose 9} \) olika sätt. Betyder att sannolikheten för att 9 frön gror är \( \displaystyle{10 \choose 9}0,95^9 \cdot 0,05 \).</p>
+          <p>På motsvarande sätt bildar vi sannolikheten för att alla 10 frön gror. Sannolikheten att 10 frön gror och 0 inte gror är \( 0,95^{10}\cdot 0,05^0 \).</p> <p>Dessa 10 frön kan vi bilda på \(  \displaystyle{10 \choose 10}=1 \) olika sätt.</p>
+          <p>Vi får alltså sannolikheten för att minst 9 frön gror är \( \displaystyle{10 \choose 9}0,95^9 \cdot 0,05 + \displaystyle{10 \choose 10}0,95^{10}\cdot 0,95^0 = 0,91386\approx 0,914 \).</p>
+          <p>I sannolikheter som ovan där vi har upprepade försök av olika kombinationer talar vi om binomialsannolikhet.</p>
+        </div>
+        <div class="summary box">
+          <p>Låt \( p \) vara sannolikheten att A sker. Då sker inte A med sannolikheten \( 1-p \). Sannolikheten för att A sker \( k \) gånger av n är \(  \displaystyle{n \choose k} p^k \cdot (1-p)^{n-k}. \).</p>
+          <p>Upprepat försök kallas också för binomialsannolikhet.</p>
+        </div>
+        <div class="exercise box">
+          <p><strong>Exempel 1</strong> Jobba på GeoGebras statistikdel och bilda binomialfördelningen för antal frön som gror i introduktionen. Du sår 10 st frön och att de gror med sannolikheten 95 %. Hur många frön kan vi vänta oss att gror?</p>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/470693907" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="exercise box">
+          <p><strong>Exempel 2</strong> I ett hörförståelse test som består av 20 frågor med alternativen a, b, c och d, vet en elev svaren till 5 av frågorna. Resten gissar hen. Bestäm sannolikheten att hen</p>
+          <ol start="1" style="list-style-type:lower-alpha">
+            <li>har 15 rätt.</li>
+            <li>har minst 15 rätt.</li>
+            <li>har högst 14 rätt.</li>
+          </ol>
+          <h4>Lösning</h4>
+          <p>Eftersom eleven har rätt svar på 5 av frågorna så skall hen gissa sig till rätt svar på 10 frågor. 5 frågor skall gissas fel. Sannolikheten för att gissa rätt är 0,25 och sannolikheten för att gissa fel är 0,75.</p>
+          <ol start="1" style="list-style-type:lower-alpha">
+            <li>Sannolikheten för att totalt 15 frågor är rätt gissade är \(  \displaystyle{15 \choose 10}0,25^{10}0,75^{5} = 0,000679 \).</li>
+            <li><p>För att ha minst 15 rätt skall hen ha 15 eller 16 eller 17 eller 18 eller 19 eller 20 rätt. Vi kommer ihåg att hen redan har 5 rätt.</p>
+            <p>Sannolikheterna bygger vi upp på motsvarande sätt:\(  \displaystyle{15 \choose 10}0,25^{10}0,75^{5} + \displaystyle{15 \choose 11}0,25^{11}0,75^{4} + \displaystyle{15 \choose 12}0,25^{12}0,75^{3} \\ + \displaystyle{15 \choose 13}0,25^{13}0,75^{2} + \displaystyle{15 \choose 14}0,25^{14}0,75^{1} + \displaystyle{15 \choose 15}0,25^{15}0,75^{0} \\ = 0,000795 \)</p></li>
+            <li><p>Om hen skall ha högst 14 rätt skall hen ha 1 eller 2 eller 3 eller ... 14 rätt. Det är komplementet till 1 - minst 15 rätt.</p>
+              <p>Den sökta sannolikheten är \( 1 - 0,000795 = 0,999205 \).</p></li>
+            </ol>
+        </div>
+      </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Frön av en viss sort gror med sannolikheten 0,91. Vi sår 10 st.
+            <ol>
+              <li>Bestäm sannolikheten att 8 frön gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( \displaystyle{10 \choose 8} 0,91^8 \cdot 0,09^2 = 0,171407\ldots \).</p></div></div> </li>
+              <li>Bestäm sannolikheten att alla frön gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( \displaystyle{10 \choose 10} 0,91^{10}\cdot 0,09^0 = 0,91^{10} = 0,389416\ldots \).</p></div></div> </li>
+              <li>Bestäm sannolikheten att minst 8 st gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Minst 8 st gror betyder att 8, 9 eller 10 st gror.<p>Vi får \( \displaystyle{10 \choose 8}0,91^8\cdot 0,09^2 + \displaystyle{10 \choose 9}0,91^9\cdot 0,09^1 + \displaystyle{10 \choose 10}0,91^{10}\cdot 0,09^0  \\= 0,945959\ldots \)</p></div></div> </li>
+              <li>Bestäm sannolikheten att högst 7 st gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>Att högst 7 st gror är komplementet till att 8, 9 eller 10 st gror. I föregående delen räknade vi ut sannolikheten för att 8, 9 eller 10 st gror.<p>Vi får \( 1 - 0,9459599\ldots = 0,0540400\ldots \).</p></div></div> </li>
+              <li>Jobba på GeoGebras statistikdel och bilda binomialfördelningen för antal frön som gror. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p>Vi får</p>
+              <p><img src="pics/12-2.png" class="responsivepic600" /></p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Vi kastar en tärning 5 gånger. Bestäm följande sannolikheter.
+            <ol>
+              <li>Att vi får exakt 2 st sexor. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Sannolikheten för en 6:a är \( \dfrac{1}{6} \). Sannolikheten för något annat är \( \dfrac{5}{6} \).</p>
+              <p>Vi får \( \displaystyle{5 \choose 2} (\dfrac{1}{6})^2(\dfrac{5}{6})^3 = 0,16075\ldots \)</p>
+              <p>Alltså 0,16.</p>
+              </div></div> </li>
+              <li>Att vi får högst 2 st sexor. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>För att få högst 2 st sexor skall vi få 0, 1 eller 2 st sexor. På motsvarande sätt som ovan.</p>
+              <p>Vi får \( \displaystyle{5 \choose 0} (\dfrac{1}{6})^0(\dfrac{5}{6})^5 + \displaystyle{5 \choose 1} (\dfrac{1}{6})^1(\dfrac{5}{6})^4 + \displaystyle{5 \choose 2} (\dfrac{1}{6})^2(\dfrac{5}{6})^3 = 0,964506\ldots \).</p>
+              <p>Alltså 0,96.</p>
+              </div></div> </li>
+              <li>Att vi får minst 2 st sexor. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi skall få 5, 4, 3 eller 2 st sexor.</p>
+              <p>Vi utnyttjar förra uppgifterna. Sannolikheten för 5, 4 eller 3 är komplementet till b). Sannolikheten för 2 st är i a).</p>
+              <p>Vi får \( 1 - 0,964486\ldots + 0,16075\ldots = 0,19630\ldots \).</p>
+              <p>Alltså 0,20.</p>
+              </div></div> </li>
+              <li>Jobba på GeoGebras statistikdel och bilda binomialfördelningen för händelsen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Fördelningen är följande:</p>
+              <p><img src="pics/12-3.png" class="responsivepic600" /></p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>I styktipset väljer man 1, X eller 2 bland 13 matcher. Bestäm sannolikheten att då vi spelar på stryktipset och gissar 10 eller 11 rätt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Med sannolikheten \( \frac{1}{3} \) gissar vi rätt och \( \frac{2}{3} \) fel.</p>
+                <p>Vi får \( \displaystyle{13 \choose 11}(\frac{1}{3})^{11}\cdot (\frac{2}{3})^{2} + \displaystyle{13 \choose 10}(\frac{1}{3})^{10}\cdot (\frac{2}{3})^{3} = 0,0016307\ldots \).</p></div></div>
+                <ol>
+
+          <li>Vilken är sannolikheten att då vi spelar stryktips har mindre än 10 rätt?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"> <p>Mindre än 10 rätt är komplementet till 10, 11, 12 eller 13 rätt.</p>
+                <p>Vi får \( 1- (\displaystyle{13 \choose 10}(\frac{1}{3})^{10} (\frac{2}{3})^{3}+ \displaystyle{13 \choose 11}(\frac{1}{3})^{11} (\frac{2}{3})^{2}+ \displaystyle{13 \choose 12}(\frac{1}{3})^{12} (\frac{2}{3})^{1}+\displaystyle{13 \choose 13}(\frac{1}{3})^{13} (\frac{2}{3})^{0} )= 0,998352\ldots \).</p></div></div>
+          </li>
+
+          <li>Jobba på GeoGebras statistikdel och bilda binomialfördelningen för stryktipset, där vi spelar 13 matcher och spelar om matchen slutar med 1 X eller 2.
+            <p>Genom att gissa, hur många rätt kommer vi högst sannolikt att ha?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"> <p>På GeoGebras statistikdel får vi följande graf och tabell:</p>
+              <p><img src="pics/12-4.png" class="responsivepic600" /></p>
+              <p>Vi ser att största sannolikheten är för 4 rätt, 0,23.</p>
+              </div></div>
+          </li>
+
+          <li>Då Daniel spelar stryktips har han 8 st "säkra" matcher. Bestäm sannolikheten att han kommer att vinna pengar då det i alla fall krävs 10 rätt för utbetalning.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"> <p>Daniel skall i alla fall ha 10, 11, 12 eller 13 matcher rätt.</p>
+                <p>8 "säkra" matcher betyder att av 13-8=5 matcher skall vi gissa 2, 3, 4 eller 5 rätt.</p>
+                <p>Vi får \( \displaystyle{5 \choose 2}(\frac{1}{3}^{2}) (\frac{2}{3}^{3})+ \displaystyle{5 \choose 3}(\frac{1}{3}^{3}) (\frac{2}{3}^{2}) \ldots \) eller så via komplementet \( 1-\displaystyle{5 \choose 0}(\frac{1}{3}^{0}) (\frac{2}{3}^{5}) + \displaystyle{5 \choose 1}(\frac{1}{3}^{1}) (\frac{2}{3}^{4})) = 0,53909\ldots \).</p></div></div>
+          </li>
+
+        </ol>
+      </li>
+
+      <li><i class="fas fa-shapes fa-2x level"></i>Vi antar att hemmalaget vinner i fotboll med sannolikheten 47 %. Bestäm sannolikheten att i styktipset, där vi spelar på 13 matcher, har exakt 7 matcher som slutar i hemmaseger.
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="4">
+          <div class="card card-body answer"> <p>Sannolikheten för jämt eller bortaseger är \( 1 - 0,47 = 0,53 \).</p>
+            <p>Vi får \( \displaystyle\binom{13}{7} 0,47^{7} \cdot 0,53^6 = 0,19269 \approx 0,193 \).</p></div></div>
+      </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>HC Hakkila och Martsarin Myrsky Hockey möts åter igen i finalserien. För att vinna mästerskapet krävs 4 segrar. Under denna säsong har Martsarin Myrsky Hockey vunnit 5 matcher av 6 som lagen möts i. Bestäm sannolikheten att Martsarin Myrsky Hockey vinner mästerskapet. Bilda binomialfördelningen på över antalet matcher som krävs i finalserien. Hur många matcher kommer det högst sannolikt att behövas spela?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi jobbar på GeoGebra. Sannolikheten att Martsarin Myrsky Hockey vinner en match är \( \dfrac{5}{6} \) och HC Hakkila \( \dfrac{1}{6} \).</p>
+              <p>Vi får fördelningen</p>
+              <p><img src="pics/12-6.png" class="responsivepic600" /></p>
+              <p>För att Martsarin Myrsky Hockey skall vinna krävs 4, 5, 6 eller 7 matcher.</p>
+              <p>Deras sannolikhet är \( 0,982367\ldots \), alltså 0,98.</p>
+              <p>Största sannolikheten är för 6 matcher, 0,39.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Aviapolis Basket leder med en poäng i en korgbollsmatch då speltiden är slut. Kivistön Koripallo har fått tre frikast vilka ger ett poäng var om de lyckas. Sannolikheten för ett lyckat frikast är 0,75. Med vilken sannolikhet vinner Kivistön Koripallo matchen?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.5">
+              <div class="card card-body answer"> <p>Kivistön Koripallo vinner om de får 2 eller 3 poäng.</p>
+                <p>Vi får sannolikheten \( P(\text{Kivistön Koripallo får 2 poäng}) + P(\text{Kivistön Koripallo får 3 poäng}) = \\ \displaystyle{3 \choose 2} \cdot 0,75^2 \cdot 0,25^1 + \displaystyle{3 \choose 3} \cdot 0,75^3 \cdot 0,25^0 = 0,84375 \)</p>
+                <p>Alltså 0,84.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Cecilia ordnar större middagsbjudningar och vet att en inbjuden gäst deltar med sannolikheten 0,90. Bestäm sannolikheten att 42 tallrikar räcker för en fest då 45 personer har fått en inbjudan.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.6">
+              <div class="card card-body answer"> <p>Sannolikheten att personen inte deltar är 0,10.</p>
+              <p>Vi får sannolikheten \( P(\text{max 42 personer dyker upp}) =  \\ 1 - [P(\text{43 personer dyker upp}) + P(\text{44 personer dyker upp}) + P(\text{45 personer dyker upp})] \).</p>
+              <p>Vi får \( 1 -[\displaystyle\binom{45}{43}0,90^{43}\cdot 0,10^{2} + \displaystyle\binom{45}{44}0,90^{44}\cdot 0,10^{1} + \displaystyle\binom{45}{45}0,90^{45}\cdot 0,10^{0}] = 0,94763 \approx 0,948 \).</p>
+              </div></div>
+              <ol>
+                <li>Utnyttja dig av GeoGebra och bestäm hur många personer som hon kan förvänta sig att dyker upp. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6.6a">
+                <div class="card card-body answer"><p>På GeoGebra får vi följande bild</p>
+                  <p><img src="pics/12-10.png" class="responsivepic600" /></p>
+                  <p>Vi ser att största sannolikheten har 41 personer.</p>
+                </div></div> </li>
+              </ol>
+
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En handelsman vet av erfarenhet att sannolikheten att en kund som kommer till hans souvenirbutik köper en T-skjorta är 90 %. En dag kommer en charterbuss med 48 personer till butiken. Vilken är sannolikheten att den mängd på 45 T-skjortor som finns i lagret inte skall ta slut om varje kund köper högst en tröja?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.7">
+              <div class="card card-body answer"> <p>Mängden T-skjortor räcker om högst 45 personer köper en.</p>
+              <p>Vi får sannolikheten \( P(\text{Högst 45 personer köper}) = 1 - P(\text{Minst 46 personer köper}) =  \\ 1 - P(\text{46 eller 47 eller 48 köper}) = 1 - (P(46) + P(47) + P(48)) = \\
+                1 - (\displaystyle{48 \choose 46} \cdot 0,90^{46} \cdot 0,10^2 + \displaystyle{48 \choose 47} \cdot 0,90^{47} \cdot 0,10^1 + \displaystyle{48 \choose 48} \cdot 0,90^{48} \cdot 0,10^0) = 0,87109\ldots  \) </p>
+              <p>Alltså 0,87.</p>
+            </div></div>
+            <ol>
+              <li>Utnyttja dig av GeoGebra och bestäm hur många T-skjortor han kan förväntas sälja då en charterbuss med 48 personer stannar vid butiken.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6.7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6.7a">
+              <div class="card card-body answer"><p>På GeoGebra får vi följande bild</p>
+                <p><img src="pics/12-11.png" class="responsivepic600" /></p>
+                <p>Vi ser att största sannolikheten har 44 stycken.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I ett lotteri är sannolikheten för vinst 25 %. Vi köper 5 lotter. Bestäm sannolikheterna för 0, 1, 2, 3, 4 och 5 vinster och presentera sannolikheterna grafiskt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>På GeoGebra får vi det som:</p>
+                <p><img src="pics/12-8.png" class="responsivepic600" /></p>
+                <p>På TI-CAS bestämmer vi först sannolikheterna för att sedan rita grafen.</p>
+                <p>Sannolikheterna är:</p>
+                <p><img src="pics/7-2.png" alt="" class="responsivepic400" /></p>
+                <p>Observera formeln hur du lätt kommer åt de andra sannolikheterna.</p>
+                <p>Grafen:</p>
+                <p><img src="pics/7-3.png" alt="" class="responsivepic400" /></p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Till ett flyg som rymmer 76 passagerare säljs 80 biljetter. Man vet att 95 % sannolikhet reser de som köpt biljett med flyget. Bestäm sannolikheten att platserna i flyget räcker till.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi arbetar med komplementet, att det kommer för många personer till flyget. Betyder att vi söker sannolikheten \( 1-(P(\text{77 passagerare})+P(\text{78 passagerare})+P(\text{79 passagerare})+P(\text{80 passagerare})) \).</p>
+                <p>Alltså \( 1-( \displaystyle{80 \choose 77}0,95^{77}\cdot 0,05^3 + \displaystyle{80 \choose 78}0,95^{78}\cdot 0,05^2 + \displaystyle{80 \choose 79}0,95^{79}\cdot 0,05^1 + 0,95^{80}) = 0,57155\cdots \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="11_mangdlara.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="13_diskret_stat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

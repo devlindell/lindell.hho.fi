@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro& display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>17. Statistik och integrering</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="16_normalfordelning.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="18_egetarbete.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>17. Statistik och integrering</h1>
+      <section>
+        <div class="theory">
+          <p>Vi började med att undersöka längder hos människor, och kom fram till att de följer normalfördelningen. Som vårt sista steg skall vi se hur vi kan sammanknyta statistiken med integrering.</p>
+          <p>När vi avläser tabellvärden för normalfördelningen så får vi fram arean under funktionen fram till en bestämd punkt. Det som vi får fram är värdet för fördelningsfunktionen, \( \Phi(x) \), fram till en bestämd punkt. Fördelningsfunktionen ger hur stor andel, hur många procent, som gäller fram till punkten i fråga.</p>
+          <p>Då vi deriverar fördelningsfunktionen, \( \Phi(x) \), kommer vi åt den funktion som ger frekvensen, antalet, för ett utkast. Den funktionen heter täthetsfunktion. Täthetsfunktionen för normalfördelningen är, \( f(x)=\dfrac{1}{\sigma \sqrt{2\pi}}e^{-\dfrac{(x-\mu)^2}{2\sigma ^2}} \).</p>
+          <p>Beroende på värdena på \( \mu \) och \( \sigma \) ser grafen av normalfördelningens täthetsfunktion lite olika ut. På \( x \)-axeln har vi det som undersöks medan \( y \)-axeln ger frekvensen, som procent.</p>
+          <p><img src="pics/17-tathetsfunktion.png" alt="" class="responsivepic600" /></p>
+          <p>Då vi integrerar täthetsfunktionen får vi fördelningsfunktionen. Fördelningsfunktionen för de fyra fallen ovan är ritade i bilden nedan (färgerna är samma som i bilden ovan).</p>
+          <p><img src="pics/17-fordelningsfunktion.png" alt="" class="responsivepic600" /></p>
+          <p>Åter igen har vi på \( x \)-axeln har vi det som undersöks medan \( y \)-axeln ger kumulativa frekvensen, som procent.</p>
+          <div class="summary box">
+            <p>För att funktionen \( f \) skall vara en täthetsfunktion för en stokastisk variabel \( X \) så skall följande gälla.
+              <ol>
+                <li>\( f(x) \geq 0  \) för alla \(  x \in \mathbf{R} \).</li>
+                <li>Arean som begränsas av \( f \) och \( x \)-axeln skall ha värdet 1.</li>
+              </ol></p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Funktionen \( f(x)= \left\{ \begin{array}{ll}ax & , \text{ när } 0 \leq x \leq 4 \\ 0 & , \text{ annars}\end{array} \right.  \) är täthetsfunktionen för en stokastisk variabel \( X \).</p>
+              <ol style="list-style-type: lower-alpha;" start="1">
+                <li>Bestäm värdet på konstanten \( a \).</li>
+                <li>Beräkna sannolikheten att \( P(1 \leq X \leq 2) \).</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol style="list-style-type: lower-alpha;" start="1">
+                <li><p>För att \( f \) skall vara en täthetsfunktion så skall bägge villkor uppfyllas. </p>
+                  <p>Det första är att \( f(x) \geq 0 \) för alla \( x \). Det sker för \( ax \) då \( a \geq 0 \).</p>
+                  <p>För att \( f(x) \) skall vara en täthetsfunktion så skall arean av området från 0 till 4 ha värdet 1. Alltså \( \displaystyle\int_0^4 ax \,\text{d}x =1 \). Vi får att \( a=\dfrac{1}{8} \).</p>
+                  <p>Funktionen är alltså \( f(x)= \left\{ \begin{array}{ll}\dfrac{1}{8}x & , \text{ när } 0 \leq x \leq 4 \\ 0 & , \text{ annars}\end{array} \right.  \)</p>
+                </li>
+                <li><p>Då vi bestämmer \( P(1 \leq X \leq 2) \) får vi</p>
+                  <p>\( P(1 \leq X \leq 2) = \displaystyle\int_1^2 \dfrac{1}{8}x \,\text{d}x = \dfrac{3}{16} \approx 0,1875 \). Alltså 18,8 %.</p>
+                </li>
+              </ol>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Fördelningsfunktionen för en stokastisk variabel är</p>
+              <p>\( F(X) =
+                \left\{ \begin{array}{ll}
+                0 & \text{, när } x < 0 \\
+                2^{\frac{1}{3}x}-1 & \text{, när } 0 \leq x \leq 3 \\
+                1 & \text{, när } x > 3 \\
+                \end{array} \right. \) </p>
+                <p>Bestäm följande sannolikheter.</p>
+                <ol style="list-style-type: lower-alpha;" start="1">
+                  <li>\( P(X\leq 2) \)</li>
+                  <li>\( P(X > 1) \)</li>
+                  <li>\( P(1 < X < 3) \)</li>
+                </ol>
+              <h4>Lösning</h4>
+              <p>Vi får </p>
+              <ol style="list-style-type: lower-alpha;" start="1">
+                <li><p>\( P(X\leq 2)  = F(2) = 2^{\frac{1}{3}\cdot 2} -1 = 2^{\frac{2}{3}} -1 = 0,58740\ldots\)</p>
+                <p>Alltså 0,59.</p></li>
+                <li>\( P(X > 1) = 1 - P(X < 1) = 1 - F(1) = 1 - (2^{\frac{1}{3}\cdot 1} -1) = 0,74007\ldots \)</p>
+                <p>Alltså 0,74.</p></li>
+                <li>\( P(1 < X < 3) = F(3) - F(1) = (2^{\frac{1}{3}\cdot 3} -1)-(2^{\frac{1}{3}\cdot 1} -1) = 2 - 2^{\frac{1}{3}} = 0,74007\ldots \)</p>
+                <p>Alltså 0,74.</p></li>
+              </ol>
+            </div>
+            <div class="summary box">
+              <h4>Sammanfattning</h4>
+              <p>När vi integrerar täthetsfunktionen får vi fram fördelningsfunktionen.</p>
+              <p>Deriverar vi fördelningsfunktionen får vi fram täthetsfunktionen.</p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li><p><i class="fas fa-shapes fa-2x level"></i>Funktionen</p>
+            <p>\( f(x)=\left\{
+              \begin{array}{ll}
+              kx, &  \text{ då } 0 \leq x \leq 6 \\
+              0, &  \text{ annars} \\
+              \end{array} \right.  \)</p>
+              <p>är täthetsfunktionen för en stokastisk variabel X.</p>
+            <ol>
+              <li>Bestäm värdet på konstanten \( k \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Eftersom \( f \) skall vara en täthetsfunktion så skall kriterierna gälla.</p>
+              <p>\( kx \geq 0 \) då \( k\geq 0 \).</p>
+              <p>Det andra villkoret är att \( \displaystyle\int_0^6 ax \text{ d}x = 1 \). Lösningen på ekvationen får vi via räknare eller för hand, \( \bigg/_0^6 ax^2=1 \Leftrightarrow a = \dfrac{1}{18} \).</p>
+              <p>Alltså \(
+                f(x)=\left\{
+                  \begin{array}{ll}
+                  \dfrac{1}{18}x, &  \text{ då } 0 \leq x \leq 6 \\
+                  0, &  \text{ annars} \\
+                  \end{array} \right.  \)</p></div></div> </li>
+              <li>Bestäm sannolikheten \( P(0 \leq X \leq 2) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Vi får \( \displaystyle\int_0^2 \dfrac{1}{18}x \text{ d}x = \dfrac{1}{9}\approx 0,111 \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><p><i class="fas fa-shapes fa-2x level"></i>Funktionen </p>
+            <p>\( f(x)=\left\{
+              \begin{array}{ll}
+              ax^2, &  \text{ då } 0 \leq x \leq 3 \\
+              0, &  \text{ annars} \\
+              \end{array} \right.  \)</p>
+              <p>är täthetsfunktionen för en stokastisk variabel X.</p>
+            <ol>
+              <li>Bestäm värdet på konstanten \( a \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Eftersom \( f \) skall vara en täthetsfunktion så skall kriterierna gälla.</p>
+                <p>\( ax^{2} \geq 0 \) då \( a\geq 0 \).</p>
+                <p>Det andra villkoret är att \( \displaystyle\int_0^3 ax^{2} \text{ d}x =1 \). Det sker då \( a = \dfrac{1}{9} \). (Försäkra dig över detta!)</p>
+                <p>Alltså \(
+                  f(x)=\left\{
+                    \begin{array}{ll}
+                    \dfrac{1}{9} x^{2}, &  \text{ då } 0 \leq x \leq 3 \\
+                    0, &  \text{ annars} \\
+                    \end{array} \right.  \)</p></div></div> </li>
+              <li>Bestäm sannolikheten \( P(2 \leq X \leq 3) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vi får \( \displaystyle\int_2^3 \dfrac{1}{9} x^{2} \text{ d}x = \dfrac{19}{27} \approx 0,704 = 70,4 \% \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><p><i class="fas fa-shapes fa-2x level"></i>Funktionen </p>
+            <p>\( f(x)=\left\{
+              \begin{array}{ll}
+              0, &  \text{ då } x < 0 \\
+              ax^2, &  \text{ då } 0 \leq x \leq 1 \\
+              0, &  \text{ då} x > 1 \\
+              \end{array} \right.  \)</p>
+              <p>är täthetsfunktionen för en stokastisk variabel X.</p>
+            <ol>
+              <li>Bestäm värdet på konstanten \( a \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Eftersom \( f \) skall vara en täthetsfunktion så skall kriterierna gälla.</p>
+                <p>\( ax^{2} \geq 0 \) då \( a\geq 0 \).</p>
+                <p>Det andra villkoret är att \( \displaystyle\int_0^1 ax^{2} \text{ d}x =1 \). Det sker då \( a = 3 \). (Försäkra dig över detta!)</p>
+                <p>Alltså \(
+                  f(x)=\left\{
+                    \begin{array}{ll}
+                    0, &  \text{ då } x < 0 \\
+                    3x^2, &  \text{ då } 0 \leq x \leq 1 \\
+                    0, &  \text{ då} x > 1 \\
+                    \end{array} \right.  \)</p></div></div> </li>
+              <li>Bestäm fördelningsfunktionen \( F(x) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Vi skall integrera \( f(x) \).</p>
+                <p>Vi får </p>
+                <p> \( f(x)=\left\{
+                  \begin{array}{ll}
+                  0, &  \text{ då } x < 0 \\
+                  x^3, &  \text{ då } 0 \leq x \leq 1 \\
+                  1, &  \text{ då} x > 1 \\
+                  \end{array} \right.  \)</p>
+              </div></div> </li>
+              <li>Bestäm sannolikheten \( P(X > 0,67) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi får \( P(X > 0,67) = 1 - P(X < 0,67) = 1 - F(0,67) = 1- 0,67^3 = 0,699237 \approx 70,0 \% \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><p><i class="fas fa-shapes fa-2x level"></i>Fördelningsfunktionen för en stokastisk variabel är </p>
+            <p>\(  F(x)=\left\{
+              \begin{array}{ll}
+              0, &  \text{ då } x\leq -1 \\
+              2^{x-5}, &  \text{ då } -1 < x \leq 4 \\
+              1, &  \text{ då } > 4\\
+              \end{array} \right.  \)</p>
+              <p>Bestäm</p>
+            <ol>
+              <li>\( P(X \leq 0)  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\(
+                  \begin{array}{rcl}
+                  P(X \leq 0 ) & =&  F(0) \\
+                  & =&  2^{0-5} \\
+                  & =&  2^{-5} = \dfrac{1}{32} =0,03125 \approx 0,031 \\
+                  \end{array}  \)</p></div></div> </li>
+              <li>\( P(X \geq 3)  \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi arbetar med komplementhändlsen. Vi får </p>
+                <p>\(  \begin{array}{rcl}
+                  P(X \geq 3 ) & =&  1-P(X \leq 3 ) \\
+                  & =&  1-F(3) \\
+                  & =&  1-2^{3-5} \\
+                  & =&  1-2^{-2} = 1-\dfrac{1}{4} =0,75 \\
+                  \end{array}  \)</p></div></div> </li>
+              <li>\( P(1 \leq X \leq 3) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Vi får </p>
+                <p>\( \begin{array}{rcl}
+                  P(1 \leq X \leq 3) & =&  F(3)-F(1) \\
+                  & =&  2^{3-5} - 2^{1-5} \\
+                  & =&  2^{-2} - 2^{-4} \\
+                  & =&  \dfrac{1}{4}-\dfrac{1}{14} = 0,1875 \approx 0,188 \\
+                  \end{array}  \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Uppgift med att kombinera grafer.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li>Täthetsfunktionen för en stokastisk variabel \( X \) är
+            <p>\( f(x) = \left\{ \begin{array}{ll}
+              \dfrac{3}{1000}x^2 & ,\text{ när } 0 \leq x < 10 \\
+              0 & , \text{ annars} \\
+              \end{array} \right. \) </p>
+              <ol>
+                <li>Bilda fördelningsfunktionen för den stokastiska variablen \( X \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5a">
+                <div class="card card-body answer"><p>Genom att integrera täthetsfunktionen kommer vi till fördelningsfunktionen.</p>
+                <p>Vi får </p>
+                <p>\( F(x) = \left\{ \begin{array}{ll}
+                  0 & , \text{ när } x < 0\\
+                  \dfrac{1}{1000}x^3 & ,\text{ när } 0 \leq x < 10 \\
+                  1 & , \text{ när} x > 10 \\
+                  \end{array} \right. \) </p>
+                </div></div> </li>
+                <li>Beräkna sannolikheten \( P(X < 6) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5b">
+                <div class="card card-body answer"><p>Vi får \( F(6) = \dfrac{1}{1000}\cdot 6^3 = \dfrac{27}{125} = 0,216 \)</p></div></div> </li>
+                <li>Bestäm sannolikheten \( P( 2 \leq X \leq 9) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5c">
+                <div class="card card-body answer"><p>Vi får \( P( 2 \leq X \leq 9) = F(9) - F(2) = \dfrac{1}{1000}\cdot 9^3 - \dfrac{1}{1000}\cdot 2^3 = \dfrac{721}{1000} = 0,721 \).</p></div></div> </li>
+              </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Fördelningsfunktionen för en kontinuerlig stokastisk variabel X är
+            <p>\( F(x) = \left\{ \begin{array}{ll}
+              0 & ,\text{ när }  x \leq 1 \\
+              1-\dfrac{1}{x} & , \text{ när } x > 1 \\
+              \end{array} \right. \) </p>
+              <ol>
+                <li>Rita funktionen \( F(X) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"><p>På GeoGebra får vi</p>
+                  <p><img src="pics/17-8.png" class="responsivepic600"/></p>
+                  <p>För att få funktionerna styckevis definierade så jobba med kommandot funktion().</p>
+                </div></div> </li>
+                <li>Bestäm sannolikheterna \( P(X \leq 1,5) \), \( P(2 \leq X \leq 4) \) och \( P(X > 2) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6b">
+                <div class="card card-body answer"><p>Vi får</p>
+                  <p>\( P(X \leq 1,5) = 1-\dfrac{1}{1,5} = 0,33\ldots \). Alltså 0,33.</p>
+                  <p>\( P(2 \leq X \leq 4) = 1-\dfrac{1}{4} - (1-\dfrac{1}{2}) = 0,25 \). Alltså 0,25.</p>
+                  <p>\( P( X > 2) = 1-P(X \leq 2) = 1 - (1-\dfrac{1}{2}) = 0,50 \). Alltså 0,50.</p>
+                </div></div> </li>
+                <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6c">
+                <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+              </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ett tåg avgår var 10 minut mot centrum. Låt den stokastiska variabeln X vara "Väntetiden i minuter för en slumpmässig resenär som kommer en slumpmässig tid till stationen".
+            <ol>
+              <li>Bilda täthetsfunktionen för den stokastiska variabeln X. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Eftersom tåget avgår varje 10:e minut är intervallet \( 0 \leq x \leq 10 \).</p>
+                <p>Täthetsfunktionen är då av formen </p>
+                <p>\(  f(x)= \left\{ \begin{array}{ll}
+                  p, &  \text{ då } 0\leq x \leq 10 \\
+                  0, &  \text{ annars} \\
+                  \end{array}\right. \)</p>
+                  <p>Då skall vi se till att bägge villkor för en täthetsfunktion uppfylls.</p>
+                  <p>\( f(x) \leq 0  \) då \( p\geq 0 \).</p>
+                  <p>Arean av området skall ha värdet 1, alltså \(  \displaystyle\int_0^{10} p \text{ d}x = 1 \). Det sker då \( p=\dfrac{1}{10} \). (Försäkra dig över detta!)</p>
+                  <p>Alltså, täthetsfunktionen är </p>
+                  <p>\(  f(x)= \left\{ \begin{array}{ll}
+                    \dfrac{1}{10}, &  \text{ då } 0\leq x \leq 10 \\
+                    0, &  \text{ annars} \\
+                    \end{array}\right. \)</p></div></div> </li>
+              <li>Bilda fördelsningsfunktionen för den stokastiska variabeln X. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Fördelningsfunktionen är den funktion som begränsas av grafen till täthetsfunktionen \( f \) och \( x \)-axeln i intervallet \( ]-\infty , t] \) för alla variabelvärden \( t \).</p>
+                <p>Med andra ord får vi \( F(t)=P(X\leq t) = \displaystyle\int_0^t \dfrac{1}{10} \text{ d}x = \dfrac{1}{10}t \).</p>
+                <p>Vi ändrar variabeln till \( x \) och får fördelningsfunktionen</p>
+                <p>\(
+                  F(x)= \left\{
+                    \begin{array}{ll}
+                    0, &  \text{ då } x \geq 0\\
+                    \dfrac{1}{10}x, &  \text{ då } 0\leq x \leq 10 \\
+                    1, &  \text{ då } x\geq 10 \\
+                    \end{array}
+                    \right. \)</p></div></div> </li>
+              <li>Vilken är sannolikheten att resenären måste vänta mindre än tre minuter innan tåget avgår? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>Vi söker</p>
+                <p>\( \begin{array}{rcl}
+                  P(X \leq 3) & =&  P(X \leq 3) \\
+                  & =&  F(3) \\
+                  & =&  \dfrac{1}{10}\cdot 3 = \dfrac{3}{10} =0,30 \\
+                  \end{array} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>För en kontinuerlig stokastisk variabel kan vi bestämma väntevärde och standardavvikelse på följande sätt </p>
+            <p>Väntevärde: \(  E(X) =\displaystyle\int_{-\infty}^{\infty} x f(x) \text{ d}x \)</p>
+            <p>Standardavvikelse: \( D(X)=\sqrt{\displaystyle\int_{-\infty}^{\infty} (x-\mu)^2 f(x) \text{ d}x} \)</p>
+            <p>Bestäm väntevärdet och standardavvikelsen för uppgiften ovan, tåget som avgår var 10 minut.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Väntevärdet är </p>
+                <p>\( \begin{array}{rcl}
+                  E(X)& =& \displaystyle\int_{-\infty}^{\infty} x f(x) \text{ d}x \\
+                  & =&  \displaystyle\int_{0}^{10} x \cdot \dfrac{1}{10} \text{ d}x \\
+                  & =&  5 \\
+                  \end{array} \)</p>
+                  <p>Standardavvikelsen är </p>
+                  <p>\( \begin{array}{rcl}
+                    D(X)& =& \sqrt{\displaystyle\int_{-\infty}^{\infty} (x-\mu)^2 f(x) \text{ d}x} \\
+                    & =&  \sqrt{\displaystyle\int_{0}^{10} (x-5)^2 \cdot \dfrac{1}{10} \text{ d}x }\\
+                    & \approx&  2,89  \\
+                    \end{array} \)</p>
+                    <p>Vi har väntevärdet 5 min och standardavvikelsen 2 minuter och 54 sekunder.</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Uppgift där vi integrerar och får värdet 0. Vad betyder det?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="16_normalfordelning.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="18_egetarbete.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>1. Begrepp</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="2_geo_snl.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>1. Begrepp</h1>
+      <section>
+        <div class="theory">
+          <p>I sannolikhet talar vi om utfall, saker som sker. Vi delar in den i sådana som vi vill att skall ske, gynnsamma utfall, och totala utfall. Den slumpmässiga händelsen kallas också för stokastisk variabel.</p>
+          <p>Om vi har två svarta och tre vita kulor i en urna och drar slumpmässigt en kula är sannolikheten för att få en svart \( \dfrac{\textrm{gynnsamma}}{\textrm{totala utfall}}=\dfrac{2}{5} = 0,40 \). För de vita gäller igen \( \dfrac{\textrm{gynnsamma}}{\textrm{totala utfall}}=\dfrac{3}{5} = 0,60 \).</p>
+          <p>Vi kan antingen tala om sannolikheten som \( \dfrac{2}{5} \), av fem kulor är två svarta, eller som \( 0,40 \), av 100 kulor är 40 svarta.</p>
+          <p>Vi märker att summan av sannolikheterna är ett, \( 0,40 + 0,60 =1,00 \). Sannolikheten för en händelse rör sig mellan noll och ett. Är sannolikheten lika med noll kommer den inte att ske och är sannolikheten ett kommer den med säkerhet att ske.</p>
+          <p>Vi talar om att sannolikheten och komplementet för sannolikheten alltid har summan 1.</p>
+          <div class="summary box">
+            <p>Sannolikheten för händelsen A, den stokastiksa variabeln A, är \( P(A) = \dfrac{\text{antalet gynsamma fall}}{\text{totala antalet utfall}} \).</p>
+            <p>För det motsatta talar vi om komplementet, \( \overline{A} \). Sannolikheten för komplementet är \( 1 - P(A) = P(\overline{A}) \).</p>
+            <p>Med andra ord gäller att \( P(A) + P(\overline{A}) = 1 \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Vi singlar slant tre gånger. Bestäm sannolikheten att vi</p>
+            <ol style="list-style-type: lower-alpha;">
+              <li>får två gånger klave,</li>
+              <li>får högst två gånger klave.</li>
+            </ol>
+            <h4>Lösning</h4>
+            <p>Det är ingen skillnad om vi singlar tre slantar samtidigt eller om vi signar en slant tre gånger efter varann. Vi tar och skriver upp alla möjliga fall i en tabell.</p>
+            <table>
+              <tr class="MaA10"><th></th><th>Kast 1</th><th>Kast 2</th> <th>Kast 3</th></tr>
+              <tr><td>3 gånger klave</td><td>klave</td><td>klave</td><td>klave</td></tr>
+              <tr><td>2 gånger klave</td><td>klave</td><td>klave</td><td>krona</td></tr>
+              <tr><td></td><td>klave</td><td>krona</td><td>klave</td></tr>
+              <tr><td></td><td>krona</td><td>klave</td><td>klave</td></tr>
+              <tr><td>1 gång klave</td><td>klave</td><td>krona</td><td>krona</td></tr>
+              <tr><td></td><td>krona</td><td>klave</td><td>krona</td></tr>
+              <tr><td></td><td>krona</td><td>krona</td><td>klave</td></tr>
+              <tr><td>ingen klave</td><td>krona</td><td>krona</td><td>krona</td></tr>
+            </table>
+
+            <p>Vi märker att vi kan få två stycken klavar på tre olika sätt. Totalt finns det åtta fall, sannolikheten för två gånger klave \( \dfrac{3}{8} \).</p>
+            <p>Om vi skall ha högst två stycken klavar skall vi ha noll, ett eller två stycken. Vi har totalt 1 + 3 + 3 olika sätt och sannolikheten är \( \dfrac{1+3+3}{8} =\dfrac{7}{8} \).</p>
+            <p>Vi kan också arbeta med komplementsannolikheten, det att vi skall ha mer än tre stycken klavar. Sannolikheten för tre klavar är \( \dfrac{1}{8} \) och vi vill ha komplementet för det, \( 1-\dfrac{1}{8}=\dfrac{7}{8} \).</p> </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Koefficienterna för ett polynom av första graden, \( f(x)=ax+b \), bestäms med tärning. Bestäm sannolikheten att</p>
+              <ol style="list-style-type: lower-alpha;">
+                <li>\( f(3)=12 \)</li>
+                <li>\( f(3) < 12 \)</li>
+              </ol>
+              <h4>Lösning</h4>
+              <p>\( f(3)=12 \) betyder för vår del att \( f(3)=a\cdot 3 + b = 12 \). Vi bildar en tabell över olika värden som tärningarna ger vår funktion.</p>
+              <p><img src="pics/1-1.png" alt="" class="responsivepic400" /></p>
+              <p>Vi har två fall som ger summan 12. Sannolikheten är \( \dfrac{2}{36} = 0,06 \).</p>
+              <p><img src="pics/1-2.png" alt="" class="responsivepic400" /></p>
+              <p>För mindre än 12 har vi 13 fall. Sannolikheten är \( \dfrac{13}{36}=0,36 \).</p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Vi kastar en vanlig sexsidig tärning. Kryssa för rätt uttryck för den stokastiska variablen A med rätt sannolikhet.
+            <table>
+              <tr class="MaA10"><th>Påstående, A</th><th>1/6</th><th>2/6</th><th>3/6</th><th>4/6</th><th>5/6</th><th>6/6</th></tr>
+              <tr><td>Sannolikheten att få en trea är</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>Sannolikheten att få ett jämt tal är</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>Sannolikheten att få en femma är</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>Sannolikheten att få ett tal som är mindre än tre är</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>Sannolikheten att få ett tal som är större eller lika med fyra är</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0">
+              <div class="card card-body answer"> <p>
+                <table><tr class="MaA10"><th>Påstående</th><th>1/6</th><th>2/6</th><th>3/6</th><th>4/6</th><th>5/6</th><th>6/6</th></tr>
+                  <tr><td>Sannolikheten att få en trea är</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Sannolikheten att få ett jämt tal är</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                  <tr><td>Sannolikheten att få en femma är</td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Sannolikheten att få ett tal som är mindre än tre är</td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Sannolikheten att få ett tal som är större eller lika med fyra är</td><td></td><td></td><td><i class="fas fa-check"></i></td><td></td><td></td><td></td></tr>
+                </table>
+              </p></div></div>
+          </li>
+
+          <li>Från en kortpacke dras ett kort. Bestäm sannolikheten att kortet är
+            <ol>
+              <li>ett ess. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5a">
+              <div class="card card-body answer"><p>Vi har \( P = \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{4}{52} = \dfrac{1}{13} = 0,0769\ldots \approx 0,077  \).</p></div></div> </li>
+              <li>färgen spader. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5b">
+              <div class="card card-body answer"><p>Vi har \( P= \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{13}{52} = \dfrac{1}{4} = 0,25 \).</p></div></div> </li>
+              <li>kulören rött. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5e">
+              <div class="card card-body answer"><p>Vi har \( P= \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{2\cdot 13}{52} = \dfrac{1}{2} = 0,50 \).</p></div></div> </li>
+              <li>ett ess eller färgen spader. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5c">
+              <div class="card card-body answer"><p>Vi måste beakta att vi har spader ess som vi inte får räkna dubbelt.</p>
+              <p>Vi har \( P = \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{4 + 13 - 1}{52} = \dfrac{4}{13} = 0,3076\ldots \approx 0,308 \).</p></div></div> </li>
+              <li>spader ess. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5d">
+              <div class="card card-body answer"><p><p>Vi har \( P = \dfrac{\text{gynnsamma}}{\text{totala}} = \dfrac{1}{52} = 0,0192\ldots \approx 0,019 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>I en urna finns 10 klot. 4 är svarta, 2 är vita och resten är röda. Bestäm sannolikheten, som decimaltal, för att vi slumpmässigt drar en kula som är
+            <ol>
+              <li>svart <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( P(\text{Svart})= \dfrac{4}{10} = 0,40 \).</p></div></div> </li>
+              <li>röd <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Antal röda är 4 st.</p>
+                <p>\( P(\text{Röd})= \dfrac{4}{10} = 0,40 \).</p></div></div> </li>
+              <li>svart eller vit <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Totalt finns det 4+2 svarta eller vita kulor.</p>
+              <p>\( P(\text{Svart eller vit})= \dfrac{4+2}{10} = 0,60 \).</p></div></div> </li>
+              <li>inte vit <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>8 kulor är inte vita.</p>
+              <p>\( P(\text{Inte vit})= \dfrac{4+4}{10} = 0,80 \) eller som \( P(\text{Inte vit})= 1-\dfrac{2}{10} = 0,80 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm sannolikheten för händelserna då vi drar ett kort ur en normal kortpacke. Vi låter esset ha värdet 1.
+            <ol>
+              <li>Att kortet är spader. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>\( P(\text{Spader})= \dfrac{13}{52} = 0,25 \).</p></div></div> </li>
+              <li>Att valören är mindre än 5. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Per färg finns det 4 kort vars valör är mindre än 5; ess, 1, 2, 3 och 4. Totalt finns det fyra färger.</p>
+                <p>\( P(\text{Valören mindre än 5})= \dfrac{4\cdot 4}{52} = 0,3077 \approx 0,31 \).</p></div></div> </li>
+              <li>Att valören är antingen 7 eller 9. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Per färg finns det två kort. Totalt har vi fyra färger.</p>
+              <p>\( P(\text{7 eller 9})= \dfrac{2\cdot 4}{52} = 0,1538 \approx 0,15 \).</p></div></div> </li>
+              <li>Att valören är 5 eller högre. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>Per färg finns det 9 kort: 5, 6, 7, 8, 9, 10, knekt, dam, kung. Totalt finns det 4 färger.</p>
+              <p>\( P(\text{5 eller högre})= \dfrac{9\cdot 4}{52} = 0,6923 \approx 0,69 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Cecilia har dragit fyra kort från en kortlek. Hon har fått hjärter 5, hjärter 6, hjärter 7 och spader 7. Bestäm sannolikheten att följade kort är
+            <ol>
+              <li>hjärter. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5a">
+              <div class="card card-body answer"><p>Vi får \( P(\text{hjärter}) = \dfrac{\text{gynsamma}}{\text{totala}} = \dfrac{13-3}{52-4} = \dfrac{10}{48} = \dfrac{5}{24} = 0,20833\ldots \approx 0,208 \).</p></div></div> </li>
+              <li>valören 7. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5b">
+              <div class="card card-body answer"><p>Vi får \( P(\text{valören 7}) = \dfrac{\text{gynsamma}}{\text{totala}} = \dfrac{4-2}{52-4} = \dfrac{2}{48} = \dfrac{1}{24} = 0,04166\ldots \approx 0,042 \).</p></div></div> </li>
+              <li>valören 5 eller 6. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2.5c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{valören 5 eller 6}) = \dfrac{\text{gynsamma}}{\text{totala}} = \dfrac{3 + 3}{52-4} = \dfrac{6}{48} = \dfrac{1}{8} = 0,125 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Vi singlar slant en gång. Vilken är sannolikheten att vi får krona? Vilka av följande påståenden gäller?
+            <table>
+              <tr class="MaA10"><th>Påstående</th><th>Sant</th><th>Falskt</th></tr>
+              <tr><td>När vi singlar slant så är var annat kast krona.</td><td></td></td><td></tr>
+              <tr><td>Då vi singlar slant två gånger får vi i en av kasten en krona.</td></td><td><td></td></tr>
+              <tr><td>Då vi singlar slant 100 gånger får vi 50 kronor.</td><td></td><td></td></tr>
+              <tr><td>Då vi singlar slant 100 gånger är ca 50 % av fallen kronor.</td><td></td><td></td></tr>
+              </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>
+                <table>
+                  <tr class="MaA10"><th>Påstående</th><th>Sant</th><th>Falskt</th></tr>
+                  <tr><td>När vi singlar slant så är var annat kast krona.</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>Då vi singlar slant två gånger får vi i en av kasten en krona.</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>Då vi singlar slant 100 gånger får vi 50 kronor.</td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>Då vi singlar slant 100 gånger är ca 50 % av fallen kronor.</td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </p></div></div>
+          </li>
+
+          <li><p>Från statistik kan vi bilda sannolikheter. Då måste statistiken vara tillräckligt bred av sig, den skall ha tillräkligt mycket data i sig.</p>
+            <p>I tabellen nedan ser du statistik över barn födda mellan 1998-2004. Bestäm sannolikheten att det föddes en pojke och bestäm sannolikheten att det föddes en flicka.</p>
+            <table>
+              <caption class="source">Källa: stat.fi</caption>
+              <tr class="MaA10"><th>år</th><th>antalet födda</th><th>antal pojkar</th></tr>
+              <tr><td>1998</td><td>57 039</td><td>29 085</td></tr>
+              <tr><td>1999</td><td>57 658</td><td>29 451</td></tr>
+              <tr><td>2000</td><td>56 772</td><td>29 274</td></tr>
+              <tr><td>2001</td><td>55 998</td><td>28 637</td></tr>
+              <tr><td>2002</td><td>55 546</td><td>28 560</td></tr>
+              <tr><td>2003</td><td>56 632</td><td>26 842</td></tr>
+              <tr><td>2004</td><td>57 532</td><td>29 633</td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>För att bestämma sannolikheten för en pojke bildar sannolikheten, \( P(\text{pojke}) = \dfrac{201 482}{397177} = 0,5072 \).</p>
+                <p>Alltså 0,507.</p>
+                <p>Antingen föds det en pojke, eller en flicka. Vi får \( P(\text{flicka}) = 1 - P(\text{pojke}) = 1- 0,5072 = 0,4928 \).</p>
+                <p>Alltså 0,493.</p>
+              </div></div>
+          </li>
+
+          <li>Cecilia och Daniel är del av ett sällskap om 4 som är ute och tältar. De har ett lite för litet tält där endst 2 personer får plats. Dessa 2 väljs slumpmässigt. Namnge de två andra i sällskapet och bilda alla kombinatier som kan bildas. Har alla par samma sannolikhet? Bestäm vidare följande sannolikheter.
+            <ol>
+              <li>Cecilia får plats i tältet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25a">
+              <div class="card card-body answer"><p>De två andra namnger vi med E, Elsa, och F, Frans.</p>
+              <p>Alla kombinationer är CD, CE, CF, DE, DF och EF. Alla kombinationer har samma sannolikhet.</p>
+              <p>Vi får \( P(\text{Cecilia får plats}) = \dfrac{3}{6} = \dfrac{1}{2} = 0,500 \).</p>
+              </div></div> </li>
+              <li>Cecilia får plats i tältet och Daniel blir utan plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25b">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Cecilia får platso och Daniel utan plats}) = \dfrac{2}{6} = \dfrac{1}{3} = 0,333\ldots \approx 0,333 \).</p></p></div></div> </li>
+              <li>Cecila och Daniel får båda plats i tältet. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Cecilia får platso och Daniel får plats}) = \dfrac{1}{6} = 0,166\ldots \approx 0,167 \).</p></div></div> </li>
+              <li>Vad är komplementet, det motsatta, till c)? Bestäm sannolikheten för komplementet.  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.25d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.25d">
+              <div class="card card-body answer"><p>Komplementet är att varken Elsa eller Frans får plats i tältet.</p>
+              <p>Vi får \( P(\text{Varken Elsa eller Frans får plats}) = 1 - \dfrac{1}{6} = \dfrac{5}{6} = 0,833\ldots \approx 0,833 \).
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Av 5 stycken som väntar på överloppsplatser på ett flygplan får 3 plats. De 3 som får plats väljs slumpmässigt. Anna och Bertil är bland de som väntar på en överloppsplats. Bestäm sannolikheten att
+            <ol>
+              <li>Anna får plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5a">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Anna får plats}) = \dfrac{3}{5} = 0,600 \).</p></div></div> </li>
+              <li>Anna och Bertil får plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5b">
+              <div class="card card-body answer"><p>Vi betecknar de andra resenärerna med C, D och E.</p>
+              <p>Alla grupper är 10 st, ABC, ABD, ABE, ACD, ACE, ADE, BCD, BCE, BDE och CDE. Av dessa har alla grupper samma sannolikhet.</p>
+              <p>Vi får \( P(\text{Anna och Bertil får plats}) = \dfrac{3}{10} = 0,300 \).</p></div></div> </li>
+              <li>Anna får plats men Bertil får inte plats. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4.5c">
+              <div class="card card-body answer"><p>Vi får \( P(\text{Anna får plats, Bertil ingen plats}) = \dfrac{3}{10} = 0,300 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>I en undersökning om vad de gör på sin fritid svarade 299 gymnaster som följande: 102 idrottar, 89 musicerar och 108 idrottar och musicerar.
+            <ol>
+              <li>Hur många idrottar på sin fritid? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>102 idrottar + 108 idrottar och mucicerar = 210 som idrottar.</p></div></div> </li>
+              <li>Hur många håller på med musik på sin fritid? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>89 musicerar och 108 musicerar och idrottar = 197 musicerar.</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Koefficienterna för ett polynom av första graden, \( f(x)=ax+b \), bestäms med tärning. Bestäm följande sannolikheter.
+            <p>Tänk efter och rita tabell över värden som funktionen kan få.</p>
+            <ol>
+              <li>\( f(-1)=2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Eftersom \( f(-1)=2 \) får vi att \( a(-1)+b=2 \). Vi får följande tabell</p>
+              <p>\( \begin{array}{c|ccccccc}  b &amp; \\  6 &amp; 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 0 \\  5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 0  &amp; -1\\  4 &amp; 3 &amp; 2 &amp; 1 &amp; 0  &amp; -1 &amp; -2\\  3 &amp; 2 &amp; 1 &amp; 0  &amp; -1 &amp; -2 &amp; -3\\  2 &amp; 1 &amp; 0  &amp; -1 &amp; -2 &amp; -3 &amp; -4\\  1 &amp; 0  &amp; -1 &amp; -2 &amp; -3 &amp; -4 &amp; -5 \\  \hline &amp; 1&amp; 2&amp; 3 &amp; 4 &amp; 5 &amp; 6  &amp; a\\  \end{array} \) </p>
+              <p>Vi får \( P(f(-1)=2)= \dfrac{4}{36} = 0,1111\ldots \approx 0,11 \).</p></div></div> </li>
+              <li>\( f(-1)&gt;2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Vi har samma tabell som ovan.</p>
+              <p>\( P(f(-1)&gt;2 ) =\dfrac{6}{36} = 0,1666\ldots \approx 0,17 \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sannolikheten att ett barn föds under ett veckoslut.
+            <p>Vilka påståenden är sanna?</p>
+            <ol>
+              <li>I en familj med sju stycken barn finns det alltid två stycken barn som är födda under ett veckoslut.</li>
+              <li>Om de två första barnen i familjen är födda under ett veckoslut, föds resten fem barn under veckan.</li>
+              <li>I en undervisningsgrupp som består av 21 studerande, är sex stycken födda under ett veckoslut.</li>
+              <li>Av jorden befolkning är 29 % födda under ett veckoslut.</li>
+            </ol>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi antar att sannolikheten att födas under en dag är lika stor. Vi får sannolikheten, \( P(\text{föds under veckoslut}) = \dfrac{2}{7} = 0,2857 \), alltså 29 %.</p>
+                <p>I verkligheten gäller det att födslar som startas eller kejsarsnitt sker under veckan, och då stämmer inte vårt antagande i början.</p>
+                <p>Av påståendena gäller endast d).</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Koefficienterna för ekvationen för linjen \( ax+by=4 \) lottas med tärning. Bestäm sannolikheten att linjen går genom punkten \( (1,1) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Eftersom linjen skall gå genom punkten \( (1,1) \) gäller att \( a\cdot 1 + b\cdot 1 = 4 \)</p>
+                <p>Vi skapar en tabell</p>
+                <p>\( \begin{array}{c|ccccccc}  b \\  6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 &amp; 11 &amp; 12 \\  5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 &amp; 11  \\  4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10   \\  3 &amp;4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9    \\  2 &amp; 3 &amp;4 &amp; 5 &amp; 6 &amp; 7 &amp; 8   \\  1 &amp; 2 &amp; 3 &amp;4 &amp; 5 &amp; 6 &amp; 7   \\  \hline &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; a    \end{array} \)</p>
+                <p>Vi har 3 st talpar som bildar summan 4. Sannolikheten är \( P(\text{Genom punkten (1,1)}) =\dfrac{3}{36} = 0,0833\ldots \approx 0,08 \).</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="2_geo_snl.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

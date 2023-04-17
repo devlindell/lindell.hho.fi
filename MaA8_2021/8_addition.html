@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. Additionsprincipen</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_multiplikation.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="9_blandat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. Additionsprincipen</h1>
+      <section>
+        <div class="theory">
+          <p>Anna, Bertil, Cecilia och Daniel har gjort följande tabell över sina egenskaper:</p>
+          <table>
+            <tr class="MaA10"><th></th><th>Kön</th><th>höger/vänsterhänt</th><th>ögonfärg</th></tr>
+            <tr><th>Anna</th><td>flicka</td><td>högerhänt</td><td>blåa ögon</td></tr>
+            <tr><th>Bertil</th><td>pojke</td><td>högerhänt</td><td>bruna ögon</td></tr>
+            <tr><th>Cecilia</th><td>flicka</td><td>vänsterhänt</td><td>blåa ögon</td></tr>
+            <tr><th>Daniel</th><td>pojke</td><td>högerhänt</td><td>blåa ögon</td></tr>
+          </table>
+          <p>De funderar på följande:</p>
+          <div class="discussion box">
+            <p>Vilken är sannolikheten att av dem väljs slumpmässigt en flicka eller en vänsterhänt person.</p>
+          </div>
+          <p>Sannolikheten för en flicka är \( \dfrac{2}{4} \) och sannolikheten för att personen är vänsterhänt är \( \dfrac{1}{4} \). Det som vi måste beakta är att vi har en flicka som är vänsterhänt, sannolikheten att hon blir vald är \( \dfrac{1}{4} \).</p>
+          <p>Vår sökta sannolikhet är \( \dfrac{2}{4}+\dfrac{1}{4}-\dfrac{1}{4} = \dfrac{1}{2} \).</p>
+          <p>Allmänt har vi händelserna A och B. Då vi söker sannolikheten för A eller B måste vi beakta den sannolikhet då A och B gäller samtidigt.</p>
+          <div class="summary box">
+            <p>Sannolikheten för P(A eller B) = P(A) - P(B) - P(A och B).</p>
+            <p>Grafiskt ser vi det som följande:</p>
+            <p><img src="pics/8-1.png" class="responsivepic400" /></p>
+            <p>Vi har de olika sannolikheterna, sedan måste vi ta bort den gemensamma delen.</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Ur en kortpacke dras två kort. Bestäm sannolikheten att bägge kort är röda (hjärter eller ruter) eller att bägge kort är åttor.</p>
+            <h4>Lösning</h4>
+            <p>För varje färg finns det kort med valören åtta. Dessa kort måste vi beakta då vi bestämmer sannolikheten.</p>
+            <p>Sannolikheten är P(båda röda) + P(båda åttor) - P(båda röda och valören åtta).</p>
+            <p>I packen finns det 26 st röda kort och 4 st åttor.</p>
+            <p>Sannolikheten är \( P(\text{båda röda eller åttor}) = \dfrac{26\cdot 25}{52\cdot 51} + \dfrac{4\cdot 3}{52\cdot 51} - \dfrac{2\cdot 1}{52\cdot 51} = 0,248868\ldots \approx 0,249 \).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Rhesus egenskapen är beroende av folkgrupper. Av den baskiska befolkningen är 65 % Rhesus positiva, Rh+. Bestäm sannolikheten att i en baskisk familj där båda föräldrar är basker</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>är båda föräldrar Rhesus negativa</li>
+              <li>har båda föräldrar samma Rhesusegenskap</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>Andelen Rhesusnegativa, utan Rhesus faktorn, är 1 - 0,65 = 0,35. Sannolikheten att båda föräldar är Rhesusnegativa är \( P(Rh-) \cdot P(Rh-) = 0,35 \cdot 0,35 = 0,1225 \approx 0,123 \).</li>
+              <li>Då båda föräldrar skall ha samma Rhesus egenskap gäller att bägge föräldrar är Rh+ eller Rh-. Eftersom Rhesusegenskapen utesluter varandra, antingen har du den eller inte, så behöver vi inte beakta något annat.
+                <p>Sannolikheten är \( P(\text{Båda Rh+}) + P(\text{Båda Rh-}) - P(\text{Olika Rh}) = 0,65 \cdot 0,65 + 0,35 \cdot 0,35 = 0,545 \).</li>
+                </ol>
+              </div>
+              <div class="summary box">
+                <p>Om två händelser A och B utesluter varandra, som i exemplet ovan gäller att P(A eller B) = P(A) + P(B).</p>
+              </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Vilken är sannolikheten att vi ur en kortpacke drar en tvåa eller en fyra? Vi räknar med att ässet har valören 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \( P(\text{2 eller 4:a}) = \dfrac{4}{52}+\dfrac{4}{52} = 0,15385 \).</p></div></div>
+          </li>
+
+          <li>Ur en kortpacke drar vi två kort. Bestäm sannolikheten att bägge kort är spader eller bildkort? Som bildkort räknas knekt, dam, kung och ess.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Sannolikheten att bägge kort är spader är \( P(\text{bägge spader}) = \dfrac{13}{52} \cdot \dfrac{12}{51} \).</p>
+              <p>Att bägge kort är bildkort är \( P(\text{bildkort}) = \dfrac{16}{52} \cdot \dfrac{15}{51} \).</p>
+              <p>Spader bildkort är \( P(\text{spader och bildkort}) = \dfrac{4}{52} \cdot \dfrac{3}{51} \).</p>
+              <p>Sannolikheten är \( \dfrac{13}{52} \cdot \dfrac{12}{51} + \dfrac{16}{52} \cdot \dfrac{15}{51} - \dfrac{4}{52} \cdot \dfrac{3}{51} = 0,1447\ldots \).</p>
+              <p>Alltså 0,14.</p>
+              </div></div>
+          </li>
+
+          <li>Utesluter följande händelser varandra?
+            <table>
+              <tr class="MaA10"><th>Påstående</th><th>Utesluter varandra </th><th>Utesluter inte varandra </th></tr>
+              <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet ger en fyra.</p> <p>B: andra kastet ger en trea.</p> </td><td></td><td></td></tr>
+              <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet är udda.</p> <p>B: första kastet är jämt.</p> </td><td></td><td></td></tr>
+              <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet ger en fyra och andra kastet ger en sexa.</p> <p>B: första kastet ger en fyra och andra kastet ger en fyra.</p> </td><td></td><td></td></tr>
+              <tr><td><p>A: Anna försenar sig från skolan.</p> <p>B: Börje försenar sig från skolan.</p> </td><td></td><td></td></tr>
+              <tr><td>Vi planterar tulpaner och solrosor. Exakt en blomma gror. </td><td></td><td></td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>
+                <table>
+                  <tr class="MaA10"><th>Påstående</th><th>Utesluter varandra </th><th>Utesluter inte varandra </th></tr>
+                  <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet ger en fyra.</p> <p>B: andra kastet ger en trea.</p> </td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet är udda.</p> <p>B: första kastet är jämt.</p> </td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td>Vi kastar en tärning två gånger. <p>A: första kastet ger en fyra och andra kastet ger en sexa.</p> <p>B: första kastet ger en fyra och andra kastet ger en fyra.</p> </td><td><i class="fas fa-check"></i></td><td></td></tr>
+                  <tr><td><p>A: Anna försenar sig från skolan.</p> <p>B: Börje försenar sig från skolan.</p> </td><td></td><td><i class="fas fa-check"></i></td></tr>
+                  <tr><td>Vi planterar tulpaner och solrosor. Exakt en blomma gror. </td><td><i class="fas fa-check"></i></td><td></td></tr>
+                </table>
+              </p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vilken är sannolikheten att vi ur en kortpacke drar ett kort som är spader eller att valören är mindre än 7? Vi räknar med att ässet har valören 1.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi får sannolikheten \( P(\text{spader eller valören mindre än 7})= P(\text{Spader}) + P(\text{Mindre än 7}) -P(\text{Spader vars valör är mindre än 7}) =  \) </p>
+              <p>\( \dfrac{13}{52} + \dfrac{4\cdot 6}{52} -\dfrac{6}{52}= \dfrac{31}{52} = 0,59615\ldots \approx 0,596 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I låda 1 finns det ett vit och två svarta klot. I låda 2 finns det 2 vita och 3 svarta klot. Vi väljer slumpmässigt en låda och från lådan drar vi ett slumpmässigt klot. Bestämm sannolikheten att klotet som vi drar är vitt.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>För att dra ett vitt klot skall vi först välja låda 1 och sedan dra ett vitt klot, eller välja låda 2 och därifrån dra ett vitt klot.</p>
+              <p>Vi får sannolikheten \( P(\text{låda 1 och vitt klot}) + P(\text{låda 2 och vitt klot}) \\ = P(\text{låda 1})\cdot P(\text{vit klot}) + P(\text{låda 2})\cdot P(\text{vit klot}) \\ = \dfrac{1}{2} \cdot \dfrac{1}{3} + \dfrac{1}{2}\cdot\dfrac{2}{5} = \dfrac{11}{30} = 0,366\ldots \).</p>
+              <p>Alltså 0,37.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Vi kastar en tärning 4 gånger. Bestäm sannolikheten att vi får exakt en 6:a.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>6:an kan komma på första, andra, tredje eller fjärde kastet. Sannolikheterna för kasten är oberoende av varandra.</p>
+              <p>Vi får sannolikheten \( P(\text{4 kast, en 6:a}) = \\ = \dfrac{1}{6} \cdot \dfrac{5}{6} \cdot \dfrac{5}{6} \cdot \dfrac{5}{6} + \dfrac{5}{6} \cdot \dfrac{1}{6} \cdot \dfrac{5}{6} \cdot \dfrac{5}{6} \\ + \dfrac{5}{6} \cdot \dfrac{5}{6} \cdot \dfrac{1}{6} \cdot \dfrac{5}{6} + \dfrac{5}{6} \cdot \dfrac{5}{6} \cdot \dfrac{5}{6} \cdot \dfrac{1}{6} = 4 \cdot \dfrac{1}{6} \cdot (\dfrac{5}{6})^3 = 0,3858\ldots \)</p>
+                <p>Alltså 0,39.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Två reella tal, \( x \) och \( y \) väljs slumpmässigt ur intervallet \( [-1,4] \). Bestäm sannolikheten att
+            <ol>
+              <li>\( x > 3 \) eller \( y < 0 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>\( P(x  >  3 \text{ eller } y < 0) = P(x > 3)+P(y < 0)= \dfrac{1}{5} + \dfrac{1}{5} = \dfrac{2}{5} = 0,40 \).</p></div></div> </li>
+              <li>\( y < x-1 \) eller \( x < y-1 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Vi får  \( P(y < x-1 \text{ eller } x < y-1) = P(y < x-1) + P(x < y-1) = \dfrac{\dfrac{1}{2}\cdot 4 \cdot 4}{5\cdot 5} + \dfrac{\dfrac{1}{2}\cdot 4 \cdot 4}{5\cdot 5}=\dfrac{16}{25} = 0,64 \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>I en finalmatchserie möts HC Hakkila och Martsarin Myrsky Hockey. För att vinna mästerskapet krävs 4 segrar. Under säsongens tidigare matcher har HC Hakkila vunnit 4 matcher av 6 som lagen möts i. Bestäm sannolikhten att matchserien är över efter 4 st matcher.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>För att matchserien skall vara över efter 4 st matcher så skall något dera lag vinna 4 matcher på raken.</p>
+                <p>Vi får sannolikheten \( P(\text{HC Hakkila vinner 4 eller Martsarin Myrsky Hockey vinner 4}) = \\
+                P(\text{HC Hakkila vinner 4}) + P(\text{Martsarin Myrsky Hockey vinner 4}) = \\
+                \dfrac{4}{6}\cdot\dfrac{4}{6}\cdot\dfrac{4}{6}\cdot\dfrac{4}{6} + \dfrac{2}{6}\cdot\dfrac{2}{6}\cdot\dfrac{2}{6}\cdot\dfrac{2}{6} = \\
+                (\dfrac{4}{6})^4 + (\dfrac{2}{6})^4 = 0,20987\ldots \)</p>
+                <p>Alltså 0,21.</p>
+              </div></div>
+              <ol>
+                <li>Bestäm sannolikheten att Martsarin Myrsky Hockey vinner mästerskapet efter 5 st matcher. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11a">
+                <div class="card card-body answer"><p>För att Martsarin Myrsky Hockey skall vinna får HC Hakkila vinna den första, andra eller tredje matchen.</p>
+                  <p>Vi får sannolikheten \( P(\text{Martsarin Myrsky Hockey vinner efter 5 matcher}) = \\
+                    \dfrac{4}{6}\cdot\dfrac{2}{6}\cdot\dfrac{2}{6}\cdot\dfrac{2}{6} + \dfrac{2}{6}\cdot\dfrac{4}{6}\cdot\dfrac{2}{6}\cdot\dfrac{2}{6} +
+                    \dfrac{2}{6}\cdot\dfrac{2}{6}\cdot\dfrac{4}{6}\cdot\dfrac{2}{6}  = \\
+                    3\cdot \dfrac{4}{6}\cdot(\dfrac{2}{6})^3 = 0,0740\ldots \)</p>
+                    <p>Alltså 0,07.</p>
+                  </div></div>
+                </li>
+                <li>Bestäm sannolikheten att HC Hakkila vinner mästerskapet efter den 7 matchen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11b">
+                <div class="card card-body answer"><p>För att gå till en 7:e match krävs att båda lagen vinner 3 st matcher av 6 st.</p>
+                  <p>Antal kombinationer för det är \( \displaystyle {6 \choose 3} \).</p>
+                  <p>Sedan behöver HC Hakkila vinna den sista.</p>
+                  <p>Vi får sannolikheten \( P(\text{HC Hakkila vinner 7 matchen}) = \displaystyle {6 \choose 3} \cdot (\dfrac{4}{6})^3 (\dfrac{2}{6})^3 \cdot \dfrac{4}{6} = 0,1463\ldots \) </p>
+                  <p>Alltså 0,15.</p>
+                </div></div>
+              </li>
+            </ol>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="7_multiplikation.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_blandat.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

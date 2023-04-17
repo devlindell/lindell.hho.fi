@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>15. Korrelation</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="14_kont_stat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="16_normalfordelning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>15. Korrelation</h1>
+      <section>
+        <div class="theory">
+          <p>I arbetet om kurskamraternas längder som Anna, Bertil, Cecilia och Daniel fick de som respons att undersöka om det finns ett samband mellan hur könet påverkar längden. Inom statistik talar vi om att undersöka om det finns en korrelation, samband, mellan två variabler. </p>
+          <p>Vi undersöker om könet korrelerar med längden.</p>
+          <p>Men före vi gör det studerar vi följande tre bilder.</p>
+          <p><img src="pics/korr_1.png" alt="" class="responsivepic400" /></p>
+          <p>Bild 1, Samband mellan längd och ålder?</p>
+          <p><img src="pics/korr_2.png" alt="" class="responsivepic400" /></p>
+          <p>Bild 2, Samband mellan typ av morgonmål och när man stiger upp?</p>
+          <p><img src="pics/korr_3.png" alt="" class="responsivepic400" /></p>
+          <p>Bild 2, Samband mellan mängd av sand genom kroppen och ålder?</p>
+          <p>I bild 1 har vi punkterna fint samlade. Du märker att de nästan lägger sig på en linje. Här har vi ett bra samband mellan ålder och längd. Vi har en positiv korrelation.</p>
+          <p>I bild 2 märker vi igen att punkterna är spridda över hela grafen. Här finns ingen direkt korrelation mellan när du stiger upp på morgonen och vad du äter till morgonmål. Korrelationen är nära noll.</p>
+          <p>Bild 3 påminner om bild 1 på så sätt att punkterna är fint samlade. Vi har ett samband mellan ålder och hur mycket sand som far genom kroppen, där mängden sand minska med åldern. Vi har en negativ korrelation.</p>
+          <p>För att mäta hur bra två variabler korrelerar använder vi oss av <a href="http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient" target="_blank">Pearsons</a> och <a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient" target="_blank">Spearmans</a> korrelationskoefficienter. Det viktiga som du skall veta är att värdet för korrelationen, r, ligger mellan -1 och 1. Då \( \mid r \mid  >  0,8 \) har vi en stark korrelation. </p>
+          <table>
+            <tr class="MaA10"><th>Värdet på \( r \)</th><th>Korrelation</th></tr>
+            <tr><td>0 - 0,30</td><td>betydelselös</td></tr>
+            <tr><td>0,30 - 0,60</td><td>måttlig</td></tr>
+            <tr><td>0,60 - 0,80</td><td>märkbar</td></tr>
+            <tr><td>0,80 - 1</td><td>stark</td></tr>
+          </table>
+          <p>Nu är vi färdiga att gå tillbaka till könen och längden. Eftersom vi inte kan pricka in flicka och pojke ger vi dem värdena 1 och 2 (eller 2 och 3. Det är ingen skillnad så länge de har något värde).</p>
+          <p>Tabellen blir och se ut som följande:</p>
+            <table>
+                <tr class="MaA10"><th>Kön ( 1 = flicka, 2 = pojke)</th><th>Längd (cm)</th></tr>
+                <tr><td>1</td><td>156</td></tr><tr><td>1</td><td>159</td></tr>
+                <tr><td>1</td><td>163</td></tr><tr><td>1</td><td>164</td></tr>
+                <tr><td>1</td><td>168</td></tr><tr><td>1</td><td>174</td></tr>
+                <tr><td>2</td><td>163</td></tr><tr><td>2</td><td>175</td></tr>
+                <tr><td>2</td><td>178</td></tr><tr><td>2</td><td>179</td></tr>
+                <tr><td>2</td><td>181</td></tr><tr><td>2</td><td>187</td></tr>
+            </table>
+            <p>Hur vi bestämmer korrelationen med LibreOffice framgår i videon.</p>
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/371198148" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <p>På LibreOfficeCalc får du fram korrelationskoefficienten antingen via en graf eller så direkt med kommandot =korrel().</p>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Daniel som jobbar deltid i sin pappas paraplyaffär gjorde upp följande statistik under en period en höst. Undersök utgående från datan i tabellen nedan om det finns en korrelation mellan regnmängden och antalet sålda paraplyer.
+            <table>
+                <tr class="MaA10"><th>Total regnmängd för dagen (mm)</th><th>Antal sålda paraplyn</th></tr>
+                <tr><td>3,4</td><td>13</td></tr><tr><td>2,1</td><td>15</td></tr>
+                <tr><td>0</td><td>3</td></tr><tr><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>1</td></tr><tr><td>5,6</td><td>17</td></tr>
+                <tr><td>1,2</td><td>7</td></tr><tr><td>0</td><td>2</td></tr>
+                <tr><td>0</td><td>0</td></tr><tr><td>4,5</td><td>8</td></tr>
+                <tr><td>1,2</td><td>4</td></tr><tr><td>0</td><td>0</td></tr>
+
+            </table>
+            <ol>
+              <li>Bestäm värdet på \( R^2 \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>0,73</p></div></div> </li>
+              <li>Korrelationen är <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Stark</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li>En lärare gjorde följande observationer över sina elever sina abiturienter som studerade och skrev långa matematiken.
+            <table>
+                <tr class="MaA10"><th>Medeltal av MaA kurser</th><th>Vitsord i studentexamen</th></tr>
+                <tr><td>9,8</td><td>e</td></tr><tr><td>9,5</td><td>l</td></tr>
+                <tr><td>8,9</td><td>l</td></tr><tr><td>8,5</td><td>m</td></tr>
+                <tr><td>8,4</td><td>m</td></tr><tr><td>8,3</td><td>m</td></tr>
+                <tr><td>7,9</td><td>m</td></tr><tr><td>7,3</td><td>c</td></tr>
+                <tr><td>7,2</td><td>m</td></tr><tr><td>6,9</td><td>c</td></tr>
+                <tr><td>6,5</td><td>b</td></tr><tr><td>6,2</td><td>a</td></tr>
+                <tr><td>5,8</td><td>b</td></tr><tr><td>5,7</td><td>a</td></tr>
+            </table>
+            <p>Korrelerar vitsordet i studentexamen med medeltalet för kurserna? Vitsordsskalan i studentexamen går från l, som högst till, e, m, c, b, a och i som underkänt.</p>
+            <ol>
+              <li>\( R^2 \) har värdet <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>0,85</p></div></div> </li>
+              <li>Korrelationen är <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Stark</p></div></div> </li>
+              <li>Finns det ett samband mellan kursvitsorden och vitsordet i studentskrivningarna? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Ja!</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Anna och Bertil gjorde ett statistiskt arbete över om det finns en korrelation mellan längden av skolvägen och tiden som man kommer i tid till första lektionen. De följde med sina klasskamraters tider under en vecka och de fick följande data.
+            <table>
+              <tr class="MaA10"><th>Avstånd till skolan (km)</th><th>Minuter man är på plats före lektionen börjar. + är i tid, - är försenad.</th><tr>
+              <tr><td>1,5</td><td>5</td></tr>
+              <tr><td>1,7</td><td>5</td></tr>
+              <tr><td>1,8</td><td>5</td></tr>
+              <tr><td>2,0</td><td>5</td></tr>
+              <tr><td>3,6</td><td>5</td></tr>
+              <tr><td>0,4</td><td>-2</td></tr>
+              <tr><td>1,2</td><td>7</td></tr>
+              <tr><td>0,8</td><td>-4</td></tr>
+              <tr><td>5,3</td><td>10</td></tr>
+              <tr><td>0,1</td><td>1</td></tr>
+              <tr><td>1,3</td><td>-3</td></tr>
+              <tr><td>1,7</td><td>-15</td></tr>
+              <tr><td>0,6</td><td>7</td></tr>
+              <tr><td>0,9</td><td>6</td></tr>
+              <tr><td>1,1</td><td>4</td></tr>
+            </table>
+              <p>Finn det en korrelation mellan avståndet till skolan och vilken tid man är i skolan?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>En graf i LibreOffice ger att \( R^2 = 0,1067\ldots \). Alltså \( R = 0,3266\ldots \).</p>
+              <p>Eller kommandot =Korrel() ger \( 0,3266\ldots \).</p>
+              <p>Korrelationen är måttlig. Alltså inte direkt.</p>
+              </div></div>
+          </li>
+
+          <li>Cecilia och Daniel gjorde ett statistiskt arbete över om det finns ett samband mellan hur många timmar per dygn som man sover och ålder. De intervjuade personer i sin närmsta krets och fick följande data.
+            <table>
+              <tr class="MaA10"><th>Ålder</th><th>Timmar man sover per dygn.</th><tr>
+              <tr><td>17</td><td>7,5</td></tr>
+              <tr><td>18</td><td>6,5</td></tr>
+              <tr><td>17</td><td>8</td></tr>
+              <tr><td>15</td><td>8,5</td></tr>
+              <tr><td>47</td><td>8,5</td></tr>
+              <tr><td>48</td><td>8,5</td></tr>
+              <tr><td>55</td><td>6,5</td></tr>
+              <tr><td>57</td><td>7,5</td></tr>
+              <tr><td>67</td><td>7,5</td></tr>
+              <tr><td>84</td><td>6</td></tr>
+              <tr><td>5</td><td>10</td></tr>
+              <tr><td>3</td><td>11</td></tr>
+              <tr><td>12</td><td>9</td></tr>
+              <tr><td>15</td><td>8,5</td></tr>
+              <tr><td>11</td><td>8</td></tr>
+            </table>
+            <p>Finns det ett samband mellan ålder och hur många timmar man sover per dygn?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>På LibreOfficeCalc får vi korrelationen till \( -0,6407\ldots \).</p>
+              <p>Vi har en negativ korrelation. Korrelationen är märkbar. Det betyder att ju äldre man blir destu mindre sover man per dygn.</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Följade uppgift är från korta matematikens studentexamensprov från hösten 2020.
+            <p>Bedöm på basis av din allmänbildning vilket av alternativen som bäst beskriver korrelationen mellan följande variabler.</p>
+            <table>
+              <tr class="MaA10"><th></th><th>Positiv korrelation</th><th>Korrelationen är nära 0</th><th>Negativ korrelation</th></tr>
+              <tr><td>Längd och vikt hos finska barn.</td><td></td><td></td><td></td></tr>
+              <tr><td>Skonummer och blodtryck hos finländska vuxna.</td><td></td><td></td><td></td></tr>
+              <tr><td>Ett lands bruttonationalprodukt per invånare och barndödlighet.</td><td></td><td></td><td></td></tr>
+              <tr><td>Lodräta och vågräta koordinater för pilar som träffat en piltavla.</td><td></td><td></td><td></td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6">
+            <div class="card card-body answer"> <p>Den rätta raden är</p>
+              <table>
+                <tr class="MaA10"><th></th><th>Positiv korrelation</th><th>Korrelationen är nära 0</th><th>Negativ korrelation</th></tr>
+                <tr><td>Längd och vikt hos finska barn.</td><td><i class="fas fa-check"></i></td><td></td><td></td></tr>
+                <tr><td>Skonummer och blodtryck hos finländska vuxna.</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+                <tr><td>Ett lands bruttonationalprodukt per invånare och barndödlighet.</td><td></td><td></td><td><i class="fas fa-check"></i></td></tr>
+                <tr><td>Lodräta och vågräta koordinater för pilar som träffat en piltavla.</td><td></td><td><i class="fas fa-check"></i></td><td></td></tr>
+              </table>
+            </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="14_kont_stat.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="16_normalfordelning.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

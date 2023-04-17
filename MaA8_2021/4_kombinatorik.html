@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>4. Kombinatorik</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="3_vantevarde.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="5_permutationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>4. Kombinatorik</h1>
+      <section>
+        <div class="theory">
+          <p>Anna och Bertil besöker den lokala djurparken. Djurparken är känd på grund av apan Aapo som tycker om att skriva på en gammal skrivmaskin.</p>
+          <p>Med sig i buren har Aapo en gammal skrivmaskin med tangenter för 29 bokstäver, kommatecken, punkt, radbyte och frågetecken. På hans skrivmaskin finns in alles 33 tangenter. Han sitter i sin bur och har litterära ambitioner, men med hans metoder är lite si som så, han slår slumpmässigt på tangenterna.</p>
+          <p>För varje sekvens av ord finns det en sannolikhet att de skall dyka upp på pappret. Detta betyder att det finns en sannolikhet att Aapo kommer att skriva inledningsfrasen för Väinö Linnas Tuntematon Sotilas "Niin kuin, ...".</p>
+          <p>Dessutom existerar det en möjlighet att han får resten av boken skriven rätt och efter det skriven den på engelska. Sannolikheten är liten men den existerar...</p>
+          <p>Vi ser på de två första orden som 10 lådor som skall fyllas med rätt innehåll.</p>
+          <table>
+
+              <tr><td>N</td><td>I</td><td>I</td><td>N</td><td>_</td><td>K</td><td>U</td><td>I</td><td>N</td><td>,</td></tr>
+
+          </table>
+            <p>För första rutan kan vi välja mellan 33 tangenter, för den andra mellan 33 tangenter, den tredje 33 tangenter och så vidare. Vi får \( 33 \cdot 33 \cdot 33 \cdot 33 \cdot 33\cdot 33 \cdot 33\cdot 33 \cdot 33 \cdot 33 = 33^{10} = 1 531 578 985 264 449 \).</p>
+            <p>Som du märker är finns det en hel del olika sätt att kombinera 10 stycken tecken, och en av dessa ger "Niin kuin,". I de flesta fallen skriver han något i stil med "Ahm?.re sf".</p>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> En sifferkombination bestäms genom att kasta en sexsidig tärning 3 gånger. Hur många olika sifferkombinationer kan man bilda?</p>
+              <h4>Lösning</h4>
+              <p>På tärningen har vi siffrorna 1-6. På första plats finns det 6 olika möjligheter, andra plats 6 st och till sist 6 st.</p>
+              <p>Antalet kombinationer är \( 6 \cdot 6 \cdot 6 = 6^3 = 216 \) st.</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> I ett lotteri finns 100 lotter, varav 20 st ger vinst. Anna köper tre lotter. Bestäm sannolikheten att hon i alla fall har en vinst.</p>
+              <h4>Lösning</h4>
+              <p>Vi kan inte bestämma sannolikheten direkt. Komplementet för "i alla fall en vinst" är "ingen vinst".</p>
+              <p>Sannolikheten för vinst är \( \dfrac{20}{100} = 0,20 \) och sannolikheten för ingen vinst är \( 0,80 \).</p>
+              <p>Vi skall ha 3 st ingen vinst efter varann.</p>
+              <p>Vi får \( P(\text{i alla fall en vinst}) = 1 - P(\text{ingen vinst}) = 1 - 0,80^2 = 0,488 \approx 0,49 \).</p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Bertil har i sitt klädskåp, 2 par jeans, 5 par t-skjortor, 3 st tröjor och 7 par strumpor. Hur många olika klädkobinationer kan han skapa?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får \( 2 \cdot 5 \cdot 3 \cdot 7 = 210 \).</p></div></div>
+          </li>
+
+          <li>En fyrsiffrig PIN kod består av fyra siffror från intervallet 0-9. Hur många olika koder finns det?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>\( 10 \cdot 10 \cdot 10 \cdot 10 = 10000 \).</p></div></div>
+          </li>
+
+          <li>I stryktipset kan man välja mellan 1,X och 2. Totalt finns det 13 matcher vars utgång man skall gissa (eller veta).
+            <ol>
+                <li>Hur många olika tipsrader finns det totalt? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5a">
+                <div class="card card-body answer"><p>3 tecken per rad, 13 rader. Antal kombinatoner är \( 3^{13}=1594323 \).</p></div></div> </li>
+                <li>Bestäm sannolikheten att ha 13 rätt genom att slumpmässigt välja tecken. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="5b">
+                <div class="card card-body answer"><p>1 rad är rätt.</p>
+                  <p>Vi får sannolikheten \( P(\text{13 rätt}) = \dfrac{1}{3^{13}} \approx 6,27 \cdot 10^{-7} \).</p>
+                </div></div> </li>
+              </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En registerplåt består av tre bokstäver från A till Z, borträknat Q och W och tre siffror från 0 till 9. Hur många olika registerplåtar kan man bilda av detta?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi har 24 bokstäver och 10 siffror.</p>
+              <p>Vi har \( 24 \cdot 24 \cdot 24 \cdot 10\cdot 10\cdot 10 = 13 824 000 \) stycken.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I en familj finns det 4 st barn (inte tvillingar). Bestäm följande sannolikheter.
+            <ol>
+              <li>Att alla barn är födda på olika veckodagar. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7a">
+              <div class="card card-body answer"><p>Antalet gynnsamma fall är \( 7 \cdot 6 \cdot 5 \cdot 4 \). Det första barnet föds någon dag, följande får inte födas på samma dag som det första barnet osv.</p>
+              <p>Totala fall är \( 7 \cdot 7 \cdot 7 \cdot 7 = 7^4 \).</p>
+              <p>Vi får sannolikheten \( P(\text{Alla barn födda på olika dagar}) = \dfrac{7 \cdot 6 \cdot 5 \cdot 4}{7^4} = 0,34985 \ldots \approx 0,35 \).</p>
+              </div></div> </li>
+              <li>I alla fall två barn är födda på samma veckodag. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7b">
+              <div class="card card-body answer"><p>Att i alla fall två barn är födda på samma dag är komplementet till att alla barn är födda på olika dagar.</p>
+              <p>Vi får \( P(\text{i alla fall två barn är födda på samma dag}) \\
+                = 1 - P(\text{Alla barn födda på olika dagar}) = 1 - 0,34985 \ldots \approx 0,65 \) .</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I ett lotteri finns 100 st lotter varav 20 ger vinst. Bertil köper 3 lotter. Bestäm sannolikheten att han i alla fall får en vinst.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Sannolikheten för vinst är 0,20. Sannolikheten att vi inte vinner något är 0,80.</p>
+              <p>\( P(\text{i alla fall 1 vinst}) = 1 -P(\text{3 gånger ingen vinst}) = 1 - 0,80^3 = 0,488 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Datorer som är uppkopplade till nätverk har en IP-adress. För IP-adresserna finns det två standarder, den gamla IPv4 och det nya IPv6. IPv4 består 32 sekvenser som antingen har värdet noll eller ett. IPv6 består igen av 128 sekvenser som antingen har värdet noll eller ett.
+            <ol>
+              <li>Hur många IPv4 adresser kan man bilda? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9a">
+              <div class="card card-body answer"><p>Vi har antingen en 1 eller 0, 2 alternativ, och 32 tecken efter varandra.</p>
+              <p>Vi får att \( 2^{32}=4294967296 = 4,29 \cdot 10^9 \) stycken.</p></div></div> </li>
+              <li>Hur många IPv6 adresser kan man bilda? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9b">
+              <div class="card card-body answer"><p>Vi har 2 alternativ, 1 eller 0. Antal tecken är 128.</p>
+              <p>Vi får \( 2^{128}= 3,402823 \cdot 10^{38} \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Sex kort numreras från 1 till 6 och blandas. Man lyfter tre stycken kort utan återläggning så att man får ett tresiffrigt tal. Bestäm sannolikheten att man får en talföld som består av tre tal som är växande.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5">
+              <div class="card card-body answer"> <p>Av sex kort kan vi bilda tresiffriga tal på \( 6 \cdot 5 \cdot 4 = 120 \) olika sätt.</p>
+              <p>Växande talföljder med tre siffror är 123, 124, 125, 126, 134, 135, 136, 145, 146, 156, 234, 235, 236, 245, 246, 256, 345, 346, 356 och 456. Totalt är de 20 stycken.</p>
+              <p>Den eftersökta sannolikheten är \( \dfrac{20}{120} = \dfrac{1}{6} \approx 0,167 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Åt en spelare delas 5 st spelkort. Bestäm sannolikheten att i alla fall 2 st kort har samma valör.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Då vi drar det första kortet har vi 52 st att välja emellan, sedan är det 51 och vid de 5:e kortet är det 48 olika kort som vi kan dra.</p>
+              <p>De totala antalet kombinationer är \( 52 \cdot 51 \cdot 50 \cdot 49 \cdot 48 \).</p>
+              <p>Att 2 kort har samma valör kan vi inte räkna direkt. Vi måste gå via komplementet.</p>
+              <p>Kompementet är händelsen "alla kort har olika valör".</p>
+              <p>Då finns det för första kortet 52 st olika kort, för det andra kortet 48 olika kort, för det 3:e 44 olika valörer, 4:e 40 olika valörer och för 5:e 36 olika valörer.</p>
+              <p>Totala kombinationer för händelsen "alla kort har olika valör" är \( 52 \cdot 48 \cdot 44 \cdot 40 \cdot 36 \).</p>
+              <p>Den sökta sannolikheten är \( P(\text{i alla fall 2 har samma valör}) = \\
+                1 - P(\text{alla kort har samma valör}) = 1 -\dfrac{52 \cdot 48 \cdot 44 \cdot 40 \cdot 36}{52 \cdot 51 \cdot 50 \cdot 49 \cdot 48} = 0,4929\ldots  \approx 0,493 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>FC Haxböle deltog i en fotbollsturnering där de spelade fyra matcher och gjorde tre mål. Totalt gjorde motståndarna två mål mot FC Haxböle. För seger får man tre poäng, för jämt spel ett poäng och för förlust blir man utan poäng. Hur många poäng kan FC Haxböle ha i slutet av turneringen?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>FC Haxblöle har kunna göra sina mål i en, två, tre eller fyra matcher. Motståndarnas mål kan vara gjorda i en eller två matcher. Vi får följande alternativ:</p>
+              <p>Resultaten 3-2, 0-0, 0-0, 0-0. Poängen är \( 3+1+1+1=6 \).</p>
+              <p>Resultaten 3-0, 0-2, 0-0, 0-0. Poängen är \( 3+0+1+1=5 \).</p>
+              <p>Resultaten 3-2, 0-1, 0-1, 0-0. Poängen är \( 3+0+0+1=4 \).</p>
+              <p>Resultaten 3-1, 0-1, 0-0, 0-0. Poängen är \( 3+0+1+1=5 \).</p>
+              <p>Resultaten 2-2, 1-0, 0-0, 0-0. Poängen är \( 1+3+1+1=6 \).</p>
+              <p>Resultaten 2-0, 1-2, 0-0, 0-0. Poängen är \( 3+0+1+1=5 \).</p>
+              <p>Resultaten 2-0, 1-0, 0-2, 0-0. Poängen är \( 3+3+0+1=7 \).</p>
+              <p>Resultaten 2-1, 1-1, 0-0, 0-0. Poängen är \( 3+1+1+1=6 \).</p>
+              <p>Resultaten 2-1, 1-0, 0-1, 0-0. Poängen är \( 3+3+0+1=7 \).</p>
+              <p>Resultaten 2-0, 1-1, 0-1, 0-0. Poängen är \( 3+1+0+1=5 \).</p>
+              <p>Resultaten 2-0, 1-0, 0-1, 0-1. Poängen är \( 3+3+0+0=6 \).</p>
+              <p>Resultaten 1-2, 1-0, 1-0, 0-0. Poängen är \( 0+3+3+1=7 \).</p>
+              <p>Resultaten 1-0, 1-0, 1-0, 0-2. Poängen är \( 3+3+3+0=9 \).</p>
+              <p>Resultaten 1-1, 1-1, 1-0, 0-0. Poängen är \( 1+1+3+1=6 \).</p>
+              <p>Resultaten 1-1, 1-0, 1-0, 0-1. Poängen är \( 1+3+3+0=7 \).</p>
+              <p>Möjliga poäng i slutet är 4,5,6,7 eller 9 poäng.</p>
+              </div></div>
+              <ol>
+                <li>Bestäm sannolikheterna för de olika poängmängderna. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11a">
+                <div class="card card-body answer"><p>Vi får</p>
+                <p>För 4 poäng, \( \dfrac{1}{15} \).</p>
+                <p>För 5 poäng, \( \dfrac{4}{15} \).</p>
+                <p>För 6 poäng, \( \dfrac{5}{15} \).</p>
+                <p>För 7 poäng, \( \dfrac{4}{15} \).</p>
+                <p>För 9 poäng, \( \dfrac{1}{15} \).</p>
+                </div></div> </li>
+                <li>Bestäm väntevärdet för hur många poäng FC Haxböle samlar i turneringen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="11b">
+                <div class="card card-body answer"><p>Vi får \( 4\cdot \dfrac{1}{15} + 5\cdot \dfrac{4}{15} + 6\cdot \dfrac{5}{15} + 7\cdot \dfrac{4}{15} + 9\cdot \dfrac{1}{15} \approx 6,07 \).</p>
+                <p>Alltså 6 poäng.</p>
+                </div></div> </li>
+              </ol>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Anna försöker bryta in sig på Bertils Facebook konto. Anna vet att Bertils kod består först av 4 bokstäver och sedan 4 siffror. Bokstäverna kan vara små eller stora och från A-Ö. Vidare vet hon att 3:e bokstaven är ett A eller a och att de två sista siffrorna är 4 och 5. Hur många olika varianter finns det för henne att pröva?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Totalt har vi \( 2\cdot 29 = 58 \) bokstäver och 10 st siffror.<p>Eftersom vi vet att tredje tecknet är a eller A och nästsista siffran är 4 och sista är 5 blir antalet kombinationer \( 58\cdot 58\cdot 2 \cdot 58\cdot 10 \cdot 10 \cdot 1 \cdot 1 = 39022400 \) varianter.</p></div></div>
+              <ol>
+                <li>Varför är ett längre lösenord säkrare än ett kort? Gör i ett kalkylblad (tex Excel, Sheets eller Numbers) en tabell över hur många olika kombinationer en viss längd av ett lösenord har. Räkna ut i kolumnen bredvid tiden som det tar för en dator att gå igenom alla olika kombinationer om datorn har klockfrekvensen 1,5 MHz. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="14a">
+                <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              </ol>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="3_vantevarde.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="5_permutationer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

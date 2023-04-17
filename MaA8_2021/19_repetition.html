@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>19. Repetition</title>
+
+  </head>
+  <body>
+    <header class="MaA10">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_begrepp.html">1. Begrepp</a>
+            <a class="dropdown-item" href="2_geo_snl.html">2. Geometrisk sannolikhet</a>
+            <a class="dropdown-item" href="3_vantevarde.html">3. Väntevärde</a>
+            <a class="dropdown-item" href="4_kombinatorik.html">4. Kombinatorik</a>
+            <a class="dropdown-item" href="5_permutationer.html">5. Permutationer</a>
+            <a class="dropdown-item" href="6_kombinationer.html">6. Kombinationer</a>
+            <a class="dropdown-item" href="7_multiplikation.html">7. Multiplikationsprincipen</a>
+            <a class="dropdown-item" href="8_addition.html">8. Additionsprincipen</a>
+            <a class="dropdown-item" href="9_blandat.html">9. Blandat</a>
+            <a class="dropdown-item" href="10_betingad.html">10. Betingad sannolikhet</a>
+            <a class="dropdown-item" href="11_mangdlara.html">11. Mängdlära</a>
+            <a class="dropdown-item" href="12_upprepat.html">12. Upprepat försök</a>
+            <a class="dropdown-item" href="13_diskret_stat.html">13. Diskret statistik</a>
+            <a class="dropdown-item" href="14_kont_stat.html">14. Kontinuerlig statistik</a>
+            <a class="dropdown-item" href="15_korrelation.html">15. Korrelation</a>
+            <a class="dropdown-item" href="16_normalfordelning.html">16. Normalfördelning</a>
+            <a class="dropdown-item" href="17_statistik_int.html">17. Statistik och integrering</a>
+            <a class="dropdown-item" href="18_egetarbete.html">18. Eget arbete</a>
+            <a class="dropdown-item" href="19_repetition.html">19. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="18_egetarbete.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 8 Statistik och sannolikhet</h3>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>19. Repetition</h1>
+      <section>
+        <div class="theory">
+          <p>Sedan är det bara att repetera.</p>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Vi kastar en tärning formad som en tetraeder som slumpmässigt ger tal mellan 1 till 4 och en tärning formad som en oktaeder som slumpmässigt ger tal mellan 1 till 8. Bestäm sannolikheten att
+            <ol>
+              <li>den totala summan av ögontalen är större än 6. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Rita upp en tabell. Kom fram till \( \dfrac{1}{8} = 0,125 \).</p></div></div> </li>
+              <li>att tetraedern ger ett större ögontal. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Rita upp en tabell. Jämför areorna som bildas. Kom fram till \( \dfrac{3}{16} \).</p></div></div> </li>
+              <!--<li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>-->
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+          <li>Vi väljer slumpmässigt två tal. Det första från intervallet \( [-1,1] \) och det andra från \( [-2,1] \). Bestäm sannolikheten att summan av talen är positiv.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Rita en bild, tabell. Jämför den arean som vi söker efter med totala arean.</p>
+              <p>Kom fram till \( \dfrac{1}{3} \).</p>
+              </div></div>
+          </li>
+
+          <li>I en urna finns 15 vita och 12 svarta kulor. Vi lyfter slumpmässigt 5 st kulor. Bestäm sannolikheten att vi får 3 st vita och 2 st svarta kulor.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.5">
+              <div class="card card-body answer"> <p>Totalt har vi 27 kulor. Vi får sannolikheten \( \dfrac{\binom{15}{3}\binom{12}{2}}{\binom{27}{5}} = 0,37198\ldots \approx 0,372 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Anna övernattar i skogen. Från hennes lägerplats finns en landsväg som är vinkelrät på avståndet 15 km. Hon startar på morgonen och vandrar rakt framåt. Under en dag vandrar hon 20 km. Bestäm sannolikheten att hon kommer fram till landsvägen samma dag.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3.75">
+              <div class="card card-body answer"> <p>Situationen är följande</p>
+              <p><img src="pics/19-3.png" class="responsivepic600" /></p>
+              <p>Vi söker en vinkel i triangeln. Den får vi med cosinus, \( 41,4\ldots^{\circ} \)</p>
+              <p>Vi får \( P(\text{Kommer fram}) = \dfrac{2\cdot 41,4\ldots^{\circ}}{360^{\circ}} = 0,2300\ldots = 0,23 \).</p>
+              </div></div>
+          </li>
+
+          <li>På lunchrestaurangen på Bertils arbetsplats har varje dag samma menu som består av 7 st olika maträtter. Bertil äter varje dag lunch på restaurangen och han väljer slumpmässigt en maträtt. Bestäm sannolikheten att Bertil äter under en arbetsvecka 5 st olika maträtter.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi söker \( \dfrac{\text{gynsamma}}{\text{totala}} \). Gynsamma fall är \( 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \) och totala fall är \( 7^5 \).</p>
+              <p>Sannolikheten är 0,15.</p>
+              </div></div>
+          </li>
+
+          <li>En tärning kastas 5 gånger. Lönar det sig att slå vad om att ett ögontal inte kommer två gånger efter varann?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Vi söker \( \dfrac{\text{gynsamma}}{\text{totala}} \). Gynsamma fall är \( 6 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \) och totala fall är \( 6^5 \).</p>
+              <p>Sannolikheten är 0,48.</p>
+              <p>Eftersom sannolikheten är mindre än 0,50 så lönar det sig inte.</p>
+            </div></div>
+          </li>
+
+          <li>I en låda finns 5 gula och 7 röda bollar. På hur många olika sätt kan vi dra fyra bollar ur lådan så att
+            <ol>
+              <li>två är gula och två är röda <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.1a">
+              <div class="card card-body answer"><p>Antal grupper med gula bollar är \( \displaystyle\binom{5}{2} \) och antal grupper med röda bollar är \( \displaystyle\binom{7}{2} \).</p>
+              <p>Totala antalet är \( \displaystyle\binom{5}{2} \cdot \displaystyle\binom{7}{2} = 210 \) olika sätt.</p>
+              </div></div> </li>
+              <li>det finns åtminstone en boll av vardera färgen? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.1b">
+              <div class="card card-body answer"><p>4 bollar av 12 kan vi välja på \( \displaystyle\binom{12}{4} = 495\) olika sätt.</p>
+              <p>Mänden där 4 gula bollar väljs av 5 är \( \displaystyle\binom{5}{4} = 5\) st.</p>
+              <p>Mänden där 4 gula bollar väljs av 7 är \( \displaystyle\binom{7}{4} = 35\) st.</p>
+              <p>Alltså är antalet där iaf en färg är representerad \( 495 - 5 - 35 = 455 \) olika sätt.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Av ringmarkerade duvhökar träffas senare 15 %. Hur många duvhökar skall man ringmarkera så att sannolikheten är minst 99 % att man i alla fall träffar en duvhök på nytt. Vi antar att händelsen att man träffar på ringmarkerade duvhökar är oberoende av varandra.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.5">
+              <div class="card card-body answer"> <p>Sannolikheten att vi inte träffar på en duvhök är 0,85. Då är sannolikheten att man inte träffar på \( n \) st \( 0,85^n \).</p>
+              <p>Vi får följande, \( P(\text{minst 1}) = 1 - P(\text{ingen}) = 1 - 0,85^n \).</p>
+              <p>Vi vill att \( 1 - 0,85^n > 0,99 \). Då du löser olikheten (du kan tänka att du löser en ekvation) får vi \( n > 29 \).</p>
+            </div></div>
+          </li>
+
+          <li>En tärning kastas tre gånger. Vilken är sannolikheten att man får ögontalet 6 åtminstone en gång?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.7">
+              <div class="card card-body answer"> <p>Totala antalet utfall är \( 6 \cdot 6 \cdot 6 = 216 \).</p>
+              <p>Vi jobbar via komplementet och söker kast som inte innehåller en 6:a. Dess är \( 5 \cdot 5 \cdot 5 =125\) st.</p>
+              <p>Vi får \( P(\text{åtminstone en 6:a}) = 1 - P(\text{ingen 6:a}) = 1 -\dfrac{125}{216} = 0,4212\ldots \approx 0,421 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En tärning kastas tre gånger. Vilken är sannolikheten att det erhållna ögontalet allid är större än ögontalet i föregående kast?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5.75" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5.75">
+              <div class="card card-body answer"> <p>För det andra kastet gäller det att ögontalet är mindre mera än förra kastet.</p>
+              <p>Vi skapar följande tabell.</p>
+              <p><img src="pics/19-4.png" class="responsivepic400" /></p>
+              <p>Totala antal utfall är \( 6^3 = 216 \) gynsamma fall är 20 st.</p>
+              <p>Den sökta sannolikheten är \( P(\text{större ögontal med tre kast}) = \dfrac{20}{216} = \dfrac{5}{54} =  0,09259\ldots \approx 0,093 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lönar det sig att slå vad om att då två slantar singlas tre gånger, så får man i alla fall en gång två kronor.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Vi får \( P(\text{i alla fall två kronor}) = 1 - P(\text{inget par med korna}) = 1 - (\dfrac{3}{4})^3 \approx 0,58 \).</p>
+              <p>Jo, det lönar sig, eftersom sannolikheten är större än 0,50.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Biljettkontrollanter undersöker slumpmässigt cirka var 300:e passageres biljett. Bestäm sannolikheten att en person som åker till jobb och hem blir fast under ett år för att åka utan biljett. Ett år har 220 arbetsdagar.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får \( P(\text{Blir fast}) = 1 - P(\text{blir inte fast}) = 1 - (\dfrac{299}{300})^{440} = 0,77 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Daniel kastar slumpmässigt pil mot tavlan som är nedan. Bestäm väntevärdet av kastet.
+            <p><img src="pics/19-8.png" class="responsivepic600" /></p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Bestäm arean för varje område och jämför det med hela arean, 81 rutor, för att få sannolikheterna.</p>
+              <p>Väntevärdet, \( E(x) = 2,04 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Sju stycken 20-åriga manliga vänner bestämmer sig att träffas 60 år senare. Med vilken sannolikhet kommer minst 2 personer att komma till träffen? Av 20-åriga män uppnår ca 30 % en ålder om 80 år.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8.5">
+              <div class="card card-body answer"> <p>Vi har upprepat försök. Sannolikheten att en person inte uppnår 80 år är 0,70.</p>
+              <p>\( P(\text{Minst 2 personer}) = 1 - (P(\text{Ingen}) + P(\text{En person})) = \\ 1 - (0,70^{7} + \displaystyle\binom{7}{1} 0,30 \cdot 0,70^6) \approx 0,67\)</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>På Annas skolväg finns det tre övergångsställen med trafikljus som fungerar oberoende av varandra. Trafikljusen visar grönt 30 %, 45 % och 60 % av tiden. Bestäm sannolikheten att på grund av rött ljus så månste Anna stanna
+            <ol>
+              <li>en gång <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9a">
+              <div class="card card-body answer"><p>Bilda tre fall där en av ljusen visar rött.</p>
+                <p>Vi får \( 0,70 \cdot 0,45 \cdot 0,60 + 0,30 \cdot 0,55 \cdot 0,60 + 0,30 \cdot 0,45 \cdot 0,40 = 0,34 \).</p></div></div> </li>
+              <li>i alla fall en gång. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9b">
+              <div class="card card-body answer"><p>Vi går via komplementet, \( P(\text{i alla fall en gång}) = 1-P(\text{ingen gång}) = 1- 0,30 \cdot 0,45 \cdot 0,60 = 0,92 \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I Stryktipset (Vakioveikkaus) spelar man på 13 matcher och försöker gissa om matchen slutar i seger för hemmalaget 1, jämt X eller seger för bortalaget 2. Vinst betalas ut om man får mera än 10 st rätt.
+            <ol>
+              <li>Bestäm sannolikheten att vi har 10 st rätt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5a">
+              <div class="card card-body answer"><p>Vi har upprepat försök. Vi får \( \displaystyle\binom{13}{10}0,33^{10}\cdot 0,66^{3} = 0,0013 \approx 0,001 \).</p>
+              </p></div></div> </li>
+              <li>Bestäm sannolikheten att vi vinner pengar. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5b">
+              <div class="card card-body answer"><p>Vi skall ha 13, 12, 11 eller 10 rätt.</p>
+                <p>Vi får \( \displaystyle\binom{13}{13}0,33^{13}\cdot 0,66^{0} + \displaystyle\binom{13}{12}0,33^{12}\cdot 0,66^{1} + \\ \displaystyle\binom{13}{11}0,33^{11}\cdot 0,66^{2} + \displaystyle\binom{13}{10}0,33^{10}\cdot 0,66^{3} = 0,00150 \approx 0,002 \).</p></div></div> </li>
+              <li>Rita upp fördelningen på GeoGebra. Hur många rätt har den största sannolikheten? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p><img src="pics/19-10.png" class="responsivepic600" /></p>
+                <p>Vi ser att största sannolikheten har 4 gånger rätt.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Följande uppgifter är från SE våren 2021.
+            <p>Lisa spelar spelet Afrikas stjärna. Hon har hittat Afrikas stjärna och återvänder till Kairo för att vinna spelet. Hon är på fyra stegs avstånd från Kairo. Man får stanna i Kairo även om tärningens ögontal skulle berättiga till att resa längre.</p>
+            <p><img src="pics/19-9.jpg" class="responsivepic400" /></p>
+            <p>Om hon kastar minst ögontalet fyra så kommer hon fram till Kairo och vinner spelet. Om hon kastar ögontalet tre så kan hon vara säker på att hon på följande kast kommer fram till Kairo och vinner spelet. Lisa behöver högst fyra kast för att komma fram till Kairo. Vi antar att ingen annan vinner spelet före det.</p>
+            <ol>
+              <li>Med vilken sannolikhet vinner Lisa på första kastet? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.6a">
+              <div class="card card-body answer"><p>Lisa vinner på det första kastet om hon som resultat får 4-6, dvs. sannolikheten är \( \dfrac{3}{6} = \dfrac{1}{2} \).</p>
+              </div></div> </li>
+              <li>Med vilken sannolikhet behöver Lisa minst tre kast för att komma fram till Kairo? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.6b">
+              <div class="card card-body answer"><p>Lisa behöver 􏰂era än två kast endast om resultatet av de två första kasten är 1,1 eller 1,2 eller 2,1.</p>
+              <p>Två tärningar kan kastas på \( 6 \cdot 6 = 36 \) olika sätt.</p>
+              <p>Sannolikheten är alltså \( \dfrac{3}{36} = \dfrac{1}{12} \approx 0,083\ldots \).</p>
+              </div></div> </li>
+              <li>Beräkna väntevärdet för antalet kast som Lisa behöver för att komma fram till Kairo. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.6c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.6c">
+              <div class="card card-body answer"><p>Eftersom sannolikheten för att hon ska behöva minst tre kast är \( \dfrac{3}{36} \) och sannolikheten för att ett kast räcker är \( \dfrac{1}{2} \), är sannolikheten för att exakt två kast behövs \( 1 - \dfrac{3}{36} - \dfrac{1}{2} = \dfrac{15}{36} \).</p>
+              <p>Fyra kast behövs endast då vart och ett av de tre första kasten ger en etta, dvs. sannolikheten är \( \dfrac{1}{6^3} = \dfrac{1}{216} \).</p>
+              <p>Sannolikheten för att tre kast behövs är där med \( \dfrac{3}{36} - \dfrac{1}{216} = \dfrac{17}{216} \).</p>
+              <p>Väntevärdet är alltså \( 1\cdot\dfrac{1}{2} + 2 \cdot \dfrac{15}{36} + 3\cdot \dfrac{17}{216} + 4\cdot \dfrac{1}{216} =\dfrac{343}{216} \approx 1,59 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Följande uppgifter är från SE hösten 2021.
+            <p>I ett spel kastar två spelare A och B turvis tärning ända tills den ena spelaren vinner och spelet avslutas.</p>
+            <p>Spelaren A vinner spelet om han på sin kasttur kastar resultatet 1 eller 2.</p>
+            <p>Spelaren B vinner spelet om hon på sin kasttur kastar resultatet 1, 2 eller 3.</p>
+            <p>Spelaren A börjar.</p>
+            <ol>
+              <li>Med vilken sannolikhet slutar spelet med att A vinner på sitt första kast? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.7a">
+              <div class="card card-body answer"><p>\( P(\text{A vinner på 1.a kastet}) = \dfrac{2}{6} = \dfrac{1}{3} \).</p></div></div> </li>
+              <li>Med vilken sannolikhet slutar spelet med att B vinner på sitt första kast? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.7b">
+              <div class="card card-body answer"><p>För att B skall vinna så skall A inte vinna och B sedan vinna.</p>
+              <p>A vinner inte med sannolikheten \( 1- \dfrac{1}{3} = \dfrac{2}{3} \).</p>
+              <p>Vi får \( P(\text{A vinner inte och B vinner}) = \dfrac{2}{3} \cdot \dfrac{3}{6} = \dfrac{1}{3} \).</p>
+              </div></div> </li>
+              <li>Vilken är sannolikheten för vardera spelaren att vinna spelet? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.7c">
+              <div class="card card-body answer"><p>För att vinna på första omgången har både A och B samma sannolikhet, \( \dfrac{1}{3} \).</p>
+              <p>Vinner varken A eller B på första omgången spelar de en till omgång. Då är förutsättningarna samma som på första omgågen. De har samma sannolikhet att vinna.</p>
+              <p>Spelet tar slut då någon dera spelare vinner, alltså är den sökta sannolikheten \( \dfrac{1}{2} \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Följande uppgifter är från SE våren 2022.
+            <ol>
+              <li>En godispåse innehåller 22 salmiakkarameller och 19 fruktkarameller. Eri tar tre karameller ur påsen. Med vilken sannolikhet är alla tre fruktkarameller? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.75a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.75a">
+              <div class="card card-body answer"><p>Karamellernas totala antal i början: \( 19+22=41 \).</p>
+              <p>Sannolikheten för att den första karamellen som tas ur påsen är en fruktkaramell är \( \dfrac{19}{41} \).</p>
+              <p>Sannolikheten för att den andra karamellen som tas ur påsen är en fruktkaramell är \( \dfrac{18}{40} \) och för den tredje är sannolikheten \( \dfrac{17}{39} \).</p>
+              <p>Sannolikheten är alltså \( \dfrac{19}{41}\cdot \dfrac{18}{40}\cdot \dfrac{17}{39} \approx 0,0909 = 9 \)%.</p></div></div> </li>
+              <li>Alla karameller som Eri tagit ur påsen är fruktkarameller, varvid påsen innehåller 22 salmiakkarameller och 16 fruktkarameller. Kura tar nu fem karameller ur påsen. Med vilken sannolikhet finns det bland dessa fem karameller minst en salmiakkaramell och minst en fruktkaramell? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.75b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.75b">
+              <div class="card card-body answer"><p>Vi beräknar sannolikheten för komplementhändelsen, dvs. sannolikheten för att alla är fruktkarameller eller alla är salmiakkarameller.</p>
+              <p>Alla är salmiakkarameller: \( \dfrac{22\cdot 21\cdot 20\cdot 19\cdot 18}{38\cdot 37\cdot 36\cdot 35\cdot 34}\approx 0,05246 \).</p>
+              <p>Alla är fruktkarameller: \( \dfrac{16\cdot 15\cdot 14\cdot 13\cdot 12}{38\cdot 37\cdot 36\cdot 35\cdot 34}\approx 0,00870 \).</p>
+              <p>Den efterfrågade sannolikheten är alltså \( 1-0,05246-0,00870\approx 0,93883\approx 0,94=94 \) %.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Följande uppgifter är från SE hösten 2022.
+            <p>Av 99 små röda kuber, som sinsemellan är lika stora, sammanställs tre stora kuber som består av 8, 27 och 64 delar. Sidorna i dessa tre stora kuber målas med blå färg. Efter målandet tas de stora kuberna isär så att de åter bildar 99 små kuber.</p>
+            <ol>
+              <li>En liten kub väljs slumpmässigt ut. Med vilken sannolikhet är den valda kubens alla sidor röda? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.9a">
+              <div class="card card-body answer"><p>Vi beräknar först antalet inre kuber. I den kub som består av åtta små kuber finns det ingen inre kub. Den kub som består av 27 små kuber har en inre kub, och den kub som består av 64 små kuber har 8 (=2<sup>3</sup>) inre kuber. Antalet inre kuber är alltså sammanlagt 9.</p>
+              <p>De små kuberna är totalt 99, till antalet, vilket betyder att den efterfrågade sannolikheten är \( \dfrac{9}{99} = \dfrac{1}{11} \).</p>
+              </div></div> </li>
+              <li>Tre små kuber väljs slumpmässigt ut. Med vilken sannolikhet är alla sidor röda på åtminstone en av de valda kuberna? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.9b">
+              <div class="card card-body answer"><p>Komplementhändelse: Ingen av de små kuberna är röd på alla sidor.</p>
+              <p>Till att börja med finns det 90 kuber som inte är röda på alla sidor.</p>
+              <p>Sannolikheten för att den andra kubens alla sidor inte är röda är \( \dfrac{89}{98} \).</p>
+              <p>Sannolikheten för att den tredje kubens alla sidor inte är röda är \( \dfrac{88}{97} \).</p>
+              <p>Den efterfrågade sannolikheten är alltså \( 1 - \dfrac{90}{99} \cdot \dfrac{89}{98} \cdot \dfrac{88}{97} = \dfrac{1193}{4753} \approx 0,25 \).</p>
+            </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>En slant singlas 60 gånger. Bestäm sannolikheten att antalet klavor är
+            <ol>
+              <li>30 st <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Vi har upprepat försök. Vi får \( \displaystyle\binom{60}{30}0,50^{30}\cdot 0,50^{30} = 0,10258 \approx 0,103 \).</p>
+              </p></div></div> </li>
+              <li>Mellan 29 och 31 stycken. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Vi får \( \displaystyle\binom{60}{29}0,50^{29}\cdot 0,50^{31} + \displaystyle\binom{60}{30}0,50^{30}\cdot 0,50^{30} + \displaystyle\binom{60}{31}0,50^{31}\cdot 0,50^{29}= 0,30112 \approx 0,301 \).</p></div></div> </li>
+              <li>Rita upp fördelningen på GeoGebra. Hur många klavor har största sannolikheten? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p><img src="pics/19-11.png" class="responsivepic600" /></p>
+                <p>Vi ser att största sannolikheten har 30 gånger klave.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Av finländarna är 51 % kvinnor. Bestäm sannolikheten att då vi slumpmässigt väljer 10 personer så får vi lika många män som kvinnor.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi har binomialsannolikhet. Vi får \( \displaystyle\binom{10}{5}0,51^5\cdot 0,49^5 = 0,25 \).</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Av alla barn som föds är 51,2 % pojkar. Bestäm sannolikheten att i en familj med 6 st barn så har vi minst 2 st pojkar och 2 st flickor.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Vi vill ha sannolikheten för \( P(\text{2 pojkar}) + P(\text{3 pojkar}) + P(\text{4 pojkar}) \). Sannolikheten för flickorna är det motsatta. </p>
+              <p>Vi får \( 0,78 \).</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA10">
+      <a href="18_egetarbete.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
