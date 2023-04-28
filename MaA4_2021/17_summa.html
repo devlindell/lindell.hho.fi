@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!--<link rel="stylesheet" href="reset.css">-->
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <link rel="stylesheet" href="../style.css">
+
+
+ <title>2. Summa och diffrens för vektorer</title>
+
+ </head>
+ <body>
+ <header class="MaA4">
+ <nav>
+ <div class="dropdown">
+ <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ <i class="fa fa-bars fa-3x"></i>
+ </button>
+ <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+ <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+ <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+ <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+ <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+ <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+ <a class="dropdown-item" href="7_xy-planet.html">6. Vektorer i xy-planet</a>
+ <a class="dropdown-item" href="8_3d_koord.html">7. 3 dimensionellt koordinatsystem</a>
+ <a class="dropdown-item" href="9_linjen.html">8. Linjen</a>
+ <a class="dropdown-item" href="10_plan_i_rymden.html">9. Geometriskt plan i rymden</a>
+ <a class="dropdown-item" href="11_skalar_produkt.html">10. Skalär produkt</a>
+ <a class="dropdown-item" href="12_skalart_geometriskt.html">11. Geometrisk tolkning av skalär produkt</a>
+ <a class="dropdown-item" href="13_avstand.html">12. Avstånd mellan en punkt och en linje i rymden</a>
+ <a class="dropdown-item" href="14_repetition.html">13. Repetition</a>
+ </div>
+ </div>
+ </nav>
+ <a href="1_vektorer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+ <h3 class="mobile">MaA 4 Vektorer</h3>
+ <a href="3_reellttal.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+ <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+ </header>
+
+ <article>
+   <h1>2. Summa och differens för vektorer</h1>
+ <section>
+   <div class="theory">
+     <p>Summan av två vektorer räknar vi som att den vektor som vi adderar fortsätter där den första vektorn slutar. Det vi får är summavektorn.</p>
+     <div class="geogebra">
+       <iframe height="287px" scrolling="no" src="https://www.geogebratube.org/material/iframe/id/144529/width/621/height/287/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/preferhtml5" style="border:0px;" width="621px"></iframe>
+     </div>
+     <p>Då vi adderar reella tal så gäller att \( (3+4)+5=3+(4+5) \). Vi talar om att addition av reella tal är associativ. Addition av vektorer har samma associativa egenskap. Det betyder att \( (\overline{a} + \overline{b}) + \overline{c} = \overline{a} + (\overline{b} + \overline{c}) \).</p>
+     <p>Då vi adderar reella tal ihop spelar ordningen ingen skillnad, 3+4=4+3. Vi talar om att addition är kommutativ. Även vektorer har samma egenskap. Det betyder att \( \overline{a} + \overline{b} = \overline{b} + \overline{a} \).</p>
+     <div class="exercise box">
+       <p><strong>Exempel 1</strong> Uttryck vektorn \( \overrightarrow{AD} \) med hjälp av \( \overline{a} \), \( \overline{b} \), \( \overline{c} \) och \( \overline{d} \).</p>
+       <p><img src="pics/2-1.png" class="responsivepic400" /></p>
+       <div class="video">
+         <iframe src="https://player.vimeo.com/video/353598071" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+       </div>
+     </div>
+     <p>Differensen av två vektorer, \( \overline{a}-\overline{b} \), tänker vi oss som subtraktion med algebra. Det betyder att \( \overline{a}-\overline{b}=\overline{a}+(-\overline{b}) \). Den vektorn som vi får är differensvektorn.</p>
+     <div class="exercise box">
+       <p><strong>Exempel 2</strong> Uttryck diagonalvektorn \( \overrightarrow{CB} \) i parallellogrammen \( ABCD \) med hjälp av vektorerna \( \overline{a} \) och \( \overline{b} \).</p>
+       <p><img src="pics/2-4.png" class="responsivepic400" /></p>
+       <div class="video">
+         <iframe src="https://player.vimeo.com/video/353598574" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+       </div>
+     </div>
+     <div class="exercise box">
+       <p><strong>Exempel 3</strong> Ett flygplan flyger rakt norrut med hastigheten 200 km/h. Från väster blåser en vind om 15 m/s (54 km/h).</p>
+       <ol start="1" style="list-style-type:lower-alpha">
+         <li>Mot vilken riktning flyger flygplanet?</li>
+         <li>Bestäm flygplanets relativa hastighet jämfört med marken.</li>
+         <li>Vartåt borde man styra för att flygplanet skall fara rakt framåt?</li>
+       </ol>
+       <div class="video">
+         <iframe src="https://player.vimeo.com/video/353599667" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+       </div>
+     </div>
+   </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+          <ol>
+            <li><p>Utnyttja dig av vektorerna \( \overline{a} \), \( \overline{b} \) och \( \overline{c} \) och rita följande:</p>
+              <p><img src="pics/2-7.png" class="responsivepic400" /></p>
+              <ol>
+                <li>\( \overline{a} + \overline{b} \)
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1a">
+                <div class="card card-body answer"> <img src="pics/2-7-1.png" class="responsivepic250" /> </div></div> </li>
+                <li>\( \overline{b} + \overline{a} \)
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1b">
+                <div class="card card-body answer"> <img src="pics/2-7-2.png" class="responsivepic250" /> </div></div> </li>
+                <li>\( \overline{a} - \overline{b} \)
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1c">
+                <div class="card card-body answer"> <img src="pics/2-7-3.png" class="responsivepic250" /> </div></div> </li>
+                <li>\( \overline{b} - \overline{a} \)
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1d">
+                <div class="card card-body answer"> <img src="pics/2-7-4.png" class="responsivepic250" /> </div></div> </li>
+                <li>\( \overline{a} + \overline{b} + \overline{c} \)
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1e">
+                <div class="card card-body answer"> <img src="pics/2-7-5.png" class="responsivepic250" /> </div></div> </li>
+                <li>\( \overline{a} + \overline{b} - \overline{c} \)
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1f">
+                <div class="card card-body answer"> <img src="pics/2-7-6.png" class="responsivepic250" /> </div></div> </li>
+
+              </ol>
+            </li>
+
+            <li>Uttryck vektorerna \( \overline{x} \), \( \overline{y} \) och \( \overline{z} \) med hjälp av \( \overline{a} \) och \( \overline{b} \).
+            <ol>
+              <li><img src="pics/2-8.png" class="responsivepic400" />
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2a">
+                <div class="card card-body answer"> \( -\overline{a}-\overline{b} \) </div></div> </li>
+                <li><img src="pics/2-9.png" class="responsivepic400" />
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2b">
+                <div class="card card-body answer"> \( \overline{a}+\overline{b} \) </div></div> </li>
+                <li><img src="pics/2-10.png" class="responsivepic400" />
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="2c">
+                <div class="card card-body answer"> \( -\overline{a}+\overline{b} \) </div></div> </li>
+            </ol>
+          </li>
+
+        <li><p>Bestäm längden av \( \overline{a} \), \( \overline{b} \), \( \overline{a}+\overline{b} \) och \( \overline{a}-\overline{b} \).</p>
+        <p><img src="pics/2-11.png" class="responsivepic250" /></p>
+          <ol>
+            <li>\( \mid \overline{a} \mid \)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3a">
+            <div class="card card-body answer"> 3 l.e. </div></div> </li>
+            <li>\( \mid \overline{b} \mid \)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3b">
+            <div class="card card-body answer"> \( \mid \overline{b} \mid= \sqrt{3^2+1^2} = \sqrt{10} \) l.e. </div></div> </li>
+            <li>\( \mid \overline{a}+\overline{b} \mid \)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3c">
+            <div class="card card-body answer"> \( \mid \overline{a}+\overline{b} \mid = \sqrt{(3+3)^2+1^2} = \sqrt{37} \) l.e. </div></div> </li>
+            <li>\( \mid \overline{a}-\overline{b} \mid \)
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3dt" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse hint" id="3dt">Antal steg höger/vänster, uppåt/neråt? </div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3d">
+            <div class="card card-body answer"> \( \mid \overline{a}-\overline{b} \mid = \sqrt{(3-3)^2+1^2} = 1 \) l.e. </div></div> </li>
+          </ol>
+        </li>
+
+        <li>Vektorerna \( \overline{a} \), \( \overline{b} \), \( \overline{c} \) och \( \overline{d} \) är efter varandra och bildar en fyrhörning. Bestäm summan av \( \overline{a}+\overline{b}+\overline{c}+\overline{d} \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3.5">
+            <div class="card card-body answer"> <p>Summavektorn \( \overline{a}+\overline{b}+\overline{c}+\overline{d} \) börjar där \( \overline{a} \) börjar och slutar där \( \overline{b} \) slutar. Eftersom summavektorns början och slut är samma punkt är summan en nollvektor.</p>
+            <p>Alltså \( \overline{a}+\overline{b}+\overline{c}+\overline{d} = \overline{0} \).</p>
+            </div></div>
+        </li>
+
+        <li><i class="fas fa-shapes fa-2x level"></i>Ett flygplan flyger med hastigheten 180 km/h rakt västerut. Vinden blåser med 22 m/s (80 km/h) från söder.
+          <ol>
+            <li>Vad är flygplanets riktning?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4at" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse hint" id="4at"> Rita ut vektorerna och bestäm vinkeln. Vilket är vädersträcket? </div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="4a">
+            <div class="card card-body answer"> 24,0 grader mot norr. Flygplanet rör sig mot nordväst </div></div> </li>
+            <li>Bestäm flygplanets hastighet jämfört med marken.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4bt" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="4bt">
+            <div class="card card-body answer"> Bestäm längden av summavektorn. </div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="4b">
+            <div class="card card-body answer"> \( \sqrt{180^2 + 80^2} = 196,9771 \) km/h </div></div> </li>
+          </ol>
+        </li>
+
+        <li><i class="fas fa-shapes fa-2x level"></i>Fyrhörningen ABCD är en parallellogram och punkten O är en punkt utanför parallellogrammen. Vi betecknar \( \overrightarrow{OA}=\overline{a} \), \( \overrightarrow{OB}=\overline{b} \) och \( \overrightarrow{OC}=\overline{c} \). Uttryck med hjälp av \( \overline{a} \), \( \overline{b} \) och \( \overline{c} \).
+          <ol>
+            <li>\( \overrightarrow{AB} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5a">
+            <div class="card card-body answer">\( -\overline{a}+\overline{b} \) </div></div> </li>
+            <li>\( \overrightarrow{OD} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5b">
+            <div class="card card-body answer">\( \overline{a}-\overline{b} +\overline{c} \) </div></div> </li>
+            <li>\( \overrightarrow{CD} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5c">
+            <div class="card card-body answer">\( \overline{a}-\overline{b} \) </div></div> </li>
+            <li>\( \overrightarrow{BD} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="5d">
+            <div class="card card-body answer">\( \overline{a}-2\overline{b}+\overline{c} \) </div></div> </li>
+          </ol>
+        </li>
+
+        <li><i class="fas fa-shapes fa-2x level"></i>Rita en triangel vars sidor består av vektorerna \( \overline{a} \), \( \overline{b} \) och \( \overline{c} \). För triangeln skall gälla följande.
+          <ol>
+            <li>\( \overline{a}+\overline{b} +\overline{c} = \overline{0} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6a">
+            <div class="card card-body answer"><p>till exempel:</p>
+            <p><img src="pics/2-12.png" class="responsivepic400" /></p> </div></div> </li>
+            <li>\( -\overline{a}+\overline{b} -\overline{c} =\overline{0} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="6b">
+            <div class="card card-body answer"><p>till exempel:</p>
+            <p><img src="pics/2-13.png" class="responsivepic400" /></p> </div></div> </li>
+          </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Ett mycket viktigt sällskap vill anlända med helikopter exakt kl 18:00 till en bjudning i Lojo. Sällskapet bestämmer att de skall starta 17:30 från Bjärnå. Lojo är 50 km rakt österut från Bjärnå. Med vilken hastighet relativt luften skall de flyga och vilken riktning skall de ha om det blåser
+          <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+          <div class="collapse hint" id="7t">Vad skall deras medelhastighet vara? Hur inverkar vinden på den totala hastigheten? </p><p>1 m/s = 3,6 km/h.</p></div>
+          <ol>
+            <li>10 m/s från väster. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7a">
+            <div class="card card-body answer"><p>Vinden och färdriktningen har samma riktning, \( 36 + x = 100 \) ger \( x=64 \) km/h.</p><p>Alltså 64 km/h mot öster.</p> </div></div> </li>
+            <li>15 m/s från öster. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7b">
+            <div class="card card-body answer"><p>De har motvind, \( -15\cdot 3,6 + x = 100 \) ger \( x = 154 \) km/h.</p><p>Alltså 154 km/h mot öster.</p> </div></div> </li>
+            <li>15 m/s från söder. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7c">
+            <div class="card card-body answer"><p>Hastigheten: Vi får att \( -(15\cdot 3,6)^2 + x^2 = 100^2 \) som ger att \( x=113,65 \) km/h.</p>
+            <p>Vinkeln: \( \sin \alpha = \dfrac{15 \cdot 3,6}{100} \) ger \( \alpha = 28,4 \).</p>
+            <p>Alltså 114 km/h, 28,4<sup>o</sup> mot norr.</p> </div></div> </li>
+          </ol>
+        </li>
+
+        <li><i class="fas fa-shapes fa-2x level"></i>En flod som är 150 meter bred strömmar med hastigheten 1,0 m/s. Vi färdas i en båt vars hastighet är 2,0 m/s.
+          <ol>
+          <li>Vi färdas över floden så att vi siktar rakt på motstående strand. Var träffar vi motstående strand? Hur lång tid tar det att komma över? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="8a">
+          <div class="card card-body answer"><p id="h2csc0vuq0k">Vi rör oss hela tiden mot stranden med 2 m/s. Tiden att komma över blir \( \dfrac{150}{2} = 75 \) s.</p>
+          <p>Under 75 s kommer floden att röra på oss 1 m/s medströms. Vi färdas 75 m nedströms.</p> </div></div> </li>
+          <li>I starten väljer vi en riktning så att vi kommer rakt över till en brygga som finns på motstående strand. Bestäm denna riktning. Hur lång tid tar det att komma över? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+          <div class="collapse" id="8b">
+          <div class="card card-body answer"><p>Vinkeln får vi genom \( \sin \alpha = \dfrac{1}{2} \), \( \alpha = 30^{\circ} \).</p>
+          <p>Vår hastiget är \( x^2+1^2 = 2^2 \) som ger \( x=\sqrt{3} \) m/s. Tiden är \( t=\dfrac{150}{\sqrt{3}} = 86,60 \) s.</p> </div></div> </li>
+        </ol>
+      </li>
+
+      <li><i class="fas fa-cogs fa-2x level"></i>Hur skall \( \overline{a} \) och \( \overline{b} \) vara i förhållande till varandra så att \( \mid \overline{a} \mid +\mid \overline{b} \mid = \mid \overline{a}+\overline{b} \mid \)? När gäller att \( \mid \overline{a} \mid +\mid \overline{b} \mid \not= \mid \overline{a}+\overline{b} \mid \)?
+      <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+      <div class="collapse" id="9">
+      <div class="card card-body answer">Om \( \overline{a} \) och \( \overline{b} \) är lika eller olika riktade gäller likamed, annars gäller det inte att \( \mid \overline{a} \mid +\mid \overline{b} \mid = \mid \overline{a}+\overline{b} \mid \). </div></div> </li>
+
+    </ol>
+
+ </section>
+
+ </article>
+
+ <footer class="MaA4">
+   <a href="1_vektorer.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <a href="3_reellttal.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+ </footer>
+
+
+ <!-- Optional JavaScript -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>

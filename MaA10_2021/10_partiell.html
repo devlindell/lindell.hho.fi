@@ -47,67 +47,164 @@
       <section>
         <div class="theory">
           <div class="intro box">
+            <p>Hittils har vi undersökt funktioner i två dimensioner. Nu tar vi och lär oss undersöka funktioner i tre dimensioner. Vi börjar med att studera funktionen \( f(x,y) = x^2 - y^2 -4xy+2x +1 \).</p>
+            <p>Vi ritar upp den</p>
+            <p><img src="pics/10-1.png" alt="" class="responsivepic600" /></p>
+            <p>Vi märker att vi har ett par punkter där funktionen byter rikting. För att komma åt dem bildar vi partiella derivator. Det betyder att vi deriverar med avseende på \( x \) och med avseende på \( y \) och sedan söker vi gemensamma nollställen för derivatorna.</p>
+            <p>Derivatan med avseende på \( x \) är \( \dfrac{\partial f}{\partial x} = -4y^2+2x+2 \).</p>
+            <p>Derivatan med avseende på \( y \) är \( \dfrac{\partial f}{\partial y} = -8xy -2y \).</p>
+            <p>För att hitta de punkterna där funktionen byter rikting, extremvärdena söker vi bägge partialderivators nollställen. Vi löser ekvationssystemet </p>
+            <p> \(
+              \left\{ \begin{array}{l}
+              -4y^2+2x+2 = 0 \\
+              -8xy -2y = 0 \\
+              \end{array} \right. \) </p>
+            <p>Ekvationssystemet har lösningarna  \( (-1, 0 ),  (-\dfrac{1}{4}, \dfrac{\sqrt{6}}{4}) ,  (-\dfrac{1}{4}, -\dfrac{\sqrt{6}}{4}) \).</p>
+            <p>De kritiska punkterna är utritade i följande bild.</p>
+            <p><img src="pics/10-2.gif" alt="" class="responsivepic600" /></p>
+            <p>Vi ser att i dessa punkter byter funktionen riktning eller är konstant.</p>
+            <p>Vill vi undersöka funktionens tillväxthastighet jobbar vi med gradientvektorn. Det gör vi i exempel 3.</p>
 
-            <div class="video">
-
-            </div>
-            <div class="geogebra">
-
-            </div>
-            <img src="pics/" alt="" class="responsivepic600">
           </div>
           <div class="summary box">
-
+            <p>Partialderivator använder vi oss då vi deriverar funktioner som har flera variabler. Några beteckningar är \( \dfrac{\partial f}{\partial x}, f'_x, D_x f \) och \( \partial_x f \).
           </div>
           <div class="exercise box">
-            <p><strong>Exempel 1</strong> Bestäm \( D(x^2-1)^5 \)</p>
-            </div>
+            <p><strong>Exempel 1</strong> Bestäm de partiella derivatorna för funktionen \( f(x,y) = x-y^2 -xy +2 \).</p>
+            <h4>Lösning</h4>
+            <p>Vi deriverar med avseende på \( x \) och \( y \).</p>
+            <p>Derivatan med avseende på \( x \) är \( \dfrac{\partial f}{\partial x} = -y+1 \).</p>
+            <p>Derivatan med avseende på \( y \) är \( \dfrac{\partial f}{\partial y} = -x-2y \).</p>
+          </div>
+
+          <p>När vi jobbar med funktioner i två dimensioner talar vi om funktionens extremvärden. Då vi jobbar med funktioner i tre dimensioner så talar vi om kritiska punkter. De är punkter där funktionen har ett extremvärde eller en sadelpunkt.</p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Bestäm de kritiska punkterna för \( f(x,y) = x-y^2 -xy +2 \).</p>
+            <h4>Lösning</h4>
+            <p>Funktionen ser ut som följande</p>
+            <p><img src="pics/10-3.png" alt="" class="responsivepic600" /></p>
+            <p>Vi löser ekvationssystemet </p>
+            <p> \(
+              \left\{ \begin{array}{l}
+              -y+1 = 0 \\
+              -x-2y = 0 \\
+              \end{array} \right. \) </p>
+            <p>Ekvationssystemet har lösningen  \( (-2, 1 ) \).</p>
+            <p>Vi har endast en kritisk punkt. Den är \( A = (-2, 1,1 ) \)</p>
+          </div>
+
+          <p>För funktioner i tre dimensioner talar vi inte om tillväxt hastighet utan vi talar om gradientvektor. Gradientvektorn för funktionen \( f(x,y) \) betstämmer vi som \[ \nabla f(x,y) = \partial_x f(x,y) \overline{i} + \partial_y f(x,y) \overline{j}. \]</p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Låt \( f(x,y) = x-y^2 -xy +2 \). Bestäm den rikting från punkten \( (1, 2, -3 ) \) som vi skall röra oss i så att tillväxthastigheten är så stor som möjligt. Hur stor är tillväxthastigheten?</p>
+            <h4>Lösning</h4>
+            <p>Funktionen är samma som i föregående exempel.</p>
+            <p>Vi behöver de partiella derivatornas värden i punkten.</p>
+            <p>Eftersom \( \dfrac{\partial f}{\partial x} = -y+1 \) så är \( \partial_x f(1,2) = -2+1 = -1 \).</p>
+            <p>Eftersom \( \dfrac{\partial f}{\partial y} = -x-2y \) så är \( \partial_y f(1,2) = -1-2\cdot 2 = -5 \).</p>
+            <p>Gradientvektorn är \( \nabla f(1,2) = \partial_x f(1,2) \overline{i} + \partial_y f(1,2) \overline{j} = - \overline{i} -5 \overline{j} \).</p>
+            <p>Tillväxthastigheten får vi genom att bestämma längden av vekorn, \( \sqrt{(-1)^2+(-5)^2} = \sqrt{26} \).</p>
+          </div>
 
           </div>
       </section>
       <section>
         <h2>Uppgifter</h2>
         <ol>
-          <li>Uppgift för Quizlet</li>
+          <!--<li>Uppgift för Quizlet</li>-->
 
-          <li>Uppgift
+          <li>Låt \( f(x,y) = 3x^3-xy^2-3y+7x-1 \).
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Bestäm de partiella derivatafunktionerna till funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( \dfrac{\partial f}{\partial x} = -y^2 +6x \) och \( \dfrac{\partial f}{\partial y} = -2xy -3 \).</p>
+              </div></div> </li>
+              <li>Bestäm de kritiska punkterna för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi skall lösa ekvationssystemet</p>
+                <p> \(
+                \left\{ \begin{array}{l}
+                -y^2+6x = 0 \\
+                -2xy-3 = 0 \\
+                \end{array} \right. \) </p>
+                <p>Vi får lösningarna  \(  x = \dfrac{\sqrt[3]{9^2}}{6}, y = -\sqrt[3]{9} \) .</p>
+              </div></div> </li>
+              <li>Rita upp funktionen och avgör från grafen hur funktionen beter sig. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="1c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Grafen av funktionen är följande</p>
+              <p><img src="pics/10-5.png" alt="" class="responsivepic600" /></p>
+              <p>Kritiska punkten är markerad med ett A.</p>
+              <p>Vi ser att vid A har vi ett lokalt extremvärde.</p>
+              </div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
+          <li>Låt \( f(x,y) = (x-y)^2 \).
             <ol>
-              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <li>Bestäm de partiella derivatafunktionerna till funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2a">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi får \( \dfrac{\partial f}{\partial x} = 2(x-y) \) och \( \dfrac{\partial f}{\partial y} = -2(x-y) \).</p></div></div> </li>
+              <li>Bestäm de kritiska punkterna för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2b">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
-              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="card card-body answer"><p>Vi skall lösa ekvationssystemet</p>
+                <p> \(
+                \left\{ \begin{array}{l}
+                2(x-y) = 0 \\
+                -2(x-y) = 0 \\
+                \end{array} \right. \) </p>
+                <p>Vi får lösningen  \(  y = x \) .</p>
+                <p>När du ritar funktionen ser du att linjen \( y = x \) är där funktionen får sina minsta värden.</p>
+              </div></div> </li>
+              <li>Rita upp funktionen och avgör från grafen hur funktionen beter sig. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <div class="card card-body answer"><p>Grafen av funktionen är följande</p>
+              <p><img src="pics/10-6.png" alt="" class="responsivepic600" /></p>
+              <p>Vi märker att linjen \( y = x \) är där funktionen får sitt minsta värde.</p>
+              </div></div> </li>
             </ol>
           </li>
 
-          <li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="3">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>Låt \( f(x,y) = x^2 \sin(xy) \).
+            <ol>
+              <li>Bestäm de partiella derivatafunktionerna till funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi får \( \dfrac{\partial f}{\partial x} = 2x\sin(x y) + x^2y \cos(x y) \) och \( \dfrac{\partial f}{\partial y} = x^3 \cos(x y) \).</p></div></div> </li>
+              <li>Bestäm de kritiska punkterna för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi skall lösa ekvationssystemet</p>
+                <p> \(
+                \left\{ \begin{array}{l}
+                2x\sin(x y) + x^2y \cos(x y) = 0 \\
+                x^3 \cos(x y) = 0 \\
+                \end{array} \right. \) </p>
+                <p>Vi får oändligt många lösningar.</p></div></div> </li>
+              <li>Rita upp funktionen och avgör från grafen hur funktionen beter sig. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Grafen av funktionen är följande</p>
+              <p><img src="pics/10-7.png" alt="" class="responsivepic600" /></p>
+              <p>Vi märker att funktionen har en hel del olika extrempunkter.</p></div></div> </li>
+            </ol>
           </li>
 
-          <li>Uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="4">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          <li>Låt \( f(x,y) = e^{x^2 y} \).
+            <ol>
+              <li>Bestäm de partiella derivatafunktionerna till funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Vi får \( \dfrac{\partial f}{\partial x} = 2xy e^{x^2 y} \) och \( \dfrac{\partial f}{\partial y} = x^2 e^{x^2 y} \).</p></div></div> </li>
+              <li>Bestäm de kritiska punkterna för funktionen. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Vi skall lösa ekvationssystemet</p>
+                <p> \(
+                \left\{ \begin{array}{l}
+                2xy e^{x^2 y} = 0 \\
+                x^2 e^{x^2 y} = 0 \\
+                \end{array} \right. \) </p>
+                <p>Vi får oändligt många lösningar.</p></div></div> </li>
+              <li>Rita upp funktionen och avgör från grafen hur funktionen beter sig. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Grafen av funktionen är följande</p>
+              <p><img src="pics/10-8.png" alt="" class="responsivepic600" /></p>
+              <p>Vi märker att funktionen har en hel del olika extrempunkter.</p></div></div> </li>
+            </ol>
           </li>
 
           <li>Uppgift
@@ -122,22 +219,32 @@
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter i \( xy \)-planet som är både nollställen och kritiska punkter till funktionen \( f(x,y)= (x^2+y^2-4)^2 \). Avgör med hjälp av grafen av vilket slag de kritiska punkterna är.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>283</p>
+              <p>Nollstället för funktionen är \( f(x,y) = (x^2+y^2-4)^2 = 0 \). Alltså då \( x^2+y^2-4=0 \).</p>
+              <p>Partialderivatorna är \( \dfrac{\partial f}{\partial x} = 4x(x^2+y^2-4) \) och \( \dfrac{\partial f}{\partial y} = 4y(x^2+y^2-4) \).</p>
+              <p>De kritiska punkterna är </p>
+              <p> \(
+              \left\{ \begin{array}{l}
+              4x(x^2+y^2-4) = 0 \\
+              4y(x^2+y^2-4) = 0 \\
+              \end{array} \right. \) </p>
+              <p>Ekvationssystemet har lösningarna \(  (0,0) ,  (2, 0) ,   (-2, 0),   (x,\sqrt{-x^{2} + 4})  , (x,-\sqrt{-x^{2} + 4}) \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Anta att \( f(x,y) = 2x^2-xy+y^2+2x \). Är den största tillväxthastigheten hos funktionen \( f \) större i punkten \( (2,0) \) eller i punkten \( (0,2) \)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>284</p></div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+          <li><i class="fas fa-shapes fa-2x level"></i>Hur många av de kritiska punkterna för funktionen \( f(x,y) = y^3-xy^2-xy+x^2 \) finns innanför enhetscirkeln?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>288</p></div></div>
           </li>
 
           <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift

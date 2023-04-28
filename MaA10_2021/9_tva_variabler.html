@@ -119,7 +119,7 @@
               <p><img src="pics/9-6.png" alt="" class="responsivepic600"></p></div></div> </li>
               <li>Bestäm definitonsmängden för \( g \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="2c">
-              <div class="card card-body answer"><p>\( g \) är en rotfunktion och definierad då radikanden \( x-y^2-y \geq 0 \). Alltså då \( x \geq y^2-y \).</p></div></div> </li>
+              <div class="card card-body answer"><p>\( g \) är en rotfunktion och definierad då radikanden \( x-y^2-y \geq 0 \). Alltså då \( x \geq y^2+y \).</p></div></div> </li>
             </ol>
           </li>
 
@@ -184,29 +184,42 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
-
-          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
           </li>-->
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \( f(x,y) = 2-\sqrt{x^2+y^2} \) och \( g(x,y)=x^2+y^2 \).
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma nollställena för \( f(x,y) = x^2+y^2-4x \) och \( g(x,y)=x^2-y^2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Nollställena för \( f(x,y) = 0 \) är \( x^2+y^2-4x = 0 \). Utnyttja rotformeln och kom till \( x = 2 \pm \sqrt{4-y^2} \). </p>
+              <p>Nollställena för \( g(x,y) = 0 \) är \( x^2-y^2=0 \). Här får vi \( x = \pm y \).</p>
+              <p>Sedan söker vi de gemensamma lösningarna för </p>
+              <p> \(
+              \left\{ \begin{array}{l}
+              x = 2 \pm \sqrt{4-y^2} \\
+              x = \pm y \\
+              \end{array} \right. \) </p>
+              <p>Märk att du har fyra stycken ekvationer som du skall lösa.</p>
+              <p>Vi får skärningspunkterna \( (0,0), (2,2) \) och \( (2,-2) \).</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Bestäm de gemensamma punkterna för \( f(x,y) = 2-\sqrt{x^2+y^2} \) och \( g(x,y)=x^2+y^2 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
               <div class="card card-body answer"> <p>Vi löser ekvationen</p>
               <p> \( \begin{array}{rcll}
                 f(x,y) & = & g(x,y) \\
                 2-\sqrt{x^2+y^2} & = & x^2 + y^2 & \mid (\quad)^2 \\
-                4 - 4\sqrt{x^2+y^2} + x^2+y^2 & = & x^2 +y^2 \\
+
+                HÄR FAR DET FEL!!!
+
+                4 - 4\sqrt{x^2+y^2} + x^2+y^2 & = & x^4 +2x^2y^2 +y^4 \\
                 4\sqrt{x^2+y^2} & = & 4 \\
                 \sqrt{x^2+y^2} & = & 1 & \mid (\quad)^2 \\
                 x^2+y^2 & = & 1 & \\
                 \end{array} \)</p>
                 <p>De gemensamma punkterna är \( x^2+y^2 = 1 \), som är en origocentrerad cirkel med radien 1.</p>
               </div></div>
-          </li>
+          </li>-->
 
           <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
