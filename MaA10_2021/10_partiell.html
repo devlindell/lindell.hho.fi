@@ -207,7 +207,7 @@
             </ol>
           </li>
 
-          <li>Uppgift
+          <!--<li>Uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="5">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -217,12 +217,12 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="6">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
+          </li>-->
 
           <li><i class="fas fa-shapes fa-2x level"></i>Bestäm de punkter i \( xy \)-planet som är både nollställen och kritiska punkter till funktionen \( f(x,y)= (x^2+y^2-4)^2 \). Avgör med hjälp av grafen av vilket slag de kritiska punkterna är.
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="7">
-              <div class="card card-body answer"> <p>283</p>
+              <div class="card card-body answer">
               <p>Nollstället för funktionen är \( f(x,y) = (x^2+y^2-4)^2 = 0 \). Alltså då \( x^2+y^2-4=0 \).</p>
               <p>Partialderivatorna är \( \dfrac{\partial f}{\partial x} = 4x(x^2+y^2-4) \) och \( \dfrac{\partial f}{\partial y} = 4y(x^2+y^2-4) \).</p>
               <p>De kritiska punkterna är </p>
@@ -231,35 +231,78 @@
               4x(x^2+y^2-4) = 0 \\
               4y(x^2+y^2-4) = 0 \\
               \end{array} \right. \) </p>
-              <p>Ekvationssystemet har lösningarna \(  (0,0) ,  (2, 0) ,   (-2, 0),   (x,\sqrt{-x^{2} + 4})  , (x,-\sqrt{-x^{2} + 4}) \).</p>
+              <p>Från de kritiska punkterna, partiella derivatornas nollställen, ser vi att de får värdet noll då \( x^2 + y^2 = 4 \).</p>
+              <p>Då är alla nollställen för funktionen även kritiska punkter för funktionen.</p>
+              <p><img src="pics/10-10.png" alt="" class="responsivepic600" /></p>
               </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Anta att \( f(x,y) = 2x^2-xy+y^2+2x \). Är den största tillväxthastigheten hos funktionen \( f \) större i punkten \( (2,0) \) eller i punkten \( (0,2) \)?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="8">
-              <div class="card card-body answer"> <p>284</p></div></div>
+              <div class="card card-body answer">
+              <p>Partialderivatorna är \( \dfrac{\partial f}{\partial x} = 4x-y+2 \) och \( \dfrac{\partial f}{\partial y} = -x+2y \).</p>
+              <p>I punkten \( (2,0) \) gäller att \( \partial_x f(2,0) = 4\cdot 2-0+2 = 10 \) och \( \partial_y f(2,0) = -2+2\cdot 0 = -2 \).</p>
+              <p>Då är gradientvektorn \( \nabla f(2,0) = \partial_x f(2,0) \overline{i} + \partial_y f(2,0) \overline{j} = 10\overline{i} -2\overline{j} \).</p>
+              <p>Tillväxthastigheten får vi genom att bestämma längden av vekorn, \( \sqrt{(10)^2+(-2)^2} = \sqrt{104} \approx 10,2 \).</p>
+              <p>I punkten \( (0,2) \) gäller att \( \partial_x f(0,2) = 4\cdot 0-2+2 = 0 \) och \( \partial_y f(0,2) = -0+2\cdot 2 = 4 \).</p>
+              <p>Då är gradientvektorn \( \nabla f(0,2) = \partial_x f(0,2) \overline{i} + \partial_y f(0,2) \overline{j} = 4\overline{j} \).</p>
+              <p>Tillväxthastigheten får vi genom att bestämma längden av vekorn, \( \sqrt{(4)^2} = 4 \).</p>
+              <p>Tillväxthastigheten är större i punkten \( (2,0) \).</p>
+              </div></div>
           </li>
 
           <li><i class="fas fa-shapes fa-2x level"></i>Hur många av de kritiska punkterna för funktionen \( f(x,y) = y^3-xy^2-xy+x^2 \) finns innanför enhetscirkeln?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="9">
-              <div class="card card-body answer"> <p>288</p></div></div>
+              <div class="card card-body answer">
+              <p>Partialderivatorna är \( \dfrac{\partial f}{\partial x} = -y^2 +2x -y \) och \( \dfrac{\partial f}{\partial y} = -2xy+3y^2-x \).</p>
+              <p>De kritiska punkterna är </p>
+              <p> \(
+              \left\{ \begin{array}{l}
+              -y^2 +2x -y = 0 \\
+              -2xy+3y^2-x = 0 \\
+              \end{array} \right. \) </p>
+              <p>Ekvationssystemet har lösningarna \( (0,0), (1,1) \) och \( (\dfrac{3}{8}, \dfrac{1}{2}) \).</p>
+              <p>Enhetscirkelns ekvation är \( x^2 + y^2 = 1 \).</p>
+              <p>Av dessa punker är \( (0,0) \) och \( (\dfrac{3}{8}, \dfrac{1}{2}) \) innanför.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>Bilda uttrycket för funktionen \( f(x,y) \) när vi vet att \( \partial_x f(x,y) = 2x+2y \) och \( \partial_y f(x,y) = 2x+2y \). Dessutom vet vi att \( f(1,1) = 5 \).
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="10">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>Vi integrerar med avseende på \( x \) och \( y \) för att komma vidare.</p>
+              <p>\( f(x,y) = \displaystyle\int \partial_x f(x,y) \mathrm{ d}x = \displaystyle\int 2x+2y \mathrm{ d}x = x^2 + 2xy + C_1 \).</p>
+              <p>Och \( f(x,y) = \displaystyle\int \partial_y f(x,y) \mathrm{ d}y = \displaystyle\int 2x+2y \mathrm{ d}y = 2xy + y^2 + C_2 \).</p>
+              <p>Eftersom uttrycken måste vara samma gäller att \( C_1 = y^2 + C \) och \( C_2 = x^2 + C \) för något \( C \).</p>
+              <p>Alltså är \( f(x,y) = x^2+y^2+2xy + C \).</p>
+              <p>Eftersom \( f(1,1) = 5 \) får vi att \( C = 1 \).</p>
+              <p>Funktionen är \( f(x,y) = x^2+y^2+2xy + 1 \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <li><i class="fas fa-cogs fa-2x level"></i>I vilka punkter antar funktionens \( f(x,y) = x-x^2+y^2 \) största tillväxthastighet sitt minsta värde?
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="11">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>De partiella derivatorna är \( \dfrac{\partial f}{\partial x} = 1-2x \) och \( \dfrac{\partial f}{\partial y} = 2y \).</p>
+              <p>Vi bildar en ekvation för längden av gradientvektorn \( \mid \nabla f(x,y) \mid  = \mid \partial_x f(x,y) \overline{i} + \partial_y f(x,y) \overline{j} \mid = \\ \mid (1-2x) \overline{i} + (2y) \overline{j} \mid = \sqrt{(1-2x)^2+(2y)^2} = \sqrt{4y^2+4x^2-4x+1} \)</p>
+              <p>Värdet av roten är så liten som möjligt när radikanden (det under roten) har ett så litet värde som möjligt.</p>
+              <p>De partiella derivatorna är \( \dfrac{\partial g}{\partial x} = 8x-4 \) och \( \dfrac{\partial g}{\partial y} = 8y \).</p>
+              <p>De kritiska punkterna är </p>
+              <p> \(
+              \left\{ \begin{array}{l}
+              8x-4 = 0 \\
+              8y = 0 \\
+              \end{array} \right. \) </p>
+              <p>Den kritiska punkten är \( (\dfrac{1}{2} , 0 ) \).</p>
+              <p>Grafen av funktionen under radikanden är följande</p>
+              <p><img src="pics/10-12.png" alt="" class="responsivepic600" /></p>
+              <p>Alltså antar funktionen \( f(x,y) \) största tillväxthastighet sitt minsta värde i punkten \( (\dfrac{1}{2} , 0 ) \).</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="12">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -269,15 +312,45 @@
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="13">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>
+            <ol>
+              <li>Visa med hjälp av en differenskvot att funktionen
+                <p>\( f(x,y) = \left\{
+                  \begin{array}{ll}
+                  0, &  \text{ när } (x,y) = (0,0) \\
+                  \dfrac{xy}{x^2 + y^2}, & \text{ annars} \\
+                  \end{array}\right. \)</p>
+                <p>har de partiella derivatorna \( \partial_x f(0,0) \) och \( \partial_y f(0,0) \).</p>
+
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14a">
+              <div class="card card-body answer"><p>Vi bestämmer de partiella derivatorna med hjälp av differenskvoten i \( (0,0) \).</p>
+              <p>\( \begin{array}{rcl}
+                \partial_x f(0,0) & = & \lim_{h \to 0} \dfrac{f(0+h,0)-f(0,0)}{h} \\
+                & = & \lim_{h \to 0} \dfrac{\frac{h\cdot 0}{h^2+0^2}-0}{h} \\
+                & = & \lim_{h \to 0} \dfrac{0}{h} \\
+                & = & \lim_{h \to 0} 0  = 0 \\
+                \end{array} \)</p>
+              <p>\( \begin{array}{rcl}
+                \partial_y f(0,0) & = & \lim_{h \to 0} \dfrac{f(0,0+h)-f(0,0)}{h} \\
+                & = & \lim_{h \to 0} \dfrac{\frac{0\cdot h0}{0^2+h^2}-0}{h} \\
+                & = & \lim_{h \to 0} \dfrac{0}{h} \\
+                & = & \lim_{h \to 0} 0  = 0 \\
+                \end{array} \)</p>
+              <p>Alltså gäller att \( \partial_x f(0,0) = 0 \) och \( \partial_y f(0,0) = 0 \)</p>
+              </div></div> </li>
+              <li>Visa att funktionen \( f \) inte är kontinuerlig i punkten \( (0,0) \) genom att undersöka gränsvärdet \( \lim_{\epsilon \to 0} f(\epsilon,\epsilon) \).<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Kan motsvarande situation gälla för en funktion med en variabel? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14c">
+              <div class="card card-body answer"><p>Nej. Om en funktion med en variabel har derivata i någon punkt är funktionen automatiskt även kontinuerlig i denna punkt. </p></div></div> </li>
+            </ol>
           </li>
 
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
-              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
-              <div class="collapse" id="14">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>
-
-          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="15">
               <div class="card card-body answer"> <p>Lösningen</p></div></div>
@@ -295,7 +368,7 @@
               <div class="collapse" id="5c">
               <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
             </ol>
-          </li>
+          </li>-->
 
 
           </ol>

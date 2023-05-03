@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Vektorer i xy-planet</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="7_xy-planet.html">6. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">7. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">9. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">10. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">11. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">12. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_komponenter.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="8_3d_koord.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Vektorer i xy-planet</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Uttryck \(\overline{a}\), \(\overline{b}\) och \(\overline{c}\) med hjälp av vektorerna \(\overline{i}\) och \(\overline{j}\). Hur långa är \(\overline{a}\), \(\overline{b}\) och \(\overline{c}\)?</p>
+            <p><img src="pics/7-1.png" class="responsivepic400" /></p>
+          </div>
+          <p>I ett karteiskt koordinatsystem använder vi oss av \(\overline{i}\) och \(\overline{j}\) som basvektorer. \(\overline{i}\) är parallell med \(x\)-axeln och \(\overline{j}\) är parallell med \(y\)-axeln.</p>
+          <p>Längden av en vektor i \(xy\)-planet får vi med hjälp av Pythagoras sats.</p>
+          <p><img src="pics/7-2.png" class="responsivepic400" /></p>
+          <p>Längden av vektorn \(\overline{a}=x\overline{i} + y \overline{j}\) är \(\mid \overline{a} \mid =\sqrt{x^2+y^2}\).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Uttryck vektorn \(2\overline{a} -3\overline{b}\) med hjälp av \( \overline{i} \) och \( \overline{j} \). Bestäm längden av \(2\overline{a} -3\overline{b}\).</p>
+            <p><img src="pics/7-3.png" class="responsivepic400" /></p>
+            <h4>Lösning</h4>
+            <p>Vi ser att \( \overline{a} = 2\overline{i} + \overline{j} \) och \( \overline{b} = -2\overline{i} + 3\overline{j} \)</p>
+            <p>Vi får </p>
+            <p>\( \begin{array}{rcl}
+              2\overline{a} - 3 \overline{b} & = & 2(2\overline{i} + \overline{j}) - 3 (-2\overline{i} + 3\overline{j}) \\
+              & = & 4\overline{i} + 2\overline{j} +6\overline{i} -9\overline{j}) \\
+              & = & 10\overline{i} -7\overline{j} \\
+              \end{array} \) </p>
+            <p>Längden är </p>
+            <p>\( \begin{array}{rcl}
+              \mid 2\overline{a} - 3 \overline{b} \mid & = & \sqrt{10^2 + (-7)^2} \\
+              & = & \sqrt{149} \approx 12,2 \text{ l.e.} \\
+              \end{array} \) </p>
+          </div>
+          <p>Då vi låter vektorn \(\overline{a}=x\overline{i} + y \overline{j}\), vars komponenter består av \(\overline{i}\) och \(\overline{j}\), börja i origo så slutar vektorn i punkten \((x,y)\). Dessa vektorer kallar vi för ortsvektorer.</p>
+          <p><img src="pics/7-4.png" class="responsivepic400" /></p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong></p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>På vilken punkt pekar \(\overline{a}=3\overline{i} -2 \overline{j}\)?</li>
+              <li>Bestäm vektorn mellan origo och \((-2,-5)\).</li>
+            </ol>
+              <div class="video">
+                <iframe src="https://player.vimeo.com/video/356669833" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+          </div>
+          <p>Vektorn mellan punkterna \(A= (x_1,y_1)\) och \(B=(x_2,y_2)\) kan vi bestämma som så att vi först rör oss via \(\overrightarrow{OA}\) och \(\overrightarrow{OB}\). Vi får då \(\overrightarrow{AB}=\overrightarrow{AO}+\overrightarrow{OB}=-\overrightarrow{OA}+\overrightarrow{OB}\).</p>
+          <p><img src="pics/7-5.png" class="responsivepic400" /></p>
+          <p>Vi kan även direkt utnyttja punkterna \(A= (x_1,y_1)\) och \(B=(x_2,y_2)\). Då får vi att \(\overrightarrow{AB}=(x_2-x_1)\overline{i}+(y_2-y_1)\overline{j}\).</p>
+          <p><img src="pics/7-6.png" class="responsivepic400" /></p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Bestäm vektorn mellan punkterna \((-1,-3)\) och \((2,5)\).</p>
+            <h4>Lösning</h4>
+            <p>Punkterna är \((-1,-3)\) och \((2,5)\). Dessa sätter vi in i \( (x_2-x_1)\overline{i}+(y_2-y_1)\overline{j}=(2-(-1))\overline{i}+(5-(-3))\overline{j}=3\overline{i}+8\overline{j}.\)</p>
+            <p>Vektorn är \(3\overline{i}+8\overline{j}\).</p>
+          </div>
+          <p>För att få längden av en vektor bestämmer vi avståndet mellan två punkter, \(A= (x_1,y_1)\) och \(B=(x_2,y_2)\), och utnyttjar vi Pythagoras sats.</p>
+          <p><img src="pics/7-7.png" class="responsivepic400" /></p>
+          <p>\(\mid \overrightarrow{AB} \mid = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\)</p>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Vektorn \(\overline{a}=3\overline{i}+\overline{j}\) börjar i \((-2,-1)\). Bestäm ändpunkten \(B\). Hur lång är \(\overrightarrow{OB}\)?</p>
+            <h4>Lösning</h4>
+            <p>Vi bildar \(\overrightarrow{OB}=\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OA}+\overline{a}\).</p>
+            <p>Vi får att \(\overrightarrow{OA}=-2\overline{i}-\overline{j}\) och \(\overline{a}=3\overline{i}+\overline{j}\).</p>
+            <p>\(\overrightarrow{OB}=-2\overline{i}-\overline{j}+3\overline{i}+\overline{j}=\overline{i}\).</p>
+            <p>B:s koordinat är \((1,0)\), längden \(\mid \overrightarrow{OB}\mid =1\).</p>
+          </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Låt följande vektorer börja i origo. Kombinera rätt ändpunkt och vektor.</p>
+            <p>Välj mellan
+              <div class="grid-container">
+                <div class="grid-item">\((-2,3)\)</div>
+                <div class="grid-item">\((-1,-1)\)</div>
+                <div class="grid-item">\((0,5)\)</div>
+                <div class="grid-item">\((3,2)\)</div>
+              </div>
+              </p>
+            <table>
+              <tr class="MaA3"><th>Ändpunkt</th><th>Vektor</th></tr>
+              <tr><td></td><td>\(3\overline{i}+2\overline{j}\)</td></tr>
+              <tr><td></td><td>\(-2\overline{i}+3\overline{j}\)</td></tr>
+              <tr><td></td><td>\(-\overline{i}-\overline{j}\)</td></tr>
+              <tr><td></td><td>\(5\overline{j}\)</td></tr>
+            </table>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="1">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA3"><th>Ändpunkt</th><th>Vektor</th></tr>
+                  <tr><td>\((3,2)\)</td><td>\(3\overline{i}+2\overline{j}\)</td></tr>
+                  <tr><td>\((-2,3)\)</td><td>\(-2\overline{i}+3\overline{j}\)</td></tr>
+                  <tr><td>\((-1,-1)\)</td><td>\(-\overline{i}-\overline{j}\)</td></tr>
+                  <tr><td>\((0,5)\)</td><td>\(5\overline{j}\)</td></tr>
+                </table>
+              </div></div>
+          </li>
+
+          <li><p>Kombinera rätt vektor med rätt start och ändpunkt.</p>
+            <p>Välj bland följande:
+              <div class="grid-container">
+                <div class="grid-item">\(6\overline{i}+3\overline{j}\)</div>
+                <div class="grid-item">\(4\overline{i}-\overline{j}\)</div>
+                <div class="grid-item">\(3\overline{i}+\overline{j}\)</div>
+              </div>
+              </p>
+            <table>
+              <tr class="MaA3"><th>Vektor</th><th>Start och ändpunkt</th></tr>
+              <tr><td></td><td>\((-2,4)\) och \((2,3)\)</td></tr>
+              <tr><td></td><td>\((-1,1)\) och \((5,4)\)</td></tr>
+              <tr><td></td><td>\((1,1)\) och \((4,2)\)</td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA3"><th>Vektor</th><th>Start och ändpunkt</th></tr>
+                  <tr><td>\(4\overline{i}-\overline{j}\)</td><td>\((-2,4)\) och \((2,3)\)</td></tr>
+                  <tr><td>\(6\overline{i}+3\overline{j}\)</td><td>\((-1,1)\) och \((5,4)\)</td></tr>
+                  <tr><td>\(3\overline{i}+\overline{j}\)</td><td>\((1,1)\) och \((4,2)\)</td></tr>
+                </table>
+              </div></div>
+          </li>
+
+          <li><p>Kombinera rätt längd med rätt vektor.</p>
+            <p>Välj bland följande längder:
+              <div class="grid-container">
+                <div class="grid-item">\(2\sqrt{2}\) l.e.</div>
+                <div class="grid-item">\(4\) l.e.</div>
+                <div class="grid-item">\(5\) l.e.</div>
+              </div>
+            </p>
+            <table>
+              <tr class="MaA3"><th>Längd</th><th>Vektor</th></tr>
+              <tr><td></td><td>\(4\overline{i}\)</td></tr>
+              <tr><td></td><td>\(2\overline{i}+2\overline{j}\)</td></tr>
+              <tr><td></td><td>\(-3\overline{i}-4\overline{j}\)</td></tr>
+            </table>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer">
+                <table>
+                  <tr class="MaA3"><th>Längd</th><th>Vektor</th></tr>
+                  <tr><td>\(4\) l.e.</td><td>\(4\overline{i}\)</td></tr>
+                  <tr><td>\(2\sqrt{2}\) l.e.</td><td>\(2\overline{i}+2\overline{j}\)</td></tr>
+                  <tr><td>\(5\) l.e.</td><td>\(-3\overline{i}-4\overline{j}\)</td></tr>
+                </table>
+              </div></div>
+          </li>
+
+          <li>Bestäm slutpunkten då vektorn \(\overline{a}=-3\overline{i}+4\overline{j}\) börjar i punkten \((2,1)\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi bildar vektorn \(\overrightarrow{OP}\).</p>
+                <p>\(\begin{array}{rcl}  \overrightarrow{OP}  & = &  \overrightarrow{OA} + \overline{a} \\   & = &  2\overline{i}+\overline{j} -3\overline{i}+4\overline{j} \\   & = &  -\overline{i}+5\overline{j} \\  \end{array}\)</p>
+                <p>\(P\):s ändkoordinat är \((-1,5)\).</p> </div></div>
+          </li>
+
+          <li>Låt \(\overline{a}=-2\overline{i}+2\overline{j}\) och \(\overline{b}=-\overline{i}-3\overline{j}\) .
+            <ol>
+              <li>Bestäm slutpunkten för \(\overline{v}=\overline{a}-2\overline{b}\) då \(\overline{v}\) börjar i origo.
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>\(\begin{array}{rcl}  \overline{v}  & = &  \overline{a}-2\overline{b} \\   & = &  -2\overline{i}+2\overline{j}-2(-\overline{i}-3\overline{j})\\   & = &  -2\overline{i}+2\overline{j}+2\overline{i}+6\overline{j}\\   & = &  8\overline{j}\\  \end{array}\)</p>
+                <p>Slutpunkten är \((0,8)\).</p> </div></div> </li>
+              <li>Bestäm längden av \(\overline{a}+\overline{b}\).
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>\(\begin{array}{rcl}  \overline{a}+\overline{b}  & = &  -2\overline{i}+2\overline{j}-\overline{i}-3\overline{j} \\   & = &  -3\overline{i}-\overline{j}\\  \end{array}\)</p>
+                <p>Längden är \(\mid \overline{a}+\overline{b} \mid = \sqrt{(-3)^2+(-1)^2} = \sqrt{10}\) l.e.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>För sträckan \(AB\) gäller att \(A=(-2,2)\) och \(B=(6,4)\). Bestäm koordinaten för punkten P då vi vet att
+            <ol>
+              <li>\(P\) är mittpunkt för \(\overrightarrow{AB}\) . <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6a">
+              <div class="card card-body answer"><p>Vi har \(\overrightarrow{OP} = \overrightarrow{OA} + \overrightarrow{AP} = \overrightarrow{OA} + \dfrac{1}{2}\overrightarrow{AB}\).</p>
+              <p>\(\overrightarrow{OA} = -2\overline{i} +2\overline{j}\)</p>
+              <p>\(\overrightarrow{AB} = (6-(-2))\overline{i} +(4-2)\overline{j} = 8\overline{i} +2\overline{j}\).</p>
+              <p>\(\begin{array}{rcl}  \overrightarrow{OP}  & = &  -2\overline{i}+2\overline{j} +\dfrac{1}{2}(8\overline{i}+2\overline{j})\\    & = &  -2\overline{i}+2\overline{j} +4\overline{i}+\overline{j})\\    & = &  2\overline{i}+3\overline{j}\\  \end{array}\)</p>
+              <p>P:s koordinater är \((2,3)\).</p> </div></div> </li>
+              <li>P delar sträckan AB i förhållandet 3:1. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6b">
+              <div class="card card-body answer"><p>Vi har \(\overrightarrow{OA}\) och \(\overrightarrow{AB}\) är samma som i föregående moment.</p>
+              <p>Vi får</p>
+              <p>\(\begin{array}{rcl}
+                \overrightarrow{OP}  & = &  \overrightarrow{OA} +\overrightarrow{AP} \\
+                & = & \overrightarrow{OA} +\dfrac{3}{4}\overrightarrow{AB} \\
+                & = &  -2\overline{i}+2\overline{j} +\dfrac{3}{4}(8\overline{i}+2\overline{j})\\
+                & = &  -2\overline{i}+2\overline{j} +6\overline{i}+\dfrac{3}{2}\overline{j}\\
+                & = &  4\overline{i}+3\dfrac{1}{2}\overline{j}\\
+                \end{array}\)</p>
+                <p>P:s koordinater är \((4, 3\frac{1}{2})\).</p> </div></div> </li>
+
+              </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Från punkten \(A= (-2,-1)\) förflyttar vi   oss 15 enheter i riktning av \(\overline{a} = 3\overline{i} - 4\overline{j}\). På vilken punkt landar vi?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="7">
+            <div class="card card-body answer"> <p>Vi har \(\overrightarrow{OP} = \overrightarrow{OA} + 15\overline{a^0}\)</p>
+              <p>\(\overrightarrow{OA} = -2\overline{i}-\overline{j}\).</p>
+              <p>\(\mid \overline{a} \mid = \sqrt{3^2+(-4)^2} =\sqrt{25} = 5\).</p>
+              <p>\(\begin{array}{rcl}  \overrightarrow{OP}  & = &  -2\overline{i} -\overline{j} + 15\cdot \dfrac{1}{5}(3\overline{i} -4\overline{j})\\    & = &  -2\overline{i} -\overline{j} + 3(3\overline{i} -4\overline{j})\\    & = &  -2\overline{i} -\overline{j} + 9\overline{i} -12\overline{j}\\    & = &  7\overline{i} -13\overline{j}\\  \end{array}\)</p>
+              <p>P:s koordinater är \((7,-13)\).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm slutpunkten då vi från punkten \((3,1)\) förflyttar oss 5 enhetsvektorer i riktningen \(\overline{a}=-2\overline{i}+\overline{j}\) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi betecknar med P punkten där vi landar.</p>
+                <p>\(\overrightarrow{OP} = \overrightarrow{OA} + 5\overline{a^0}\).</p>
+                <p>\(\overrightarrow{OA} = 3\overline{i} + \overline{j}\).</p>
+                <p>\(\mid \overline{a} \mid =\sqrt{(-2)^2+1^2} = \sqrt{5}\).</p>
+                <p>\(\overline{a}^0 = \dfrac{1}{\sqrt{5}}(-2\overline{i}+j)\).</p>
+                <p>Vi får</p>
+                <p>\(\begin{array}{rcl}  \overrightarrow{OP} & = &  3\overline{i}+\overline{j}+5\cdot \dfrac{1}{\sqrt{5}}(-2\overline{i}+\overline{j})\\   & = &  3\overline{i}+\overline{j}+\sqrt{5}(-2\overline{i}+\overline{j})\\   & = &  3\overline{i}+\overline{j}-2\sqrt{5}\overline{i}+\sqrt{5}\overline{j}\\   & = &  (3-2\sqrt{5})\overline{i}+(1+\sqrt{5})\overline{j}\\  \end{array}\)</p>
+                <p>P:s koordinater är \((3-2\sqrt{5}, 1+\sqrt{5})\).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Hörnpunkterna i en parallellogram, ABCD, är A \( (12,3) \), B \( (18,6) \) och D\( (21,-18) \).
+            <ol>
+              <li>Bestäm koordinaterna för hörnpunkten C.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9a">
+              <div class="card card-body answer"><p>Vi har följande situation</p>
+                <p><img src="pics/7-8.png" class="responsivepic400" /></p>
+                <p>Vi bilar vekorn \( \overrightarrow{OC} \) för att komma fram till koordinaten C.</p>
+                <p>Vi får \( \overrightarrow{OC} = \overrightarrow{OD} + \overrightarrow{DC} \). \( \overrightarrow{DC} = \overrightarrow{AB} \) eftersom sidorna är parallella.</p>
+                <p> \( \overrightarrow{AB} = (18-12)\overline{i} + (-6-(-3))\overline{j} = 6 \overline{i} - 3\overline{j} \).</p>
+                <p>Vi får: </p>
+                <p>\( \begin{array}{rcl}
+                  \overrightarrow{OC} & = & \overrightarrow{OD} + \overrightarrow{DC} \\
+                  & = & 21\overline{i} - 18\overline{j} + 6 \overline{i} - 3\overline{j} \\
+                  & = & 27 \overline{i} - 21\overline{j} \\
+                  \end{array} \) </p>
+                <p>C:s koordinater är \( (27,-21) \).</p>
+              </div></div> </li>
+              <li>Bestäm koorinaten för diagonalernas skärningspunkt. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9b">
+              <div class="card card-body answer"><p>Diagonalerna skär varandra vid halva längden.</p>
+              <p>Vi söker koordinaterna för \( P \).</p>
+              <p><img src="pics/7-9.png" class="responsivepic400" /></p>
+              <p>\( \overrightarrow{AC} = (27-12)\overline{i} + (-21-(-3))\overline{j} = 15 \overline{i} - 18 \overline{j} \).</p>
+              <p>Vi får:</p>
+              <p> \( \begin{array}{rcl}
+                \overrightarrow{OP} & = & \overrightarrow{OA} + \overrightarrow{AP} \\
+                 & = & \overrightarrow{OA} + \dfrac{1}{2}\overrightarrow{AC} \\
+                 & = & 12\overline{i} - 3 \overline{j} +\dfrac{1}{2} (15 \overline{i} - 18 \overline{j}) \\
+                 & = & \dfrac{39}{2} \overline{i} - 12 \overline{j} \\
+                \end{array} \) </p>
+                <p>Skärningspunkten är \( (\dfrac{39}{2} , -12 ) \), alltså \( (19\dfrac{1}{2} , -12 ) \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li><p><i class="fas fa-shapes fa-2x level"></i>Bestäm startpunkten för vektorn \(\overline{a}=5\overline{i}+\overline{j}\) då ändpunkten \(B\) finns i första kvadranten och \(\mid\overrightarrow{OB}\mid = 5\) l.e.</p>
+            <p>Något konstigt. Här saknas något. Kanske som en mera analyserande uppgit.</p>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="9">
+            <div class="card card-body answer"> \( (-2,3) \) </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm i alla ortsvektorer av formen \(x\overline{i}+y\overline{j}\) så att \(x\) och \(y\) är heltal och att \(\overline{a}\):s längd är 5 l.e. Hur många finns det?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="10t">
+            <div class="hint"> Utgå från att längden skall vara 5 för vektorn \(x\overline{i}+y\overline{j}\). </div></div>
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="10">
+            <div class="card card-body answer"> <p>Eftersom vektorerna är av formen \(x\overline{i}+y\overline{j}\) så gäller att längden av dessa skall vara 5.</p>
+            <p>Vi får \(5=\sqrt{x^2+y^2} \Leftrightarrow 5^2 = x^2+y^2\). De talpar som löser denna ekvation är \((0,5)\), \((3,4)\), \((4,3)\) och \((5,0)\). Eftersom kvadraten på ett negativ tal blir positivt är talparen \(\pm(0,5)\), \(\pm(3,4)\), \(\pm(4,3)\) och \(\pm(5,0)\).</p>
+            <p>Vekorerna är åtta stycken och de är: \(\pm5\overline{i}\), \(\pm5\overline{j}\), \(\pm4\overline{i}\pm3\overline{j}\).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Ett plan spänns upp av tre punkter, \(A=(-1,-1)\), \(B=(1,4)\) och \(C=(3,-1)\). Bestäm punkten \(P\) så att \(\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overline{0}\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="11">
+            <div class="card card-body answer">
+              <p>Punkten \( P \) har koordinaterna \( (x,y) \).</p>
+              <p>Vi bildar vektorerna, </p>
+              <p>\( \overrightarrow{PA} = (-1-x)\overline{i} + (-1-y)\overline{j} \)</p>
+              <p>\( \overrightarrow{PB} = (1-x)\overline{i} + (4-y)\overline{j} \)</p>
+              <p>\( \overrightarrow{PC} = (3-x)\overline{i} + (-1-y)\overline{j} \)</p>
+              <p>Sedan bildar vi \(\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}=\overline{0} \).</p>
+              <p>\( \begin{array}{rcl}
+              \overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC} & = & \overline{0} \\
+              (-1-x)\overline{i} + (-1-y)\overline{j} + (1-x)\overline{i} + (4-y)\overline{j} + (3-x)\overline{i} + (-1-y)\overline{j} & = & 0\overline{i} + 0\overline{j} \\
+              (-3x+3)\overline{i} + (-3y+2)\overline{j} & = & 0\overline{i} + 0\overline{j} \\
+              \end{array} \) </p>
+              <p>Alltså </p>
+              <p>\( \left\{ \begin{array}{l}
+                -3x + 3 = 0 \\
+                -3y + 2 = 0 \\
+                \end{array} \right. \) </p>
+              <p>Vi får \( x = 1 \) och \( y = \dfrac{2}{3} \). \( P \):s koordinater skall vara \( (1, \dfrac{2}{3})\).</p> </div></div>
+          </li>
+
+        </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="5_komponenter.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="8_3d_koord.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
