@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Vektorns komponenter</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_vektorer.html">1. Vektorer</a>
+            <a class="dropdown-item" href="2_summa.html">2. Summa och differens för vektorer</a>
+            <a class="dropdown-item" href="3_reellttal.html">3. Ett reellt tal gånger en vektor</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_komponenter.html">5. Vektorns komponenter</a>
+            <a class="dropdown-item" href="7_xy-planet.html">6. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="8_3d_koord.html">7. 3 dimensionellt koordinatsystem</a>
+            <a class="dropdown-item" href="9_linjen.html">8. Linjen</a>
+            <a class="dropdown-item" href="10_plan_i_rymden.html">9. Geometriskt plan i rymden</a>
+            <a class="dropdown-item" href="11_skalar_produkt.html">10. Skalär produkt</a>
+            <a class="dropdown-item" href="12_skalart_geometriskt.html">11. Geometrisk tolkning av skalär produkt</a>
+            <a class="dropdown-item" href="13_avstand.html">12. Avstånd mellan en punkt och en linje i rymden</a>
+            <a class="dropdown-item" href="14_repetition.html">13. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_ekvationssystem.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Vektorer</h3>
+      <a href="7_xy-planet.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Vektorns komponenter</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Hur många vektorer av \(\overline{a}\) och \(\overline{b}\) behövs för att vi kan flytta oss från \(A\) till \(B\)?</p>
+            <p><img src="pics/5-1.png" class="responsivepic400" /></p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Uttryck vektorn \(\overline{v}\) med hjälp av vektorerna \(\overline{a}\) och \(\overline{b}\).</p>
+            <p><img src="pics/5-2.png" class="responsivepic400"  /></p>
+              <div class="video">
+                  <iframe src="https://player.vimeo.com/video/356452509" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+          </div>
+          <p>En vektor \(\overline{a}\) kan uttryckas som komponenter av andra vektorer. Vi tar \(\overline{u}\not=\overline{0}\) och \(\overline{v}\not=\overline{0}\) som är olika riktade. Vektorn \(\overline{a}\) kan vi uttrycka som \(\overline{a} = r\overline{u} + s\overline{v}\), där \(r\) och \(s\) är reella tal.</p>
+          <p><img src="pics/5-3.png" class="responsivepic400" /></p>
+          <p>Vi talar om att vektorn \(\overline{a}\) består av \(s\) st komponenter av \(\overline{u}\) och \(r\) st komponenter av \(\overline{v}\).</p>
+          <p>Har vi tre dimensioner behöver vi tre stycken vektorer som vi delar in \(\overline{a}\) i. Då får vi \(\overline{a} = r\overline{u} + s\overline{v} + t\overline{w}\), där \(\overline{u}\not=\overline{0}\), \(\overline{v}\not=\overline{0}\), \(\overline{w}\not=\overline{0}\) och olika riktade och \(r\), \(s\) och \(t\) är reella tal.</p>
+          <p><img src="pics/5-4.png" class="responsivepic400" /></p>
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> För \(xy\)-planet har notationen med vektorerna \(\overline{i}\) och \(\overline{j}\) blivit standard. Uttryck vektorerna \(\overline{a}\) och \(\overline{b}\) med \(\overline{i}\) och \(\overline{j}\) som komponenter.</p>
+            <p><img src="pics/5-5.png" class="responsivepic400"  /></p>
+            <div class="video">
+            <iframe src="https://player.vimeo.com/video/356453482" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          </div>
+          <p>Då vi delar upp vektorer i komponenter utnyttjar vi <a href="http://sv.wikipedia.org/wiki/Entydighet" target="_blank">entydigheten</a>. Det betyder att en ekvation endast har en lösning.</p>
+          <p>Låt \(\overline{u}\not=\overline{0}\) och \(\overline{v}\not=\overline{0}\) vara olika riktade. Om \(r\overline{u}+s\overline{v}=p\overline{u}+q\overline{v}\), så är \(r=p\) och \(s=q\).</p>
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Dela upp vektorn \(3\overline{i} -\overline{j}\) i komponenter beståendes av \(\overline{i}+\overline{j}\) och \(\overline{i}-\overline{j}\).</p>
+            <h4>Lösning</h4>
+            <p>Vi söker de reella värden \(r\) och \(s\), så att vi kan skriva:</p>
+            <p>\(\begin{array}{rcl}  3\overline{i} -\overline{j} & = & r(\overline{i}+\overline{j})+s(\overline{i}-\overline{j}) \\
+                3\overline{i} -\overline{j} & = & r\overline{i}+r\overline{j}+s\overline{i}-s\overline{j} \\
+                3\overline{i} -\overline{j} & = & r\overline{i}+s\overline{i} +r\overline{j}-s\overline{j} \\  3\overline{i} -\overline{j} & = & (r+s)\overline{i} +(r-s)\overline{j} \\  \end{array}\)</p>
+            <p>Eftersom \(\overline{i}\) och \(\overline{j}\) är basen är uppdelningen entydig. Vi får</p>
+            <p>\(\left\{  \begin{array}{rclcl}  3 & = & r+s &\Leftrightarrow &r=3-s\\   -1 & = & r-s &\Leftrightarrow &r=-1+s\\   \end{array}  \right.\)</p>
+            <p>Alltså \(3-s=-1+s\) som ger att \(2s=4\) och \(s=2\). \(r\) har då värdet \(3-s=3-2=1\).</p>
+            <p>Vi kan uttrycka \(3\overline{i} -\overline{j}\) som \((\overline{i}+\overline{j}) +2(\overline{i}-\overline{j})\).</p>
+          </div>
+          <div class="exercise box">
+            <p><strong>Exempel 4</strong> Vektorerna \(\overline{i}\) och \(\overline{j}\) är olika riktade \((\overline{i}\not=\overline{0}\), \(\overline{j}\not=\overline{0}\) ). Undersök om \(\overline{a}\) och \(\overline{b}\) är lika riktade då</p>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li>\(\overline{a}=2\overline{i}-3\overline{j}\) och \(\overline{b}=\overline{i}-\dfrac{3}{2}\overline{j}\).</li>
+              <li>\(\overline{a}=-3\overline{i}+3\overline{j}\) och \(\overline{b}=3\overline{i}-\overline{j}\).</li>
+            </ol>
+            <h4>Lösning</h4>
+            <ol start="1" style="list-style-type:lower-alpha">
+              <li><p>För att \(\overline{a}\) och \(\overline{b}\) skall vara lika riktade så skall vi kunna skriva \(\overline{a}=r\overline{b}\) där \(r \in \mathbb{R_+}\). Betyder att vi får</p>
+              <p>\(\begin{array}{rcl}  \overline{a}& = &r\overline{b} \\  2\overline{i}-3\overline{j} & = & r (\overline{i}-\dfrac{3}{2}\overline{j}) \\  2\overline{i}-3\overline{j} & = & r \overline{i}-\dfrac{3}{2}r\overline{j} \\  \end{array}\)</p>
+              <p>Eftersom \(\overline{a}\) och \(\overline{b}\) har samma bas är uppdelningen entydig. Vi får</p>
+              <p>\(\left\{  \begin{array}{rclcl}  2 & = &r &\Leftrightarrow &r=2\\   -3 & = & -\frac{3}{2} &\Leftrightarrow &r=2\\  \end{array}  \right.\)</p>
+              <p>Eftersom vi i bägge fallen får \(r=2\) så är \(\overline{a}\) och \(\overline{b}\) lika riktade.</p>
+              <p>Vi kan även i lösa uppgiften som \(\overline{a}=2\overline{i}-3\overline{j} = 2(\overline{i}-\dfrac{3}{2}\overline{j}) = 2\overline{b}\).</p></li>
+              <li><p>För att \(\overline{a}\) och \(\overline{b}\) skall vara lika riktade så skall vi kunna skriva \(\overline{a}=r\overline{b}\) där \(r \in \mathbb{R}\). Betyder att vi får</p>
+              <p>\(\begin{array}{rcl}  \overline{a}& = &r\overline{b} \\  -3\overline{i}+3\overline{j}& = &r(3\overline{i}-\overline{j}) \\  -3\overline{i}+3\overline{j}& = &3r\overline{i}-r\overline{j} \\  \end{array}\)</p>
+              <p>Eftersom \(\overline{a}\) och \(\overline{b}\) har samma bas är uppdelningen entydig. Vi får</p>
+              <p>\(\left\{  \begin{array}{rclcl}  -3 & = 3r &\Leftrightarrow &r=-1 \\  3 & = -r &\Leftrightarrow &r=-3\\  \end{array}  \right.\)</p>
+              <p>Eftersom vi får två olika värden på \(r\) så är är de varken lika eller olika riktade.</p>
+            </div>
+            <div class="exercise box">
+              <p><strong>Exempel 5</strong> För vilket värde på \(k\) är vektorerna \(\overline{a} = k\overline{i}+2\overline{j}\) och \(\overline{b} =-6\overline{i}+4\overline{j}\) olika riktade?</p>
+              <h4>Lösning</h4>
+              <p>För att \(\overline{a}\) och \(\overline{b}\) skall vara olika riktade så skall vi kunna skriva \(\overline{a}=r\overline{b}\) där \(r \in \mathbb{R_-}\). Det betyder att vi får</p>
+              <p>\(\begin{array}{rcl}  \overline{a}& = &r\overline{b} \\  k\overline{i}+2\overline{j} & = &r(-6\overline{i}+4\overline{j}) \\   k\overline{i}+2\overline{j} & = &-6r\overline{i}+4r\overline{j}) \\   \end{array}\)</p>
+              <p>Eftersom \(\overline{a}\) och \(\overline{b}\) har samma bas är uppdelningen entydig. Vi får</p>
+              <p>\(\left\{  \begin{array}{rclcl}  k & = &-6r \\   2 & = & 4r &\Leftrightarrow &r=\frac{1}{2}\\  \end{array}  \right.\)</p>
+              <p>Eftersom \(\overline{a}\) och \(\overline{b}\) skall vara olika riktade bör vi få samma värde på \(r\). Det utnyttjar vi genom att lägga in \(r=\frac{1}{2}\) i \(k=-6r = -6\cdot \dfrac{1}{2} = -3\).</p>
+              <p>Alltså då \(k=-3\) är \(\overline{a}\) och \(\overline{b}\) olika riktade.</p>  </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li><p>Uttryck vektorerna \(\overline{a}\), \(\overline{b}\) och \(\overline{c}\) som komponenter av \(\overline{i}\) och \(\overline{j}\).</p>
+            <p><img src="pics/5-6.png" style="height:262px; width:300px"/></p>
+            <ol>
+              <li>\(\overline{a}=\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer">Vi flyttar oss 3 steg åt höger och 1 steg uppåt, alltså \(\overline{a}= 3\overline{i}+\overline{j}\) . </div></div> </li>
+              <li>\(\overline{b}=\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer">Vi flyttar oss 1 steg åt vänster och 2 steg neråt, alltså \(\overline{b}= -\overline{i}-2\overline{j}\). </div></div> </li>
+              <li>\(\overline{c}=\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="1c">
+                  <div class="card card-body answer">Vi flyttar oss 2 steg rakt neråt, alltså \(\overline{c}= -2\overline{j}\) </div></div> </li>
+            </ol></li>
+
+          <li>Dela upp vektorn \(2\overline{i} +\overline{j}\) som komponenter av \(\overline{i}+\overline{j}\) och \(\overline{i}-\overline{j}\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2">
+              <div class="card card-body answer">
+                <p>Vi får att</p>
+                <p>\(\begin{array}{rcl}  2\overline{j} +\overline{j} & = & r(\overline{i}+\overline{j}) + s(\overline{i}-\overline{j}) \\  2\overline{j} +\overline{j} & = & r\overline{i}+r\overline{j} + s\overline{i}-s\overline{j} \\  2\overline{j} +\overline{j} & = & (r+s)\overline{i}+(r-s)\overline{j}\\  \end{array}\)</p>
+                <p>Uppdelningen i bas är entydig. Vi får</p>
+                <p>\(\left\{  \begin{array}{rcl}  2 & = & r+s \\  1 & = & r-s \\  \end{array}  \right.\)</p>
+                <p>som har lösningarna \(r=\dfrac{3}{2}\) och \(s=\dfrac{1}{2}\).</p>
+                <p>Alltså \(2\overline{j} +\overline{j} = \dfrac{3}{2}(\overline{i}+\overline{j}) + \dfrac{1}{2}(\overline{i}-\overline{j})\).</p> </div></div> </li>
+
+          <li>Dela upp vektorn \(\overline{c}=-4\overline{i}-3\overline{j}\) i komponenter beståendes av \(\overline{i}\) och \(\overline{i}+\overline{j}\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får att</p>
+                <p>\(\begin{array}{rcl}  -4\overline{i}-3\overline{j} & = & r\overline{i} +s(\overline{i}+\overline{j}) \\  -4\overline{i}-3\overline{j} & = & r\overline{i} +s\overline{i}+s\overline{j} \\  -4\overline{i}-3\overline{j} & = & (r+s)\overline{i} +s\overline{j} \\    \end{array}\)</p>
+                <p>Uppdelning i basen är entydig. Vi får att</p>
+                <p>\(\left\{  \begin{array}{rcl}  -4 & = & r+s \\  -3 & = & s \\  \end{array}  \right.\)</p>
+                <p>som har lösningarna \(r=-1\) och \(s=-3\).</p>
+                <p>Alltså \(\overline{c}=-4\overline{i}-3\overline{j} = -\overline{i} -3(\overline{i}+\overline{j})\).</p>  </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Undersök om vektorerna \(\overline{a}=-2\overline{i}+3\overline{j}\) och \(\overline{b}=2\overline{i}-3\overline{j}\) är lika riktade.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>För att \(\overline{a}\) och \(\overline{b}\) är lika riktade så gäller att \(\overline{a} = r\cdot \overline{b}\), \(r\in \mathbf{R}\).</p>
+                <p>Alltså</p>
+                <p>\(\begin{array}{rcl}  \overline{a} & = & r\overline{b} \\  -2\overline{i} +3\overline{j} & = & r(2\overline{i} -3\overline{j})\\  -2\overline{i} +3\overline{j} & = & 2r\overline{i} -3r\overline{j}\\  \end{array}\)</p>
+                <p>Uppdelning i bas är entydig. Vi får</p>
+                <p>\(\left\{  \begin{array}{rcl}  -2 & = & 2r\\  3 & = &-3r  \end{array}  \right.\)</p>
+                <p>som har lösningen \(r=-1\).</p>
+                <p>Eftersom \(r\) är negativt är vektorerna olika riktade.</p> </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \(k\) är vektorerna \(\overline{a}=-2\overline{i}-\overline{j}\) och \(\overline{b}=k\overline{i}-2\overline{j}\) lika riktade?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>För att \(\overline{a}\) och \(\overline{b}\) är lika riktade gäller att \(\overline{a}=r\cdot \overline{b}\) där \(r > 0\).</p>
+                <p>Vi får att</p>
+                <p>\(\begin{array}{rcl}
+                  \overline{a} & = & r\cdot \overline{b} \\
+                  -2\overline{i}-\overline{j} & = & r(k\overline{i}-2\overline{j}) \\
+                  -2\overline{i}-\overline{j} & = & kr\overline{i}-2r\overline{j}\\
+                  \end{array}\)</p>
+                <p>Uppdelning i basen är entydig. Vi får</p>
+                <p>\(\left\{  \begin{array}{rcll}
+                  -2 & = & kr \\
+                  -1 & = & -2r &\Leftrightarrow r=\frac{1}{2}\\
+                  \end{array}  \right.\)</p>
+                <p>Alltså då \(k=\dfrac{-2}{r} = \dfrac{-2}{\frac{1}{2}}=-4\).</p> </div></div> </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>För vilket värde på \(k\) är vektorerna \(\overline{a}=3\overline{i}+k\overline{j}\) och \(\overline{b}=-6\overline{i}+4\overline{j}\) olika riktade?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>För att \(\overline{a}\) och \(\overline{b}\) är olika riktade gäller att \(\overline{a} = r\cdot \overline{b}\) där \(r&lt;0\).</p>
+                <p>Vi får att</p>
+                <p>\(\begin{array}{rcl}  \overline{a} & = & r\cdot\overline{b} \\  3\overline{i} +k\overline{j} & = & r(-6\overline{i}+4\overline{j}) \\  3\overline{i} +k\overline{j} & = & -6r\overline{i}+4r\overline{j} \\  \end{array}\)</p>
+                <p>Uppdelning i basen är entydig. Vi får att</p>
+                <p>\(\left\{   \begin{array}{rcll}  3 & = & -6r &\Leftrightarrow r=-\frac{1}{2} \\  k & = & 4r \\  \end{array}  \right.\)</p>
+                <p>Alltså är \(k=4\cdot -\dfrac{1}{2} =-2\).</p> </div></div> </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Dela upp vektorn \(\overline{a}=-2\overline{i}+\overline{j}\) i komponenter beståendes av \(\overline{u}=\overline{i}+\overline{j}\) och \(\overline{v}=-\overline{i}+\overline{j}\) .
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får att</p>
+                <p>\(\begin{array}{rcl}  \overline{a} & = & r\overline{u} + s\overline{v} \\  -2\overline{i}-\overline{j} & = & r(\overline{i}+\overline{j}) +s(-\overline{i}+\overline{j})\\  -2\overline{i}-\overline{j} & = & r\overline{i}+r\overline{j} -s\overline{i}+s\overline{j}\\  -2\overline{i}-\overline{j} & = & (r-s)\overline{i}+(r+s)\overline{j}\\  \end{array}\)</p>
+                <p>Uppdelningen är entydig. Vi får att</p>
+                <p>\(\left\{  \begin{array}{rcl}  -2 & = & r-s \\  1 & = &r+s \\  \end{array}\right.\)</p>
+                <p>som har lösningarna \(r=-\dfrac{1}{2}\) och \(s=\dfrac{3}{2}\).</p>
+                <p>Alltså \(\overline{a}= -\dfrac{1}{2}\overline{u} + \dfrac{3}{2}\overline{v}\).</p> </div></div>
+            </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>En låda dras med en kraft om 100 N. Totalkraften består av två komponenter som är vinkelräta mot varandra.
+              <ol>
+                <li>Den ena komponenten har värdet 50 N. Vilket värde har den andra komponenten?  <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9a">
+                <div class="card card-body answer"><p>Vi har en situation som påminner om</p>
+                <p><img src="pics/5-7.png" class="responsivepic400" /></p>
+                <p>Storleken av den andra komponenten får vi med hjälp av Pythagoras.</p>
+                <p> \( \begin{array}{rcl}
+                  100^2 & = & 50^2 + v^2 \\
+                  v & = & \sqrt{100^2-50^2} = 50\sqrt{3} \approx 86,6 \text{ N} \\
+                  \end{array} \) </p>
+                </div></div> </li>
+                <li>Vilket värde har bägge komponenter då de har samma värde? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9b">
+                <div class="card card-body answer"><p>Vi löser den på motsvarande sätt som ovan. </p>
+                <p><img src="pics/5-8.png" class="responsivepic400" /></p>
+                <p>Vi utnyttjar Pythagoras,</p>
+                <p> \( \begin{array}{rcl}
+                  100^2 & = & x^2 + x^2 \\
+                  10000 & = & 2x^2 \\
+                  x & = & \sqrt{5000} = 50\sqrt{2} \approx 70,7 \text{ N} \\
+                  \end{array} \) </p>
+                </div></div> </li>
+              </ol>
+            </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>Längden av vektorn \( \overline{a} \) är 7. Vinkeln mellan vektorerna \( \overline{a} \) och \( \overline{u} \) är 110<sup>o</sup>. Vektorn \( \overline{a} \) består av två komponenter, varav den ena är likriktad \( \overline{u} \) och den andra är vinkelrät mot \( \overline{a} \). Bestäm längden av komponterna med en tiondel decimals noggrannhet.
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="9">
+                <div class="card card-body answer"> <p>Vi har följande situation</p>
+                <p><img src="pics/5-9.png" class="responsivepic400" /></p>
+                <p>Vi kommer åt längderna med hjälp av trigonometri.</p>
+                <p>Längden av \( \overline{u} \), \( \cos 110^{\circ} = \dfrac{7}{\mid \overline{u} \mid} \), som ger \( \mid \overline{u} \mid = -20,46 \). Alltså 20,5 N.</p>
+                <p>Längden av \( \overline{v} \), \( \tan 110^{\circ} = \dfrac{\mid \overline{v} \mid}{7} \), som ger \( \mid \overline{v} \mid = -19,23 \). Alltså 19,2 N.</p>
+                </div></div>
+            </li>
+
+            <li><i class="fas fa-cogs fa-2x level"></i>På en skidåkare påverkar gravitationskraften 460 N. Hur stor är stödkraften mot backen då backens lutning är 15<sup>o</sup>?
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10">
+                <div class="card card-body answer"> <p>Situationen är följande:</p>
+                <p><img src="pics/5-10.png" class="responsivepic400" /></p>
+                <p>Vi får ekvationen:</p>
+                <p> \( \begin{array}{rcl}
+                  \cos 15^{\circ} & = & \dfrac{\overline{N}}{\overline{G}} \\
+                  \overline{N} & = & \overline{G} \cos 15^{\circ} \\
+                  \overline{N} & = & 460 \cos 15^{\circ} = 444,326 \text{ N}\\
+                \end{array} \) </p>
+                <p>Alltså 440 N eller 444 N.</p>
+                </div></div>
+            </li>
+
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="4_ekvationssystem.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_xy-planet.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
