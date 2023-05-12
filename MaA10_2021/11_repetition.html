@@ -182,7 +182,7 @@
                 <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{a} \times \overline{b} = -3\overline{i} +10\overline{j} +15\overline{k} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
                 <li>\( \overline{c} = -\overline{i}+\overline{j} -\overline{k} \) och \( \overline{d} = \overline{i} -2 \overline{j} +\overline{k} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="7b">
-                <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{c} \times \overline{d} = \overline{i} -2\overline{j} +\overline{k} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
+                <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{c} \times \overline{d} = -\overline{i} +\overline{k} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
                 <li>\( \overline{u} = 2\overline{i}-3\overline{k} \) och \( \overline{v} = -3\overline{i} +\overline{j} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
                 <div class="collapse" id="7c">
                 <div class="card card-body answer"><p>Kryssprodukten har värdet \( \overline{u} \times \overline{v} = 3\overline{i}+9\overline{i}+2\overline{i} \). Dessutom har vi multiplar av kryssprodukten.</p></div></div> </li>
@@ -469,17 +469,27 @@
             </ol>
           </li>
 
-          <!--<li><i class="fas fa-shapes fa-2x level"></i>Allmän volym
+          <li><i class="fas fa-shapes fa-2x level"></i>Gustave Eiffel planerade det berömda tornet till världsutställningen i Paris 1900. Då tornet blev färdigt var det med sin höjd på 300 m världes högsta byggnad. Tvärsnittsareorna för tornet bildar kvadrater. När man placerar in tornet i ett koordinatsytem följder de kurvan \( f(x) = 4,25e^{2,67-0,0089x} \). Om vi skulle täcka tornet (med skivor, tyg eller dyligt), hur stor blir volymen?
+            <p><img src="pics/11-22.jpg" class="responsivepic600" /></p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="22">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+              <div class="card card-body answer"> <p>På avståndet \( x \) är höjden för tvärsnittsarean \( 2y = 2\cdot 4,25e^{2,67-0,0089x} \).</p>
+              <p>Alltså är tvärsnittsarean \( A(x) = (2\cdot 4,25e^{2,67-0,0089x})^2 \).</p>
+              <p>Integrera från 0 till 300 och kom fram till 840 000 m<sup>3</sup>.</p>
+              </div></div>
           </li>
 
-          <li><i class="fas fa-shapes fa-2x level"></i>Allmän volym
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm volymen för tältet i figuren. På avståndet \( x \) från toppen av tältet bildar tvärsnittsareorna kvadrater med sidan \( 2\sqrt{x} \).
+            <p><img src="pics/11-23.jpg" class="responsivepic400" /></p>
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#23" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
               <div class="collapse" id="23">
-              <div class="card card-body answer"> <p>Lösningen</p></div></div>
-          </li>-->
+              <div class="card card-body answer"> <p>Vi behöver tvärsnittarean \( A(x) \) och integreringsgränserna.</p>
+              <p>På avståndet \( x \) från höjden är tvärsnittsarean \( A(x)= (2\sqrt{x})^2 = 4x \).</p>
+              <p>Höjden för tältet vår vi via bottenarean för tältet.</p>
+              <p>\( 2\sqrt{x} = 2,6 \) ger oss \( x = 1,69 \). Alltså är tältet 1,69 m högt.</p>
+              <p>Vi får \( V = \displaystyle\int_0^{1,69} A(x) \text{ d}x = \displaystyle\int_0^{1,69} 4x \text{ d}x \approx 5,7 \) m<sup>3</sup>.</p>
+              </div></div>
+          </li>
 
           <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
               <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
