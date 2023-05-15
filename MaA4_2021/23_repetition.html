@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>23. Repetition</title>
+
+  </head>
+  <body>
+    <header class="MaA4">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_koordinatsystem.html">1. Koordinatystem</a>
+            <a class="dropdown-item" href="2_absolutbelopp.html">2. Absolutbelopp</a>
+            <a class="dropdown-item" href="3_ekvationerabs.html">3. Ekvationer och olikheter med absolutbelopp</a>
+            <a class="dropdown-item" href="4_ekvationssystem.html">4. Ekvationssystem</a>
+            <a class="dropdown-item" href="5_riktningskoeff.html">5. Riktningskoefficient</a>
+            <a class="dropdown-item" href="6_linjen.html">6. Linjen</a>
+            <a class="dropdown-item" href="7_linjensekvation.html">7. Linjens ekvation</a>
+            <a class="dropdown-item" href="7_5_vinkeln.html">7.5. Vinkeln</a>
+            <a class="dropdown-item" href="7_6_skarninglinjelinje.html">7.6. Skärningspunkter mellan linje och linje</a>
+            <a class="dropdown-item" href="8_ortogonalitet.html">8. Ortogonalitet</a>
+            <a class="dropdown-item" href="9_avstandpunktlinje.html">9. Avstånd mellan punkt och linje</a>
+            <a class="dropdown-item" href="10_cirkeln.html">10. Cirkeln</a>
+            <a class="dropdown-item" href="11_cirkelnekvationen.html">11. Cirkelns ekvation</a>
+            <a class="dropdown-item" href="13_skarningcirkellinje.html">13. Skärningspunkter för cirkel och linje</a>
+            <a class="dropdown-item" href="14_parabeln.html">14. Parabeln</a>
+            <a class="dropdown-item" href="16_vektorer.html">16. Vektorer</a></li>
+            <a class="dropdown-item" href="17_summa.html">17. Summa och differens av vektorer</a>
+            <a class="dropdown-item" href="18_reellttal.html">18. Reellt tal gånger vektor</a>
+            <a class="dropdown-item" href="19_xy-planet.html">19. Vektorer i xy-planet</a>
+            <a class="dropdown-item" href="20_komponenter.html">20. Vektorns komponenter</a>
+            <a class="dropdown-item" href="21_skalar_produkt.html">21. Skalär produkt</a>
+            <a class="dropdown-item" href="22_skalart_geometriskt.html">22. Geometrisk tolking av skalär produkt</a>
+            <a class="dropdown-item" href="23_repetition.html">23. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="22_skalart_geometriskt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 4 Analytisk geometri och vektorer</h3>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>23. Repetition</h1>
+      <p>Sedan är det bara att repetera.</p>
+
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm storleken av följande vinklar.
+            <p><img src="pics/23-1.png" class="responsivepic400" /></p>
+            <ol>
+              <li>\( \measuredangle (\overline{AB},\overline{AC}) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5a">
+              <div class="card card-body answer"><p>40<sup>o</sup></p></div></div> </li>
+              <li>\( \measuredangle (\overline{AB},\overline{CA}) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5b">
+              <div class="card card-body answer"><p>Vi flyttar på vektorn och får vinkeln. Vinkeln är \( 180^{\circ} - 40^{\circ} = 140^{\circ} \).</p></div></div> </li>
+              <li>\( \measuredangle (\overline{AC},\overline{CB}) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#0.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="0.5c">
+              <div class="card card-body answer"><p>Vi flyttar på vektorn och får vinkeln. Vinkeln är \( 40^{\circ} + 60^{\circ} = 100^{\circ} \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Lös följande ekvationer med absolutbelopp.
+            <ol>
+              <li>\( \mid x-2 \mid = 3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vi får att \( x-2=3 \Leftrightarrow x=5 \) och \( -(x-2)=3 \Leftrightarrow x=-1 \).</p> </div></div> </li>
+              <li>\( \mid -x-1 \mid = \mid 2x-1 \mid \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Kvadrering ger \( (-x-1)^2=(2x-1)^2 \). Vi kommer till ekvationen \( 3x^2-6x=0 \Leftrightarrow 3x(x-2)=0 \) som har rötterna \( x=0 \) och \( x=2 \).</p> </div></div> </li>
+              <li>\( \mid x+6 \mid = \mid x \mid \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Kvadrera och kom fram till \( x^2 +12x + 36 = x^2 \). Lös ekvationen och kom fram till att  \( x = -3 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Låt \(\overline{a} = 2\overline{i} + 5\overline{j}\) och \(\overline{b}=\overline{i}-2\overline{j}\). Bestäm summavektorn och summavektorns enhetsvektor.
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>\( \overline{v}= 3 \overline{i}+3\overline{j}\) och  \(\overline{v}^0= \dfrac{1}{\sqrt{2}} (\overline{i}+\overline{j})\)</p> </div></div>
+          </li>
+
+          <li>Bestäm
+            <ol>
+              <li>avståndet mellan punkterna \( (-2,1) \)och \( (4,3) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Avståndet är \( \sqrt{(x_2 -x_1)^2 -(y_2-y_1)^2} = \sqrt{(4-(-2))^2+(3-1)^2}= \sqrt{40}= 2\sqrt{10} \).</p> </div></div> </li>
+              <li>mittpunkten mellan punkterna \( (-2,1) \) och \( (4,3) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>\( x \)-koordinaten: \( x=\dfrac{x_2+x_1}{2}=\dfrac{4-2}{2} = 1 \).</p><p>\( y \)-koordinaten: \( y=\dfrac{y_2+y_1}{2}=\dfrac{1+3}{2} = 2 \).</p><p>Punkten är \( (1,2) \). </p></div></div> </li>
+              <li>ekvationen för linjen som går genom punkterna \( (-2,1) \) och \( (4,3) \). <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Riktningskoefficienten, \( k=\dfrac{y_2-y_1}{x_2-x_1} = \dfrac{1-3}{-2-4} = \dfrac{1}{3} \)</p>
+              <p>Enpunktsformeln ger \( y-y_0=k(x-x_0) \Leftrightarrow y-1 = \dfrac{1}{3}(x-(-2)) \) som är \( y=\dfrac{1}{3}x+\dfrac{5}{3} \). </p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Rita bild och bestäm skärningspunkterna för cirkeln \( (x+3)^2+(y+2)^2=5 \) och linjen \( y=2x+4 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Bilden ser ut som</p>
+              <p><img src="pics/23-5.png" alt="" class="responsivepic600" /></p>
+              <p>Skärningspunkterna får vi genom att lösa ekvationen</p><p>\( \left\{  \begin{array}{l}  (x+3)^2 +(y+2)^2 = 5\\  y=2x+4\\  \end{array}  \right. \)</p><p>som har lösningarna \( (-2,0) \) och \( (-4,-4) \).</p> </div></div>
+          </li>
+
+          <li>Bestäm ekvationen för den linje som går genom punkterna \( (2,-1) \) och \( (-1,5) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Riktningskoefficienten är \( k=\dfrac{y_2-y_1}{x_2-x_1} = \dfrac{-1-5}{2-(-1)}=-2 \).</p> <p>Enpunktsformeln, \( y-y_0=k(x-x_0) \) ger \( y-(-1)=-2(x-2) \) som förenklas till \( y=-2x+3 \).</p> <p>Linjen har ekvationen \( y=-2x+3 \).</p> </div></div>
+              <ol>
+                <li><i class="fas fa-shapes fa-2x level"></i>Bestäm även normalen genom punkten \( (2,-1) \) till linjen som du just bestämde.
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="6a">
+                <div class="card card-body answer"> <p>Eftersom linjerna skall vara vinkelräta gäller att \( k_1 \cdot k_2 = -1 \).</p> <p>Alltså \( -2 \cdot k_2 = -1 \Leftrightarrow k_2=\dfrac{1}{2} \).</p> <p>Enpunksformeln ger \( y-y_0=k(x-x_0) \Leftrightarrow y-(-1)=\dfrac{1}{2}(x-2) \) som förenklas till \( y=\dfrac{1}{2}x-2 \).</p> </div></div>
+              </li>
+            </ol>
+          </li>
+
+          <li>Bestäm utan räknare skärningspunkterna för linjerna \( y=3x-2 \) och \( y=-\dfrac{1}{2}x+5 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi får ekvationssystemet</p> <p>\( \left\{  \begin{array}{l}  y=3x-2 \\  y=-\dfrac{1}{2}x+5\\  \end{array}  \right. \)</p>
+              <p>Ett sätt att lösa det är att kombinera och lösa ekvationen \( 3x-2=-\dfrac{1}{2}x+5 \) som har lösningen \( x=2 \).</p><p>Insättning av \( x=2 \) ger värdet \( y=4 \).</p> </div></div>
+          </li>
+
+          <li>Fyrhörningen \( ABCD \) är en parallellogram och \( O \) är någon punkt i planet. Vi betecknar \( \overline{OA} = \overline{a} \), \( \overline{OB} = \overline{b} \) och \( \overline{OC} = \overline{c} \). Uttryck följande vektorer med hjälp av \( \overline{a} \), \( \overline{b} \) och \( \overline{c} \).
+            <ol>
+              <li>\( \overline{AB} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8a">
+              <div class="card card-body answer"><p>\( \overline{AB} = -\overline{a} + \overline{b} \)</p></div></div> </li>
+              <li>\( \overline{CD} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8b">
+              <div class="card card-body answer"><p>\( \overline{CD} = \overline{a} - \overline{b} \)</p></div></div> </li>
+              <li>\( \overline{OD} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8c">
+              <div class="card card-body answer"><p>\( \overline{OD} = \overline{a} - \overline{b} + \overline{c} \)</p></div></div> </li>
+              <li>\( \overline{BD} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8d">
+              <div class="card card-body answer"><p>\( \overline{BD} = \overline{a} -2\overline{b} + \overline{c} \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Låt \( \overline{a} = \overline{i} + 3\overline{j} \) och \( \overline{b}=-3\overline{i} -2\overline{j} \). Bestäm längderna av \( \overline{a} \), \( \overline{b} \) och \( \overline{a} - \overline{b} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Längden av \( \overline{a} = \sqrt{1^2 + 3^2} = \sqrt{10} \) l.e.</p>
+              <p>Längden av \( \overline{b} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{13} \) l.e.</p>
+              <p>\( \overline{a} - \overline{b} = 4\overline{i} + 5\overline{j} \). Längden \( \mid \overline{a} - \overline{b} \mid = \sqrt{41} \) l.e.</p>
+              </div></div>
+          </li>
+
+          <li>För vilket värde på \( k \) är vektorerna \( \overline{u} = 3\overline{i} - k\overline{j} \) och \( \overline{v}= 2\overline{i} +5\overline{j} \) lika riktade?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9.5">
+              <div class="card card-body answer"> <p>Ställ upp ett villkor och kom fram till ekvationsparet \( 3=2t \) och \( -k = 5t \).</p>
+              <p>För värdet \( k = -\dfrac{15}{2} \).</p>
+              </div></div>
+          </li>
+
+          <li>Lös följande ekvationssystem. Räkna för hand och kontrollera svaret med hjälp av räknarprogram.
+            <ol>
+              <li>\(\left\{  \begin{array}{rcl}
+                -3x  +2y & = & 5 \\
+                 x+y & = & 0 \\
+                 \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer">
+                <p>Skärningspunkten är \( (-1,1) \).</p> </div></div> </li>
+              <li>\(\left\{  \begin{array}{rcl}
+                2x + y & = & 7 \\
+                2x -5y & = & -11 \\
+                \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer">
+                <p>Skärningspunkten är \((-2,2)\).</p> </div></div> </li>
+              <li>\(\left\{  \begin{array}{rcl}
+                2x+2y & = & 0 \\
+                x+y & = & 4 \\
+                \end{array}  \right.\) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+                <div class="collapse" id="10c">
+                  <div class="card card-body answer">
+                    <p>Ekvationssystemet saknar lösningar. Ser vi på uttrycken som linjer så märker vi att linjerna har samma riktningskoefficient.</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm med en tiondels grads nogrannhet vinkeln mellan vektorerna \(\overline{a}=4\overline{i}+\overline{j}\) och \(\overline{b}=-2\overline{i}+\overline{j} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Via skalära produkten, 139,4<sup>o</sup>.</p></div></div>
+          </li>
+
+          <li>Bestäm med en tiondels grads nogrannhet vinkeln mellan vektorerna \(\overline{a}=2\overline{i}+\overline{j}-2\overline{k}\) och \(\overline{b}=3\overline{i}-2\overline{j}-\overline{k}\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Via skalära produkten, 58,0<sup>o</sup>.</p> </div></div> </li>
+
+          <li>\(A=(-1,0)\), \(B=(0,3)\) och \(C=(x,y)\) utgör hörnpunkterna i en triangel. Bestäm \(x\) och \(y\) så att triangeln har en rät vinkel vid punkten C och benen AC och BC är lika långa.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Punkterna är \((1,1)\) och \((-2,2)\).</p> </div></div> </li>
+
+          <li>Ligger punkterna \(A=(0,1,2)\), \(B =(-2,2,0)\) och \(C=(-4,3,-1)\) på samma linje?
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="14">
+            <div class="card card-body answer">Via lika riktade vektorer. Nej.
+            </div></div>
+          </li>
+
+
+          <li>För vilket värde på \( k \) har skalära produkten för vektorerna \( \overline{a} = 2\overline{i} +k\overline{j} + \overline{k} \) och \( \overline{b} = 3\overline{i} -4\overline{j} + 5\overline{k} \) värdet 10?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Bilda den skalära produkten. Kom fram till \( k = \dfrac{1}{4} \).</p></div></div>
+          </li>
+
+          <li>En triangels hörnpunkter är i origo och punkterna \( A=(9,18) \) och \( B=(21,12) \). Visa att triangeln är rätvinklig.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#16" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="16">
+              <div class="card card-body answer"> <p>Bilda vektorerna \( \overline{OA} \), \(\overline{OB} \) och \( \overline{AB} \).</p>
+              <p>Den räta vinkeln hittar du mellan \( \overline{OA} \) och \( \overline{AB} \).</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm ekvationen för parabeln som går genom punkterna \( (-4,16) \), \( (-2,6) \) och \( (0,0) \).
+            <p>Parabelns ekvation är \( y=Ax^2+Bx+C \), utnyttja det.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#18" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="18">
+              <div class="card card-body answer"> <p>Vi bildar  ekvationssystemet</p>
+              <p>\( \left\{  \begin{array}{l}  16 = A(-4)^2+B(-4)+C \\  6 = A(-2)^2 + B(-2)+C \\  0= A\cdot 0^2 +B\cdot 0 + C \\  \end{array}  \right. \)</p>
+              <p>som har lösningarna \( A=\dfrac{1}{2} \), \( B=-2 \) och \( C=0 \).</p>
+              <p>Parabelns ekvation är \( y=\dfrac{1}{2}x^2-2x \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En landsvägstunnel har ett tvärsnitt som följer en parabel. Höjden för tunneln är 5,0 m och bredden är 8,0 m. En specialbredd lastbil har bredden 4,2 m och höjden 3,8 m. Ryms lastbilen genom tunneln?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#19" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="19">
+              <div class="card card-body answer"> <p>Vi placerar parabeln i mitten längs med \( y \)-axeln. Då går parabeln genom punkterna \( (0,5) \), \( (-4,0) \) och \( (4,0) \).</p>
+                <p>Eftersom parablen är symmetrisk kring \( y \)-axeln är den av typ \( y = ax +c \). Eller så jobbar du med \( y = ax + bx + c \). Jobbar du med tre obekanta, a, b och c, behöver du bilda tre ekvationer, med två obekanta, a och c, behöver du två ekvationer.</p>
+                <p>Bilda ett ekvationssystem och lös det. Kom fram till att parabelns ekvation är \( y = -\dfrac{5}{16}x^2 + 5 \).</p>
+                <p>4,2 meter bred betyder att 2,1 meter är på bägge sidor om mitten. Höjden vid 2,1 meter är \( -\dfrac{5}{16}\cdot 2,1^2 + 5 = 3,6 \) m.</p>
+                <p>Alltså rymms lastbilen inte genom tunneln.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm skärningspunkterna för cirkeln \( (x-3)^2+(y-1)^2=8 \) och linjen \( y=x-2 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#20" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="20">
+              <div class="card card-body answer"> <p>Lös ekvationen</p>
+              <p>\( \left\{  \begin{array}{l}  (x-3)^2+(y-1)^2=8 \\  y=x-2 \\  \end{array}\right. \)</p><p>Lättast går det att lösa ekvationssystemet på dator eller räknaren.</p><p>Punkterna är \( (1,-1) \) och \( (5,3) \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm avståndet från punkten \( (-3,5) \) till periferin av cirkeln \( x^2+y^2-4x+2y-20 = 0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#21" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="21">
+              <div class="card card-body answer"> <p>Cirkelns ekvatiion är \( (x-2)^2 + (y+1)^2 = 25\). Se till att du löser fram den!</p>
+              <p>Avståndet mellan cirkelns mittpunkt \( (2,-1) \) och punkten \( (-3,5) \) är \( \sqrt{61} \). </p>
+              <p>Avståndet mellan cirkleln och punkten är \( \sqrt{61} - 5 \approx 2,8 \) l.e.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm det kortaste avstånd mellan cirklarna \( x^2 +y^2 +2x -y -5 = 0 \) och \( x^2 + y^2 -6x +y +9 =0 \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#22" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="22">
+              <div class="card card-body answer"> <p>Cirkalrnas ekvationer är \( (x+1)^2 + (y-\dfrac{1}{2})^2 = \dfrac{25}{4} \) och \( (x-3)^2 + (y+\dfrac{1}{2})^2 = \dfrac{1}{4} \). Se till att du löser fram den!</p>
+              <p>Avståndet mellan cirklarnas mittpunkter är \( \sqrt{17} \). </p>
+              <p>Avståndet mellan cirklarna är \( \sqrt{17} - (\dfrac{5}{2} + \dfrac{1}{2} ) = \sqrt{17} - 3 \approx 1,1 \) l.e.</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>En parallellogram \( OABC \) har hörnet \( O \) i origo. För parallellogrammen gäller att \( \overline{OA} = 15\overline{i} + 6\overline{j} \) och \( \overline{OB} = -12\overline{i} + 14\overline{j} \). Bestäm koordinaterna för hörnpunkterna \( A \), \( B \) och \( C \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#23" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="23">
+              <div class="card card-body answer"> <p>Börja med att rita en bild. Utnyttja vektorerna \( \overline{OA} \) och \( \overline{OB} \) för att komma till \( A \), \( B \) och \( C \).</p>
+              <p>\( A = (15,6) \), \( B = (-12,14) \) och \( C = (-27,8) \).</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm avståndet mellan punkten \( (10,1) \) och linjen som går genom punkterna \( (0,1) \) och \( (-1,4) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#24" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="24">
+              <div class="card card-body answer"> <p>Avståndet är \( 3\sqrt{10} \approx 9,5 \).</p>
+                <p>Beteckna den sökta punkten med \( P \). Bilda ett uttryck för \( \overline{PX} \).</p>
+                <p>Se sedan till att \( \overline{PX} \) är vinkelrät med vektorn \( \overline{AB} \).</p>
+                <p>Alternativt kan du utnyttja avståndet mellan en punkt och en linje som kommer i MaA 5, \( d = \dfrac{\mid Ax_0 +By_0+C\mid}{\sqrt{A^2+B^2}} \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm normalen för linjen \( y=\dfrac{2}{5}x-1 \) som går genom punkten \( (2,-2) \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#25" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="25">
+              <div class="card card-body answer"> <p>För riktinginskoefficienten, \( k_n \), för normalen gäller att \( \dfrac{2}{5}\cdot k_n = -1 \Leftrightarrow k_n = -\dfrac{5}{2} \).</p>
+              <p>Normalens ekvation är \( y-y_0 ) k(x-x_0) \Leftrightarrow y+2=-\dfrac{5}{2}(x-2) \) som vi löser till \( y=-\dfrac{5}{2}x+3 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm tangenterna för cirkeln \( (x+1)^2+y^2=5 \) som går genom punkten \( (4,5) \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#26t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="26t">
+            <div class="card card-body hint"> <p>Bilda en ekvation för en linje som går genom punkten. Gå via avståndet mellan punkt och linje.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#26" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="26">
+              <div class="card card-body answer"> <p>Tangenternas ekvationer ser ut som \( y-5=k(x-4) \). Dessa tangenter skall ha avståndet \( \sqrt{5} \) till punkten \( (-1,0). \)</p><p>Avståndet mellan en punkt och en linje ger att \( k=\dfrac{1}{2} \) och \( k=2 \).</p><p>Tangenterna är \( y_1=\dfrac{1}{2}x+3 \) och \( y_2=2x-3 \).</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm arean av den triangel som begränsas av punkterna \( (1,3) \), \( (-3,-1) \) och \( (3,-1) \).
+            <p>Rita bild och fundera. På vilka olika sätt kan du bestämma en triangels area?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#28" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="28">
+              <div class="card card-body answer"> <p>Vi kan bestämma arean med \( \dfrac{1}{2}ab\sin \alpha \).</p><p>Bestäm längden av två ben och vinkeln mellan linjerna. Arean är 12 a.e.</p> </div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm arean av det mindre område som uppstår då linjen \( y=x \) skär cirkeln \( x^2+(y-2)^2=4 \).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#29t" aria-expanded="false" aria-controls="collapseExample">Tips</button></p>
+            <div class="collapse" id="29t">
+            <div class="card card-body hint"> <p>Rita bild, bestäm skärningspunkter, storlek av sektor och sedan är du nästan där.</p> </div></div>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#29" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="29">
+              <div class="card card-body answer"> <p>Situationen är följande:</p>
+              <p> <img src="pics/23-3.png" alt="" class="responsivepic600"></p>
+              <p>Skärningspunkterna mellan linjen och cirkeln är \( (0,0) \) och \( (2,2) \). Kom ihåg att bestämma dessa!</p>
+              <p>Vi behöver veta storleken av sektorn som bildas. Cirkelns mittpunkt är \( (0,2) \) och ekvationerna för linjerna som bildas mellan skärningspunkterna och cirkeln mittpunkt är \( y = 2 \) och \( x = 0 \). Bestäm dessa!</p>
+              <p>Vinkeln mellan dessa är 90<sup>o</sup>. Bestäm den! Radien för cirkeln är 2 .</p>
+              <p>Storleken av sektorn är \( A = \dfrac{90^{\circ}}{360^{\circ}} \cdot \pi \cdot  2^2 = \pi \) a.e.</p>
+              <p>Arean av triangeln är \( A = \dfrac{1}{2} ab \sin \alpha = \dfrac{1}{2} \cdot  2^2 \cdot \sin 90^{\circ} = 2 \) a.e.</p>
+              <p>Det lilla området, segmentent, har arean \( \pi -2  \approx 1,14 \) a.e.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#17" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="17">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#18" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="18">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA4">
+      <a href="22_skalart_geometriskt.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="index.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

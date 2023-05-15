@@ -329,11 +329,11 @@ nav ul li a {
   background-image: url(pics/MaA3_400.jpg);
 }
 
-.kurs.MaA4:hover {
+.kurs.MaA4:hover, .kurs.MaA42021:hover {
   background-image: url(pics/MaA4_400.jpg);
 }
 
-.kurs.MaA5:hover {
+.kurs.MaA5:hover{
   background-image: url(pics/MaA5_400.jpg);
 }
 
@@ -404,7 +404,7 @@ nav ul li a {
   background-color: #D8E6F0;
 }
 
-.MaA3, .MaA4, .MaA5, .MaA32021 {
+.MaA3, .MaA4, .MaA5, .MaA32021, .MaA42021 {
   /*background-color: #52E5FF;*/
   background-color: #B9AA87;
 }
