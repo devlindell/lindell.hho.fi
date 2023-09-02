@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+  <title>10. Potensekvationer</title>
+
+ </head>
+ <body>
+  <header class="MaA52021">
+   <nav>
+    <div class="dropdown">
+     <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-bars fa-3x"></i>
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item" href="1_riktad_vinkel.html">1. Riktad vinkel</a>
+       <a class="dropdown-item" href="2_enhetscirkeln.html">2. Enhetscirkeln</a>
+       <a class="dropdown-item" href="3_egenskaper.html">3. Egenskaper för sinus och cosinus</a>
+       <a class="dropdown-item" href="4_ekvationer_sinus.html">4. Ekvationer med sinus</a>
+       <a class="dropdown-item" href="5_ekvationer_cosinus.html">5. Ekvationer med cosinus</a>
+       <a class="dropdown-item" href="6_trig_funktioner.html">6. De trigonometriska funktionerna</a>
+       <a class="dropdown-item" href="9_potenser.html">9. Potenser</a>
+       <a class="dropdown-item" href="10_potensekvationer.html">10. Potensekvationer</a>
+       <a class="dropdown-item" href="11_logaritmer.html">11. Logaritmer</a>
+       <a class="dropdown-item" href="12_ber_logaritmer.html">12. Beräkning med logaritmer</a>
+       <a class="dropdown-item" href="14_till_logaritmer.html">14. Tillämpning med logaritmer</a>
+     </div>
+    </div>
+   </nav>
+   <a href="9_potenser.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+   <h3 class="mobile">MaA 5 Funktioner och ekvationer 2</h3>
+   <a href="11_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+   <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+  </header>
+
+  <article>
+   <h1>10. Potensekvationer</h1>
+   <section>
+    <div class="theory">
+     <div class="exercise box">
+      <p><strong>Exempel 1</strong> Lös ekvationen</p>
+      <ol style="list-style-type:lower-alpha">
+       <li>\( x^2=1 \)</li>
+       <li>\( x^2=5 \)</li>
+       <li>\( x^5 = -1 \)</li>
+       <li>\( 2x^4 = 1 \)</li>
+      </ol>
+      <div class="video">
+      <iframe src="https://player.vimeo.com/video/699338093" width="1280" height="720" frameborder="0" allow="fullscreen"></iframe>
+     </div>
+    </div>
+    <div class="exercise box">
+     <p><strong>Exempel 2</strong> Lös följande ekvationer:</p>
+     <ol style="list-style-type:lower-alpha">
+      <li>\( 3^2 = 81^x \)</li>
+      <li>\( 16 \cdot 64^x = 256^{x-1} \).</li>
+     </ol>
+     <h4>Lösning</h4>
+     <ol style="list-style-type:lower-alpha">
+      <li><p>\( 3^2 = 81^x \)</p>
+       <p>Vi skriver 81 som \( 3^4 \). Vi får</p>
+       <p>\( \begin{array}{rcl} 3^2 & = & 81^x \\ 3^2 & = & (3^4)^x \\ 3^2 & = & 3^{4x} \\ \end{array} \)</p>
+       <p>Eftersom vi har samma bas måste exponenterna vara samma för att ekvationen skall gälla. \( 2=4x \) ger att \( x=\dfrac{1}{2} \).</p></li>
+       <li><p>\( 16 \cdot 64^x = 256^{x-1} \)</p>
+        <p>Vi kan skriva \( 16=2^4 \), \( 64=2^6 \) och \( 256=2^8 \). Vi får </p>
+        <p>\( \begin{array}{rcll} 16 \cdot 64^x & = & 256^{x-1} \\ 2^4 \cdot (2^6)^x & = & (2^8)^{x-1} \\ 2^4 \cdot 2^{64x} & = & 2^{8(x-1)}\\ 2^{4+6x} & = & 2^{8(x-1)} & \textrm{ Samma bas! Undersöker exponenterna.} \\ 4+6x & = & 8(x-1) \\ 4+6x & = & 8x-8 \\ -2x & = & -12 \\ x & = & 6 \\ \end{array} \)</p></li>
+       </ol>
+      </div>
+
+     </div>
+   </section>
+   <section>
+    <h2>Uppgifter</h2>
+    <ol>
+     <!--<li>Uppgift för Quizlet</li>-->
+
+     <li>Lös följande ekvationer
+      <ol>
+       <li>\( x^6 = 729 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1a">
+       <div class="card card-body answer"><p>\( x^6 = 729 \) ger \( x=729^{\frac{1}{6}}=3 \). Ekvationen har lösningen \( \pm3 \).</p></div></div> </li>
+       <li>\( x^3 = -125 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1b">
+       <div class="card card-body answer"><p>\( x^3 = -125 \) ger \( x=\sqrt[3]{-125}=-5 \).</p></div></div> </li>
+       <li>\( x^7 = -128 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1c">
+       <div class="card card-body answer"><p>\( x^7 = -128 \) ger \( x=\sqrt[7]{-128} = -2 \).</p></div></div> </li>
+      </ol>
+     </li>
+
+     <li>Lös följande ekvationer
+      <ol>
+       <li>\( x^4 = 16 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1.5a">
+       <div class="card card-body answer"><p>\( x^4 = 16 \) ger \( x=16^{\frac{1}{4}}=2 \). Ekvationen har lösningen \( \pm 2 \).</p></div></div> </li>
+       <li>\( x^3 = 27 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1.5b">
+       <div class="card card-body answer"><p>\( x^3 = 27 \) ger \( x=\sqrt[3]{27}=3 \).</p></div></div> </li>
+       <li>\( 3^x = 27 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="1.5c">
+       <div class="card card-body answer"><p>Vad skall vi höja upp 3 i för att komma till 27? Jo \( 3^3 = 27 \). Alltså \( x = 3 \).</p>
+       </div></div> </li>
+      </ol>
+     </li>
+
+     <li>Lös ekvationerna och ge exakt svar
+      <ol>
+       <li>\( 3x^6 = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2a">
+       <div class="card card-body answer"><p>\( 3x^6 = 2 \), alltså \( x^6=\dfrac{2}{3} \) som ger \( \pm\left(\dfrac{2}{3}\right)^{\frac{1}{6}} \).</p></div></div> </li>
+       <li>\( \dfrac{1}{4}x^3 = 1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2b">
+       <div class="card card-body answer"><p>\( \dfrac{1}{4}x^3 = 1 \), som är \( x^3=4 \), alltså \( 4^{\frac{1}{3}} \).</p></div></div> </li>
+       <li>\( \dfrac{2x^7}{5} = -\dfrac{5}{2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="2c">
+       <div class="card card-body answer"><p>\( \begin{array}{rcll}
+        \dfrac{2x^7}{5} & = & -\dfrac{5}{2} & \mid \cdot \dfrac{5}{2} \\
+        x^7 & = & -\dfrac{25}{4} & \mid \sqrt[7]{\quad} \\
+        x & = & -\sqrt[7]{\dfrac{25}{4}} \\
+        \end{array}
+         \)</p></div></div> </li>
+      </ol>
+     </li>
+
+     <!--<li>Uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="3">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li> Uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="4">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li>Uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>-->
+
+     <!--<li><i class="fas fa-shapes fa-2x level"></i>
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="6">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>-->
+
+     <!--<li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="7">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>-->
+
+     <li><i class="fas fa-cogs fa-2x level"></i>Lös ekvationerna genom att hitta en gemensam bas.
+      <ol>
+       <li>\( 25^x -625= 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8a">
+       <div class="card card-body answer"><p>\( \begin{array}{rcl}
+        25^x -625& = & 0 \\
+        25^x & = & 625 \\
+        5^{2^x} & = & 5^4 \\
+        \end{array}
+         \)</p>
+        <p>Alltså \( 2x=4 \), \( x=2 \).</p></div></div> </li>
+       <li>\( (2^3)^x \cdot (4^3)^x = 64^{x-1} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8b">
+       <div class="card card-body answer"><p>\( \begin{array}{rcl}
+        (2^3)^x \cdot (4^3)^x & = & 64^{x-1} \\
+        2^{3x} \cdot 2^{2^3x} & = & 2^{6^{x-1}} \\
+        2^{3x} \cdot 2^{6x} & = & 2^{6(x-1)} \\
+        2^{3x+6x} & = & 2^{6(x-1)} \\
+        \end{array} \)</p>
+        <p>Alltså \( 3x+6x=6(x-1) \). Alltså \( x=-2 \).</p></div></div> </li>
+       <li>\( 27^{x-1} \cdot 9^x = 2187 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="8c">
+       <div class="card card-body answer"><p>\( \begin{array}{rcl}
+        27^{x-1} \cdot 9^x & = & 2187 \\
+        3^{3^{x-1}} \cdot 3^{2^x} & = & 3^7 \\
+        3^{3(x-1)+2x} & = & 3^7\\
+        \end{array} \)</p>
+        <p>Alltså \( 3(x-1)+2x=7 \). Alltså \( x=2 \).</p></div></div> </li>
+      </ol>
+     </li>
+
+     <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="9">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+       <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="10">
+       <div class="card card-body answer"> <p>Lösningen</p></div></div>
+     </li>
+
+     <li>Uppgift
+      <ol>
+       <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5a">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5b">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+       <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+       <div class="collapse" id="5c">
+       <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+      </ol>
+     </li>
+    -->
+
+     </ol>
+
+   </section>
+
+  </article>
+
+  <footer class="MaA52021">
+    <a href="9_potenser.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+    <a href="11_logaritmer.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>
