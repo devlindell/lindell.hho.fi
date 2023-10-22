@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>5. Kongruens</title>
+
+  </head>
+  <body>
+    <header class="MaA11">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_mangder.html">1. Mängder</a>
+            <a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
+            <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Delningsekvation och Euklides algoritm</a>
+            <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
+            <a class="dropdown-item" href="6_diofantisk.html">6. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="7_kryptering.html">7. Kryptering</a>
+            <a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
+            <a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
+            <a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="4_euklides.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 11 Talteori och bevis</h3>
+      <a href="6_diofantisk.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>5. Kongruens</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vilken veckodag
+              <ol style="list-style-type:lower-alpha">
+                <li>är det om 4 dygn?</li>
+                <li>är det om 18 dygn?</li>
+                <li>var det för 17 dygn sedan?</li>
+              </ol>
+              <h4>Lösning</h4>
+              <ol style="list-style-type:lower-alpha">
+                <li>Om det idag är måndag så är det om 4 dygn fredag.</li>
+                <li>Eftersom veckan består av 7 dygn är det om 18 dygn samma dag som om \( 18 -7 \dot 2 = 4 \) dygn.</li>
+                <li>För 17 dyng sedan var det samma dag som för \( 17 - 7\cdot 2 = 3 \) dygn sedan. Är det måndag idag var det för 3 dygn sedan fredag. </li>
+              </ol>
+            </div>
+            <p>Vi märker att talen 18 och 4 har samma egenskaper kring delbarhet med talet 7. Inom matematiken talar vi om kongruens.</p>
+            <div class="summary box">
+              <p>Anta att \( n \) är ett heltal som är större än 1. Heltalen \( a \) och \( b \) är kongruenta modulo \( n \) om deras differens är delbar med talet \( n \).</p>
+              <p>Om talen \( a \) och \( b \) kongruenta modulo \( n \), betecknar vi det med \( a \equiv b \quad (\mod n) \).</p>
+            </div>
+            <p>För våra tal gäller \( 18 - 4 = 14 \) och \( 14 \) är delbart med 7. Alltså \( 18 \equiv 4 \quad (\mod 7) \).</p>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Visa att
+                <ol style="list-style-type:lower-alpha">
+                  <li>\( 48 \equiv 13 \quad (\mod 7) \)</li>
+                  <li>\( -6 \equiv 12 \quad (\mod 3) \)</li>
+                </ol>
+                <h4>Lösning</h4>
+                <ol style="list-style-type:lower-alpha">
+                  <li><p>Eftersom \( 48 \equiv 13 \quad (\mod 7) \) betyder det att \( 48 - 13 = 35 = 7 \cdot 5 \)</p>
+                  <p>Alltså är \( 48 \equiv 13 \quad (\mod 7) \).</p></li>
+                  <li><p>Eftersom \( -6 \equiv 12 \quad (\mod 3) \) betyder det att \( -6 -12 = -18 = 3(-6) \).</p>
+                  <p>Alltså är \( -6 \equiv 12 \quad (\mod 3) \).</p></li>
+                </ol>
+              </div>
+              <div class="summary box">
+                <h4>Egenskaper för kongruens</h4>
+                <p>Kongruens har följande egenskaper. Vi antar att \( a \equiv b \quad (\mod n) \) och \( c \equiv d \quad (\mod n) \) och \( k \) är ett positivt heltal. Då gäller
+                  <ul>
+                    <li>\( a + c \equiv b + d \quad (\mod n) \)</li>
+                    <li>\( ac \equiv bd \quad (\mod n) \)</li>
+                    <li>\( a^k \equiv b^k \quad (\mod n) \)</li>
+                  </ul>
+
+                </p>
+              </div>
+              <div class="exercise box">
+                <p><strong>Exempel 2</strong> Visa att \( 2^{2020} -1 \) är delbart med 5.</p>
+                <h4>Lösning</h4>
+                <p>Eftersom \( 2^4 = 16 \) gäller att \( 2^4 \equiv 1 \quad (\mod 5) \).</p>
+                <p>Då får vi \( 2^{2020} = 2^{4\cdot 505} \equiv 1^{505} \quad (\mod 5) \).</p>
+                <p>Alltså gäller att \( 2^{2020} \equiv 1 \quad (\mod 5)\). Då gäller att \( 2^{2020}-1 \equiv 0 \quad (\mod 5) \).</p>
+                <p>Alltså är \( 2^{2020} -1 \) delbart med 5.</p>
+
+              </div>
+
+              <div class="exercise box">
+                <p><strong>Exempel 3</strong> Bestäm sista siffran i talet \( 2^{128} \).</p>
+                <h4>Lösning</h4>
+                <p>Vi börjar med att märka att \( 2^5 = 32 \equiv 2 \quad (\mod 10) \).</p>
+                <p>Vi kommer också behöva att \( 2^3 = 8 \equiv 8 \quad (\mod 10) \).</p>
+                <p>Sedan får vi att </p>
+                <p>\( \begin{array}{rcll}
+                  2^{128} & = & 2^{5 \cdot 25 + 3} = 2^{5 \cdot 25} \cdot 2^3 \\
+                  & \equiv & 2^{25} \cdot 2^3 = 2^{5 \cdot 5} \cdot 2^3 \\
+                  & \equiv & 2^{5} \cdot 2^3 \\
+                  & \equiv & 2 \cdot 8 = 16 \\
+                  & \equiv & 6 \quad (\mod 10) \\
+                  \end{array} \) </p>
+                  <p>Det betyder att den sista siffran är 6.</p>
+              </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Visa att
+            <ol>
+              <li>\( 18 \equiv 6 \quad (\mod 3) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>\( 18 \equiv 6 \quad (\mod 3) \) eftersom \( 18 - 6 = 12 = 3 \cdot 4 \).</p></div></div> </li>
+              <li>\( 210 \equiv 147  \quad (\mod 7 ) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>\( 210 \equiv 147  \quad (\mod 7 ) \) eftersom \( 210 - 147 = 63 = 7 \cdot 9 \).</p></div></div> </li>
+              <li>\( 29 \equiv -6  \quad (\mod 5 ) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>\( 29 \equiv -6  \quad (\mod 5 ) \) eftersom \( 29 - (-6) = 35 = 5 \cdot 7 \)</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Visa att följande tal har samma rest då de divideras med samma tal.
+            <ol>
+              <li>Talen 364 och 294 divideras med 7.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vi får att \( 364 - 294 = 70 = 7 \cdot 10 \)</p>
+                <p>Alltså gäller \( 364 \equiv 294 \quad (\mod 7) \).</p>
+              </div></div> </li>
+              <li>Talen 754 och 421 divideras med 3.<p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vi får att \( 754 - 421 = 333 = 3 \cdot 111 \)</p>
+                <p>Alltså gäller \( 754 \equiv 421 \quad (\mod 3) \).</p>
+              </div></div> </li>
+              <li>Talen 666 och 380 divideras med 11. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi får att \( 666 - 380 = 286 = 11 \cdot 26 \)</p>
+                <p>Alltså gäller \( 666 \equiv 380 \quad (\mod 11) \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att
+            <ol>
+              <li>\( 3^5 \equiv 3 \quad (\mod 5) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Vi kan visa på följande sätt \( 3^5 \equiv 3 \quad (\mod 5) \) betyder att \( 3^5 - 3 = 243 -3 = 240 = 5 \cdot 48 \)</p></div></div> </li>
+              <li>\( 2^{20} \equiv 1  \quad (\mod 33) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi kan visa på följande sätt: \( 2^{20} \equiv 1  \quad (\mod 33) \) betyder att \( 2^{20} - 1 = 1048575 = 33 \cdot 31775 \).</p>
+                <p>Jobbar vi med större tal blir det problem. Då måste vi tänka som följande.</p>
+                <p>Problemet är \( \mod 33 \), vi skall då hitta tal som är delbara med 33. Men eftersom \( 33 = 3\cdot 11 \) så visar vi att \( 2^{20} \equiv 1  \quad (\mod 3) \) och \( 2^{20} \equiv 1  \quad (\mod 11) \)</p>
+                <p>Eftersom \( 2^2 \equiv 1 \quad (\mod 3) \) får vi att \( 2^{20} = (2^{10})^2 \equiv 1^{10} \equiv 1 \quad (\mod 3) \). </p>
+                <p>Dessutom gäller att \( 2^5 = 32 \equiv -1 \quad (\mod 11) \) får vi att \(2^{20} = (2^5)^4 \equiv (-1)^4 \equiv 1 \quad (\mod 11) \).</p>
+              </div></div> </li>
+              <li>\( 7^{12} \equiv 1 \quad (\mod 48 ) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>\( 7^{12} \) är ett såpass stort tal att vi kan inte direkt räkna ut dess värde.</p>
+                <p>Vi märker att \( 48 = 4 \cdot 12 \). Vi tar och visar att \( 7^{12} \equiv 1 \quad ( \mod 4 ) \) och att \( 7^{12} \equiv 1 \quad (\mod 12 ) \).</p>
+                <p>Eftersom \( 7^2 = 49 \equiv 1 \quad (\mod 4) \) får vi att \( 7^{12} = (7^6)^2 \equiv 1^6 \equiv 1 \quad (\mod 4) \).</p>
+                <p>Dessutom gäller att \(7^2 \equiv 1 \quad (\mod 12) \). Då får vi \( 7^{12} = (7^6)^2 \equiv 1^6 \equiv 1 \quad ( \mod 12 ) \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Visa att talet \( 2^{342} -1 \) är delbart med 7.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Eftersom \( 2^3 = 8 \) är \( 2^3 \equiv 1 \quad (\mod 7) \).</p>
+                <p>Då gäller att \( (2^3)^{k} = 2^{3k} \equiv 1 \quad (\mod 7) \).</p>
+                <p>Eftersom \( 342 = 3 \cdot 114 \) gäller att \( 2^{342} = 2^{2 \cdot 114 } \equiv 1^{114} \quad (\mod 7) \).</p>
+                <p>Eftersom \( 2^{342} \equiv 1 \quad (\mod 7) \) får vi att \( 2^{342} -1 \equiv 0 \quad (\mod 7) \). Detta betyder att \( 2^{342} -1 \) är delbart med 7.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Visa att talet \( 2^{800} -1 \) är delbart med talet 341.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Vi faktoriserar \( 341 = 31 \cdot 11 \).</p>
+                <p>Vi skall visa att \( 2^{800} \equiv 1 \quad (\mod 11) \) och \( 2^{800} \equiv 1 \quad (\mod 31) \)</p>
+                <p>Vi har  \( 2^5 \equiv 1 \quad (\mod 31) \). Vi jobbar med uttrycket \( (2^5)^2 \equiv 1^2 \quad (\mod 31) \), alltså \( 2^{10} \equiv 1^2 \quad (\mod 31) \).</p>
+                <p>Dessutom har vi \( 2^5 \equiv -1 \quad (\mod 11) \) får vi att \( (2^5)^2 \equiv (-1)^2 \quad (\mod 11) \), alltså \( 2^{10} \equiv 1 \quad (\mod 11) \).</p>
+                <p>Då vi kombinerar får vi att \( 2^{800} = (2^{10})^{80} \equiv 1 \quad (\mod 341) \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet \( 2^{99} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Först märker vi att \( 2^5 = 32 \equiv 2 \quad (\mod 10) \).</p>
+                <p>Sedan får vi att </p>
+                <p>\( \begin{array}{rcll}
+                  2^{99} & = & 2^{5 \cdot 19} \cdot 2^4 \\
+                  & \equiv & 2^{19} \cdot 2^4 = 2^{23} = 2^{5\cdot 4} \cdot 2^3 \\
+                  & \equiv & 2^4 \cdot 2^3 = 16 \cdot 8 \\
+                  & \equiv & 6 \cdot 8 \quad(\mod 10) & | 6\cdot 8 = 48 \\
+                  & \equiv & 8 \quad(\mod 10) \\
+                  \end{array} \) </p>
+                  <p>Den sista siffran är 8.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet \( 3^{224} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Vi börjar med att märka att \( 3^4 = 81 \equiv 1 \quad(\mod 10) \).</p>
+                <p>Sedan får vi att </p>
+                <p>\( \begin{array}{rcll}
+                  3^{244} & = & 3^{4\cdot 61} = 3^{4 \cdot 60} \cdot 3 \\
+                  & \equiv & 3^{60} \cdot 3 = 3^{4 \cdot 15} \cdot 3 \\
+                  & \equiv & 3^{15} \cdot 3 = 3^{16} = (3^4)^2 \\
+                  & \equiv & 1 \quad (\mod 10) \\
+                  \end{array} \) </p>
+                  <p>Den sista siffran är 1.</p>
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11.5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11.5">
+              <div class="card card-body answer"> <p>Vi börjar med att märka att \( 7^2 = 49 \equiv -1 \quad(\mod 10) \).</p>
+                <p>Sedan har vi att \( 7^4 = 2401 \equiv 1 \quad(\mod 10) \).</p>
+              </div></div>
+          </li>-->
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Bestäm sista siffran i talet \( 5^{1234} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Efter lite räknande märker vi att</p>
+                <p>\( 5^2 = 25 \equiv 5 \quad (\mod 10) \)</p>
+                <p>\( 5^3 = 125 \equiv 5 \quad (\mod 10) \)</p>
+                <p>\( 5^4 = 625 \equiv 5 \quad (\mod 10) \)</p>
+                <p>\( 5^5 = 3125 \equiv 5 \quad (\mod 10) \)</p>
+                <p>Vi kommer behöva alla dessa, man märker det när vi räknar på.</p>
+                <p>Sedan får vi att </p>
+                <p>\( \begin{array}{rcll}
+                  5^{1234} & = & 5^{2 \cdot 617} \\
+                  & \equiv & 5^{617} = 5^{5 \cdot 123 + 2} = 5^{5 \cdot 123} \cdot 5^2 \\
+                  & \equiv & 5^{123} = 5^{3 \cdot 41} \\
+                  & \equiv & 5^{41} = 5^{4 \cdot 8 + 1} = 5^{4 \cdot 8} \cdot 5 \\
+                  & \equiv & 5^{8} \quad(\mod 10) \\
+                  \end{array} \) </p>
+                  <p>Den sista siffran är 5. Senare med hjälp av induktion kommer vi visa att alla potenser med basen 5 slutar med talet 5.
+              </div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Bestäm sista siffran i talet \( 7^{2018} \).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Här använder vi oss av olika tals kongruens.</p>
+              <p>\( 7 \equiv 3 \quad (\mod 10) \)</p>
+              <p>\( 9 \equiv -1 \quad (\mod 10) \)</p>
+              <p>Sedan får vi att </p>
+              <p>\( \begin{array}{rcll}
+                7^{2018} & \equiv & (-3)^{2018} \\
+                & \equiv & ((-3)^2)^{1009} = 9^{1009} \\
+                & \equiv & (-1)^{1009} = -1 \\
+                & \equiv & 9 \quad (\mod 10) \\
+                \end{array} \) </p>
+                <p>Den sista siffran är 9.</p>
+              </div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA11">
+      <a href="4_euklides.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="6_diofantisk.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

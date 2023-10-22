@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>3. Primtal och gemensamma faktorer</title>
+
+  </head>
+  <body>
+    <header class="MaA11">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_mangder.html">1. Mängder</a>
+            <a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
+            <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Delningsekvation och Euklides algoritm</a>
+            <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
+            <a class="dropdown-item" href="6_diofantisk.html">6. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="7_kryptering.html">7. Kryptering</a>
+            <a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
+            <a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
+            <a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="2_talbaser.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 11 Talteori och bevis</h3>
+      <a href="4_euklides.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>3. Primtal och gemensamma faktorer</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vad har talen \(2, 3, 5, 7, 11, 13 \) gemensamt?</p>
+            <p>Vi märker att alla 6 tal är delbara med sig själv och 1. Sådana tal kallas för primtal. Primtal används i kryptering. </p>
+            <p>För att undersöka om ett tal är ett primtal undersöker vi om vi kan faktorisera talet.</p>
+          </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Är talet 19 ett primtal? Vilka tal skall vi försöka faktorisera med?</p>
+            <h4>Lösning</h4>
+            <p>Vi börjar med att undersöka om talet 2 är en faktor i 19. \( \dfrac{19}{2} = 9 \text{ rest } 1\).</p>
+            <p>Till nästa är talet 3, \( \dfrac{19}{3} = 6 \text{ rest } 1 \).</p>
+            <p>Följande tal är inte 4, eftersom \( 4 = 2 \cdot 2 \), utan 5. \( \dfrac{19}{5} = 3 \text{ rest } 4 \).</p>
+            <p>Talet 6 hoppar vi över, eftersom \( 6 = 2 \cdot 3 \).</p>
+            <p>Vårt nästa tal är 7, \( \dfrac{19}{7} = 2 \text{ rest } 5 \).</p>
+            <p>Talen \( 8 = 2 \cdot 2 \cdot 2 \), \( 9 = 3 \cdot 3 \) och \( 10 = 2\cdot 5 \) hoppar vi över.</p>
+            <p>Följande är 11, \( \dfrac{19}{11} = 1 \text{ rest } 8 \).</p>
+            <p>Talet \( 12 = 2\cdot 2 \cdot 3 \). Det hoppas över.</p>
+            <p>Vårt nästa tal är 13, \( \dfrac{19}{13} = 1 \text{ rest } 6 \).</p>
+            <p>Talen \( 14 = 2\cdot 7 \), \( 15 = 3\cdot 5 \) och \( 16 = 2 \cdot 2 \cdot 2 \cdot 2 \) hoppar vi över.</p>
+            <p>Följande är 17, \( \dfrac{19}{17} = 1 \text{ rest } 2 \).</p>
+            <p>Talet \( 18 = 2 \cdot 3 \cdot 3 \) så det hoppar vi över.</p>
+            <p>Till sist kommer vi till 19, \( \dfrac{19}{19} = 1 \). Så 19 är ett primtal.</p>
+          </div>
+          <p>När vi undersöker om ett tal, \(n \), är ett primtal dividerar vi med de primtal, \( p \), så att \( p < \sqrt{n} \). Denna metod kallas för <a href="https://sv.wikipedia.org/wiki/Eratosthenes" target="_blank">Eratosthenes</a> såll.</p>
+          <p>
+            <div class="exercise box">
+              <p><strong>Exempel 2</strong> Dela upp följande tal i primfaktorer.
+                <ol style="list-style-type:lower-alpha">
+                  <li>16</li>
+                  <li>420</li>
+                  <li>82</li>
+                </ol>
+                <h4>Lösning</h4>
+                <ol style="list-style-type:lower-alpha">
+                  <li>Vi får \(16 = 2 \cdot 8 = 2 \cdot 2 \cdot 4 = 2^2 \cdot 2 \cdot 2 = 2^4 \).</li>
+                  <li>Vi får \( 420 = 2 \cdot 210 = 2 \cdot 2 \cdot 105 = 2^2 \cdot 3 \cdot 35 = 2^2 \cdot 3 \cdot 5 \cdot 7 \).</li>
+                  <li>Vi får \( 82 = 2 \cdot 41 \).</li>
+                </ol>
+              </div>
+              <p>Faktorisering av tal till primfaktorer utnyttjar vi för att bestämma största gemensamma faktor, SGF, och minsta gemensamma nämnare MGM. Största gemensamma faktor kallas ibland för största gemensamma delaren, SGD.</p>
+              <p>Största gemensamma faktor för två tal är de största antal primtal som är faktorer i bägge talen.</p>
+              <p>Minsta gemensamma nämnare är alla de primtal som är gemensamt i bägge tal.</p>
+              <div class="exercise box">
+                <p><strong>Exempel 3</strong> Bestäm för talen 84, 280 och 1260 största gemensamma faktor och minsta gemensamma nämnare.</p>
+                <h4>Lösning</h4>
+                <p>Vi börjar med att dela upp talen i primfaktorer.</p>
+                <p>\( 84 = 2^2 \cdot 3 \cdot 7 \)</p>
+                <p>\( 280 = 2^3 \cdot 5 \cdot 7 \)</p>
+                <p>\( 1260 = 2^2 \cdot 3^2 \cdot 5 \cdot 7 \)</p>
+                <p>Den största gemensamma faktorn, SGF(84,280,1260) är \( 2^2 \cdot 7 = 28 \).</p>
+                <p>Minsta gemensamma nämnare MGM(84,280,1260) är \( 2^3 \cdot 3^2 \cdot 5 \cdot 7 = 2520 \).</p>
+              </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Undersök om följande tal är primtal.
+            <ol>
+              <li>113 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Eftersom \( \sqrt{113} = 10,6 \) dividerar vi med primtalen 2, 3, 5, 7.</p>
+                <p>\( \dfrac{113}{2} = 56 \text{ rest } 1 \).</p>
+                <p>\( \dfrac{113}{3} = 37 \text{ rest } 2 \).</p>
+                <p>\( \dfrac{113}{5} = 22 \text{ rest } 3 \).</p>
+                <p>\( \dfrac{113}{7} = 16 \text{ rest } 1 \).</p>
+                <p>Alltså är talet 113 ett primtal.</p>
+              </div></div> </li>
+              <li>259 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Eftersom \( \sqrt{259} = 16,1 \) dividerar vi med primtalen som är mindre än 16.</p>
+                <p>\( \dfrac{259}{2} = 129 \text{ rest } 1 \).</p>
+                <p>\( \dfrac{259}{3} = 86 \text{ rest } 1 \).</p>
+                <p>\( \dfrac{259}{5} = 51 \text{ rest } 4 \).</p>
+                <p>\( \dfrac{259}{7} = 37 .</p>
+                <p>Eftersom vi kan faktorisera med 7 är 259 inte ett primtal.</p>
+              </div></div> </li>
+              <li>297 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Eftersom \( \sqrt{297} = 17,2 \) dividerar vi med primtalen som är mindre än 16.</p>
+                <p>\( \dfrac{297}{2} = 148 \text{ rest } 1 \).</p>
+                <p>\( \dfrac{297}{3} = 99  \).</p>
+                <p>Eftersom vi kan faktorisera med 3 är 297 inte ett primtal.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Fakotrisera följande tal till primfaktorer.
+            <ol>
+              <li>259 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Eftersom \( \sqrt{259} = 16,1 \) jobbar vi med primtalen som är mindre än detta.</p>
+                <p>Vi får \(259 = 7 \cdot 37 \). Eftersom 37 är ett primtal är 259 färdigt faktoriserat.</p>
+              </div></div> </li>
+              <li>297 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Eftersom \( \sqrt{297} = 17,2 \) jobbar vi med primtal som är mindre än detta.</p>
+                <p>Vi får \( 297 = 3 \cdot 99 = 3 \cdot 3 \cdot 33 = 3^2 \cdot 3 \cdot 11 = 3^3 \cdot 11 \).</p>
+              </div></div> </li>
+              <li>1904 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Eftersom \( \sqrt{1904} = 43,6 \) jobbar vi med primtal som är mindre än detta.</p>
+                <p>Vi får \( 1904 = 2\cdot 952 = 2 \cdot 2 \cdot 476 = 2^2 \cdot 2 \cdot 238 = 2^3 \cdot 2 \cdot 119 = 2^4 \cdot 7 \cdot 17 \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Utnyttja Eratosthenes såll för att hitta de primtal som är mindre än 150.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Bestäm för följande tal största gemensamma faktor och minsta gemensamma nämnare.
+            <ol>
+              <li>55 och 120 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( 55 = 5 \cdot 11 \)</p>
+                <p>\( 120 = 2^3 \cdot 3 \cdot 5 \)</p>
+                <p>Vi får SDF(55,120) är \( 5 \).</p>
+                <p>Vi får MGM(55,120) är \( 2^3 \cdot 3 \cdot 5 \cdot 11 = 1320 \).</p>
+              </div></div> </li>
+              <li>34 och 55 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( 34 = 2 \cdot 17 \)</p>
+                <p>\( 55 = 5 \cdot 11 \)</p>
+                <p>Vi får SDF(34,55) är \( 1 \).</p>
+                <p>Vi får MGM(34,55) är \( 2 \cdot 5 \cdot 11 \cdot 17 = 1870 \).</p>
+              </div></div> </li>
+              <li>190 och 172 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( 190 = 2 \cdot 5 \cdot 19 \)</p>
+                <p>\( 172 = 2^2 \cdot 43 \)</p>
+                <p>Vi får SDF(190,172) är \( 2 \).</p>
+                <p>Vi får MGM(190,172) är \( 2^2 \cdot 5 \cdot 19 \cdot 43 = 16340 \).</p>
+              </div></div> </li>
+              <li>-84 och 99 <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer">
+                <p>\( -84 \) kan vi inte dela upp i primtalsfaktoer eftersom talet är negativt.</p>
+                <p>Då extisterar inte SDF och MGM för -84 och 99.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Lite mera krävande uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv en algoritm som går igenom stegen då man undersöker om ett tal är ett primtal.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Något i följande stil:</p>
+                <p>Börja med att ta roten av talet som undersöks.</p>
+                <p>Börja dividera talet som undersöks med första primtalet.</p>
+                <p>Går divisionen jämnt ut är det inte frågan om ett primtal.</p>
+                <p>Går den sista divisionen, den mellan talet och det största möjliga primtalet, inte jämnt ut är det frågan om ett primtal.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv en algoritm där vi söker största gemensamma faktor och största gemensamma nämnare.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Något i följadne stil:</p>
+                <p>Börja med att dela upp talen i primtalsfaktorer.</p>
+                <p>För att få största gemensamma faktor: per primtalsfaktor som finns, multiplicer det minsta antalet multiplar av varje.</p>
+                <p>För att få största gemensamma nämnare: tag största antalet multipel av alla primtalsfaktorer som finns och multipliera ihop dem.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fab fa-python fa-2x level"></i>Skriv ett program där man kan undersöka om talet som undersöks är ett pritmal.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fab fa-python fa-2x level"></i>Skriv ett program som skriver ut största gemensamma faktor och största gemensamma nämnare för två tal.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA11">
+      <a href="2_talbaser.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="4_euklides.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

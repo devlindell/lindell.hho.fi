@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>6. Newton-Raphsons metod</title>
+
+  </head>
+  <body>
+    <header class="MaA12">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_algoritmer.html">1. Algoritmer</a>
+            <a class="dropdown-item" href="2_polynomdiv.html">2. Division av polynom</a>
+            <a class="dropdown-item" href="3_faktorisering.html">3. Faktorisering av polynom</a>
+            <a class="dropdown-item" href="4_komplexatal.html">4. Komplexa tal</a>
+            <a class="dropdown-item" href="5_iteration.html">5. Iteration och rekursivt definierad talföljd</a>
+            <a class="dropdown-item" href="6_newton-raphson.html">6. Newton-Raphsons metod</a>
+            <a class="dropdown-item" href="7_newton-cotes.html">7. Newton-Cotes metoder för integrering</a>
+            <a class="dropdown-item" href="8_repetition.html">8. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="5_iteration.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 12 Algoritmer i matematiken</h3>
+      <a href="7_newton-cotes.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>6. Newton-Raphsons metod</h1>
+      <section>
+        <div class="theory">
+          <p>Newton-Raphsons metod är en numerisk metod med vars hjälp vi får rötterna, lösningarna. Den har fått sitt namn efter <a href="https://en.wikipedia.org/wiki/Isaac_Newton" target="_blank">Isaac Newton</a> och <a href="https://en.wikipedia.org/wiki/Joseph_Raphson" target="_blank">Joseph Raphson</a>. Ibland kallar man den endast för Newtons metod.</p>
+          <div class="intro box">
+            <p>Bestäm närmevärdet av \( \sqrt{21} \).</p>
+            <p>Vi vet att \( 4 < \sqrt{21} < 5\). </p>
+            <p>Vi skall lösa \( x^2 = 21\), \( x>0\), alltså \(x^2-21=0\), alltså nollstället för \(f(x)=x^2-21\).</p>
+            <p>Vi löser det med hjälp av några tangeter. </p>
+            <p>Vi utnyttjar oss av tangenter och itererar oss fram till närmevärdet. Tanken är följande:</p>
+            <p><img src="pics/6_intro.png" alt="" class="responsivepic600"></p>
+            <p>Vi behöver ett startvärde, \(x_1\).</p>
+            <p>Tangentens ekvation är \( y - f(x_1) = f'(x_1)(x-x_1) \).</p>
+            <p>Skärningspunkten har \( y=0 \). Alltså </p>
+            <p>\(\begin{array}{rcl}
+              0 - f(x_1) & = & f'(x_1)x -f'(x_1)x_1 \\
+              f'(x_1)x_1 - f(x_1) & = & f'(x_1)x \\
+              f'(x_1)x & = & f'(x_1)x_1 - f(x_1) \\
+              x & = & x_1 - \dfrac{f(x_1)}{f'(x_1)} \\
+              \end{array}\)</p>
+            <p>Metoden kallas Newtons eller Newton-Raphsons metod.</p>
+            <p>Vi väljer \( x_1 = 4 \), \(f'(x)=2x\), och får då</p>
+            <p>\( \begin{array}{rcl}
+              x_1 & = & 4 \\
+              x_2 & = & 4 - \dfrac{4^2-21}{2\cdot 4} = 4,625\\
+              x_3 & = & 4,625 - \dfrac{4,625^2-21}{2\cdot 4,625} = 4,58277\ldots \\
+              \vdots \\
+              \end{array}\)</p>
+            <p>Själva uträkningen med iterationer gör vi lättast på räknare eller räknarprogram.
+            <p>På SpeedCrunch ser det ut som följande:</p>
+            <p><img src="pics/6_speedcrunch.png" alt="" class="responsivepic600"></p>
+            <p>Vi slutar iterera när decimalutvecklingen är konstant. Vi får att \( \sqrt{21} = 4,58257569495584000659\).</p>
+          </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 1</strong> Bestäm nollstället för funktionen \( f(x)=x^3-5x+5 \)</p>
+            <h4>Lösning</h4>
+            <p>Vi behöver en kvalificerad gissning för nollstället. Då vi ritar grafen av \(  f \) märker vi att roten är mellan \( -3 \) och \(-2\). Vi väljer \( x_1 = -3 \).</p>
+            <p>Eftersom \( f(x)=x^3-5x+5 \) är \( f'(x)=3x^2-5 \).</p>
+            <p>Sedan itererar vi</p>
+            <p><img src="pics/6_speedcrunch_2.png" alt="" class="responsivepic600"></p>
+            <p>Vi märker att nollstället är \( −2,62736508471183313934 \).</p>
+          </div>
+
+          <div class="summary box">
+            <p>Med Newtons formel får vi numeriska lösningar åt ekvationer. Vi formar om ekvationen till en funktion. Då söker vi nollställena för funktionen. </p>
+            <p>Vi behöver en kvalificerad gissning, startvärde, \( x_1 \) och sedan utnyttjar vi och itererar med formeln \[ x =  x_1 - \dfrac{f(x_1)}{f'(x_1)}. \]</p>
+          </div>
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <li>Bestäm närmevärdet för följande kvadratrötter med hjälp av Newtons metod.
+            <ol>
+              <li>\( \sqrt{14} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Eftersom \( 3 < \sqrt{14} < 4 \) är 3 eller 4 bra startvärden.<p>
+              <p>\( f(x) = x^2-14\) och \( f'(x)=2x \).</p>
+              <p>Med startvärdet \( 3 \) får vi </p>
+              <p><img src="pics/6_1a.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 3,74165738677394138558 \).</p>
+              </div></div> </li>
+              <li>\( \sqrt{31} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Eftersom \( 5 < \sqrt{31} < 6 \) är 5 eller 6 bra startvärden.<p>
+              <p>\( f(x) = x^2-31\) och \( f'(x)=2x \).</p>
+              <p>Med startvärdet \( 5 \) får vi </p>
+              <p><img src="pics/6_1b.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 5,56776436283002192212 \).</p> </div></div> </li>
+              <li>\( \sqrt{42} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Eftersom \( 6 < \sqrt{42} < 7 \) är 6 eller 7 bra startvärden.<p>
+              <p>\( f(x) = x^2-42\) och \( f'(x)=2x \).</p>
+              <p>Med startvärdet \( 7 \) får vi </p>
+              <p><img src="pics/6_1c.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 6,48074069840786023097 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li>Bestäm närmevärdet för följande rötter med hjälp av Newtons metod.
+            <ol>
+              <li>\( \sqrt[3]{14} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5a">
+              <div class="card card-body answer"><p>Eftersom \( 2 < \sqrt[3]{14} < 3 \) är 2 eller 3 bra startvärden.<p>
+              <p>\( f(x) = x^3-14\) och \( f'(x)=3x^2 \).</p>
+              <p>Med startvärdet \( 2 \) får vi </p>
+              <p><img src="pics/6_1.5a.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 2,41014226417522998613 \).</p>
+              </div></div> </li>
+              <li>\( \sqrt[3]{7} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5b">
+              <div class="card card-body answer"><p>Eftersom \( 1 < \sqrt[3]{7} < 2 \) är 1 eller 2 bra startvärden.<p>
+              <p>\( f(x) = x^3-7\) och \( f'(x)=3x^2 \).</p>
+              <p>Med startvärdet \( 1 \) får vi </p>
+              <p><img src="pics/6_1.5b.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( 1,91293 \). För att få noggrannare värde måste vi iterera mera.</p> </div></div> </li>
+              <li>\( \sqrt[4]{17} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1.5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1.5c">
+              <div class="card card-body answer"><p>Eftersom \( 2 < \sqrt[4]{17} < 3 \) är 2 eller 3 bra startvärden.<p>
+              <p>\( f(x) = x^4-17\) och \( f'(x)=4x^3 \).</p>
+              <p>Med startvärdet \( 1 \) får vi </p>
+              <p><img src="pics/6_1.5c.png" alt="" class="responsivepic600"></p>
+              <p>Med tillräkligt många iterationer får vi \( 2,03054318486893071787 \).</p> </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm nollstället för \( f(x) = x^3-x^2+1\).
+            <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+            <div class="collapse" id="2">
+            <div class="card card-body answer"> <p>Vi ritar grafen eller gissar oss fram till att \( -1 \) är ett bra startvärde. Vi får</p>
+              <p><img src="pics/6_2.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( −0,75487766624669276005 \).</p>
+            </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm nollstället för \( f(x) = x^3+2\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi ritar grafen eller gissar oss fram till att \( -2 \) är ett bra startvärde. Vi får</p>
+                <p><img src="pics/6_3.png" alt="" class="responsivepic600"></p>
+                <p>Alltså \( −1,25992104989487316477 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bestäm nollstället för \( f(x) = -x^3-2x^2-1\).
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Vi ritar grafen eller gissar oss fram till att \( -2 \) är ett bra startvärde. Vi får</p>
+                <p><img src="pics/6_4.png" alt="" class="responsivepic600"></p>
+                <p>Alltså \( −2,2055694304005903117 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Låt \( f(x)=x^3 -2x +2 \). Bestäm nollställena via startvärdena 0 och 1. Var för är 0 och 1 dåliga startvärden då vi söker nollställena med Newtons metod?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Då vi ritar ut tangenterna i \( x = 0 \) och \( x=1 \) får vi följande bild</p>
+              <p><img src="pics/6_5.png" alt="" class="responsivepic600"></p>
+              <p>Vi märker att tangenternas nollställen ger den andra tangenten. Det betyder att vi hoppar mellan värdena.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \( f(x) = -x^3+4x+1 \) har 3 stycken nollställen. Bestäm alla tre med hjälp av Newtons metod genom att välja lämpliga startvärden.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"><p>Vi ritar grafen märker vi att \( -2 \), \( 0 \) och \( 2 \) är bra startvärde.</p>
+                <p>Vi får följande närmevärden: \( x_1 = -1,860805853112 \), \(x_2=-0,254101688365 \) och \(x_3 = 2,114907541477\).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Funktionen \( f(x) = x^4 - 5x^2 + 6 \) har 4 stycken nollställen. Bestäm alla tre med hjälp av Newtons metod genom att välja lämpliga startvärden.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Vi ritar grafen märker vi att \( -2 \), \( -1 \), \( 1 \) och \( 2 \) är bra startvärde.</p>
+                <p>Vi får följande närmevärden: \(  x_1 = -1,7320508076 \), \(x_2 = -1,4142135624 \), \( x_3 = 1,4142135624 \) och \( x_4 = 1,7320508076 \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Ett nollställe för funktionen \( \sin x\) är \( \pi \). Använd dig av Newtons metod och bestäm ett närmevärde för \( \pi \) med 10 decimalers noggrannhet.
+          <p>Derivatan av \( D \sin x = \cos x \).</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Vi får</p>
+                <p><img src="pics/6_8.png" alt="" class="responsivepic600"></p>
+              <p>Alltså \( \pi \approx 3,1415926536 \).</p>
+              </div></div>
+          </li>
+
+          <li>Nedan ser du grafen till en funktion \( f \).
+            <p><img src="pics/6_10.png" alt="" class="responsivepic600"></p>
+            <p>Funktionens nollställen är A, B, C och D. Avgör med hjälp av grafen vilket nollställe vi får då vi tillämpar Newtons metod på funktionen med följande startvärden.
+            <ol>
+              <li>\( x_1 = 3 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>B</p>
+              <p>Skärningspunkten för tangenten från \( x_1 = 3 \) landar i \( -1 < x < 0 \). Därifrån stannar vi på B.</p>
+              </div></div> </li>
+              <li>\( x_1 = 2 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>C</p>
+              <p>Skärningspunkten för tangenten från \( x_1 = 2 \) landar i nära 1. Därifrån stannar vi på C.</p>
+              </div></div> </li>
+              <li>\( x_1 = 0 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10c">
+              <div class="card card-body answer"><p>D</p>
+              <p>Skärningspunkten för tangenten från \( x_1 = 0 \) landar i \( 4 < x < 5 \). Därifrån stannar vi på D.</p>
+              </div></div> </li>
+              <li>\( x_1 = -1 \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10d">
+              <div class="card card-body answer"><p>B</p>
+              <p>Skärningspunkten för tangenten från \( x_1 = -1 \) landar i \( -3 < x < B \). Därifrån stannar vi på B.</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>[SE V15] Italienaren Fibonacci beräknade år 1225 närmevärdet för \( x \approx 1,368808108 \) för roten till ekvationen \( x^3 + 2x^2 + 10x - 20 = 0 \).
+            <ol>
+              <li>Visa att ekvationen har exakt en rot i mängden av reella tal. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13a">
+              <div class="card card-body answer"><p>Vi betecknar \( f(x) = x^3 + 2x^2 +10x -20 \). Vi söker nollstället för funktionen.</p>
+              <p>\( f'(x) = 3x^2 + 4x + 10 \). Derivatan saknar nollställe.</p>
+              <p>Eftersom \( f'(1) = 17 \) gäller att \( f \) är strängt växande.</p>
+              <p>Vidare har vi att \( f(1) = -7 \) och \( f(2) = 16 \). Alltså har vi ett nollställe i \( 1 \leq x \leq 2 \).</p>
+              </div></div> </li>
+              <li>Med hur många iterationer får man första gången samma nio decimaler som i Fibonaccis närmevärde då man använder Newtons metod och startvärdet \( x_0 = 1 \)? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13b">
+              <div class="card card-body answer"><p>Vi får </p>
+              <p><img src="pics/6_13.png" alt="" class="responsivepic600"></p>
+              <p>Med 4 iterationer har vi samma värde då vi avrundar.</p>
+            </div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fab fa-python fa-2x level"></i>En del av kursen är att lära sig programmera. Gå till <a href="https://tie.koodariksi.fi" target="_blank"/>tie.koodariksi.fi</a>, registrera dig och börja jobba på Ohjelmoinnin alkeet. Uppe till höger kan du byta språk.
+            <p>Jobba ca en timme med materialet, eller med kapitlen 15.</p>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer">Lösningen </div></div> </li>
+            </ol>
+          </li>
+        -->
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA12">
+      <a href="5_iteration.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="7_newton-cotes.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

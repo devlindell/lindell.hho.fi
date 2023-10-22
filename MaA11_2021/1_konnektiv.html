@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>8. Konnektiv och sanningsvärden</title>
+
+  </head>
+  <body>
+    <header class="MaA11">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_mangder.html">1. Mängder</a>
+            <a class="dropdown-item" href="2_talbaser.html">2. Talbaser</a>
+            <a class="dropdown-item" href="3_primtal.html">3. Primtal, gemensamma faktorer</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Delningsekvation och Euklides algoritm</a>
+            <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
+            <a class="dropdown-item" href="6_diofantisk.html">6. Diofantisk ekvation</a>
+            <a class="dropdown-item" href="7_kryptering.html">7. Kryptering</a>
+            <a class="dropdown-item" href="8_konnektiv.html">8. Konnektiv och sanningsvärden</a>
+            <a class="dropdown-item" href="9_bevis.html">9. Bevisföring</a>
+            <a class="dropdown-item" href="10_induktion.html">10. Induktionsbevis</a>
+            <a class="dropdown-item" href="11_repetition.html">11. Repetition</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_kryptering.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 11 Talteori och bevis</h3>
+      <a href="9_bevis.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>8. Konnektiv och sanningsvärden</h1>
+      <section>
+        <div class="theory">
+          <div class="intro box">
+            <p>Vad betyder instruktionen på hissens vägg? Är det tillåtet för fem tyngdlyftare att använda hissen, om var och en av dem väger 130 kg? Hur är det med 12 magra gossar, som väger 50 kg? Hur är det med en ensam tyndlyftare?</p>
+            <p><img src="pics/starka_man.jpg" class="responsivepic400"></p>
+          </div>
+            <p>För att undersöka problem som ovan använder vi oss av sanningsvärden och sanningsvärdetabeller. Varje påstående kan ha två värde, antingen är det sant, eller så är det falskt. Sanna värden betecknar vi med 1 och falska värden med 0.</p>
+            <p>Då vi jobbar med sanningsvärden och sanningsvärdetabeller utnyttjar vi oss också av konnektiv. Konnektiven är lite som räknesätten då vi räknar med siffor. Vi har konnektiven: negation, disjunktion, konjuktion, implikation och ekvivalen.</p>
+            <h4>Negation</h4>
+            <p>Negation betyder det motsatta. Vi får följande sanningsvärdetabell.</p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( \neg A \) </th></tr>
+              <tr><td>1</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td></tr>
+            </table>
+
+            <h4>Disjunktion</h4>
+            <p>Disjunktionen tolkas som eller, antingen skall \(A \) eller \( B \) vara sann för att disjunktionen är sann.</p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \vee B \)</th></tr>
+              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>1</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td></tr>
+            </table>
+
+            <h4>Konjunktion</h4>
+            <p>Disjunktionen tolkas som och, då skall \(A \) och \( B \) vara sanna samtidigt för att konjuktionen är sann.</p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \wedge B \)</th></tr>
+              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td><td>0</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td></tr>
+            </table>
+
+            <h4>Implikation</h4>
+            <p>Implikationen tolkas som "om A så B". Av konnektiven är det den som ställer till med mest problem. För att implikationen gäller att sant leder till sant. Något falskt leder inte till något sant, medan falskt alltid leder till något sant.</p>
+            </p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \Rightarrow B \)</th></tr>
+              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td></tr>
+            </table>
+
+            <h4>Ekvivalens</h4>
+            <p>Ekvivalens betyder att två uttryck är identiska. Vi tolkar ekvivalen som en dubbel implikation. Alltså \( A \Leftrightarrow B \) som \( (A \Rightarrow B) \wedge (B \Rightarrow A) \).</p>
+            <p>Vi får sanningstabellen </p>
+            <table>
+              <tr class="MaA11"><th>\( A \)</th><th>\( B \) </th><th>\( A \Rightarrow B \)</th><th>\( B \Rightarrow A \)</th><th> \( A \Leftrightarrow B \)</tr>
+              <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+            </table>
+
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Vi beteckar A: "det regnar", B: "det blåser" och C: "det är molnigt". Översätt till svenska
+                <ol style="list-style-type:lower-alpha">
+                  <li>\( A \wedge (B \vee C) \)</li>
+                  <li>\( (A \wedge B) \vee C \)</li>
+                </ol>
+                <h4>Lösning</h4>
+                <p>Vi får </p>
+                <ol style="list-style-type:lower-alpha">
+                  <li>\( A \wedge (B \vee C) \) ordagrant blir det "Det regnar och det blåser eller det är molnigt". På bättre svenska kunde vi säga: "Antingen blåser det eller är mulet då det regnar".</li>
+                  <li>\( (A \wedge B) \vee C \) ordagrant blir det "Det regnar och blåser eller det är molnigt". På bättre svenska kan vi säga: "Det regnar och blåser eller så är det mulet".</li>
+                </ol>
+              </div>
+              <p>I exemplet ovan talar vi om att satsen är formaliserad, vi betecknar "det regnar" med ett A.</p>
+              <h3>Sanningsvärden för en sats</h3>
+              <p>Då vi bestämmer sanningsvärden för en sats utnyttjar vi sanningsvärdena för konnektiven och bildar en sanningsvärdetabell.</p>
+              <div class="exercise box">
+                <p><strong>Exempel 2</strong> Antag att satsen A lyder "det regnar" och satsen B "det blåser". Studera bilden. Är satsen sann?</p>
+                <p><img src="pics/regnman.jpg" class="responsivepic250"></p>
+                <ol style="list-style-type:lower-alpha">
+                  <li> \( \neg A \)</li>
+                  <li> \( \neg B \)</li>
+                  <li> \( A \wedge B \)</li>
+                  <li> \( A \wedge \neg B \)</li>
+                  <li> \( A \vee B \)</li>
+                  <li> \( \neg A \vee B \)</li>
+                  <li> \( A \vee \neg B \)</li>
+                </ol>
+                <h4>Lösning</h4>
+                <p>Vi översätter satserna till svenska och jämför med bilden.</p>
+                <ol style="list-style-type:lower-alpha">
+                  <li> \( \neg A \), är "regnar inte". Satsen är falsk.</li>
+                  <li> \( \neg B \), är "det blåser inte". Satsen är sann.</li>
+                  <li> \( A \wedge B \), är "det regnar och blåser". Satsen är falsk.</li>
+                  <li> \( A \wedge \neg B \)är "det regnar och blåser inte". Satsen är sann.</li>
+                  <li> \( A \vee B \), är "det regnar eller blåser". Satsen är sann.</li>
+                  <li> \( \neg A \vee B \), är "det regnar inte eller blåser". Satsen är falsk.</li>
+                  <li> \( A \vee \neg B \), är "det regnar eller blåser inte". Satsen är sann.</li>
+                </ol>
+              </div>
+              <div class="exercise box">
+                <p><strong>Exempel 3</strong> Ungkarlen Mannerström är intresserad av invecklade brottsfall och är på besök hos patronen i Lillby. Någon har knyckt silverfatet som tillhör husets vakthund. Misstankarna riktas mot Atte, Beata och Calle. Tack vare en pålitlig ledtråd vet Mannerström att endast en av dessa tre är misstänkta är skyldiga till brottet.</p>
+                <p>Mannerstöm lyssnar, då länsman Neovius förhör de misstänkta.</p>
+                <p>"Min minnesbild är dunkel, men jag är övertygad om att jag eller Calle är skyldig", bekänner Atte.</p>
+                <p>"Jag var med Atte hela kvällen på dans i grannsocknen", försäkrar Beata.</p>
+                <p>"Atte eller Beata ljuger", påstår Calle.</p>
+                <p>Mannerström vet att i Lillby talar de oskyldiga sanning och de skyldiga ljuger. Efter förhören berättade Mannerström åt Neovius vem den skyldiga var. Vad sade Mannerstörm?</p>
+                <h4>Lösning</h4>
+                <p>Vi betecknar A: Atte är skyldig, B: Beata är skyldig och C: Calle är skyldig.</p>
+                <p>Vi gör en sanningsvärdetabell. Vi betecknar erkännandena med D, E och F, för att spara utrymme. I den sista kolumnen har vi alla erkännanden med konjuktion, eftersom de skall gälla samtidigt.</p>
+                <p>\( \begin{array}{|c|c|c|c|c|c|c|c|c|}
+                  \hline  &  &  & D &  &  & E & F &  \\
+                  \hline A & B & C & A \vee C  & \neg A & \neg B & \neg A \wedge \neg B & \neg(A \vee B) & D \wedge E \wedge F \\
+                  \hline 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+                  \hline 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+                  \hline 1 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 0 \\
+                  \hline 1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 \\
+                  \hline 0 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+                  \hline 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+                  \hline 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+                  \hline 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 \\
+                  \hline \end{array} \) </p>
+                  <p>I sista kolumnen märker vi att vi har ett ställe med en 1:a. Då är Atte oskyldig, Beata oskyldig och Calle skyldig.</p>
+                  <p>Alltså är Calle skyldig till att farit iväg med silverfatet. Det passar överrens med att de skyldiga ljuger.</p>
+              </div>
+              <h3>Tautologi och logisk ekvivalens</h3>
+              <div class="exercise box">
+                <p><strong>Exempel 4</strong> Nyhet från 3.4: "Genombrott i undersökningarna - Kasper är inte tjuv eller Jesper är oskyldig". Dagen efter låter rubriken som: "En ny vändning i skandalbrottet - Om Kasper är tjuv så är Jesper oskyldig". Är det någon skillnad på nyheterna från 3.4 och 4.4?</p>
+                <h4>Lösning</h4>
+                <p>Vi betecknar A: "Kasper skyldig" och B: "Jesper är oskyldig". Vi får sanningsvärdetabellen</p>
+                <p>\( \begin{array}{|c|c|c|c|c|c|c|c|}
+                  \hline A & B & \neg A & \neg A \vee B & A \Rightarrow B\\
+                  \hline 1 & 1 & 0 & 1 & 1\\
+                  \hline 1 & 0 & 0 & 0 & 0\\
+                  \hline 0 & 1 & 1 & 1 & 1\\
+                  \hline 0 & 0 & 1 & 1 & 1\\
+                  \hline \end{array} \) </p>
+                  <p>Vi märker att satserna betyder det samma. Det är ingen skillnad på rubrikerna till nyheterna.</p>
+              </div>
+              <p>Satser som ger samma resultat är ekvivalenta. De är satslogiskt samma sak.</p>
+
+              <!--<div class="exercise box">
+                <p><strong>Exempel 5</strong> Herr K är på resa på Narrarnas och riddarnas ö. Varje invånare på ön är antingen narr eller riddare. Narrarna ljuger alltid och riddarna talar alltid sanning. Öborna är fåordiga, de svarar på endast en av herr K:s frågor och på denna endast "ja" eller "nej".</p>
+                <p>Ett rovdjur rör sig om natten på ön och djuret slukar varje person som är ute. Det börjar skymma och herr K är vi ett vägskäl. Han vet att den ena vägen leder till ett värdshus och den andra till en ödslig dal. Till all lycka befinner sig en öbo vid korsningen. Vilken fråga skall herr K ställa för att komma i skydd till värdshuset?</p>
+                <h4>Lösning</h4>
+              -->
+
+              </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Vi betecknar A: "Kasper är tjuv", B: "Jesper är tjuv" och C: "Jonatan är tjuv". Översätt till svenska.
+            <ol>
+              <li>\( A \wedge B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Kasper och Jesper är tjuvar.</p></div></div> </li>
+              <li>\( A \vee B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Kasper eller Jesper är tjuv.</p></div></div> </li>
+              <li>\( A \wedge B \wedge \neg C \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Kasper och Jesper är tjuvar och Jonatan är inte en tjuv.</p></div></div> </li>
+              <li>\( \neg(A \wedge B) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1d">
+              <div class="card card-body answer"><p>Kasper och Jesper är inte båda tjuvar.</p></div></div> </li>
+              <li>\( \neg(A \vee B) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1e">
+              <div class="card card-body answer"><p>Varken Kasper eller Jonatan är tjuvar.</p></div></div> </li>
+              <li>\( A \to (B \vee C) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1f">
+              <div class="card card-body answer"><p>Om Kasper är tjuv, så är Jesper eller Jonatan tjuv.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Välj satserna P och Q så att satsen i formaliserad form är \( P \to \neg Q \).
+            <ol>
+              <li>Om jag cyklar, så har jag inte bil. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>P: "jag cyklar", Q: "jag kör bil"</p></div></div> </li>
+              <li>Jag äter inte efterrätt, om jag har bråttom. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>P: "jag har bråttom", Q: "jag äter efterrätt"</p></div></div> </li>
+              <li>Om läraren inte skyndar på, så lär jag mig detta. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>P: "läraren skyndar inte på", Q: "jag lär mig inte detta"</p></div></div> </li>
+              <li>Jag lär mig detta endast om läraren inte skyndar på. <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2d">
+              <div class="card card-body answer"><p>P: "jag lär mig detta", Q: "läraren skyndar på"</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Sammanställ en sanningstabell för satserna \( \neg A \vee \neg B \) och \( \neg (A \wedge B) \). Jämför sanningstabellerna.
+            <p>Översätt satserna ovan till svenska, då satsen A lyder "Kasper är skyldig" och satsen B "Jesper är skyldig".</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3">
+              <div class="card card-body answer"> <p>Vi får</p>
+                <p>\( \begin{array}{|c|c|c|c|c|}
+                  \hline A & B & \neg A & \neg B & \neg A \vee  \neg B \\
+                  \hline 1 & 1 & 0 & 0 & 0  \\
+                  \hline 1 & 0 & 0 & 1 & 1  \\
+                  \hline 0 & 1 & 1 & 0 & 1  \\
+                  \hline 0 & 0 & 1 & 1 & 1  \\
+                  \hline
+                  \end{array} \) </p>
+
+                  <p>Vi får</p>
+                  <p>\( \begin{array}{|c|c|c|c|}
+                    \hline A & B & A \wedge B & \neg (A \wedge B) \\
+                    \hline 1 & 1 & 1 & 0  \\
+                    \hline 1 & 0 & 0 & 1  \\
+                    \hline 0 & 1 & 0 & 1  \\
+                    \hline 0 & 0 & 0 & 1  \\
+                    \hline
+                    \end{array} \)</p>
+
+                <p>Satserna ger samma sanningsvärdetabell.</p>
+                <p>Vi får "Kasper eller Jesper är oskyliga" och "Kasper och Jesper är inte båda skyldiga".</p>
+              </div></div>
+          </li>
+
+          <li>Är satsen en tautologi? Översätt satsen till svenska, då satsen A lyder "det regnar".
+            <ol>
+              <li>\( A \vee A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4a">
+              <div class="card card-body answer"><p>Nej</p></div></div> </li>
+              <li>\( A \wedge A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4b">
+              <div class="card card-body answer"><p>Nej</p></div></div> </li>
+              <li>\( A \to A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4c">
+              <div class="card card-body answer"><p>Ja</p></div></div> </li>
+              <li>\( A \leftrightarrow A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4d">
+              <div class="card card-body answer"><p>Ja</p></div></div> </li>
+              <li>\( A \vee \neg A \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4e" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4e">
+              <div class="card card-body answer"><p>Ja</p></div></div> </li>
+              <li>\( \neg (A \wedge \neg A) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4f" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4f">
+              <div class="card card-body answer"><p>Ja</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Är följande satser sanna?
+            <ol>
+              <li>\( A \to (B \vee \neg B) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Alltid sann.</p></div></div> </li>
+              <li>\( A \to (B \wedge \neg B) \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Då A är falsk.</p></div></div> </li>
+              <li>\( (A \vee \neg A)  \to B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Då B är sann.</p></div></div> </li>
+              <li>\( (A \wedge \neg A)  \to B \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5d" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5d">
+              <div class="card card-body answer"><p>Alltid sann.</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I Kamomilla stad har någon knyckt rosor ur borgmästarens blomsterrabatt. Amatördetektiv Mannerström erhöll en lapp med texten: \( (A \wedge B \wedge \neg C) \vee (A \wedge \neg B \wedge \neg C) \). Senare fick han nyckeln till chifferskriften: A: "Kasper är skyldig", B: "Jesper är skyldig" och C: "Jonatan är skyldig".
+          <p>Mannerström hade från pålitliga källor fått veta att informationen på lappen var sann. Vilket budskap erhöll Mannerström?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Gör en sanningsvärdetabell och kom fram till två rader: A har värdet 1, B har värdet 1 och C har värdet 0. Den andra raden är A har värdet 1, B har värdet 0 och C har värdet 0.</p>
+              <p>Vi kan dra slutsatsen att Kasper är skyldig och Jonatan är oskyldig. Jesper kan vara skyldig eller oskyldig.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>I Kamomilla stad hade någon knyckt ventilgummit på rektorns cykel. Amatördetetkiv Mannerström erhöll igen ett hemlighetsfullt budskap. Budskapet innehöll följande text: \( (\neg A \vee (B \wedge \neg C)) \vee ((\neg A \vee \neg B) \wedge \neg C) \). Mannerström lyckades upptäcka chifferskriftens nyckel: A: "Kasper är skyldig", B: "Jesper är skyldig" och C: "Jonatan är skyldig".
+          <p>Mannerström var övertygad om att någon sänt ett falskt budskap för att vilseleda honom. Vilken slutsats drog han av budskapet?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Kasper och Jonatan är skyldiga. Jesper kan vara skyldig eller oskyldig.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Amatördetektiv Mannerström är åter gäst hos patronen i Lillby. Någon har med leriga gummistövlar gått över salens ljusa matta. Misstankarna riktas igen mot Atte, Beata och Calle. Mannerström är övertygad om att någon av dem är skyldig. Länsman Neovius förhör de misstänkta. I Lillby ljuger de skyldiga alltid och de oskyldiga talar sanning.
+          <p>"Calle är säkert skyldig", påstår Atte. "Atte är oskyldig och jag är oskyldig", tillägger Beata. "Atte är oskyldig eller jag är skyldig", tvekar Calle.</p>
+          <p>Efter att ha funderat en stund avslöjade Mannerström den skyldiga. Vad sade Mannerström?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Beata är skyldig.</p>
+                <p>Vi kommer åt det via en sanningsvärde tabell. I de tre sista kolumnerna bildar vi värdena då alla tre vittnesmål skall gälla samtidigt och någon dera av dem ljuger.</p>
+                <p>\( \begin{array}{|c|c|c|c|c|c|c|c|c|}
+                  \hline A & B & C & \neg A  & \neg B & \neq A \wedge \neg B & \neg A \vee C & \text{A ljuger} & \text{B ljuger} & \text{C ljuger} \\
+                  \hline 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 \\
+                  \hline 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+                  \hline 1 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 \\
+                  \hline 1 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+                  \hline 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 \\
+                  \hline 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+                  \hline 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\
+                  \hline 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 0 \\
+                  \hline \end{array} \) </p>
+                  <p>På om Atte ljuger är alla oskyldiga. Om Calle ljuger stämmer inga vittnesmål. Det betyder att Beata är skyldig.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Amatördetektiv Mannerström är på resa och en förtvivlad länsman Neovius är tvungen att förlita sig på en spåman: "Man har berättat för mig att om Jesper är oskyldig, så är Kasper oskyldig. Kan jag lita på denna information?"
+          <p>"Om Kasper är oskyldig håller informationen streck", svarar spåmannen. Vilken slutsats kan Neovius dra av svaret?</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Ingen. Spåmannens sats är alltid sann.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Bilda med hjälp av konnektiv någon sats P av satserna A och B. Satsen P har följande sanningstabell.
+            <ol>
+              <li>Den första sanningstabellen är</p> </p>
+                <p> \( \begin{array}{|c|c|c|}
+                \hline A & B & P \\
+                \hline 1 & 1 & 0 \\
+                \hline 1 & 0 & 1 \\
+                \hline 0 & 1 & 0 \\
+                \hline 0 & 0 & 0 \\
+                \hline
+                \end{array} \)</p>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10a">
+              <div class="card card-body answer"><p>Till exempel \( A \wedge \neg B \)</p></div></div> </li>
+              <li><p>Den andra är</p>
+                <p>\( \begin{array}{|c|c|c|}
+                \hline A & B & P \\
+                \hline 1 & 1 & 1 \\
+                \hline 1 & 0 & 0 \\
+                \hline 0 & 1 & 1 \\
+                \hline 0 & 0 & 1 \\
+                \hline
+                \end{array} \)</p>
+                <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10b">
+              <div class="card card-body answer"><p>Till exempel \( (A \wedge B) \vee (\neg A \wedge B)  \vee (\neg A \wedge \neg B) \) eller \( \neg(A \wedge B) \) eller \( \neg A  \vee B \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <h3>Narrarnas och riddarnas ö</h3>
+          <p>Skådeplatsen får många logiska problem är den berömda Narrarnas och riddarnas ö. Varje invånare är på ön antingen narr eller riddare. Narrarna ljuger alltid och riddarna talar alltid sanning. Följande fyra uppgifter skildrar händelser på Narrarnas och riddarnas ö.</p>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Under min resa till Narrarnas och riddarnas ö mötte jag av två öbor, Anders och Bernhard. Under vår diskussion sade Anders: "Om jag är riddare, så är också Bernhard riddare". Är det möjligt att avgöra om Anders och Bernhard är narrar eller riddare?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Ja, båda är riddare.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Då jag diskuterade med två andra öbor, Anna och Bo, sade Anna: "Om Bo är riddare, så är jag en narr". Vad för något är Anna och Bo?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Anna är riddare och Bo är narr.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>En gång tillbringade jag kvällen tillsammans med tre öbor; Atte, Börje och Cecilia. Vid ett visst skede berättade Atte: "Börje är riddare". Något senare nämnde Börje: "Om Atte är riddare, så är också Cecilia riddare". Vad för något är Atte, Börje och Cecilia?
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Alla är riddare.</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>På ön spriddes ett rykte enligt man funnit guld i bergen på öns sydspets. En invånare på ön kommenterade ryktet och sade: "Det finns guld på ön sydspets om och endast om jag är riddare."
+            <ol>
+              <li>Är invånaren narr eller riddare? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14a">
+              <div class="card card-body answer"><p>Vilkendera som helst.</p></div></div> </li>
+              <li>Finns det guld på ön? <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14b">
+              <div class="card card-body answer"><p>Ja, det finns det.</p></div></div> </li>
+            </ol>
+          </li>
+
+
+          <li><i class="fas fa-jedi fa-2x level"></i>På Stollarnas ö talar man ett språk som har en invecklad satskonstruktion: "A lirum B larum C". Ön har besök av språkvetare och de har dragit slutsatsen att konstruktionen följer följande tabell.
+
+            <p>\( \begin{array}{|c|c|c|c|}
+              \hline A & B & C  & A \text{ lirum } B \text{ larum } C\\
+              \hline 1 & 1 & 1 & 1 \\
+              \hline 1 & 1 & 0 & 0 \\
+              \hline 1 & 0 & 1 & 1 \\
+              \hline 1 & 0 & 0 & 1 \\
+              \hline 0 & 1 & 1 & 1 \\
+              \hline 0 & 1 & 0 & 1 \\
+              \hline 0 & 0 & 1 & 1 \\
+              \hline 0 & 0 & 0 & 1 \\
+              \hline
+              \end{array} \)</p>
+
+              <p>Översätt till svenska satsen "bälä bää lirum bölö böö larum höbö höö", där "bälä bää" betyder "du äter morgongröten", "bölö böö" betyder "du slutar leka" och "höbö höö" betyder "vi går på cirkus".</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>"Du äter inte morgongröten eller du slutar inte leka eller vi går på cirkus", som är logiskt ekvivalent med "om du äter morgongröten och slutar leka, så går vi på cirkus".</p></div></div>
+          </li>
+
+          <!--<li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA11">
+      <a href="7_kryptering.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="9_bevis.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
