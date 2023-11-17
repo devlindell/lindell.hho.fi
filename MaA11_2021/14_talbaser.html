@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+
+    <title>14. Talbaser</title>
+
+  </head>
+  <body>
+    <header class="MaA112021">
+      <nav>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-3x"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1_konnektiv.html">1. Konnektiv och sanningsvärden</a>
+            <a class="dropdown-item" href="4_euklides.html">4. Euklides algoritm</a>
+            <a class="dropdown-item" href="5_kongruens.html">5. Kongruens</a>
+            <a class="dropdown-item" href="6_diofantisk.html">6. Diofantiska ekvationer</a>
+            <a class="dropdown-item" href="7_primtal.html">7. Primtal</a>
+            <a class="dropdown-item" href="14_talbaser.html">14. Talbaser</a>
+            <a class="dropdown-item" href="15_newton-raphson.html">15. Numeriska lösning av ekvationer</a>
+          </div>
+        </div>
+      </nav>
+      <a href="7_primtal.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <h3 class="mobile">MaA 11 Algoritmer och talteori</h3>
+      <a href="15_newton-raphson.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+      <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+    </header>
+
+    <article>
+      <h1>14. Talbaser</h1>
+      <section>
+        <div class="theory">
+
+          <div class="intro box">
+            <p>När vi normalt använder oss av tal tänker vi inte på att de är uppbyggda av potenser av 10. Vi tar och studerar talet 42.</p>
+            <p>Talet 42 kan vi skriva som \( 4 \cdot 10 + 2 = 4 \cdot 10^1 + 2 \cdot 10^0 \). Vi talar om att vi använder oss av talbasen 10. </p>
+          </div>
+            <p>Då vi mäter tid använder vi oss av att 1 timme består av 60 minuter, och 1 minut består av 60 sekunder. Här kan vi tala om att vi använder oss av talbasen 60. För att rådda till det mera så delar vi in sekunderna i tiondelar och hundradelar. Och dygnen delar vi in i 24 timmars enheter.</p>
+            <p>Inom elektroniken jobbar man med att strömmen är på eller av. Här använder man sig av ett binärt talsystem. Det består av 0 och 1.</p>
+            <p>För att veta vilken talbas man arbetar med betecknar man det med ett underindex. Talet \( 42_{10} \) betyder att vi jobbar med talet 42 i basen 10, medan \( 4_{42} \) betyder att vi jobbar i basen 42. \( 4_{42} = 4 \cdot 42^0 = 4_{10}\).</p>
+            <div class="exercise box">
+              <p><strong>Exempel 1</strong> Uttryck talet \( 42_{10} \) i det binära talsystemet.
+              <h4>Lösning</h4>
+              <p>Det binära talsystemet består av 0 och 1. Dessa kombinerar vi så att tex \( 10_{2} = 1 \cdot 2^1 + 0 \cdot 2^0 = 2 \cdot 0 = 2_{10} \).</p>
+              <p>Vi gör följande tabell</p>
+              <table>
+                <tr class="MaA112021"><th>Beteckning</th><th>Värde i basen 10</th></tr>
+                <tr><td>0</td><td>\( 0 \cdot 2^0 = 0 \) </td></tr>
+                <tr><td>1</td><td>\( 1 \cdot 2^0 = 1 \) </td></tr>
+                <tr><td>10</td><td>\( 1\cdot 2^1 + 0 \cdot 2^0 = 2 \) </td></tr>
+                <tr><td>11</td><td>\( 1\cdot 2^1 + 1 \cdot 2^0 = 3 \) </td></tr>
+              </table>
+              <p>Vi märker ganska snabbt att vi jobbar med \( 2^0=1, 2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32 \ldots \). För att komma vidare använder vi oss av dem.</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{rcl}
+                42_{10} & = & 1\cdot 32 + 0\cdot 16 + 1\cdot 8 + 0 \cdot 4 + 1 \cdot 2 + 0 \cdot 1 \\
+                & = & 1\cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0 \\
+                & = & 101010_{2} \\
+                \end{array}
+                \) </p>
+                <p>Med större baser kan man utnyttja division. Då går man till väga på följande sätt.</p>
+                <p>Vi börjar med att dividera med \( 32 = 2^5 \), eftersom det är det största potensen av 2 som vi kan dividera med för att få ett heltal som kvot.</p>
+                <p>\( \begin{array}{rcll}
+                  42 / 32 & = & 1 & \text{ rest } 10 \\
+                  16 & = & 0 \\
+                  10 / 8 & = & 1 & \text{ rest } 2 \\
+                  4 & = & 0 \\
+                  2 / 2 & = & 1 & \text{ rest } 0 \\
+                  1 & = & 0 \\
+                  \end{array} \) </p>
+                  <p>Då läser vi uppifrån nedåt, \( 101010_{2} \).</p>
+                <p>Alltså \( 42_{10} = 101010_{2} \).</p>
+            </div>
+            <p>Att dividera med multiplar av basen fungerar för vilken bas som hellst. Har man en lite svårare bas brukar man kunna räkna ut vilken annan bas som helst.</p>
+
+          <div class="exercise box">
+            <p><strong>Exempel 2</strong> Uttryck talet \( 100110001_{2} \) i basen 10.</p>
+            <h4>Lösning</h4>
+            <p>Då vi räknar något till vår normala 10 bas är det lättare.</p>
+            <p>Vi får </p>
+            <p>\( \begin{array}{rcl}
+              100110001_{2} & = & 1\cdot 2^8 +0\cdot 2^7 +0\cdot 2^6 +1\cdot 2^5 +1\cdot 2^4 +0\cdot 2^3 +0\cdot 2^2 + 0\cdot 2^1 + 1\cdot 2^0 \\
+              & = & 256 + 32 + 16 + 1 \\
+              & = & 305 \\
+              \end{array}
+              \) </p>
+              <p>Alltså \( 100110001_{2} = 305_{10} \).</p>
+            </div>
+
+          <div class="exercise box">
+            <p><strong>Exempel 3</strong> Uttryck talet \( 34_{7} \) i basen 4.</p>
+            <h4>Lösning</h4>
+            <p>För enkelhetens skull går vi via basen 10.</p>
+            <p>\( \begin{array}{rcl}
+              34_{7} & = & 3\cdot 7^1 \cdot 4\cdot 7^0 \\
+              & = & 21 + 4 \\
+              & = & 25_{10} \\
+              \end{array} \) </p>
+              <p>För basen 4 gäller, \( 4^0 = 1, 4^1 = 4, 4^2 = 16, 4^3 = 64, \ldots \)</p>
+              <p>Vi får </p>
+              <p>\( \begin{array}{rcl}
+                25_{10} & = & 1 \cdot 16 + 2 \cdot 4 +1 \cdot 1 \\
+                & = & 1 \cdot 4^2 + 2 \cdot 4^1 + 1 \cdot 4^0 \\
+                & = & 121_{4} \\
+                \end{array}\) </p>
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <h2>Uppgifter</h2>
+        <ol>
+          <!--<li>Uppgift för Quizlet</li>-->
+
+          <li>Omvandla följande tal till basen 10.
+            <ol>
+              <li>\( 11100_{2} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                  11100_{2} & = & 1\cdot 2^4 + 1\cdot 2^3 + 1\cdot 2^2 + 0\cdot 2^1 + 0\cdot 2^0  \\
+                  & = & 16 + 8 + 4 \\
+                  & = & 28_{10} \\
+                  \end{array} \) </p>
+              </div></div> </li>
+              <li>\( 1330_{4} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                  1330_{4} & = & 1\cdot 4^3 + 3\cdot 4^2 + 3\cdot 4^1 + 0\cdot 4^0  \\
+                  & = & 64 + 3\cdot 16 + 3 \cdot 4 \\
+                  & = & 124_{10} \\
+                  \end{array} \) </p>
+                </div></div> </li>
+              <li>\( 53_{5} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#1c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="1c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcl}
+                  53_{5} & = &  5\cdot 5^1 + 3\cdot 5^0  \\
+                  & = & 5 \cdot 5 + 3\cdot 1 \\
+                  & = & 28_{10} \\
+                  \end{array} \) </p></div></div> </li>
+            </ol>
+          </li>
+
+          <li>Skriv följande tal i basen 2.
+            <ol>
+              <li>\( 124_{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2a">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  124_{10} / 64 & = & 1 & \text{ rest } 60 \\
+                  60 / 32 & = & 1 & \text{ rest } 28 \\
+                  28 / 16 & = & 1 & \text{ rest } 12 \\
+                  12 / 8 & = & 1 & \text{ rest } 4 \\
+                  4 / 4 & = & 1 & \text{ rest } 0 \\
+                  / 2 & = & 0 \\
+                  / 1 & = & 0 \\
+                  \end{array} \) </p>
+                  <p>Alltså \( 124_{10} = 1111100_{2} \).</p>
+              </div></div> </li>
+              <li>\( 98_{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2b">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  98_{10} / 64 & = & 1 & \text{ rest } 34 \\
+                  34 / 32 & = & 1 & \text{ rest } 2 \\
+                   / 16 & = & 0 \\
+                   / 8 & = & 0 \\
+                   / 4 & = & 0 \\
+                  2 / 2 & = & 1 & \text{ rest } 0 \\
+                   / 1 & = & 0 \\
+                  \end{array} \) </p>
+                  <p>Alltså \( 98_{10} = 1100010_{2} \).</p>
+                </div></div> </li>
+              <li>\( 56_{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#2c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="2c">
+              <div class="card card-body answer"><p>Vi får</p>
+                <p>\( \begin{array}{rcll}
+                  56_{10} / 32 & = & 1 & \text{ rest } 24 \\
+                  24 / 16 & = & 1 & \text{ rest } 8 \\
+                  8 / 8 & = & 1 & \text{ rest } 0 \\
+                  / 4 & = & 0 &  \\
+                  / 2 & = & 0 \\
+                  / 1 & = & 0 \\
+                  \end{array} \) </p>
+                  <p>Alltså \( 56_{10} = 111000_{2} \).</p></div></div> </li>
+            </ol>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Uttryck följande tal i basen 16.
+            <p>Då vi jobbar med basen 16 kan vi få koefficienterna \( 0,1,2,\ldots 8,9,A,B,C,D,E,F \).</p>
+            <ol>
+              <li>\( 31415_{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3a">
+              <div class="card card-body answer"><p>Talen som vi dividerar med är \( 16, 16^2 = 256, 16^3 = 4096, 16^4 = 65536, \ldots \)</p>
+                <p>Vi får</p>
+                \( \begin{array}{rcll}
+                  31415_{10} / 4096 & = & 7 & \text{ rest } 2743 \\
+                  2743 / 256 & = & 10 & \text{ rest } 183 \\
+                  183 / 16 & = & 11 & \text{ rest } 7 \\
+                  7 / 1 & = & 7 & \text{ rest } 0 \\
+                  \end{array} \) </p>
+                  <p>10 motsvaras av A och 11 av B.</p>
+                  <p>Alltså \( 7 A B 7_{16} \).</p>
+              </div></div> </li>
+              <li>\( 27189_{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3b">
+              <div class="card card-body answer"><p>Vi får</p>
+              \( \begin{array}{rcll}
+                27189_{10} / 4096 & = & 6 & \text{ rest } 2613 \\
+                2613 / 256 & = & 10 & \text{ rest } 53 \\
+                53 / 16 & = & 3 & \text{ rest } 5 \\
+                5 / 1 & = & 5 & \text{ rest } 0 \\
+                \end{array} \) </p>
+                <p>10 motsvaras av A.</p>
+                <p>Alltså \( 6A35_{16} \).</p>
+              </div></div> </li>
+              <li>\( 2020_{10} \) <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#3c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="3c">
+              <div class="card card-body answer"><p>Vi får</p>
+              \( \begin{array}{rcll}
+                2020 / 256 & = & 7 & \text{ rest } 228 \\
+                228 / 16 & = & 14 & \text{ rest } 4 \\
+                4 / 1 & = & 4 & \text{ rest } 0 \\
+                \end{array} \) </p>
+                <p>14 motsvaras av E.</p>
+                <p>Alltså \( 7E4_{16} \).</p>
+              </div></div> </li>
+            </ol>
+          </li>
+
+          <!--<li>Uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#4" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="4">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>-->
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv talet \( 34_{4} \) i basen 3.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5">
+              <div class="card card-body answer"> <p>Först skriver vi talet i basen 10.</p>
+                <p>\( 34_{4} = 3\cdot 4^1 + 4\cdot 4^0 = 16_{10} \).</p>
+                <p>Sedan får vi </p>
+                \( \begin{array}{rcll}
+                16_{10} / 3^2 & = & 1 & \text{ rest } 7 \\
+                7 / 3^1 & = & 2 & \text{ rest } 1 \\
+                1 / 3^0 & = & 1 & \text{ rest } 0 \\
+                 \end{array} \) </p>
+                 <p>Alltså \( 34_{4} = 121_{3} \).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv talet \( 2020_{7} \) i basen 5.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#6" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="6">
+              <div class="card card-body answer"> <p>Först skriver vi talet i basen 10.</p>
+                <p>\( 2020_{7} = 2\cdot 7^3 + 0\cdot 7^2 + 2\cdot 7^1 + 0\cdot 7^0 = 700_{10} \).</p>
+                <p>Sedan får vi </p>
+                \( \begin{array}{rcll}
+                700_{10} / 5^4 & = & 1 & \text{ rest } 75 \\
+                / 5^3 & = & 0 \\
+                75 / 5^2 & = & 3 & \text{ rest } 0 \\
+                 / 5^1 & = & 0 \\
+                 / 5^0 & = & 0 \\
+                 \end{array} \) </p>
+                 <p>Alltså \( 2020_{7} = 10300_{5} \).</p>
+               </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv talet \( CAFE_{16} \) i basen 2.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#7" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="7">
+              <div class="card card-body answer"> <p>Först skriver vi talet i basen 10.</p>
+                <p>\( CAFE_{16} = 12\cdot 16^3 + 10\cdot 16^2 + 15\cdot 16^1 + 14\cdot 16^0 = 51966_{10} \).</p>
+                <p>Sedan får vi </p>
+                \( \begin{array}{rcll}
+                51966_{10} / 2^{15} & = & 1 & \text{ rest } 19198 \\
+                19198 / 2^{14} & = & 1 & \text{ rest } 2814 \\
+                / 2^{13} & = & 0 \\
+                / 2^{12} & = & 0 \\
+                2814 / 2^{11} & = & 1 & \text{ rest } 766 \\
+                / 2^{10} & = & 0 \\
+                766 / 2^{9} & = & 1 & \text{ rest } 254 \\
+                / 2^{8} & = & 0 \\
+                254 / 2^{7} & = & 1 & \text{ rest } 126 \\
+                126 / 2^{6} & = & 1 & \text{ rest } 62 \\
+                62 / 2^{5} & = & 1 & \text{ rest } 30 \\
+                30 / 2^{4} & = & 1 & \text{ rest } 14 \\
+                14 / 2^{3} & = & 1 & \text{ rest } 6 \\
+                6 / 2^{2} & = & 1 & \text{ rest } 2 \\
+                2 / 2^{1} & = & 1 & \text{ rest } 0 \\
+                 / 2^{0} & = & 0 &  \\
+                 \end{array} \) </p>
+                 <p>Alltså \( CAFE_{16} = 1100101011111110_{2} \).</p>
+               </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Framställ talet \( 110010_{2} \) i basen 4.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#8" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="8">
+              <div class="card card-body answer"> <p>Först skriver vi talet i basen 10.</p>
+                <p>\( 110010_{2} = 1 \cdot 2^5 +1 \cdot 2^4 +  0 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0  = 50_{10} \).</p>
+                <p>Sedan börjar vi dividera med \( 4, 16, 64, \ldots \)</p>
+                \( \begin{array}{rcll}
+                50_{10} / 16 & = & 3 & \text{ rest } 2 \\
+                / 4 & = & 0 \\
+                2 / 2 & = & 1 & \text{ rest } 0 \\
+                / 1 & = & 0 \\
+                 \end{array} \) </p>
+                 <p>Alltså \( 110010_{2} = 3010_4\).</p>
+              </div></div>
+          </li>
+
+          <li><i class="fas fa-shapes fa-2x level"></i>Skriv en algoritm över hur man ändrar från en talbas till en annan då man utnyttjar sig av division.
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#9" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="9">
+              <div class="card card-body answer"> <p>Något i stil med följande.</p>
+                <p>Förvandla först talet till basen 10, så att den sista siffran multiplicerar vi med basen upphöjt till 0, näst sista siffran multiplicerar vi med basen upphöjt till 1, osv.</p>
+                <p>Sedan söker vi två exponenter, för den större gäller att då vi dividerar med talbasen upphöjt till ett tal får en kvot mindre än 0, och en kvot som är större än 1. Från dessa tal börjar vi dividera.</p>
+                <p>Dividera talet i basen tio med talet som ger en kvot större än 1. Bestäm resten.</p>
+                <p>Jämför resten med följande bas upphöjt till 1 mindre. Är resten mindre än basen upphöjt till ett mindre dividerar vi med basen. Annars går vi till följande bas upphöjt med två mindre.</p>
+                <p>När vi kommer till att vi dividerar med basen upphöjt till 0, alltså 1, så slutar vi.</p>
+                <p>Talet som vi kommit fram till läser vi "nerifrån" uppåt.</p>
+              </div></div>
+          </li>
+
+          <li><i class="fab fa-python fa-2x level"></i>Skriv ett program i Python där man kan konvertera från en talbas till en annan. Du kan börja med att skriva ett program där man kan konvertera från basen 10 till basen 2.
+            <p>För att koda i Python kan du använda dig av <a href="https://replit.com" target="_blank">Replit</a> om du inte har Python installerat på din dator.</p>
+            <p>Utveckla programmet sedan så att man kan konvertera från basen 2 till basen 10.</p>
+            <p>Gör som det sista steget att man väljer basen för talet som man har och sedan väljer man vilken bas som talet skall konverteras till.</p>
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#10" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="10">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <!--<li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#11" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="11">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#12" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="12">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-cogs fa-2x level"></i>Lite svårare uppgift
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#13" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="13">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#14" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="14">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li><i class="fas fa-jedi fa-2x level"></i>Uppgift för jedinivå
+              <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#15" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="15">
+              <div class="card card-body answer"> <p>Lösningen</p></div></div>
+          </li>
+
+          <li>Uppgift
+            <ol>
+              <li>Deluppgit a <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5a" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5a">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit b <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5b" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5b">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+              <li>Deluppgit c <p><button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#5c" aria-expanded="false" aria-controls="collapseExample">Lösning</button></p>
+              <div class="collapse" id="5c">
+              <div class="card card-body answer"><p>Lösningen</p></div></div> </li>
+            </ol>
+          </li>-->
+
+
+          </ol>
+
+      </section>
+
+    </article>
+
+    <footer class="MaA112021">
+      <a href="7_primtal.html"><i class="fa fa-arrow-alt-circle-left fa-2x"></i></a>
+      <a href="15_newton-raphson.html"><i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
