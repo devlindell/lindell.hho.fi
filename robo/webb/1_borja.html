@@ -54,6 +54,7 @@
           <p>På vår första webbsida skapar vi texten Hello World. I Atom, skapa ett tomt dokument. Det du får framför dig borde se ut som:</p>
           <p><img src="pics/1-1.png" alt="" class="responsivepic800"></p>
           <p>Till vänster kan du lägga till projekt som du jobbar med. Där ser du då mappar och filer som berör projektet. Till höger skriver vi koden. Här kan du ha flera flikar. De kan du stänga med kryss-knappen uppe till höger.</p>
+          <p>Du kommer snabbt att märka att Atom föreslår åt dig vissa kommandon och syntaxer när du skriver. För att välja från listan så använd dig ac tabularorn på keyboarden.</p>
           <p>Skriv in följande kod och spara filen med namnet index.html. När du besöker en webbplats är det sidan index.html som visas först.</p>
           <p><img src="pics/1-2.png" alt="" class="responsivepic400">
           </p>
@@ -61,18 +62,20 @@
           <p>För att se vad vi har gjort så leta reda på din fil, index.html, på datorn och öppna den i en browser.</p>
           <p>I en browser ser vi följande:</p>
           <p><img src="pics/1-3.png" alt="" class="responsivepic600"></p>
-          <p>Du märker att om du ändrar på texten så ändras webbsidans innehåll.</p>
+          <p>Du märker att om du ändrar på texten så ändras webbsidans innehåll. Testa med att skriva till text.</p>
+          <p>När du jobbar med materialet och uppgifterna kan det löna sig att ha en logisk mappstruktur på datorn. Eftersom du eventuellt kommer att ha en hel del filer med namnet index.html så kan det vara bra att ha varje övning i en egen mapp.</p>
           <h3>Hello HTML</h3>
           <p>Tag till nästa och skapa en HTML sida med följande innehåll.</p>
           <p><img src="pics/1-4.png" alt="" class="responsivepic400"></p>
           <p>Här berättar vi på rad 4 att tecknen på webbsidan är UTF-8. Men det viktiga är att varje stycke har ett eget <code>&lt;p&gt;</code>-tagg.</p>
+          <p>Märk också hur vi skapar listor med <code>&lt;ul&gt;</code>-taggen och lägger in själva listelementet med <code>&lt;li&gt;</code>-taggen.</p></p>
           <p>I en browser ser vi följande:</p>
           <p><img src="pics/1-5.png" alt="" class="responsivepic600"></p>
 
           <h3>Listor, bilder, länkar och text</h3>
           <p>I HTML kan en lista vara numrerad <code>&lt;ol&gt;</code> och <code>&lt;/ol&gt;</code> eller onumrerad <code>&lt;ul&gt;</code> och <code>&lt;/ul&gt;</code>. Själva listelementet är inom <code>&lt;li&gt;</code> och <code>&lt;/li&gt;</code>. Du kan ha listor i listor för att skapa underlistor. Formateringen av listor tittar vi närmare på då vi börjar behandla CSS.</p>
-          <p>Bilder får du infogat med <code>&lt;img src="bilden.png" alt="Texten för bilden"&gt;</code>. Vill du att bilden är i ett eget stycke så kom ihåg att använda dig av <code>&lt;p&gt;</code>.</p>
-          <p>En länk på en webbsida kan vara extern, leder bort från sidan, eller intern, så att du länkar till ett element på en sida. En extern länk skapar vi på följande sätt <code>&lt;a href="www.yle.fi"&gt;här&lt;/a&gt;</code> skapar en länk då du klickar på texten "här" leds du till sidan www.yle.fi.</p>
+          <p>Bilder får du infogat med <code>&lt;img src="bilden.png" alt="Texten för bilden"&gt;</code>. Här är bilden i samma mapp som webbsidan. Vill du att bilden är i ett eget stycke så kom ihåg att använda dig av <code>&lt;p&gt;</code>.</p>
+          <p>En länk på en webbsida kan vara extern, leder bort från sidan, eller intern, så att du länkar till ett element på en sida. En extern länk skapar vi på följande sätt <code>&lt;a href="www.yle.fi"&gt;här&lt;/a&gt;</code> skapar en länk då du klickar på texten "här" leds du till sidan www.yle.fi. Om du använder dig av <code>target</code> syntaxen så kan du styra om länken öppnas i samma fönster, eller i en ny. <code>&lt;a href="www.yle.fi" target="_blank"&gt;här&lt;/a&gt;</code> öppnar länken i en ny tabb.</p>
           <p>För att en intern länk skall fungera behöver du först göra ett ankare i en tag på din sida. Ankaret gör du med <code>id="ankare"</code> i taggen. Till rubriken <code>&lt;h3 id="links"&gt;</code> kommer man med koden <code>&lt;a href="#links"&gt;Länkar&lt;/a&gt;</code>.</p>
           <p>Kursiverad text får vi med <code>&lt;em&gt;</code>, fet stil får vi med <code>&lt;strong&gt;</code> och extra radbrytningar med <code>&lt;br&gt;</code>. Märk att <code>&lt;br&gt;</code> inte har någon slut tagg.</p>
 
@@ -102,7 +105,7 @@
         <h2>Uppgifter</h2>
         <ol>
 
-          <li>Din första uppgift är att skapa en sida om en resa till Paris. Titta på <a href="./1_paris/paris.pdf" target="_blank">uppgiften</a> över sidan. Din uppgift är att skapa samma. Märk att rubrikerna är av olika storlek och att listorna är numrerade och onumrerade. Listelementen under September 2016 fungerar som länkar inom dokumentet. "here" i "Click here" leder till den engelskspråkiga Wikipediasidan om Paris.
+          <li>Din första uppgift är att skapa en sida om en resa till Paris. Titta på <a href="./1_paris/paris.pdf" target="_blank">uppgiften</a> över sidan. Din uppgift är att skapa samma. Märk att rubrikerna är av olika storlek och att listorna är numrerade och onumrerade. Listelementen under September 2016 (Highlights, Full story, Day 1, Day 2, Day 3 och Contact) fungerar som länkar inom dokumentet. "here" i "Click here" leder till den engelskspråkiga Wikipediasidan om Paris.
           <p>Bilderna för uppgiften hittar du <a href="./1_paris/pictures.zip" target="_blank">här</a>.</p>
           </li>
 
